@@ -1,0 +1,120 @@
+1
+00:00:00,210 --> 00:00:05,040
+What does the term hacking mean hacking can mean a lot of different things.
+
+2
+00:00:05,040 --> 00:00:11,610
+Most generally it means to use something in a way it was not designed to be used.
+
+3
+00:00:11,640 --> 00:00:18,360
+So when anything's designed it has an intended purpose and intended use in mind that's given by the
+
+4
+00:00:18,360 --> 00:00:18,960
+designer.
+
+5
+00:00:18,960 --> 00:00:25,350
+So if I make something for you I have a certain way I think you're going to use it if you use it in
+
+6
+00:00:25,350 --> 00:00:31,370
+any way besides what I've done in terms of designing it for you to use it that way.
+
+7
+00:00:31,410 --> 00:00:34,540
+You could call that hacking for this course.
+
+8
+00:00:34,650 --> 00:00:42,090
+We're focusing mainly on computer security hacking which generally means someone who exploits weaknesses
+
+9
+00:00:42,090 --> 00:00:45,080
+in a computer system or a computer network.
+
+10
+00:00:45,240 --> 00:00:51,300
+If you want a lot more information on this you can just go to the Wikipedia dot org article and look
+
+11
+00:00:51,300 --> 00:00:57,840
+up hacker and hacking on Wikipedia if you want me to read all of the text on this article which fully
+
+12
+00:00:57,840 --> 00:01:01,760
+explains so many things about hacking including history.
+
+13
+00:01:01,860 --> 00:01:06,090
+Then just post the discussion and let me know you'd like me to read the whole thing for you.
+
+14
+00:01:06,090 --> 00:01:11,760
+I trust that you can read if you want to learn more about the exact meaning of the terms and we'll give
+
+15
+00:01:11,760 --> 00:01:15,730
+you a strong foundation to go into using the rest of this course.
+
+16
+00:01:15,870 --> 00:01:22,170
+If not Erman will explain more about the specific terms that he thinks are most important for you to
+
+17
+00:01:22,170 --> 00:01:24,150
+learn going forward.
+
+18
+00:01:24,150 --> 00:01:29,560
+The bottom line of all of this is that hacking can include a lot of different things.
+
+19
+00:01:29,670 --> 00:01:35,540
+And what you're given in this course is a set of tools that can make hacking a lot easier.
+
+20
+00:01:35,760 --> 00:01:41,430
+This often is referred to in some of the people have taken the course of that it as a script kiddie
+
+21
+00:01:41,790 --> 00:01:49,080
+someone who just uses tools other people made to break into systems the way I look at things it's all
+
+22
+00:01:49,080 --> 00:01:50,630
+about results.
+
+23
+00:01:50,850 --> 00:01:56,490
+And if you're trying to learn a skill you need to be able to produce some results out of learning that
+
+24
+00:01:56,490 --> 00:02:03,340
+skill if you want to use the tools that make it easier to learn how to do things.
+
+25
+00:02:03,390 --> 00:02:05,620
+Then to me that's my approach.
+
+26
+00:02:05,620 --> 00:02:11,690
+Usually there's no need to learn things based on a principle when what you need is results.
+
+27
+00:02:11,730 --> 00:02:17,430
+I hope if you're using this course you can use this for good to help other people secure their systems
+
+28
+00:02:17,700 --> 00:02:24,240
+against black hat hackers who are using these exact same tools and skills to take things and steal.
+
+29
+00:02:24,360 --> 00:02:26,260
+Thank you very much for watching this.
+
+30
+00:02:26,310 --> 00:02:30,450
+And Irma We'll talk a lot more about the terms you see on this page.
+
