@@ -1,0 +1,536 @@
+1
+00:00:01,102 --> 00:00:06,541
+Ok, continuemos
+
+2
+00:00:06,541 --> 00:00:10,543
+Si estas empezando a ver ahora, hemos cambiado los servidores DNS y de verdad te recomiendo que
+
+3
+00:00:10,543 --> 00:00:16,951
+veas estos tutoriales en el orden en el que fueron subidos
+
+4
+00:00:16,951 --> 00:00:23,686
+Pero, el cambio de los servidores DNS fue necesario para poder esconder los servidores DNS
+
+5
+00:00:23,686 --> 00:00:27,094
+de nuestro ISP
+
+6
+00:00:27,094 --> 00:00:30,378
+De todas formas, empecemos y abramos nuestro navegador
+
+7
+00:00:30,378 --> 00:00:35,091
+Ya tengo el mo abierto aqu y una de las primeras cosas que
+
+8
+00:00:35,091 --> 00:00:42,353
+necesitaremos hacer es deshabilitar WebRTC, lo tengo escrito en la esquina superior derecha
+
+9
+00:00:42,353 --> 00:00:45,435
+si no lo puedes ver, est bien
+
+10
+00:00:45,435 --> 00:01:01,899
+porque ahora voy a escribir ''about:config'' y despus va a decir
+
+11
+00:01:01,899 --> 00:01:04,827
+"Esto puede anular tu garanta!"
+
+12
+00:01:04,827 --> 00:01:07,861
+Date cuenta que estoy usando Iceweasel que es bsicamente Firefox,
+
+13
+00:01:07,861 --> 00:01:12,164
+en Chrome el procedimiento es un poco diferente, si ests usando eso
+
+14
+00:01:12,164 --> 00:01:20,666
+hzmelo saber, te puedo ayudar con eso, en cualquier caso, WebRTC
+
+15
+00:01:25,806 --> 00:01:32,718
+puede filtrar tu informacin, es una de las nuevas cosas que estn incluidas en Firefox
+
+16
+00:01:32,718 --> 00:01:39,129
+y Chrome, pero en Firefox lo han hecho relativamente fcil de deshabilitar, digo, no es gran cosa
+
+17
+00:01:39,129 --> 00:01:48,165
+slo tienes que ir a about:config y te dar esta advertencia, y esta advertencia
+
+18
+00:01:48,165 --> 00:01:56,681
+est aqu por una razn, no est aqu porque alguien solo decidi
+
+19
+00:01:56,681 --> 00:02:03,140
+poner una advertencia sin ningn propsito o nada parecido
+
+20
+00:02:03,140 --> 00:02:07,937
+est ah por una razn, si te metes con estas cosas, asegrate de saber
+
+21
+00:02:07,937 --> 00:02:12,954
+lo que ests haciendo, de otra forma, djalas como estn porque puedes estropear tu navegador
+
+22
+00:02:12,954 --> 00:02:20,744
+al punto que ya no va a funcionar o va a comprometer gravemente tu seguridad,
+
+23
+00:02:20,744 --> 00:02:27,127
+la seguridad del software, la integridad de tu navegador, etc.
+
+24
+00:02:27,127 --> 00:02:32,117
+As que ser cuidadoso, te lo prometo, ve y haz clic en l, y en la barra de bsqueda necesitas buscar
+
+25
+00:02:32,117 --> 00:02:38,270
+el mismo patrn que estoy buscando ahora, aqu, djame hacer zoom lo ms que pueda,
+
+26
+00:02:38,270 --> 00:02:49,140
+dice, media.peerconnection.enabled
+
+27
+00:02:49,140 --> 00:02:56,564
+Ok, as que aqu, boolean est en falso, puedes hacer doble clic para cambiarlo a verdadero
+
+28
+00:02:56,564 --> 00:03:05,663
+pero no lo hagas, slo si est en verdadero, doble clic y cmbialo a falso, eso es todo lo que necesitas a hacer,
+
+29
+00:03:05,663 --> 00:03:07,774
+no es gran cosa.
+
+30
+00:03:07,774 --> 00:03:12,775
+As que ve y cierra, slo necesita estar en falso, as es como necesita estar
+
+31
+00:03:12,775 --> 00:03:19,347
+as que ve y cierra el navegador despus de eso y vulvelo a abrir
+
+32
+00:03:19,347 --> 00:03:22,896
+busca con tu motor de bsqueda favorito, o el que ests usando
+
+33
+00:03:22,896 --> 00:03:25,892
+Yo estoy usando el por defecto aqu
+
+34
+00:03:25,892 --> 00:03:32,937
+Open VPN free, slo escribe eso
+
+35
+00:03:32,937 --> 00:03:37,262
+y tengo un sitio que he usado antes
+
+36
+00:03:37,262 --> 00:03:42,961
+Si, vamos a... es VPNBook
+
+37
+00:03:42,961 --> 00:03:51,483
+Vamos a usar uno de estos, as que usar el alemn
+
+38
+00:03:51,483 --> 00:03:57,508
+pero puedes usar el canadiense o el de Estados Unidos, no s donde se encuentra este pero seguro podemos
+
+39
+00:03:57,508 --> 00:04:03,079
+averiguarlo pero en realidad no importa, usar el alemn, tu puedes usar el que quieras
+
+40
+00:04:03,079 --> 00:04:12,153
+libremente, as que lo descargar, estar en la carpeta de descargas,
+
+41
+00:04:12,153 --> 00:04:19,307
+Aqu est el nombre de usuario, voy a recordar eso, es VPNBook, copiar la contrasea
+
+42
+00:04:19,307 --> 00:04:26,124
+porque ahora necesito cerrar el navegador, y para poder iniciar el VPN necesitamos cerrar el navegador,
+
+43
+00:04:26,124 --> 00:04:35,677
+no podemos tener el navegador abierto mientras el VPN est ejecutndose, disculpa, mientras estamos configurando el VPN, quse decir
+
+44
+00:04:35,677 --> 00:04:46,269
+As que necesitamos configurar el VPN, inicialo, djalo ejecutar y luego abre el navegador, el navegador no puede estar abierto antes de
+
+45
+00:04:46,269 --> 00:04:53,074
+eso, necesita estar cerrado completamente, todas las pestaas, todo el navegador debe estar cerrado, no puede estar activo
+
+46
+00:04:53,074 --> 00:04:58,887
+configura el VPN y slo entonces inicia el navegador, ah funcionar, de otra forma no.
+
+47
+00:04:58,887 --> 00:05:05,822
+O no debera, as que lo escribimos,
+
+48
+00:05:05,822 --> 00:05:09,517
+y vamos a Downloads/
+
+49
+00:05:09,517 --> 00:05:10,441
+"ls"
+
+50
+00:05:10,441 --> 00:05:13,309
+y el archivo est comprimido, as que lo descomprimimos,
+
+51
+00:05:13,309 --> 00:05:20,366
+unzip VPNBook.com
+
+52
+00:05:20,366 --> 00:05:25,330
+y listo, escribimos "ls" de nuevo, y vers que hay un gran nmero de estos
+
+53
+00:05:25,330 --> 00:05:27,410
+despejemos la pantalla para hacerlo un poco ms claro
+
+54
+00:05:27,410 --> 00:05:30,538
+"ll" no est instalado aqu, pero no realidad no importa
+
+55
+00:05:30,538 --> 00:05:37,803
+y voy a usar TCP 443 Open VPN
+
+56
+00:05:37,803 --> 00:05:48,927
+Que escribo? Escribo "openvpn" espacio y entonces escrito esto
+
+57
+00:05:48,927 --> 00:05:58,142
+"tcp443.ovpn", iniciarlo, escribir el nombre de usuario, el usuario es VPNBook
+
+58
+00:05:58,142 --> 00:06:00,842
+la contrasea la copi de la pgina
+
+59
+00:06:00,842 --> 00:06:02,558
+Presiona Enter
+
+60
+00:06:02,558 --> 00:06:06,900
+y djalo ejecutar, te aconsejo que lo dejes ejecutndose slo por un minuto mas o menos
+
+61
+00:06:06,900 --> 00:06:12,778
+para que todo est listo, iniciado
+
+62
+00:06:12,778 --> 00:06:20,244
+y funcional y dems, dice aqu "Iniciacin de Secuencia Completada"
+
+63
+00:06:20,244 --> 00:06:28,938
+eso es lo que estamos buscando y esperando as que vayamos y abramos el navegador
+
+64
+00:06:28,938 --> 00:06:36,735
+Escribimos "Cul es mi IP?"
+
+65
+00:06:36,735 --> 00:06:54,344
+Ok, as que dice que mi IP pblica es esta de aqu, y veamos donde me ubica esa IP
+
+66
+00:06:54,344 --> 00:07:00,854
+Espera, esta no es buena, busquemos una prueba de filtracin de DNS
+
+67
+00:07:05,714 --> 00:07:13,750
+Me ubica en Alemania, ah es donde estoy localizado en este momento... no este momento.
+
+68
+00:07:13,750 --> 00:07:17,708
+Es ah donde la IP est localizada ahora
+
+69
+00:07:17,708 --> 00:07:24,897
+Esa es la localizacin para esta direccin IP y esta es la que est ocultando la verdadera
+
+70
+00:07:24,897 --> 00:07:32,045
+Para darte una idea de lo que me refiero con esto, voy y abro el terminal
+
+71
+00:07:32,045 --> 00:07:38,382
+detengo este proceso con Control + C y veamos si esto funciona si actualizo la pgina
+
+72
+00:07:38,382 --> 00:07:42,880
+No creo que vaya a funcionar, creo que debera reiniciar el navegador
+
+73
+00:07:42,880 --> 00:07:48,368
+y s, necesito reiniciar el navegador, pero viste que mi IP estaba en Alemania
+
+74
+00:07:48,368 --> 00:07:57,295
+y hagmoslo otra vez, "Prueba de filtracin de DNS"
+
+75
+00:07:58,705 --> 00:08:02,317
+Ah est, dice... ahora me est mostrando mi direccin IP verdadera
+
+76
+00:08:02,317 --> 00:08:06,298
+Mucha gente se oculta en Youtube... en internet
+
+77
+00:08:06,298 --> 00:08:16,883
+Yo personalmente creo que es algo intil porque estas son direcciones IP dinmicas que nos dan nuestros ISP
+
+78
+00:08:16,883 --> 00:08:26,336
+y esto va a cambiar mas o menos veinte veces para cuando suba estos videos
+
+79
+00:08:28,376 --> 00:08:36,592
+De hecho puedo cambiarlo yo mismo, bsicamente reiniciando el router
+
+80
+00:08:36,592 --> 00:08:43,175
+conectarlo, desconectarlo, esa es la manera ms rpida de hacerlo, o puedes ingresar al router
+
+81
+00:08:43,175 --> 00:08:51,253
+y desbloquear el DHTP y luego obtener otro, pero no importa, entiendes la idea
+
+82
+00:08:51,253 --> 00:08:57,132
+Digo, yo tena uno alemn cuando me ocult y luego tengo este
+
+83
+00:08:57,132 --> 00:08:59,601
+Ok, lo cerramos
+
+84
+00:08:59,601 --> 00:09:03,332
+Ejecutemos el VPN de nuevo
+
+85
+00:09:07,442 --> 00:09:15,305
+Est iniciando, esperemos, no vayas de inmediato a abrir tu navegador
+
+86
+00:09:15,305 --> 00:09:20,526
+Espera a que diga esto "Iniciacin de Secuencia Completada" y luego abre tu navegador
+
+87
+00:09:20,526 --> 00:09:29,137
+y asegrate como dije que de verdad no haya otros navegadores abiertos
+
+88
+00:09:31,617 --> 00:09:34,090
+.
+
+89
+00:09:34,090 --> 00:09:42,205
+"Prueba de filtracin de DNS", ok, clic sobre el
+
+90
+00:09:42,205 --> 00:09:46,771
+De nuevo, estoy en Alemania, as que har el test estndar.
+
+91
+00:09:49,771 --> 00:10:00,327
+Y ahora dice que el ISP es Open DNS porque estoy usando los servidores DNS de Open DNS
+
+92
+00:10:00,327 --> 00:10:03,781
+S que suena un poco confuso por su nombre, pero bsicamente estoy usando
+
+93
+00:10:03,781 --> 00:10:06,812
+los servidores DNS de esta empresa (Open DNS)
+
+94
+00:10:08,161 --> 00:10:11,432
+Los servidores DNS que pertenecen a esta empresa
+
+95
+00:10:11,432 --> 00:10:19,464
+Qu es lo importante aqu? S que dije antes que puedes escoger un DNS que sea diferente
+
+96
+00:10:19,464 --> 00:10:24,285
+al de tu pas, si, es cierto y definitivamente til, pero tambin
+
+97
+00:10:24,285 --> 00:10:34,605
+ten en cuenta que lo primero que ests ocultando... que ests intentando ocultar es
+
+98
+00:10:34,605 --> 00:10:39,853
+el servidor DNS de tu ISP, ese es el que ests intentando ocultar
+
+99
+00:10:39,853 --> 00:10:47,588
+as que mientras tu servidor DNS de tu ISP real no est incluido en esta lista y preferiblemente pero no obligatorio
+
+100
+00:10:47,588 --> 00:10:53,781
+que este no sea el pas donde te encuentras, ests protegido
+
+101
+00:10:53,781 --> 00:11:01,484
+si el servidor de tu ISP sale aqu, el servidor DNS, el servidor DNS de tu verdadero ISP entonces
+
+102
+00:11:01,484 --> 00:11:06,302
+configuraste algo mal y no ests completamente annimo
+
+103
+00:11:07,542 --> 00:11:14,676
+adems si este es tu pas de origen, no estoy hablando de Estados Unidos, no importa cual est en esta lista
+
+104
+00:11:14,676 --> 00:11:22,766
+Slo digo que si aqu, muestra un pas, y podra ser Repblica Checa o Canad, puede ser
+
+105
+00:11:22,766 --> 00:11:26,177
+Estados Unidos como se ve aqu, en realidad no importa, pero mientras...
+
+106
+00:11:26,177 --> 00:11:35,897
+Si ese es tu pas de origen, no es tan malo, alguien tal vez podra averiguar de que pas en particular te encuentras y
+
+107
+00:11:35,897 --> 00:11:41,468
+ese podra ser el pas real donde te encuentras, pero sabes? estos son servidores DNS pblicos
+
+108
+00:11:41,468 --> 00:11:49,127
+si eliges uno bueno, que no guarda registros, ests protegido porque no llevan registro
+
+109
+00:11:49,127 --> 00:11:56,607
+y no tendrn nada mostrado, adems, como dije, podras elegir un servidor DNS que no es de tu propio pas
+
+110
+00:11:56,607 --> 00:12:03,143
+Aqu est Estados Unidos porque Open DNS est en Estados Unidos pero en realidad no importa, como dije, podra ser cualquier pas aqu
+
+111
+00:12:03,143 --> 00:12:13,613
+y digamos que eres un ciudadano de Noruega, y tienes un servidor DNS noruego en esta lista y estas usando ese
+
+112
+00:12:13,613 --> 00:12:21,978
+Bueno, podras tratar usando un servidor DNS que sea de la Repblica de Sudfrica y va a decir aqu Repblica de Sudfrica
+
+113
+00:12:21,978 --> 00:12:28,958
+y vas a tener aqu un ISP muy diferente, pero como dije, slo asegrate que tengan reputacin
+
+114
+00:12:28,958 --> 00:12:35,824
+ahora espero que te haya podido ayudar, que te haya mostrado como montar un servicio de VPN gratis, completamente gratis de cualquier cargo
+
+115
+00:12:35,824 --> 00:12:41,269
+No tienes que pagar por nada extra y como esto puede funcionar
+
+116
+00:12:41,269 --> 00:12:48,061
+Si ests usando Virtual Box podras ir y.... Detengamos esto
+
+117
+00:12:48,061 --> 00:12:54,495
+Puedes ir bajo dispositivos, configuracin de red, y cambiar de adaptador puente a NAT
+
+118
+00:12:54,495 --> 00:12:59,831
+porque algunas veces adaptador puente no funciona con nadie debido a los drivers y ok.
+
+119
+00:12:59,831 --> 00:13:03,294
+Y ahora puedes reiniciar el administrador de red
+
+120
+00:13:03,294 --> 00:13:09,987
+"service network-manager restart"
+
+121
+00:13:09,987 --> 00:13:14,437
+Djame ver si puedo hacer ping con google.com
+
+122
+00:13:14,437 --> 00:13:20,155
+Ok, NAT est funcionando, y veamos si podemos conectar a Open VPN
+
+123
+00:13:24,745 --> 00:13:28,641
+Djalo funcionar
+
+124
+00:13:30,191 --> 00:13:37,120
+Ok, "Iniciacin de Secuencia Completada" as que funciona, tengo mi navegador abierto
+
+125
+00:13:37,120 --> 00:13:44,279
+as que esto es una mala, mala, mala idea, esto es algo que no deberas hacer, cierra el navegador y vuelve a hacer todo el proceso
+
+126
+00:13:44,279 --> 00:13:51,686
+Una vez que lo hayas vuelto a hacer, abre el navegador de nuevo
+
+127
+00:13:51,686 --> 00:13:58,383
+Digo, no es que va a revelar si ests usando un navegador de una vez pero los cambios pueden no aplicarse a tu navegador
+
+128
+00:13:58,383 --> 00:14:04,302
+ese es el problema, as que "Prueba de filtracin de DNS"
+
+129
+00:14:07,402 --> 00:14:14,185
+De nuevo, funciona en NAT bien pero veamos si la DNS va a pasar
+
+130
+00:14:14,185 --> 00:14:22,082
+Si, lo har, as que NAT est funcionando bien, puedes usar ambos NAT y puente, si uno no funciona trata con el otro
+
+131
+00:14:22,082 --> 00:14:31,603
+esto es slo para personas que estn usando mquinas virtuales, puedes cambiar entre NAT y puente en mquinas virtuales
+
+132
+00:14:31,603 --> 00:14:40,632
+Para todos los dems, si no vas a usar la mquina virtual, si ests usando una instalacin real, si ests usando un USB, olvidate de NAT y puente
+
+133
+00:14:40,632 --> 00:14:45,189
+esto es lo que puedes y necesitas hacer
+
+134
+00:14:45,189 --> 00:14:54,588
+De todos modos, me despido y espero que esto te haya sido til para aquellos que tienen problemas con VPN y Kali 2.0
+

@@ -1,0 +1,796 @@
+1
+00:00:00,000 --> 00:00:02,499 A:middle
+Bonjour à tous et bienvenue dans ce tutoriel
+2
+00:00:02,500 --> 00:00:04,766
+aujourd'hui je vais vous introduire au terminal de Linux
+
+3
+00:00:04,767 --> 00:00:07,199
+et vous montrer quelques fonctions de bases
+
+4
+00:00:07,200 --> 00:00:15,366
+dans le système de Kali Linux, l'icône 
+du terminal se trouve en haut a droite de l'écran
+
+5
+00:00:15,367 --> 00:00:17,966
+Cliquez dessus
+
+6
+00:00:17,967 --> 00:00:18,832
+Ca y est!
+
+7
+00:00:19,833 --> 00:00:23,732
+Vous avez un terminal par défaut
+en fonction devant vous
+
+8
+00:00:23,733 --> 00:00:25,166
+il s'est lancé en mode root 
+dans le système de Kali
+
+9
+00:00:26,167 --> 00:00:29,499
+Fort souvent les gens ont toujours 
+le désir de le configurer
+
+10
+00:00:29,500 --> 00:00:33,866
+si vous ne voulez rien configurer, 
+c'est parfait!
+
+11
+00:00:34,867 --> 00:00:36,966
+vous n'avez pas besoin de faire 
+un quelconque modification
+
+12
+00:00:36,967 --> 00:00:42,299
+Toutefois, 99% du temps les gens 
+configureront le terminal
+
+13
+00:00:42,300 --> 00:00:45,032
+en fonction de leurs besoins et leurs buts
+
+14
+00:00:46,033 --> 00:00:49,632
+Par exemple, j'augmenterai 
+toujours la taille de police
+
+15
+00:00:49,633 --> 00:00:53,566
+pourque cela soit clair, visible
+
+16
+00:00:53,567 --> 00:00:57,999
+pour que je puisse avoir une bonne vue 
+de ce que je suis entrain de faire la maintenant
+
+17
+00:00:58,000 --> 00:01:03,832
+et aussi réduire la fatigue visuelle
+
+18
+00:01:03,833 --> 00:01:05,700
+de toute façon, on avance et faites un clic droit
+n'importe ou dans le terminal
+
+19
+00:01:05,701 --> 00:01:08,266
+vous devez le faire dans le terminal
+
+20
+00:01:08,267 --> 00:01:10,433
+et vous avez la barre de menu
+
+21
+00:01:10,434 --> 00:01:12,066
+maintenant nous pouvons le voir
+
+22
+00:01:12,067 --> 00:01:14,799
+cliquez sur "edit"
+
+23
+00:01:14,800 --> 00:01:16,966
+vous pouvez continuer avec profil
+
+24
+00:01:16,967 --> 00:01:19,699
+et créez un nouveau profil en appuyant sur "New"
+
+25
+00:01:19,700 --> 00:01:24,966
+Donnez lui un nom et configurer le selon votre préférence.
+
+26
+00:01:25,967 --> 00:01:30,699
+toutefois, nous allons configurer le profil par défaut
+
+27
+00:01:30,700 --> 00:01:33,366
+c'est inutile de créer des profiles additionnels
+
+28
+00:01:33,367 --> 00:01:36,399
+on avance et clique sur "profile preferences"
+
+29
+00:01:36,400 --> 00:01:39,766
+et la vous avez pas mal d'options
+
+30
+00:01:39,767 --> 00:01:43,866
+Dans le premier champ vou verrez
+
+31
+00:01:43,867 --> 00:01:48,699
+une case pour utiliser un système
+d'apparence fixe avec la taille de police 
+
+32
+00:01:48,700 --> 00:01:50,766
+trop petit, vous voyez ce n'est pas la forme
+
+33
+00:01:50,767 --> 00:01:53,255
+il faut que je modifie cela
+
+34
+00:01:53,256 --> 00:01:55,999
+si c'est correct pour vous, laissez la comme vous voulez
+
+35
+00:01:57,000 --> 00:02:02,566
+je dois le modifier et j'ai monospace 20
+
+36
+00:02:02,567 --> 00:02:04,832
+si vous cliquez dessus, vous pourrez 
+modifier la taille de police à volonté
+
+37
+00:02:04,833 --> 00:02:06,299
+vous pouvez modifier la police que vous utilisez
+
+38
+00:02:06,300 --> 00:02:10,699
+et je dois procéder à éxécution,
+car nous en avons besoin de ca par ici
+
+39
+00:02:10,700 --> 00:02:13,099
+vous avez d'autres options de base par ici
+
+40
+00:02:13,100 --> 00:02:16,032
+ca dit :"afficher la barre de menu par défaut dans les nouveaux terminaux"
+
+41
+00:02:16,033 --> 00:02:18,722
+j'ai toujours l'habitude de le cocher
+
+42
+00:02:18,723 --> 00:02:20,599
+Je pense que 
+
+43
+00:02:20,600 --> 00:02:23,766
+c'est une très bonne idée
+
+44
+00:02:23,767 --> 00:02:25,377
+lorsque vous aurez besoin de faire quelque chose 
+par exemple ouvrez un autre onglet
+
+45
+00:02:25,378 --> 00:02:27,166
+ou quelque chose dans le genre
+
+46
+00:02:27,167 --> 00:02:29,166
+mais vous n'êtes pas obligés
+
+47
+00:02:29,167 --> 00:02:31,199
+vous avez le curseur de la souris
+
+48
+00:02:31,200 --> 00:02:33,799
+ca dit :"Bloquer" "I-Beam" "Souligner"
+
+49
+00:02:33,800 --> 00:02:35,833
+vous verrez les changements aussitôt valider
+
+50
+00:02:35,834 --> 00:02:37,199
+vous avez le blocage et aussi un souligner
+
+51
+00:02:37,200 --> 00:02:39,599
+je préfère le blocage
+
+52
+00:02:39,600 --> 00:02:41,688
+vous pouvez utiliser ce que vous voulez
+
+53
+00:02:41,687 --> 00:02:44,933
+vous n'aurez aucun problème dans le sens technique 
+
+54
+00:02:44,934 --> 00:02:49,666
+nous poursuivons avec "Titre et commande" et nous 
+ne sommes pas obligés de changer quoique ce soit
+
+55
+00:02:50,667 --> 00:02:52,166
+vous pouvez modifier le titre si vous voulez
+
+56
+00:02:52,167 --> 00:02:53,266
+et nous avons des couleurs
+
+57
+00:02:53,267 --> 00:02:57,566
+et je pense que ce thème de couleur est idéal
+
+58
+00:02:59,567 --> 00:03:03,699
+vous pouvez le modifier si ca vous tente
+
+59
+00:03:03,700 --> 00:03:06,766
+vous pouvez le personnaliser comme vous le voulez
+
+60
+00:03:06,767 --> 00:03:08,066
+vous pouvez modifier la couleur des textes
+
+61
+00:03:08,067 --> 00:03:10,399
+la couleur de fond
+
+62
+00:03:10,400 --> 00:03:12,366
+la gamme de couleur
+
+63
+00:03:12,367 --> 00:03:14,766
+vous avez beaucoup d'options à votre disposition
+
+64
+00:03:14,767 --> 00:03:16,966
+des thèmes par défaut 
+
+65
+00:03:16,967 --> 00:03:18,799
+Ca dit Noir sur Blanc
+
+66
+00:03:18,800 --> 00:03:20,299
+je peux le modifier en vert sur noir
+
+67
+00:03:23,300 --> 00:03:26,466
+est ce qu'on a bleue sur noir?
+
+68
+00:03:26,467 --> 00:03:27,199
+hum, non.
+
+69
+00:03:27,200 --> 00:03:30,088
+ce n'est pas géniale
+
+70
+00:03:30,089 --> 00:03:33,166
+je ne serai pas en mesure de travailler sur celui la
+
+71
+00:03:33,167 --> 00:03:36,533
+on va en rester avec le blanc sur noir
+
+72
+00:03:36,534 --> 00:03:39,466
+ca parait le mieux de toutes les couleurs
+
+73
+00:03:39,467 --> 00:03:42,699
+Personnellement, j'utilise Fedora en bleue sur noir
+
+74
+00:03:43,700 --> 00:03:45,199
+mais je vais le laisser tel quel est
+
+75
+00:03:45,200 --> 00:03:48,299
+on a pas besoin de changer quoi que ce soit
+
+76
+00:03:48,300 --> 00:03:51,466
+Maintenant dans l'arrière plan, 
+vous avez trois fonctions de bases
+
+77
+00:03:51,467 --> 00:03:54,233
+vous avez des couleurs foncées 
+comme vous le voyez par ici
+
+78
+00:03:54,234 --> 00:03:57,566
+vous pouvez choisir une image comme fond d'écran
+
+79
+00:03:57,567 --> 00:04:00,466
+vous pouvez téléchargez 
+n'importe quelle image sur internet 
+
+80
+00:04:01,467 --> 00:04:03,366
+vous pouvez configurer cette image à être transparente
+
+81
+00:04:03,367 --> 00:04:07,099
+ou comme fond d'écran
+
+82
+00:04:08,100 --> 00:04:14,155
+et vous avez aussi la possibilité 
+de la rendre complètement transparente
+
+83
+00:04:14,156 --> 00:04:17,499
+et si vous cliquez sur "Transparent Background"
+
+84
+00:04:17,500 --> 00:04:19,499
+c'est a peu près le même que d'avoir un fond d'écran
+
+85
+00:04:19,500 --> 00:04:21,599
+à l'exception dans ce cas
+
+86
+00:04:21,600 --> 00:04:24,199
+alors laissez moi configurer le niveau de transparence
+
+87
+00:04:24,200 --> 00:04:26,699
+Excellent, c'est mieux ainsi
+
+88
+00:04:26,700 --> 00:04:27,099
+à l'exception dans ce cas
+
+89
+00:04:27,100 --> 00:04:30,566
+le fond d'écran du terminal sera le fond d'écran du système
+
+90
+00:04:30,567 --> 00:04:33,199
+dépendemment de l'endroit ou se trouve votre terminal
+
+91
+00:04:33,200 --> 00:04:36,299
+et l'options "défilement" est vraiment
+important pour les fonctions qui suivent
+
+92
+00:04:36,300 --> 00:04:38,299
+"défilement en arrière"
+
+93
+00:04:38,300 --> 00:04:41,799
+alors vous ne voulez pas 512 lignes
+
+94
+00:04:41,800 --> 00:04:44,499
+par contre vous devez choisir l'options "illimitée"
+
+95
+00:04:45,500 --> 00:04:48,999
+à moins que vous êtes limités 
+au point de vue de mémoire RAM
+
+96
+00:04:49,000 --> 00:04:52,232
+ou à moins que vous validez des tas de commande
+
+97
+00:04:52,233 --> 00:04:53,932
+ou quelque chose dans le genre
+
+98
+00:04:53,933 --> 00:04:57,032
+de toute façon, il est encore mieux 
+d'opter pour l'options illimitée
+
+99
+00:04:57,033 --> 00:04:59,599
+ non étant particulièrement dans cette environnement  
+
+100
+00:04:59,600 --> 00:05:02,566
+mais aussi dans les autres cas.
+
+101
+00:05:02,567 --> 00:05:06,744
+au niveau compatibilité, vous n'avez 
+pas grand chose à faire
+
+102
+00:05:07,745 --> 00:05:09,099
+on avance et je ferme la fenêtre
+
+103
+00:05:09,100 --> 00:05:11,488
+et j'ai choisi le fond d'écran transparent
+
+104
+00:05:11,489 --> 00:05:14,999
+vous voyez que cela s'applique 
+seulement au fond d'écran du bureau
+
+105
+00:05:15,000 --> 00:05:17,166
+vous ne verrez pas les icônes 
+
+106
+00:05:18,167 --> 00:05:21,300
+si je lance mon navigateur internet, 
+il ne sera pas affiché en arrière plan
+
+107
+00:05:21,301 --> 00:05:24,766
+cela s'applique seulement à l'image comme fond d'écran
+
+108
+00:05:25,767 --> 00:05:27,966
+ou l'arrière plan
+
+109
+00:05:28,967 --> 00:05:32,099
+nous avons un léger retard 
+qui est du à cause du téléchargement
+
+110
+00:05:32,100 --> 00:05:34,399
+mais c'est pas grave
+
+111
+00:05:34,400 --> 00:05:36,099
+le ralentit ne nous dérange pas 
+
+112
+00:05:37,100 --> 00:05:39,644
+je vais quand même changer cette situation plus tard 
+
+113
+00:05:39,645 --> 00:05:41,866
+vous voyez comme je l'aime
+
+114
+00:05:41,867 --> 00:05:45,988
+je voulais aussi vous donner une options,
+mais vous pouvez le personnaliser comme vous voulez 
+
+115
+00:05:46,989 --> 00:05:49,766
+on avance et cliquez sur "File"
+
+116
+00:05:50,767 --> 00:05:52,866
+Ouvrez l'onglet
+
+117
+00:05:52,867 --> 00:05:54,666
+je vais ouvrir quatres onglets 
+
+118
+00:05:54,667 --> 00:05:57,655
+trois de plus que le premier déja ouvert
+
+119
+00:05:58,656 --> 00:06:01,699
+vous pouvez naviguez de l'un à l'autre
+
+120
+00:06:01,700 --> 00:06:03,799
+c'est vraiment bien
+
+121
+00:06:03,800 --> 00:06:05,055
+ce n'est pas compliqué
+
+122
+00:06:05,056 --> 00:06:08,599
+par exemple, si je clique sur
+ "Ouvrez un nouveau terminal"
+
+123
+00:06:08,600 --> 00:06:10,533
+je dois cliquer par ici et par la
+
+124
+00:06:10,800 --> 00:06:12,033
+voila ce que vous aurez
+
+125
+00:06:12,034 --> 00:06:15,699
+voici à quoi cela se ressemble
+
+126
+00:06:15,700 --> 00:06:18,455
+ce n'est vraiment pas confortable
+
+127
+00:06:18,456 --> 00:06:23,566
+particulièrement, vous ne savez 
+pas ce que vous faites dans tel terminal
+
+128
+00:06:23,567 --> 00:06:26,999
+D'habitude, les gens mettent 
+les terminaux chacun a côté de l'autre
+
+129
+00:06:27,000 --> 00:06:29,299
+j'en ai l'habitude
+
+130
+00:06:29,300 --> 00:06:33,533
+mais nous explorerons tout cela plus bientot
+quand nous serons dans des choses plus avancées
+
+131
+00:06:33,534 --> 00:06:36,766
+quand nous aurons besoin de plusieurs terminaux
+
+132
+00:06:36,767 --> 00:06:38,233
+mais ouvrez un autre onglet dans ce terminal
+
+133
+00:06:39,234 --> 00:06:42,344
+est vraiment bien pour naviguer d'un à l'autre
+
+134
+00:06:42,345 --> 00:06:45,533
+particulièrement, parce que vous avez un visuel 
+bien cadré de ce que vous êtes entrain de faire
+
+135
+00:06:45,534 --> 00:06:47,299
+dans l'un que dans l'autre dans la barre des onglets
+
+136
+00:06:47,300 --> 00:06:49,766
+vous voyez ou je suis entrain de cliquer maintenant
+
+137
+00:06:49,767 --> 00:06:52,344
+en dessous de la barre de menu du terminal
+
+138
+00:06:52,345 --> 00:06:54,688
+et par exemple, dans ce terminal
+
+139
+00:06:54,689 --> 00:06:56,599
+J'avance et je lui dis que
+
+140
+00:06:56,600 --> 00:07:00,299
+"Je veux me rendre a l'accueil. 
+Changer de répertoire à l'accueil"
+
+141
+00:07:00,300 --> 00:07:03,533
+si je le modifie en "var"
+
+142
+00:07:05,534 --> 00:07:07,433
+ou "var/logs"
+
+143
+00:07:09,434 --> 00:07:12,299
+et si je veux me rendre au "dossier tmp"
+
+144
+00:07:12,300 --> 00:07:14,100
+Excellent!
+
+145
+00:07:15,101 --> 00:07:18,233
+Alors dans chacun des onglets suivants
+
+146
+00:07:18,234 --> 00:07:20,599
+je sais ou je suis
+
+147
+00:07:20,600 --> 00:07:22,533
+celui ci, c'est l'Accueil
+
+148
+00:07:22,534 --> 00:07:24,799
+mais celui la, c'est le tmp
+
+149
+00:07:24,800 --> 00:07:27,000
+je n'ai pas besoin de cliquer dessus pour le savoir
+
+150
+00:07:27,001 --> 00:07:29,499
+et nous avons log par ici
+
+151
+00:07:29,500 --> 00:07:32,766
+ainsi, je peux voir clairement ce que je suis
+entrain de faire dans chaque terminal
+
+152
+00:07:32,767 --> 00:07:34,199
+et même si vous avez une application en cours 
+
+153
+00:07:34,200 --> 00:07:35,366
+quelque chose dans le genre
+
+154
+00:07:35,367 --> 00:07:37,966
+il s'affichera toujours dans à l'entête du terminal
+
+155
+00:07:37,967 --> 00:07:39,844
+et vous ne serez jamais en manque d'information
+
+156
+00:07:39,845 --> 00:07:41,722
+c'est vraiment três utile
+
+157
+00:07:41,723 --> 00:07:45,166
+et cela va beaucoup vous aider pendant
+que nous progressons dans ce cours
+
+158
+00:07:45,167 --> 00:07:48,499
+avant que nous arrivons dans des choses plus compliquées
+
+159
+00:07:48,500 --> 00:07:51,866
+de toute façon, j'aimerais vous introduire à un autre terminal
+
+160
+00:07:52,867 --> 00:07:54,966
+Nous avons déjà travaillé dessus auparavant
+
+161
+00:07:54,967 --> 00:07:57,299
+au moment de l'installation de VirtualBox 
+et VirtualBox d'invités additionnels 
+
+162
+00:07:57,300 --> 00:08:01,200
+mais fondamentalement par ici, je vous donne les commandes
+
+163
+00:08:01,201 --> 00:08:04,455
+et vous allez juste refaire les entrées ou encore copier-coller
+
+164
+00:08:04,456 --> 00:08:06,677
+et le tour sera joué
+
+165
+00:08:07,678 --> 00:08:10,599
+Cependant dans le turoriel suivant
+
+166
+00:08:10,600 --> 00:08:14,799
+je vais vous expliquer le but 
+des commandes fondamentaux du terminal de Linux
+
+167
+00:08:14,800 --> 00:08:16,633
+les commandes les plus communs
+
+168
+00:08:16,634 --> 00:08:18,877
+les commandes de bases
+
+169
+00:08:18,878 --> 00:08:21,599
+et vous découvrirez la logique du terminal et les commandes
+
+170
+00:08:22,600 --> 00:08:25,433
+le fonctionnement et les fonctions du terminal de Linux
+
+171
+00:08:25,434 --> 00:08:27,033
+parce que une fois que vous les avez appris 
+
+172
+00:08:27,034 --> 00:08:30,677
+vous aurez une certaine puissance
+
+173
+00:08:30,678 --> 00:08:35,533
+toute la puissance d'un système d'exploitation 
+demeure dans son terminal
+
+174
+00:08:35,534 --> 00:08:38,655
+parce que c'est une liaison direct entre le coeur du système
+
+175
+00:08:38,656 --> 00:08:42,788
+et le terminal est plus rapide que l'interface graphique
+
+176
+00:08:42,789 --> 00:08:45,533
+maintenant, encore une note dominante que je voudrais vous donner
+
+177
+00:08:46,534 --> 00:08:49,233
+Une fois que je vous ai enseigné comment 
+utilisé le terminal de Linux
+
+178
+00:08:50,234 --> 00:08:53,066
+et une fois que vous vous êtes familiarisés 
+avec l'entrée des commandes
+
+179
+00:08:54,067 --> 00:08:57,366
+vous pourrez les utilisez à beaucoup d'autres fins
+
+180
+00:08:57,367 --> 00:09:01,655
+Vous n'êtes pas obligés de les utiliser 
+seulement à des fins de testerur d'intrusion
+
+181
+00:09:01,656 --> 00:09:04,899
+Vous pouvez utiliser ces commandes pour l'administration de réseau
+
+182
+00:09:04,900 --> 00:09:09,055
+ou vous pouvez les utiliser pour résoudre les problèmes du système
+
+183
+00:09:09,056 --> 00:09:11,322
+et ainsi de suite
+
+184
+00:09:11,323 --> 00:09:16,677
+Donc, vous avez une large éventail d'options en termes de travail
+
+185
+00:09:16,678 --> 00:09:18,799
+ou quelque chose dans le genre
+
+186
+00:09:18,800 --> 00:09:22,966
+en dépit de les étudier ou de les utiliser 
+seulement à des fins de testeurs d'intrusion
+
+187
+00:09:22,967 --> 00:09:24,388
+et à rien d'autre.
+
+188
+00:09:24,389 --> 00:09:27,400
+En tout cas, je vous dis au revoir
+
+189
+00:09:27,401 --> 00:09:31,233
+et j'éspère vous voir dans le prochain tutoriel.

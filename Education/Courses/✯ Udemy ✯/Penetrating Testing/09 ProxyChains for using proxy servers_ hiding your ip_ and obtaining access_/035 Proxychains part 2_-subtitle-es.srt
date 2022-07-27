@@ -1,0 +1,608 @@
+1
+00:00:01,000 --> 00:00:06,084
+Hola a todos, bienvenidos a este tutorial, voy a empezar donde lo dej
+
+2
+00:00:06,084 --> 00:00:12,328
+en el anterior. En fin, en el anterior, al final dej una pregunta
+
+3
+00:00:12,328 --> 00:00:16,165
+y debes avanzar con ello antes de empezar a escuchar este tutorial
+
+4
+00:00:16,165 --> 00:00:20,567
+en todo caso, como dije antes, tienes un tipo de proxy aqu
+
+5
+00:00:20,567 --> 00:00:27,355
+y siempre estars usando SOCKS5 y no HTTP por que no son realmente muy seguras
+
+6
+00:00:27,355 --> 00:00:31,589
+y SOCKS5 nos permite usar muchas opciones
+
+7
+00:00:31,589 --> 00:00:35,907
+en fin, esta es la direccin IP del servidor de proxy
+
+8
+00:00:35,907 --> 00:00:38,594
+la cual conectaremos manualmente luego,
+
+9
+00:00:38,594 --> 00:00:43,282
+y aqu se encuentra el nmeor del puerto de entrada que el servidor de proxy est
+
+10
+00:00:43,282 --> 00:00:45,626
+escuchando, el puerto que est abierto
+
+11
+00:00:45,626 --> 00:00:51,896
+y aqu, estas dos palabras. Algunas proxys, especialmente las pagadas
+
+12
+00:00:51,896 --> 00:00:55,713
+siempre tendrs un nombre de usuario y una contrasea, as que
+
+13
+00:00:55,713 --> 00:00:59,358
+simplemente puedes escibirlas aqu en texto plano desafortunadamente pero
+
+14
+00:00:59,358 --> 00:01:04,600
+significa que t y slo t tendrs acceso a esta computadora
+
+15
+00:01:04,600 --> 00:01:09,890
+y adems no cualquiera puede leer este archivo
+
+16
+00:01:09,890 --> 00:01:12,729
+de todas formas. As que si simplemente las escribes aqu
+
+17
+00:01:12,729 --> 00:01:17,214
+tu nombre aqu y tu contrasea aqu, ganars acceso a
+
+18
+00:01:17,214 --> 00:01:21,194
+la proxy que has elegido o por la que has pagado
+
+19
+00:01:21,194 --> 00:01:24,324
+de todas formas estos son simplementes ejemplos
+
+20
+00:01:24,324 --> 00:01:28,599
+no estaremos exactamente usando estas proxys o algo de ese tipo
+
+21
+00:01:28,599 --> 00:01:33,140
+tenemos que ir abajo, y aqu est el final de archivo
+
+22
+00:01:33,140 --> 00:01:38,895
+el cual he presentado un par de veces. Aqu hay una sola proxy activa
+
+23
+00:01:38,895 --> 00:01:42,468
+por el momento, es de SOCKS4 y todo el trfico ha sido localizado aqu
+
+24
+00:01:42,468 --> 00:01:45,885
+as que Tor. Dice establecido por defecto de Tor
+
+25
+00:01:45,885 --> 00:01:52,614
+Tor por defecto escucha este puerto y nuestras conexiones irn ahora por Tor
+
+26
+00:01:52,614 --> 00:02:01,237
+pero por si acaso, quiero que SOCKS5 y escribe la misma direccin exacta de IP
+
+27
+00:02:01,237 --> 00:02:10,089
+que es 127.0.0.1 que es de tu computadora as que ser la comunicacin entre
+
+28
+00:02:10,089 --> 00:02:16,748
+dispositivos. Si pegas esta direccin te ests pegando a t basicamente
+
+29
+00:02:16,748 --> 00:02:20,614
+y usualmente la gente pega esta direccin en orden de asugurarse
+
+30
+00:02:20,614 --> 00:02:23,726
+de que el protocolo de IP se encuentra configuado correctamente
+
+31
+00:02:23,726 --> 00:02:26,356
+incluso si no tienen conectividad  a internet
+
+32
+00:02:26,356 --> 00:02:35,614
+as que copiemos esa direccin 127.0.0.1 en este mismo puerto sin etiquetas
+
+33
+00:02:35,614 --> 00:02:42,794
+9050 aqu vamos, presiona CTRL+O para guardar el archivo, presiona ENTER
+
+34
+00:02:42,794 --> 00:02:50,610
+y por cierto no necesitas agregar NANO para este archivo o cualquier otro editor
+
+35
+00:02:50,610 --> 00:02:57,616
+me gusta usar NANO, es prctico y es muy simple mucho mas que VI
+
+36
+00:02:57,616 --> 00:03:00,228
+incluso no se como usar VI, pues es un poco ms complicado
+
+37
+00:03:00,228 --> 00:03:02,787
+as que por eso prefiero mantenerlo fuera de los tutoriales
+
+38
+00:03:02,787 --> 00:03:08,185
+en fin, guarda el archivo como te expliqu hace un momento
+
+39
+00:03:08,185 --> 00:03:10,744
+no pasar nada si lo presionas todas las veces que quieras
+
+40
+00:03:10,744 --> 00:03:17,883
+no importa y luego presiona X para salir. Aqu vamos, ahora tenemos el archivo
+
+41
+00:03:17,883 --> 00:03:24,853
+guardado, escribe CLEAR para limpiar la pantalla. Trata de trabajar en un ambiente
+
+42
+00:03:24,853 --> 00:03:30,293
+limpio as que gurdalo y ve y escribe SERVICE TOR STATUS
+
+43
+00:03:30,293 --> 00:03:37,644
+v si tor est corriendo y si no est corriendo te da la respuesta. Lo que queremos es
+
+44
+00:03:37,644 --> 00:03:43,028
+que Tor empiece as que escribimos SERVICE TOR START
+
+45
+00:03:43,028 --> 00:03:47,583
+presiona ENTER y aqu vamos, nos indica que el servicio de Tor ha empezado
+
+46
+00:03:47,583 --> 00:03:54,198
+y est abierto y corriendo, as que lo prximo que necesitamos hacer es
+
+47
+00:03:54,198 --> 00:04:01,147
+bbusar las proxy chains en combinacin con nuestro Tor y la conexin a internet
+
+48
+00:04:01,147 --> 00:04:04,051
+en orden poder acceder a la tercera parte
+
+49
+00:04:04,051 --> 00:04:07,619
+en orden de verificar que todo est funcionando apropiadamente
+
+50
+00:04:07,619 --> 00:04:13,391
+mucha gente hace la configuracin y ellos escriben la fuerte de escritura
+
+51
+00:04:13,391 --> 00:04:17,954
+y si, eso es todo, ellos no verifican los ajustes
+
+52
+00:04:18,100 --> 00:04:21,847
+ellos empiezan a escanear y lo que pasa es que obviamente son detectados
+
+53
+00:04:21,847 --> 00:04:26,635
+ellos deberan configurar algo, lo cual es realmente una mala idea
+
+54
+00:04:26,635 --> 00:04:31,355
+lo que quieres es hacer es ir adelante y escribir en proxychains
+
+55
+00:04:31,355 --> 00:04:38,729
+as que proxychains, no quieres navegar internet como Root
+
+56
+00:04:38,729 --> 00:04:42,726
+slo lo vamos a usar para verificar los ajustes de proxychains
+
+57
+00:04:42,726 --> 00:04:49,065
+y vamos a cerrar el navegador web, slo lo har con el propsito
+
+58
+00:04:49,065 --> 00:04:56,325
+y luego usaremos proxychains para diferentes propsitos como escanear por ejemplo
+
+59
+00:04:56,325 --> 00:04:58,689
+luego lo usaremos para root pero para navegador web no es una buena idea
+
+60
+00:04:58,689 --> 00:05:00,089
+por razones de seguridad
+
+61
+00:05:00,089 --> 00:05:08,927
+en fin, tipeamos proxychains en firefox o en cualquier navegador
+
+62
+00:05:08,927 --> 00:05:13,148
+que tengas, creo que Firefox funciona mejor para proxychains
+
+63
+00:05:13,148 --> 00:05:17,977
+es el navegador por defecto en cdigo incluso, yo lo uso para todo, es Firefox
+
+64
+00:05:17,977 --> 00:05:30,912
+podemos tipear el navegador que deseemos visitar, ejemplo www.duckduckgo.com
+
+65
+00:05:30,912 --> 00:05:38,837
+este es uno de los buscadores que tambin te anonimiza as que no graba
+
+66
+00:05:38,837 --> 00:05:42,921
+las direcciones IP, es una gran caracterstica que tiene
+
+67
+00:05:42,921 --> 00:05:46,865
+y definitivamente recomiendo usarlo primeramente porque
+
+68
+00:05:46,865 --> 00:05:50,679
+tendrs una cantidad ilimitada de excelentes caractersticas
+
+69
+00:05:50,679 --> 00:05:57,158
+ms de lo que tienes cuando usas Google o cualquier  buscador popular
+
+70
+00:05:57,158 --> 00:06:02,372
+ya que ellos si graban tu direccin IP y eso puede ser problemtico
+
+71
+00:06:02,372 --> 00:06:07,014
+siempre incluso cuando haces impresin a todo y no quieres ser grabado
+
+72
+00:06:07,014 --> 00:06:11,191
+en ningn lado, en fin, vamos adelante y presionamos ENTER
+
+73
+00:06:11,191 --> 00:06:16,614
+y el navegador web est cargando, se puede ver el tiempo de descarga
+
+74
+00:06:16,614 --> 00:06:21,393
+definitivamente no es muy rpido, es un poco lento pero funciona.
+
+75
+00:06:21,393 --> 00:06:25,345
+vamos de nuevo al terminal de Tor y veamos las extensiones
+
+76
+00:06:25,345 --> 00:06:28,733
+vemos lo que se ha establecido aqu, hay unos problemas
+
+77
+00:06:28,733 --> 00:06:33,232
+se ha deneado algo, pero est bien, vas a encontrar errores
+
+78
+00:06:33,232 --> 00:06:41,829
+aqu especialmente cuando uses custom chains, vers que hay ms mensajes de error
+
+79
+00:06:41,829 --> 00:06:46,946
+que los errores de que est todo bien tal como aqu. Pero crelo o no,
+
+80
+00:06:46,946 --> 00:06:51,951
+la conexin de alguna forma se ha mantenido as como sus funciones
+
+81
+00:06:51,951 --> 00:06:56,759
+en fin, vamos atrs y abrimos el navegador web de nuevo
+
+82
+00:06:56,759 --> 00:07:01,563
+y puedes usar muchos servicios afuera para hacer este tipo de cosas,
+
+83
+00:07:01,563 --> 00:07:11,815
+as que tipea Check for DNS leaks y presiona ENTER
+
+84
+00:07:11,839 --> 00:07:23,920
+wow, esto fu rpido. Ok as que vamos a este y veamos que pasa
+
+85
+00:07:23,920 --> 00:07:34,626
+Hola, esta es mi IP pblica ahora 217.13.197.5 y dice que soy de Alemania
+
+86
+00:07:34,626 --> 00:07:40,095
+y te aseguro que no soy de Alemania, si quieres verificar todo esto, puedes
+
+87
+00:07:44,725 --> 00:07:51,186
+tipear en una nueva ventana Service Tor Stop y luego abrir tu navegador web regular
+
+88
+00:07:51,186 --> 00:07:56,157
+sin el comando de las proxychains, haz el test de nuevo y vers que obtienes una
+
+89
+00:07:56,157 --> 00:08:01,366
+direccin IP completamente diferente la cual ser tu direccin IP real
+
+90
+00:08:01,366 --> 00:08:06,263
+as que en fin, dice Hola, este soy yo de Alemania, voy a
+
+91
+00:08:06,263 --> 00:08:10,962
+hacer un test estndar y no uno extendido, son casi la misma cosa,
+
+92
+00:08:10,962 --> 00:08:14,198
+este hace ms bsqueda pero tendrs la misma informacin ms o menos
+
+93
+00:08:14,198 --> 00:08:18,915
+as que vamos al primer resultado, excelente.
+
+94
+00:08:18,915 --> 00:08:27,096
+as es como luce mi proveedor de IP as que mira, esto es lo que concluye
+
+95
+00:08:27,096 --> 00:08:34,093
+con el DNS. Es comunicacin de nivel 3 y dice Pas: United States
+
+96
+00:08:34,117 --> 00:08:39,586
+no tiene nada de sentido, pero ahora estoy anonimizado
+
+97
+00:08:39,586 --> 00:08:43,453
+no puedo ser detectado lo cual es una cosa muy buena
+
+98
+00:08:43,453 --> 00:08:47,447
+de incluso estarlo. Ahora esta direccin IP cambiar con
+
+99
+00:08:47,447 --> 00:08:55,400
+el tiempo as que vamos adelante, ok recuerdas 217.13.197.5 djame copiarlo
+
+100
+00:08:55,400 --> 00:09:05,992
+y voy a mostrarte que en realidad si cambia. As que voy a copiar esa direccin IP
+
+101
+00:09:05,992 --> 00:09:10,191
+as que lo que voy a hacer es cerrar esta ventana del navegador web
+
+102
+00:09:10,191 --> 00:09:17,920
+y no necesito esto, as que Service Tor Stop
+
+103
+00:09:17,920 --> 00:09:24,526
+lo cerramos y tipeamos Service Tor Start y est empezando, no necesitas
+
+104
+00:09:24,526 --> 00:09:30,363
+hacer esto de parar e iniciar, puedes simplemente tipear Service Tor Restart
+
+105
+00:09:30,363 --> 00:09:35,829
+y har todo el proceso por ti, as que puedes ahorrar mucho tiempo en eso
+
+106
+00:09:35,829 --> 00:09:43,456
+y simplemente vamos a repetir todo, y vamos a copiar Porxy Chains Firefox
+
+107
+00:09:43,456 --> 00:09:47,346
+y voy a solicitar la misma bsqueda de hace un rato igualmente.
+
+108
+00:09:47,346 --> 00:09:53,028
+lo abrir y ahora no te sientas desanimado si no habre de una vez,
+
+109
+00:09:53,028 --> 00:09:57,482
+ya que puede decir que no tienes conectividad o el sitio web no est disponible,
+
+110
+00:09:57,482 --> 00:10:03,221
+o algo de ese tipo, solo trata de tipear el comando "space tor space restart"
+
+111
+00:10:03,221 --> 00:10:10,115
+un par de veces hasta que lo tengas, porque en ocasiones, algunas direcciones IP
+
+112
+00:10:10,115 --> 00:10:14,824
+estn bloqueadas y debes asignar la que no lo est, asi que slo
+
+113
+00:10:14,824 --> 00:10:20,383
+no vengas con conclusiones adelantadas de que: "Est roto! o,  que har?"
+
+114
+00:10:20,407 --> 00:10:23,112
+"!Esto tomar toda la vida para arreglarse! o "Cmo voy a hacer esto?"
+
+115
+00:10:23,112 --> 00:10:28,862
+No, simplemente realizar el restart un par de veces y resolvers el problema
+
+116
+00:10:28,862 --> 00:10:32,052
+porque as te ser asignada una nueva direccin IP.
+
+117
+00:10:32,052 --> 00:10:35,629
+as que ok, vamos simplemente adelante y tipeamos de nuevo
+
+118
+00:10:35,629 --> 00:10:44,247
+"Check for DNS leaks" presionamos ENTER y au vamos, voy a usar el mismo
+
+119
+00:10:44,247 --> 00:10:55,160
+sitio web es "DNS leak" o lo que sea. Excelente, ves ahora que no tendr que compararte
+
+120
+00:10:55,160 --> 00:11:00,459
+las direccioones IP obviamente, son diferentes as que esta es 91.109.247.173
+
+121
+00:11:00,459 --> 00:11:03,232
+as que son direcciones IP completamente diferentes aqu
+
+122
+00:11:03,232 --> 00:11:08,299
+y de un luegar completamente diferente, as que ahora dice que soy de "United Kingdom"
+
+123
+00:11:08,299 --> 00:11:12,956
+aparecentemente en algn lugar de Londres. vamos adelante y usamos un test estndar
+
+124
+00:11:12,956 --> 00:11:19,057
+y vamos  a ver que tipo de resultados tengo aqu, esto puede demorar un rato
+
+125
+00:11:19,057 --> 00:11:26,061
+por eso hago el test estndar porque es ms rpido pero ves que el ltimo fue ms rpido
+
+126
+00:11:26,061 --> 00:11:29,963
+este es un poco ms lento, depende de la distincin, supongo
+
+127
+00:11:29,963 --> 00:11:33,363
+que en Alemania estoy ms cerca que desde el Reino Unido, no lo s
+
+128
+00:11:33,363 --> 00:11:37,157
+las respuestas dependen en la rapidz del servidor tambin.
+
+129
+00:11:37,157 --> 00:11:42,995
+en fin, puedes ver mis resultados de DNS aqu es nivel de comunicacin 3 de nuevo,
+
+130
+00:11:42,995 --> 00:11:50,154
+no ha cambiado nada de los Estados Unidos y si, estoy completamente anonimizado con esto
+
+131
+00:11:50,154 --> 00:11:56,117
+y prcticamente no soy detectable por nada. Slo para darte un ejemplo,
+
+132
+00:11:56,117 --> 00:12:02,726
+si por ejemplo quieres usar proxy chains con nmap
+
+133
+00:12:02,726 --> 00:12:06,991
+no va a ser un problema. Ahora te mostrar esto cuando lleguemos a la seccin de los mapas
+
+134
+00:12:06,991 --> 00:12:13,950
+pero antes de hacerlo, vemos que hay unos reboots afuera aqu, lo cual esta totalmente funcionando
+
+135
+00:12:13,950 --> 00:12:17,855
+hay ciertos cortos comandos que deben ser contactados, puedes ver
+
+136
+00:12:17,855 --> 00:12:21,954
+prcticamente todo lo que est sucediendo sin problemas
+
+137
+00:12:21,954 --> 00:12:25,255
+no es una mala idea en ocasiones pasar a ver este tipo de informaciones
+
+138
+00:12:25,255 --> 00:12:30,254
+espacialmente si no tienes conectividad o si quisieras entender mejor
+
+139
+00:12:30,254 --> 00:12:36,857
+exactamente a donde est yendo tu trfico, dnde se est enviando y como est hilando
+
+140
+00:12:36,857 --> 00:12:46,620
+en fin, vamos adelante y limpiamos la pantalla y usamos por ejemplo proxychains nmap
+
+141
+00:12:46,620 --> 00:12:52,722
+y esto es todo lo que necesitars hacer en orden para enviar todo el trfico de nmap a trves
+
+142
+00:12:52,722 --> 00:12:57,689
+de proxychains, esto es prcticamente verdadero en casi toda aplicacin
+
+143
+00:12:57,689 --> 00:13:11,299
+as que slo tipear "nmap(alguna direccin IP) IP (un nmero de puerto) P y algunos argumentos
+
+144
+00:13:11,299 --> 00:13:14,799
+tambin para ir slo con ella. Pero en vez de tipearlo de esa forma,
+
+145
+00:13:14,799 --> 00:13:22,827
+puedes usar "Proxychains" y escndete y cmo regularmente tipeas en tu navegador web?
+
+146
+00:13:22,827 --> 00:13:29,691
+normalmente tipeas Firefox, presionas ENTER y obviamente nos abrir una pgina web de Forefox
+
+147
+00:13:31,972 --> 00:13:38,046
+as que, para cualquier aplicacin que puedes empezar desde tu terminal, solo presiona proxychains
+
+148
+00:13:38,046 --> 00:13:44,064
+en frente de sta y toda esa informacin generada por esa aplicacin ser rooteada a travs
+
+149
+00:13:44,064 --> 00:13:52,962
+de las proxychains, ahora tendr un acuse preestablecido de proxys o puede usar Tor para
+
+150
+00:13:52,962 --> 00:14:00,428
+ver como lo has configurado. Habr una tercera parte de esto, te ensear como importar
+
+151
+00:14:00,452 --> 00:14:07,884
+las custom chains de proxys y como puedes usar esas proxys y esas cosas en la red
+
+152
+00:14:07,884 --> 00:14:15,507
+o cmo esconder la actividad detrs de ellas. En todo caso, gracias por ver esto.
+

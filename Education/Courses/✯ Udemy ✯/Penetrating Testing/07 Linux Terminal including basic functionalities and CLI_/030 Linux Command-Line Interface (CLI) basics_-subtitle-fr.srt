@@ -1,0 +1,543 @@
+1
+00:00:00,000 --> 00:00:07,499 A:middle
+Bonjour à tous et bienvenue dans ce tutoriel
+Aujourd'hui nous allons traiter quelques commandes de bases
+
+2
+00:00:07,500 --> 00:00:12,766
+que vous en aurez besoin pour suivre ce cours correctement 
+Il existe quatres commandes de base
+
+3
+00:00:12,767 --> 00:00:20,199
+elles seront utilisés pour naviguer entre les fichiers du système
+dans le terminal
+
+4
+00:00:20,200 --> 00:00:25,366
+Copier des fichiers, déplacer des fichiers, défiler des informations
+et les dossiers
+
+5
+00:00:25,367 --> 00:00:30,966
+Voir les contenus, les supprimer, modifier le type de propriété des fichiers ou les caractéristiques des fichiers
+
+6
+00:00:30,967 --> 00:00:35,832
+Rapidement vous verrez de quoi il en est question. 
+En premier nous avons"cd" qui signifie changer de répertoire
+
+7
+00:00:35,833 --> 00:00:42,732
+Appuyez sur cd/home, automatiquement je vais me 
+rendre dans mon répertoire d'Accueil. Alors "cd" signifie
+
+8
+00:00:42,733 --> 00:00:46,166
+changer de répertoire. Comme je l'ai dit auparavant.
+
+9
+00:00:48,167 --> 00:00:57,499
+Si vous tapez "cd.." vous reviendriez la ou vous étiez.
+".." vous emmene au stade précédent
+
+10
+00:00:59,500 --> 00:01:05,866
+C'est un raccourci que vous utiliserez assez souvent.
+Sans plus tarder, nous avons "ls". "Ls" vous affiche
+
+11
+00:01:05,867 --> 00:01:15,966
+la liste du contenu du répertoire dans lequel vous vous situez.
+Vous pouvez aussi utiliser, par exemple, "ls/home/"
+
+12
+00:01:17,967 --> 00:01:26,299
+et vous aurez la liste du dossier dans lequel vous vous trouvez.
+contrairement de taper "ls" seulement
+
+13
+00:01:27,300 --> 00:01:27,032
+il vous donnera les contenus du dossier en question.
+
+14
+00:01:30,033 --> 00:01:38,632
+Poursuivons avec la commande "ls-l" qui affichera des informations détaillées comme le titulaire du répertoire
+
+15
+00:01:38,633 --> 00:01:47,566
+la taille, la date, le type, 
+et les autorisations et ainsi de suite
+
+16
+00:01:47,567 --> 00:01:58,999
+Toutefois, nous allons utiliser "ls-la" dans toutes les commandes de "ls" pour afficher les fichiers qui sont masquées
+
+17
+00:01:59,000 --> 00:02:04,832
+vous devez savoir que je n'utiliserai pas "ll" comme dans Fedora, cela devient "- ll".vous voyez commande pas applicable
+
+18
+00:02:05,833 --> 00:02:09,700
+je pense que je peux l'installer
+mais cela n'a pas d'importance pour le moment
+
+19
+00:02:10,701 --> 00:02:14,266
+il fonctionne comme "ls", c'est plus rapide de le taper.
+
+20
+00:02:14,267 --> 00:02:22,433
+maintenant j'avance et je vais nettoyer l'écran.
+la commande qui suit est "pwd" qui affiche les répertoires en fonctions
+
+21
+00:02:22,434 --> 00:02:30,066
+certains d'entre vous peuvent être confus, mais / dans tous les systèmes de Linux se réfèrent simplement à la racine
+
+22
+00:02:32,067 --> 00:02:40,799
+au répertoire du système, la racine du système ou tous les fichiers du systémes sont localisés.
+
+23
+00:02:40,800 --> 00:02:47,966
+la ou tout a commencé. je vais nettoyer l'écran. Je vais me rendre dans le répertoire d'Accueil
+
+24
+00:02:48,967 --> 00:02:53,699
+et je vais utiliser "pwd". Vous verrez que je suis dans l'accueil en ce moment, en gros l'affichage du répertoire 
+
+25
+00:02:53,700 --> 00:02:59,966
+comme son nom l'indique, la commande affiche le répertoire actuel.
+
+26
+00:03:00,967 --> 00:03:07,699
+On continue  "cp" que nous avons déjà utiliser 
+pour copier les invités additionnel de VirtualBox
+
+27
+00:03:08,700 --> 00:03:18,366
+Changement d'un endroit à un autre. C'est très simple.
+Vous devez taper "cp /path" -- Faisons un essai
+
+28
+00:03:19,367 --> 00:03:28,399
+Par exemple, Si je fais "cp VboxLinuxAdditions.run" 
+
+29
+00:03:30,400 --> 00:03:35,766
+et si je veux le copier vers quelque part d'autre, disons que 
+j'aimerais le copier dans "/var/"
+
+30
+00:03:35,767 --> 00:03:40,866
+je vais certainement l'effacer, 
+mais je vais vous montrer comment le faire de façon très simple
+
+31
+00:03:44,867 --> 00:03:54,699
+Donc "cp" "VBox", vous devez préciser ce que vous voulez copier
+et la destination du fichier en question. Gardez a l'esprit que
+
+32
+00:03:56,700 --> 00:04:05,766
+vous venez de taper un dossier, un accès complet au chemin au 
+VirtualBoxguestadditions.run.
+
+33
+00:04:05,767 --> 00:04:10,255
+Vous n'êtes pas obligés d'être dans le répertoire d'Accueil.
+la commande "-v" nous donne ce résultat
+
+34
+00:04:11,256 --> 00:04:17,999
+Cela nous indique l'endroit ou l'élément a été copié.
+Trés bonne options. Laissez moi vous montrer
+
+35
+00:04:18,000 --> 00:04:24,566
+ce qui serait passé si nous on avait pas cette option. Vous voyez, 
+vous ne voyez rien. Aucune indication, ou n'affiche rien
+
+36
+00:04:25,567 --> 00:04:29,832
+Alors, c'est très simple. 
+Quand vous avez un fichier de petite taille et
+
+37
+00:04:29,833 --> 00:04:35,299
+vous n'avez pas à vous en faire, 
+contrairement si vous en avez, disons un fichier de 20Gb 
+
+38
+00:04:36,300 --> 00:04:40,699
+et vous aurez un écran noir en dessous 
+comme si rien ne c'était passé
+
+39
+00:04:41,700 --> 00:04:48,099
+vous ne seriez pas en mesure de vérifier l'état 
+du transfert du fichier ou si elle sera copier ou pas
+
+40
+00:04:49,100 --> 00:04:56,032
+s'il a été écrasé, planté ou quelque chose dans le genre. 
+Servez vous de l'option "-v" qui est utile.
+
+41
+00:04:56,033 --> 00:05:02,722
+pour vérifier un transfert, parce que l'ordinateur 
+vous affiche tout ce qui se passe. Maintenant 
+
+42
+00:05:02,723 --> 00:05:07,599
+vous devez savoir que chacun de ces commandes 
+possèdent leurs propres arguments, dans lesquelles
+
+43
+00:05:07,600 --> 00:05:12,766
+vous pourrez vous en servir pour modifier 
+ou appliquer des changements. Vous pourrez voir une liste de
+
+44
+00:05:12,767 --> 00:05:17,377
+ces arguments Vous n'êtes pas obligés 
+de tout mémoriser, par exemple avec "cp --help"
+
+45
+00:05:17,378 --> 00:05:24,166
+ C'est une façon principale de 
+ trouver de l'aide dans le terminal.
+
+46
+00:05:25,167 --> 00:05:30,166
+Tapez la commande, espace, ajoutez "--help",
+appuyez sur "entrée" et vous aurez une liste des possibilités
+
+47
+00:05:32,167 --> 00:05:36,199
+je sais que cela s'affiche en vrac et difficile a voir,
+cependant vous n'êtes pas obligés de
+
+48
+00:05:36,200 --> 00:05:41,799
+vous éternisez sur toutes ces informations. 
+Défilez en haut pour les infos. Vous pouvez voir
+
+49
+00:05:42,800 --> 00:05:46,833
+toutes les arguments. Ils sont affichés correctement,
+bien détaillés, avec des explications
+
+50
+00:05:47,834 --> 00:05:54,199
+de ce que peut faire cette commande. Pour le moment, 
+vous ne serez pas en mesure de tout mémoriser
+
+51
+00:05:55,200 --> 00:06:01,599
+au fur et à mesure par la pratique, 
+vous finirez par tout savoir 
+
+52
+00:06:03,600 --> 00:06:08,688
+vous vous rappelerez de plus en plus 
+sans aucune difficulté
+
+53
+00:06:09,687 --> 00:06:16,933
+Normalement, ce sera une collecte d'information 
+à chaque session. De toute façon, regarez en haut
+
+54
+00:06:18,934 --> 00:06:24,666
+dans le menu, vous avez usage. Ce terme, vous donne
+le caractéristique ou le sens d'une commande
+
+55
+00:06:26,667 --> 00:06:31,166
+alors avec l'options "cp", vous précisez 
+la source et la destination du transfert. Très simple
+
+56
+00:06:32,167 --> 00:06:37,266
+il n'y a pas de problème. C'est valable pour tous les
+ autres commandes vous pouvez utiliser le menu d'Aide
+
+57
+00:06:38,267 --> 00:06:46,566
+Cependant, en plus de ce menu, vous avez aussi
+ "man pages" alors si je tape "man"
+
+58
+00:06:47,567 --> 00:06:57,699
+et je vais utiliser la commande "pwd". "man pages" 
+en combinaison avec "pwd" me donnent un tas d'informations
+
+59
+00:06:58,700 --> 00:07:04,766
+vous pouvez le remarquer, vous avez le nom. 
+"synopsis", mais pratiquement le sens de la commande
+
+60
+00:07:04,767 --> 00:07:08,066
+et aussi une description complète 
+de l'utilité la commande, une description complète
+
+61
+00:07:09,067 --> 00:07:16,399
+des arguments, vous pouvez même avoir le nom de l'auteur
+qui l'a écrit, quelques notes, le droit d'auteur
+
+62
+00:07:17,400 --> 00:07:25,366
+et des références rélatives à cette commande. 
+Vous accédez à une courte page de man parce que "pwd"
+
+63
+00:07:25,367 --> 00:07:37,766
+est une commande de base très courte. Par exemple,
+Si je tape, "man grep" vous pouvez remarquer que
+
+64
+00:07:38,767 --> 00:07:46,966
+man page a des informations encore plus detaillées. 
+Je vais défiler la page et vous verrez. 
+
+65
+00:07:47,967 --> 00:07:51,799
+"Grep" est une commande multitache que je vais 
+vous montrer tout de suite. Mais je dois vous montrer
+
+66
+00:07:51,800 --> 00:07:55,299
+la différence entre une commande 
+de base et une commande plus complexe
+
+67
+00:07:55,300 --> 00:08:06,466
+je vais nettoyer l'écran. Nous avons "mv" 
+Ca nous permet de déplacer un dossier.
+
+68
+00:08:07,467 --> 00:08:13,199
+vous pouvez aussi renommer un dossier, 
+ou un fichier avec cela. Rendons nous dans "var"
+
+69
+00:08:13,200 --> 00:08:24,088
+ou j'ai copié le fichier. Excellent!
+Si je tape, "mv VBoxLinuxAdditions". Je peux 
+
+70
+00:08:25,089 --> 00:08:32,166
+le déplacer dans un autre dossier, sous un nom 
+différent ou je peux le renommer dans le dossier actuel 
+
+71
+00:08:33,167 --> 00:08:52,533
+Si je tape "RandomIsNotSoRandom." 
+Je vais le renommer alors "run" vous pouvez
+
+72
+00:08:53,534 --> 00:08:58,466
+ajouter l'extension qui vous convient. Mais
+ils ne remplissent pas la même fonction. Je veux vous montrer
+
+73
+00:08:58,467 --> 00:09:05,699
+la façon de renommer un fichier. Appliquons "ls"
+encore une fois, vous remarquez que VBoxLinuxAdditions.run
+
+74
+00:09:05,700 --> 00:09:15,199
+a été renommé avec succès. Alors "RandomIsNotRandom.run"
+Je peux aussi le déplacer "RandomIsNorSoRandom"
+
+75
+00:09:17,200 --> 00:09:22,299
+dans mon répertoire d'Accueil. Si je fais "ls" et spécifies
+ la destination vers l'Accueil et Appuyez sur "Entrée" 
+
+76
+00:09:23,300 --> 00:09:28,466
+Vous pouvez remarquer dans le répertoire d'Accueil.
+contrairement à la commande copier, il ne garde pas
+
+77
+00:09:29,467 --> 00:09:39,233
+le fichier original de nulle part ou de n'importe ou.
+Une fois que vous le déplacez, il ne serait plus 
+
+78
+00:09:40,234 --> 00:09:47,566
+dans le dossier actuel tout en apparaissant 
+dans le dossier destiné. 
+
+79
+00:09:48,567 --> 00:09:52,466
+autre astuce: quand vous supprimer avec la commande
+ "move", quand vous le déplacez à un autre endroit,
+
+80
+00:09:53,467 --> 00:10:00,366
+il est très difficile de le récupérer, si ce n'est impossible.
+Il faut être très prudent quand vous supprimer des fichiers
+
+81
+00:10:01,367 --> 00:10:07,099
+Dans Linux. Une fois que vous les supprimez depuis votre terminal, vous ne serez plus en mesure de les récupérer 
+
+82
+00:10:08,100 --> 00:10:17,155
+il existe quelques procedures complexes qui pourraient vous donner des fractions de ce que vous voulez récupérer 
+
+83
+00:10:18,156 --> 00:10:22,499
+ Mais si vous le supprimez depuis le terminal. 
+C'est très très difficile. Différent de Windows
+
+84
+00:10:23,500 --> 00:10:28,499
+que vous pourrez toujours récupérer quelque chose
+si vous le supprimez. C'est comme si 
+
+85
+00:10:28,500 --> 00:10:34,599
+pratiquement vous ne l'avez pas effacez mais vous arretez de le voir. Mais par ici, quand vous effacez quelque chose
+
+86
+00:10:34,600 --> 00:10:41,199
+c'est parti à jamais. Alors faites très attention mais
+n'ayez pas peur. Je veux dire
+
+87
+00:10:42,200 --> 00:10:57,699
+au fur et à mesure et avec le temps, ces choses vous seront
+familier. Vous les prendrez en considération 
+
+88
+00:10:58,700 --> 00:11:00,099
+Je vais nettoyer l'écran. Poursuivons avec "cat"
+
+89
+00:11:00,100 --> 00:11:02,566
+Revenons au répertoire d'Accueil.
+
+90
+00:11:03,567 --> 00:11:13,199
+Tapez "cat" "RandomIsNotSoRandom.run" 
+Appuyez sur "Entrée" Voyons ce que fait "cat"
+
+91
+00:11:14,200 --> 00:11:25,299
+Il vous donne une liste de ce long fichier--
+tout le contenu de ce fichier, tout ce qu'il en est
+
+92
+00:11:26,300 --> 00:11:33,299
+Ce n'est pas intéressant à voir, vous 
+ne pourrez pas le lire mais ce n'est pas important.
+
+93
+00:11:34,300 --> 00:11:44,799
+Créons un nouveau fichier. Alors, nano est mon éditeur
+de texte favoris dans le teminal. Vous devez apprendre
+
+94
+00:11:45,800 --> 00:11:53,499
+ comment utiliser les editeurs de texte dans le terminal
+  parce que vous ne voulez pas revenir au graphique
+
+95
+00:11:54,500 --> 00:11:58,999
+c'est une perte de temps de revenir à l'interface graphique pendant vous travailler dans le terminal
+
+96
+00:11:59,000 --> 00:12:05,232
+Dans Linux, vous pouvez éditer des fichiers 
+en tant que "root". Cependant, si vous utiliser
+
+97
+00:12:05,233 --> 00:12:11,932
+d'autre distribution ,le plus souvent les éditeurs 
+de texte des interfaces graphiques ne seront pas en mesure
+
+98
+00:12:11,933 --> 00:12:15,032
+de fontionner en tant que "root". Vous aurez un message
+ d'erreur. Ce qui peu pourrait causer des problèmes
+
+99
+00:12:15,033 --> 00:12:22,599
+ C'est la raison pour laquelle vous devez apprendre
+ comment utiliser les éditeurs de texte du terminal 
+
+100
+00:12:23,600 --> 00:12:27,566
+Tapez "nano" et le nom du fichier 
+que vous voulez créer. Par exemple,
+
+101
+00:12:28,567 --> 00:12:31,744
+je vais taper "test". Ce serait un essai
+
+102
+00:12:31,745 --> 00:12:38,099
+vous n'avez pas besoin de lui donner un extension 
+ou quoi que ce soit. Et c'est parti, voici nano
+
+103
+00:12:39,100 --> 00:12:57,488
+vous pouvez taper n'importe quoi, "quelque texte 
+comme vous voulez" Vous avez beaucoup d'options
+
+104
+00:12:58,489 --> 00:13:08,999
+Ce signe "^X" signifie Control + X. Pour quitter
+nano, il suffit d'appuyer sur Ctrl + X
+
+105
+00:13:10,000 --> 00:13:16,166
+Control + O, permet d'enregistrer le fichier.
+Vous n'en avez pas besoin de ceci, "where is" c'est
+
+106
+00:13:17,167 --> 00:13:25,300
+pour les recherches. Appuyez sur Control + V. Voyons 
+ce que ca va donner pour "comme" , appuyez sur Entrée
+
+107
+00:13:26,301 --> 00:13:29,766
+et voila. Vous voyez l'indicateur a l'avant de "comme".
+il l'a trouvé. Alors ca y est. Retour a la page précédente
+
+108
+00:13:31,767 --> 00:13:36,966
+poursuivons avec l'options suivante. 
+"Cut text" est une superbe options
+
+109
+00:13:37,967 --> 00:13:46,099
+il permet de couper la ligne de texte
+
+110
+00:13:46,100 --> 00:13:51,399
+donc Ctrl + K vous permettra de couper
+ une quantité de texte de la ou se trouve le curseur
+
+111
+00:13:51,400 --> 00:13:55,099
+ce que vous selectionnez avec la souris 
+y restera. Laissez moi rapliquer
+
+112
+00:13:57,100 --> 00:14:01,644
+Je vais continuer avec ces options dans la 
+deuxième partie, dans le prochain tutoriel.
+
+113
+00:14:01,645 --> 00:14:04,866
+Sur ce, je vous dis au revoir.
+

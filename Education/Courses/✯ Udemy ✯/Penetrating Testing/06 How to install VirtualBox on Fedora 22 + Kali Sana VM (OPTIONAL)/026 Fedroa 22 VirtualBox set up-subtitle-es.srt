@@ -1,0 +1,1244 @@
+1
+00:00:00,750 --> 00:00:02,740
+Les doy la bienvenida a todos a este tutorial
+
+2
+00:00:03,180 --> 00:00:10,340
+Hoy les ensear como configurar VirtualBox con Fedora 22
+
+3
+00:00:10,830 --> 00:00:13,350
+Y cmo pueden instalarle a este el nuevo Kali Sana
+
+4
+00:00:15,500 --> 00:00:16,360
+Antes de comenzar
+
+5
+00:00:16,740 --> 00:00:18,710
+Hay algunas cosas que me gustara revisar junto con ustedes
+
+6
+00:00:18,710 --> 00:00:22,460
+Primero que todo, me gustara disculparme sinceramente por la tardanza
+
+7
+00:00:23,160 --> 00:00:26,200
+He re-instalado mi sistema principal
+
+8
+00:00:26,280 --> 00:00:28,520
+Y le he colocado Fedora 22
+
+9
+00:00:28,910 --> 00:00:33,320
+En este momento tengo Fedora 22 instalado en l
+
+10
+00:00:33,320 --> 00:00:36,610
+Y durante la instalacin, me he encontrado...
+
+11
+00:00:36,610 --> 00:00:38,440
+Bueno, antes y durante la instalacin...
+
+12
+00:00:38,440 --> 00:00:41,110
+Me he encontrado algunos problemas que he tenido que resolver
+
+13
+00:00:41,110 --> 00:00:42,630
+As que lo dir de esta forma
+
+14
+00:00:42,630 --> 00:00:45,240
+Empec a trabajar en un da a las 10AM
+
+15
+00:00:45,240 --> 00:00:49,580
+Y termin trabajando hasta las 6AM del da siguiente
+
+16
+00:00:49,580 --> 00:00:52,550
+Y ni siquiera percib el tiempo pasar
+
+17
+00:00:52,570 --> 00:00:54,270
+No tuve--- no te asustes
+
+18
+00:00:54,270 --> 00:00:56,830
+No tuve muchos problemas con VirtualBox
+
+19
+00:00:56,830 --> 00:01:00,210
+De hecho, con Virtualbox pues s tuve algunos inconvenientes
+
+20
+00:01:00,410 --> 00:01:01,550
+Pero fue relativamente sencillo
+
+21
+00:01:01,550 --> 00:01:03,870
+En comparacin con muchas otras cosas
+
+22
+00:01:03,870 --> 00:01:07,980
+Como mi sonido, que simplemente no quiso funcionar
+
+23
+00:01:08,550 --> 00:01:12,180
+Inicialmente pens que no funcionaba bien con Fedora
+
+24
+00:01:12,180 --> 00:01:14,790
+Luego pens que no funcionaba bien con KDE
+
+25
+00:01:14,790 --> 00:01:18,210
+As que instal Gnome, y todo lo dems
+
+26
+00:01:19,740 --> 00:01:22,520
+Entonces trabaj con Gnome, con el entorno de escritorio (desktop environment)
+
+27
+00:01:22,520 --> 00:01:23,970
+Luego volv a usar KDE
+
+28
+00:01:24,830 --> 00:01:27,800
+Simplemente fue una experiencia dolorosa en general
+
+29
+00:01:27,800 --> 00:01:34,470
+Hasta que me di cuenta de que el reproductor VLC tena problemas con Fedora 22
+
+30
+00:01:34,470 --> 00:01:35,660
+Poda reproducir cualquier cosa en l
+
+31
+00:01:35,930 --> 00:01:37,520
+Funcionaba correctamente
+
+32
+00:01:37,520 --> 00:01:40,820
+Pero no poda grabar sonidos con l por alguna extraa razn
+
+33
+00:01:40,820 --> 00:01:42,270
+No lo s
+
+34
+00:01:42,980 --> 00:01:46,340
+As que decid utilizar otro grabador de pantalla
+
+35
+00:01:46,420 --> 00:01:48,100
+Y ahora est funcionando
+
+36
+00:01:48,310 --> 00:01:50,140
+Ahora, de hecho, puedo empezar a grabar
+
+37
+00:01:50,430 --> 00:01:55,240
+De hecho, esto sucedi en la maana de ese da en el que me qued dormido a las 6AM
+
+38
+00:01:55,240 --> 00:01:58,970
+As que empec a trabajar nuevamente alrededor de las 10 u 11
+
+39
+00:01:59,210 --> 00:02:02,670
+Esto bsicamente fue el segundo da, casi seguido
+
+40
+00:02:04,380 --> 00:02:05,410
+Fue una experiencia un poco chistosa
+
+41
+00:02:05,410 --> 00:02:08,410
+Solo quera compartirla con ustedes antes de comenzar
+
+42
+00:02:08,410 --> 00:02:10,120
+Primero que todo
+
+43
+00:02:10,120 --> 00:02:13,100
+Lo que necesitas hacer es abrir una terminal
+
+44
+00:02:13,640 --> 00:02:18,600
+Instal y configur la apariencia de Fedora 22 de acuerdo a mi gusto
+
+45
+00:02:18,600 --> 00:02:21,250
+As que an est un poco desarreglado
+
+46
+00:02:22,510 --> 00:02:24,310
+Muy bien, usemos ste
+
+47
+00:02:24,690 --> 00:02:28,800
+clear (despejar)... exit (salir)... clear
+
+48
+00:02:28,800 --> 00:02:31,870
+En fin, lo primero que necesitars hacer es...
+
+49
+00:02:31,970 --> 00:02:34,120
+Necesitars volverte root (super usuario)
+
+50
+00:02:34,650 --> 00:02:37,910
+Para volverte root debes escribir su
+
+51
+00:02:38,140 --> 00:02:39,420
+Presiona ENTER
+
+52
+00:02:39,420 --> 00:02:41,890
+Y luego introduce la contrasea...
+
+53
+00:02:43,320 --> 00:02:45,740
+...Cmo era la contrasea de mi computadora?
+
+54
+00:02:45,740 --> 00:02:47,690
+Me gusta re-instalar cosas tarde en la noche...
+
+55
+00:02:47,690 --> 00:02:50,470
+e introducir las contraseas. Puede ser una experiencia interesante
+
+56
+00:02:50,680 --> 00:02:52,350
+Te lo garantizo
+
+57
+00:02:54,790 --> 00:02:56,240
+...sta?
+
+58
+00:02:56,550 --> 00:02:57,550
+No
+
+59
+00:02:58,410 --> 00:03:00,440
+Muy bien, intentemos con esta otra
+
+60
+00:03:03,970 --> 00:03:05,990
+S! Es esa.
+
+61
+00:03:05,990 --> 00:03:12,890
+OK, leccin aprendida. No cambies tus contraseas a las 3AM
+
+62
+00:03:13,490 --> 00:03:17,660
+...antes de ir a dormir. Es una mala idea en general
+
+63
+00:03:18,780 --> 00:03:21,670
+En fin, escribamos cd...  clear
+
+64
+00:03:22,330 --> 00:03:25,540
+Y ahora lo que debes hacer es ejecutar...
+
+65
+00:03:25,540 --> 00:03:28,450
+Lo primero que debes hacer es colocar dnf... update (actualizacin)
+
+66
+00:03:28,450 --> 00:03:30,240
+Dense cuenta de que antes solamos usar yum
+
+67
+00:03:30,240 --> 00:03:31,440
+Ahora solo usamos dnf
+
+68
+00:03:31,440 --> 00:03:35,520
+Eso es literalmente la nica diferencia que te ser relevante
+
+69
+00:03:35,520 --> 00:03:37,740
+Muy bien, ya he hecho mis actualizaciones
+
+70
+00:03:37,740 --> 00:03:42,510
+No hay necesidad de explicar el proceso... Dur bastante tiempo
+
+71
+00:03:42,510 --> 00:03:44,690
+Lo siguiente que quiero que hagas es---
+
+72
+00:03:44,690 --> 00:03:46,470
+Pues, no es un paso obligatorio
+
+73
+00:03:46,470 --> 00:03:50,770
+Hay un explorador web incrustado a KDE, se llama Konqueror
+
+74
+00:03:50,770 --> 00:03:53,660
+Puede que hayas instalado la versin de Gnome de Fedora 22
+
+75
+00:03:53,660 --> 00:03:58,740
+Que tambin est bien, es completamente irrelevante usar el que quieras
+
+76
+00:03:58,740 --> 00:04:01,220
+Simplemente es un entorno de escritorio distinto
+
+77
+00:04:01,220 --> 00:04:04,140
+Solo se trata de eso
+
+78
+00:04:04,140 --> 00:04:07,320
+Como dije antes, hago este tutorial principalmente para quienes...
+
+79
+00:04:07,320 --> 00:04:13,250
+...han instalado Fedora 22 y han tenido problemas con VirtualBox
+
+80
+00:04:13,250 --> 00:04:16,360
+ste es el explorador Konqueror, puedes usarlo
+
+81
+00:04:16,360 --> 00:04:17,990
+Pero yo prefiero usar Firefox
+
+82
+00:04:17,990 --> 00:04:24,280
+Solo escribir dnf... instalar... firefox
+
+83
+00:04:25,540 --> 00:04:28,200
+OK, dice nada que hacer, tarea completa... etc.
+
+84
+00:04:28,200 --> 00:04:31,260
+Ya he llevado a cabo la instalacin de Firefox
+
+85
+00:04:31,260 --> 00:04:34,110
+Ahora puedo iniciarlo
+
+86
+00:04:36,690 --> 00:04:40,130
+Aqu vamos. Ahora estamos...
+
+87
+00:04:40,460 --> 00:04:42,370
+Estamos conectados al internet
+
+88
+00:04:42,370 --> 00:04:44,250
+Pero procedamos a verificar eso
+
+89
+00:04:44,610 --> 00:04:46,440
+Solo para estar seguros
+
+90
+00:04:48,770 --> 00:04:50,220
+Google.com....
+
+91
+00:04:50,580 --> 00:04:54,130
+El hecho de que tu sitio web predeterminado o que tu pgina de inicio...
+
+92
+00:04:54,390 --> 00:04:57,320
+...se abran en un explorador no es prueba de que ests conectado al internet, por cierto
+
+93
+00:04:57,320 --> 00:05:01,160
+Ya que simplemente podran haber sido almacenados en la memoria
+
+94
+00:05:01,950 --> 00:05:05,490
+Por lo que debes usar la instruccin Ping para recibir una respuesta
+
+95
+00:05:05,490 --> 00:05:08,190
+Una vez hayas recibido una respuesta sabrs que ests conectado
+
+96
+00:05:08,190 --> 00:05:10,240
+Porque los paquetes de datos estn viajando haca quin-sabe-dnde
+
+97
+00:05:10,240 --> 00:05:12,130
+Y luego vuelven a ti
+
+98
+00:05:12,630 --> 00:05:16,560
+OK, procedamos a configurar RPM Fusion
+
+99
+00:05:16,560 --> 00:05:19,360
+As que solo escribe RPM Fusion
+
+100
+00:05:21,940 --> 00:05:25,220
+Ve a su sitio web que es el primero que aparece
+
+101
+00:05:25,490 --> 00:05:27,670
+Rpmfusion.org
+
+102
+00:05:28,230 --> 00:05:31,660
+Y en el sitio principal puedes... literalmente lo tienes aqu, dice
+
+103
+00:05:31,660 --> 00:05:34,600
+Habilitar RPM Fusion en tu sistema
+
+104
+00:05:36,300 --> 00:05:38,600
+RPM Fusion gratis para Fedora 22
+
+105
+00:05:38,600 --> 00:05:43,390
+Simplemente selecciona guardar archivo y luego OK para descargar
+
+106
+00:05:43,640 --> 00:05:47,670
+Luego ve hacia RPM Fusion no gratuito para fedora 22
+
+107
+00:05:47,670 --> 00:05:50,870
+Hazle click, y selecciona guardar archivo y luego OK para descargar
+
+108
+00:05:51,970 --> 00:05:53,380
+No voy a pasar por las descargas en este momento
+
+109
+00:05:53,380 --> 00:05:55,800
+Ya que los he descargado previamente
+
+110
+00:05:56,060 --> 00:05:57,750
+Estarn en tu carpeta de descargas
+
+111
+00:05:57,750 --> 00:05:59,940
+Entonces introducimos cd, home, chronic
+
+112
+00:05:59,940 --> 00:06:04,270
+Estar en la carpeta de descargas de usuario actual
+
+113
+00:06:04,970 --> 00:06:06,500
+Y yo las tengo aqu
+
+114
+00:06:06,500 --> 00:06:09,360
+Como pueden ver tambin he descargado Kali Linux
+
+115
+00:06:09,800 --> 00:06:13,660
+As que no necesitamos hacer el proceso de descarga aqu
+
+116
+00:06:13,860 --> 00:06:17,470
+Y todo lo que realmente debes hacer es escribir rpm espacio i
+
+117
+00:06:17,470 --> 00:06:21,220
+Y luego escribe nuevamente rpmfusion
+
+118
+00:06:21,550 --> 00:06:24,130
+Autocompleten usando Tab para hacer esto, no lo escriban ustedes mismos
+
+119
+00:06:24,420 --> 00:06:26,510
+Dice que ya est instalado. Qu bien.
+
+120
+00:06:26,510 --> 00:06:28,130
+rpm -i
+
+121
+00:06:28,330 --> 00:06:30,210
+Ahora el otro, el cual no es gratuito
+
+122
+00:06:30,640 --> 00:06:33,550
+rpm fusin... no gratuito... instalado
+
+123
+00:06:33,550 --> 00:06:36,380
+OK, ya est instalado. Sin problemas.
+
+124
+00:06:39,530 --> 00:06:42,500
+Procedamos a despejar la pantalla
+
+125
+00:06:43,430 --> 00:06:47,470
+Y escribiremos dnf update nuevamente
+
+126
+00:06:47,980 --> 00:06:51,110
+Lo he hecho, no hay nada de qu preocuparse ah
+
+127
+00:06:51,110 --> 00:06:57,020
+Y una vez hayas completado todas estas actualizaciones y hayas configurado RPM Fusion
+
+128
+00:06:57,020 --> 00:07:03,310
+Recomendara entonces que simplemente reinicies tu dispositivo...
+
+129
+00:07:04,210 --> 00:07:06,460
+...y que vuelvas aqu, solo por si acaso
+
+130
+00:07:06,870 --> 00:07:09,450
+Este es la salida de ncleo que tengo en este momento
+
+131
+00:07:09,450 --> 00:07:11,740
+uname -r
+
+132
+00:07:11,740 --> 00:07:17,340
+4.1.4.200.fc22...
+
+133
+00:07:18,890 --> 00:07:25,590
+No importa si el tuyo es distinto, este debera ser un procedimiento universal
+
+134
+00:07:25,590 --> 00:07:29,000
+Y debera funcionar en todos los casos, sin ningn problema
+
+135
+00:07:30,130 --> 00:07:32,230
+An as,  solo haz las actualizaciones. Eso es todo.
+
+136
+00:07:34,770 --> 00:07:35,410
+Muy bien
+
+137
+00:07:35,840 --> 00:07:40,560
+Para el siguiente paso necesitamos proceder a instalar VirtualBox
+
+138
+00:07:40,560 --> 00:07:43,200
+Yo ya lo he instalado, pero solo procedamos a...
+
+139
+00:07:43,420 --> 00:07:46,330
+No he solucionado los problemas que ustedes encuentran
+
+140
+00:07:46,330 --> 00:07:48,180
+Eso es algo que haremos juntos
+
+141
+00:07:48,180 --> 00:07:57,570
+Lo primero que haremos ser escribir dnf search virtualbox
+
+142
+00:07:58,590 --> 00:08:00,840
+Y pueden ver que...
+
+143
+00:08:02,840 --> 00:08:07,170
+Esperen, s tengo los mdulos de ncleo para mi ncleo
+
+144
+00:08:07,170 --> 00:08:08,370
+Pero realmente no importa
+
+145
+00:08:08,370 --> 00:08:13,890
+Si no los tienes para el tuyo te mostrar una forma de hacerlo
+
+146
+00:08:14,910 --> 00:08:18,980
+Entonces, necesitas proceder a encontrar este paquete
+
+147
+00:08:19,470 --> 00:08:23,980
+VirtualBox.x86_64
+
+148
+00:08:24,340 --> 00:08:27,500
+Y escribo dnf espacio install
+
+149
+00:08:29,480 --> 00:08:31,620
+VirtualBox
+
+150
+00:08:31,620 --> 00:08:34,120
+OK, esto lo instalar sin problemas
+
+151
+00:08:34,120 --> 00:08:37,340
+Yo ya lo tengo aqu, pero...
+
+152
+00:08:37,580 --> 00:08:39,940
+Simplemente no quise realizar el proceso de instalacin nuevamente
+
+153
+00:08:40,160 --> 00:08:42,660
+Si necesitas hacer algo ah simplemente presiona y en un determinado momento
+
+154
+00:08:42,660 --> 00:08:44,480
+Eso es todo.
+
+155
+00:08:45,250 --> 00:08:49,240
+Luego vamos a proceder a iniciar VirtualBox
+
+156
+00:08:49,580 --> 00:08:52,500
+Y empezaremos a resolver el problema que ustedes han estado encontrando
+
+157
+00:08:52,830 --> 00:08:55,470
+Colocamos virtualbox
+
+158
+00:08:55,750 --> 00:08:59,840
+Yo ya he hecho una mquina Kali, y ahora proceder a eliminarla
+
+159
+00:09:00,680 --> 00:09:01,600
+eliminar todos los archivos
+
+160
+00:09:01,600 --> 00:09:03,830
+Hacemos click en nuevo
+
+161
+00:09:03,830 --> 00:09:09,960
+Escribe el nmero de tu mquina, yo simplemente escribir Kali Sana
+
+162
+00:09:11,060 --> 00:09:12,360
+Linux...
+
+163
+00:09:12,360 --> 00:09:16,040
+Y seleccionar debian (64-bit)
+
+164
+00:09:16,420 --> 00:09:19,110
+OK, ahora vamos a...
+
+165
+00:09:19,760 --> 00:09:25,220
+Yo voy a darle 1.2 gigas de RAM
+
+166
+00:09:25,570 --> 00:09:28,690
+Pero puedes darle menos si quieres
+
+167
+00:09:28,980 --> 00:09:31,950
+Creo que no deberas bajar de 800...
+
+168
+00:09:31,950 --> 00:09:35,670
+Depende de ti ver que es lo que te funciona mejor
+
+169
+00:09:36,240 --> 00:09:38,150
+Presionamos siguiente
+
+170
+00:09:38,330 --> 00:09:39,330
+Crear
+
+171
+00:09:39,330 --> 00:09:40,220
+Siguiente
+
+172
+00:09:40,220 --> 00:09:41,660
+Siguiente
+
+173
+00:09:41,660 --> 00:09:44,790
+Y he notado que mucha gente ha estado cometiendo un error en este punto...
+
+174
+00:09:44,790 --> 00:09:47,660
+Al asignar el espacio del disco
+
+175
+00:09:47,660 --> 00:09:48,570
+Han asignado un espacio demasiado pequeo
+
+176
+00:09:48,570 --> 00:09:52,620
+Algunas personas solo han asignado megabytes...
+
+177
+00:09:52,950 --> 00:09:54,520
+O tal vez no megabytes como tal...
+
+178
+00:09:54,520 --> 00:09:57,800
+Pero han asignado cantidades como 6 megabytes
+
+179
+00:09:57,800 --> 00:09:58,800
+O 13 megabytes
+
+180
+00:09:58,800 --> 00:10:00,140
+O algo como eso
+
+181
+00:10:00,140 --> 00:10:04,880
+No hay manera de que eso funcione jams
+
+182
+00:10:04,950 --> 00:10:07,550
+Debes darle al menos 30 gigabytes para...
+
+183
+00:10:08,700 --> 00:10:11,960
+30 gigas para el uso diario
+
+184
+00:10:13,260 --> 00:10:15,380
+Entonces procedamos a darle...
+
+185
+00:10:16,870 --> 00:10:18,280
+Yo voy a darle 30 gigas
+
+186
+00:10:18,670 --> 00:10:20,250
+Una cantidad menor te puede funcionar pero...
+
+187
+00:10:20,850 --> 00:10:24,890
+Es decir, habr archivos que se almacenan ah en adicin a la instalacin
+
+188
+00:10:24,890 --> 00:10:27,020
+Y querrs hacer ciertas cosas...
+
+189
+00:10:27,220 --> 00:10:30,170
+Por lo que creo que 30 gigas es una cantidad ptima...
+
+190
+00:10:30,170 --> 00:10:31,270
+Es una de las cantidades ptimas
+
+191
+00:10:31,340 --> 00:10:34,520
+A veces me gustar asignar 128, solo por si acaso
+
+192
+00:10:34,520 --> 00:10:37,850
+Pero eso solo lo hago porque tengo mucho espacio que puedo malgastar
+
+193
+00:10:37,850 --> 00:10:41,920
+Si tienes un presupuesto apretado en cuanto a tu espacio del disco
+
+194
+00:10:41,920 --> 00:10:45,760
+Puedes asignarle 30 gigas y te debera funcionar bien
+
+195
+00:10:45,760 --> 00:10:47,340
+Trabajando sin problemas ni nada por el estilo
+
+196
+00:10:47,340 --> 00:10:50,390
+Entonces, hagamos click en crear
+
+197
+00:10:51,830 --> 00:10:52,400
+Eso es todo
+
+198
+00:10:52,400 --> 00:10:55,450
+Ahora hemos creado una mquina Kali
+
+199
+00:10:55,450 --> 00:11:01,370
+Pero ahora debemos descargar el Kali Sana desde la red
+
+200
+00:11:01,370 --> 00:11:03,370
+As que vamos a abrir nuestro explorador web nuevamente
+
+201
+00:11:03,620 --> 00:11:07,290
+Y vamos a escribir Kali Sana
+
+202
+00:11:08,930 --> 00:11:11,260
+O... por qu estoy escribiendo Kali Sana?
+
+203
+00:11:11,260 --> 00:11:15,320
+Solo escribiremos Kali, eso es todo lo que necesitamos hacer
+
+204
+00:11:15,520 --> 00:11:17,510
+Abre el primer sitio web que aparezca
+
+205
+00:11:17,510 --> 00:11:20,350
+Es www.kali.org
+
+206
+00:11:20,350 --> 00:11:21,930
+Es de https
+
+207
+00:11:22,590 --> 00:11:25,300
+Y dirgete a descargas
+
+208
+00:11:25,300 --> 00:11:26,540
+Descargar Kali Linux
+
+209
+00:11:26,540 --> 00:11:29,390
+Y ah est, dice Kali Linux 64 bit... ISO... torrent... 
+
+210
+00:11:29,390 --> 00:11:30,930
+Versin 2.0
+
+211
+00:11:30,930 --> 00:11:33,580
+Te recomendara que obtengas la versin de torrent
+
+212
+00:11:33,580 --> 00:11:36,950
+Porque me he dado cuenta de muchas personas han tenido archivos ISO corruptos
+
+213
+00:11:36,950 --> 00:11:39,900
+Debido a una conexin lenta y a que la conexin se ha cado
+
+214
+00:11:39,900 --> 00:11:43,430
+As que simplemente descarga el de torrent
+
+215
+00:11:43,430 --> 00:11:46,120
+Es la manera ms segura de hacerlo
+
+216
+00:11:46,330 --> 00:11:51,370
+En fin, simplemente haz click ah y la descarga comenzar automticamente
+
+217
+00:11:51,820 --> 00:11:53,900
+No hay nada ms que necesites hacer ah
+
+218
+00:11:54,180 --> 00:11:56,480
+Una vez se haya completado la descarga, toma...
+
+219
+00:11:56,480 --> 00:11:57,960
+Me toma alrededor de 10 minutos descargarlo
+
+220
+00:11:57,960 --> 00:12:00,340
+As que no voy a hacerlo en este momento
+
+221
+00:12:00,650 --> 00:12:02,900
+En lugar de hacer eso, yo ya lo he descargado
+
+222
+00:12:02,900 --> 00:12:06,260
+Como has visto hace un instante en mi carpeta de descargas, ya est ah
+
+223
+00:12:06,260 --> 00:12:09,570
+As que simplemente har click derecho sobre esto
+
+224
+00:12:09,570 --> 00:12:11,760
+Y entrar a la configuracin
+
+225
+00:12:11,990 --> 00:12:13,340
+Entrar a Almacenamiento
+
+226
+00:12:13,340 --> 00:12:14,770
+Controlador IDE
+
+227
+00:12:14,770 --> 00:12:16,460
+Hago click en el que est vaco
+
+228
+00:12:16,460 --> 00:12:18,240
+Hago click en el disco azul de aqu
+
+229
+00:12:18,880 --> 00:12:20,750
+Elijo un un CD/DVD virtual
+
+230
+00:12:21,150 --> 00:12:24,280
+Me dirijo hasta la carpeta de descargas
+
+231
+00:12:29,830 --> 00:12:30,810
+Selecciono home
+
+232
+00:12:31,650 --> 00:12:32,750
+chronic
+
+233
+00:12:32,780 --> 00:12:35,110
+descargas y...
+
+234
+00:12:37,590 --> 00:12:39,340
+...ste es el correcto?
+
+235
+00:12:41,320 --> 00:12:42,610
+Esperen un momento
+
+236
+00:12:42,610 --> 00:12:44,280
+S es el correcto! Ah tienen
+
+237
+00:12:44,280 --> 00:12:48,340
+Este el archivo ISO que necesito y quiero
+
+238
+00:12:48,510 --> 00:12:50,550
+Como pueden ver se encuentra ah. Dice .ISO
+
+239
+00:12:50,890 --> 00:12:53,470
+Y ahora vamos a hacer click en OK
+
+240
+00:12:53,830 --> 00:12:56,510
+Esta es la configuracin normal que hemos hecho antes
+
+241
+00:12:56,510 --> 00:12:58,550
+No tiene nada muy extrao o nuevo
+
+242
+00:12:58,890 --> 00:13:01,840
+Solo haz doble click en la mquina
+
+243
+00:13:02,550 --> 00:13:04,600
+Y obtendrs este mensaje de error
+
+244
+00:13:04,860 --> 00:13:08,550
+No se pudo abrir la sesin de la mquina virtual Kani Sana
+
+245
+00:13:08,550 --> 00:13:12,670
+Y luego vas a conseguir este error de VirtualBox tambin
+
+246
+00:13:12,670 --> 00:13:16,160
+El controlador de ncleo de Linux VirtualBox... etc. probablemente no est cargado
+
+247
+00:13:16,410 --> 00:13:20,620
+Estoy seguro de que todos ustedes han visto este mensaje muchas veces
+
+248
+00:13:20,620 --> 00:13:24,340
+Y esto fue problemtico para muchos, no pudieron pasar de aqu
+
+249
+00:13:24,340 --> 00:13:27,520
+Intent ayudar a la gente instalando el controlador de ncleo manualmente
+
+250
+00:13:27,520 --> 00:13:30,670
+Pero realmente lo que podemos hacer...
+
+251
+00:13:30,670 --> 00:13:34,910
+Ya que no tena Fedora 22 y no haba visto esto realmente
+
+252
+00:13:34,910 --> 00:13:37,120
+No saba que, de hecho, podas hacer esto tambin
+
+253
+00:13:37,120 --> 00:13:42,030
+As que bsicamente puedes seguir la solucin sugerida por VirtualBox
+
+254
+00:13:42,030 --> 00:13:44,560
+Y eso debera resolver el problema en s
+
+255
+00:13:44,560 --> 00:13:48,810
+Bsicamente te dice como instalar los Kmods para...
+
+256
+00:13:48,950 --> 00:13:52,520
+Para el sistema en el que ests ejecutando
+
+257
+00:13:52,520 --> 00:13:55,580
+Entonces...
+
+258
+00:13:55,580 --> 00:13:57,290
+Vamos a expandir esto.
+
+259
+00:13:57,290 --> 00:14:01,200
+Y necesitamos escribir esta seccin que est marcada con letras azules
+
+260
+00:14:03,930 --> 00:14:10,470
+Literalmente, puedes simplemente copiarlo y pegarlo...
+
+261
+00:14:12,180 --> 00:14:15,440
+Error por mi lado, no deberas copiar las comillas
+
+262
+00:14:16,770 --> 00:14:22,680
+As que... presiono control C y luego control shift V
+
+263
+00:14:23,410 --> 00:14:26,710
+Y ya que ests usando Fedora 22, solo reemplaza yum con dnf
+
+264
+00:14:26,710 --> 00:14:30,970
+Si colocas yum automticamente te re-dirigir a dfn
+
+265
+00:14:30,970 --> 00:14:33,220
+As que no te preocupes mucho por eso
+
+266
+00:14:34,980 --> 00:14:37,180
+Y esto debera funcionar
+
+267
+00:14:38,280 --> 00:14:43,780
+Si este no funciona, siempre tienes el de abajo
+
+268
+00:14:43,780 --> 00:14:46,780
+Ese es el que yo he usado
+
+269
+00:14:47,310 --> 00:14:49,810
+As que voy a usar ese
+
+270
+00:14:50,490 --> 00:14:53,250
+Ya que el de abajo es una forma ms general de hacer las cosas
+
+271
+00:14:53,250 --> 00:14:55,620
+No s ni para que seleccion el primero
+
+272
+00:14:55,620 --> 00:14:57,890
+Pero esto es lo que hemos estado haciendo antes
+
+273
+00:14:57,890 --> 00:15:01,150
+Esto es lo que hemos estado intentando hacer antes
+
+274
+00:15:01,150 --> 00:15:01,870
+Pero ya saben
+
+275
+00:15:01,870 --> 00:15:03,510
+No podan encontrar las versiones indicadas
+
+276
+00:15:03,510 --> 00:15:06,540
+El sistema no poda encontrar las versiones indicadas
+
+277
+00:15:06,540 --> 00:15:08,890
+Y era un problema bastante grande
+
+278
+00:15:08,890 --> 00:15:10,310
+As que en lugar de eso...
+
+279
+00:15:10,310 --> 00:15:12,650
+Vamos a usar este
+
+280
+00:15:12,650 --> 00:15:17,650
+El cual te ayudar a instalar los indicados...
+
+281
+00:15:18,650 --> 00:15:20,300
+O un metapaquete, por as decirlo
+
+282
+00:15:20,300 --> 00:15:21,740
+En el que uno sirve para todos
+
+283
+00:15:21,980 --> 00:15:24,770
+Ahora vamos a presionar ENTER
+
+284
+00:15:26,950 --> 00:15:28,450
+Muy bien, esto est listo
+
+285
+00:15:28,450 --> 00:15:31,240
+Y ahora vamos a copiar este debajo
+
+286
+00:15:31,240 --> 00:15:33,420
+Como pueden ver, no hay nada extremadamente tcnico sobre esto
+
+287
+00:15:33,420 --> 00:15:38,530
+Es decir, bsicamente solo estas copiando y pegando cosas
+
+288
+00:15:39,770 --> 00:15:42,700
+El sistema te dice lo que necesitas hacer
+
+289
+00:15:44,840 --> 00:15:46,290
+OK, ahora que eso est listo...
+
+290
+00:15:46,290 --> 00:15:47,970
+Voy a hacer click en abortar
+
+291
+00:15:48,870 --> 00:15:50,980
+Y luego voy a hacer click en OK
+
+292
+00:15:50,980 --> 00:15:52,560
+Cerrar VirtualBox
+
+293
+00:15:52,810 --> 00:15:55,110
+Abro VirtualBox nuevamente
+
+294
+00:15:55,420 --> 00:15:59,940
+Y luego hago doble click en Kali Sana
+
+295
+00:15:59,980 --> 00:16:02,900
+Y como pueden ver se est iniciando
+
+296
+00:16:03,240 --> 00:16:05,230
+Estoy aqu, en el men de inicio
+
+297
+00:16:05,430 --> 00:16:10,180
+Y soy libre elegir lo que quiera de estas opciones
+
+298
+00:16:10,320 --> 00:16:12,080
+En el tutorial siguiente
+
+299
+00:16:12,080 --> 00:16:15,060
+Vern brevemente por el proceso de instalacin de Kali Sana
+
+300
+00:16:16,210 --> 00:16:18,930
+Y eso ser todo
+
+301
+00:16:19,800 --> 00:16:23,970
+Espero que la solucin proporcionada aqu s te funcione
+
+302
+00:16:24,250 --> 00:16:29,620
+Y como pueden ver esta es una instalacin nueva de Fedora 22
+
+303
+00:16:29,830 --> 00:16:34,640
+La he actualizado, he importado los repositorios de RPM Fusion
+
+304
+00:16:34,940 --> 00:16:40,940
+Y luego he instalado VirtualBox a partir de los repositorios de RPM
+
+305
+00:16:41,140 --> 00:16:46,110
+Y he seguido las soluciones sugeridas para los errores
+
+306
+00:16:46,860 --> 00:16:50,320
+Y como pueden ver, est trabajando sin ningn tipo de problemas
+
+307
+00:16:50,610 --> 00:16:55,190
+En el siguiente tutorial prometo mostrarles cmo instalar y ejecutar Kali Sana
+
+308
+00:16:55,190 --> 00:16:59,700
+Es decir, no es algo terriblemente difcil de hacer
+
+309
+00:16:59,700 --> 00:17:01,180
+Es un proceso bastante directo
+
+310
+00:17:01,180 --> 00:17:03,910
+As que tambin vamos a hacer eso
+
+311
+00:17:03,910 --> 00:17:07,970
+Pero hasta entonces me despido de todos.
+

@@ -1,0 +1,1020 @@
+1
+00:00:00,490 --> 00:00:02,490
+Saludos a todos y bienvenidos a este tutorial
+
+2
+00:00:02,790 --> 00:00:06,440
+Hoy voy a mostrarles un poco ms---
+
+3
+00:00:06,490 --> 00:00:08,850
+Unas cosas ms que puedes hacer con Nmap
+
+4
+00:00:09,170 --> 00:00:10,420
+Pero ms importantemente
+
+5
+00:00:10,420 --> 00:00:15,990
+Les mostrar una herramienta que puedes usar para asignar una ubicacin fsica
+
+6
+00:00:15,990 --> 00:00:16,990
+Es decir, una ciudad
+
+7
+00:00:17,380 --> 00:00:18,440
+A una direccin IP
+
+8
+00:00:18,930 --> 00:00:20,210
+Es relativamente preciso
+
+9
+00:00:20,570 --> 00:00:21,760
+Es relativamente bueno
+
+10
+00:00:22,710 --> 00:00:27,370
+Pero el lado malo es que solo puedes hacer 1000 consultas al da
+
+11
+00:00:27,660 --> 00:00:30,140
+Lo que an es bastante razonable
+
+12
+00:00:30,140 --> 00:00:32,560
+Es decir, 1000 peticiones al da es bastante bueno
+
+13
+00:00:32,560 --> 00:00:35,610
+Sin embargo, si ests haciendo algn tipo de escaneo en masa...
+
+14
+00:00:35,610 --> 00:00:36,500
+O algo as
+
+15
+00:00:36,500 --> 00:00:37,690
+No te ayudar realmente
+
+16
+00:00:37,690 --> 00:00:39,250
+Necesitars conectarte al internet
+
+17
+00:00:39,250 --> 00:00:41,150
+Y descargar las bibliotecas para eso
+
+18
+00:00:41,150 --> 00:00:42,870
+Pero 1000 en un nmero muy bueno
+
+19
+00:00:43,350 --> 00:00:45,730
+Y permtanme mostrarles cmo funciona realmente
+
+20
+00:00:46,190 --> 00:00:48,350
+Aqu tengo un comando
+
+21
+00:00:48,890 --> 00:00:51,100
+Este es el comando que he usado para escanear---
+
+22
+00:00:51,330 --> 00:00:52,970
+Scanme.nmap.org
+
+23
+00:00:53,340 --> 00:00:55,430
+Para obtener algo de informacin de ah
+
+24
+00:00:55,430 --> 00:00:56,380
+As que...
+
+25
+00:00:56,380 --> 00:01:00,810
+curl espacio ipinfo.io/
+
+26
+00:01:00,810 --> 00:01:02,490
+Y luego te da una direccin IP aqu
+
+27
+00:01:02,490 --> 00:01:03,550
+Es un script de curl
+
+28
+00:01:03,770 --> 00:01:05,530
+As que puedo simplemente copiar y pegarlo aqu
+
+29
+00:01:05,530 --> 00:01:07,800
+Y este es el comando, curl
+
+30
+00:01:08,060 --> 00:01:10,520
+Este es el argumento que le ests pasando
+
+31
+00:01:10,520 --> 00:01:11,830
+Junto con la direccin IP
+
+32
+00:01:12,110 --> 00:01:14,660
+Una vez que presionas ENTER consulta al servidor
+
+33
+00:01:14,660 --> 00:01:15,940
+Y ah tienes
+
+34
+00:01:16,430 --> 00:01:18,250
+Tienes una direccin IP
+
+35
+00:01:18,320 --> 00:01:18,810
+Y tienes un---
+
+36
+00:01:18,810 --> 00:01:20,830
+Obtienes un nombre de anfitrin tambin
+
+37
+00:01:21,130 --> 00:01:23,440
+Obtienes una ciudad, es Fremont
+
+38
+00:01:23,730 --> 00:01:25,190
+Su regin es California
+
+39
+00:01:25,190 --> 00:01:26,380
+El pas es Estados Unidos
+
+40
+00:01:26,380 --> 00:01:28,880
+Hasta te da unas coordenadas aqu
+
+41
+00:01:29,130 --> 00:01:30,130
+Organizacin
+
+42
+00:01:30,130 --> 00:01:33,180
+Cdigo postal, etc.
+
+43
+00:01:33,180 --> 00:01:35,810
+As que obtienes una informacin realmente til
+
+44
+00:01:35,810 --> 00:01:37,490
+En cuanto a una direccin IP
+
+45
+00:01:37,490 --> 00:01:42,320
+Pero como dije, el lado malo es que solo puedes hacer 1000 consultas al da
+
+46
+00:01:42,550 --> 00:01:44,160
+As que no ests haciendo nada ilegal aqu
+
+47
+00:01:44,160 --> 00:01:45,410
+Ni nada por el estilo
+
+48
+00:01:45,410 --> 00:01:48,800
+Simplemente ests consultando una base de datos en algn lado del mundo
+
+49
+00:01:48,800 --> 00:01:51,550
+Para que te d informacin especfica de una direccin IP
+
+50
+00:01:51,550 --> 00:01:54,110
+Podras haber hecho esto simplemente escribiendo quin es en la red
+
+51
+00:01:54,770 --> 00:01:58,130
+Sin embargo, quiero ensearles cmo hacer estas cosas en la terminal para que...
+
+52
+00:01:58,130 --> 00:02:02,380
+Seas menos dependiente del explorador o cosas como esa
+
+53
+00:02:02,380 --> 00:02:03,450
+En fin
+
+54
+00:02:03,740 --> 00:02:05,470
+Djenme despejar esto
+
+55
+00:02:06,670 --> 00:02:09,920
+Ahora, lo que quera discutir hoy son unos recursos externos...
+
+56
+00:02:10,140 --> 00:02:12,770
+...que puedes usar en conjunto con Nmap
+
+57
+00:02:12,770 --> 00:02:16,930
+Nmap tienes una amplia variedad de scripts que son aplicables a l
+
+58
+00:02:16,930 --> 00:02:20,730
+Y luego podrs usar Nmap para escanear si hay...
+
+59
+00:02:20,730 --> 00:02:24,750
+...vulnerabilidades en particular en los servidores en alguna otra parte del mundo
+
+60
+00:02:25,260 --> 00:02:27,470
+As que, simplemente procede a abrir tu explorador
+
+61
+00:02:28,380 --> 00:02:32,940
+OK, entonces... tengo este sitio web scanme.nmap.org abierto aqu
+
+62
+00:02:33,340 --> 00:02:35,860
+Y en ese sitio web hay un enlace
+
+63
+00:02:35,860 --> 00:02:39,210
+Es nmap.org... y luego un link aqu...
+
+64
+00:02:39,530 --> 00:02:41,310
+Puedes simplemente copiar y pegarlo si quieres
+
+65
+00:02:41,310 --> 00:02:42,490
+O algo as
+
+66
+00:02:42,720 --> 00:02:47,500
+Solo lelo y luego navega hacia all en el sitio web
+
+67
+00:02:47,500 --> 00:02:49,530
+Pero realmente no es tan difcil
+
+68
+00:02:49,530 --> 00:02:53,140
+Observa, estoy aqu en el sitio de Nmap
+
+69
+00:02:53,140 --> 00:02:59,230
+Y tengo una lista de categoras del tipo de scripts que puedo ejecutar con Nmap
+
+70
+00:02:59,450 --> 00:03:03,770
+Para escanear si hay vulnerabilidades en particular
+
+71
+00:03:04,240 --> 00:03:06,230
+As que tengo algunos---
+
+72
+00:03:06,360 --> 00:03:09,750
+Hay 490 scripts
+
+73
+00:03:09,750 --> 00:03:12,570
+Lo cual es mucho, as que puedo---
+
+74
+00:03:12,960 --> 00:03:13,830
+Para DOS
+
+75
+00:03:13,830 --> 00:03:15,180
+Para los ataques de denegacin de servicio
+
+76
+00:03:15,410 --> 00:03:17,190
+Ese tipo de vulnerabilidades
+
+77
+00:03:17,190 --> 00:03:18,390
+Para explotaciones (exploits)
+
+78
+00:03:18,390 --> 00:03:19,550
+Para no s...
+
+79
+00:03:19,550 --> 00:03:20,840
+Para fuerza bruta
+
+80
+00:03:21,100 --> 00:03:22,200
+Para la autentificacin
+
+81
+00:03:22,420 --> 00:03:23,390
+Etc.
+
+82
+00:03:23,610 --> 00:03:27,170
+En fin, vamos a hacer click en cualquiera de ellos
+
+83
+00:03:27,330 --> 00:03:28,620
+Prcticamente cualquiera nos servir
+
+84
+00:03:28,620 --> 00:03:29,440
+No es problema
+
+85
+00:03:29,440 --> 00:03:31,260
+Voy a hacer click en vuln
+
+86
+00:03:31,280 --> 00:03:32,370
+Es algo general
+
+87
+00:03:32,370 --> 00:03:37,220
+Y ahora tengo todas estas cosas aqu
+
+88
+00:03:37,220 --> 00:03:40,160
+As que si te ests preguntado cmo puedo eludir las reglas del cortafuego...
+
+89
+00:03:40,160 --> 00:03:41,870
+...pues, simplemente usa un script
+
+90
+00:03:41,870 --> 00:03:45,110
+Dice firewall-bypass
+
+91
+00:03:45,110 --> 00:03:49,600
+detecta vulnerabilidad en el netfilter y otros cortafuegos que usan...
+
+92
+00:03:49,600 --> 00:03:54,330
+...un ayudante que abren puertos dinmicamente para protocolo, tales como ftp and sip
+
+93
+00:03:54,540 --> 00:03:57,560
+Esto nos ayudar en una buena cantidad de los casos
+
+94
+00:03:57,560 --> 00:03:59,140
+Puedes continuar a...
+
+95
+00:03:59,730 --> 00:04:01,440
+Abramos la pestaa con un nuevo enlace
+
+96
+00:04:01,440 --> 00:04:02,990
+Es decir, una nueva pestaa
+
+97
+00:04:04,180 --> 00:04:05,640
+Y una vez hagas click ah
+
+98
+00:04:05,640 --> 00:04:09,130
+Tendrs la sintaxis exacta de cmo usarlo
+
+99
+00:04:09,130 --> 00:04:10,530
+Uso de ejemplo
+
+100
+00:04:11,210 --> 00:04:15,410
+Te da la sintaxis exacta, no hay nada distinto que necesites hacer aqu
+
+101
+00:04:16,220 --> 00:04:22,060
+En lugar de <target> solo escribe la direccin IP
+
+102
+00:04:22,320 --> 00:04:23,260
+Y eso es todo
+
+103
+00:04:23,260 --> 00:04:27,540
+Literalmente, esa es la nica cosa que necesitas cambiar aqu
+
+104
+00:04:27,860 --> 00:04:29,760
+Solo introduce---
+
+105
+00:04:29,760 --> 00:04:30,790
+Copia y pega este comando
+
+106
+00:04:30,790 --> 00:04:31,960
+Solo cpialo
+
+107
+00:04:31,960 --> 00:04:36,760
+Y luego cambio lo ltimo a la direccin IP que quieras escanear
+
+108
+00:04:37,200 --> 00:04:40,360
+Ahora, no voy a pasar por todo
+
+109
+00:04:40,360 --> 00:04:43,190
+Como dije, hay 490 scripts
+
+110
+00:04:43,440 --> 00:04:45,790
+Sin embargo, vamos a usar una parte de eso
+
+111
+00:04:45,790 --> 00:04:47,020
+En los tutoriales posteriores
+
+112
+00:04:47,020 --> 00:04:49,920
+En los que tendrs unas demostraciones claras...
+
+113
+00:04:49,920 --> 00:04:52,620
+...una vez que, de hecho, empecemos a atacar servicios en particular...
+
+114
+00:04:52,620 --> 00:04:55,430
+...y que empecemos a explotar sus vulnerabilidades
+
+115
+00:04:55,430 --> 00:04:59,110
+Sin embargo, repito, no voy a pasar por todos los 490
+
+116
+00:04:59,340 --> 00:05:01,790
+Porque el curso sera ridculamente largo
+
+117
+00:05:02,150 --> 00:05:03,560
+Pero puedes---
+
+118
+00:05:03,560 --> 00:05:05,700
+Puedes ir al sitio web de Nmap
+
+119
+00:05:06,320 --> 00:05:07,150
+Encontrar esto
+
+120
+00:05:07,150 --> 00:05:09,450
+Observa, tienes herramientas de seguridad
+
+121
+00:05:09,450 --> 00:05:10,220
+Como...
+
+122
+00:05:10,690 --> 00:05:11,930
+Listas de seguridad
+
+123
+00:05:11,930 --> 00:05:13,330
+Escneres
+
+124
+00:05:13,650 --> 00:05:14,460
+Etc.
+
+125
+00:05:14,690 --> 00:05:17,500
+Hay tantos recursos aqu que puedes usar
+
+126
+00:05:17,500 --> 00:05:21,540
+Y recomiendo fuertemente que vayan a este sitio web y lo revisen
+
+127
+00:05:22,120 --> 00:05:23,360
+Pero solo observen
+
+128
+00:05:23,360 --> 00:05:25,220
+Esta probablemente es la parte ms importante para ti
+
+129
+00:05:25,220 --> 00:05:27,110
+Y para todos en este sitio web
+
+130
+00:05:27,510 --> 00:05:29,110
+Es la disponibilidad---
+
+131
+00:05:29,110 --> 00:05:30,410
+La disponibilidad de los scripts
+
+132
+00:05:30,860 --> 00:05:32,560
+As que solo observa lo que hacen
+
+133
+00:05:32,560 --> 00:05:34,950
+Y que puedes hacer con ellos
+
+134
+00:05:35,530 --> 00:05:38,610
+Principalmente porque se pueden ahorrar muchsimo tiempo con solo...
+
+135
+00:05:38,610 --> 00:05:41,310
+...realizar un escaneo para buscar ciertos tipos de explotaciones
+
+136
+00:05:41,720 --> 00:05:43,820
+Si hago click en exploits me da todos los tipos de exploits
+
+137
+00:05:44,950 --> 00:05:46,980
+As que si, por ejemplo, si estoy atacando...
+
+138
+00:05:46,980 --> 00:05:49,660
+...un protocolo de transferencia de archivo muy seguro
+
+139
+00:05:50,280 --> 00:05:51,520
+Simplemente...
+
+140
+00:05:51,520 --> 00:05:52,830
+Lelo
+
+141
+00:05:52,830 --> 00:05:55,290
+Explica detalladamente lo que hace
+
+142
+00:05:55,290 --> 00:05:57,200
+Y si haces click ah...
+
+143
+00:05:57,200 --> 00:06:01,550
+...te dar la sintaxis exacta que necesitas usar
+
+144
+00:06:02,310 --> 00:06:05,740
+Literalmente la sintaxis exacta que necesitas usar
+
+145
+00:06:05,740 --> 00:06:08,570
+Justo junto a ella escribes la direccin IP...
+
+146
+00:06:08,570 --> 00:06:10,800
+...de cualquiera que sea el anfitrin que quieres
+
+147
+00:06:11,360 --> 00:06:11,880
+Y eso es todo
+
+148
+00:06:11,880 --> 00:06:13,390
+No hay cambios
+
+149
+00:06:13,390 --> 00:06:14,730
+No hay nada ms que necesites hacer
+
+150
+00:06:15,320 --> 00:06:16,740
+Solo copias y pegas esto
+
+151
+00:06:16,970 --> 00:06:18,950
+Y cambias el nombre aqu
+
+152
+00:06:20,420 --> 00:06:21,860
+En fin
+
+153
+00:06:21,860 --> 00:06:25,660
+Solo voy a desplazarme hacia arriba
+
+154
+00:06:25,920 --> 00:06:28,640
+Luego tengo otro sitio web...
+
+155
+00:06:28,640 --> 00:06:28,970
+...que deseo ensearles
+
+156
+00:06:28,970 --> 00:06:30,530
+Se llama exploitdb
+
+157
+00:06:30,890 --> 00:06:34,970
+As que solo escribe exploitdb
+
+158
+00:06:35,240 --> 00:06:37,610
+Y el primer sitio que aparezca...
+
+159
+00:06:37,610 --> 00:06:39,200
+Explotar base de datos
+
+160
+00:06:39,200 --> 00:06:40,180
+De Offensive Security
+
+161
+00:06:40,180 --> 00:06:41,280
+Hazle click
+
+162
+00:06:41,280 --> 00:06:44,280
+Esta es bsicamente una de las bases de datos ms grandes que existen
+
+163
+00:06:44,280 --> 00:06:45,920
+En cuanto a...
+
+164
+00:06:46,980 --> 00:06:48,310
+Vulnerabilidades
+
+165
+00:06:48,550 --> 00:06:51,360
+Puedes encontrarlas todas en un solo lugar, aqu
+
+166
+00:06:51,360 --> 00:06:52,660
+Literalmente estn aqu
+
+167
+00:06:52,660 --> 00:06:55,720
+Hay unos trucos inalmbricos muy buenos que puedes hacer aqu
+
+168
+00:06:56,430 --> 00:06:57,700
+Reverse shells
+
+169
+00:06:57,700 --> 00:06:59,550
+Escalada de privilegios
+
+170
+00:06:59,550 --> 00:07:00,800
+Bsicamente todo
+
+171
+00:07:00,800 --> 00:07:04,490
+Vamos a usar este sitio extensamente en los tutoriales posteriores
+
+172
+00:07:04,490 --> 00:07:06,660
+Y en otros captulos tambin
+
+173
+00:07:06,660 --> 00:07:07,640
+Pero solo lo quera mencionar aqu
+
+174
+00:07:07,640 --> 00:07:10,750
+Principalmente para que pudieras explorarlo un poco
+
+175
+00:07:10,750 --> 00:07:12,820
+Y recomiendo fuertemente que lo hagas
+
+176
+00:07:12,820 --> 00:07:14,740
+Solo pasate por el sitio web
+
+177
+00:07:14,740 --> 00:07:17,940
+Por ejemplo, mira el router que ests usando
+
+178
+00:07:18,330 --> 00:07:20,830
+Solo observa que tipo de router ests usando
+
+179
+00:07:20,830 --> 00:07:24,820
+Mira qu tipo de router te dio el proveedor de direccin IP
+
+180
+00:07:24,820 --> 00:07:28,490
+Y luego ve y haz click en buscar en la parte superior derecha
+
+181
+00:07:28,490 --> 00:07:29,240
+En la---
+
+182
+00:07:29,240 --> 00:07:30,910
+En el men superior
+
+183
+00:07:31,190 --> 00:07:31,920
+Est a la derecha
+
+184
+00:07:31,920 --> 00:07:33,990
+Ahora lo estoy seleccionado
+
+185
+00:07:33,990 --> 00:07:34,700
+Voy a hacer click ah nuevamente
+
+186
+00:07:35,950 --> 00:07:38,500
+Y busca las vulnerabilidades de tu router domstico
+
+187
+00:07:38,500 --> 00:07:39,770
+Ve que puedes hacer con l
+
+188
+00:07:39,770 --> 00:07:41,720
+Ve...
+
+189
+00:07:42,420 --> 00:07:44,670
+Puedes verlo por un puerto
+
+190
+00:07:45,820 --> 00:07:46,420
+Hay una bsqueda de texto gratis
+
+191
+00:07:46,650 --> 00:07:47,510
+Descripcin
+
+192
+00:07:47,510 --> 00:07:48,510
+Autor
+
+193
+00:07:48,840 --> 00:07:50,230
+Hay plataformas---
+
+194
+00:07:50,230 --> 00:07:51,640
+Mira cuantas plataformas hay ah
+
+195
+00:07:51,880 --> 00:07:54,300
+Sino no sabes que plataforma es solo---
+
+196
+00:07:54,340 --> 00:07:56,940
+Solo prueba una bsqueda gratis
+
+197
+00:07:56,940 --> 00:07:58,420
+Escribe el nombre de tu router
+
+198
+00:07:58,630 --> 00:08:00,530
+Escrbelo en la bsqueda de texto gratis
+
+199
+00:08:00,530 --> 00:08:02,110
+Y si---
+
+200
+00:08:02,110 --> 00:08:03,920
+Te dar algunas vulnerabilidades porque bsicamente...
+
+201
+00:08:03,920 --> 00:08:08,910
+...todos los routers domsticos tienen ms vulnerabilidades que lo que deberan
+
+202
+00:08:09,170 --> 00:08:11,370
+As que esa es la tarea con la que los dejo
+
+203
+00:08:11,370 --> 00:08:13,860
+Quiero que abran este sitio web
+
+204
+00:08:13,860 --> 00:08:15,340
+Exploit Database
+
+205
+00:08:15,340 --> 00:08:18,120
+Encuentren la vulnerabilidad de su router
+
+206
+00:08:18,120 --> 00:08:20,250
+De su router domstico
+
+207
+00:08:20,330 --> 00:08:21,460
+Primero averigen cual es
+
+208
+00:08:21,460 --> 00:08:25,420
+Pero usualmente puedes hacer esto con solo ver la caja del router
+
+209
+00:08:25,680 --> 00:08:28,720
+Y una vez que hayas hecho eso puedes---
+
+210
+00:08:28,950 --> 00:08:31,850
+Una vez hayas encontrado la vulnerabilidad habr una descripcin...
+
+211
+00:08:32,180 --> 00:08:33,470
+...de cmo usarla
+
+212
+00:08:33,470 --> 00:08:33,890
+Intenta de usarla
+
+213
+00:08:33,890 --> 00:08:35,360
+Intenta explotarla
+
+214
+00:08:35,360 --> 00:08:36,390
+Si falla...
+
+215
+00:08:36,590 --> 00:08:37,930
+Y probablemente no falle
+
+216
+00:08:37,930 --> 00:08:41,270
+Porque todo lo que debes es copiar y pegar cosas en la terminal de Linux
+
+217
+00:08:41,720 --> 00:08:44,480
+Y vamos a hacer muchas---
+
+218
+00:08:44,480 --> 00:08:45,810
+Y haremos algunas demostraciones luego
+
+219
+00:08:45,810 --> 00:08:46,660
+A lo largo del camino
+
+220
+00:08:46,660 --> 00:08:48,420
+A medida que hagamos cosas ms complejas
+
+221
+00:08:48,420 --> 00:08:50,190
+Pero antes de hacerlo, quiero que lo prueben
+
+222
+00:08:50,790 --> 00:08:53,680
+Y si tienen alguna pregunta, colquenla en la seccin se preguntas
+
+223
+00:08:53,930 --> 00:08:57,890
+Estar ms que feliz de no solo responder
+
+224
+00:08:57,890 --> 00:09:01,180
+Sino tambin de ayudarlos a lo largo del proceso tambin
+
+225
+00:09:01,180 --> 00:09:03,260
+En cuanto a instruirlos o algo por el estilo
+
+226
+00:09:03,260 --> 00:09:04,610
+No necesitan pagar nada ms por eso
+
+227
+00:09:04,610 --> 00:09:07,770
+Lo har con gusto y los ayudar
+
+228
+00:09:07,770 --> 00:09:10,250
+Pero por favor intntenlo
+
+229
+00:09:10,250 --> 00:09:11,450
+Prubenlo primero
+
+230
+00:09:11,450 --> 00:09:13,420
+Y luego continen con el tutorial
+
+231
+00:09:13,420 --> 00:09:14,690
+Vean lo que hago
+
+232
+00:09:14,690 --> 00:09:18,730
+Y luego posiblemente puedan arreglar su tcnica y mejorar
+
+233
+00:09:20,270 --> 00:09:21,230
+Antes de irme
+
+234
+00:09:21,230 --> 00:09:22,480
+Repito
+
+235
+00:09:22,480 --> 00:09:26,200
+Aqu tienen scripts que pueden usar con Nmap para...
+
+236
+00:09:26,200 --> 00:09:27,930
+...detectar vulnerabilidades en particular
+
+237
+00:09:27,930 --> 00:09:29,390
+Solo hagan click ah
+
+238
+00:09:29,390 --> 00:09:31,970
+Una vez hagan click ah obtendrn la sistaxis exacta
+
+239
+00:09:31,970 --> 00:09:34,080
+Todo lo que necesitan hacer es cambiar la direccin IP
+
+240
+00:09:34,080 --> 00:09:37,440
+Y escribir exploitdb
+
+241
+00:09:37,440 --> 00:09:38,970
+Usen este sitio web extensamente
+
+242
+00:09:38,970 --> 00:09:39,790
+Es muy bueno
+
+243
+00:09:39,790 --> 00:09:41,460
+Contiene muchas vulnerabilidades
+
+244
+00:09:41,460 --> 00:09:43,290
+Bsicamente todas se encuentran ah
+
+245
+00:09:43,290 --> 00:09:45,350
+Es completamente gratis
+
+246
+00:09:45,350 --> 00:09:49,010
+No necesitas pagar nada por ninguno de los servicios que he mencionado aqu
+
+247
+00:09:50,220 --> 00:09:51,920
+branlo gratis
+
+248
+00:09:51,920 --> 00:09:52,950
+Cualquier lo puede usar
+
+249
+00:09:52,950 --> 00:09:54,420
+No requiere que se registren
+
+250
+00:09:55,150 --> 00:09:57,650
+Con eso me despido hoy
+
+251
+00:09:57,650 --> 00:10:00,390
+Y repito, les pido que lo intenten ustedes mismos
+
+252
+00:10:00,600 --> 00:10:03,310
+Y luego continuaremos con el curso donde yo har yo mismo
+
+253
+00:10:03,310 --> 00:10:07,850
+Y podrn ver las particularidades y los detalles de cmo se hace
+
+254
+00:10:08,320 --> 00:10:09,860
+Me despido
+
+255
+00:10:10,990 --> 00:10:11,310
+Y hasta la prxima
+

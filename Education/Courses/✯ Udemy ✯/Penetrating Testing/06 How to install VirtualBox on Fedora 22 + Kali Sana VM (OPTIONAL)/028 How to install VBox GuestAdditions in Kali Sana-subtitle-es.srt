@@ -1,0 +1,568 @@
+1
+00:00:00,340 --> 00:00:01,130
+Hola a todos
+
+2
+00:00:01,130 --> 00:00:08,210
+Hoy voy a ensearles cmo instalar la adicin para invitados de VirtualBox...
+
+3
+00:00:08,660 --> 00:00:12,240
+...En la mquina Kali que recientemente han instalado
+
+4
+00:00:12,240 --> 00:00:13,580
+Entonces empecemos
+
+5
+00:00:14,540 --> 00:00:16,670
+Puedo iniciarlo desde aqu, as que...
+
+6
+00:00:17,150 --> 00:00:18,140
+S, ah est
+
+7
+00:00:18,830 --> 00:00:20,360
+No hay necesidad de usar un terminal para iniciarlo
+
+8
+00:00:20,360 --> 00:00:21,570
+Ya lo tenamos instalado
+
+9
+00:00:21,570 --> 00:00:23,270
+As que vamos a iniciarlo
+
+10
+00:00:23,270 --> 00:00:25,920
+Ya tengo mi adicin de invitados de VirtualBox instalada
+
+11
+00:00:26,430 --> 00:00:30,130
+La razn por la cual la instal antes de dar las instrucciones...
+
+12
+00:00:30,130 --> 00:00:36,350
+...y la razn por la que no lo he grabado como lo hice la primera vez es...
+
+13
+00:00:36,350 --> 00:00:40,440
+Pues, la pantalla es realmente pequea
+
+14
+00:00:40,440 --> 00:00:43,290
+Y es un poco difcil meter todo ah
+
+15
+00:00:43,290 --> 00:00:45,530
+Decid que lo instalara
+
+16
+00:00:45,920 --> 00:00:47,800
+Expandira la pantalla
+
+17
+00:00:48,130 --> 00:00:51,400
+Y luego les mostrara en una pantalla de tamao completo...
+
+18
+00:00:51,650 --> 00:00:52,920
+...todas las cosas que necesitan hacer
+
+19
+00:00:52,920 --> 00:00:57,220
+Simplemente pienso que es un poco ms eficiente...
+
+20
+00:00:58,170 --> 00:00:59,880
+...si pueden ver todo
+
+21
+00:00:59,880 --> 00:01:03,680
+A diferencia de ver todo en una pantalla realmente pequea
+
+22
+00:01:03,680 --> 00:01:06,400
+As que procedamos a entrar
+
+23
+00:01:07,680 --> 00:01:09,270
+Espero que estn de acuerdo conmigo
+
+24
+00:01:10,550 --> 00:01:11,960
+No hay nada distinto que necesiten hacer
+
+25
+00:01:12,200 --> 00:01:14,790
+Es absolutamente lo mismo
+
+26
+00:01:15,780 --> 00:01:18,860
+Entonces, procedamos a activar el terminal
+
+27
+00:01:19,530 --> 00:01:21,220
+Expandmoslo
+
+28
+00:01:21,540 --> 00:01:25,740
+Voy a acercarlo para que todos puedan ver estas letras grandes y gruesas
+
+29
+00:01:26,280 --> 00:01:30,880
+Y vamos a escribir apt-get update
+
+30
+00:01:33,920 --> 00:01:39,240
+Y luego apt-get upgrade
+
+31
+00:01:39,240 --> 00:01:42,160
+Yo ya lo he hecho, as que no debera tardar mucho en mi caso
+
+32
+00:01:42,370 --> 00:01:43,530
+Solo voy a revisar
+
+33
+00:01:44,650 --> 00:01:46,370
+Pero esto es lo primero que t deberas hacer
+
+34
+00:01:46,370 --> 00:01:49,230
+Aparte de revisar tu conexin a internet, por supuesto
+
+35
+00:01:49,630 --> 00:01:50,480
+Con un ping
+
+36
+00:01:50,820 --> 00:01:54,780
+Si es ping est funcional entonces todo est bien
+
+37
+00:01:54,780 --> 00:01:59,480
+Lo siguiente que necesitas hacer es...
+
+38
+00:01:59,480 --> 00:02:01,390
+Bsicamente solo escribir apt-...
+
+39
+00:02:01,390 --> 00:02:04,900
+Bueno, vamos a despejar la pantalla primero
+
+40
+00:02:05,590 --> 00:02:11,820
+apt-cache search header...
+
+41
+00:02:13,320 --> 00:02:16,170
+grep -1 linux
+
+42
+00:02:17,610 --> 00:02:20,000
+Y luego escribes uname -r
+
+43
+00:02:20,260 --> 00:02:24,760
+Y unamos la salida de uname -r con estos archivos de encabezado (headers) de Linux
+
+44
+00:02:24,760 --> 00:02:28,230
+Eso es 4.0.0kali1-amd64
+
+45
+00:02:29,150 --> 00:02:33,210
+4.0.0-kali1-all
+
+46
+00:02:33,210 --> 00:02:36,480
+4.0.0-kali1-all-amd64
+
+47
+00:02:36,480 --> 00:02:37,900
+Meta-paquete
+
+48
+00:02:37,900 --> 00:02:40,380
+Podemos usar el meta-paquete
+
+49
+00:02:41,560 --> 00:02:44,300
+O podemos elegir el especfico
+
+50
+00:02:44,530 --> 00:02:46,590
+Elijamos el meta-paquete
+
+51
+00:02:47,610 --> 00:02:50,460
+Estoy seguro de que podemos usar ambos
+
+52
+00:02:55,230 --> 00:02:56,330
+Ah est
+
+53
+00:02:56,330 --> 00:02:57,400
+Presiono ENTER
+
+54
+00:02:58,180 --> 00:02:59,260
+Funcionando...
+
+55
+00:03:06,710 --> 00:03:09,280
+En cualquier momento, compaero, en cualquier momento
+
+56
+00:03:11,930 --> 00:03:14,830
+S que puede ser un poco tedioso pero no es gran cosa
+
+57
+00:03:15,520 --> 00:03:16,980
+Y luego de que tengas hecho todo esto
+
+58
+00:03:17,650 --> 00:03:18,750
+Vamos a---
+
+59
+00:03:19,640 --> 00:03:20,920
+Solo por si acaso
+
+60
+00:03:20,920 --> 00:03:23,150
+Solo por si acaso, repite esto nuevamente
+
+61
+00:03:23,150 --> 00:03:25,360
+Apt-get update apt-get upgrade
+
+62
+00:03:26,340 --> 00:03:27,670
+Solo por si acaso
+
+63
+00:03:29,100 --> 00:03:32,260
+Porque no creeran la cantidad de problemas que suceden...
+
+64
+00:03:32,260 --> 00:03:34,730
+...solo por no tener paquetes actualizados
+
+65
+00:03:35,200 --> 00:03:37,780
+Y ahora vamos a reiniciar la mquina
+
+66
+00:03:38,680 --> 00:03:40,420
+Simplemente procede a reiniciarla
+
+67
+00:03:41,900 --> 00:03:44,180
+No es gran cosa, debera hacerse rpido
+
+68
+00:03:44,180 --> 00:03:45,230
+Sin malgastar mucho tiempo
+
+69
+00:03:45,230 --> 00:03:46,390
+Y luego vamos a instalar...
+
+70
+00:03:46,390 --> 00:03:49,930
+...la mquina de reinicio de la adicin de invitados una vez ms
+
+71
+00:03:49,930 --> 00:03:52,150
+Y eso ser todo
+
+72
+00:03:52,150 --> 00:03:54,650
+Eso literalmente es todo lo que necesitaremos hacer, nada ms
+
+73
+00:03:54,650 --> 00:03:57,640
+No hay nada de mucha importancia ah
+
+74
+00:04:00,240 --> 00:04:02,200
+Muy bien, sigue...
+
+75
+00:04:04,180 --> 00:04:08,170
+Estos mensajes pueden ser un poco fastidiosos
+
+76
+00:04:08,170 --> 00:04:10,210
+Pero creo que puedes hacer que desaparezcan si presionas...
+
+77
+00:04:10,210 --> 00:04:12,930
+...lo que est al lado de la x
+
+78
+00:04:18,960 --> 00:04:22,290
+Vamos... Vamos, en cualquier momento
+
+79
+00:04:24,560 --> 00:04:26,700
+Odio esperar por estas cosas
+
+80
+00:04:28,700 --> 00:04:28,580
+Entonces
+
+81
+00:04:28,580 --> 00:04:31,260
+Lo siguiente que necesitas hacer es hacer click en dispositivos
+
+82
+00:04:31,260 --> 00:04:32,810
+Y luego en insertar...
+
+83
+00:04:33,570 --> 00:04:35,980
+S. El mo ya ha sido insertado
+
+84
+00:04:35,980 --> 00:04:37,210
+No es gran cosa
+
+85
+00:04:37,210 --> 00:04:38,980
+Pero para ti, va a insertarlo
+
+86
+00:04:40,450 --> 00:04:42,150
+Y... no tiene sentido---
+
+87
+00:04:42,150 --> 00:04:43,710
+No tiene sentido insertar dos veces
+
+88
+00:04:43,710 --> 00:04:47,630
+Es decir, tcnicamente podra eliminarlo y volver a insertarlo
+
+89
+00:04:47,630 --> 00:04:49,700
+No creo que tenga mucho sentido hacer eso
+
+90
+00:04:49,700 --> 00:04:51,570
+As que solo haz esto
+
+91
+00:04:51,570 --> 00:04:52,570
+cd
+
+92
+00:04:54,130 --> 00:04:54,970
+media
+
+93
+00:04:56,980 --> 00:04:57,940
+cdrom0
+
+94
+00:05:00,460 --> 00:05:01,400
+ls
+
+95
+00:05:01,400 --> 00:05:02,460
+Y ah est
+
+96
+00:05:02,460 --> 00:05:08,410
+Luego introduce cp VBoxLinuxAdditions para...
+
+97
+00:05:11,520 --> 00:05:12,650
+Esperen...
+
+98
+00:05:12,650 --> 00:05:13,370
+root
+
+99
+00:05:15,230 --> 00:05:16,350
+desktop
+
+100
+00:05:16,350 --> 00:05:19,250
+Y ya los tengo ah pero t podrs copiarlos
+
+101
+00:05:19,250 --> 00:05:20,620
+Yo no los copiar dos veces
+
+102
+00:05:20,620 --> 00:05:22,380
+Ese era el comando que necesitabas ejecutar
+
+103
+00:05:22,820 --> 00:05:27,690
+Luego dirigete hacia... root
+
+104
+00:05:28,420 --> 00:05:29,600
+desktop
+
+105
+00:05:29,810 --> 00:05:30,850
+Aplica ls
+
+106
+00:05:30,850 --> 00:05:32,250
+Encontrars la adicin de invitados de VirtualBox
+
+107
+00:05:32,250 --> 00:05:35,810
+Aqu puedo ejecutarlas una vez ms. No es gran cosa
+
+108
+00:05:38,100 --> 00:05:38,830
+Est andando
+
+109
+00:05:39,710 --> 00:05:43,430
+La instalacin va a avanzar, no debera tardar mucho, nuevamente
+
+110
+00:05:43,820 --> 00:05:48,750
+S que es muy poco tedioso simplemente esperar mientras esto se hace...
+
+111
+00:05:51,470 --> 00:05:52,220
+OK...
+
+112
+00:05:52,220 --> 00:05:53,220
+Creando...
+
+113
+00:05:54,170 --> 00:05:57,780
+Los archivos de cabecera para el ncleo (kernel) actual no fueron encontrados
+
+114
+00:05:58,890 --> 00:06:00,560
+OK. Ests cosas pueden suceder
+
+115
+00:06:00,800 --> 00:06:02,390
+Pero no es gran cosa
+
+116
+00:06:02,390 --> 00:06:04,900
+Igualmente debera pasar todo el proceso
+
+117
+00:06:04,900 --> 00:06:11,160
+Y t tendrs alrededor de 99% de todas las funciones que tiene
+
+118
+00:06:11,600 --> 00:06:14,160
+Las cuales podrs utilizar como elijas y como te plazca
+
+119
+00:06:14,160 --> 00:06:15,510
+Mientras que la pantalla completa funcione...
+
+120
+00:06:15,510 --> 00:06:16,910
+...y mientras que la conexin funcione...
+
+121
+00:06:16,910 --> 00:06:18,780
+...y mientras la funcin de copiar y pegar funcione...
+
+122
+00:06:19,220 --> 00:06:21,400
+...ests listo
+
+123
+00:06:23,990 --> 00:06:24,630
+Ah tienes
+
+124
+00:06:24,630 --> 00:06:26,210
+Eso es todo lo que necesitabas hacer
+
+125
+00:06:26,210 --> 00:06:28,620
+Ahora lo nico de necesitas escribir es reboot
+
+126
+00:06:28,650 --> 00:06:31,990
+Y luego de haberse reiniciado podrs usar tu VirtualBox
+
+127
+00:06:31,990 --> 00:06:33,080
+Con pantalla completa
+
+128
+00:06:33,180 --> 00:06:36,370
+Y bsicamente todas las funciones que tiene para ofrecer
+
+129
+00:06:36,370 --> 00:06:37,260
+Por cierto
+
+130
+00:06:37,260 --> 00:06:38,520
+Al final de esto
+
+131
+00:06:38,520 --> 00:06:44,180
+Realmente no esperaba que las cosas funcionaran con Fedora22
+
+132
+00:06:44,180 --> 00:06:46,250
+Con Kali 2.0
+
+133
+00:06:46,250 --> 00:06:47,990
+O con el nuevo VirtualBox
+
+134
+00:06:47,990 --> 00:06:52,500
+Porque esos tres sistemas son prcticamente nuevos
+
+135
+00:06:52,500 --> 00:06:57,280
+Y las cosas con sistemas nueves tienden a tener errores
+
+136
+00:06:57,280 --> 00:06:58,930
+Tienden a ser problemticos
+
+137
+00:06:59,330 --> 00:07:00,360
+...Etc.
+
+138
+00:07:00,720 --> 00:07:05,190
+No esper que las cosas funcionaran, pero en la mayor parte si funcion
+
+139
+00:07:05,410 --> 00:07:06,600
+En fin---
+
+140
+00:07:07,560 --> 00:07:09,460
+Espero que esto haya sido de utilidad
+
+141
+00:07:09,460 --> 00:07:12,340
+Para todos los que estaban luchando con la configuracin
+
+142
+00:07:12,340 --> 00:07:13,890
+Y me despido de todos
+

@@ -1,0 +1,740 @@
+1
+00:00:01,000 --> 00:00:04,330
+Hola a todos, bienvenidos a este tutorial.
+
+2
+00:00:04,330 --> 00:00:08,537
+Hoy estar hablando sobre como puedes configurar
+
+3
+00:00:08,537 --> 00:00:12,523
+proxychains en combinacin con Tor en orden de
+
+4
+00:00:12,547 --> 00:00:14,829
+unimizar el trfico, no solo trfico web
+
+5
+00:00:14,829 --> 00:00:16,995
+pero, sin embargo, todo lo dems
+
+6
+00:00:16,995 --> 00:00:21,288
+qeu ha sido generado por muchas de tus
+
+7
+00:00:21,288 --> 00:00:25,823
+aplicacines. Ahora hay algunas de ellas que no servirn
+
+8
+00:00:25,823 --> 00:00:28,080
+para las combinaciones de proxychains, la cual es
+
+9
+00:00:28,080 --> 00:00:32,481
+la cual es una aplicacin es una pieza de sofware
+
+10
+00:00:32,481 --> 00:00:36,031
+la cual es metasploit. Esta es practicamente
+
+11
+00:00:36,031 --> 00:00:39,487
+un Framework de hacking y es crucial e importante
+
+12
+00:00:39,487 --> 00:00:44,263
+por casi todo tipo de actividad hacking en el mundo de hoy
+
+13
+00:00:44,263 --> 00:00:47,328
+especialmente porque permite optimizacin automtica
+
+14
+00:00:47,328 --> 00:00:51,068
+de cdigo necesario para romper el sistema necesario
+
+15
+00:00:51,068 --> 00:00:54,800
+e igualmente contiene las habilidades de espacio
+
+16
+00:00:54,893 --> 00:00:57,858
+tambin. Sin embargo, lo que quiero hacer aqui hoy
+
+17
+00:00:57,858 --> 00:01:03,481
+es mostrarte como anonimizar casi todo el trfico impreso
+
+18
+00:01:03,524 --> 00:01:07,522
+o el trfico generado por la informacin de reunin
+
+19
+00:01:07,522 --> 00:01:11,357
+o incluso tu trfico web en una diferente moda
+
+20
+00:01:11,357 --> 00:01:15,794
+diferente que usar otro navegador como Tor. Y como puedes
+
+21
+00:01:15,794 --> 00:01:19,914
+encubrir tu pistas en general no importa lo que estes haciendo
+
+22
+00:01:19,914 --> 00:01:25,060
+asi que, una de las primeras cosas que necesitas hacer
+
+23
+00:01:25,060 --> 00:01:28,129
+Kali Linux tiene sus herramientas de administrador
+
+24
+00:01:28,129 --> 00:01:31,594
+como Tor y proxychains. Estas dos cosas las
+
+25
+00:01:31,594 --> 00:01:36,883
+las podrs instalar en otro sistemas Linux o Windows
+
+26
+00:01:36,883 --> 00:01:40,964
+el sistema no importa, Tor es un poco difcil
+
+27
+00:01:40,964 --> 00:01:44,472
+he visto versiones con Tor que no se han instalado por defecto
+
+28
+00:01:44,472 --> 00:01:46,888
+y he especificado en el tutorial anterior como
+
+29
+00:01:46,888 --> 00:01:49,730
+puedes instalar Tor sin problemas
+
+30
+00:01:51,592 --> 00:01:53,997
+pero si, lo que necesitars hacer aqu
+
+31
+00:01:53,997 --> 00:01:57,986
+es implemente configurarlo y no instalar nada
+
+32
+00:01:57,986 --> 00:02:01,230
+as vamos simplemente a navegar con las
+
+33
+00:02:01,230 --> 00:02:03,549
+configuraciones XC de cambio de archivo de proxy
+
+34
+00:02:03,549 --> 00:02:12,700
+Nano/etc/ proxychains.conf press enter
+
+35
+00:02:12,700 --> 00:02:15,770
+y aqu estamos en el archivo de configuracin
+
+36
+00:02:15,770 --> 00:02:18,233
+vamos a darle zoom para expander esta ventana
+
+37
+00:02:18,233 --> 00:02:26,166
+lo que es una proxychain es que te da la habilidad de
+
+38
+00:02:26,166 --> 00:02:29,896
+para rotar tu trfico del proxy a diferentes servidores
+
+39
+00:02:29,920 --> 00:02:34,771
+y te mantiene annimo en una forma antigua para ocultarse detrs
+
+40
+00:02:34,771 --> 00:02:39,682
+o para tenerlos all para cuando los necesites asi que
+
+41
+00:02:39,682 --> 00:02:42,119
+aparecern cuando lo pidas o ocultarse detrs de ellos tambin
+
+42
+00:02:42,119 --> 00:02:46,151
+de un post tuyo. Sorpresivamente o no
+
+43
+00:02:46,151 --> 00:02:49,188
+hay un gran nmero de servidores de proxy
+
+44
+00:02:49,188 --> 00:02:51,891
+all afuera que puedes usar, pero no son muy estables
+
+45
+00:02:51,891 --> 00:02:54,982
+ya que sirven y se caen, no son muy rpidos
+
+46
+00:02:54,982 --> 00:02:58,553
+as que para una clientela especfica pueden servir
+
+47
+00:02:58,553 --> 00:03:02,276
+no para cualquier grupo formado como una tarea
+
+48
+00:03:02,276 --> 00:03:05,488
+pero si ests haciendo algo para un grupo especfico
+
+49
+00:03:05,488 --> 00:03:08,248
+que necesita registrarse o ya te registraste
+
+50
+00:03:08,248 --> 00:03:10,487
+definitivamente puedes hacerlo mediante proxychains
+
+51
+00:03:10,487 --> 00:03:12,862
+y esto puede ser razonablemente rpido
+
+52
+00:03:12,862 --> 00:03:15,382
+y as mismo razonablemente estable
+
+53
+00:03:15,382 --> 00:03:19,734
+pero si ests haciendo una escaneada masiva o ests
+
+54
+00:03:19,734 --> 00:03:20,926
+buscando una contrasea o algo de ese tipo
+
+55
+00:03:20,926 --> 00:03:25,809
+proxychains con una lista de proxys seleccionada de los
+
+56
+00:03:25,809 --> 00:03:29,408
+proxys gratuitos de internet, no funcionar
+
+57
+00:03:32,052 --> 00:03:33,810
+es decir, eventualmente va a funcionar
+
+58
+00:03:33,810 --> 00:03:38,516
+y tendr sentido pero puede consumir ms tiempo del esperado
+
+59
+00:03:38,516 --> 00:03:45,443
+y esto quiere decir como un mes para hacer un simple escaneado
+
+60
+00:03:45,443 --> 00:03:49,782
+as que no es una opcin, hay otras maneras de hacerlo
+
+61
+00:03:49,782 --> 00:03:54,252
+pero para este momento quiero mostrarte como usar
+
+62
+00:03:54,252 --> 00:03:56,491
+las proxychains, como configurarlas en realidad
+
+63
+00:03:56,491 --> 00:03:59,932
+porque es realmente muy til, yo realmente lo uso usualmente
+
+64
+00:03:59,932 --> 00:04:03,524
+mucha gente lo hace y es una pieza de software fantstica
+
+65
+00:04:03,524 --> 00:04:06,798
+para empezar, tienes 5 tipos de proxy aqu
+
+66
+00:04:06,798 --> 00:04:12,558
+que puedes usar, tienes HTTP, SOCKS4 y SOCKS5
+
+67
+00:04:12,582 --> 00:04:15,788
+ahora, hay diferencias fundamentales entre estos protocolos
+
+68
+00:04:15,788 --> 00:04:22,488
+tu siempre, siempre querrs encontrarte una proxy SOCKS5
+
+69
+00:04:22,488 --> 00:04:25,518
+esa es la mejor prosibilidad que tiene la habilidad de anonimizar
+
+70
+00:04:25,518 --> 00:04:30,010
+todo tipo de trfico. HTTP, como lo indica su nombre
+
+71
+00:04:30,010 --> 00:04:34,480
+es para el trfico HTTP y el SOCKS4 es muy similar
+
+72
+00:04:34,480 --> 00:04:39,314
+al SOCKS5, pero no soporta el protocolo ATB6 y
+
+73
+00:04:39,314 --> 00:04:41,754
+tampoco el protocolo QDP3 asi que esto puede ser
+
+74
+00:04:41,754 --> 00:04:45,187
+un poco problemtico usar el SOCKS4
+
+75
+00:04:45,187 --> 00:04:49,061
+siempre asegrate de usar el SOCKS5
+
+76
+00:04:49,061 --> 00:04:51,365
+como sea y donde sea
+
+77
+00:04:51,365 --> 00:04:55,987
+en fin. Aqu abajo tienes estas opciones
+
+78
+00:04:55,987 --> 00:04:58,811
+las cuales irn abajo as que bsicamente
+
+79
+00:04:58,811 --> 00:05:02,844
+para habilitarlas no necesitas lineas complejas de cdigo
+
+80
+00:05:02,844 --> 00:05:07,055
+o algo de ese tipo, bsicamente solo borra el numeral
+
+81
+00:05:07,055 --> 00:05:10,676
+y eso es todo, guarda el archivo y la opcin estar dehabilitada
+
+82
+00:05:10,676 --> 00:05:14,278
+as que este numeral presentado en el comentario del
+
+83
+00:05:14,278 --> 00:05:17,772
+significa que el sistema leyendo este archivo
+
+84
+00:05:17,772 --> 00:05:21,039
+ignorar esa linea si hay un numeral, si hay un numeral,
+
+85
+00:05:21,039 --> 00:05:23,927
+toma en consideracin esto.
+
+86
+00:05:26,307 --> 00:05:29,257
+En fin, lo que tenemos aqu son declaraciones
+
+87
+00:05:29,257 --> 00:05:34,362
+que nos permiten especificar como vamos a querer
+
+88
+00:05:34,362 --> 00:05:35,801
+que nuestro trfico sea arraigado
+
+89
+00:05:35,801 --> 00:05:38,833
+asi que primero que todo, tenemos una cadena dinmica
+
+90
+00:05:38,833 --> 00:05:45,167
+la cadena dinmica es una opcin que la gente est usando ms
+
+91
+00:05:45,167 --> 00:05:47,631
+es la opcin mas usada commente
+
+92
+00:05:47,631 --> 00:05:51,163
+la preferida de todas y honestamente creo que es la mejor
+
+93
+00:05:51,163 --> 00:05:54,627
+primeramente porque es la ms estable
+
+94
+00:05:54,627 --> 00:05:57,294
+y aqu tenemos porque: Supn que tienes
+
+95
+00:05:57,294 --> 00:06:02,767
+las proxys ABCD las cuales tienen servidores con direcciones IP
+
+96
+00:06:02,767 --> 00:06:08,933
+con puertos abiertos y si tienes una poltica de cadena estricta
+
+97
+00:06:08,933 --> 00:06:13,706
+como la que tenemos aqu, tu solo podrs tener acceso a cada lado
+
+98
+00:06:13,706 --> 00:06:19,752
+en general en internet yendo solo a travs de ABCD
+
+99
+00:06:19,752 --> 00:06:22,135
+as que tendras que ir mediante todas ellas
+
+100
+00:06:22,135 --> 00:06:25,702
+y tendrs que acceder en ese orden especfico: ABCD
+
+101
+00:06:25,702 --> 00:06:28,618
+y eso no es siempre una cosa buena, es decir,
+
+102
+00:06:28,618 --> 00:06:30,113
+si ests pagando por unas 5 proxys
+
+103
+00:06:30,113 --> 00:06:33,992
+no ser un problema, porque siempre estarn funcionando
+
+104
+00:06:33,992 --> 00:06:36,182
+siempre estarn abiertas asi que, por que no?
+
+105
+00:06:36,182 --> 00:06:38,599
+esa no es una mala opcin, para nada
+
+106
+00:06:38,599 --> 00:06:43,356
+sin embargo, la mayoria de las personas usan proxys gratuitas
+
+107
+00:06:43,356 --> 00:06:48,081
+y no tratan de pagar por ellas, es decir, por que vas a pagar por 5, 10 proxys?
+
+108
+00:06:48,081 --> 00:06:50,812
+solo para un simple escaner o algo as
+
+109
+00:06:50,812 --> 00:06:54,455
+no son gratuitas, cuestan dinero, no son muy caras
+
+110
+00:06:54,455 --> 00:06:58,075
+pero igual, es decir, el simple acto de pagar por si solo
+
+111
+00:06:58,075 --> 00:07:02,824
+te identifica y un poco demuele un poco el limite que tienes
+
+112
+00:07:02,848 --> 00:07:04,623
+en la red o algn complemento de pago
+
+113
+00:07:04,623 --> 00:07:07,292
+as como los mtodos que usas para anonimizarte
+
+114
+00:07:09,178 --> 00:07:13,207
+es un poco complicado simplemente ir y usar
+
+115
+00:07:13,207 --> 00:07:18,780
+una cadena de proxy dinmica. As que simplemente ir
+
+116
+00:07:18,780 --> 00:07:25,730
+adelante y comentar esta linea, ve abajo
+
+117
+00:07:25,730 --> 00:07:30,174
+y comenta esta linea as que las cadenas estrictas
+
+118
+00:07:30,174 --> 00:07:33,488
+no usarn ms IP sino usarn cadenas dinmicas
+
+119
+00:07:33,488 --> 00:07:35,312
+otra cosa que debemos notar aqu es
+
+120
+00:07:35,312 --> 00:07:38,822
+que si quieres usar cadenas de proxy
+
+121
+00:07:38,822 --> 00:07:42,447
+en combinacin con tor, as si queres rootear todo tu trfico
+
+122
+00:07:42,447 --> 00:07:44,821
+a travs de la red y no solo el trfico web
+
+123
+00:07:44,821 --> 00:07:50,160
+debes desabilitar las cadenas dinmicas, hay una forma de trabajar con
+
+124
+00:07:50,160 --> 00:07:53,526
+cadenas estrictas, pero debes ir a las notas de instalacin de Tor
+
+125
+00:07:53,526 --> 00:07:57,651
+lo cual es altamente improbable, necesitars
+
+126
+00:07:57,651 --> 00:08:01,151
+cadenas dinmicas y es por eso que estoy usndolas hoy
+
+127
+00:08:01,151 --> 00:08:05,377
+en fin, si ests usando cadenas dinmicas
+
+128
+00:08:05,377 --> 00:08:10,521
+esto te dar la habilidad de ir de ABCD a tu destino deseado
+
+129
+00:08:10,521 --> 00:08:14,489
+sin tener que atender ningn orden, asi que
+
+130
+00:08:14,489 --> 00:08:19,524
+si BC est cado, puedes trabajar sin problemas
+
+131
+00:08:19,524 --> 00:08:23,722
+si B est cado, puedes ir con ACD e igual llegars al destino
+
+132
+00:08:23,722 --> 00:08:27,021
+siempre que si simplemente una proxy est funcional
+
+133
+00:08:27,021 --> 00:08:28,421
+igualmente servir
+
+134
+00:08:28,421 --> 00:08:31,288
+y no necesitars ningn orden especfico
+
+135
+00:08:31,288 --> 00:08:35,057
+ms abajo, tendrs la cadena al azar (RandomChain)
+
+136
+00:08:35,057 --> 00:08:42,080
+las cuales son en efecto, bsicamente la misma cosa
+
+137
+00:08:42,190 --> 00:08:45,482
+tal como restablecer tus servicios
+
+138
+00:08:45,482 --> 00:08:47,435
+es decir, si ests restableciendo tu Tor
+
+139
+00:08:47,435 --> 00:08:50,318
+sers reasignado y es decir, tor
+
+140
+00:08:50,318 --> 00:08:53,285
+te asignar una nueva direccin IP cada 10 minutos as que
+
+141
+00:08:53,285 --> 00:08:58,523
+de cualquier forma, con las Random Chains puedes especificar
+
+142
+00:08:58,523 --> 00:09:03,732
+una lista de IPs y luego puedes decirle a tu computador Ok
+
+143
+00:09:03,732 --> 00:09:09,086
+quiero que te conectes en este punto y cada vez que te conectes
+
+144
+00:09:09,086 --> 00:09:14,157
+cada vez transmites un paquete quiero que uses una proxy diferente
+
+145
+00:09:14,157 --> 00:09:17,151
+puedes hacer eso tambin, esa es una opcin definiticamente, puedes
+
+146
+00:09:17,151 --> 00:09:23,554
+decirle ok, usa esa 5 veces, luego cambia
+
+147
+00:09:23,554 --> 00:09:25,341
+a esta otra o algo de ese tipo
+
+148
+00:09:25,341 --> 00:09:27,379
+hay muchas opciones all para especificar
+
+149
+00:09:27,379 --> 00:09:30,865
+luego tenemos la cadena len (Chain Len)
+
+150
+00:09:30,865 --> 00:09:36,579
+en fin, si sigues abajo tendrs un quiet mode
+
+151
+00:09:36,579 --> 00:09:38,048
+no necesitamos eso para nada
+
+152
+00:09:38,048 --> 00:09:39,617
+la peticion de Proxy DNS
+
+153
+00:09:39,617 --> 00:09:44,203
+conocida de la data DNS, lo cual es muy importante
+
+154
+00:09:44,203 --> 00:09:48,508
+no puedes tener DNS leaks y djame explicarte que son
+
+155
+00:09:48,508 --> 00:09:52,246
+incluso cuando entra a tu direccin de IP particular,
+
+156
+00:09:52,246 --> 00:09:56,311
+pueden tener la direccin IP del servidor DNS que ests usando
+
+157
+00:09:56,311 --> 00:10:01,253
+lo que hacen lso servidores de DNS es resolver los dominios
+
+158
+00:10:01,253 --> 00:10:03,646
+de las direcciones IP y viceversa
+
+159
+00:10:03,646 --> 00:10:09,348
+por ejemplo, si escribes por ejemplo Youtube.com
+
+160
+00:10:09,348 --> 00:10:15,620
+proveeder de tu servidor local de DNS resolver eso en
+
+161
+00:10:15,620 --> 00:10:22,151
+alguna direccin IP que tienes y har una peticin, sin problemas
+
+162
+00:10:22,151 --> 00:10:28,949
+no querrs que eso pase porque tu servidor de DNS local ser discubierto y
+
+163
+00:10:28,949 --> 00:10:33,648
+esa informacin podra ser usada en orden de descubrir tu
+
+164
+00:10:33,648 --> 00:10:36,686
+direccin de IP local y luego cuando eso est hecho
+
+165
+00:10:36,686 --> 00:10:39,886
+tu locacin fsica estar practicamente comprometida
+
+166
+00:10:39,886 --> 00:10:44,908
+definitivamente necesitas una proxy DNS aqu
+
+167
+00:10:45,383 --> 00:10:46,741
+y probablemente relantizar un poco aqu pero
+
+168
+00:10:46,741 --> 00:10:51,248
+pero simplemente sin ellas es solo cuestin de tiempo de
+
+169
+00:10:51,248 --> 00:10:53,090
+que alguien te encuentre.
+
+170
+00:10:53,090 --> 00:10:57,624
+si sigues abajo, tenemos algunas otras opciones aqu, pero
+
+171
+00:10:57,624 --> 00:10:59,788
+no estamos interesados en ellas por el momento
+
+172
+00:10:59,788 --> 00:11:06,457
+lo que tenemos aqu son 4 formas de entradas de proxy
+
+173
+00:11:06,457 --> 00:11:11,751
+y las dejar as y explicar el resto en el siguiente tutorial
+
+174
+00:11:11,751 --> 00:11:18,781
+pero aqu, antes de que vayas al siguiente tutorial,
+
+175
+00:11:18,781 --> 00:11:24,314
+echa una mirada a esto, no necesitamos ir a ningn lado,
+
+176
+00:11:24,314 --> 00:11:25,517
+slo simplemente mira las frmulas mtemticas que hay aqu
+
+177
+00:11:25,517 --> 00:11:30,559
+como estn escritas. Este es un ejemplo de cadenas de proxy
+
+178
+00:11:30,559 --> 00:11:32,950
+y cmo puedes escribirlas
+
+179
+00:11:32,950 --> 00:11:38,594
+y no es una mala idea descubir lo que significan stas ltimas cosas aqu
+
+180
+00:11:38,594 --> 00:11:42,447
+as que tienes un tipo de proxy, tienes una direccin IP
+
+181
+00:11:42,447 --> 00:11:44,819
+descubierta por lo que significa este nombre y este nmero aqu
+
+182
+00:11:44,819 --> 00:11:48,152
+y lo que son estos nmeros aqu
+
+183
+00:11:48,152 --> 00:11:50,279
+obviamente voy a explicar lo quie significan estas en el prximo tutorial
+
+184
+00:11:50,279 --> 00:11:56,386
+pero trata de adivinarlo por ti mismo y tendrs las respuestas, es muy simple.
+
+185
+00:11:56,386 --> 00:12:00,125
+en todo caso, te espero lo mejor y te veo en el siguiente tutorial.
+

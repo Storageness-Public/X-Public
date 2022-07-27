@@ -1,0 +1,1432 @@
+1
+00:00:00,510 --> 00:00:03,610
+Saludos a todos y sean bienvenidos a la segunda parte de este tutorial
+
+2
+00:00:04,340 --> 00:00:06,900
+Ahora guardemos el archivo
+
+3
+00:00:07,480 --> 00:00:10,920
+Entonces, presiona control O para escribir la salida al archivo
+
+4
+00:00:11,500 --> 00:00:13,890
+Dice nombre de archivo a escribir
+
+5
+00:00:13,890 --> 00:00:17,810
+Puedes modificarlo aqu que puedes escribir unas letras
+
+6
+00:00:17,810 --> 00:00:17,970
+O lo que quieras
+
+7
+00:00:17,970 --> 00:00:19,360
+Puedes cambiar el nombre aqu
+
+8
+00:00:19,360 --> 00:00:22,470
+O hasta puedes cambiar la extensin si quieres
+
+9
+00:00:22,790 --> 00:00:24,730
+Pero no hay necesidad hasta ahora
+
+10
+00:00:24,730 --> 00:00:26,750
+Solo voy a proceder a guardarlo como test
+
+11
+00:00:26,750 --> 00:00:28,110
+Presiono ENTER
+
+12
+00:00:28,110 --> 00:00:28,970
+Ah est
+
+13
+00:00:28,970 --> 00:00:31,200
+Dice escribi una lnea
+
+14
+00:00:31,610 --> 00:00:33,820
+Presiono control X para salir
+
+15
+00:00:33,820 --> 00:00:33,990
+Ah est
+
+16
+00:00:34,330 --> 00:00:36,020
+Despejo la pantalla
+
+17
+00:00:36,550 --> 00:00:38,650
+Y ahora voy a utilizar el comando cat...
+
+18
+00:00:38,650 --> 00:00:40,640
+...para obtener un listado de este archivo en particular
+
+19
+00:00:40,640 --> 00:00:43,500
+El cual es mucho ms visible que el anterior
+
+20
+00:00:43,500 --> 00:00:44,580
+El cual no podas leer
+
+21
+00:00:44,580 --> 00:00:47,530
+Por cierto, el comando cat estaba funcionando correctamente
+
+22
+00:00:47,530 --> 00:00:49,860
+Pero era mayormente un archivo binario
+
+23
+00:00:49,860 --> 00:00:50,600
+Por lo que...
+
+24
+00:00:50,860 --> 00:00:52,480
+Es decir, te dio un listado...
+
+25
+00:00:52,480 --> 00:00:54,890
+Pero no podas leer nada de ah
+
+26
+00:00:55,400 --> 00:00:58,660
+Procedamos a escribir cat test
+
+27
+00:00:58,890 --> 00:00:59,530
+Y ah est
+
+28
+00:00:59,530 --> 00:01:02,630
+Dice algn texto aleatorio va aqu
+
+29
+00:01:02,630 --> 00:01:06,930
+Ese es el texto que habamos escrito en el archivo de texto
+
+30
+00:01:07,220 --> 00:01:08,710
+y---
+
+31
+00:01:08,710 --> 00:01:09,850
+Archivo de prueba
+
+32
+00:01:09,850 --> 00:01:11,160
+Y puedes aplicarle cat de esta forma
+
+33
+00:01:11,590 --> 00:01:12,920
+Estas cosas son muy buenas
+
+34
+00:01:12,920 --> 00:01:14,970
+En especial con los archivos
+
+35
+00:01:14,970 --> 00:01:17,970
+Con lo que te quieres asegurar de---
+
+36
+00:01:17,970 --> 00:01:19,910
+No quieres cambiarlos de ninguna manera
+
+37
+00:01:19,910 --> 00:01:21,810
+Y no quieres hacer ningn cambio accidental
+
+38
+00:01:22,250 --> 00:01:23,450
+Ni nada as
+
+39
+00:01:23,450 --> 00:01:28,170
+Y quieres ver rpidamente lo que se encuentra ubicado dentro de ese archivo
+
+40
+00:01:28,410 --> 00:01:29,970
+Hay otra forma de hacer esto
+
+41
+00:01:30,190 --> 00:01:32,290
+Bsicamente es less (menos)
+
+42
+00:01:32,700 --> 00:01:36,710
+Naveguemos hacia etc
+
+43
+00:01:36,710 --> 00:01:37,650
+apt
+
+44
+00:01:37,980 --> 00:01:39,450
+ls
+
+45
+00:01:39,450 --> 00:01:42,260
+Y aqu tenemos muchos archivos con los cuales trabajar
+
+46
+00:01:42,320 --> 00:01:45,330
+Tomemos sources.list como ejemplo
+
+47
+00:01:45,830 --> 00:01:49,720
+Si aplico cat sources.list...
+
+48
+00:01:50,050 --> 00:01:52,720
+Voy a obtener todo lo que est en ese archivo
+
+49
+00:01:52,720 --> 00:01:53,800
+Como antes
+
+50
+00:01:53,800 --> 00:01:55,830
+Y va a ser listado en mi terminal aqu
+
+51
+00:01:56,810 --> 00:01:57,510
+Se quedar ah
+
+52
+00:01:57,510 --> 00:01:58,020
+No se ir a ningn lado
+
+53
+00:01:58,660 --> 00:02:00,700
+Pero hay otro comando que puedo usar
+
+54
+00:02:00,700 --> 00:02:02,450
+Djame despejar la pantalla
+
+55
+00:02:02,650 --> 00:02:04,750
+Se llama less (menos)
+
+56
+00:02:04,750 --> 00:02:07,720
+Y si escribo less sources.list
+
+57
+00:02:07,720 --> 00:02:13,360
+Se me mostrar una nueva pestaa en la cual puedo ver las cosas
+
+58
+00:02:13,360 --> 00:02:14,450
+No es una nueva pestaa de terminal...
+
+59
+00:02:14,450 --> 00:02:17,250
+...sino un nuevo espacio de trabajo dentro de la propia terminal
+
+60
+00:02:17,780 --> 00:02:19,530
+Y cuando presione Q
+
+61
+00:02:19,530 --> 00:02:22,170
+Va a salir y nada ser mostrado aqu
+
+62
+00:02:22,290 --> 00:02:28,720
+As que es muy agradable en cuanto a ser limpio y organizado, etc.
+
+63
+00:02:29,470 --> 00:02:30,800
+Entonces less y cat
+
+64
+00:02:30,800 --> 00:02:36,630
+Son muy agradables pero puedes usar, por ejemplo, cat sources.list
+
+65
+00:02:36,950 --> 00:02:40,870
+Y el comando que he mencionado previamente es grep
+
+66
+00:02:41,780 --> 00:02:43,400
+grep bsicamente quiere decir que halas algo
+
+67
+00:02:43,400 --> 00:02:45,900
+Agarras algo de algo ms
+
+68
+00:02:46,140 --> 00:02:47,580
+Esto es a lo que me refiero
+
+69
+00:02:47,820 --> 00:02:49,980
+Escribes cat sources.list
+
+70
+00:02:49,980 --> 00:02:51,910
+Y escriben una barra vertical
+
+71
+00:02:51,910 --> 00:02:54,180
+Este smbolo se llama barra vertical (pipe)
+
+72
+00:02:54,180 --> 00:02:57,130
+El cual bsicamente declara que cualquiera que sea la salida de esto...
+
+73
+00:02:57,130 --> 00:03:00,960
+Envala hacia cualquiera que sea el comando que venga aqu
+
+74
+00:03:01,430 --> 00:03:03,300
+Ahora escribir grep
+
+75
+00:03:03,670 --> 00:03:06,940
+Y digamos que quiero escribir src
+
+76
+00:03:07,270 --> 00:03:08,450
+Presiono ENTER
+
+77
+00:03:08,450 --> 00:03:08,790
+Excelente
+
+78
+00:03:08,790 --> 00:03:14,740
+Solo imprimir lneas que contengan src
+
+79
+00:03:15,140 --> 00:03:17,580
+Linux distingue entre maysculas y minsculas
+
+80
+00:03:17,580 --> 00:03:19,340
+As que cuando apliques grep va a revisar...
+
+81
+00:03:19,340 --> 00:03:24,380
+...si las letras son maysculas o minsculas
+
+82
+00:03:26,720 --> 00:03:29,190
+Pero puedes darle una instruccin de ignorar si es mayscula o minscula
+
+83
+00:03:29,190 --> 00:03:30,210
+Puedes escribir esto
+
+84
+00:03:30,210 --> 00:03:32,370
+-i quiere decir ignorar si es mayscula o minscula
+
+85
+00:03:32,370 --> 00:03:34,340
+Lo siento
+
+86
+00:03:34,620 --> 00:03:36,530
+-i para ignorar si es mayscula o no
+
+87
+00:03:36,840 --> 00:03:40,560
+Vas a tener la misma salida porque no hay cosas diferentes en este archivo
+
+88
+00:03:41,180 --> 00:03:43,460
+Pero entiendes la idea general
+
+89
+00:03:43,460 --> 00:03:46,100
+Entonces, as es como usaras cat con grep
+
+90
+00:03:46,380 --> 00:03:48,580
+Para halar cosas de los archivos
+
+91
+00:03:48,580 --> 00:03:49,870
+Es muy importante
+
+92
+00:03:49,870 --> 00:03:52,530
+Esta es una parte enorme de la terminal de Linux
+
+93
+00:03:52,820 --> 00:03:55,800
+Filtrar archivos de texto
+
+94
+00:03:56,120 --> 00:03:59,600
+Principalmente porque vamos a estar haciendo grandes escaneos de red
+
+95
+00:03:59,910 --> 00:04:05,920
+Y querremos crear archivos de los cuales podremos halar informacin til
+
+96
+00:04:05,920 --> 00:04:09,100
+De la cual luego pasaremos a otras herramientas...
+
+97
+00:04:09,100 --> 00:04:10,960
+...con las cuales haremos algo
+
+98
+00:04:11,120 --> 00:04:12,330
+En fin
+
+99
+00:04:12,620 --> 00:04:15,200
+Djame despejar la pantalla ahora
+
+100
+00:04:15,640 --> 00:04:17,490
+Tambin tienes echo
+
+101
+00:04:17,770 --> 00:04:19,470
+Entonces... echo
+
+102
+00:04:20,140 --> 00:04:22,280
+Le colocamos las comillas
+
+103
+00:04:22,500 --> 00:04:23,200
+Las abro
+
+104
+00:04:23,740 --> 00:04:28,260
+Digamos ESTOY VIVO
+
+105
+00:04:29,310 --> 00:04:30,110
+Cierro las comillas
+
+106
+00:04:30,680 --> 00:04:33,830
+Y har eco a estas palabras
+
+107
+00:04:33,830 --> 00:04:34,500
+Literalmente es un eco
+
+108
+00:04:34,710 --> 00:04:37,170
+Escribes algo dentro de l y les hace eco aqu
+
+109
+00:04:37,620 --> 00:04:39,560
+Volvamos al directorio de home
+
+110
+00:04:39,600 --> 00:04:40,630
+Tomar el listado
+
+111
+00:04:40,980 --> 00:04:42,880
+Y usa exactamente el mismo comando de eco
+
+112
+00:04:43,990 --> 00:04:46,310
+Por cierto puedes desplazarte hacia tus comandos anteriores...
+
+113
+00:04:46,560 --> 00:04:48,220
+...usando las flechas del teclado
+
+114
+00:04:48,220 --> 00:04:51,890
+Entonces, usando la flecha hacia arriba y la flecha hacia abajo...
+
+115
+00:04:51,890 --> 00:04:53,890
+...puedes desplazarte de vuelta a tus comandos anteriores
+
+116
+00:04:53,890 --> 00:04:55,710
+Y no necesitas re-escribirlos
+
+117
+00:04:55,970 --> 00:04:57,510
+Entonces...
+
+118
+00:04:57,510 --> 00:04:58,200
+ESTOY VIVO
+
+119
+00:04:58,200 --> 00:05:00,190
+Voy a insertar esto
+
+120
+00:05:01,190 --> 00:05:05,380
+As que voy a usar un smbolo de mayor que (>) y escribir test
+
+121
+00:05:05,450 --> 00:05:08,490
+Esto har eco de ESTOY VIVO en test
+
+122
+00:05:08,490 --> 00:05:09,840
+Y si aplico less---
+
+123
+00:05:09,840 --> 00:05:11,580
+Voy a usar cat
+
+124
+00:05:12,460 --> 00:05:17,750
+Ves?, ha reemplazado el contenido de test
+
+125
+00:05:17,750 --> 00:05:19,570
+Que anteriormente era algn texto aleatorio va aqu
+
+126
+00:05:19,950 --> 00:05:22,190
+Por ESTOY VIVO
+
+127
+00:05:22,970 --> 00:05:23,790
+Es un comando muy agradable
+
+128
+00:05:24,000 --> 00:05:26,140
+Puedes cambiar nombres variables...
+
+129
+00:05:26,470 --> 00:05:29,500
+Valores variables usando echo, etc.
+
+130
+00:05:29,830 --> 00:05:33,420
+Vamos a usar esto un poco ms a medida avancemos en el curso
+
+131
+00:05:33,810 --> 00:05:34,610
+Y...
+
+132
+00:05:34,610 --> 00:05:36,690
+No quiero entrar en profundidad aqu
+
+133
+00:05:36,690 --> 00:05:37,920
+Principalmente porque luego...
+
+134
+00:05:37,920 --> 00:05:40,040
+Cuando tengamos ejemplos claros
+
+135
+00:05:40,040 --> 00:05:43,500
+Que se relacionen directamente con lo que estemos haciendo en el momento
+
+136
+00:05:43,810 --> 00:05:45,610
+Que bsicamente es pruebas de penetracin
+
+137
+00:05:46,180 --> 00:05:50,240
+Entonces vers usos ms avanzados de prcticamente todos estos comandos
+
+138
+00:05:50,240 --> 00:05:51,460
+En especial grep
+
+139
+00:05:51,960 --> 00:05:54,110
+Tenemos touch (tocar)
+
+140
+00:05:54,870 --> 00:05:56,870
+touch es una forma rpida de crear archivos
+
+141
+00:05:57,110 --> 00:05:58,130
+As que, por ejemplo...
+
+142
+00:05:58,390 --> 00:05:59,800
+Puedo usar touch...
+
+143
+00:06:00,250 --> 00:06:02,380
+Y puedo decir archivo uno...
+
+144
+00:06:02,380 --> 00:06:03,750
+archivo dos
+
+145
+00:06:03,750 --> 00:06:05,750
+archivo tres
+
+146
+00:06:05,750 --> 00:06:06,710
+Presiono ENTER
+
+147
+00:06:06,930 --> 00:06:07,530
+Aplico ls
+
+148
+00:06:07,970 --> 00:06:11,620
+Y ven, inmediatamente ha creado tres archivos...
+
+149
+00:06:12,470 --> 00:06:14,210
+Touch es un mtodo rpido---
+
+150
+00:06:14,260 --> 00:06:17,280
+Ups. No s exactamente que pas ah
+
+151
+00:06:17,280 --> 00:06:20,430
+En fin, touch es una manera rpida para crear...
+
+152
+00:06:20,430 --> 00:06:22,370
+...cualquier cantidad de archivos que desees
+
+153
+00:06:22,780 --> 00:06:25,850
+Y puedes especificar rutas a carpetas
+
+154
+00:06:25,850 --> 00:06:27,150
+Puedes crear este archivo en home
+
+155
+00:06:27,150 --> 00:06:28,310
+Este en var
+
+156
+00:06:28,310 --> 00:06:30,560
+Este en var/log, etc.
+
+157
+00:06:31,930 --> 00:06:33,780
+En fin, abajo tienes mkdir
+
+158
+00:06:34,170 --> 00:06:37,210
+As que si escribo mkdir...
+
+159
+00:06:37,730 --> 00:06:39,270
+Es hacer directorio
+
+160
+00:06:39,270 --> 00:06:41,840
+As que ests haciendo algn tipo de directorio
+
+161
+00:06:41,840 --> 00:06:43,270
+Digamos...
+
+162
+00:06:43,280 --> 00:06:48,890
+El nombre de este directorio ser placeToBe  (ElLugarParaEstar)
+
+163
+00:06:49,460 --> 00:06:50,650
+Y si uso ls...
+
+164
+00:06:50,950 --> 00:06:51,530
+Ah est
+
+165
+00:06:51,530 --> 00:06:55,450
+Declara que este archivo es de hecho un directorio
+
+166
+00:06:55,450 --> 00:06:57,390
+Es cual es placeToBe
+
+167
+00:06:57,700 --> 00:07:00,120
+Hasta puedo navegar hasta l y colocar placeToBe
+
+168
+00:07:00,120 --> 00:07:00,950
+ls
+
+169
+00:07:00,950 --> 00:07:02,120
+No hay nada en l
+
+170
+00:07:02,120 --> 00:07:04,820
+Pero entienden la idea
+
+171
+00:07:04,820 --> 00:07:06,420
+Pueden hacer directorios de esa manera
+
+172
+00:07:06,700 --> 00:07:07,870
+Ahora, chown
+
+173
+00:07:08,390 --> 00:07:10,570
+Si escribo chown
+
+174
+00:07:10,570 --> 00:07:13,720
+Te permite cambiar la propiedad de un archivo en especfico
+
+175
+00:07:13,720 --> 00:07:15,260
+Ahora, ya que solo tenemos un usuario aqu
+
+176
+00:07:15,260 --> 00:07:16,160
+El cual es root
+
+177
+00:07:16,390 --> 00:07:18,260
+No tiene sentido hacerlo
+
+178
+00:07:18,260 --> 00:07:20,330
+A menos que creemos algunos otros nuevos usuarios
+
+179
+00:07:20,560 --> 00:07:22,730
+Pero eso no lo vamos a hacer porque no los necesitamos
+
+180
+00:07:23,100 --> 00:07:24,730
+Pero solo para mostrarte como funcionara esto
+
+181
+00:07:24,730 --> 00:07:26,200
+Por ejemplo, si fueras---
+
+182
+00:07:26,200 --> 00:07:28,840
+Si el propietario de un archivo no fuera root...
+
+183
+00:07:29,930 --> 00:07:31,540
+...y si quisieras cambiarlo a root
+
+184
+00:07:31,820 --> 00:07:33,890
+Haras lo siguiente
+
+185
+00:07:33,890 --> 00:07:35,320
+chown
+
+186
+00:07:35,670 --> 00:07:38,830
+Luego escribiras el nombre del usuario
+
+187
+00:07:38,900 --> 00:07:39,870
+:
+
+188
+00:07:39,870 --> 00:07:41,360
+El grupo de usuario
+
+189
+00:07:41,360 --> 00:07:44,320
+El grupo de usuario y el nombre de usuario generalmente...
+
+190
+00:07:44,640 --> 00:07:46,420
+...son el mismo es sus PCs domsticas
+
+191
+00:07:46,420 --> 00:07:48,540
+Al menos que estn en algn servidos ms grande, o algo as
+
+192
+00:07:49,170 --> 00:07:51,950
+Y luego solo especificaran el nombre del archivo
+
+193
+00:07:52,650 --> 00:07:53,790
+No s, pueden escribir test
+
+194
+00:07:54,810 --> 00:07:54,830
+Ah est
+
+195
+00:07:54,830 --> 00:08:00,240
+Cambiar efectivamente la propiedad del archivo test
+
+196
+00:08:00,240 --> 00:08:02,910
+Al usuario llamado root
+
+197
+00:08:02,910 --> 00:08:05,480
+El cual es del grupo de usuario root
+
+198
+00:08:05,670 --> 00:08:08,560
+Y si aplico ls -la
+
+199
+00:08:08,560 --> 00:08:09,160
+Pueden ver aqu---
+
+200
+00:08:09,160 --> 00:08:11,780
+Declara quienes son los propietarios
+
+201
+00:08:11,780 --> 00:08:13,990
+Y tambin cuales grupos son dueos del archivo
+
+202
+00:08:15,550 --> 00:08:16,440
+Si despejo la pantalla...
+
+203
+00:08:16,440 --> 00:08:18,830
+Hay otro comando ms usado
+
+204
+00:08:19,870 --> 00:08:21,230
+Se llama chmod
+
+205
+00:08:22,560 --> 00:08:26,260
+Y este comando te permite cambiar los permisos del archivo
+
+206
+00:08:26,300 --> 00:08:26,920
+Entonces...
+
+207
+00:08:26,920 --> 00:08:30,570
+Esto es algo que necesitars usar diariamente, y bastante a menudo
+
+208
+00:08:31,960 --> 00:08:32,120
+Principalmente porque...
+
+209
+00:08:32,640 --> 00:08:33,280
+Bueno, vern
+
+210
+00:08:34,490 --> 00:08:35,980
+Si tengo un archivo ejecutable en Linux...
+
+211
+00:08:36,230 --> 00:08:37,540
+Por ejemplo
+
+212
+00:08:38,100 --> 00:08:40,390
+Vamos a editarlo---
+
+213
+00:08:40,600 --> 00:08:44,790
+Bueno, no necesitamos editar. Podemos simplemente escribir echo
+
+214
+00:08:45,740 --> 00:08:46,660
+echo
+
+215
+00:08:47,820 --> 00:08:48,520
+Y...
+
+216
+00:08:50,550 --> 00:08:51,200
+No as
+
+217
+00:08:51,830 --> 00:08:53,060
+Hola
+
+218
+00:08:53,060 --> 00:08:54,270
+Cierro comillas
+
+219
+00:08:54,660 --> 00:08:57,700
+Quiero mostrar esto a travs de test
+
+220
+00:08:58,350 --> 00:09:03,740
+Y quiero mover test hacia test.sh
+
+221
+00:09:04,490 --> 00:09:07,330
+hs bsicamente es una aceptable---
+
+222
+00:09:07,590 --> 00:09:09,720
+Uno de los scripts...
+
+223
+00:09:09,950 --> 00:09:11,870
+Es un script de bash para Linux
+
+224
+00:09:12,780 --> 00:09:14,110
+Que de tal manera puedes automatizar tareas
+
+225
+00:09:14,110 --> 00:09:17,200
+Trataremos con l ms ampliamente  a medida avancemos en el tutorial
+
+226
+00:09:17,200 --> 00:09:20,250
+Necesitars estar familiarizado con los scripts de bash
+
+227
+00:09:20,250 --> 00:09:20,920
+Definitivamente
+
+228
+00:09:20,920 --> 00:09:24,200
+Pero el script de bash es muy similar a la propia terminal
+
+229
+00:09:24,210 --> 00:09:25,990
+As que todos los comandos que uses en la terminal...
+
+230
+00:09:25,990 --> 00:09:28,660
+...tambin puedes usarlos en los scripts de bash
+
+231
+00:09:28,660 --> 00:09:31,340
+Bsicamente combinando un montn de ellos en un archivo
+
+232
+00:09:33,210 --> 00:09:35,870
+Ahora quiero que este sea mi ejecutable
+
+233
+00:09:35,870 --> 00:09:40,950
+Pero ves, la forma de iniciar los ejecutables es ./
+
+234
+00:09:40,950 --> 00:09:42,110
+Como he dicho previamente
+
+235
+00:09:42,110 --> 00:09:43,840
+Es un comando para iniciar cualquier ejecutable
+
+236
+00:09:43,840 --> 00:09:45,290
+Y si escribo test
+
+237
+00:09:45,290 --> 00:09:46,230
+Y presiono tab
+
+238
+00:09:46,230 --> 00:09:48,660
+No me da una lista de posibilidades, Por qu?
+
+239
+00:09:49,490 --> 00:09:52,160
+Seguramente, test.sh es un ejecutable
+
+240
+00:09:52,520 --> 00:09:53,440
+Pero no
+
+241
+00:09:53,750 --> 00:09:57,710
+Ves, no tiene un permiso para ser un archivo ejecutable
+
+242
+00:09:58,850 --> 00:10:00,430
+Ves, aqu la diferencia---
+
+243
+00:10:00,540 --> 00:10:02,220
+Solo observa este archivo
+
+244
+00:10:02,640 --> 00:10:04,900
+Y observa este archivo
+
+245
+00:10:04,900 --> 00:10:05,820
+Este es verde, y este otro no lo es
+
+246
+00:10:06,650 --> 00:10:07,910
+Y ahora ve sus permisos
+
+247
+00:10:08,790 --> 00:10:09,690
+Como ves
+
+248
+00:10:09,690 --> 00:10:15,170
+Tiene marcado que este es ejecutable para los grupos de usuario, etc.
+
+249
+00:10:15,540 --> 00:10:20,180
+Mientras este de aqu arriba, test.sh, no tiene tales permisos
+
+250
+00:10:21,950 --> 00:10:23,540
+Necesitas cambiar eso y---
+
+251
+00:10:23,740 --> 00:10:24,830
+La forma de cambiarlo es...
+
+252
+00:10:24,830 --> 00:10:26,760
+chmod
+
+253
+00:10:27,760 --> 00:10:29,120
+Y vas a escribir +x
+
+254
+00:10:29,120 --> 00:10:29,830
+De manera que...
+
+255
+00:10:30,400 --> 00:10:33,400
+...si quieres que el archivo permita escritura colocas +w
+
+256
+00:10:34,100 --> 00:10:35,890
+Si quieres que sea ejecutable colocas +x
+
+257
+00:10:35,970 --> 00:10:38,140
+Si quieres poder leer el archivo colocar +r
+
+258
+00:10:38,430 --> 00:10:39,220
+Es muy simple
+
+259
+00:10:39,470 --> 00:10:41,530
+Tambin hay una forma de hacer esto con nmeros
+
+260
+00:10:41,530 --> 00:10:43,190
+Puedes escribir 755
+
+261
+00:10:43,710 --> 00:10:47,820
+No intentes recordar todos esos modos
+
+262
+00:10:48,150 --> 00:10:50,330
+Lo que sea necesites bsicamente lo revisars en la red
+
+263
+00:10:50,330 --> 00:10:52,810
+Puede ser bastante complicado
+
+264
+00:10:52,810 --> 00:10:54,390
+Pero estos tres necesitas saberlos
+
+265
+00:10:54,390 --> 00:10:58,190
++w +r y +x
+
+266
+00:10:58,750 --> 00:11:00,530
+Y tambin 777
+
+267
+00:11:00,810 --> 00:11:02,970
+El cual es un modulo global
+
+268
+00:11:02,970 --> 00:11:03,390
+Este es el modo que---
+
+269
+00:11:03,390 --> 00:11:05,840
+No se recomienda para uso real
+
+270
+00:11:05,840 --> 00:11:10,410
+Pero usas el chmod para probar y resolver cosas
+
+271
+00:11:10,410 --> 00:11:14,440
+Por ejemplo, si quieres estar absolutamente seguro de que...
+
+272
+00:11:14,440 --> 00:11:18,720
+...ciertas acciones no estn siendo prevenidas debido a permisos del archivo...
+
+273
+00:11:18,720 --> 00:11:21,610
+Cambias el modo de esos archivos a 777
+
+274
+00:11:22,670 --> 00:11:23,200
+El cual es el modo global
+
+275
+00:11:23,200 --> 00:11:25,570
+Con el cual cualquiera puede hacer lo que con el archivo
+
+276
+00:11:25,870 --> 00:11:27,390
+Y si an recibes un mensaje de error...
+
+277
+00:11:27,390 --> 00:11:32,240
+...ya sabes que no tiene nada que ver con los permisos
+
+278
+00:11:33,270 --> 00:11:35,420
+Esas cuatro cosas s necesitas saberlas
+
+279
+00:11:35,640 --> 00:11:37,560
+Puedo proceder a escribir +x
+
+280
+00:11:37,990 --> 00:11:39,630
+Escribo radom---
+
+281
+00:11:39,630 --> 00:11:41,170
+No. No es RandomIsNotSoRandom
+
+282
+00:11:41,170 --> 00:11:45,190
+Escribo test.sh
+
+283
+00:11:45,190 --> 00:11:46,480
+Presiono ENTER
+
+284
+00:11:46,800 --> 00:11:49,930
+Y si coloco ls -la una vez ms
+
+285
+00:11:50,140 --> 00:11:52,820
+Vers que test.sh ahora es ejecutable
+
+286
+00:11:53,150 --> 00:11:54,740
+Permtanme ejecutarlo
+
+287
+00:11:55,390 --> 00:11:56,260
+Y ah est
+
+288
+00:11:56,480 --> 00:12:02,050
+Si ejecuto esto har eco de hola en mi pantalla de la terminal
+
+289
+00:12:02,480 --> 00:12:06,280
+Falta un poco ms por hacer
+
+290
+00:12:06,630 --> 00:12:08,040
+No es mucho ms
+
+291
+00:12:08,840 --> 00:12:11,560
+Pero hay solo un comando ms que realmente me gustara mostrarles
+
+292
+00:12:11,860 --> 00:12:13,910
+Y que en efecto puede ser un comando muy peligroso
+
+293
+00:12:13,910 --> 00:12:18,260
+Puede perjudicarte en forma que an ni te puedes imaginar
+
+294
+00:12:18,920 --> 00:12:22,810
+Ese es el comando rm
+
+295
+00:12:23,200 --> 00:12:25,120
+rm bsicamente significa eliminar
+
+296
+00:12:25,620 --> 00:12:27,590
+Y una vez que eliminas algo con este comando...
+
+297
+00:12:27,810 --> 00:12:30,990
+...es bsicamente imposible recuperar nada
+
+298
+00:12:31,500 --> 00:12:34,510
+As que si escribo rm test.sh
+
+299
+00:12:36,120 --> 00:12:39,050
+Lo va a eliminar y ya no estar ah
+
+300
+00:12:39,530 --> 00:12:43,790
+Pero si navego hasta placeToBe y...
+
+301
+00:12:44,010 --> 00:12:44,560
+No s
+
+302
+00:12:45,780 --> 00:12:47,220
+Escribo touch test
+
+303
+00:12:47,480 --> 00:12:49,730
+Har uno nuevo archivo ah
+
+304
+00:12:50,200 --> 00:12:51,850
+Y si digo rm placeToBe
+
+305
+00:12:53,270 --> 00:12:57,390
+Dir que rm no puede eliminar placeToBe porque es un directorio
+
+306
+00:12:57,390 --> 00:12:59,610
+Este es un mecanismo de seguridad de rm
+
+307
+00:12:59,660 --> 00:13:04,370
+As que no eliminaras un directorio porque no podras recuperarlo
+
+308
+00:13:04,370 --> 00:13:05,770
+Y eso sera muy malo
+
+309
+00:13:05,770 --> 00:13:14,220
+Lo que puedes hacer es escribir rm -f y luego placeToBe
+
+310
+00:13:14,290 --> 00:13:15,830
+No se puede eliminar el directorio
+
+311
+00:13:16,360 --> 00:13:18,670
+OK, no hay problema.
+
+312
+00:13:18,670 --> 00:13:20,350
+Ves, te quedas atascado
+
+313
+00:13:20,350 --> 00:13:23,900
+Y deliberadamente voy a dejar esta parte en este tutorial para resolverlo
+
+314
+00:13:24,400 --> 00:13:26,750
+Entonces escribes - - help
+
+315
+00:13:28,690 --> 00:13:30,950
+Y aqu tienes recursivo
+
+316
+00:13:31,150 --> 00:13:33,540
+eliminar directorios y sus contenidos recursivamente
+
+317
+00:13:34,320 --> 00:13:36,500
+Esa es una opcin muy buena
+
+318
+00:13:36,730 --> 00:13:38,530
+As que vamos a proceder a hacer eso
+
+319
+00:13:38,530 --> 00:13:43,010
+Porque esto ir a la carpeta y eliminar todo lo que est adentro
+
+320
+00:13:43,010 --> 00:13:44,680
+Y hasta la propia carpeta, esperemos
+
+321
+00:13:44,920 --> 00:13:48,990
+Escribamos rm -r placeToBe
+
+322
+00:13:49,500 --> 00:13:50,180
+Presiono ENTER
+
+323
+00:13:50,180 --> 00:13:50,920
+Ah est
+
+324
+00:13:51,140 --> 00:13:53,470
+Lo ha eliminado y ah tenemos
+
+325
+00:13:53,470 --> 00:13:54,720
+Ya no est ah
+
+326
+00:13:55,360 --> 00:14:00,960
+El funcin -f que he usado es "forzar"
+
+327
+00:14:01,440 --> 00:14:02,870
+No te har ninguna pregunta
+
+328
+00:14:02,870 --> 00:14:04,970
+Borrar la carpeta o el archivo
+
+329
+00:14:04,970 --> 00:14:06,590
+Lo que tambin puede ser muy peligroso
+
+330
+00:14:06,590 --> 00:14:10,770
+Cuando usas rm siempre quieres que te hagan preguntas
+
+331
+00:14:12,410 --> 00:14:12,950
+De cualquier forma
+
+332
+00:14:13,620 --> 00:14:18,110
+Como dije, deliberadamente he dejado esto para mostrarles que an si---
+
+333
+00:14:18,110 --> 00:14:21,180
+Si te quedas atascado no te preocupes por  eso
+
+334
+00:14:21,180 --> 00:14:22,560
+Yo siempre me quedo atascado
+
+335
+00:14:22,560 --> 00:14:23,930
+Y si no saber que escribir
+
+336
+00:14:23,930 --> 00:14:25,300
+Cul argumento pasar
+
+337
+00:14:25,300 --> 00:14:27,800
+Solo escribe - - help
+
+338
+00:14:28,450 --> 00:14:30,980
+Y observa lo que de hecho puedes escribir
+
+339
+00:14:32,120 --> 00:14:33,330
+Lee un poco
+
+340
+00:14:34,400 --> 00:14:36,190
+Y luego usa las opciones
+
+341
+00:14:36,190 --> 00:14:36,770
+Prubalo
+
+342
+00:14:37,400 --> 00:14:39,570
+A veces funcionar, a veces no
+
+343
+00:14:39,830 --> 00:14:43,460
+Pero la mayora de las veces podrs resolverlo desde el men de ayuda
+
+344
+00:14:43,460 --> 00:14:47,730
+Y no puedes resolverlo desde el men de ayuda solo escribe man rm
+
+345
+00:14:47,730 --> 00:14:51,680
+Y aqu puedes leer bsicamente todo lo que se puede saber sobre este comando
+
+346
+00:14:51,680 --> 00:14:53,950
+Y si realmente no puedes realizar la tarea---
+
+347
+00:14:54,520 --> 00:14:56,760
+Si no puede encontrar nada til aqu
+
+348
+00:14:56,970 --> 00:14:58,680
+Entonces los foros son tu siguiente opcin segura
+
+349
+00:14:59,150 --> 00:15:01,330
+Pero creme que lo logrars hacerlo
+
+350
+00:15:02,330 --> 00:15:03,790
+De cualquier manera
+
+351
+00:15:04,090 --> 00:15:06,970
+Esta fue una breve introduccin a algunos de los comandos bsicos que usaremos
+
+352
+00:15:07,200 --> 00:15:11,240
+Por favor, asegrate de saber lo que hace cada uno de estos comandos
+
+353
+00:15:11,240 --> 00:15:13,090
+Al menos sus funciones bsicas
+
+354
+00:15:13,440 --> 00:15:15,320
+Y luego entraremos en profundidad
+
+355
+00:15:15,320 --> 00:15:17,440
+Y haremos cosas ms avanzadas
+
+356
+00:15:17,440 --> 00:15:22,570
+Usaremos comandos ms avanzados, combinndolos, etc.
+
+357
+00:15:22,570 --> 00:15:23,410
+De cualquier manera
+
+358
+00:15:23,410 --> 00:15:25,930
+Me despido de todos y espero verlos en el siguiente tutorial
+

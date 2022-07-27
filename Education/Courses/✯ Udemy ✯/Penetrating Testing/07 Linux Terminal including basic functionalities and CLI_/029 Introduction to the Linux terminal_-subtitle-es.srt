@@ -1,0 +1,868 @@
+1
+00:00:00,520 --> 00:00:01,330
+Saludos a todos
+
+2
+00:00:01,330 --> 00:00:02,790
+Bienvenidos a este tutorial
+
+3
+00:00:02,790 --> 00:00:05,330
+Hoy les presentar la terminal de Linux
+
+4
+00:00:05,680 --> 00:00:08,490
+Y les mostrar algunas de sus funciones bsicas
+
+5
+00:00:09,120 --> 00:00:10,570
+Entonces, en Kali Linux
+
+6
+00:00:11,350 --> 00:00:15,180
+El icono de la terminal est ubicado en la esquina superior izquierda
+
+7
+00:00:15,850 --> 00:00:16,700
+Esta cosa negra
+
+8
+00:00:17,130 --> 00:00:17,990
+Simplemente hagan click ah
+
+9
+00:00:18,240 --> 00:00:21,600
+Y ah est, tienen la terminal andando aqu
+
+10
+00:00:21,600 --> 00:00:25,850
+Est predeterminada a abrir una terminal root en Kali
+
+11
+00:00:26,550 --> 00:00:28,130
+As que si quieren---
+
+12
+00:00:28,130 --> 00:00:29,490
+Normalmente la gente quiere configurarla
+
+13
+00:00:29,490 --> 00:00:33,550
+Pero si no quieren configurar nada ms no hay problema
+
+14
+00:00:33,550 --> 00:00:35,460
+Realmente no necesitan hacer nada ms
+
+15
+00:00:35,900 --> 00:00:41,550
+Sin embargo, 99% de las veces la gente configura la terminal
+
+16
+00:00:41,790 --> 00:00:44,880
+Para ajustarse a sus propias necesidades y propsitos
+
+17
+00:00:45,250 --> 00:00:49,220
+Por ejemplo, yo casi siempre aumento el tamao de la fuente
+
+18
+00:00:49,850 --> 00:00:51,770
+Para que sea claro y visible
+
+19
+00:00:52,100 --> 00:00:55,640
+Y para tener una mejor visin general de lo que me encuentre haciendo
+
+20
+00:00:56,960 --> 00:01:00,210
+Tambin reduce la fatiga visual de acuerdo con unos artculos
+
+21
+00:01:00,900 --> 00:01:01,590
+En fin
+
+22
+00:01:01,590 --> 00:01:05,740
+Simplemente haz click derecho en cualquier parte de la propia terminal
+
+23
+00:01:06,550 --> 00:01:08,780
+No en la barra, sino en la propia terminal
+
+24
+00:01:09,440 --> 00:01:11,190
+Y ah tienen la opcin de mostrar la barra de men
+
+25
+00:01:11,540 --> 00:01:12,760
+Ahora podemos verlo aqu
+
+26
+00:01:12,760 --> 00:01:14,870
+Procede a hacer click en editar
+
+27
+00:01:15,970 --> 00:01:16,640
+Puedes hacer click en perfiles tambin
+
+28
+00:01:16,640 --> 00:01:18,640
+Y crear nuevos perfiles aqu
+
+29
+00:01:18,640 --> 00:01:20,890
+Simplemente haciendo en click en new
+
+30
+00:01:20,890 --> 00:01:22,280
+Luego dndole un nombre
+
+31
+00:01:22,280 --> 00:01:25,400
+Y luego configurndolo en las preferencias
+
+32
+00:01:25,400 --> 00:01:25,970
+Sin embargo
+
+33
+00:01:26,220 --> 00:01:29,780
+Vamos a configurar los perfiles predeterminados
+
+34
+00:01:29,980 --> 00:01:33,140
+Ya que no hay necesidad de crear ninguno adicional
+
+35
+00:01:34,250 --> 00:01:36,450
+Procede a hacer click en preferencias de perfil
+
+36
+00:01:38,190 --> 00:01:41,580
+Y aqu tienes muchas opciones
+
+37
+00:01:41,900 --> 00:01:44,170
+Una de las primeras que veras es...
+
+38
+00:01:44,170 --> 00:01:47,760
+...que puedes usar una fuente de ancho fijo del sistema
+
+39
+00:01:48,400 --> 00:01:49,320
+As que---
+
+40
+00:01:49,320 --> 00:01:51,650
+Esto no es bueno. Ven? Esto es muy pequeo
+
+41
+00:01:51,650 --> 00:01:53,940
+Yo siempre necesito cambiarla
+
+42
+00:01:53,940 --> 00:01:55,840
+Si a ti te parece bien puedes dejarla as
+
+43
+00:01:56,140 --> 00:01:57,440
+Pero yo siempre la cambio
+
+44
+00:01:57,780 --> 00:01:59,280
+Tengo Monospace 20
+
+45
+00:01:59,510 --> 00:02:00,500
+Si haces click ah
+
+46
+00:02:00,500 --> 00:02:02,750
+Puedes cambiar el tamao de la fuente aqu
+
+47
+00:02:03,130 --> 00:02:07,250
+Si quieres puedes cambiar la fuente que ests usando
+
+48
+00:02:07,250 --> 00:02:10,520
+Y eso es todo en cuanto a este sitio
+
+49
+00:02:11,410 --> 00:02:14,540
+Tienes otras opciones muy simples aqu
+
+50
+00:02:14,540 --> 00:02:17,290
+Dice mostrar barra de men por defecto en terminales nuevas
+
+51
+00:02:18,500 --> 00:02:22,130
+Yo generalmente pienso que es una buena idea
+
+52
+00:02:22,510 --> 00:02:26,270
+Ya que siempre necesitas hacer algo como abrir una pestaa nueva
+
+53
+00:02:26,490 --> 00:02:27,660
+O algo por el estilo
+
+54
+00:02:27,890 --> 00:02:29,280
+Pero no necesitas hacerlo
+
+55
+00:02:29,280 --> 00:02:30,640
+Tienes la forma del cursor aqu
+
+56
+00:02:30,640 --> 00:02:31,580
+Dice bloque
+
+57
+00:02:31,580 --> 00:02:32,280
+I beam
+
+58
+00:02:32,280 --> 00:02:33,220
+subrayado
+
+59
+00:02:33,220 --> 00:02:34,350
+Solo quiero mostrarles cmo se ve
+
+60
+00:02:34,350 --> 00:02:36,880
+Pueden ver la terminal mientras los cambios son aplicados
+
+61
+00:02:36,880 --> 00:02:37,610
+Aqu tienen el bloque
+
+62
+00:02:37,610 --> 00:02:38,990
+Ah est el subrayado
+
+63
+00:02:38,990 --> 00:02:39,860
+Yo prefiero el bloque
+
+64
+00:02:39,860 --> 00:02:41,220
+T puedes usar lo que quieras
+
+65
+00:02:41,220 --> 00:02:42,640
+Eso no te afectar---
+
+66
+00:02:42,640 --> 00:02:45,800
+Quiero decir que no te afectar en ningn sentido tcnico
+
+67
+00:02:46,850 --> 00:02:47,660
+Tenemos ttulo y comandos
+
+68
+00:02:48,150 --> 00:02:50,250
+No necesitamos cambiar nada ah
+
+69
+00:02:50,270 --> 00:02:51,990
+Puedes cambiar el ttulo si quieres
+
+70
+00:02:52,220 --> 00:02:53,740
+Tenemos colores
+
+71
+00:02:54,740 --> 00:02:59,940
+Yo pienso que este esquema de color es apropiado para m
+
+72
+00:03:00,190 --> 00:03:02,750
+Pero t puedes cambiarlo como sea que quieras
+
+73
+00:03:02,750 --> 00:03:05,160
+Puedes personalizarlo hasta el extremo
+
+74
+00:03:05,860 --> 00:03:07,160
+Puedo cambiar el color del texto
+
+75
+00:03:07,160 --> 00:03:08,300
+El color del fondo
+
+76
+00:03:08,300 --> 00:03:11,380
+Tienes la paleta de colores aqu
+
+77
+00:03:11,390 --> 00:03:13,660
+As que puedes hacer lo que quieras aqu
+
+78
+00:03:13,880 --> 00:03:14,970
+Tienes esquemas ya instalados
+
+79
+00:03:15,170 --> 00:03:17,970
+Dice blanco sobre negro
+
+80
+00:03:17,970 --> 00:03:19,340
+Yo puedo hacer que sea verde sobre negro
+
+81
+00:03:19,630 --> 00:03:20,280
+O...
+
+82
+00:03:20,620 --> 00:03:22,250
+---lo siento... cancelar
+
+83
+00:03:22,490 --> 00:03:24,730
+Puedo hacer que sea verde sobre negro
+
+84
+00:03:24,730 --> 00:03:27,560
+Tiene azul sobre negro...
+
+85
+00:03:27,820 --> 00:03:28,320
+No
+
+86
+00:03:28,320 --> 00:03:31,420
+Oh, esto estuvo mal. Yo no podra trabajar con este
+
+87
+00:03:31,750 --> 00:03:35,500
+As que vamos a dejarlo en negro sobre---
+
+88
+00:03:35,830 --> 00:03:37,670
+Lo siento, blanco sobre negro
+
+89
+00:03:37,870 --> 00:03:38,800
+Este es el mejor color---
+
+90
+00:03:38,800 --> 00:03:40,560
+Es uno de los mejores esquemas de colores
+
+91
+00:03:40,590 --> 00:03:44,320
+Yo, personalmente, uso azul sobre negro en Fedora
+
+92
+00:03:44,320 --> 00:03:46,370
+Pero voy a dejarlo como est aqu
+
+93
+00:03:46,370 --> 00:03:48,480
+No hay necesidad de cambiar nada
+
+94
+00:03:48,510 --> 00:03:49,830
+Ahora, en el fondo hay---
+
+95
+00:03:49,830 --> 00:03:52,220
+Tienes tres funciones aqu bsicamente
+
+96
+00:03:52,510 --> 00:03:55,970
+Tienes color slido como ste que pueden ver aqu
+
+97
+00:03:56,350 --> 00:03:59,020
+Y puedes elegir una imagen de fondo
+
+98
+00:03:59,290 --> 00:04:02,240
+Bsicamente puedes descargar lo que sea del internet
+
+99
+00:04:02,620 --> 00:04:06,420
+Puedes configurarlo para que sea transparente o muestre el fondo
+
+100
+00:04:08,600 --> 00:04:15,120
+Y tambin tienes la habilidad de tener un fondo completamente transparente
+
+101
+00:04:15,230 --> 00:04:16,730
+Y si hacer click en fondo transparente...
+
+102
+00:04:16,730 --> 00:04:19,800
+...es bsicamente lo mismo que tener una imagen de fondo
+
+103
+00:04:19,800 --> 00:04:21,850
+Solo que en este caso---
+
+104
+00:04:22,860 --> 00:04:25,460
+Excelente, solo voy a configurar los niveles de transparencia
+
+105
+00:04:25,460 --> 00:04:26,530
+Eso est bastante bien
+
+106
+00:04:26,530 --> 00:04:29,650
+Excepto que en este caso tu imagen de fondo...
+
+107
+00:04:29,650 --> 00:04:32,110
+...ser bsicamente tu imagen de escritorio
+
+108
+00:04:32,110 --> 00:04:34,210
+Dependiendo de donde est tu terminal
+
+109
+00:04:35,550 --> 00:04:36,880
+En la seccin de desplazarse (scrolling)
+
+110
+00:04:37,270 --> 00:04:38,730
+Hay una funcin importante aqu
+
+111
+00:04:38,930 --> 00:04:40,140
+Que es desplazarse de vuelta
+
+112
+00:04:40,480 --> 00:04:43,150
+Pero no quieres tener 512 lneas
+
+113
+00:04:43,610 --> 00:04:46,370
+Quieres presionar ilimitado
+
+114
+00:04:46,370 --> 00:04:48,790
+A menos que ests severamente limitado en cuanto a tu RAM
+
+115
+00:04:48,790 --> 00:04:52,380
+Y a menos que ests introduciendo una gran cantidad de comandos
+
+116
+00:04:52,380 --> 00:04:53,450
+O algo as
+
+117
+00:04:53,770 --> 00:04:56,850
+Pero independientemente es mejor tenerlo ilimitado
+
+118
+00:04:56,850 --> 00:04:57,970
+Especialmente en entornos---
+
+119
+00:04:57,970 --> 00:05:03,240
+Especialmente, no solo en entornos como este, sino tambin casos como estos
+
+120
+00:05:03,810 --> 00:05:07,130
+No necesitas hacer nada aqu en trminos de compatibilidad
+
+121
+00:05:07,330 --> 00:05:09,250
+Solo proceder a cerrar esto
+
+122
+00:05:09,250 --> 00:05:12,700
+Y he seleccionado un fondo transparente
+
+123
+00:05:12,700 --> 00:05:14,290
+Como pueden ver, eso solo funciona para la imagen de escritorio
+
+124
+00:05:14,290 --> 00:05:16,840
+No muestra los conos ni nada de eso
+
+125
+00:05:16,840 --> 00:05:21,090
+Si abro mi explorador web no va a mostrarlo en el fondo
+
+126
+00:05:21,090 --> 00:05:25,530
+An mantendr la imagen de fondo del escritorio
+
+127
+00:05:25,530 --> 00:05:28,190
+O el papel tapiz del escritorio, si quieres llamarlo as
+
+128
+00:05:29,650 --> 00:05:32,560
+Hay una leve tardanza cuando se mueve en la actualizacin
+
+129
+00:05:32,560 --> 00:05:35,880
+Pero est bien, no nos molesta para nada
+
+130
+00:05:35,880 --> 00:05:37,920
+Tal vez cambiar esto luego en el tutorial
+
+131
+00:05:38,200 --> 00:05:40,540
+Ver que me parece
+
+132
+00:05:40,540 --> 00:05:46,370
+Pero solo quera darte una opcin para que puedas hacer lo que prefieras
+
+133
+00:05:46,610 --> 00:05:47,480
+De cualquier forma
+
+134
+00:05:47,480 --> 00:05:49,910
+Puedes proceder a hacer click en archivo
+
+135
+00:05:49,910 --> 00:05:51,930
+Y abrir pestaa
+
+136
+00:05:51,930 --> 00:05:55,210
+Voy a abrir 4 pestaas
+
+137
+00:05:55,210 --> 00:05:57,650
+3 son nuevas y una que ya tena
+
+138
+00:05:57,870 --> 00:06:00,930
+Aqu puedes cambiar de una a la otra
+
+139
+00:06:00,930 --> 00:06:02,470
+Es muy agradable
+
+140
+00:06:02,470 --> 00:06:04,610
+No hay ninguna complicacin...
+
+141
+00:06:04,940 --> 00:06:07,400
+...si, por ejemplo, presiono abrir una nueva terminal
+
+142
+00:06:07,710 --> 00:06:10,200
+Tengo que hacer click aqu y luego tengo que hacer click aqu
+
+143
+00:06:10,200 --> 00:06:11,710
+Y usualmente tendrs---
+
+144
+00:06:11,910 --> 00:06:14,410
+Solo quiero mostrarles como es tener 4 de ellas
+
+145
+00:06:15,300 --> 00:06:18,440
+Esto no es muy manejable realmente
+
+146
+00:06:18,440 --> 00:06:22,580
+Especialmente porque no sabes lo que ests haciendo en cual terminal
+
+147
+00:06:23,950 --> 00:06:27,200
+A veces la gente divide sus pantallas en terminales
+
+148
+00:06:27,770 --> 00:06:28,890
+A veces lo hago
+
+149
+00:06:28,890 --> 00:06:29,700
+Es muy agradable
+
+150
+00:06:29,700 --> 00:06:31,560
+Pero lidiaremos con eso luego...
+
+151
+00:06:31,560 --> 00:06:33,690
+...cuando entremos en cosas ms serias
+
+152
+00:06:33,690 --> 00:06:35,940
+Cuando realmente necesitemos terminales mltiples
+
+153
+00:06:36,290 --> 00:06:37,710
+Pero las pestaas---
+
+154
+00:06:37,710 --> 00:06:41,150
+Colocar pestaas a estas terminales es muy agradable
+
+155
+00:06:41,520 --> 00:06:44,940
+Principalmente porque de hecho puedes ver lo que ests haciendo...
+
+156
+00:06:44,940 --> 00:06:46,630
+...en cada una de ellas en los encabezados
+
+157
+00:06:46,680 --> 00:06:47,820
+Estas cosas que estoy seleccionando---
+
+158
+00:06:47,820 --> 00:06:49,150
+En las que estoy haciendo click ahora
+
+159
+00:06:49,150 --> 00:06:50,810
+Son encabezados de la terminal
+
+160
+00:06:50,810 --> 00:06:52,750
+O puedes llamarlos as
+
+161
+00:06:53,770 --> 00:06:54,660
+Y si, por ejemplo, en esta terminal...
+
+162
+00:06:54,890 --> 00:06:56,130
+...voy a decir...
+
+163
+00:06:56,570 --> 00:06:59,350
+Quiero que vayas a Home. Cambiar el directorio a Home
+
+164
+00:06:59,960 --> 00:07:01,360
+Me refiero a cambiar el directorio de trabajo
+
+165
+00:07:01,590 --> 00:07:04,490
+Y si lo cambio aqu a var
+
+166
+00:07:05,200 --> 00:07:09,240
+Y si lo cambio aqu a var/log
+
+167
+00:07:10,300 --> 00:07:14,690
+Y si quiero ir a la carpeta de tmp
+
+168
+00:07:15,880 --> 00:07:16,460
+Excelente
+
+169
+00:07:16,460 --> 00:07:18,180
+En cada una de estas pestaas
+
+170
+00:07:18,490 --> 00:07:21,520
+Con sus encabezados puedo ver donde estoy
+
+171
+00:07:21,890 --> 00:07:23,600
+Entonces, sta es home
+
+172
+00:07:23,600 --> 00:07:27,270
+Esta es tmp, no necesito seleccionarla para saberlo
+
+173
+00:07:27,540 --> 00:07:29,380
+Esta es log (registro)
+
+174
+00:07:29,430 --> 00:07:31,770
+As que puedo saber que estoy haciendo en cada terminal en especfico
+
+175
+00:07:32,760 --> 00:07:34,180
+Y aunque podemos tener algn programa en ejecucin
+
+176
+00:07:34,180 --> 00:07:34,840
+O algo as
+
+177
+00:07:34,840 --> 00:07:36,980
+Igualmente lo escribir en el encabezado
+
+178
+00:07:37,240 --> 00:07:39,920
+Y vas a tener algo de informacin extra ah
+
+179
+00:07:39,920 --> 00:07:41,160
+Es muy agradable, es muy til
+
+180
+00:07:41,540 --> 00:07:44,190
+Y te ayudar mucho
+
+181
+00:07:44,190 --> 00:07:46,650
+A medida que avancemos en este curso
+
+182
+00:07:46,650 --> 00:07:49,440
+Y a medida que entremos en cosas ms complicadas
+
+183
+00:07:49,740 --> 00:07:52,270
+En fin, solo quera presentarle la terminal Linux
+
+184
+00:07:52,590 --> 00:07:54,540
+Ya hemos trabajado con ella antes
+
+185
+00:07:54,540 --> 00:07:56,960
+Durante la instalacin de VirtualBox
+
+186
+00:07:57,260 --> 00:07:59,090
+Y las adiciones de invitados de VirtualBOxx
+
+187
+00:07:59,220 --> 00:08:01,910
+Pero ah bsicamente solo te estoy dando el comando...
+
+188
+00:08:01,910 --> 00:08:04,740
+...y t bsicamente solo vas a re-escribirlo
+
+189
+00:08:04,740 --> 00:08:06,120
+O copiar y pegarlo
+
+190
+00:08:06,330 --> 00:08:08,210
+Y eso es todo
+
+191
+00:08:08,210 --> 00:08:10,170
+Pero aqu voy a...
+
+192
+00:08:10,170 --> 00:08:13,270
+En el tutorial siguiente, de hecho, empezar a explicar...
+
+193
+00:08:13,270 --> 00:08:16,560
+...los comandos fundamentales de la terminal de Linux
+
+194
+00:08:16,790 --> 00:08:18,850
+Los ms comunes, los ms bsicos
+
+195
+00:08:19,720 --> 00:08:22,260
+Y ah podrs ver la lgica de las cosas
+
+196
+00:08:22,260 --> 00:08:25,320
+Y cmo este terminal de Linux funciona y trabaja
+
+197
+00:08:25,320 --> 00:08:27,160
+Porque una vez que hayas aprendido eso...
+
+198
+00:08:27,160 --> 00:08:30,370
+...te da una enorme cantidad de poder
+
+199
+00:08:30,370 --> 00:08:35,600
+Todo el poder del sistema operativo yace en su terminal
+
+200
+00:08:35,820 --> 00:08:38,320
+Ya que es una interfaz directa hacia el ncleo del sistema
+
+201
+00:08:38,530 --> 00:08:42,590
+Y es mucho ms rpido que la interfaz grfica
+
+202
+00:08:42,930 --> 00:08:46,400
+Ahora, otra nota clave que me gustara hacer aqu...
+
+203
+00:08:46,680 --> 00:08:49,910
+Una vez te ensee a usar la terminal de Linux
+
+204
+00:08:50,160 --> 00:08:53,740
+Y una vez que hayas	 te hayas acostumbrado a escribir comandos...
+
+205
+00:08:54,740 --> 00:08:57,260
+Puedes usarlos para una amplia variedad de propsitos
+
+206
+00:08:57,260 --> 00:09:00,670
+No necesariamente debes usar estas cosas para...
+
+207
+00:09:00,670 --> 00:09:02,490
+...hacer pruebas de penetracin (pen-testing) o algo as
+
+208
+00:09:02,490 --> 00:09:05,400
+Puedes usar estos comandos para administrar redes
+
+209
+00:09:05,400 --> 00:09:09,330
+O puedes usarlos para resolver problemas con el sistema
+
+210
+00:09:09,330 --> 00:09:10,960
+Y as muchas otras cosas
+
+211
+00:09:10,960 --> 00:09:15,350
+Obtienes espectro de opciones mucho ms amplio
+
+212
+00:09:15,350 --> 00:09:17,380
+En cuanto a trabajos o algo as
+
+213
+00:09:17,810 --> 00:09:19,710
+A diferencia de aprender algo que...
+
+214
+00:09:19,710 --> 00:09:24,260
+...solo puedes usar para hacer pruebas de penetracin y nada ms
+
+215
+00:09:24,990 --> 00:09:26,190
+De cualquier forma
+
+216
+00:09:26,570 --> 00:09:27,630
+Me despido
+
+217
+00:09:27,930 --> 00:09:30,850
+Y espero verte en el siguiente tutorial
+

@@ -1,0 +1,1660 @@
+1
+00:00:01,000 --> 00:00:03,000
+Hola a todos y sean bienvenidos a este tutorial
+
+2
+00:00:04,000 --> 00:00:06,000
+Hoy voy a hacer unos escaneos
+
+3
+00:00:06,000 --> 00:00:10,000
+Y para eso he escogido un dominio fuera de mi red de rea local
+
+4
+00:00:11,000 --> 00:00:14,000
+Puedo encontrar eso en el sitio oficial de Nmap
+
+5
+00:00:14,000 --> 00:00:17,000
+As que es scanme.nmap.org
+
+6
+00:00:17,000 --> 00:00:21,000
+Has dado este dominio y estas en libertad de escanearlo
+
+7
+00:00:21,000 --> 00:00:25,000
+Bueno, no tanto como desees porque 100 veces al da no est bien
+
+8
+00:00:26,000 --> 00:00:31,000
+Pero un par de veces al da est bien y puedes probar si tu Nmap funciona
+
+9
+00:00:31,000 --> 00:00:32,000
+Y cmo funciona
+
+10
+00:00:33,000 --> 00:00:35,000
+Entonces, necesito tomar este dominio
+
+11
+00:00:36,000 --> 00:00:38,000
+No puedes usar control C ni control V en la terminal
+
+12
+00:00:38,000 --> 00:00:41,000
+Principalmente porque control C es el interruptor universal
+
+13
+00:00:41,000 --> 00:00:43,000
+Y control V simplemente no funcionar
+
+14
+00:00:44,000 --> 00:00:46,000
+Necesitars usar un mouse y hacerlo manualmente
+
+15
+00:00:47,000 --> 00:00:48,000
+De cualquier manera
+
+16
+00:00:48,000 --> 00:00:49,000
+Necesitamos recortar esto
+
+17
+00:00:49,000 --> 00:00:50,000
+No necesitamos ninguna de estas cosas
+
+18
+00:00:50,000 --> 00:00:52,000
+Solo queremos que quede el nombre del dominio
+
+19
+00:00:52,000 --> 00:00:54,000
+Y ahora proceder a escribir nmap
+
+20
+00:00:54,000 --> 00:00:55,000
+Espacio
+
+21
+00:00:55,000 --> 00:00:58,000
+Y ah est, ahora vamos a escanear este dominio
+
+22
+00:00:58,000 --> 00:01:00,000
+Sin embargo, si presiono ENTER de esta forma...
+
+23
+00:01:00,000 --> 00:01:04,000
+...va a realizar algo de escaneo
+
+24
+00:01:04,000 --> 00:01:06,000
+Har el trabajo, te lo aseguro
+
+25
+00:01:06,000 --> 00:01:09,000
+Pero no nos mostrar ninguna salida, ni nada parecido
+
+26
+00:01:09,000 --> 00:01:14,000
+Esto seguir estando vaco hasta que el escaneo se haya completado
+
+27
+00:01:14,000 --> 00:01:18,000
+Ahora, en escaneos cortos como ste probablemente no hay problema
+
+28
+00:01:18,000 --> 00:01:21,000
+Pero si ests realizando un escaneo que pueda durar un da o algo parecido...
+
+29
+00:01:22,000 --> 00:01:26,000
+...es muy preocupante ver que no hay nada aqu
+
+30
+00:01:26,000 --> 00:01:29,000
+Es decir, no ests seguro de si est funcionando...
+
+31
+00:01:29,000 --> 00:01:31,000
+...de si hay algn error o quin sabe
+
+32
+00:01:32,000 --> 00:01:36,000
+Por eso es que siempre es mejor utilizar una opcin v
+
+33
+00:01:36,000 --> 00:01:37,000
+Para tener una salida verbosa
+
+34
+00:01:37,000 --> 00:01:40,000
+Yo prefiero utilizar una opcin vv
+
+35
+00:01:40,000 --> 00:01:43,000
+Bsicamente para una salida extra verbosa
+
+36
+00:01:43,000 --> 00:01:45,000
+Bsicamente me dice todo lo que est haciendo
+
+37
+00:01:46,000 --> 00:01:47,000
+Y como est funcionando
+
+38
+00:01:47,000 --> 00:01:49,000
+Y puedo verlo a medida que avanza
+
+39
+00:01:50,000 --> 00:01:52,000
+Y puedo ver que algunos puertos se abren un poco ms temprano...
+
+40
+00:01:53,000 --> 00:01:56,000
+...antes de que se haya completado el escaneo
+
+41
+00:01:56,000 --> 00:01:57,000
+Procedamos a iniciar el escaneo
+
+42
+00:01:57,000 --> 00:01:59,000
+Y pueden ver inmediatamente, antes de que termine el escaneo...
+
+43
+00:02:00,000 --> 00:02:06,000
+...me ha dicho que el puerto 22 y el puerto 80 estn abiertos
+
+44
+00:02:07,000 --> 00:02:11,000
+Por default, Nmap escanear para buscar 1000 puertos
+
+45
+00:02:12,000 --> 00:02:14,000
+Puedes indicarle que escanee a ver si hay ms puertos, sin problemas
+
+46
+00:02:15,000 --> 00:02:17,000
+Puedes decirle que escanee hasta el rango mximo de puertos
+
+47
+00:02:17,000 --> 00:02:19,000
+Que es 65000 y algo
+
+48
+00:02:19,000 --> 00:02:22,000
+No estoy completamente seguro de cul es el nmero exacto pero...
+
+49
+00:02:22,000 --> 00:02:23,000
+Pero es 65000 y algo
+
+50
+00:02:24,000 --> 00:02:26,000
+Y puedes encontrar esto en la red si quieres
+
+51
+00:02:27,000 --> 00:02:28,000
+Puedes especificar---
+
+52
+00:02:28,000 --> 00:02:31,000
+Puedes utilizar una opcin con Nmap para hacer un escaneo completo de puertos
+
+53
+00:02:31,000 --> 00:02:33,000
+De forma que todos los puertos sern escaneados
+
+54
+00:02:33,000 --> 00:02:35,000
+Aunque nadie hace esto comnmente
+
+55
+00:02:35,000 --> 00:02:37,000
+Consume mucho tiempo
+
+56
+00:02:37,000 --> 00:02:40,000
+Usualmente tendrs una idea del tipo de servicio al que quieres apuntar
+
+57
+00:02:41,000 --> 00:02:42,000
+Y luego escaneas para buscar esos---
+
+58
+00:02:42,000 --> 00:02:46,000
+Para buscar los puertos en los que esos servicios posiblemente funcionarn
+
+59
+00:02:46,000 --> 00:02:49,000
+Por ejemplo el puerto 22, debera ser ssh
+
+60
+00:02:51,000 --> 00:02:54,000
+Y el puerto 25 es smtp
+
+61
+00:02:54,000 --> 00:02:56,000
+Por si no saben lo que es, es un servidor de correo
+
+62
+00:02:56,000 --> 00:02:58,000
+El 80 es http
+
+63
+00:02:58,000 --> 00:03:01,000
+Y tienen nping-echo en el puerto 9929
+
+64
+00:03:02,000 --> 00:03:06,000
+El estado de estos puertos est despejado
+
+65
+00:03:06,000 --> 00:03:07,000
+Dice abierto
+
+66
+00:03:07,000 --> 00:03:08,000
+abierto, abierto
+
+67
+00:03:08,000 --> 00:03:10,000
+Y tambin puede haber un estado como cerrado
+
+68
+00:03:10,000 --> 00:03:12,000
+Porque dice aqu no mostrados
+
+69
+00:03:12,000 --> 00:03:14,000
+996 puertos
+
+70
+00:03:14,000 --> 00:03:15,000
+cerrados
+
+71
+00:03:15,000 --> 00:03:17,000
+Estn cerrados
+
+72
+00:03:17,000 --> 00:03:19,000
+Y cuando dice filtered (filtrado)...
+
+73
+00:03:20,000 --> 00:03:23,000
+...pues, usualmente hay una configuracin de cortafuego que...
+
+74
+00:03:23,000 --> 00:03:24,000
+...est soltando los paquetes
+
+75
+00:03:25,000 --> 00:03:26,000
+Tal vez no est cerrando el puerto, pero definitivamente...
+
+76
+00:03:27,000 --> 00:03:30,000
+...est le est haciendo algo a los paquetes que pasan por ese puerto
+
+77
+00:03:30,000 --> 00:03:33,000
+Tal vez los est bloqueado de alguna direccin IP
+
+78
+00:03:34,000 --> 00:03:35,000
+O algo as
+
+79
+00:03:35,000 --> 00:03:37,000
+Puede haber muchas opciones aqu
+
+80
+00:03:37,000 --> 00:03:41,000
+De cualquier forma, el significado general de este aviso de filtrado  es que...
+
+81
+00:03:41,000 --> 00:03:46,000
+...Nmap no puede determinar si el puerto est abierto o cerrado
+
+82
+00:03:46,000 --> 00:03:49,000
+Generalmente quieres alejarte de esos puertos
+
+83
+00:03:49,000 --> 00:03:53,000
+O puedes hacer un poco ms de investigacin y descubrir cmo puedes accesarlos
+
+84
+00:03:53,000 --> 00:03:56,000
+Tal vez requieren una aplicacin en particular...
+
+85
+00:03:56,000 --> 00:03:58,000
+O un protocolo en particular
+
+86
+00:03:58,000 --> 00:03:59,000
+O algo as, para poder ser accesado
+
+87
+00:03:59,000 --> 00:04:04,000
+Y por eso Nmap bsicamente no puede hacer nada al respecto
+
+88
+00:04:04,000 --> 00:04:06,000
+Puede ser un poco problemtico
+
+89
+00:04:06,000 --> 00:04:08,000
+Yo, como dije, me mantendra alejado de esos
+
+90
+00:04:08,000 --> 00:04:14,000
+Qudate con los que estn abierto y ve que puedes hacer con ellos aqu
+
+91
+00:04:14,000 --> 00:04:19,000
+Nmap tambin tiene la opcin de...
+
+92
+00:04:19,000 --> 00:04:23,000
+...crear una grepable output (salida la que se puede aplicar grep)
+
+93
+00:04:23,000 --> 00:04:28,000
+Bsicamente lo que eso quiere decir es que puedes ordenar lo que sea que---
+
+94
+00:04:28,000 --> 00:04:30,000
+Cualquier resultado que obtengas...
+
+95
+00:04:30,000 --> 00:04:31,000
+Hacia un archivo
+
+96
+00:04:31,000 --> 00:04:33,000
+Puedes almacenarlo y ordenarlo tambin
+
+97
+00:04:34,000 --> 00:04:34,000
+Y luego, lo que---
+
+98
+00:04:34,000 --> 00:04:40,000
+Adquieres la habilidad que extraer bsicamente trozos separados...
+
+99
+00:04:40,000 --> 00:04:41,000
+...y pedazos de informacin
+
+100
+00:04:41,000 --> 00:04:45,000
+Por ejemplo, solo quieres las direcciones IP de anfitriones (hosts) que estn activos
+
+101
+00:04:45,000 --> 00:04:49,000
+O quieres la direccin IP de anfitriones que tienes el puerto 22 abierto
+
+102
+00:04:50,000 --> 00:04:53,000
+O que estn filtrados, o que estn ejecutando algn servicio en particular
+
+103
+00:04:53,000 --> 00:04:55,000
+Como sssh, o smtp, o http
+
+104
+00:04:56,000 --> 00:04:57,000
+O algo as
+
+105
+00:04:57,000 --> 00:05:01,000
+Sin embargo, eso no lo har desde scanme.nmap.org
+
+106
+00:05:02,000 --> 00:05:04,000
+Creo que ya he usado su sistema lo suficiente
+
+107
+00:05:05,000 --> 00:05:06,000
+Y...
+
+108
+00:05:06,000 --> 00:05:10,000
+Para este ejemplo, requiero un rango de direcciones IP para...
+
+109
+00:05:10,000 --> 00:05:12,000
+Para darte un resultado significativo
+
+110
+00:05:13,000 --> 00:05:15,000
+Entonces, lo que har ser escanear mi sub-red local
+
+111
+00:05:15,000 --> 00:05:17,000
+Y si no sabes cul es la tuya...
+
+112
+00:05:17,000 --> 00:05:20,000
+Bueno... lo ms probable es que est configurada igual que la ma
+
+113
+00:05:20,000 --> 00:05:22,000
+Pero en caso de que no sea as, solo coloca---
+
+114
+00:05:22,000 --> 00:05:24,000
+Limpiemos la pantalla primero
+
+115
+00:05:24,000 --> 00:05:26,000
+Escribe ifconfig
+
+116
+00:05:27,000 --> 00:05:31,000
+Y obtendrs un resultado aqu para eth0
+
+117
+00:05:31,000 --> 00:05:33,000
+O para cualquiera que sea la interfaz que ests usando
+
+118
+00:05:34,000 --> 00:05:38,000
+Solo observa esta direccin IP  que ha sido asignada a esta interface
+
+119
+00:05:39,000 --> 00:05:43,000
+Entonces, los valores mximos y mnimos del octeto final aqu...
+
+120
+00:05:43,000 --> 00:05:45,000
+Lo siento, del primero octeto...
+
+121
+00:05:45,000 --> 00:05:48,000
+Ser el rango de tu sub-red local
+
+122
+00:05:48,000 --> 00:05:51,000
+As que va desde 0 hasta 255
+
+123
+00:05:52,000 --> 00:05:55,000
+Djenme mostrarles como se ve eso, en caso de que no lo hayan entendido aqu
+
+124
+00:05:55,000 --> 00:05:57,000
+Escribe nmap
+
+125
+00:05:58,000 --> 00:06:01,000
+Y para usar una salida a la que puedas aplicar grep escribe og
+
+126
+00:06:01,000 --> 00:06:03,000
+Espacio -
+
+127
+00:06:03,000 --> 00:06:06,000
+Y luego necesitamos darle un rango de direcciones IP
+
+128
+00:06:06,000 --> 00:06:13,000
+Entonces ser, 192.168.1.0-255
+
+129
+00:06:14,000 --> 00:06:19,000
+Va a escanear para buscar todas las direcciones IP que tengan esto
+
+130
+00:06:19,000 --> 00:06:21,000
+Y que vayan desde 0 a 255
+
+131
+00:06:22,000 --> 00:06:26,000
+Ten en mente que puedo personalizar este rango como yo quiera
+
+132
+00:06:26,000 --> 00:06:30,000
+Por ejemplo, aqu donde dice 1 puedo escribir -267
+
+133
+00:06:31,000 --> 00:06:33,000
+Y usar estos---
+
+134
+00:06:34,000 --> 00:06:37,000
+Usar este octeto y este octeto en combinacin
+
+135
+00:06:37,000 --> 00:06:41,000
+Y va a buscar todas las posibilidades, aunque eso puede llevar mucho tiempo...
+
+136
+00:06:41,000 --> 00:06:43,000
+...ya que son muchas direcciones IP
+
+137
+00:06:43,000 --> 00:06:44,000
+En fin
+
+138
+00:06:45,000 --> 00:06:46,000
+An no he terminado
+
+139
+00:06:48,000 --> 00:06:51,000
+Lo que necesito hacer causar un re-direccionamiento
+
+140
+00:06:52,000 --> 00:06:56,000
+Antes de hacerlo voy a aplicar el modo de doble verbosidad
+
+141
+00:06:56,000 --> 00:06:59,000
+Y, por qu estoy re-direccionando mi salida estndar?
+
+142
+00:06:59,000 --> 00:07:04,000
+Pues, no quiero que toda la informacin simplemente se imprima en la pantalla---
+
+143
+00:07:04,000 --> 00:07:05,000
+En la pantalla de terminal
+
+144
+00:07:05,000 --> 00:07:08,000
+Dnde eventualmente se perder, bsicamente...
+
+145
+00:07:08,000 --> 00:07:09,000
+...tan pronto como cierre la terminal
+
+146
+00:07:09,000 --> 00:07:12,000
+O tan pronto como suficientes comandos sean usados en el cache
+
+147
+00:07:12,000 --> 00:07:15,000
+y necesita se re-escrito para la terminal o algo as
+
+148
+00:07:17,000 --> 00:07:22,000
+Adems, si es escrito en una salida estndar y en la misma terminal...
+
+149
+00:07:22,000 --> 00:07:23,000
+...no puedo hacer nada ms con eso
+
+150
+00:07:24,000 --> 00:07:25,000
+No puedo manipularlo
+
+151
+00:07:25,000 --> 00:07:29,000
+No es un archivo que yo pueda tomar o algo parecido
+
+152
+00:07:30,000 --> 00:07:32,000
+Sino que es una salida estndar
+
+153
+00:07:32,000 --> 00:07:35,000
+Lo que yo quiero hacer es causar un re-direccionamiento
+
+154
+00:07:35,000 --> 00:07:39,000
+Con un smbolo >  haca una especie de archivo
+
+155
+00:07:39,000 --> 00:07:41,000
+As que proceder a escribir home y...
+
+156
+00:07:41,000 --> 00:07:43,000
+No s, no puedo---
+
+157
+00:07:43,000 --> 00:07:44,000
+Tal vez no home
+
+158
+00:07:46,000 --> 00:07:46,000
+Bueno---
+
+159
+00:07:46,000 --> 00:07:48,000
+Al escritorio no, esa no es una buena idea
+
+160
+00:07:48,000 --> 00:07:49,000
+Dejmoslo en home
+
+161
+00:07:49,000 --> 00:07:50,000
+Eso est mejor
+
+162
+00:07:50,000 --> 00:07:54,000
+Y voy a llamar a este archivo SCAN
+
+163
+00:07:55,000 --> 00:07:55,000
+Excelente
+
+164
+00:07:56,000 --> 00:07:59,000
+Entonces, todos los resultados que Nmap rena ahora...
+
+165
+00:07:59,000 --> 00:08:04,000
+...sern almacenados en este archivo de aqu---
+
+166
+00:08:05,000 --> 00:08:07,000
+En este archivo de aqu con la ruta---
+
+167
+00:08:07,000 --> 00:08:09,000
+Y esta es la ruta hacia el archivo
+
+168
+00:08:09,000 --> 00:08:13,000
+Ya que he pasado una buena cantidad de anfitriones aqu
+
+169
+00:08:13,000 --> 00:08:15,000
+Es decir, le he dado 255 anfitriones
+
+170
+00:08:16,000 --> 00:08:18,000
+Ya que estoy en LAN ir ms rpido
+
+171
+00:08:18,000 --> 00:08:22,000
+Pero cuando ests haciendo esto en el internet...
+
+172
+00:08:22,000 --> 00:08:27,000
+...una muy buena idea es pasar un puerto, o al menos un rango de puertos
+
+173
+00:08:27,000 --> 00:08:30,000
+No dejes que escanee los 1000 puertos
+
+174
+00:08:31,000 --> 00:08:36,000
+O an peor, no especifiques que debe escanear un rango de puertos completo
+
+175
+00:08:36,000 --> 00:08:40,000
+Primeramente porque independientemente de que conexin a internet tengas...
+
+176
+00:08:40,000 --> 00:08:43,000
+...tomar mucho tiempo en terminar
+
+177
+00:08:43,000 --> 00:08:49,000
+Adems seguramente activars algunas advertencias o algo por el estilo, as que...
+
+178
+00:08:50,000 --> 00:08:53,000
+Deberas definir un puerto aqu para que te ahorres mucho tiempo
+
+179
+00:08:54,000 --> 00:08:58,000
+Y, es decir, generalmente sabrs cul servicio quieres atacar
+
+180
+00:08:58,000 --> 00:09:00,000
+Tendrs alguna idea
+
+181
+00:09:00,000 --> 00:09:02,000
+Proceder a colocar el puerto 22
+
+182
+00:09:03,000 --> 00:09:05,000
+Ese es el puerto que deseo buscar
+
+183
+00:09:05,000 --> 00:09:07,000
+Y presiono ENTER
+
+184
+00:09:07,000 --> 00:09:08,000
+Y rezo que funcione
+
+185
+00:09:10,000 --> 00:09:11,000
+Ah est
+
+186
+00:09:11,000 --> 00:09:12,000
+Est funcionando, pero aunque---
+
+187
+00:09:12,000 --> 00:09:13,000
+Termin un poco rpido
+
+188
+00:09:13,000 --> 00:09:15,000
+Pero aunque use el modo de doble verbosidad...
+
+189
+00:09:15,000 --> 00:09:20,000
+...todo lo que est aqu est siendo re-direccionado haca aqu
+
+190
+00:09:21,000 --> 00:09:23,000
+As que no podr ver nada
+
+191
+00:09:23,000 --> 00:09:26,000
+Si este escaneo tarda ms cuando lo ests haciendo en internet...
+
+192
+00:09:26,000 --> 00:09:29,000
+Y tardar ms si lo ests haciendo en el internet
+
+193
+00:09:29,000 --> 00:09:31,000
+No pienses inmediatamente que hay un error
+
+194
+00:09:32,000 --> 00:09:33,000
+Principalmente---
+
+195
+00:09:33,000 --> 00:09:35,000
+Solo porque nada est siendo escrito abajo
+
+196
+00:09:35,000 --> 00:09:37,000
+Si simplemente cambiamos a home
+
+197
+00:09:37,000 --> 00:09:39,000
+Y listamos lo que est ah
+
+198
+00:09:39,000 --> 00:09:41,000
+Ah est
+
+199
+00:09:41,000 --> 00:09:42,000
+Tenemos el scan
+
+200
+00:09:42,000 --> 00:09:44,000
+As que solo hagamos esto
+
+201
+00:09:44,000 --> 00:09:45,000
+ls
+
+202
+00:09:45,000 --> 00:09:46,000
+Ahora, mira lo que estoy haciendo aqu
+
+203
+00:09:46,000 --> 00:09:49,000
+Voy a hacer algo muy similar con nuestro archivo SCAN
+
+204
+00:09:50,000 --> 00:09:54,000
+Y  voy a escribir grep SCAN
+
+205
+00:09:54,000 --> 00:09:55,000
+Presiono ENTER
+
+206
+00:09:55,000 --> 00:09:56,000
+Ah est
+
+207
+00:09:56,000 --> 00:09:59,000
+He pasado el comando ls para bsicamente listar...
+
+208
+00:09:59,000 --> 00:10:01,000
+...todo lo que se encuentra en el directorio home
+
+209
+00:10:02,000 --> 00:10:03,000
+Y luego he ---
+
+210
+00:10:03,000 --> 00:10:07,000
+He enviado la salida de ls (usando |) hacia grep
+
+211
+00:10:07,600 --> 00:10:09,000
+Bsicamente | significa simplemente enviarla
+
+212
+00:10:10,100 --> 00:10:11,600
+He enviado la salida hacia grep
+
+213
+00:10:12,000 --> 00:10:16,000
+Y lo que hace grep es bsicamente halar lo que sea que hayas especificado aqu
+
+214
+00:10:16,000 --> 00:10:18,000
+Simplemente lo hala de la salida
+
+215
+00:10:20,000 --> 00:10:25,000
+Le he dicho que hale lo que sea que est ah que tenga el nombre scan
+
+216
+00:10:25,000 --> 00:10:27,000
+O que tenga el string SCAN dentro de l
+
+217
+00:10:28,000 --> 00:10:33,000
+As podra haber tenido un nombre como aaascanbbb...
+
+218
+00:10:33,000 --> 00:10:35,000
+...an habra podido halarlo sin problemas
+
+219
+00:10:36,000 --> 00:10:39,000
+Esta es una de las formas en la que puedes asegurarte de que...
+
+220
+00:10:39,000 --> 00:10:41,000
+...el archivo est ubicado dentro de cierta carpeta
+
+221
+00:10:41,000 --> 00:10:42,000
+Especialmente porque---
+
+222
+00:10:42,000 --> 00:10:46,000
+Especialmente en situaciones en las que tienes cientos de archivos...
+
+223
+00:10:46,000 --> 00:10:47,000
+...dentro de una sola carpeta
+
+224
+00:10:47,000 --> 00:10:49,000
+Y simplemente no puedes pasar por todos ellos manualmente
+
+225
+00:10:49,000 --> 00:10:51,000
+Usa grep si conoces el nombre
+
+226
+00:10:51,000 --> 00:10:52,000
+O si conoces el nombre parcialmente
+
+227
+00:10:53,000 --> 00:10:55,000
+Para poder averiguar qu est dnde
+
+228
+00:10:55,000 --> 00:10:57,000
+As que proceder a despejar la pantalla
+
+229
+00:10:57,000 --> 00:11:00,000
+Y djenme mostrarles lo que est ubicado dentro de nuestro archivo SCAN
+
+230
+00:11:01,000 --> 00:11:03,000
+Uso less SCAN
+
+231
+00:11:03,000 --> 00:11:04,000
+Presiono ENTER
+
+232
+00:11:04,000 --> 00:11:05,000
+Y ah est
+
+233
+00:11:05,000 --> 00:11:08,000
+Tenemos todos los anfitriones dentro de mi LAN
+
+234
+00:11:09,000 --> 00:11:10,000
+Dentro de mi sub-red local
+
+235
+00:11:11,000 --> 00:11:13,000
+Todos estn desactivados, por supuesto
+
+236
+00:11:13,000 --> 00:11:16,000
+Porque no tengo 255 computadoras o dispositivos en mi red domstica
+
+237
+00:11:17,000 --> 00:11:19,000
+En lugar de eso, pueden ver lo que ha encontrado
+
+238
+00:11:19,000 --> 00:11:20,000
+Ha encontrado---
+
+239
+00:11:20,000 --> 00:11:22,000
+Esta es la direccin  del router (enrutador)
+
+240
+00:11:22,000 --> 00:11:25,000
+El router que estoy usando para esta prueba
+
+241
+00:11:27,000 --> 00:11:29,000
+Y dice puerto 22
+
+242
+00:11:29,000 --> 00:11:30,000
+filtrado
+
+243
+00:11:30,000 --> 00:11:31,000
+tcp
+
+244
+00:11:31,000 --> 00:11:32,000
+ssh
+
+245
+00:11:32,000 --> 00:11:33,000
+Excelente
+
+246
+00:11:33,000 --> 00:11:34,000
+Esa---
+
+247
+00:11:34,000 --> 00:11:35,000
+Esa tiene un puerto abierto
+
+248
+00:11:35,000 --> 00:11:36,000
+De 22
+
+249
+00:11:36,000 --> 00:11:40,000
+Tambin, su estatus es activo (up)
+
+250
+00:11:41,000 --> 00:11:43,000
+Y tambin tengo que el 100 el estatus es activo
+
+251
+00:11:43,000 --> 00:11:45,000
+El 22 est cerrado
+
+252
+00:11:45,000 --> 00:11:47,000
+En el 102 est activo
+
+253
+00:11:47,000 --> 00:11:48,000
+...est filtrado, etc.
+
+254
+00:11:50,000 --> 00:11:54,000
+Entonces djenme proceder a salir de aqu
+
+255
+00:11:54,000 --> 00:11:57,000
+Y voy a hacer algo muy similar aqu porque quiero...
+
+256
+00:11:57,000 --> 00:11:59,000
+...dejarlo en la pantalla para poder explicarlo
+
+257
+00:11:59,000 --> 00:12:03,000
+El comando less es muy agradable pero cuando sales desaparece
+
+258
+00:12:04,000 --> 00:12:07,000
+Sin embargo, cat simplemente imprime todo lo que est dentro de un archivo...
+
+259
+00:12:07,000 --> 00:12:08,000
+...a una salida estndar
+
+260
+00:12:08,000 --> 00:12:09,000
+Y se queda aqu
+
+261
+00:12:09,000 --> 00:12:11,000
+Bsicamente para identificar la terminal
+
+262
+00:12:13,000 --> 00:12:15,000
+La razn por la que hice esto ser evidente muy pronto
+
+263
+00:12:16,000 --> 00:12:19,000
+Lo que quieres hacer ahora es escribir cat
+
+264
+00:12:20,000 --> 00:12:21,000
+SCAN
+
+265
+00:12:21,000 --> 00:12:22,000
+Igual que antes
+
+266
+00:12:22,000 --> 00:12:28,000
+Ahora queremos enviar la salida de SCAN hacia grep para halar algo de aqu
+
+267
+00:12:28,000 --> 00:12:30,000
+Alguna especie de informacin til
+
+268
+00:12:30,000 --> 00:12:35,000
+Digamos que quiero halas todos los anfitriones que estn activos
+
+269
+00:12:35,000 --> 00:12:37,000
+Quiero halar todos los anfitriones vivos
+
+270
+00:12:37,000 --> 00:12:38,000
+Quiero ver sus direcciones IP
+
+271
+00:12:39,000 --> 00:12:40,000
+Y cuando escribo grep
+
+272
+00:12:41,000 --> 00:12:45,000
+Cul es la demarcacin universal para todos los anfitriones que estn activos?
+
+273
+00:12:45,000 --> 00:12:47,000
+Tienes un indicador (flag) aqu
+
+274
+00:12:47,000 --> 00:12:50,000
+Al lado est estatus y luego el indicador up
+
+275
+00:12:50,000 --> 00:12:53,000
+Simplemente escribamos up
+
+276
+00:12:53,000 --> 00:12:53,000
+Presionamos ENTER
+
+277
+00:12:53,000 --> 00:12:55,000
+Excelente
+
+278
+00:12:55,000 --> 00:12:57,000
+Solo para darte un poco de claridad
+
+279
+00:12:58,000 --> 00:13:00,000
+Ah est
+
+280
+00:13:00,000 --> 00:13:03,000
+Tienes estos indicadores, los cuales estn activos
+
+281
+00:13:03,000 --> 00:13:05,000
+Tengo todos los anfitriones aqu
+
+282
+00:13:05,000 --> 00:13:07,000
+Que estn funcionando actualmente
+
+283
+00:13:07,000 --> 00:13:08,000
+Que estn vivos en la red
+
+284
+00:13:08,000 --> 00:13:10,000
+Pero esto no es lo que quiero
+
+285
+00:13:10,000 --> 00:13:12,000
+Si quisiera enviar estas direcciones IP a un programa---
+
+286
+00:13:12,000 --> 00:13:15,000
+A otro programa o algo parecido...
+
+287
+00:13:16,000 --> 00:13:20,000
+No podra enviar toda esta lnea porque no tendra sentido
+
+288
+00:13:20,000 --> 00:13:23,000
+Si el otro programa solo est pidiendo la direccin ID del anfitrin
+
+289
+00:13:24,000 --> 00:13:26,000
+Porque puedes uno en MapScan para ver---
+
+290
+00:13:26,000 --> 00:13:28,000
+Solo para ver cuales anfitriones estn vivos
+
+291
+00:13:29,000 --> 00:13:32,000
+Y una vez que sepas cuales anfitriones estn vivos
+
+292
+00:13:32,000 --> 00:13:36,000
+Entonces puedes hacer un escaneo ms detallado de esos anfitriones en particular
+
+293
+00:13:36,000 --> 00:13:38,000
+Y de esa manera ahorraras mucho tiempo
+
+294
+00:13:39,000 --> 00:13:43,000
+As que tenemos estos anfitriones aqu pero queremos halar estas direcciones IP
+
+295
+00:13:43,000 --> 00:13:46,000
+Y me temo que no puedo hacer eso con grep
+
+296
+00:13:46,000 --> 00:13:48,000
+Tal vez si podra
+
+297
+00:13:48,000 --> 00:13:52,000
+Pero, es decir, sera demasiado complicado y...
+
+298
+00:13:52,000 --> 00:13:54,000
+Demasiado complejo
+
+299
+00:13:54,000 --> 00:13:56,000
+Y realmente no sera prctico
+
+300
+00:13:56,000 --> 00:14:00,000
+Por eso es que Linux tiene algo llamado awk
+
+301
+00:14:00,000 --> 00:14:02,000
+Es... awk
+
+302
+00:14:03,000 --> 00:14:04,000
+Es un---
+
+303
+00:14:04,000 --> 00:14:10,000
+Bsicamente es usado para formatear textos y halar ciertas partes de un archivo...
+
+304
+00:14:10,000 --> 00:14:14,000
+...que t has sealado que necesitas o algo as
+
+305
+00:14:15,000 --> 00:14:15,000
+Ahora
+
+306
+00:14:15,000 --> 00:14:18,000
+Puedes hacer un tutorial separado sobre awk
+
+307
+00:14:18,000 --> 00:14:20,000
+Podra durar cientos de horas
+
+308
+00:14:20,000 --> 00:14:25,000
+Y an as habra funciones de l que no sabras
+
+309
+00:14:26,000 --> 00:14:29,000
+Recomiendo fuertemente que se familiaricen con awk
+
+310
+00:14:29,000 --> 00:14:31,000
+Mira las pginas de manual para awk
+
+311
+00:14:31,000 --> 00:14:33,000
+Sin embargo, por ahora
+
+312
+00:14:33,000 --> 00:14:35,000
+Y para el propsito de este tutorial
+
+313
+00:14:35,000 --> 00:14:38,000
+Vamos a usar unos comandos bsicos de awk
+
+314
+00:14:38,000 --> 00:14:40,000
+Los cuales bsicamente todo el mundo usa
+
+315
+00:14:40,000 --> 00:14:44,000
+Y que son una parte necesaria de las pruebas de penetracin
+
+316
+00:14:45,000 --> 00:14:48,000
+Principalmente porque necesitas hacer cosas como las que haremos aqu
+
+317
+00:14:48,000 --> 00:14:50,000
+As que colocamos cat SCAN
+
+318
+00:14:50,000 --> 00:14:52,000
+Imprimimos todo a una salida estndar
+
+319
+00:14:52,000 --> 00:14:53,000
+Colocamos grep up
+
+320
+00:14:53,000 --> 00:14:58,000
+As que usa grep con todas las lneas que contengan la palabra up
+
+321
+00:14:58,000 --> 00:14:59,000
+Y luego
+
+322
+00:14:59,000 --> 00:15:02,000
+Lo que quiero hacer aqu es eliminar esta parte
+
+323
+00:15:02,000 --> 00:15:04,000
+Dejar esta parte
+
+324
+00:15:04,000 --> 00:15:05,000
+Y eliminar esta parte
+
+325
+00:15:06,000 --> 00:15:07,000
+Cmo puedo hacer eso?
+
+326
+00:15:07,000 --> 00:15:11,000
+Pues, lo primero que debo especificar es un delimitador de campo
+
+327
+00:15:12,000 --> 00:15:14,000
+Un delimitador de campo es---
+
+328
+00:15:14,000 --> 00:15:18,000
+Bsicamente si dices que el : de aqu es un delimitador de campo
+
+329
+00:15:18,000 --> 00:15:20,000
+Este sera un campo
+
+330
+00:15:21,000 --> 00:15:23,000
+Este sera otro campo
+
+331
+00:15:23,000 --> 00:15:24,000
+Y este sera otro campo ms
+
+332
+00:15:24,000 --> 00:15:27,000
+As que tendrs tres campos en total
+
+333
+00:15:27,000 --> 00:15:30,000
+Sin embargo, eso realmente no funciona para nosotros, o s?
+
+334
+00:15:30,000 --> 00:15:32,000
+Porque si decimos que el ;---
+
+335
+00:15:32,000 --> 00:15:34,000
+Es decir, si decimos que el : es un delimitador
+
+336
+00:15:34,000 --> 00:15:39,000
+Toda esta seccin que he resaltado ser considerada un campo
+
+337
+00:15:39,000 --> 00:15:41,000
+Y tendremos el parntesis
+
+338
+00:15:41,000 --> 00:15:42,000
+Y estatus
+
+339
+00:15:42,000 --> 00:15:44,000
+Las partes que realmente no queremos
+
+340
+00:15:44,000 --> 00:15:47,000
+Lo que podemos usar como delimitador de campo aqu es un espacio
+
+341
+00:15:47,000 --> 00:15:50,000
+As que hay un espacio aqu
+
+342
+00:15:50,000 --> 00:15:51,000
+Este ser un campo
+
+343
+00:15:51,000 --> 00:15:52,000
+Este ser otro
+
+344
+00:15:52,000 --> 00:15:56,000
+Y este tambin ser un delimitador de campo porque es un espacio
+
+345
+00:15:56,000 --> 00:15:58,000
+Y este sera el tercero
+
+346
+00:15:58,000 --> 00:15:59,000
+Y luego tienes otro espacio
+
+347
+00:15:59,000 --> 00:16:01,000
+Y el cuarto, etc.
+
+348
+00:16:01,000 --> 00:16:04,000
+As que para especificar que los delimitadores de campos sean espacios...
+
+349
+00:16:04,000 --> 00:16:10,000
+Simplemente dejaremos un espacio vaco entre las comillas
+
+350
+00:16:10,000 --> 00:16:14,000
+Generalmente colocaras las comillas y especificaras un delimitador de campo entre ellas
+
+351
+00:16:14,000 --> 00:16:18,000
+Si queras usar el smbolo de dos puntos as es como lo haras
+
+352
+00:16:18,000 --> 00:16:19,000
+Pero no queremos el :
+
+353
+00:16:19,000 --> 00:16:21,000
+Solo queremos el espacio y eso es todo
+
+354
+00:16:22,000 --> 00:16:23,000
+Abrimos con un apostrofe
+
+355
+00:16:24,000 --> 00:16:26,000
+Abrimos la llave {
+
+356
+00:16:26,000 --> 00:16:31,000
+Escribimos print $
+
+357
+00:16:32,000 --> 00:16:37,000
+Y luego solo necesitas colocas el nmero del campo que quieres imprimir
+
+358
+00:16:37,000 --> 00:16:40,000
+As que nos gustara imprimir el segundo campo
+
+359
+00:16:41,000 --> 00:16:42,000
+2
+
+360
+00:16:42,000 --> 00:16:43,000
+Cierro la llave }
+
+361
+00:16:43,000 --> 00:16:45,000
+Cierro el apostrofe
+
+362
+00:16:45,000 --> 00:16:46,000
+Presionamos ENTER
+
+363
+00:16:46,000 --> 00:16:47,000
+Y ah est
+
+364
+00:16:47,000 --> 00:16:54,000
+Tenemos todas las direcciones IP listadas de los anfitriones activos sin nada ms
+
+365
+00:16:55,000 --> 00:16:57,000
+Ahora, lo que puedes hacer con esto es...
+
+366
+00:16:57,000 --> 00:17:00,000
+Enviarlo a otro archivo
+
+367
+00:17:00,000 --> 00:17:04,000
+Se llama SCAN2
+
+368
+00:17:05,000 --> 00:17:06,000
+Presionamos ENTER
+
+369
+00:17:06,000 --> 00:17:13,000
+Y luego puedes colocar nmap -iL SCAN2
+
+370
+00:17:14,000 --> 00:17:18,000
+Y puedes hacer un escaneo completo de nmap para solo cuatro anfitriones
+
+371
+00:17:19,000 --> 00:17:21,000
+Esto puede tardar un poco---
+
+372
+00:17:21,000 --> 00:17:22,000
+No, no quiero hacerlo as
+
+373
+00:17:22,000 --> 00:17:24,000
+Podemos hacerlo con el modo de doble verbosidad
+
+374
+00:17:24,000 --> 00:17:25,000
+Excelente
+
+375
+00:17:25,000 --> 00:17:29,000
+Ahora puedes hacer un escaneo completo para solo cuatro anfitriones
+
+376
+00:17:29,000 --> 00:17:32,000
+En lugar de hacerlo para todos los 255 anfitriones
+
+377
+00:17:32,000 --> 00:17:33,000
+Solo ve que anfitriones estn vivos
+
+378
+00:17:33,000 --> 00:17:37,000
+Y no necesitas hacer eso con el puerto 22
+
+379
+00:17:37,000 --> 00:17:38,000
+O algo parecido
+
+380
+00:17:38,000 --> 00:17:39,000
+Solo has un barrido con ping
+
+381
+00:17:39,000 --> 00:17:41,000
+Y eso ser todo
+
+382
+00:17:41,000 --> 00:17:45,000
+Podrs ver cuales anfitriones estn vivos
+
+383
+00:17:45,000 --> 00:17:48,000
+Realizar un anlisis detallado de este anfitrin en especfico
+
+384
+00:17:48,000 --> 00:17:51,000
+Y pueden ver que ya estoy recibiendo informacin aqu
+
+385
+00:17:51,000 --> 00:17:52,000
+Dice
+
+386
+00:17:52,000 --> 00:17:54,000
+Puerto 21
+
+387
+00:17:54,000 --> 00:17:59,000
+Y bueno, no es la mejor idea pero este es mi router domstico
+
+388
+00:17:59,000 --> 00:18:01,000
+El cual estoy usando con este propsito de prueba
+
+389
+00:18:01,000 --> 00:18:02,000
+Y est lleno de huecos
+
+390
+00:18:03,000 --> 00:18:07,000
+No s preocupen por eso, lo cambiar tan pronto como haya terminado con el tutorial
+
+391
+00:18:07,000 --> 00:18:08,000
+Tengo---
+
+392
+00:18:08,000 --> 00:18:11,000
+Tengo 443 en el 102
+
+393
+00:18:11,000 --> 00:18:13,000
+As que probablemente hay un SSL ah
+
+394
+00:18:13,000 --> 00:18:14,000
+El puerto 80 aqu
+
+395
+00:18:15,000 --> 00:18:17,000
+El puerto 33
+
+396
+00:18:17,000 --> 00:18:19,000
+Pronto veremos que significan todos estos servicios
+
+397
+00:18:20,000 --> 00:18:25,000
+Sin embargo, puedes experimentar estos indicadores de aqu
+
+398
+00:18:25,000 --> 00:18:26,000
+Y usualmente tendremos
+
+399
+00:18:26,000 --> 00:18:28,000
+Y retrasos
+
+400
+00:18:28,000 --> 00:18:30,000
+Porque hay algunos paquetes que son soltados
+
+401
+00:18:30,000 --> 00:18:34,000
+Algunos que son negados por el servidor del otro lado
+
+402
+00:18:34,000 --> 00:18:38,000
+Tambin puedes tener limitadores de tiempo, etc.
+
+403
+00:18:39,000 --> 00:18:42,000
+Aqu pueden ver los scans
+
+404
+00:18:42,000 --> 00:18:46,000
+Y lo que han relevado hasta ahora
+
+405
+00:18:49,000 --> 00:18:50,000
+Me han dado escaneos detallados
+
+406
+00:18:51,000 --> 00:18:54,000
+Y me pueden decir bsicamente todo lo que quiero saber...
+
+407
+00:18:54,000 --> 00:18:58,000
+...en cuanto a la red de rea local
+
+408
+00:18:58,000 --> 00:19:00,000
+Hasta da las direcciones mac
+
+409
+00:19:00,000 --> 00:19:02,000
+Las cuales voy a cubrir y no podrs ver
+
+410
+00:19:02,000 --> 00:19:06,000
+Pero, de cualquier forma, ves cuanta informacin obtienes
+
+411
+00:19:06,000 --> 00:19:09,000
+Y cuanto tiempo puedes ahorrar
+
+412
+00:19:10,000 --> 00:19:13,000
+Ahora, voy a detener el tutorial aqu
+
+413
+00:19:14,000 --> 00:19:16,000
+Y vamos a avanzar al siguiente
+
+414
+00:19:17,000 --> 00:19:18,000
+Espero que hayan disfrutado este
+
+415
+00:19:18,000 --> 00:19:20,000
+Y los ver la prxima
+

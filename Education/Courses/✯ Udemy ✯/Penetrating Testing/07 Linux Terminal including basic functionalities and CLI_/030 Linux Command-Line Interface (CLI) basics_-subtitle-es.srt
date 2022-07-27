@@ -1,0 +1,1268 @@
+1
+00:00:00,770 --> 00:00:03,500
+Saludos a todos y sean bienvenidos a este tutorial
+
+2
+00:00:03,500 --> 00:00:06,240
+Hoy vamos a repasar algunos comandos bsicos
+
+3
+00:00:06,630 --> 00:00:08,960
+Los cuales van a necesitar para seguir este curso
+
+4
+00:00:09,170 --> 00:00:15,400
+Estos comandos bsicos son usados para navegar dentro de la terminal
+
+5
+00:00:15,710 --> 00:00:17,470
+O a travs del sistema de archivos
+
+6
+00:00:17,720 --> 00:00:20,390
+Para averiguar dnde te encuentras en ese momento
+
+7
+00:00:20,690 --> 00:00:21,290
+Para copiar cosas
+
+8
+00:00:21,290 --> 00:00:22,480
+Para mover cosas
+
+9
+00:00:22,830 --> 00:00:24,270
+Obtener listados de archivos
+
+10
+00:00:24,470 --> 00:00:25,510
+Carpetas
+
+11
+00:00:25,510 --> 00:00:26,490
+Ver el contenido
+
+12
+00:00:26,490 --> 00:00:27,330
+Eliminarlo
+
+13
+00:00:27,330 --> 00:00:30,650
+Cambiar la propiedad de los archivos
+
+14
+00:00:30,650 --> 00:00:32,220
+O cambiar los modos de los archivos
+
+15
+00:00:32,770 --> 00:00:33,890
+En breve vers a que me refiero
+
+16
+00:00:34,370 --> 00:00:35,140
+As que primeramente...
+
+17
+00:00:35,140 --> 00:00:37,660
+Tenemos cd, qu significa cambiar directorio
+
+18
+00:00:37,660 --> 00:00:41,340
+As que si escribo cb/home...
+
+19
+00:00:41,370 --> 00:00:44,440
+...voy a navegar hacia mi directio de home
+
+20
+00:00:45,720 --> 00:00:47,530
+cd significa cambiar directorio como dije anteriormente
+
+21
+00:00:47,830 --> 00:00:51,800
+Literalmente ests cambiando tu directorio de trabajo
+
+22
+00:00:52,170 --> 00:00:58,620
+Si escribes cd . . siempre te irs un paso hacia atrs
+
+23
+00:00:59,530 --> 00:01:02,630
+As que doble punto siempre es la carpeta anterior
+
+24
+00:01:03,910 --> 00:01:05,080
+...una especie de atajo ah
+
+25
+00:01:05,420 --> 00:01:07,410
+Vas a usarlo con cierta regularidad
+
+26
+00:01:07,620 --> 00:01:09,470
+En el siguiente paso tenemos ls...
+
+27
+00:01:09,470 --> 00:01:14,550
+ls te muestra el listado de los contenidos actuales de la carpeta
+
+28
+00:01:14,550 --> 00:01:17,040
+Pero tambin puedes usar ls/home por ejemplo
+
+29
+00:01:17,390 --> 00:01:21,220
+Y te da el listado de una carpeta en especfico tambin
+
+30
+00:01:22,460 --> 00:01:26,240
+Escribir  solo ls te dar el listado de la carpeta actual
+
+31
+00:01:26,630 --> 00:01:30,500
+A diferencia de escribir ls y luego la ruta a una carpeta
+
+32
+00:01:30,950 --> 00:01:33,790
+Lo que te dar el listado de una carpeta en especfico
+
+33
+00:01:34,120 --> 00:01:37,220
+En adicin a eso tambin tienes ls/l
+
+34
+00:01:37,420 --> 00:01:39,500
+Lo que te dar un listado largo
+
+35
+00:01:39,500 --> 00:01:43,970
+As que te dir quienes son los propietarios, el tamao, la fecha...
+
+36
+00:01:44,290 --> 00:01:47,880
+...el tipo, los permisos, etc.
+
+37
+00:01:49,510 --> 00:01:54,610
+Sin embargo, unos de los usos ms comunes de ls es - la
+
+38
+00:01:54,810 --> 00:01:57,420
+Para que tambin muestre los archivos ocultos
+
+39
+00:01:58,380 --> 00:02:01,330
+Tal vez te des cuenta de que no estoy usando ll
+
+40
+00:02:01,530 --> 00:02:02,890
+Como lo estaba usando en---
+
+41
+00:02:02,890 --> 00:02:05,370
+Como generalmente lo uso en Fedora porque...
+
+42
+00:02:05,370 --> 00:02:07,180
+bash... ll... comando no encontrado
+
+43
+00:02:07,180 --> 00:02:08,680
+Supongo que podra instalarlo aqu tambin
+
+44
+00:02:08,980 --> 00:02:10,640
+Pero no importa en realidad
+
+45
+00:02:10,640 --> 00:02:14,650
+Realiza funciones bastante similares a como lo hace ls
+
+46
+00:02:15,010 --> 00:02:17,210
+Pero es un poco ms rpido escribirlo
+
+47
+00:02:17,990 --> 00:02:19,810
+Solo voy a despejar esto
+
+48
+00:02:20,120 --> 00:02:23,440
+Lo siguiente es pwd lo que imprime el directorio de trabajo
+
+49
+00:02:23,440 --> 00:02:25,900
+Y puede que esto te parezca un poco confuso...
+
+50
+00:02:26,110 --> 00:02:29,600
+...pero el slash (/) en todas las unidades de Linux o parecidos...
+
+51
+00:02:30,830 --> 00:02:32,980
+...simplemente se refiere al directorio root
+
+52
+00:02:32,980 --> 00:02:33,970
+Se refiere al principio
+
+53
+00:02:33,970 --> 00:02:35,590
+Se refiere al directorio raz
+
+54
+00:02:35,660 --> 00:02:42,340
+Es dnde se encuentran todos los archivos, y desde dnde todo comienza
+
+55
+00:02:42,340 --> 00:02:43,180
+Por as decirlo
+
+56
+00:02:44,500 --> 00:02:46,410
+Djame aclarar esto un poco
+
+57
+00:02:46,410 --> 00:02:47,660
+Navegar hacia home
+
+58
+00:02:47,860 --> 00:02:49,280
+Y luego aplicar pwd
+
+59
+00:02:49,280 --> 00:02:52,210
+Puedes ver puedes ver que me encuentro en home en este momento
+
+60
+00:02:52,550 --> 00:02:54,400
+As que imprimir el directorio de trabajo (print working directory)...
+
+61
+00:02:54,400 --> 00:02:56,200
+...hace exactamente lo que dice el nombre
+
+62
+00:02:56,200 --> 00:02:59,710
+Imprime tu directorio de trabajo actual
+
+63
+00:03:01,500 --> 00:03:03,510
+A continuacin tenemos nuestro comando cp
+
+64
+00:03:03,720 --> 00:03:05,250
+El cual ya hemos usado...
+
+65
+00:03:05,440 --> 00:03:08,910
+...para copiar las adiciones de invitados de VirtualBox...
+
+66
+00:03:09,130 --> 00:03:10,350
+De un lugar a otro
+
+67
+00:03:10,350 --> 00:03:11,370
+Es bastante simple
+
+68
+00:03:12,310 --> 00:03:13,280
+Escribes cp...
+
+69
+00:03:14,260 --> 00:03:16,690
+ruta a...
+
+70
+00:03:16,690 --> 00:03:18,430
+ruta---
+
+71
+00:03:18,800 --> 00:03:20,680
+No lo hagamos as, hagamos un ejemplo real
+
+72
+00:03:21,150 --> 00:03:27,600
+As que si, por ejemplo, escribo cp VBoxGuestAdditions---
+
+73
+00:03:27,600 --> 00:03:30,260
+Disculpen, es cp VBoxLinuxAdditions.run
+
+74
+00:03:30,260 --> 00:03:33,100
+Y si... supongamos que quiero copiarlo en algn lado
+
+75
+00:03:33,310 --> 00:03:36,460
+Digamos que quiero copiarlo en VAR
+
+76
+00:03:36,460 --> 00:03:38,820
+Lo voy a borrar, por supuesto, y tambin les ensear cmo hacer eso
+
+77
+00:03:39,550 --> 00:03:40,710
+Pero es bastante simple
+
+78
+00:03:42,490 --> 00:03:43,990
+Y si quiero....
+
+79
+00:03:43,990 --> 00:03:46,800
+Bueno... no quiero hacer una recursin
+
+80
+00:03:46,800 --> 00:03:48,330
+Solo quiero que se explique lo que hago
+
+81
+00:03:48,580 --> 00:03:49,660
+Ah est
+
+82
+00:03:49,900 --> 00:03:52,150
+Entonces... cp...vbox...
+
+83
+00:03:52,490 --> 00:03:54,440
+Especificas lo que quieres copiar
+
+84
+00:03:54,760 --> 00:03:56,420
+Y hacia donde quieres copiarlo
+
+85
+00:03:56,630 --> 00:03:59,990
+Ten en mente que podras haber escrito una carpeta---
+
+86
+00:03:59,990 --> 00:04:01,390
+Una ruta completa
+
+87
+00:04:01,730 --> 00:04:03,620
+Hacia la adicin de invitados de VirtualBox
+
+88
+00:04:03,990 --> 00:04:07,270
+Realmente no necesitabas estas en directorio de home
+
+89
+00:04:08,300 --> 00:04:10,830
+Y esta opcin de -v nos da esto
+
+90
+00:04:11,290 --> 00:04:15,320
+Nos dice lo que fue copiado, y hacia dnde
+
+91
+00:04:15,550 --> 00:04:16,850
+Es una opcin muy til
+
+92
+00:04:17,100 --> 00:04:18,990
+Djame mostrarte que sucedera si no la tuviera
+
+93
+00:04:19,750 --> 00:04:21,670
+Solo lo coloco as
+
+94
+00:04:22,740 --> 00:04:22,760
+Nada
+
+95
+00:04:22,760 --> 00:04:24,650
+No hay ninguna salida ni nada por el estilo
+
+96
+00:04:25,880 --> 00:04:26,710
+Esto es bastante simple
+
+97
+00:04:26,710 --> 00:04:30,740
+Cuando tienes un archivo muy pequeo no te importa realmente
+
+98
+00:04:31,240 --> 00:04:33,310
+Pero cuando tienes un archivo grande
+
+99
+00:04:33,310 --> 00:04:34,800
+Sigamos que de alrededor de 20 gigabytes
+
+100
+00:04:35,990 --> 00:04:37,230
+Y lo ests copiando
+
+101
+00:04:37,580 --> 00:04:39,910
+Solo tendrs una pantalla en blanco abajo
+
+102
+00:04:40,130 --> 00:04:41,200
+Nada va a suceder
+
+103
+00:04:41,600 --> 00:04:46,600
+No podrs averiguar si el proceso de copiado est ocurriendo
+
+104
+00:04:46,820 --> 00:04:50,660
+O si se ha congelado, si se ha daado, o algo as
+
+105
+00:04:51,490 --> 00:04:54,520
+Entonces solo aplica la opcin de -v
+
+106
+00:04:54,780 --> 00:04:57,860
+La cual siempre es til tener
+
+107
+00:04:58,110 --> 00:05:01,300
+Simplemente porque la mquina de hecho te dice lo que est haciendo
+
+108
+00:05:02,550 --> 00:05:04,450
+Puede que hayas notado que todos estos comandos
+
+109
+00:05:04,660 --> 00:05:05,420
+Ms o menos
+
+110
+00:05:05,420 --> 00:05:06,540
+Tienen sus propios argumentos
+
+111
+00:05:06,540 --> 00:05:10,240
+Los cuales les pueden ser pasados para modificar lo que hace el comando
+
+112
+00:05:10,600 --> 00:05:12,640
+Puedes ver un listado de estos argumentos
+
+113
+00:05:12,640 --> 00:05:14,140
+No necesitas memorizarlos todos
+
+114
+00:05:14,690 --> 00:05:17,740
+As que solo usemos un ejemplo de cp
+
+115
+00:05:18,600 --> 00:05:19,540
+Voy a usar - - help
+
+116
+00:05:20,430 --> 00:05:24,380
+Esta es una forma universal de recibir ayuda con un tema en especfico...
+
+117
+00:05:24,580 --> 00:05:25,270
+...dentro de la terminal
+
+118
+00:05:25,270 --> 00:05:26,670
+Escribes el comando
+
+119
+00:05:26,670 --> 00:05:27,530
+Espacio
+
+120
+00:05:27,530 --> 00:05:28,610
+- - help
+
+121
+00:05:28,970 --> 00:05:30,080
+Presionas ENTER
+
+122
+00:05:30,080 --> 00:05:32,280
+Y recibes una lista de posibilidades
+
+123
+00:05:32,520 --> 00:05:34,150
+S que se ve un poco desordenado
+
+124
+00:05:34,150 --> 00:05:35,340
+Y un poco difcil de ver
+
+125
+00:05:35,340 --> 00:05:38,630
+Pero realmente no necesitas ver todas las cosas que estn aqu
+
+126
+00:05:38,630 --> 00:05:40,660
+Solo desplzate hacia arriba...
+
+127
+00:05:40,660 --> 00:05:41,380
+Y ah tienes
+
+128
+00:05:41,380 --> 00:05:42,890
+Puedes ver todos los argumentos
+
+129
+00:05:42,890 --> 00:05:44,720
+Estn listados claramente aqu
+
+130
+00:05:44,940 --> 00:05:47,390
+Tienes el argumento aqu
+
+131
+00:05:47,390 --> 00:05:50,950
+Y luego tienes una explicacin de lo que hace ese argumento
+
+132
+00:05:51,240 --> 00:05:55,370
+Por ahora no vas a poder memorizar todos estos
+
+133
+00:05:55,370 --> 00:05:56,780
+Pero con el tiempo
+
+134
+00:05:57,730 --> 00:05:59,240
+A medida que practiques ms y ms
+
+135
+00:05:59,240 --> 00:06:04,270
+Y a medida que realmente empieces a usar estos comandos
+
+136
+00:06:04,500 --> 00:06:10,390
+Vas a recordar ms y ms, sin ningn esfuerzo
+
+137
+00:06:10,390 --> 00:06:12,920
+Bsicamente estars atrapando la informacin, por as decirlo
+
+138
+00:06:13,200 --> 00:06:14,950
+En fin
+
+139
+00:06:15,190 --> 00:06:18,650
+Aqu en la parte superior de este men...
+
+140
+00:06:18,890 --> 00:06:20,800
+Encontrars uso
+
+141
+00:06:21,210 --> 00:06:24,770
+En uso tienes el formato o la sintaxis del comando
+
+142
+00:06:25,290 --> 00:06:25,830
+As que bsicamente...
+
+143
+00:06:25,830 --> 00:06:26,570
+cp
+
+144
+00:06:26,570 --> 00:06:27,830
+Pasas una opcin
+
+145
+00:06:28,100 --> 00:06:30,540
+Y luego especificas tu fuente
+
+146
+00:06:30,540 --> 00:06:32,460
+Y tu destino
+
+147
+00:06:32,930 --> 00:06:34,590
+Es muy simple, no hay ningn problema ah
+
+148
+00:06:34,800 --> 00:06:37,160
+Esto es universal para todos los comandos
+
+149
+00:06:37,390 --> 00:06:38,940
+Siempre puedes usar el men de ayuda
+
+150
+00:06:39,160 --> 00:06:44,460
+Sin embargo, en adicin al men de ayuda tambin tienes paginas man
+
+151
+00:06:44,460 --> 00:06:45,930
+As que si escribo man
+
+152
+00:06:46,390 --> 00:06:49,980
+Y... voy a usar el comando pwd
+
+153
+00:06:50,850 --> 00:06:52,600
+Las pginas man en pdw...
+
+154
+00:06:52,960 --> 00:06:57,570
+...bsicamente me dan una gran cantidad de informacin
+
+155
+00:06:57,570 --> 00:06:58,480
+Pueden ver...
+
+156
+00:06:58,750 --> 00:07:00,580
+OK, obviamente te da el nombre
+
+157
+00:07:00,940 --> 00:07:04,800
+Aqu dice sinopsis, pero es bsicamente la sintaxis del comando
+
+158
+00:07:05,570 --> 00:07:08,790
+Te da una descripcin completa de lo que hace el comando
+
+159
+00:07:09,230 --> 00:07:10,560
+Una descripcin completa del argumento
+
+160
+00:07:11,290 --> 00:07:15,350
+Hasta te da el autor que lo escribi
+
+161
+00:07:15,350 --> 00:07:16,410
+Algunas notas
+
+162
+00:07:16,410 --> 00:07:17,290
+El copyright
+
+163
+00:07:17,560 --> 00:07:21,650
+Y tambin algunas referencias a algo ms
+
+164
+00:07:23,750 --> 00:07:25,470
+Esta es una pgina man muy corta
+
+165
+00:07:25,470 --> 00:07:29,210
+Porque pwd es un comando muy corto
+
+166
+00:07:29,280 --> 00:07:30,370
+Y un comando muy bsico
+
+167
+00:07:30,750 --> 00:07:36,810
+Pero, por ejemplo, si escribiera man grep
+
+168
+00:07:37,950 --> 00:07:41,320
+Pueden ver que la pgina man es muy ms grande
+
+169
+00:07:41,320 --> 00:07:46,120
+Ya que me estoy desplazando y parece seguir y seguir
+
+170
+00:07:46,500 --> 00:07:48,520
+Grep es un comando multipropsito
+
+171
+00:07:48,520 --> 00:07:49,690
+El cual les mostrar en un momento
+
+172
+00:07:49,850 --> 00:07:50,840
+Pero solo quera decirles---
+
+173
+00:07:51,100 --> 00:07:53,440
+Solo quera mostrarles la diferencia entre...
+
+174
+00:07:53,440 --> 00:07:55,710
+...un comando bsico y uno ms complejo
+
+175
+00:07:56,540 --> 00:07:59,250
+Permtanme despejar la pantalla
+
+176
+00:07:59,450 --> 00:08:01,650
+A continuacin tenemos mover
+
+177
+00:08:01,650 --> 00:08:02,920
+Es mv
+
+178
+00:08:03,420 --> 00:08:06,170
+Eso causar que una carpeta se mueva
+
+179
+00:08:06,780 --> 00:08:10,370
+As tambin es como re-nombras carpetas o archivos
+
+180
+00:08:10,370 --> 00:08:13,310
+Procedamos a navegar hasta var
+
+181
+00:08:13,310 --> 00:08:16,590
+Donde he copiado este archivo
+
+182
+00:08:17,760 --> 00:08:18,710
+ls
+
+183
+00:08:18,710 --> 00:08:19,370
+Excelente
+
+184
+00:08:19,670 --> 00:08:23,280
+As que si coloco mv VBoxLinuxAdditions
+
+185
+00:08:23,800 --> 00:08:30,140
+Puedo moverlo hacia una carpeta distinta, bajo un nombre distinto
+
+186
+00:08:30,730 --> 00:08:33,450
+O puedo simplemente re-nombrarlo dentro de mi carpeta actual
+
+187
+00:08:33,450 --> 00:08:35,460
+As que si simplemente escribo...
+
+188
+00:08:37,360 --> 00:08:37,880
+No s
+
+189
+00:08:37,880 --> 00:08:39,680
+Digamos...
+
+190
+00:08:39,850 --> 00:08:48,620
+RandomIsNotSoRandom (lo aleatorio no es tan aleatorio)
+
+191
+00:08:49,790 --> 00:08:50,320
+Voy a cambiarle el nombre a eso
+
+192
+00:08:50,320 --> 00:08:52,450
+Y le coloco .run
+
+193
+00:08:52,910 --> 00:08:54,350
+Puedes colocarle la extensin que quieras
+
+194
+00:08:54,350 --> 00:08:55,990
+Por supuesto que no funcionar igual
+
+195
+00:08:56,430 --> 00:09:00,350
+Pero solo les estoy mostrando cmo renombrar un archivo
+
+196
+00:09:00,670 --> 00:09:01,990
+Y si aplico ls de nuevo
+
+197
+00:09:02,330 --> 00:09:04,280
+Vers que dice que...
+
+198
+00:09:04,280 --> 00:09:07,780
+...VBoxLinuxAdditions.run a cambiado de nombre exitosamente a...
+
+199
+00:09:07,780 --> 00:09:10,250
+...RandomIsNotSoRAndom.run
+
+200
+00:09:12,500 --> 00:09:13,110
+Tambin puedo hacer esto
+
+201
+00:09:13,330 --> 00:09:13,870
+Por ejemplo
+
+202
+00:09:13,870 --> 00:09:18,400
+Puedo mover RandomIsNotSoRandom a mi directorio home
+
+203
+00:09:18,400 --> 00:09:22,010
+Y si aplico ls y luego especifico una ruta a mi directorio home
+
+204
+00:09:22,010 --> 00:09:22,840
+Y presiono ENTER
+
+205
+00:09:23,180 --> 00:09:25,540
+Pueden ver que he lo he movido aqu
+
+206
+00:09:25,540 --> 00:09:27,110
+Pero a diferencia del comando copiar...
+
+207
+00:09:27,110 --> 00:09:30,220
+...no retiene el original dentro de---
+
+208
+00:09:30,220 --> 00:09:37,100
+No retiene el original donde la fuente pueda haber estado
+
+209
+00:09:37,590 --> 00:09:38,420
+Entonces...
+
+210
+00:09:38,420 --> 00:09:44,010
+Una vez que lo muevas se habr ido de la carpeta fuente
+
+211
+00:09:44,010 --> 00:09:46,190
+Sin embargo, va a aparecer en la de destino
+
+212
+00:09:46,940 --> 00:09:50,000
+Tambin, una manera delicada cuando borras algo con mover...
+
+213
+00:09:50,000 --> 00:09:52,310
+Cuando mueves algo sobre algo ms---
+
+214
+00:09:52,310 --> 00:09:54,920
+Es tan difcil de recuperar
+
+215
+00:09:55,230 --> 00:09:56,450
+O tal vez imposible
+
+216
+00:09:57,000 --> 00:10:01,470
+Tambin ten mucho cuidado al borrar archivos en Linux
+
+217
+00:10:01,910 --> 00:10:03,670
+Porque una vez que los eliminas de la terminal
+
+218
+00:10:03,670 --> 00:10:05,670
+Es casi---
+
+219
+00:10:05,670 --> 00:10:06,940
+Es decir
+
+220
+00:10:06,940 --> 00:10:09,840
+No vas a poder recuperarlo, bsicamente
+
+221
+00:10:10,490 --> 00:10:12,410
+Hay algunos procedimientos complicados...
+
+222
+00:10:12,450 --> 00:10:16,800
+...que podran darte una fraccin de lo que queras recuperar
+
+223
+00:10:16,800 --> 00:10:21,360
+Pero si lo eliminas del terminal es realmente difcil
+
+224
+00:10:21,360 --> 00:10:23,330
+No es como Windows o algo por el estilo
+
+225
+00:10:23,330 --> 00:10:26,180
+Cuando borras algo en Windows siempre puedes recuperarlo
+
+226
+00:10:26,180 --> 00:10:28,640
+Bsicamente ni siquiera lo eliminaste
+
+227
+00:10:29,180 --> 00:10:30,210
+Simplemente no lo ves
+
+228
+00:10:30,860 --> 00:10:32,230
+Pero aqu
+
+229
+00:10:32,230 --> 00:10:33,360
+Cuando borras algo...
+
+230
+00:10:34,230 --> 00:10:35,280
+Se fue
+
+231
+00:10:35,670 --> 00:10:36,640
+Permanentemente
+
+232
+00:10:36,870 --> 00:10:39,550
+As que ten mucha precaucin y cuidado
+
+233
+00:10:39,800 --> 00:10:41,790
+No tengas miedo
+
+234
+00:10:41,790 --> 00:10:43,380
+Es decir
+
+235
+00:10:43,380 --> 00:10:43,790
+Con el tiempo---
+
+236
+00:10:43,790 --> 00:10:44,850
+Luego de cierto periodo de tiempo...
+
+237
+00:10:44,850 --> 00:10:46,820
+...estas cosas se vuelven casi instintivas en ti
+
+238
+00:10:46,820 --> 00:10:48,310
+Y trabajars---
+
+239
+00:10:48,310 --> 00:10:51,830
+Y lo tomars en cuenta sin siquiera pensar en ello
+
+240
+00:10:52,680 --> 00:10:53,950
+Entonces
+
+241
+00:10:53,950 --> 00:10:56,250
+Sigamos y limpiemos la pantalla
+
+242
+00:10:56,250 --> 00:10:58,620
+A continuacin tenemos cat
+
+243
+00:10:58,620 --> 00:10:59,860
+cat nos da---
+
+244
+00:10:59,860 --> 00:11:01,670
+Bueno, djenme mostrarles lo que hace
+
+245
+00:11:01,670 --> 00:11:02,460
+Ran---
+
+246
+00:11:02,700 --> 00:11:05,560
+---no puedo usarlo con Random
+
+247
+00:11:06,570 --> 00:11:07,770
+Ah, porque no est ah
+
+248
+00:11:07,770 --> 00:11:08,280
+Por supuesto
+
+249
+00:11:08,280 --> 00:11:09,880
+Naveguemos hasta home
+
+250
+00:11:09,880 --> 00:11:13,590
+Y usemos cat  con RandomIsNotSoRandom
+
+251
+00:11:15,920 --> 00:11:16,500
+Ves lo que hace?
+
+252
+00:11:16,500 --> 00:11:18,160
+De hecho te muestra la lista de...
+
+253
+00:11:18,540 --> 00:11:20,990
+Este archivo es un poco ms largo
+
+254
+00:11:21,810 --> 00:11:24,950
+Te muestra todo el contenido entero de ese archivo
+
+255
+00:11:25,240 --> 00:11:26,560
+Sea lo que sea
+
+256
+00:11:27,130 --> 00:11:28,640
+No es---
+
+257
+00:11:28,640 --> 00:11:31,530
+Es contenido no se ve bien para nada
+
+258
+00:11:31,530 --> 00:11:32,790
+Bsicamente no lo puedes leer as
+
+259
+00:11:33,070 --> 00:11:33,880
+Pero no importa
+
+260
+00:11:33,880 --> 00:11:34,470
+Creemos---
+
+261
+00:11:34,470 --> 00:11:39,510
+Creemos otro archivo
+
+262
+00:11:39,740 --> 00:11:41,050
+Y simplemente le aplicar cat
+
+263
+00:11:41,280 --> 00:11:44,820
+Nano es mi editor de texto favorito de la terminal
+
+264
+00:11:45,330 --> 00:11:48,320
+Necesitars aprender a usar editores de texto de la terminal
+
+265
+00:11:48,380 --> 00:11:51,450
+Porque, principalmente, no quieres estar cambiando constatemente...
+
+266
+00:11:51,450 --> 00:11:56,750
+...entre los editores de texto de GUI y trabajar en algo en una terminal
+
+267
+00:11:56,750 --> 00:11:58,320
+Toma demasiado tiempo
+
+268
+00:11:58,620 --> 00:12:01,810
+Y adems aqu en Kali Linux puedes editar las cosas con root
+
+269
+00:12:02,750 --> 00:12:04,820
+Sin embargo, si por ejemplo...
+
+270
+00:12:05,200 --> 00:12:07,850
+...ests usando alguna otra distribucin o algo por el estilo
+
+271
+00:12:07,850 --> 00:12:12,430
+No podrs ejecutar la mayora de los editores de texto de GUI como root
+
+272
+00:12:12,430 --> 00:12:13,810
+Recibirs un mensaje de error
+
+273
+00:12:14,460 --> 00:12:16,200
+Eso puede ser algo problemtico
+
+274
+00:12:16,250 --> 00:12:20,410
+Por eso siempre debes aprender a usar editores de texto que sean...
+
+275
+00:12:20,410 --> 00:12:21,840
+Editores de texto de la terminal
+
+276
+00:12:21,840 --> 00:12:23,450
+Entonces, simplemente escribe nano
+
+277
+00:12:23,780 --> 00:12:26,430
+Escribe el nombre del archivo que quieras crear
+
+278
+00:12:26,430 --> 00:12:32,180
+Por ejemplo, voy a escribir texto
+
+279
+00:12:32,180 --> 00:12:33,470
+Este ser un archivo de texto
+
+280
+00:12:33,550 --> 00:12:35,920
+No necesito darle ninguna extensin ni nada como eso
+
+281
+00:12:36,470 --> 00:12:36,990
+Y ah est
+
+282
+00:12:36,990 --> 00:12:39,810
+Ahora estamos en el editor de de texto de nano
+
+283
+00:12:39,810 --> 00:12:44,720
+Aqu puedo escribir algn texto, por ejemplo
+
+284
+00:12:45,510 --> 00:12:52,110
+algn texto aleatorio va aqu
+
+285
+00:12:53,900 --> 00:12:54,620
+Hagamos eso
+
+286
+00:12:55,340 --> 00:12:58,350
+OK, tienes una amplia variedad de opciones aqu
+
+287
+00:12:58,350 --> 00:12:59,580
+Bueno, tal vez no es una variedad amplia
+
+288
+00:12:59,580 --> 00:13:01,530
+Pero ciertamente es una buena cantidad
+
+289
+00:13:01,530 --> 00:13:02,330
+Entonces, control---
+
+290
+00:13:02,330 --> 00:13:07,480
+Este smbolo de intercalacin con la x simplemente significa control x
+
+291
+00:13:07,480 --> 00:13:09,820
+As que si presionas control X vas a salir
+
+292
+00:13:10,120 --> 00:13:13,270
+El control O, redactar, bsicamente es guardar
+
+293
+00:13:13,870 --> 00:13:15,290
+No necesitas esto
+
+294
+00:13:15,370 --> 00:13:19,210
+dnde est es bsicamente la forma de buscar cosas
+
+295
+00:13:19,300 --> 00:13:20,400
+Entonces, control V
+
+296
+00:13:20,400 --> 00:13:21,310
+Buscar
+
+297
+00:13:21,510 --> 00:13:23,930
+Coloquemos aleatorio
+
+298
+00:13:23,930 --> 00:13:24,870
+Presionamos ENTER
+
+299
+00:13:24,870 --> 00:13:25,690
+Y ah est
+
+300
+00:13:25,690 --> 00:13:27,340
+Va sealar dnde est aleatorio
+
+301
+00:13:27,340 --> 00:13:28,530
+Lo va a encontrar
+
+302
+00:13:28,530 --> 00:13:30,020
+Sin problemas
+
+303
+00:13:30,020 --> 00:13:31,520
+pgina anterior
+
+304
+00:13:31,520 --> 00:13:32,300
+No necesitamos eso
+
+305
+00:13:32,300 --> 00:13:33,860
+pgina siguiente
+
+306
+00:13:33,860 --> 00:13:36,610
+No vas a estar tan involucrado con eso...
+
+307
+00:13:36,610 --> 00:13:38,330
+cortar texto tambin es muy agradable
+
+308
+00:13:38,580 --> 00:13:42,610
+Porque te permite eliminar grandes cantidades de texto
+
+309
+00:13:42,610 --> 00:13:44,650
+A un paso relativamente rpido
+
+310
+00:13:44,650 --> 00:13:46,920
+As que si aplico control K...
+
+311
+00:13:46,920 --> 00:13:48,640
+...va a eliminar la lnea actual
+
+312
+00:13:48,900 --> 00:13:52,870
+Donde se encuentra el cursor, no dnde has seleccionado con el mouse
+
+313
+00:13:52,870 --> 00:13:54,330
+Solo para que sepas
+
+314
+00:13:54,330 --> 00:13:56,280
+Djame traer eso de vuelta
+
+315
+00:13:56,280 --> 00:14:00,670
+Voy a continuar hablando de esto en la segunda parte
+
+316
+00:14:00,670 --> 00:14:01,820
+En el siguiente tutorial
+
+317
+00:14:01,820 --> 00:14:03,700
+Hasta entonces, me despido
+

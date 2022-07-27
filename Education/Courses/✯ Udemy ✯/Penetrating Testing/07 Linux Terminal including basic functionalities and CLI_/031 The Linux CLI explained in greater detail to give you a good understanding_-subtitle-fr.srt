@@ -1,0 +1,736 @@
+1
+00:00:00,000 --> 00:00:07,499 A:middle
+Bonjour à tous et bienvenue dans la deuxième
+partie de ce tutoriel. Nous allons enregistrer
+
+2
+00:00:07,500 --> 00:00:12,766
+le fichier. Appuyez sur Control + O pour
+l'enregistrer. Vous pouvez le renommer d'ici
+
+3
+00:00:12,767 --> 00:00:17,199
+vous pouvez taper ce que vous voulez 
+pour modifier le nom
+
+4
+00:00:18,200 --> 00:00:25,366
+vous pouvez aussi le modifier 
+a une extension voulue. Inutile pour le moment  
+
+5
+00:00:25,367 --> 00:00:30,966
+Avançons et enregistrez le comme "test".
+Appuyez sur Entrée. Et ca y est. Ca dit 
+
+6
+00:00:30,967 --> 00:00:35,832
+"appliqué a une ligne" Appuyez sur Ctrl + X
+pour quitter. Et c'est parti! Nettoyons l'écran
+
+7
+00:00:35,833 --> 00:00:39,732
+Maintenant je vais utiliser la commande "cat"
+pour avoir une liste de fichier particulier
+
+8
+00:00:40,733 --> 00:00:43,166
+qui est plus approprié que les précédents
+que vous ne pourrez pas lire.
+
+9
+00:00:43,167 --> 00:00:47,499
+En passant, la commande
+ s'est appliquée correctement
+
+10
+00:00:47,500 --> 00:00:52,866
+mais elle affichait des fichiers binaires.  
+Donc, vous ne pourrez pas les lire 
+
+11
+00:00:53,867 --> 00:00:57,966
+Poursuivons et appuyez sur cat test
+Et ca y est! vou voyez ce qui est affiché
+
+12
+00:00:58,967 --> 00:01:07,299
+exactement le texte que l'on a édité avec nano
+
+13
+00:01:08,300 --> 00:01:12,032
+vous pouvez utiliser cat à ces fins.
+Des commandes très utiles, spécialement 
+
+14
+00:01:13,033 --> 00:01:20,632
+avec les états de fichier que vous ne voulez 
+ rien changer ou de le faire par inadvertance
+
+15
+00:01:21,633 --> 00:01:25,566
+et aussi rapidement voir l'emplacement
+de ce fichier
+
+16
+00:01:26,567 --> 00:01:32,999
+il existe une autre façcon de faire cela.
+Pratiquement avec "ls"
+
+17
+00:01:33,000 --> 00:01:40,832
+Tapez "cd etc/apt/." "Ls" nous avons
+beaucoup de fichier que nous pouvons choisir
+
+18
+00:01:40,833 --> 00:01:51,700
+comme exemple prenons sources.list . Si je fais
+ "cat sources.list" je vais avoir toutes les infos
+
+19
+00:01:52,701 --> 00:01:57,266
+de ce fichier en long et en large. Rien ne va
+changer. Comme elle l'était dans mon terminal
+
+20
+00:01:57,267 --> 00:02:03,433
+il existe une autre commande que je pourrai
+ utiliser. Laissez moi nettoyer l'écran.
+
+21
+00:02:04,434 --> 00:02:10,066
+et "less". Entrez "less sources.list" Vous serez
+averti avec un nouveau onglet dans lequel je pourrai
+
+22
+00:02:11,067 --> 00:02:16,799
+voir toutes les informations. Un nouveau onglet
+non pas un nouveau terminal, un nouveau espace de travail
+
+23
+00:02:16,800 --> 00:02:20,966
+dans ce même terminal. Lorsque j'appuyerai sur Q
+ce sera fermé et rien ne sera affiché. C'est vraiment
+
+24
+00:02:22,967 --> 00:02:30,699
+bien en termes d'organisation, bien soigné, et ainsi
+de suite. Alors less et cat sont très très utiles
+
+25
+00:02:31,700 --> 00:02:37,966
+Vous pouvez utiliser, par exemple, "cat source.list"
+et la commande que j'avais mentionné précedemment
+
+26
+00:02:38,967 --> 00:02:45,699
+en l'occurence "grep". "Grep" signifie que vous tirez
+quelque chose, tirez le fichier de quelque part
+
+27
+00:02:46,700 --> 00:02:50,366
+Ce que je veux dire par la. Tapez "cat sources.list"
+et ajoutez une barre vertical
+
+28
+00:02:52,367 --> 00:02:58,399
+le symbol de la barre verticale qui pratiquement
+entraine la sortie de ce qui suit du fichier n'importe
+
+29
+00:02:59,400 --> 00:03:03,766
+quelle commande précédente, 
+Alors je vais taper "grep"
+
+30
+00:03:04,767 --> 00:03:12,866
+Disons que je vais taper "src." Appuyez sur entrée.
+Excellent! Alors il affichera uniquement la lignes de "src"
+
+31
+00:03:13,867 --> 00:03:18,699
+Linux est très sensible à la casse. Quand vous tirez 
+un fichier, il va vérifier tous les fichiers contenants ces lettres
+
+32
+00:03:19,700 --> 00:03:33,766
+que ce soit en minuscule ou pas. Vous pouvez 
+le rendre insouciant en tapant ceci "-i" pour ignorer
+
+33
+00:03:35,767 --> 00:03:39,255
+Cette fois ci vous allez avoir le même 
+résultat parce qu'il n'y a pas de différence
+
+34
+00:03:39,256 --> 00:03:44,999
+entre ces fichiers. En outre, vous avez une idée
+générale du concept. Alors voici comment vous utiliserez "cat"
+
+35
+00:03:46,000 --> 00:03:49,566
+en combinaison avec grep dans le but 
+de tirez des fichiers. C'est très important
+
+36
+00:03:49,567 --> 00:03:53,832
+et cela constitue une grande
+partie de l'utilité des commandes de Linux
+
+37
+00:03:53,833 --> 00:03:59,299
+de filtrage texte pour les fichiers. Premièrement
+parce que nous alons procéder à de large analyse de réseau
+
+38
+00:04:00,300 --> 00:04:05,699
+et nous allons créer des fichiers dans lequel 
+nous serons en mesure de tirer des informations utiles.
+
+39
+00:04:05,700 --> 00:04:11,099
+et toutes ces informations seront à leur tour
+divulguer dans d'autres outils pour les suites nécéssaires. 
+
+
+40
+00:04:11,100 --> 00:04:16,032
+De toute façon, je vais nettoyer l'écran pour
+le moment. Vous avez aussi "echo."  
+
+41
+00:04:17,033 --> 00:04:20,722
+Tapez echo "I AM ALIVE"
+
+42
+00:04:20,723 --> 00:04:30,599
+il répétera votre ligne automatiquement
+comme un écho.
+
+43
+00:04:30,600 --> 00:04:38,766
+Revenons au répertoire d'Accueil,
+Vérifions le contenu du répertoire
+
+44
+00:04:38,767 --> 00:04:46,377
+et utilisez exactement la même commande echo.
+En passant vous pouvez utiliser les commandes précedentes 
+
+45
+00:04:46,378 --> 00:04:50,166
+en utilisant la flèche de directivités 
+en haut ou en bas, vous pouvez défiler  
+
+46
+00:04:51,167 --> 00:04:56,166
+toutes les commandes déjà validées
+vous n'êtes pas obligés de les retaper
+
+47
+00:04:56,167 --> 00:04:58,199
+Alors je suis en vie.
+
+48
+00:04:58,200 --> 00:05:09,799
+Je vais utiliser un signe plus grand que.
+Tapez "test" et la commande écho sera éffective
+
+49
+00:05:11,800 --> 00:05:18,833
+dans test.Il remplacera le contenu de test,
+dans lequel on avait mis "n'importe quoi quelque texte"
+
+50
+00:05:19,834 --> 00:05:27,199
+en "Je suis en vie". Très bonne commande à utiliser. 
+Vous pouvez modifier le nom des variables, leurs valeurs
+
+51
+00:05:28,200 --> 00:05:30,599
+avec echo et ainsi de suite. Nous allons
+l'utiliser de plus en plus que nous progressons
+
+52
+00:05:31,600 --> 00:05:35,688
+dans le cours. Je ne veux pas entrer dans des phases
+ approfondies sans ne pas maitriser ces points
+
+53
+00:05:35,687 --> 00:05:38,933
+parce que nune fois que nous aurons assimiler 
+ces choses, il vous sera plus facile de faire les tests
+
+54
+00:05:38,934 --> 00:05:42,666
+et naviguer en long et en larde dans ce que
+l'on appelle les tests d'intrusions
+
+55
+00:05:42,667 --> 00:05:47,166
+et ensuite vous verrez de plus en plus de commande
+ avancée,en combinaison avec ces commandes de bases
+
+56
+00:05:48,167 --> 00:05:50,266
+en particulier la commande grep
+
+57
+00:05:51,267 --> 00:06:00,566
+Vous avez "touch". "touch" c'est un moyen rapide
+de créer des fichiers. Alors comme exemple, je peux taper,
+
+58
+00:06:00,567 --> 00:06:08,699
+"touch fichier1 fichier2 fichier3". Appuyez
+sur Entrée, "ls". Vous verrez immediatement
+
+59
+00:06:08,700 --> 00:06:10,766
+que trois fichier ont étés crées.
+
+60
+00:06:11,767 --> 00:06:19,066
+alors cette commande est un moyen rapide
+de créer une quantités de fichiers. 
+
+61
+00:06:20,067 --> 00:06:24,399
+et vous pouvez aussi spécifier le dossier
+de destination. Celui ci dans l'Accueil
+
+62
+00:06:24,400 --> 00:06:28,366
+ou celui la dans var, et le dernier dans varlog
+et ainsi de suite
+
+63
+00:06:30,367 --> 00:06:38,766
+En dessous, vous avez "mdkdir". Si je 
+tapes "mkdir", je vais créer un répertoire
+
+64
+00:06:39,767 --> 00:06:43,966
+vous êtes entrain de créer un répertoire.
+Donnons un nom a notre répertoire
+
+65
+00:06:44,967 --> 00:06:53,799
+"AuBonEndroit" Si je tape "ls" et c'est parti
+il reconnait ce fichier en tant que répertoire
+
+66
+00:06:53,800 --> 00:07:01,299
+qui se nomme AuBonEndroit, je peux 
+naviguer autour et avec "ls"
+
+67
+00:07:01,300 --> 00:07:04,466
+Vous verrez un répertoire vide
+mais vous comprenez l'idée.
+
+68
+00:07:04,467 --> 00:07:07,199
+vous pouvez créer des répertoires 
+personnalisés
+
+69
+00:07:07,200 --> 00:07:13,088
+maintenant, Si je tape "chown" il me permet
+ de changer le titulaire d'un certain fichier
+
+70
+00:07:14,089 --> 00:07:18,166
+compte tenu d'un seul mode d'utilisateur,en l'occurence  
+"root". C'est inutile de réaliser quoique ce soit 
+
+71
+00:07:18,167 --> 00:07:23,533
+à moins de créer quelques nouveaux utilisateurs,nous 
+n'allons pas le faire parce que nous ne les en avons pas besoin
+
+72
+00:07:24,534 --> 00:07:28,466
+je vais vous expliquer comment ca marche. 
+Par exemple, Si le titulaire du fichier n'était
+
+73
+00:07:28,467 --> 00:07:036.699
+pas "root" et si vous désiriez le changer en "root"
+Suivez cette étape, Tapez "chown", 
+
+74
+00:07:36,700 --> 00:07:41,199
+suivi du nom de l'utilisateur ":" et le groupe
+d'utilisateur. Le groupe et le nom 'utilisateur
+
+75
+00:07:42,200 --> 00:07:46,299
+sont les mêmes dans votre ordinateur,
+à moins d'appartenir a un plus grand serveur
+
+76
+00:07:48,300 --> 00:07:56,466
+et ensuite spécifier le nom du fichier.
+Vous pouvez taper "test." Et voila éffectivement
+
+77
+00:07:58,467 --> 00:08:03,233
+il changera le titulaire du fichier test
+à "root" qui est l'un des utilisateurs du groupe "root"
+
+78
+00:08:04,234 --> 00:08:14..566
+et Si je fais "ls la" il va déclare le titulaire
+ du groupe dans lequel se situe ce fichier
+
+79
+00:08:14,567 --> 00:08:20,466
+Nettoyez l'écran. Il existe encore une commande
+très utilisée. "chmod"
+
+80
+00:08:21,467 --> 00:08:26,366
+Cette commande vous permet de changer l'autorisation
+d'accès d'un fichier. Nous en aurons besoin de cela
+
+81
+00:28:04,367 --> 00:08:34,099
+chaque jour et fort souvent. Premièrement,
+parce que, si vous avez un fichier éxecutable
+
+82
+00:08:35,100 --> 00:08:54,155
+sur Linux, par exemple. Tapons echo 
+"echo hello" et je veux le tirer dans test 
+
+83
+00:08:56,156 --> 00:09:04,499
+ et je vais modifier test à test.sh
+ "sh" c'est l'extension d'un fichier executable
+
+84
+00:09:04,500 --> 00:09:13,499
+dans Linux, qui permet d'automatiser les taches.
+nous en reparlerons en plus amples de détails
+
+85
+00:09:15,500 --> 00:09:19,599
+quand nous serons dans des positions avancées.
+vous devez vous familiariser avec ce système de script
+
+86
+00:09:20,600 --> 00:09:23,199
+Un script bash est similaire au terminal.
+
+87
+00:09:24,200 --> 00:09:28,699
+toutes les commande que vous utilisez dans 
+le terminal, peuvent être utilisées comme script
+
+88
+00:09:29,700 --> 00:09:36,099
+en les combinant dans un fichier. Maintenant,
+je veux que cela soit éxecutable, mais vous voyez
+
+89
+00:09:37,100 --> 00:09:04,566
+la façon de l'appliquer est de commencer par
+"./" comme je l'ai préciser pour le rendre éxecutable
+
+90
+00:09:44,567 --> 00:09:47,199
+Si je tape test, et appuie la dessus
+ca ne me marchera pas. Et pourquoi cela?
+
+91
+00:09:48,200 --> 00:09:52,299
+Maintenant, certes test.sh est éxecutable,
+mais comme vous le voyez, je n'ai pas l'autorisation
+
+92
+00:09:54,300 --> 00:10:03,299
+à l'éxecution de ce fichier. Vous voyez
+la différence, jetez un coup d'oeil sur cette liste
+
+93
+00:10:04,300 --> 00:10:09,799
+Ceci est en vert et cela ne l'est pas.
+Vérifions leurs autorisations
+
+94
+00:10:09,800 --> 00:10:16,499
+ vous voyez, il est doté de fonction éxecutable pour
+  tous les groupes, utilisateurs, etc, pendant que
+
+95
+00:10:17,500 --> 00:10:24,999
+celui la ne detient pas l'autorisation. Vous devez
+modifier cela. et une façon de le faire
+
+96
+00:10:25,000 --> 00:10:32,232
+c'est d'appliqué "chmod." Tapez le, et ajoutez "+x".
+Si vous voulez donner les droits d'écriture au fichier
+
+97
+00:10:33,233 --> 00:10:39,932
+"+w", Si vous voulez le rendre éxecutable "+x"
+concernant la permission de lecture,"+r"
+
+98
+00:10:39,933 --> 00:10:46,032
+très simple. Il y a aussi une autre manière
+d'appliquer cela avec des numéros. vous devez taper "755"
+
+99
+00:10:46,033 --> 00:10:50,599
+N'essayez pas de mémoriser toutes ces modes. Tout 
+ce que vous en avez besoin est disponible sur internet 
+
+100
+00:10:50,600 --> 00:10:56,566
+ca pourrait être un peu compliqué, mais ces trois
+ valent la peine d'être mémoriser: +x,+r et +w
+
+101
+00:10:57,567 --> 00:11:07,744
+et aussi 777, qui est le mode de configuration
+ globale et ce n'est pas récommandé dans notre cas
+
+102
+00:11:07,745 --> 00:11:12,099
+utilisez "chmod" pour vérifier ou diagnostiquer.
+Par exemple, Si vous voulez être certain
+
+103
+00:11:13,100 --> 00:11:18,488
+sur certaines actions qui n'ont pas été abrouties
+à cause d'autorisations de fichier.vous devez le
+
+104
+00:11:19,489 --> 00:11:24,999
+modifier au 777 qui est la configuration globale,
+pourque tout le monde puisse s'en servir
+
+105
+00:11:26,000 --> 00:11:29,166
+Si le problème persiste avec des messages d'erreurs
+vous saurez que cela n'a aucun rapport avec
+
+106
+00:11:30,167 --> 00:11:35,300
+les règles d'autorisations. Alors ce sont les quatres
+extrêmes que vous devez savoir. Vous pouvez
+
+107
+00:11:36,301 --> 00:11:48,766
+taper ,"chmod +x test.sh". Appuyez sur Entrée.
+Si vous faites "ls la" encore une fois, vous verrez
+
+108
+00:11:50,767 --> 00:11:57,966
+que test.sh peut être éxecuté. Je vais le lancer
+et c'est parti! Si je lance ceci
+
+109
+00:11:58,967 --> 00:12:07,099
+il va répeter "hello" à l'écran de mon terminal.
+Nous avons un plus de chemin à parcourir
+
+110
+00:12:08,100 --> 00:12:11,399
+encore une commande à découvrir.
+
+111
+00:12:12,400 --> 00:12:07,099
+et c'est une commande très dangereuse
+
+112
+00:12:07,100 --> 00:12:16,644
+vous pouvez tout gâcher à un niveau 
+que vous ne pourrez imaginer
+
+113
+00:12:18,645 --> 00:12:30,866
+la commande "rm". "rm" permet d'effacer 
+des fichiers. Lorsque vous supprimer des fichiers
+
+114
+00:12:30,567 --> 00:12:34,199
+avec "rm". Il est impossible de récupérer quoi que ce soit. Alors, si je tape "rm test.sh"
+
+115
+00:12:35,200 --> 00:12:39,299
+il va étre supprimé. Et ne sera plus la.
+Si je me vais au niveau de AuBonEndroit
+
+116
+00:12:42,300 --> 00:12:49,299
+et "touch test" pour créer un nouveau fichier
+si j'utilise la commande "rm" AuBonEndroit
+
+117
+00:12:50,300 --> 00:12:57,799
+cela me dira rm ne peut pas éffacer AuBonEndroit
+parce que c'est un répertoire.
+
+118
+00:12:58,800 --> 00:13:03,499
+c'est un système de sécurité intégré de rm
+Alors vous n'éffacerez pas un répertoire
+
+119
+00:13:03,500 --> 00:13:12,999
+ce serait vraiment dommage. Cependant,
+Vous pouvez utilisez "rm -f AuBonEndroit"
+
+120
+00:13:14,000 --> 00:13:20,232
+Pas applicable. ok, il n'y a pas de problème.
+parfois vous pouvez être coincés, je vais
+
+121
+00:13:21,233 --> 00:13:27,932
+laisser tomber cette partie de ce turoriel.
+Je vais le diagnostiquer. Tapez "-help".
+
+122
+00:13:28,933 --> 00:13:34,032
+Vous avez tout ce que vous pouvez faire
+avec la commande rm.
+
+123
+00:13:35,033 --> 00:13:48,599
+c'est une très bonne options. Alors prenez votre
+temps à vérifier ce que vous voulez faire avec rm
+
+124
+00:13:48,600 --> 00:13:52,566
+Tapez "rm -r AuBonEndroit", Appuyez sur Entrée.
+et c'est parti! Il l'a supprimé.
+
+125
+00:13:53,567 --> 00:14:00,744
+et c'est parti, il n'est plus la. la fonction "-f"
+que j'ai utilisé a forcé la supression
+
+126
+00:14:00,745 --> 00:14:04,099
+il ne vous posera aucune question, il éffacera
+automatiquement le fichier ou le dossier
+
+127
+00:14:04,100 --> 00:14:07,488
+Vous devez être très prudent, c'est une commande
+assez dangereuse
+
+128
+00:14:08,489 --> 00:14:14,999
+quand vous utilisez "rm" vous vous attendez à ce que 
+l'on vous pose une question, de toute façon 
+
+105
+00:14:16,000 --> 00:14:23,166
+comme je l'ai dit, je vous ai montré toutes les possibilités. Si vous êtes bloqués, tapez "help"
+
+129
+00:14:23,167 --> 00:14:29,300
+je me plante parfois, avec --help vous aurez toutes 
+les arguments et les informations nécéssaires
+
+130
+00:14:29,301 --> 00:14:37,766
+prenez le temps de lire les instructions et les options que vous pourrez utiliser
+
+131
+00:14:38,767 --> 00:14:42,966
+parfois ils fonctionneront, et le plus souvent
+ils ne fonctionnent pas
+
+132
+00:14:42,967 --> 00:14:46,099
+le plus souvent des cas, vous aurez des réponses
+avec le menu d'Aide, si vous le problème persiste
+
+133
+00:14:46,100 --> 00:14:51,399
+tapez "man rm" vous pouvez lire 
+les informations à propos de la commande
+
+134
+00:14:52,400 --> 00:14:55,099
+Si vous ne trouvez vraiment rien. Vous avez 
+le forum à votre disposition. Croyez moi 
+
+135
+00:14:56,100 --> 00:15:03,644
+vous réussirez dans tout ce que 
+vous voulez faire. De toute façon
+
+136
+00:15:03,645 --> 00:15:03,866
+Sur ce, je vous dis au revoir.
+
+
+137
+00:14:23,167 --> 00:14:29,300
+je me plante parfois, avec --help vous aurez toutes 
+les arguments et les informations nécéssaires
+
+138
+00:14:29,301 --> 00:14:37,766
+prenez le temps de lire les instructions et les options que vous pourrez utiliser
+
+138
+00:14:38,767 --> 00:14:42,966
+parfois ils fonctionneront, et le plus souvent
+ils ne fonctionnent pas
+
+139
+00:14:42,967 --> 00:14:46,099
+le plus souvent des cas, vous aurez des réponses
+avec le menu d'Aide, si vous le problème persiste
+
+140
+00:14:46,100 --> 00:14:51,399
+tapez "man rm" vous pouvez lire 
+les informations à propos de la commande
+
+141
+00:14:52,400 --> 00:14:55,099
+Si vous ne trouvez vraiment rien. Vous avez 
+le forum à votre disposition. Croyez moi 
+
+142
+00:14:56,100 --> 00:15:03,644
+vous réussirez dans tout ce que 
+vous voulez faire. De toute façon
+
+143
+00:15:03,645 --> 00:15:07,866
+C'etait une brève présentation de quelques
+commandes de bases que nous utiliserons.
+
+144
+00:15:08,167 --> 00:15:13,300
+Faites en sorte d'assimiler chacune des
+fonctions qu'occupent ces commandes
+
+145
+00:15:13,301 --> 00:15:16,766
+Et au fur et à mesure nous traiterons avec
+des commandes plus avancées
+
+146
+00:15:16,767 --> 00:15:20,966
+en les combinant et ainsi de suite.
+
+147
+00:15:20,967 --> 00:15:23,099
+Je vous remercie d'avoir suivi ce turoriel.
+
+148
+00:15:23,100 --> 00:15:26,399
+et j'éspère vous voir dans le prochain tutoriel.
+

@@ -1,0 +1,748 @@
+1
+00:00:00,940 --> 00:00:02,084
+Bienvenidos a todos
+
+2
+00:00:02,084 --> 00:00:06,183
+Hoy vamos a empezar a configurar un VPN
+
+3
+00:00:06,183 --> 00:00:08,080
+Kali Linux 2.0
+
+4
+00:00:09,100 --> 00:00:12,437
+Estoy usando una mquina virtual
+
+5
+00:00:12,797 --> 00:00:14,814
+Si t no la usas no importa, en realidad
+
+6
+00:00:14,814 --> 00:00:18,509
+el procedimiento es prcticamente el mismo
+
+7
+00:00:18,509 --> 00:00:20,960
+as que no importa en que sistema operativo
+
+8
+00:00:20,960 --> 00:00:22,685
+est corriendo nativamente
+
+9
+00:00:23,235 --> 00:00:26,589
+Yo estoy usando Fedora pero,
+
+10
+00:00:26,589 --> 00:00:30,526
+en realidad no importa si es Windows o Mac o cualquier otro
+
+11
+00:00:30,526 --> 00:00:32,780
+que haya
+
+12
+00:00:32,780 --> 00:00:34,049
+Es completamente irrelevante
+
+13
+00:00:34,049 --> 00:00:35,661
+slo ten un,
+
+14
+00:00:35,661 --> 00:00:39,497
+mientras la mquina virtual est operativa, debera funcionar
+
+15
+00:00:39,967 --> 00:00:43,530
+De todos modos, si ests usando una mquina virtual, ve a dispositivos,
+
+16
+00:00:43,530 --> 00:00:48,501
+red, configuracin de red y asegrate que
+
+17
+00:00:48,501 --> 00:00:50,061
+estas configuraciones de la que hemos hablado
+
+18
+00:00:50,061 --> 00:00:53,393
+estn correctas, as que no necesariamente debe
+
+19
+00:00:53,393 --> 00:00:57,496
+estar en modo bridge, pero estoy usando modo bridge
+
+20
+00:00:57,496 --> 00:00:59,955
+Estoy usando un adaptador modo puente,
+
+21
+00:00:59,955 --> 00:01:03,323
+aqu dice, nombre,
+
+22
+00:01:03,323 --> 00:01:06,007
+esta es la interfaz que ests usando
+
+23
+00:01:06,937 --> 00:01:09,881
+as que no importa, slo mira tu sistema operativo
+
+24
+00:01:09,881 --> 00:01:12,146
+que interfaz ests usando
+
+25
+00:01:12,146 --> 00:01:14,616
+y luego selecciona aqu si no sabes
+
+26
+00:01:14,616 --> 00:01:16,827
+si te da pereza de averiguarlo,
+
+27
+00:01:18,537 --> 00:01:22,045
+usualmente tienen un mximo de tres o algo as
+
+28
+00:01:22,045 --> 00:01:25,295
+Tal vez un poco mas, intentar uno despus del otro
+
+29
+00:01:25,295 --> 00:01:27,371
+si de verdad no quieres averiguarlo
+
+30
+00:01:27,371 --> 00:01:28,697
+pero
+
+31
+00:01:28,697 --> 00:01:32,370
+eso debera ser, debera ser fcil de entender
+
+32
+00:01:32,370 --> 00:01:34,393
+Ya he hablado sobre esto en tutoriales anteriores
+
+33
+00:01:34,393 --> 00:01:38,741
+De todos modos, abajo en "Avanzado"
+
+34
+00:01:38,741 --> 00:01:41,801
+asegrate que el modo promiscuo est habilitado
+
+35
+00:01:41,801 --> 00:01:45,533
+y eso es todo, de hecho no hay
+
+36
+00:01:45,533 --> 00:01:46,873
+mucho ms que necesitas hacer,
+
+37
+00:01:46,873 --> 00:01:50,800
+slo ve y haz clic en "ok"
+
+38
+00:01:50,800 --> 00:01:55,416
+As que ahora que tengo la mquina virtual lista y funcionando
+
+39
+00:01:55,416 --> 00:01:58,694
+Voy a abrir el terminal
+
+40
+00:01:58,694 --> 00:02:01,468
+Voy a hacer un poco de zoom
+
+41
+00:02:04,558 --> 00:02:08,749
+y una de las primeras cosas que vamos a hacer
+
+42
+00:02:08,749 --> 00:02:11,574
+es cambiar nuestra configuracin de DNS porque me he dado cuenta que
+
+43
+00:02:11,574 --> 00:02:16,213
+algunas personas no pueden hacer y seguir ciertas partes del tutorial
+
+44
+00:02:16,213 --> 00:02:20,432
+porque usan unos servidores DNS realmente extraos
+
+45
+00:02:20,432 --> 00:02:24,662
+y esos servidores DNS estn bsicamente bloqueandote
+
+46
+00:02:24,662 --> 00:02:29,405
+ya que hacen filtracin de trfico o algo como eso
+
+47
+00:02:29,405 --> 00:02:39,530
+as que si haces "cat /etc/resolv.conf"
+
+48
+00:02:39,530 --> 00:02:46,886
+puedes ver cuales servidores DNS ests usando
+
+49
+00:02:46,886 --> 00:02:50,269
+as que yo estoy usando uno suministrado por mi ISP
+
+50
+00:02:50,269 --> 00:02:52,363
+as que selecciono mi router,
+
+51
+00:02:52,363 --> 00:02:54,659
+bsicamente mi puerta de enlace residencial
+
+52
+00:02:57,639 --> 00:03:00,666
+tienes un 99% de posibilidades de que este sea el mismo
+
+53
+00:03:00,666 --> 00:03:02,736
+que tengas el mismo que yo
+
+54
+00:03:02,736 --> 00:03:07,481
+y esto es bsicamente redirigir el trfico de mi ISP desde donde
+
+55
+00:03:07,481 --> 00:03:12,805
+desde alguien que tenga un servidor DNS al que pueda acceder
+
+56
+00:03:12,805 --> 00:03:15,828
+mis queries estn determinados, pero
+
+57
+00:03:15,828 --> 00:03:18,772
+en verdad no queremos eso porque hay muchos
+
+58
+00:03:18,772 --> 00:03:21,678
+Digo, no siempre pero ciertamente en muchos casos
+
+59
+00:03:21,678 --> 00:03:24,510
+hay mucha filtracin en esos servidores DNS
+
+60
+00:03:24,510 --> 00:03:27,594
+as que cambiaremos eso
+
+61
+00:03:27,594 --> 00:03:30,019
+Vamos y despejemos la pantalla y
+
+62
+00:03:30,019 --> 00:03:34,229
+escribe "vim"
+
+63
+00:03:34,229 --> 00:03:35,474
+Djame ver si vim est instalado
+
+64
+00:03:35,474 --> 00:03:36,081
+Si lo est
+
+65
+00:03:36,081 --> 00:03:40,691
+Muy bien
+
+66
+00:03:40,691 --> 00:03:41,633
+"clear"
+
+67
+00:03:41,633 --> 00:03:47,682
+escribe "vim /", de hecho, sabes qu?
+
+68
+00:03:47,682 --> 00:03:51,637
+Djame usar nano, ser mucho ms simple para ti
+
+69
+00:03:51,637 --> 00:04:01,781
+"nano /etc/dhcp/dhclient.conf"
+
+70
+00:04:01,781 --> 00:04:04,338
+Presiona Enter
+
+71
+00:04:04,338 --> 00:04:07,661
+Baja con la rueda del mouse o con una de las flechas
+
+72
+00:04:07,661 --> 00:04:10,505
+de la manera que prefieras
+
+73
+00:04:10,505 --> 00:04:12,597
+Y veamos dnde est esa lnea
+
+74
+00:04:15,237 --> 00:04:20,550
+Ok, as que esta que dice "prepend domain name servers"
+
+75
+00:04:20,550 --> 00:04:25,492
+Vamos y quitemos eso, borremos eso
+
+76
+00:04:25,492 --> 00:04:30,502
+y aqu vamos a escribir nuestros nuevos nombres de servidor
+
+77
+00:04:30,502 --> 00:04:32,014
+as que, cual debera ser?
+
+78
+00:04:32,014 --> 00:04:34,940
+Bueno, ir a internet
+
+79
+00:04:35,530 --> 00:04:36,619
+No importa
+
+80
+00:04:38,689 --> 00:04:45,609
+Adems, puedes escoger un servidor DNS que no est en tu propio pas
+
+81
+00:04:45,609 --> 00:04:48,403
+Eso es a veces una buena idea tambin
+
+82
+00:04:48,403 --> 00:04:52,615
+Yo voy a usar Open DNS, he estado usndolo y con ese ests bien
+
+83
+00:04:52,615 --> 00:04:54,543
+y ests seguro
+
+84
+00:04:54,543 --> 00:04:58,698
+hasta donde se y hasta donde mi experiencia concierne
+
+85
+00:04:58,698 --> 00:05:04,606
+as que, Open DNS, definitivamente tienes otros que estn disponibles
+
+86
+00:05:04,606 --> 00:05:07,147
+ah arriba
+
+87
+00:05:07,147 --> 00:05:08,837
+Direcciones de IP de Open DNS
+
+88
+00:05:08,837 --> 00:05:10,773
+eso es lo que necesitamos
+
+89
+00:05:11,603 --> 00:05:14,676
+y ah vamos, as que estas dos direcciones IP
+
+90
+00:05:14,676 --> 00:05:18,367
+las cuales vamos a usar
+
+91
+00:05:30,127 --> 00:05:34,386
+por cierto, si te preguntas cmo estoy haciendo esto
+
+92
+00:05:34,386 --> 00:05:39,339
+sabes la tecla en Windows que se presiona para inicio?
+
+93
+00:05:39,339 --> 00:05:43,751
+Est entre Control y Alt, y tiene un signo de Windows en ella
+
+94
+00:05:43,751 --> 00:05:47,488
+As que si presionas esa tecla va a dividir la pantalla
+
+95
+00:05:47,488 --> 00:05:50,299
+en mltiples ventanas
+
+96
+00:05:50,299 --> 00:05:52,028
+eso es algo del Shell de Unix
+
+97
+00:05:54,708 --> 00:05:57,906
+as que vas y pegas una direccin IP aqu
+
+98
+00:05:57,906 --> 00:06:04,933
+y luego escribes una coma y un espacio y luego tomas la segunda direccin IP
+
+99
+00:06:07,613 --> 00:06:09,793
+y vuelves al terminal
+
+100
+00:06:11,643 --> 00:06:16,872
+es una mquina virtual, en la mquina real de hecho puedes dar clic en la esquina superior izquierda
+
+101
+00:06:16,872 --> 00:06:21,555
+una o dos veces con el mouse y esto pasar tambin
+
+102
+00:06:22,695 --> 00:06:26,742
+Ok, ah vamos
+
+103
+00:06:26,742 --> 00:06:28,842
+Control + O para guardar
+
+104
+00:06:28,842 --> 00:06:29,886
+Presiona Enter
+
+105
+00:06:29,886 --> 00:06:33,547
+y luego presiona Control + X para salir
+
+106
+00:06:33,547 --> 00:06:47,736
+ahora necesitamos escribir "service network-manager restart"
+
+107
+00:06:47,736 --> 00:06:53,397
+Ahora vamos a escribir "cat /etc/resolv.conf"
+
+108
+00:06:53,397 --> 00:06:54,945
+Y listo
+
+109
+00:06:54,945 --> 00:07:02,850
+As que tengo este, tengo este, y luego tengo el ISP abajo en el fondo
+
+110
+00:07:02,850 --> 00:07:07,433
+Ahora, hay una manera te quitar este en el fondo tambin
+
+111
+00:07:07,433 --> 00:07:10,815
+pero ste casi nunca se va a usar
+
+112
+00:07:10,815 --> 00:07:14,636
+Digo, el segundo casi nunca se va a usar
+
+113
+00:07:14,636 --> 00:07:19,078
+A menos que haya un balanceo de carga en Open DNS entre las dos direcciones IP
+
+114
+00:07:19,078 --> 00:07:26,183
+pero la tercera, es muy poco comn que la vayamos a usar
+
+115
+00:07:26,183 --> 00:07:29,414
+As que no te preocupes por eso
+
+116
+00:07:29,414 --> 00:07:37,265
+Si quieres estar 100% seguro puedes volver a este archivo
+
+117
+00:07:37,265 --> 00:07:43,370
+y luego agregar una tercera direccin y slo entonces se usarn las tres
+
+118
+00:07:43,370 --> 00:07:47,551
+porque por defecto slo se pueden usar tres
+
+119
+00:07:47,551 --> 00:07:51,954
+Puedes tener una principal y dos de respaldo y ahora voy a
+
+120
+00:07:51,954 --> 00:07:55,754
+escribir, soy a usar el de Google
+
+121
+00:07:55,754 --> 00:07:58,938
+pero tu puedes usar el que quieras
+
+122
+00:07:58,938 --> 00:08:01,126
+Slo estoy usando un ejemplo
+
+123
+00:08:01,126 --> 00:08:05,998
+Yo prefiero usar Open DNS y puedes encontrar algunos
+
+124
+00:08:05,998 --> 00:08:11,635
+servidores DNS que son lo suficientemente annimos en internet
+
+125
+00:08:11,635 --> 00:08:15,462
+por favor, por favor, por favor, s cuidadoso
+
+126
+00:08:15,462 --> 00:08:19,611
+una vez que encuentres un servidor DNS, ve a los foros y ve lo que la gente
+
+127
+00:08:19,611 --> 00:08:21,354
+ha estado opinando sobre esos servidores DNS
+
+128
+00:08:21,354 --> 00:08:23,356
+Qu reputacin tienen?
+
+129
+00:08:23,356 --> 00:08:30,014
+Protegen, o hacen algo daino o algo as?
+
+130
+00:08:31,844 --> 00:08:36,235
+O es algo falso que slo te encontraste por internet
+
+131
+00:08:36,235 --> 00:08:38,718
+prometindote muchas cosas pero que en realidad no hace nada
+
+132
+00:08:38,718 --> 00:08:43,455
+y slo te redirige a un sitio con anuncios, o te redirige a
+
+133
+00:08:43,455 --> 00:08:48,357
+sitios maliciosos? as que debes ser cuidadoso con eso y asegurarte
+
+134
+00:08:48,357 --> 00:08:53,516
+que elijes los que tengan reputacin
+
+135
+00:08:53,516 --> 00:08:58,006
+De todos modos, ve y presiona Control + O para guardar como antes
+
+136
+00:08:58,006 --> 00:08:58,602
+Enter
+
+137
+00:08:58,602 --> 00:09:00,194
+Lo extrae
+
+138
+00:09:00,194 --> 00:09:04,214
+Y luego slo necesita reiniciar el administrador de red otra vez
+
+139
+00:09:04,214 --> 00:09:10,212
+no es difcil, ahora ve y escribe "cat /etc/resolv.conf"
+
+140
+00:09:10,212 --> 00:09:16,272
+y puedes ver que tenemos uno, dos tres, y luego tienes una nota
+
+141
+00:09:16,272 --> 00:09:22,341
+"El libc resolver puede que no soporte ms de tres nombres de servidor"
+
+142
+00:09:22,341 --> 00:09:26,260
+"los nombres de servidor en la lista de abajo pueden no ser reconocidos"
+
+143
+00:09:26,260 --> 00:09:30,652
+De hecho no sern reconocidos
+
+144
+00:09:30,652 --> 00:09:35,238
+Slo coloqu estos tres como ejemplo, pero puedes tomar cualquier servidor DNS de dnde sea
+
+145
+00:09:35,238 --> 00:09:42,476
+en el planeta, por ejemplo, si ests en Estados Unidos, si ests en Japn
+
+146
+00:09:42,476 --> 00:09:48,609
+o si ests en China o en Alemania o algo as, no necesariamente necesitar escoger
+
+147
+00:09:48,609 --> 00:09:55,065
+un servidor DNS de ese pas, puedes escoger un servidor DNS de algn otro pas
+
+148
+00:09:57,885 --> 00:10:04,474
+As que si ests usando un VPN o proxies, si ests usando proxies, especialmente si ests usando proxies
+
+149
+00:10:04,474 --> 00:10:07,796
+no quieres pagar ningn DNS, bsicamente
+
+150
+00:10:07,796 --> 00:10:14,041
+alguien ve... Te estoy confundiendo un poco aqu
+
+151
+00:10:14,041 --> 00:10:20,116
+Si ests usando un proxy, as que digamos que ests en Francia
+
+152
+00:10:20,116 --> 00:10:24,006
+y luego ests usando un proxy de Alemania, as que parece como
+
+153
+00:10:24,006 --> 00:10:26,642
+que tu trfico est viniendo de Alemania
+
+154
+00:10:26,642 --> 00:10:31,455
+pero tu servidor DNS sigue estando en Francia, alguien lo ve y puede concluir por eso
+
+155
+00:10:31,455 --> 00:10:34,901
+que ests en Francia
+
+156
+00:10:34,901 --> 00:10:37,996
+Por lo tanto, si usas un servidor DNS en Alemania tambin
+
+157
+00:10:37,996 --> 00:10:42,670
+tu proxy y tu DNS ambos coincidirn en Alemania
+
+158
+00:10:42,670 --> 00:10:46,018
+pero tu puedes escoger un servidor DNS de otro pas
+
+159
+00:10:46,018 --> 00:10:52,126
+Digamos: Finlandia, as que tienes un servidor DNS finlands y puedes tener una
+
+160
+00:10:52,126 --> 00:11:01,473
+direccin IP de Alemania en internet, de esa manera alguien no podr averiguar de cual
+
+161
+00:11:01,473 --> 00:11:05,543
+pas ests viniendo y eso es algo muy bueno
+
+162
+00:11:05,543 --> 00:11:12,713
+Otra cosa es que los servidores DNS por defecto, no registran queries
+
+163
+00:11:12,713 --> 00:11:21,165
+me refiero, que sera una operacin masiva para registrar todos los queries diarios
+
+164
+00:11:21,165 --> 00:11:24,940
+tal vez alguien lo hace, pero no lo s, no te lo puedo garantizar
+
+165
+00:11:24,940 --> 00:11:32,256
+S que los servidores DNS por defecto, los que puedes instalar y configurar
+
+166
+00:11:32,256 --> 00:11:35,633
+y luego vers que por defecto no registran queries
+
+167
+00:11:35,633 --> 00:11:38,088
+pero, sabes, alguien tal vez lo haga, o algo as
+
+168
+00:11:38,088 --> 00:11:42,208
+puede pasar, as que se muy, muy cuidadoso con que servidores DNS ests usando
+
+169
+00:11:42,208 --> 00:11:48,409
+Usa aquellos que tengan una buena reputacin y tambin
+
+170
+00:11:48,409 --> 00:11:53,345
+puedes usar aquellos en pases que tienen buena reputacin en cuento a
+
+171
+00:11:53,345 --> 00:12:03,131
+respetar la privacidad de usuario, por ejemplo, Holanda es un muy buen ejemplo
+
+172
+00:12:03,131 --> 00:12:07,698
+Suecia tambin, es muy bueno all y hay algunos pases europeos
+
+173
+00:12:07,698 --> 00:12:11,822
+y pases en todo el mundo en los que no puedo pensar en este momento pero en realidad no importa
+
+174
+00:12:11,822 --> 00:12:16,780
+puedes averiguar esto en internet, la informacin est ampliamente disponible
+
+175
+00:12:16,780 --> 00:12:22,149
+as que, de que pases puedes escoger servidores DNS y cuales servidores DNS
+
+176
+00:12:22,149 --> 00:12:26,048
+eliges, ahora yo tambin... Lo siento, lo siento por hacer esto demasiado largo
+
+177
+00:12:26,048 --> 00:12:33,581
+pero quiero explicar un par de puntos antes de terminar y luego ir a preparar el VPN como tal
+
+178
+00:12:34,681 --> 00:12:43,680
+Si, tengo personas que me dijeron que tenan problemas cuando cambiaban el DNS y luego
+
+179
+00:12:43,680 --> 00:12:50,018
+cambiaban el DNS y luego usaban el VPN y el DNS todava muestra que
+
+180
+00:12:50,018 --> 00:12:54,518
+su DNS est en Estados Unidos, pues si, porque el servidor DNS que elegiste
+
+181
+00:12:54,518 --> 00:13:01,039
+es de hecho de los Estados Unidos entonces si eliges uno de otro pas en otra parte del mundo
+
+182
+00:13:01,039 --> 00:13:06,231
+mostrar que el DNS es de este pas, as que no significa que tengas una filtracin de DNS
+
+183
+00:13:06,231 --> 00:13:12,681
+Es slo que la direccin IP de ese servidor DNS est fsicamente localizada en tu pas
+
+184
+00:13:12,681 --> 00:13:18,188
+de origen, as que si eliges otro estars bien
+
+185
+00:13:18,188 --> 00:13:21,825
+De todos modos, en el siguiente tutorial, se me est acabando el tiempo
+
+186
+00:13:21,825 --> 00:13:24,649
+as que en el siguiente tutorial, bueno, voy a continuar con esto
+
+187
+00:13:24,649 --> 00:13:29,738
+descargar los archivos que necesitamos y conectarnos al servicio de VPN
+

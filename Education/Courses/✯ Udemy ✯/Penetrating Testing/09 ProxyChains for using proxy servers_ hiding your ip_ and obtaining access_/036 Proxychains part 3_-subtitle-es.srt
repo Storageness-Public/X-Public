@@ -1,0 +1,396 @@
+1
+00:00:01,000 --> 00:00:05,330
+Hola a todos, bienvenidos a este tutorial, hoy vamos a estar importando
+
+2
+00:00:05,330 --> 00:00:13,797
+custom chains de proxys. No he hecho nada para esto deliberadamente
+
+3
+00:00:13,797 --> 00:00:18,712
+porque quiero ver si aparecen algunos problemas hacindolo desde el principio
+
+4
+00:00:18,712 --> 00:00:23,341
+en Kali Linux y si aparecen quiero resolverlos aqu contigo
+
+5
+00:00:23,341 --> 00:00:28,694
+porque si los encuentro, tu tambin los encontrars tambin
+
+6
+00:00:28,694 --> 00:00:33,357
+as que automticamente sabrs como resolverlos. No veo ningn problema en especial aqu
+
+7
+00:00:33,357 --> 00:00:43,355
+esto se ve aparentemente bien, as que vamos a tipear "Free Socks5 proxies"
+
+8
+00:00:43,355 --> 00:00:54,701
+y veamos si podemos encontrar alguna, veamos que tiene para ofrecer este sitio.
+
+9
+00:00:54,701 --> 00:01:01,060
+excelente. As que tenemos muchas de estas cosas aqu, que podemos usar,
+
+10
+00:01:01,060 --> 00:01:05,891
+ilimitadamente, annimamente, obviamente debe ser annimamente
+
+11
+00:01:05,891 --> 00:01:12,471
+eso es realmente cuestionable, as que si quieres estar usndolos generalmente,
+
+12
+00:01:12,495 --> 00:01:19,694
+en paises que tienen una buena reputacin en no compartir tu informacin de pgina web
+
+13
+00:01:19,694 --> 00:01:25,786
+o algo as, as que, los pases que si tienen una buena reputacin con ello
+
+14
+00:01:25,786 --> 00:01:33,754
+China no comparte mucho con casi nadie, Rusia tampoco hace eso, incluso los pases bajos
+
+15
+00:01:33,754 --> 00:01:40,030
+lo cual es genial proque los pases bajos tienen polticas excelentes en compartir informacin
+
+16
+00:01:40,030 --> 00:01:47,560
+en trminos de informacin personal y tambin Alemania no est mal con ello as que,
+
+17
+00:01:47,560 --> 00:01:52,046
+estos son pases que puedes usar los cuales tienen pliticas fantsticas de privacidad,
+
+18
+00:01:54,134 --> 00:01:59,054
+los cuales no van a compartir tu trfico web con prcticamente nadie o eso es lo que dicen.
+
+19
+00:02:01,453 --> 00:02:07,617
+En quin confiar es prcticamente tu decisin, pero de nuevo, en realidad no importa
+
+20
+00:02:09,991 --> 00:02:17,481
+primeramente porque todas las cosas que estamos haciendo aqu es legal.
+
+21
+00:02:17,481 --> 00:02:26,436
+as que puedes usar cualquiera de estas para un ataque real y incluso si puedes reversar el trfico
+
+22
+00:02:26,436 --> 00:02:33,547
+estars bien mientras ests usando algun tipo de proxy en tiempo real, las circunstancias
+
+23
+00:02:33,547 --> 00:02:35,526
+y cuando encuentres problemas en tiempo real.
+
+24
+00:02:35,526 --> 00:02:41,488
+tambin para ver otras cosas prorque si quieres ver Netflix por ejemplo,
+
+25
+00:02:41,488 --> 00:02:45,754
+necesitars una proxy de los Estados Unidos para poder verlo
+
+26
+00:02:45,754 --> 00:02:48,656
+o lo podrs hacer pero necesitars una muy buena para ellos,
+
+27
+00:02:48,656 --> 00:02:55,022
+en vez de usar una VPN. En fin, aqu tendrs una direccin IP,
+
+28
+00:02:55,022 --> 00:03:00,398
+que necesitars. Un nmero de puerto aqu, necesitars esto y esto.
+
+29
+00:03:00,398 --> 00:03:08,204
+y necesitaremos una versin. Hay mltiples pginas de esto.
+
+30
+00:03:08,204 --> 00:03:18,587
+veamos si alguna proxy de los Pases Bajos, nop no hay ninguno aqu.
+
+31
+00:03:18,587 --> 00:03:25,761
+no importa, seguro que si existe en otros sitios web que he visto.
+
+32
+00:03:25,761 --> 00:03:30,306
+recomiendo usar los pases bajos por su genial poltica de privacidad
+
+33
+00:03:30,306 --> 00:03:34,082
+pero, para nuestro propsito hoy no es realmente relevante.
+
+34
+00:03:34,082 --> 00:03:38,307
+as que vamos a escoger las primeras 5 de la lista.
+
+35
+00:03:38,307 --> 00:03:49,313
+copiamos esto, abrimos el terminal y combianamos las ventanas para poder copiar y pegar
+
+36
+00:03:56,046 --> 00:04:06,925
+excelente, aqu tengo todo lo que necesito: Nmero de puerto, version y direccin IP
+
+37
+00:04:09,858 --> 00:04:24,097
+limpiamos la pantalla para nuestra conveniencia y tipeamos: "Nano/ etc/proxychains.conf"
+
+38
+00:04:24,097 --> 00:04:30,230
+asegrate que dynamic est seleccionado y todo lo dems est comentado
+
+39
+00:04:30,230 --> 00:04:37,161
+baja hasta el final y vamos. Ahora tenemos que especificar nuestra proxychain
+
+40
+00:04:37,161 --> 00:04:47,486
+ve y tipea. Nada especial tenemos que saber aqu, no nada especial est especifcado
+
+41
+00:04:47,486 --> 00:04:52,088
+vamos adelante y tipeamos. No tenemos que usar las letras en mayscula as que
+
+42
+00:04:52,088 --> 00:05:07,664
+"Socks5" y pegamos la direccin IP, la primera. agregamos espacios aqu para tener el msimo tamao
+
+43
+00:05:09,024 --> 00:05:24,264
+todo est terminado as que es "33169" presionamos Enter y "Socks5" espacio y agregamos la prxima
+
+44
+00:05:24,264 --> 00:05:37,716
+la siguente la copiamos y dejamos espacio junto al nmero de puerto, vamos con la siguiente
+
+45
+00:05:37,716 --> 00:05:55,074
+como puedes ver e suna proceso realmente sencillo as que no hay nada especial que necesitas hacer
+
+46
+00:05:55,098 --> 00:06:05,859
+slo crea una lista que terminars usando. Te puedo asegurar que ms de la mitad de estas proxys
+
+47
+00:06:05,859 --> 00:06:15,228
+no funcionan, no porque vea alguna informacin que no puedas, o algo a s, pero es porque tengo experiencia
+
+48
+00:06:15,228 --> 00:06:22,166
+en este tipo de cosas, proxys y ellas generalmente no tratan de funcionar pero suficientes si lo hacen
+
+49
+00:06:22,166 --> 00:06:26,027
+para tratar de anonimizarte a t, y te dan buena extensin.
+
+50
+00:06:34,561 --> 00:06:39,755
+vamos con la siguiente, asegrate de colocar los nmeros de puerto bien porque si tienes el nmero mal,
+
+51
+00:06:39,755 --> 00:06:45,201
+esos nmeros se colocarn por defecto as como la direccin IP y si ves que la proxy no est funcionando
+
+52
+00:06:45,201 --> 00:06:58,734
+no es por ella, sino es porque ests tipeando mal el nmero de puerto. Copiamos la siguiente
+
+53
+00:06:58,734 --> 00:07:10,949
+y la direccin IP aqu, vers que algunos nmeros de puerto son estndares, y se estn repitiendo,
+
+54
+00:07:10,949 --> 00:07:16,750
+no debes ponerte a pensar mucho en ello, presiona ENTER, voy a separar un poco de esto,
+
+55
+00:07:16,750 --> 00:07:46,778
+y vamos a salir de nano, extendemos nuestro terminal, tipea lo mismo.
+
+56
+00:07:46,778 --> 00:07:58,654
+as como tipeamos en los tutoriales anteriores "proxychains Firefox www.duckduckgo.com"
+
+57
+00:07:58,654 --> 00:08:04,183
+ten en mente que puedes colocar cualquier URL aqu, tanto como sea una vlida
+
+58
+00:08:04,183 --> 00:08:07,264
+la cual se abrir. As que solo vamos adelante y veamos que pasa.
+
+59
+00:08:07,264 --> 00:08:11,795
+presiona ENTER y no pasa nada. literalmente, nada.
+
+60
+00:08:11,795 --> 00:08:16,064
+que paso? nisiquiera arranc el proxychains con ello, por qu no?
+
+61
+00:08:16,064 --> 00:08:23,194
+bueno, tienes que cerrar el navegador primero y desafortunadamente tenamos esta lista abierta,
+
+62
+00:08:23,194 --> 00:08:29,761
+la cual contina cambiando igualmente y eso es un problema, porque no puedes tener firefox abierto y
+
+63
+00:08:29,761 --> 00:08:36,355
+empezarlo de nuevo a travs de proxychains. Tienes que cerrarlo completamente, asegrate de ello,
+
+64
+00:08:38,682 --> 00:08:41,175
+no veo nada abierto abajo en mi men, debajo de la pantalla,
+
+65
+00:08:41,175 --> 00:08:47,641
+y vamos a intentarlo de nuevo lo mismo. Ves? ahora toma un poco ms de tiempo
+
+66
+00:08:47,641 --> 00:08:55,055
+cuando veas que algo va muy rpido con proxychains, usando proxys, y es realmente rpido
+
+67
+00:08:55,055 --> 00:08:57,761
+en ese momento te das cuenta que algo est mal, porque no hay manera de que vaya rpido.
+
+68
+00:08:59,540 --> 00:09:08,824
+as que lo que tenemos aqu son "timeouts" as que las dynamic proxy chains van a pasar todo esto
+
+69
+00:09:08,824 --> 00:09:19,487
+pero saltndose esos que no estan funcionales y es como yo al principio que quera usar 5 proxys
+
+70
+00:09:19,487 --> 00:09:25,528
+y as estar totalmente anonimizado, pero eso no funciona de esa manera, no fu capaz de abrir los sitios bsicos
+
+71
+00:09:25,528 --> 00:09:32,857
+nuestro problema incluyendo las solicitudes bsicas, debes mantenerlas abajo pues las proxys dependen de la velocidad
+
+72
+00:09:32,857 --> 00:09:38,452
+excelente, as que alguna de ellas va a pasar y alguna va a funcionar
+
+73
+00:09:38,452 --> 00:09:41,928
+esto vamos viendo como pasa y vamos a tratar de resolverlo.
+
+74
+00:09:41,928 --> 00:09:48,089
+solo debemos mirar la pantalla y ver que es lo que est pasando all.
+
+75
+00:09:48,089 --> 00:09:55,544
+y si, una de ellas funcion y sale que est bien, pero igual se necesita que intente con las otras.
+
+76
+00:09:55,544 --> 00:10:05,018
+para que se pueda verificar cual es la que se va a usar en orden de abrir el sitio e igualmente va a tomar tiempo
+
+77
+00:10:05,018 --> 00:10:19,799
+as vemos todos estos timeouts y slo uno esta bien, y vemos si se puede abrir ahora
+
+78
+00:10:19,799 --> 00:10:28,031
+pero no, esta no lo es, esto solo fue una respuesta del DNS, "Dont exists" dejame copiar esto
+
+79
+00:10:28,031 --> 00:10:35,738
+no, creo que no lo tengo, ok est formalmente solicitando informacin de nuevo con diferentes series
+
+80
+00:10:35,738 --> 00:10:45,499
+vamos, por favor, funciona.! Excelente! esta funcion... No, no lo hizo.
+
+81
+00:10:45,499 --> 00:10:53,191
+duckduckgo me indica este nmero, por favor dime que funciona, no lo es.
+
+82
+00:10:53,191 --> 00:11:00,200
+ok, debemos esperar un poco ms, y esta es la realidad de usar proxys, si lo has hecho con
+
+83
+00:11:00,200 --> 00:11:06,731
+1 o 2 es mucho ms simple, pero quiero hacer nfasis aqu y mostrarte que
+
+84
+00:11:06,731 --> 00:11:10,250
+no vas a obtener nada mejor si vas a usar muchas proxys gratuitas.
+
+85
+00:11:10,250 --> 00:11:15,994
+e imagina escanear cientos de hosts usando proxychains como esta,
+
+86
+00:11:15,994 --> 00:11:19,852
+y ste ser el tiempo aproximado de descargar un sitio web bsico
+
+87
+00:11:19,852 --> 00:11:22,351
+as que imagina todo lo que tardara escanear.
+
+88
+00:11:25,065 --> 00:11:36,699
+cuando finalmente la solciitud funcione, como vers todas las comunicaciones van a tratar de buscar respuesta del DNS
+
+89
+00:11:36,699 --> 00:11:44,916
+lucirn como esto, esta es la cantidad de informacin ha sido procesada, antes de incluso haber empezado
+
+90
+00:11:44,916 --> 00:11:54,464
+antes de haber empezado a cargar el duckduckgo.com como puedes del ver nmero de puerto
+
+91
+00:11:59,583 --> 00:12:06,230
+y si vamos abajo, abajo al final, vemos que al fin, encontramos el msimo nmero aqu
+
+92
+00:12:06,230 --> 00:12:19,261
+jur verlo hace un momento, este es nmero de puerto, nmero de puerto, bueno,
+
+93
+00:12:20,611 --> 00:12:26,845
+53 de nuevo, resolucin de DNS si, aqu vemos como ha empezado aqu.
+
+94
+00:12:26,845 --> 00:12:30,225
+est an cargando, espero que ya se haya cargo y s, aqu vamos
+
+95
+00:12:30,225 --> 00:12:37,208
+est subido y corriendo, el sitio est funcional, pero nos ha tomado mucho tiempo para
+
+96
+00:12:37,208 --> 00:12:41,302
+abrirlo usando muchas proxys gratuitas, as que qudate con mximo 3
+
+97
+00:12:41,302 --> 00:12:46,321
+con las cuales debera funcionar y qudate con las que tengan las mejores notas, que uses
+
+98
+00:12:46,321 --> 00:12:51,457
+y qudate con las que tengan buen tiempo, lo cual es bueno, son las que deberas tomar.
+
+99
+00:12:52,552 --> 00:12:57,157
+en todo caso, te deseo lo mejor y espero verte en el prximo tutorial.
+

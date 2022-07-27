@@ -1,0 +1,748 @@
+1
+00:00:00,940 --> 00:00:02,084
+Welcome back all
+
+2
+00:00:02,084 --> 00:00:06,183
+Today we're gonna go ahead and set up a VPN in
+
+3
+00:00:06,183 --> 00:00:08,080
+Kali Linux 2.0
+
+4
+00:00:09,100 --> 00:00:12,437
+I am using a virtual machine
+
+5
+00:00:12,797 --> 00:00:14,814
+If you're not it doesn't really matter
+
+6
+00:00:14,814 --> 00:00:18,509
+the procedure is pretty much the same
+
+7
+00:00:18,509 --> 00:00:20,960
+so it doesn't matter which operating system
+
+8
+00:00:20,960 --> 00:00:22,685
+is running as your host
+
+9
+00:00:23,235 --> 00:00:26,589
+I'm running a Fedora as my host but,
+
+10
+00:00:26,589 --> 00:00:30,526
+it doesn't really matter if it's Windows or Mac or whatever else
+
+11
+00:00:30,526 --> 00:00:32,780
+there might be out there,
+
+12
+00:00:32,780 --> 00:00:34,049
+completely irrelevant
+
+13
+00:00:34,049 --> 00:00:35,661
+just have a,
+
+14
+00:00:35,661 --> 00:00:39,497
+as long as the virtual machine is functional, it should work
+
+15
+00:00:39,967 --> 00:00:43,530
+Anyway, if you're using a virtual machine, go to devices,
+
+16
+00:00:43,530 --> 00:00:48,501
+and network, network settings and make sure that
+
+17
+00:00:48,501 --> 00:00:50,061
+these settings that we've talked about
+
+18
+00:00:50,061 --> 00:00:53,393
+are proper, so it doesn't necessarily need
+
+19
+00:00:53,393 --> 00:00:57,496
+to be in bridge mode, but I'm using bridge mode
+
+20
+00:00:57,496 --> 00:00:59,955
+I'm using a bridged adapter,
+
+21
+00:00:59,955 --> 00:01:03,323
+so here it says, name,
+
+22
+00:01:03,323 --> 00:01:06,007
+this is the interface that you are using
+
+23
+00:01:06,937 --> 00:01:09,881
+so no big deal, just take a look on your
+
+24
+00:01:09,881 --> 00:01:12,146
+host system which interface you are using
+
+25
+00:01:12,146 --> 00:01:14,616
+and then select here if you don't know,
+
+26
+00:01:14,616 --> 00:01:16,827
+if you're too lazy to check it,
+
+27
+00:01:18,537 --> 00:01:22,045
+they are usually or have maximum three or something like that,
+
+28
+00:01:22,045 --> 00:01:25,295
+maybe a little bit more, I'll just try one after another
+
+29
+00:01:25,295 --> 00:01:27,371
+if you can't really bother to check,
+
+30
+00:01:27,371 --> 00:01:28,697
+but
+
+31
+00:01:28,697 --> 00:01:32,370
+that should be, that should be pretty self-explanatory
+
+32
+00:01:32,370 --> 00:01:34,393
+I've talked about this in the previous tutorials
+
+33
+00:01:34,393 --> 00:01:38,741
+Anyway, in down, down in the ''Advanced''
+
+34
+00:01:38,741 --> 00:01:41,801
+make sure that the promiscuous mode is allowed all
+
+35
+00:01:41,801 --> 00:01:45,533
+and that is pretty much it, actually there isn't
+
+36
+00:01:45,533 --> 00:01:46,873
+that much else that you need to do,
+
+37
+00:01:46,873 --> 00:01:50,800
+just go ahead and click on ''ok''
+
+38
+00:01:50,800 --> 00:01:55,416
+So now that I have the virtual machine up and running
+
+39
+00:01:55,416 --> 00:01:58,694
+I'm gonna go ahead and open up the terminal
+
+40
+00:01:58,694 --> 00:02:01,468
+Let's go ahead and zoom in a little bit
+
+41
+00:02:04,558 --> 00:02:08,749
+and one of the very first things that we're going to do
+
+42
+00:02:08,749 --> 00:02:11,574
+is change our DNS settings because I've noticed that
+
+43
+00:02:11,574 --> 00:02:16,213
+people can't do and follow through certain things in the tutorial
+
+44
+00:02:16,213 --> 00:02:20,432
+because they're using some really weird DNS servers
+
+45
+00:02:20,432 --> 00:02:24,662
+and those DNS servers are basically blocking you
+
+46
+00:02:24,662 --> 00:02:29,405
+as they are doing traffic filtration or something like that
+
+47
+00:02:29,405 --> 00:02:39,530
+so if you do ''cat /etc/resolv.conf"
+
+48
+00:02:39,530 --> 00:02:46,886
+you can see which DNS servers you're using
+
+49
+00:02:46,886 --> 00:02:50,269
+so I'm using the one provided by my ISP
+
+50
+00:02:50,269 --> 00:02:52,363
+so I'm just choosing my router,
+
+51
+00:02:52,363 --> 00:02:54,659
+basically my home gateway,
+
+52
+00:02:57,639 --> 00:03:00,666
+you have 99% chance that this is the same,
+
+53
+00:03:00,666 --> 00:03:02,736
+that you have the same as mine
+
+54
+00:03:02,736 --> 00:03:07,481
+and this is basically forwarding the traffic to my ISP from where
+
+55
+00:03:07,481 --> 00:03:12,805
+from who has a DNS server and there I can actually get
+
+56
+00:03:12,805 --> 00:03:15,828
+my queries resolved, but
+
+57
+00:03:15,828 --> 00:03:18,772
+we don't really want that because there's a lot
+
+58
+00:03:18,772 --> 00:03:21,678
+I mean not always but certainly in a lot of cases
+
+59
+00:03:21,678 --> 00:03:24,510
+there's a lot of filtration on those DNS servers
+
+60
+00:03:24,510 --> 00:03:27,594
+so we will change that
+
+61
+00:03:27,594 --> 00:03:30,019
+Let's go ahead and just clear the screen and
+
+62
+00:03:30,019 --> 00:03:34,229
+type in "vim"
+
+63
+00:03:34,229 --> 00:03:35,474
+Let me see if vim is installed
+
+64
+00:03:35,474 --> 00:03:36,081
+it is
+
+65
+00:03:36,081 --> 00:03:40,691
+Excellent
+
+66
+00:03:40,691 --> 00:03:41,633
+"clear"
+
+67
+00:03:41,633 --> 00:03:47,682
+type in "vim /", actually you know what?
+
+68
+00:03:47,682 --> 00:03:51,637
+Let's just use nano, it'll be a lot simpler for you
+
+69
+00:03:51,637 --> 00:04:01,781
+"nano /etc/dhcp/dhclient.conf"
+
+70
+00:04:01,781 --> 00:04:04,338
+Press Enter
+
+71
+00:04:04,338 --> 00:04:07,661
+Scroll down with the mouse scroll or with an arrow
+
+72
+00:04:07,661 --> 00:04:10,505
+which way you prefer
+
+73
+00:04:10,505 --> 00:04:12,597
+And let's see where is that line
+
+74
+00:04:15,237 --> 00:04:20,550
+Ok, so, this one that says "prepend domain name servers"
+
+75
+00:04:20,550 --> 00:04:25,492
+Let's go ahead and remove that, delete that
+
+76
+00:04:25,492 --> 00:04:30,502
+and here we are going to type in our new name servers
+
+77
+00:04:30,502 --> 00:04:32,014
+so, what should it be?
+
+78
+00:04:32,014 --> 00:04:34,940
+Well I'll just go on to the net
+
+79
+00:04:35,530 --> 00:04:36,619
+No big deal
+
+80
+00:04:38,689 --> 00:04:45,609
+Also, you can choose a DNS server which is not in your own country
+
+81
+00:04:45,609 --> 00:04:48,403
+That is sometimes a good idea as well
+
+82
+00:04:48,403 --> 00:04:52,615
+I am going to use Open DNS, I have been using it and you're pretty good
+
+83
+00:04:52,615 --> 00:04:54,543
+and you're pretty safe
+
+84
+00:04:54,543 --> 00:04:58,698
+as far as I know and as far as my experience goes
+
+85
+00:04:58,698 --> 00:05:04,606
+so, open DNS, you definitely have other ones that are available
+
+86
+00:05:04,606 --> 00:05:07,147
+up there
+
+87
+00:05:07,147 --> 00:05:08,837
+Open DNS IP addresses
+
+88
+00:05:08,837 --> 00:05:10,773
+that's what we need
+
+89
+00:05:11,603 --> 00:05:14,676
+and there we go, so these are two IP addresses
+
+90
+00:05:14,676 --> 00:05:18,367
+which we are going to use
+
+91
+00:05:30,127 --> 00:05:34,386
+by the way if you're wondering how I am doing this
+
+92
+00:05:34,386 --> 00:05:39,339
+you know the button in Windows that you press for start?
+
+93
+00:05:39,339 --> 00:05:43,751
+It's in between Control and Alt, it has a Windows sign on it?
+
+94
+00:05:43,751 --> 00:05:47,488
+So if you press that button it's gonna split the screen
+
+95
+00:05:47,488 --> 00:05:50,299
+into multiple windows
+
+96
+00:05:50,299 --> 00:05:52,028
+that's something from the unix shell
+
+97
+00:05:54,708 --> 00:05:57,906
+so go ahead and paste one IP address here
+
+98
+00:05:57,906 --> 00:06:04,933
+then type in a coma and a space and then take the second IP address
+
+99
+00:06:07,613 --> 00:06:09,793
+and let's go back to the terminal
+
+100
+00:06:11,643 --> 00:06:16,872
+it's a virtual machine, in the real machine you can actually tap the upper left corner
+
+101
+00:06:16,872 --> 00:06:21,555
+twice or once with a mouse and this will happen as well
+
+102
+00:06:22,695 --> 00:06:26,742
+Ok, so, there we go
+
+103
+00:06:26,742 --> 00:06:28,842
+Control + O to save
+
+104
+00:06:28,842 --> 00:06:29,886
+Press Enter
+
+105
+00:06:29,886 --> 00:06:33,547
+and then press Control + X to exit
+
+106
+00:06:33,547 --> 00:06:47,736
+now we need to type in "service network-manager restart"
+
+107
+00:06:47,736 --> 00:06:53,397
+Now we're gonna do "cat /etc/resolv.conf"
+
+108
+00:06:53,397 --> 00:06:54,945
+and here we go
+
+109
+00:06:54,945 --> 00:07:02,850
+So I have this one, I have this one, and then I have the ISP down at the bottom
+
+110
+00:07:02,850 --> 00:07:07,433
+Now there's a way of removing this one at the bottom as well
+
+111
+00:07:07,433 --> 00:07:10,815
+but this is almost never going to get used
+
+112
+00:07:10,815 --> 00:07:14,636
+I mean the second one is almost is never going to get used
+
+113
+00:07:14,636 --> 00:07:19,078
+unless there's some load balancing on Open DNS and between the two IP addresses
+
+114
+00:07:19,078 --> 00:07:26,183
+but the third one, very, very rarely will it actually be used.
+
+115
+00:07:26,183 --> 00:07:29,414
+So, yeah, no worries there
+
+116
+00:07:29,414 --> 00:07:37,265
+If you want to be like 100% safe you can go back to this file
+
+117
+00:07:37,265 --> 00:07:43,370
+and then add a third address and then only those three will be used
+
+118
+00:07:43,370 --> 00:07:47,551
+because by default only three can be used
+
+119
+00:07:47,551 --> 00:07:51,954
+you can have one main and two file saves and I'm going to go ahead
+
+120
+00:07:51,954 --> 00:07:55,754
+and type in, I'm gonna go a used the Google one
+
+121
+00:07:55,754 --> 00:07:58,938
+but you can use whichever one you want
+
+122
+00:07:58,938 --> 00:08:01,126
+I'm just using an example here
+
+123
+00:08:01,126 --> 00:08:05,998
+I prefer to use Open DNS and you can definitely find some
+
+124
+00:08:05,998 --> 00:08:11,635
+fairly anonymous DNS servers out there on the net
+
+125
+00:08:11,635 --> 00:08:15,462
+please, please please, be careful
+
+126
+00:08:15,462 --> 00:08:19,611
+once you find a DNS server, go on to the forums and see what people have
+
+127
+00:08:19,611 --> 00:08:21,354
+been saying about those DNS servers.
+
+128
+00:08:21,354 --> 00:08:23,356
+What is their reputation like?
+
+129
+00:08:23,356 --> 00:08:30,014
+Do they protect, do they do something mischievous or something like that?
+
+130
+00:08:31,844 --> 00:08:36,235
+Is it like fake thing that just happen stumbled across the net
+
+131
+00:08:36,235 --> 00:08:38,718
+promising you a lot of things but delivering nothing
+
+132
+00:08:38,718 --> 00:08:43,455
+and just redirecting you to some advertisement site? or redirecting you
+
+133
+00:08:43,455 --> 00:08:48,357
+to malicious sites? so just be very careful with that and make sure
+
+134
+00:08:48,357 --> 00:08:53,516
+that you select the reputable ones
+
+135
+00:08:53,516 --> 00:08:58,006
+Anyway, just go ahead and press Control + O to save as before
+
+136
+00:08:58,006 --> 00:08:58,602
+Enter
+
+137
+00:08:58,602 --> 00:09:00,194
+Extracts it
+
+138
+00:09:00,194 --> 00:09:04,214
+and then we just need to restart the network manager again
+
+139
+00:09:04,214 --> 00:09:10,212
+no big deal, now we can go ahead and "cat /etc/resolv.conf"
+
+140
+00:09:10,212 --> 00:09:16,272
+and you can see that we have one, two, three, and you have a note
+
+141
+00:09:16,272 --> 00:09:22,341
+"the libc resolver may not support more than three nameservers"
+
+142
+00:09:22,341 --> 00:09:26,260
+"the nameservers listed below may not be recognized"
+
+143
+00:09:26,260 --> 00:09:30,652
+Actually they won't be recognized
+
+144
+00:09:30,652 --> 00:09:35,238
+Just list these three as an example, but you can take a DNS server from anywhere
+
+145
+00:09:35,238 --> 00:09:42,476
+on this planet earth, so for example, if you are in the U.S, if you are in Japan
+
+146
+00:09:42,476 --> 00:09:48,609
+or if you are in China or in Germany or something like that, you don't necessarily need to choose
+
+147
+00:09:48,609 --> 00:09:55,065
+a DNS server from that country, you can choose a DNS server from some other country
+
+148
+00:09:57,885 --> 00:10:04,474
+So if you're using a VPN or proxies, if you're using proxies specially
+
+149
+00:10:04,474 --> 00:10:07,796
+you don't want to afford any DNS, basically
+
+150
+00:10:07,796 --> 00:10:14,041
+somebody sees... I'm confusing you a little bit here
+
+151
+00:10:14,041 --> 00:10:20,116
+If you are using a proxy, then let's say that you are in France,
+
+152
+00:10:20,116 --> 00:10:24,006
+and then you are using a proxy from Germany, so it appears as
+
+153
+00:10:24,006 --> 00:10:26,642
+though your traffic is coming from Germany,
+
+154
+00:10:26,642 --> 00:10:31,455
+but your DNS server is still in France, so somebody might infer from that
+
+155
+00:10:31,455 --> 00:10:34,901
+that you are from France
+
+156
+00:10:34,901 --> 00:10:37,996
+Therefore, if you choose a DNS server in Germany as well
+
+157
+00:10:37,996 --> 00:10:42,670
+your proxy and your DNS both match Germany
+
+158
+00:10:42,670 --> 00:10:46,018
+but you can choose some DNS server from another country
+
+159
+00:10:46,018 --> 00:10:52,126
+Let's say: Finland, so you can have a Finnish DNS server and you can have a
+
+160
+00:10:52,126 --> 00:11:01,473
+german IP address on the net, that way somebody cannot conclude from which
+
+161
+00:11:01,473 --> 00:11:05,543
+country you are coming from and that is a pretty good thing
+
+162
+00:11:05,543 --> 00:11:12,713
+Another note is that DNS servers by default, they don't log queries
+
+163
+00:11:12,713 --> 00:11:21,165
+but , I mean, it would be a massive operation to log all the daily queries
+
+164
+00:11:21,165 --> 00:11:24,940
+maybe somebody does it, I don't know, I cannot guarantee it to you
+
+165
+00:11:24,940 --> 00:11:32,256
+I know that the DNS servers by default, the ones that you can install the DNS server and configure it
+
+166
+00:11:32,256 --> 00:11:35,633
+and then you will see that by default it doesn't log queries,
+
+167
+00:11:35,633 --> 00:11:38,088
+but you know, somebody might set it up, or something like that
+
+168
+00:11:38,088 --> 00:11:42,208
+might happen, so be very, very careful which DNS servers are you using
+
+169
+00:11:42,208 --> 00:11:48,409
+Use the ones that give have a good standing reputation and you can also
+
+170
+00:11:48,409 --> 00:11:53,345
+use the ones in countries which have a good standing reputation in terms of
+
+171
+00:11:53,345 --> 00:12:03,131
+respecting user privacy, for example, Netherlands is one very good example
+
+172
+00:12:03,131 --> 00:12:07,698
+Sweden as well, it's pretty good there and there are some European countries
+
+173
+00:12:07,698 --> 00:12:11,822
+and countries worldwide that I can't think of now at the moment but it doesn't really matter
+
+174
+00:12:11,822 --> 00:12:16,780
+you can look this up on the net, the information is widely available
+
+175
+00:12:16,780 --> 00:12:22,149
+so where, from which countries can you choose the DNS servers and which DNS servers
+
+176
+00:12:22,149 --> 00:12:26,048
+you choose, now I've also... I'm sorry, I'm sorry for making this lengthy,
+
+177
+00:12:26,048 --> 00:12:33,581
+but I do want to explain a couple of points here before I wrapped it up and then go into the VPN set up itself
+
+178
+00:12:34,681 --> 00:12:43,680
+Yeah, I have people before who stated that they had problems when they changed the DNS and then
+
+179
+00:12:43,680 --> 00:12:50,018
+they've changed the DNS and then they used the VPN and the DNS still shows that
+
+180
+00:12:50,018 --> 00:12:54,518
+their DNS is in the US, well yes, because the DNS server you selected
+
+181
+00:12:54,518 --> 00:13:01,039
+is actually from the US so if you choose another one from another country elsewhere in the world
+
+182
+00:13:01,039 --> 00:13:06,231
+it will just show that the DNS is in that country, so you actually don't have a DNS leak
+
+183
+00:13:06,231 --> 00:13:12,681
+it's just that IP address in that DNS server is physically located in the country
+
+184
+00:13:12,681 --> 00:13:18,188
+of your origin, so if you choose another one you will be fine
+
+185
+00:13:18,188 --> 00:13:21,825
+Anyway, in the follow-up tutorial, I'm running a little bit short of time
+
+186
+00:13:21,825 --> 00:13:24,649
+so in the follow-up tutorial we'll just gonna go ahead and continue with this
+
+187
+00:13:24,649 --> 00:13:29,738
+download the files we need to download and connect to the VPN service.
+

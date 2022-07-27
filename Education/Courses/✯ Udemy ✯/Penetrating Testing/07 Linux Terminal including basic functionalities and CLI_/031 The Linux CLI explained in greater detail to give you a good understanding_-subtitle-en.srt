@@ -1,0 +1,650 @@
+1
+00:00:00,170 --> 00:00:06,770
+Hello everybody and welcome to part two of
+this tutorial. Let's go ahead and save the
+
+2
+00:00:06,770 --> 00:00:14,059
+file. Press control-O to output the file.
+It says file filename to write. You can actually
+
+3
+00:00:14,059 --> 00:00:19,390
+modify it here. You can type in some letters
+or whatever you want to change the name here.
+
+4
+00:00:19,390 --> 00:00:24,820
+You can even change the extension if you want.
+There is no need for the time being. I'm just
+
+5
+00:00:24,820 --> 00:00:30,240
+going to go ahead and save it as "test." Just
+press enter. There you go. It says, "wrote
+
+6
+00:00:30,240 --> 00:00:37,620
+one line. Hit control-X to exit. There we
+go. Clear the screen. Now, I'm going to use
+
+7
+00:00:37,620 --> 00:00:42,399
+cat command to get a listing of this particular
+file, which is far more reasonable than the
+
+8
+00:00:42,399 --> 00:00:46,809
+previous one, which you couldn't read. The
+command, by the way, was functioning properly
+
+9
+00:00:46,809 --> 00:00:53,119
+but it was mostly a binary file. Therefore
+I mean, it gave you listing but you couldn't
+
+10
+00:00:53,119 --> 00:00:59,969
+really read anything from it. So just go ahead
+and type in cat test and there we go. It says,
+
+11
+00:00:59,969 --> 00:01:08,770
+"some random text goes here." That is the
+text that we have typed into the test file
+
+12
+00:01:08,770 --> 00:01:13,939
+and you can cat it like this. These things
+are very good, especially with files that
+
+13
+00:01:13,939 --> 00:01:21,200
+you want to make sure not to change them in
+any way, you don't want to make any accidental
+
+14
+00:01:21,200 --> 00:01:26,799
+changes or anything of the kind and you want
+to quickly see what is located within that
+
+15
+00:01:26,799 --> 00:01:33,840
+file. There is another way of doing this.
+Basically, it's "ls." Let's go ahead and get
+
+16
+00:01:33,840 --> 00:01:44,270
+over to "cd etc/apt/." "Ls." We have plenty
+of files to work with. Let's take sources.list
+
+17
+00:01:44,270 --> 00:01:51,880
+as an example here. So if I do "cat sources.list"
+I'm going to get everything that is within
+
+18
+00:01:51,880 --> 00:01:58,679
+that file as before. It is listed in my terminal,
+it's here to stay. It's not going anywhere.
+
+19
+00:01:58,679 --> 00:02:02,499
+There is another command which I could use.
+Just go ahead and clear the screen. It is
+
+20
+00:02:02,499 --> 00:02:10,670
+called "less." If I type, "less sources.list"
+I will be prompted with a new tab where I
+
+21
+00:02:10,670 --> 00:02:16,170
+can actually view things here. Not a new terminal
+tab, but a new workspace within the within
+
+22
+00:02:16,170 --> 00:02:22,430
+the terminal itself. When I press Q I exit
+and nothing will be displayed here. So very
+
+23
+00:02:22,430 --> 00:02:30,760
+nice in terms of being neat, organized and
+so on and so forth. So less and cat are very
+
+24
+00:02:30,760 --> 00:02:37,959
+nice things. You can use, for example, "cat
+sources.list" and the command that I have
+
+25
+00:02:37,959 --> 00:02:45,599
+previously mentioned is "grep." "Grep" means
+you pull something, grep something from somewhere
+
+26
+00:02:45,599 --> 00:02:51,569
+else. Here's what I mean by it. Type in "cat
+sources.list" and you type in a pipe. This
+
+27
+00:02:51,569 --> 00:02:57,319
+symbol here. It's called a pipe which basically
+states whatever the output of this is pipe
+
+28
+00:02:57,319 --> 00:03:03,950
+it to whatever command comes here. So, I'm
+just going to type in "grep" and let's say
+
+29
+00:03:03,950 --> 00:03:13,610
+I want to type in, "src." Press enter. Excellent.
+So it will only print lines that have "src"
+
+30
+00:03:13,610 --> 00:03:21,439
+in them. Linux is case-sensitive. When you
+are grepping, it's going to check whether
+
+31
+00:03:21,439 --> 00:03:35,379
+it's lowercase or not. You can give it an
+ignore case. You can type this, "-i" to ignore
+
+32
+00:03:35,379 --> 00:03:39,049
+the case. This time, you're going to get the
+same output because there are no different
+
+33
+00:03:39,049 --> 00:03:45,269
+things within this file. You get the general
+idea. So this is how you would use "cat" with
+
+34
+00:03:45,269 --> 00:03:53,590
+grep to pull things out of a file. Very important.
+This is a huge part of the Linux terminal--
+
+35
+00:03:53,590 --> 00:03:59,480
+filtering through text files. Primarily because
+we are going to be doing large network scans
+
+36
+00:03:59,480 --> 00:04:05,959
+and we will want to create files from which
+we will be able to pool useful information.
+
+37
+00:04:05,959 --> 00:04:12,599
+We will later in turn pass this information
+to other tools to do something with. Anyway,
+
+38
+00:04:12,599 --> 00:04:23,590
+just go ahead and clear to screen for the
+time being. You also have "echo." Type "echo
+
+39
+00:04:23,590 --> 00:04:35,200
+"I AM ALIVE"." It will echo these words it
+literally is an echo. You type something into
+
+40
+00:04:35,200 --> 00:04:41,030
+it and it echoes them here. Let's go back
+to the home directory, get a listing and use
+
+41
+00:04:41,030 --> 00:04:46,240
+exactly the same command echo live. By the
+way, you can scroll through previous commands
+
+42
+00:04:46,240 --> 00:04:52,230
+by using arrow key. So using the up arrow
+key or the down arrow key, you can scroll
+
+43
+00:04:52,230 --> 00:04:58,580
+back through previous commands and you don't
+need to retype them. So I am alive. I'm going
+
+44
+00:04:58,580 --> 00:05:11,610
+to insert this. I will use a ">" and type
+in "test." This will echo "I AM ALIVE" into
+
+45
+00:05:11,610 --> 00:05:19,590
+test. It has replaced the contents of the
+test, which was "some random text goes here"
+
+46
+00:05:19,590 --> 00:05:28,030
+into, "I AM ALIVE." Very nice command to have.
+You can change variable names, variable values
+
+47
+00:05:28,030 --> 00:05:32,540
+with echo and so on and so forth. We will
+use this a bit more as we progress through
+
+48
+00:05:32,540 --> 00:05:38,420
+the course. I don't really want to get in-depth
+here. Primarily because later on when we have
+
+49
+00:05:38,420 --> 00:05:45,610
+clear examples that directly relate to what
+we are doing, which is basically testing,
+
+50
+00:05:45,610 --> 00:05:51,870
+then you will see more advanced usage of pretty
+much all of these commands-- especially grep.
+
+51
+00:05:51,870 --> 00:05:59,970
+You have "touch."Touch" is a quick way to
+create files. So, for example, I can type,
+
+52
+00:05:59,970 --> 00:06:11,530
+"touch file1 file2 file3." Press enter, "ls."
+You see, it immediately created three files.
+
+53
+00:06:11,530 --> 00:06:24,110
+That is a very quick method to create any
+amount of files. You can specify a folder.
+
+54
+00:06:24,110 --> 00:06:29,900
+You can create this file in home, this one
+in var, this one in varlog, and so on and
+
+55
+00:06:29,900 --> 00:06:39,190
+so forth. Down below, you have "mkdir." Type
+in, "mkdir" and it makes a directory. So you
+
+56
+00:06:39,190 --> 00:06:45,880
+are making some sort of a directory. Let's
+say this the name of this directory will be
+
+57
+00:06:45,880 --> 00:06:54,280
+"placeToBe." If I hit "ls." There we go. It
+states that is the does that this file is
+
+58
+00:06:54,280 --> 00:06:59,950
+actually a directory, which is PlaceToBe.
+I can even navigate to it and say, "PlaceToBe
+
+59
+00:06:59,950 --> 00:07:07,740
+ls." There is nothing in it but you get the
+idea. You can make directories in such a fashion.
+
+60
+00:07:07,740 --> 00:07:13,580
+Now, if I type "chown" it allows you to change
+the ownership of a particular file. Since
+
+61
+00:07:13,580 --> 00:07:17,880
+we only have a single user here, which is
+root, there isn't really any point in doing
+
+62
+00:07:17,880 --> 00:07:22,710
+so. If we create some of the new users we
+could do that. However, we don't need them.
+
+63
+00:07:22,710 --> 00:07:28,300
+I'll just show you how this would work. For
+example, if the owner of the file was not
+
+64
+00:07:28,300 --> 00:07:36,110
+root and you want to change it to root, do
+the following. Type, "chown," then you would
+
+65
+00:07:36,110 --> 00:07:43,120
+type the username ":" and the user group.
+The user group and the username are usually
+
+66
+00:07:43,120 --> 00:07:49,270
+the same on your home PC, unless you have
+some bigger servers or something like that.
+
+67
+00:07:49,270 --> 00:07:56,370
+Then just specify the name of the file. You
+can type "test." There it will effectively
+
+68
+00:07:56,370 --> 00:08:05,650
+change the ownership of file test to the username
+root, who is from the user group root. If
+
+69
+00:08:05,650 --> 00:08:13,710
+I do "ls la" it states who the owners are
+and which groups actually owned the files
+
+70
+00:08:13,710 --> 00:08:23,300
+as well. Clear the screen. There is another
+more used command. It's called "chmod." This
+
+71
+00:08:23,300 --> 00:08:28,250
+command allows you to change file permissions.
+This is something that you will need to use
+
+72
+00:08:28,250 --> 00:08:35,889
+on daily basis and quite often. Primarily
+because, you see if I have an executive file
+
+73
+00:08:35,889 --> 00:08:55,750
+in Linux, for example. Let's just go ahead
+and type in, "echo hello." I want to that
+
+74
+00:08:55,750 --> 00:09:10,069
+to test and I want to test to test.sh. "Sh"
+is basically an executable one, that's a bash
+
+75
+00:09:10,069 --> 00:09:15,000
+script for Linux that in such a way you can
+automate tasks. We will deal with it in greater
+
+76
+00:09:15,000 --> 00:09:19,370
+depth as we proceed through the tutorial.
+You will need to be acquainted with bash scripting
+
+77
+00:09:19,370 --> 00:09:24,490
+definitely. Bash scripting is very similar
+to the terminal itself, so pretty much all
+
+78
+00:09:24,490 --> 00:09:29,129
+the commands used in the terminal, can be
+used by scripting as well. You basically just
+
+79
+00:09:29,129 --> 00:09:36,620
+combine a bunch of them in a file. Now, I
+want this to be my executable, but you see
+
+80
+00:09:36,620 --> 00:09:42,850
+the way to to start executables is "./" as
+stated previously that's the command to start
+
+81
+00:09:42,850 --> 00:09:48,459
+any executable. If I type in test, and press
+that, it doesn't give me a list of possibilities.
+
+82
+00:09:48,459 --> 00:09:55,759
+Now, surely test.sh is an executable, but
+no you see, it doesn't have a permission to
+
+83
+00:09:55,759 --> 00:10:02,920
+be an executable file. See here the difference,
+take a look at this file and take a look at
+
+84
+00:10:02,920 --> 00:10:08,999
+this file. This one is green, this one is
+not. Now look at their permissions. So you
+
+85
+00:10:08,999 --> 00:10:16,569
+see, it has a markation that is executable
+for all groups, users, etc., while this one
+
+86
+00:10:16,569 --> 00:10:24,149
+up here does not have such permissions. You
+need to change that. What you do to change
+
+87
+00:10:24,149 --> 00:10:32,839
+it is, "chmod." You would type in, "+x." If
+you want the file to be writable you type,
+
+88
+00:10:32,839 --> 00:10:38,249
+"+w," if you want it to be executable "+x,"
+if you want to be able to read the file, "+r,"
+
+89
+00:10:38,249 --> 00:10:45,910
+very simple. There is also a way of doing
+this with numbers. You can type in, "755."
+
+90
+00:10:45,910 --> 00:10:51,560
+Don't try remembering all those modes. Whatever
+you need go on the internet and check. It
+
+91
+00:10:51,560 --> 00:11:00,720
+can be quite complicated, but these three
+you need to know: +x, +r, and +w. Also 777,
+
+92
+00:11:00,720 --> 00:11:06,639
+which is a global mode. This is the mode which
+is not recommended for actual usage, but you
+
+93
+00:11:06,639 --> 00:11:12,839
+use "chmode" to actually test or troubleshoot
+things. For example, if you want to be absolutely
+
+94
+00:11:12,839 --> 00:11:19,689
+sure that certain actions are not being prevented
+due to file permissions, you change the mode
+
+95
+00:11:19,689 --> 00:11:25,089
+of those files to 777, which is the global
+mode that anybody can do anything with the
+
+96
+00:11:25,089 --> 00:11:29,829
+file. If you still have an error message you
+know that it is absolutely not related to
+
+97
+00:11:29,829 --> 00:11:35,879
+anything in regards to permissions. So, those
+four things to do need to know. You can just
+
+98
+00:11:35,879 --> 00:11:50,149
+go ahead and type, "chmod +x test.sh," press
+enter. If I do "ls la" once again, you will
+
+99
+00:11:50,149 --> 00:11:57,240
+see that test.sh is now executable. Let me
+just run it and there you go. If I run this
+
+100
+00:11:57,240 --> 00:12:07,249
+it's going to echo "hello" on my terminal
+screen. There's a bit more to go. Not much
+
+101
+00:12:07,249 --> 00:12:12,100
+more left. There is just one more command
+that I would really like show you. This can
+
+102
+00:12:12,100 --> 00:12:17,769
+be a very dangerous command. Indeed, it can
+mess you up in ways you can't begin to imagine
+
+103
+00:12:17,769 --> 00:12:27,959
+yet. that is the command "rm." "Rm" is basically
+remove. Once you remove things with this command,
+
+104
+00:12:27,959 --> 00:12:36,040
+it's next to impossible to recover pretty
+much anything. So, if I type in, "rm test.sh,"
+
+105
+00:12:36,040 --> 00:12:41,540
+it's going to remove it. It's no longer going
+to be there. If I go ahead and navigate over
+
+106
+00:12:41,540 --> 00:12:51,660
+to PlaceToBe and I "touch test" to make a
+new file there. If I go ahead and say "RM
+
+107
+00:12:51,660 --> 00:12:57,050
+PlaceToBe." It will say "rm cannot remove
+place to be because it is a directory." This
+
+108
+00:12:57,050 --> 00:13:03,389
+is a failsafe of the rm. So, you wouldn't
+delete a full directory because you will be
+
+109
+00:13:03,389 --> 00:13:14,129
+able to recover it, and that would be really
+bad. What you can do is type in, "rm -f PlaceToBe."
+
+110
+00:13:14,129 --> 00:13:20,730
+Cannot remove directory. Okay, no problems.
+Sometimes you get stuck. I'm deliberately
+
+111
+00:13:20,730 --> 00:13:27,220
+going to leave this part in the tutorial.
+I'll just troubleshoot it. So you type in,
+
+112
+00:13:27,220 --> 00:13:35,149
+"--help." Here you have recursive remove directories
+and their contents recursively. So, that's
+
+113
+00:13:35,149 --> 00:13:40,019
+a very nice option. So, let's just go ahead
+and do that because this will go into the
+
+114
+00:13:40,019 --> 00:13:45,279
+folder and remove everything within the folder
+and the folder itself, hopefully. So, just
+
+115
+00:13:45,279 --> 00:13:52,019
+go ahead and type in, "rm -r PlaceToBe," press
+enter. There you go. It has deleted it. There
+
+116
+00:13:52,019 --> 00:14:01,939
+we go, it is no longer there. The "-f" that
+I have used is force. It will not ask you
+
+117
+00:14:01,939 --> 00:14:06,959
+any questions. It will delete the folder or
+file, which can be also very dangerous. When
+
+118
+00:14:06,959 --> 00:14:15,649
+you're using "rm," you always want to be asked
+questions. In any case, as I said, I deliberately
+
+119
+00:14:15,649 --> 00:14:21,220
+left his to show you that even if you get
+stuck worry about it. I get stuck all the
+
+120
+00:14:21,220 --> 00:14:28,430
+time. If you don't know what to type in, what
+argument to pass, just type in "--help." Take
+
+121
+00:14:28,430 --> 00:14:35,959
+a look at what you can actually type, read
+a little bit and then use the options. Try
+
+122
+00:14:35,959 --> 00:14:41,019
+it out, sometimes it will work, sometimes
+it won't. More often than not, you will be
+
+123
+00:14:41,019 --> 00:14:45,529
+able to figure it out from the help menu.
+If you can't figure it out from help menu,
+
+124
+00:14:45,529 --> 00:14:51,079
+just typed in "man rm" and you can read pretty
+much everything there is to know about this
+
+125
+00:14:51,079 --> 00:14:56,569
+command here. If you really can't perform
+the task, if you can find anything useful
+
+126
+00:14:56,569 --> 00:15:03,680
+here, forums are your next best bet. Trust
+me you will succeed in doing it. In any case,
+
+127
+00:15:03,680 --> 00:15:07,899
+this was a brief introduction some of the
+basic commands that we will use. Please make
+
+128
+00:15:07,899 --> 00:15:13,689
+sure that you know what each one of these
+commands does, at least basic functions. Later
+
+129
+00:15:13,689 --> 00:15:20,180
+on we will get in-depth, do more advanced
+stuff and use more advanced commands by combining
+
+130
+00:15:20,180 --> 00:15:26,119
+them, and so on. In any case, I bid you all
+farewell. I hope to see you in the next tutorial.
+
