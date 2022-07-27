@@ -1,0 +1,1175 @@
+1
+00:00:00,000 --> 00:00:03,380
+Bienvenidos de nuevo.
+
+2
+00:00:03,415 --> 00:00:07,684
+Antes que nada, pido disculpas
+por subir los tutoriales tan tarde
+
+3
+00:00:07,719 --> 00:00:10,995
+pero esto me ha tenido peleando hasta el final.
+
+4
+00:00:12,570 --> 00:00:15,412
+Como me han surgido tantos problemas
+
+5
+00:00:16,508 --> 00:00:20,044
+al crear un USB Live para Mac,
+
+6
+00:00:21,449 --> 00:00:23,285
+no recomiendo esta configuración en absoluto.
+
+7
+00:00:24,158 --> 00:00:26,408
+Pero ya que algunos habéis pedido el procedimiento
+
+8
+00:00:26,443 --> 00:00:28,069
+lo haré de todas formas.
+
+9
+00:00:28,104 --> 00:00:32,773
+Os aviso de que podéis causar
+daños irreversibles en vuestro Mac,
+
+10
+00:00:33,786 --> 00:00:37,066
+os lo podéis cargar, literalmente.
+
+11
+00:00:37,101 --> 00:00:42,636
+Lo único que podréis
+hacer después es reinstalarlo.
+
+12
+00:00:43,626 --> 00:00:45,821
+Así que os recomiendo
+hacer una copia de seguridad
+
+13
+00:00:46,769 --> 00:00:49,238
+y si no es absolutamente
+necesario que hagáis esto
+
+14
+00:00:50,448 --> 00:00:53,454
+no os lo recomendaría.
+Eso es lo que quiero decir.
+
+15
+00:00:53,489 --> 00:00:54,995
+Porque os va a causar muchos problemas
+
+16
+00:00:55,030 --> 00:00:58,763
+y puede ser una experiencia poco agradable.
+
+17
+00:00:59,843 --> 00:01:02,935
+Voy a exponer el proceso,
+lo he simplificado un poco
+
+18
+00:01:02,970 --> 00:01:06,017
+para que no tengáis que ir a los foros y tal
+
+19
+00:01:07,348 --> 00:01:12,161
+y con suerte lo podréis
+hacer, pero quedáis advertidos.
+
+20
+00:01:12,196 --> 00:01:16,538
+Con esto me pongo una
+valla alrededor, por así decirlo.
+
+21
+00:01:17,682 --> 00:01:21,993
+En Macs de 2013 y
+posteriores no tendréis problemas
+
+22
+00:01:22,028 --> 00:01:25,261
+en absoluto, lo podréis
+hacer con un procedimiento simple,
+
+23
+00:01:25,296 --> 00:01:28,025
+mucho más simple que este,
+pero en los Macs anteriores,
+
+24
+00:01:28,060 --> 00:01:30,806
+me temo que el procedimiento es algo diferente
+
+25
+00:01:31,429 --> 00:01:33,940
+y un poco más complicado, y lleva intrínseco
+
+26
+00:01:33,975 --> 00:01:38,953
+el riesgo de causar
+daños permanentes en vuestro Mac.
+
+27
+00:01:38,988 --> 00:01:44,471
+Tendréis que reinstalar y hacer cosas así.
+
+28
+00:01:45,376 --> 00:01:46,809
+Es una sugerencia.
+
+29
+00:01:49,120 --> 00:01:54,021
+Para Macs de 2013...
+
+30
+00:01:55,049 --> 00:01:57,634
+No voy a llevarlo a cabo porque es muy simple.
+
+31
+00:01:57,644 --> 00:01:59,683
+Necesitáis un Mac Linux USB Loader.
+
+32
+00:01:59,718 --> 00:02:03,170
+Creo que lo podéis conseguir en Seven Hub.
+
+33
+00:02:03,205 --> 00:02:06,618
+Esto es Unetbootin, lo necesitaremos
+
+34
+00:02:06,653 --> 00:02:10,726
+después, pero primero, vamos a los USB loaders,
+
+35
+00:02:10,761 --> 00:02:14,842
+así que "mac usb loader".
+
+36
+00:02:17,742 --> 00:02:22,023
+SevenBits. GitHub. Eso es.
+
+37
+00:02:22,058 --> 00:02:25,391
+Lo podéis conseguir de
+aquí, os lo descargáis y ya está.
+
+38
+00:02:25,426 --> 00:02:27,034
+Todos sabéis cómo descargar un archivo.
+
+39
+00:02:27,069 --> 00:02:31,446
+Aquí lo veis, en la carpeta de Descargas,
+
+40
+00:02:31,481 --> 00:02:34,874
+movedlo a la carpeta de Aplicaciones,
+
+41
+00:02:36,063 --> 00:02:37,102
+debería estar aquí.
+
+42
+00:02:38,343 --> 00:02:40,934
+Os aseguro que está aquí, pero no lo encuentro.
+
+43
+00:02:40,969 --> 00:02:43,583
+Ah, aquí está, Mac Linux USB Loader,
+
+44
+00:02:43,618 --> 00:02:46,103
+lo podéis ver aquí, debajo de MacPorts.
+
+45
+00:02:46,138 --> 00:02:49,013
+Pone Mac Linux USB Loader.
+
+46
+00:02:52,073 --> 00:02:54,427
+No podréis iniciarlo ni utilizarlo hasta que...
+
+47
+00:02:54,462 --> 00:02:58,639
+o al menos, no creo que podáis hacerlo
+
+48
+00:02:58,674 --> 00:03:02,039
+hasta que vayáis a Preferencias del sistema,
+
+49
+00:03:02,074 --> 00:03:05,899
+Seguridad y Privacidad, y desbloqueéis esto.
+
+50
+00:03:09,495 --> 00:03:13,368
+Y luego, permitir aplicaciones
+descargadas de cualquier sitio.
+
+51
+00:03:14,729 --> 00:03:18,745
+Para ejecutarlas,
+más que nada. Hay que marcar todo esto
+
+52
+00:03:18,780 --> 00:03:22,079
+lo cual pone el ordenador en cierto riesgo, pero
+
+53
+00:03:22,397 --> 00:03:25,257
+ya he dicho que este
+procedimiento no es recomendable.
+
+54
+00:03:26,712 --> 00:03:31,450
+Así que cerrad esto y
+poned en marcha Mac Linux USB Creator
+
+55
+00:03:31,485 --> 00:03:35,788
+y aquí tenéis
+Persistence Manager, Create Live USB.
+
+56
+00:03:35,823 --> 00:03:38,856
+Solo necesitáis una imagen y
+
+57
+00:03:38,891 --> 00:03:42,916
+utilizar esta herramienta para crearla y arrancar.
+
+58
+00:03:42,951 --> 00:03:48,518
+Debería ir como la seda
+en MacBook Pros de 2013 y posteriores.
+
+59
+00:03:52,134 --> 00:03:55,370
+No tenía intención
+de hacer los pasos detalladamente
+
+60
+00:03:55,405 --> 00:03:58,610
+porque no es tan necesario.
+
+61
+00:03:58,645 --> 00:04:02,608
+Os enseñaré cómo formatear un USB y necesitaréis
+
+62
+00:04:02,643 --> 00:04:06,120
+formatear el USB de forma
+adecuada sin importar si tenéis
+
+63
+00:04:06,155 --> 00:04:11,140
+Macs de 2012 y anteriores
+o Macs de 2013 y posteriores,
+
+64
+00:04:11,175 --> 00:04:13,174
+es totalmente irrelevante, necesitaréis
+
+65
+00:04:13,209 --> 00:04:16,141
+formatear el disco USB, tenedlo en cuenta.
+
+66
+00:04:19,093 --> 00:04:20,891
+Y aquí debajo
+
+67
+00:04:22,414 --> 00:04:25,179
+tenéis... Puedo configurar el USB.
+
+68
+00:04:29,623 --> 00:04:31,809
+No hay por qué usar eso, puedo darle a
+
+69
+00:04:31,844 --> 00:04:37,834
+Create a Live USB, doble clic
+encima. Seleccionad el archivo ISO.
+
+70
+00:04:39,911 --> 00:04:43,390
+Venga, carga, carga. Por favor.
+
+71
+00:04:43,425 --> 00:04:45,681
+Descargas. Gracias.
+
+72
+00:04:45,716 --> 00:04:49,455
+Seleccionáis el archivo ISO
+que habéis descargado de internet,
+
+73
+00:04:49,490 --> 00:04:54,653
+Haced clic en Abrir y
+seleccionad el dispositivo que queráis,
+
+74
+00:04:54,688 --> 00:04:57,520
+le dais a Siguiente y
+hacéis clic en Empezar instalación.
+
+75
+00:04:57,555 --> 00:05:01,929
+Una vez hecho, reiniciad
+el Mac. Bueno, no, apagadlo
+
+76
+00:05:01,964 --> 00:05:07,511
+y luego encendedlo y
+elegid la opción adicional que os dé.
+
+77
+00:05:09,012 --> 00:05:12,122
+Eso debería ir sin problemas, lo he comprobado
+
+78
+00:05:12,157 --> 00:05:18,866
+y funciona, pero lo que
+he visto que no funciona es el
+
+79
+00:05:20,688 --> 00:05:26,368
+proceso para Macbook Pros anteriores a 2012.
+
+80
+00:05:26,403 --> 00:05:30,936
+El 2012 es un año intermedio,
+así que en algunos funcionará
+
+81
+00:05:30,971 --> 00:05:32,636
+y en otros puede que no, no sé.
+
+82
+00:05:32,671 --> 00:05:35,562
+Pero en los anteriores,
+se puede aplicar este proceso.
+
+83
+00:05:37,348 --> 00:05:39,580
+Lo primero que tenéis que hacer es,
+
+84
+00:05:39,615 --> 00:05:44,021
+tener en cuenta el año de
+vuestro MacBook Pro, el mío es de 2011.
+
+85
+00:05:44,056 --> 00:05:49,194
+Y luego necesitáis un USB que funcione,
+
+86
+00:05:49,229 --> 00:05:53,384
+aseguraos de que funciona
+y no está defectuoso o algo así.
+
+87
+00:05:55,474 --> 00:05:58,928
+El tamaño recomendado sería...
+
+88
+00:05:58,963 --> 00:06:02,531
+Yo tengo uno de 32 gigas, que es
+
+89
+00:06:02,566 --> 00:06:06,433
+algo que podéis usar, algo que os recomiendo
+
+90
+00:06:07,783 --> 00:06:09,957
+solo para aseguraros
+de que no os quedáis sin espacio.
+
+91
+00:06:11,890 --> 00:06:15,085
+Y tengo otro que usaré aquí como ejemplo
+
+92
+00:06:15,120 --> 00:06:19,479
+que tiene 64 gigas. Os llevará
+un rato formatear los más grandes,
+
+93
+00:06:19,514 --> 00:06:23,950
+pero no hay por qué pasar de 32 gigas.
+
+94
+00:06:25,511 --> 00:06:31,087
+En cuanto al almacenamiento
+persistente en los de 2011 y anteriores,
+
+95
+00:06:32,412 --> 00:06:34,674
+es algo complicado, no he conseguido hacerlo.
+
+96
+00:06:36,839 --> 00:06:40,149
+He preguntado a amigos, he leído mil foros,
+
+97
+00:06:40,184 --> 00:06:44,332
+me he ido a la mierda y
+un poco más allá, y luego he seguido.
+
+98
+00:06:45,924 --> 00:06:48,224
+Acudí al servicio Apple también,
+
+99
+00:06:48,259 --> 00:06:51,930
+estaba dispuesto a pagar para
+ver qué podían hacer al respecto,
+
+100
+00:06:51,965 --> 00:06:53,445
+y lo cierto es que lo intentaron,
+
+101
+00:06:53,480 --> 00:06:55,682
+pero ellos también fallaron estrepitosamente,
+
+102
+00:06:55,717 --> 00:06:58,359
+y no me cobraron nada, así que bien.
+
+103
+00:06:59,865 --> 00:07:02,657
+Luego acudí a otros conocidos
+
+104
+00:07:04,417 --> 00:07:08,620
+y al final conseguimos que
+funcionara con una especie de estado híbrido,
+
+105
+00:07:08,655 --> 00:07:13,155
+en el que hay una partición
+ejecutable, que es no persistente,
+
+106
+00:07:13,190 --> 00:07:17,304
+y otra partición, que tiene formato xte4
+
+107
+00:07:17,982 --> 00:07:22,696
+y en esa puedes guardar
+lo que quieras, cualquier archivo,
+
+108
+00:07:22,731 --> 00:07:27,387
+lo cual viene muy bien para
+descargar archivos y almacenarlos,
+
+109
+00:07:27,422 --> 00:07:29,792
+pero también está bien
+para guardar la configuración.
+
+110
+00:07:29,827 --> 00:07:33,742
+Entonces, lo que podéis hacer
+es crear pequeños scripts de configuración
+
+111
+00:07:33,777 --> 00:07:37,579
+o un script más grande que podáis ejecutar
+
+112
+00:07:37,614 --> 00:07:40,421
+una sola vez al encender el ordenador,
+
+113
+00:07:40,456 --> 00:07:44,838
+y así, configurar la imagen Live como queráis
+
+114
+00:07:44,873 --> 00:07:48,438
+y no tener que hacerlo a mano.
+
+115
+00:07:48,473 --> 00:07:49,797
+No creo que sea una gran hazaña.
+
+116
+00:07:49,832 --> 00:07:52,336
+Básicamente, una vez creado el
+script solo hay que añadirle los comandos
+
+117
+00:07:52,371 --> 00:07:57,796
+y solo tendréis que
+ponerlo en marcha con un clic para
+
+118
+00:07:57,831 --> 00:08:00,344
+tener vuestra configuración lista
+
+119
+00:08:00,379 --> 00:08:04,154
+de la manera que vosotros
+queráis. En Macs más nuevos
+
+120
+00:08:04,189 --> 00:08:09,380
+estoy casi seguro de que
+no habrá ningún tipo de problema.
+
+121
+00:08:10,746 --> 00:08:15,126
+Vamos a proceder con el
+tutorial y veamos cómo funciona
+
+122
+00:08:15,161 --> 00:08:18,505
+y ver qué podemos hacer y conseguir.
+
+123
+00:08:18,545 --> 00:08:20,401
+Cuidado, puede estropear el Mac
+
+124
+00:08:20,436 --> 00:08:23,208
+hasta el punto de tener que reinstalarlo.
+
+125
+00:08:23,243 --> 00:08:26,534
+Tenedlo en cuenta antes
+de decidir llevar esto a cabo.
+
+126
+00:08:26,569 --> 00:08:28,486
+Pensaoslo dos veces. En serio.
+
+127
+00:08:29,903 --> 00:08:36,517
+Bueno, vamos a internet,
+abrimos el navegador y buscamos esta web,
+
+128
+00:08:36,552 --> 00:08:41,041
+es unetbootin.github.io.
+
+129
+00:08:42,687 --> 00:08:44,947
+Vamos a escribirlo aquí.
+
+130
+00:08:54,890 --> 00:08:57,712
+En la barra de búsqueda
+y listo, es la primera que sale.
+
+131
+00:08:58,575 --> 00:09:02,767
+Aseguraos de que es https.
+Pone unetbootin.github.io.
+
+132
+00:09:02,802 --> 00:09:06,431
+Abridla, clicad en la descarga para Mac OS X,
+
+133
+00:09:06,466 --> 00:09:08,879
+yo ya me lo he bajado, lo tengo en Descargas,
+
+134
+00:09:08,914 --> 00:09:11,267
+así que cuando hagáis clic,
+irá directo a la carpeta de Descargas
+
+135
+00:09:12,571 --> 00:09:16,028
+y espero que hayáis ido a Ajustes y permitido
+
+136
+00:09:20,333 --> 00:09:22,552
+que se instalen y ejecuten
+aplicaciones de cualquier sitio.
+
+137
+00:09:22,587 --> 00:09:25,419
+Lo dicho, esto pone el ordenador en riesgo,
+
+138
+00:09:25,804 --> 00:09:28,094
+pero es un paso necesario.
+
+139
+00:09:28,129 --> 00:09:31,863
+Recordad, lo he dicho
+antes y lo vuelvo a afirmar,
+
+140
+00:09:31,898 --> 00:09:33,000
+no es una configuración recomendada.
+
+141
+00:09:35,189 --> 00:09:39,426
+Ahora que eso está hecho,
+vamos a la carpeta de Descargas
+
+142
+00:09:39,461 --> 00:09:41,998
+y buscamos unetbootin, eso es.
+
+143
+00:09:42,033 --> 00:09:45,662
+Ahí está, esa es la
+herramienta que necesitaremos,
+
+144
+00:09:45,697 --> 00:09:47,799
+Es lo único que necesitáis descargar
+
+145
+00:09:47,834 --> 00:09:49,537
+de internet, de la página web.
+
+146
+00:09:53,462 --> 00:09:55,299
+Los demás archivos los dejaré en Udemy,
+
+147
+00:09:55,334 --> 00:09:58,774
+desde donde los podréis descargar y utilizar.
+
+148
+00:10:00,582 --> 00:10:05,076
+Vamos a dejar esto de momento
+
+149
+00:10:05,111 --> 00:10:07,266
+y vamos a la Utilidad de discos.
+
+150
+00:10:15,778 --> 00:10:17,094
+¿Os habéis dado cuenta de que las cosas en Mac
+
+151
+00:10:17,130 --> 00:10:19,467
+no se cierran como tú quieres?
+
+152
+00:10:22,064 --> 00:10:25,159
+Solo se minimizan, pero bueno, no pasa nada.
+
+153
+00:10:25,194 --> 00:10:27,837
+Comando+Espacio y buscamos
+
+154
+00:10:33,571 --> 00:10:36,561
+Utilidad de discos, pulsamos Enter.
+
+155
+00:10:38,596 --> 00:10:44,224
+Lo abrimos. Ahora mismo tengo
+conectados dos USBs y no voy
+
+156
+00:10:44,259 --> 00:10:49,005
+a esperar a que termine
+porque podría estar toda la vida,
+
+157
+00:10:49,040 --> 00:10:53,044
+al menos a mí me ha tardado la vida,
+pero os diré qué hay que hacer y cómo.
+
+158
+00:11:12,881 --> 00:11:15,388
+Eso es, ambos están conectados,
+
+159
+00:11:15,423 --> 00:11:20,409
+Estoy usando un hub USB para conectar varias cosas
+
+160
+00:11:20,444 --> 00:11:25,473
+porque se ve que los Mac
+padecen una crónica falta de puertos,
+
+161
+00:11:25,508 --> 00:11:27,574
+cosa que me repatea bastante.
+
+162
+00:11:28,839 --> 00:11:30,423
+Pero bueno, no pasa nada.
+
+163
+00:11:31,869 --> 00:11:37,246
+Por aquí tenemos el puerto USB que vamos a usar
+
+164
+00:11:37,281 --> 00:11:41,470
+y debajo hay otro USB que utilizaré
+
+165
+00:11:41,505 --> 00:11:45,024
+para mostraros dónde están
+los archivos. En realidad me valen los dos.
+
+166
+00:11:45,059 --> 00:11:51,990
+Así que lo que tenemos que
+hacer primero es darle al Toshiba
+
+167
+00:11:55,414 --> 00:11:59,604
+y decir que lo queremos borrar,
+así que nos dirigimos a Eliminar
+
+168
+00:11:59,639 --> 00:12:03,322
+y aquí dice MS-DOS (FAT), nombre: Untitled.
+
+169
+00:12:03,357 --> 00:12:06,490
+Se puede cambiar el nombre, voy a llamarlo Kali.
+
+170
+00:12:10,322 --> 00:12:11,817
+Lo podéis llamar como queráis, no os cortéis.
+
+171
+00:12:11,852 --> 00:12:15,337
+Dejad volar vuestra imaginación.
+
+172
+00:12:15,372 --> 00:12:18,409
+Vamos a darle a Eliminar.
+
+173
+00:12:18,444 --> 00:12:23,368
+Me avisa de que se van a borrar dos particiones.
+
+174
+00:12:23,403 --> 00:12:27,421
+Me parece bien. No se puede desmontar el disco,
+
+175
+00:12:27,456 --> 00:12:29,186
+¿por qué no se puede desmontar el disco?
+
+176
+00:12:42,675 --> 00:12:44,891
+¿Qué es lo que lo está usando?
+
+177
+00:12:44,926 --> 00:12:47,086
+Vale, esto también os puede pasar a vosotros,
+
+178
+00:12:47,121 --> 00:12:48,679
+así que lo voy a dejar en el tutorial.
+
+179
+00:12:48,714 --> 00:12:52,166
+El disco "UNTITLED" no se ha podido
+eliminar porque "Terminal" lo está usando.
+
+180
+00:12:56,123 --> 00:12:57,834
+Me pregunto cómo lo está usando la terminal...
+
+181
+00:12:57,869 --> 00:12:59,796
+A lo mejor estaba en la carpeta o algo.
+
+182
+00:13:01,878 --> 00:13:05,696
+Porque "Terminal"
+lo está usando. ¡No lo estoy usando!
+
+183
+00:13:05,731 --> 00:13:08,002
+Ah, vale, vale, espera.
+
+184
+00:13:14,328 --> 00:13:17,056
+Igual estoy quedando como un imbécil
+
+185
+00:13:21,539 --> 00:13:24,702
+pero voy a intentar hacerlo una vez más
+
+186
+00:13:24,737 --> 00:13:29,260
+y luego voy a sacarlo a la fuerza, básicamente.
+
+187
+00:13:32,780 --> 00:13:35,854
+Forzar salida.
+
+188
+00:13:38,996 --> 00:13:41,451
+Sí, por favor, vete.
+
+189
+00:13:42,910 --> 00:13:48,834
+Eso es, ya está fuera
+y ya no lo tenemos aquí,
+
+190
+00:13:48,869 --> 00:13:51,328
+y no queremos eso,
+
+191
+00:13:51,363 --> 00:13:54,839
+así que vamos a sacarlo y volverlo a conectar
+
+192
+00:13:56,339 --> 00:13:58,498
+y ver si eso ayuda.
+
+193
+00:14:01,527 --> 00:14:05,846
+Vale, Toshiba, vamos a
+clicar encima, vamos a Eliminar,
+
+194
+00:14:05,881 --> 00:14:11,606
+Eliminar, Eliminar. Y desmontando, venga.
+
+195
+00:14:11,641 --> 00:14:13,686
+Por favor, que salga bien.
+
+196
+00:14:16,592 --> 00:14:19,590
+Bien, está formateando el disco.
+
+197
+00:14:19,625 --> 00:14:24,207
+Acabará en cualquier momento. Listo, ya está.
+
+198
+00:14:26,199 --> 00:14:30,866
+Lo hemos borrado una vez y
+ahora nos dirigimos a Particiones.
+
+199
+00:14:30,901 --> 00:14:35,737
+Vamos a elegir dos
+particiones y etiquetamos la primera.
+
+200
+00:14:37,162 --> 00:14:40,957
+A la primera le voy a dar 9 gigas,
+
+201
+00:14:40,992 --> 00:14:44,089
+aunque eso no va a ser servible,
+
+202
+00:14:44,124 --> 00:14:47,137
+pero no importa. Y la segunda
+
+203
+00:14:47,172 --> 00:14:51,491
+tiene lo que quede,
+no importa. Para nada.
+
+204
+00:14:51,526 --> 00:14:52,912
+Lo que quiera ser la segunda,
+
+205
+00:14:52,947 --> 00:14:55,259
+eso es lo que es, el espacio sobrante.
+
+206
+00:14:55,294 --> 00:15:00,449
+Voy a hacer clic en Aplicar.
+
+207
+00:15:00,484 --> 00:15:08,854
+Vale, decidle
+Partición y dejadlo que termine.
+
+208
+00:15:08,889 --> 00:15:16,327
+Esta parte no debería tardar mucho.
+A la otra parte sí que le cuesta un rato
+
+209
+00:15:16,362 --> 00:15:19,811
+y es un poco desesperante. Bastante desesperante.
+
+210
+00:15:19,846 --> 00:15:23,615
+Lo siguiente que tenemos que hacer es
+
+211
+00:15:23,650 --> 00:15:27,357
+trastear con la segunda partición,
+
+212
+00:15:28,618 --> 00:15:31,157
+pero eso lo vamos a hacer más tarde.
+
+213
+00:15:31,192 --> 00:15:33,837
+Por el momento, solo vamos
+a ocuparnos de la primera partición
+
+214
+00:15:33,872 --> 00:15:37,103
+y vamos a intentar crear
+
+215
+00:15:37,138 --> 00:15:40,426
+un USB ejecutable en
+la primera partición del disco.
+
+216
+00:15:40,461 --> 00:15:44,744
+Ya no necesitamos esto.
+Ahora me gustaría que
+
+217
+00:15:44,779 --> 00:15:48,626
+volvierais a Descargas,
+donde está almacenado unetbootin.
+
+218
+00:15:54,043 --> 00:15:58,387
+Eso es, iniciadlo.
+Os va a pedir permiso.
+
+219
+00:16:00,826 --> 00:16:02,402
+Dádselo.
+
+220
+00:16:04,243 --> 00:16:05,777
+Si queréis, vamos.
+
+221
+00:16:09,322 --> 00:16:11,739
+Aquí no me preocupa mucho la contraseña,
+
+222
+00:16:11,774 --> 00:16:15,626
+es una tontería. Voy a reformatear
+
+223
+00:16:15,661 --> 00:16:20,670
+el disco entero, el ordenador entero,
+
+224
+00:16:20,705 --> 00:16:23,618
+porque le he hecho tantas cosas
+para conseguir que funcione esto
+
+225
+00:16:23,653 --> 00:16:26,581
+que me costaría muchísimo arreglarlo manualmente.
+
+226
+00:16:30,201 --> 00:16:32,790
+Vale, ahora mismo no necesito VirtualBox.
+
+227
+00:16:33,814 --> 00:16:37,110
+¿Está encendido unetbootin?
+Por favor, dime que sí. Justo aquí.
+
+228
+00:16:37,160 --> 00:16:42,037
+Tenemos unetbootin aquí y voy a darle a
+
+229
+00:16:42,072 --> 00:16:45,797
+"Diskimage", ISO, seleccionar imagen de disco.
+
+230
+00:16:47,428 --> 00:16:53,067
+Supongo que os habéis
+bajado Kali de internet. Aquí está.
+
+231
+00:16:53,102 --> 00:16:57,359
+Si no, a ver, siempre lo
+enseño, no es que no os crea capaces,
+
+232
+00:16:57,394 --> 00:16:59,290
+pero siempre me gusta enseñarlo por si acaso,
+
+233
+00:16:59,325 --> 00:17:02,695
+porque siempre pregunta alguien,
+como si se hubiera saltado algún tutorial,
+
+234
+00:17:02,730 --> 00:17:05,128
+"¿de dónde lo puedo descargar?", aunque lo haya dicho
+
+235
+00:17:05,163 --> 00:17:08,314
+en el tutorial anterior. Vamos a Kali Linux,
+
+236
+00:17:08,349 --> 00:17:14,537
+pulsamos Enter y atención,
+aquí está, vamos a Descargas
+
+237
+00:17:14,572 --> 00:17:17,783
+y listo, lo podéis descargar de ahí.
+
+238
+00:17:17,818 --> 00:17:20,514
+Os podéis bajar el archivo ISO
+o si tenéis un cliente torrent,
+
+239
+00:17:20,549 --> 00:17:21,968
+podéis hacerlo vía torrent.
+
+240
+00:17:22,003 --> 00:17:25,537
+Clicad encima, en el ISO,
+y eso es todo. Si tenéis un torrent,
+
+241
+00:17:25,572 --> 00:17:28,312
+podéis ir a torrents. Un cliente, quería decir.
+
+242
+00:17:30,779 --> 00:17:35,415
+Vale, vamos a seleccionar el amd64.iso,
+
+243
+00:17:35,450 --> 00:17:40,081
+le damos a Abrir. Dice USB Drive.
+
+244
+00:17:40,116 --> 00:17:45,847
+Aseguraos de coger el correcto.
+No elijáis el disco que no es,
+
+245
+00:17:45,882 --> 00:17:49,654
+puede ser dañino en el peor de los sentidos.
+
+246
+00:17:49,689 --> 00:17:55,421
+Abrid la terminal. Escribid...
+Voy a despejar la pantalla.
+
+247
+00:17:55,456 --> 00:18:04,717
+Y ahora "diskutil list". El disco uno es,
+
+248
+00:18:04,752 --> 00:18:08,334
+dice Untitled 1, Untitled 2.
+
+249
+00:18:08,369 --> 00:18:12,335
+Los podríamos haber renombrado, pero me da igual.
+
+250
+00:18:12,370 --> 00:18:13,903
+Hacedlo vosotros si queréis.
+
+251
+00:18:13,938 --> 00:18:22,050
+Este es el que necesitamos, disk1 y disk1s1.
+
+252
+00:18:22,085 --> 00:18:27,233
+Este es el que queremos, así que lo seleccionamos.
+
+253
+00:18:27,268 --> 00:18:35,035
+Disk1s1, está perfectamente. Vamos a decir OK.
+
+254
+00:18:35,070 --> 00:18:38,998
+Y esto va a tardar...
+bueno, a lo mejor la vida no,
+
+255
+00:18:39,033 --> 00:18:41,291
+pero no os preocupéis si se para en un archivo.
+
+256
+00:18:43,058 --> 00:18:45,481
+Fijaos, este tiene 78MB, así que va a tardar
+
+257
+00:18:45,516 --> 00:18:47,917
+y después tenemos otro, que tiene 200MB
+
+258
+00:18:47,952 --> 00:18:52,001
+y aún va a tardar más, así que dejadlo estar, dejadlo.
+
+259
+00:18:52,201 --> 00:18:57,419
+Dejadlo. Mirad,
+este tiene 2832MB. Dejadlo estar.
+
+260
+00:18:57,454 --> 00:18:59,398
+Va a tardar un buen rato en terminar.
+
+261
+00:18:59,433 --> 00:19:02,799
+No sé, id a dar una vuelta,
+a por un café, lo que sea.
+
+262
+00:19:02,834 --> 00:19:06,682
+Si queréis renombrar
+vuestro Kali, podéis hacer esto:
+
+263
+00:19:09,891 --> 00:19:11,653
+Utilidad de discos.
+
+264
+00:19:16,001 --> 00:19:19,104
+Venga. Por favor, se me acaba el tiempo.
+
+265
+00:19:22,762 --> 00:19:26,069
+Durante el formateo, podéis clicar en
+
+266
+00:19:28,179 --> 00:19:30,460
+Eliminar y entonces...
+
+267
+00:19:30,495 --> 00:19:33,167
+podéis cambiar el nombre aquí si queréis.
+
+268
+00:19:33,202 --> 00:19:35,589
+Si no queréis, lo podéis dejar como Untitled.
+
+269
+00:19:35,624 --> 00:19:41,139
+Lo que queráis. Bueno,
+voy a dejar aquí el tutorial
+
+270
+00:19:41,174 --> 00:19:44,153
+y vuelvo cuando termine esto.
+

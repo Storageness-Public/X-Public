@@ -1,0 +1,1243 @@
+1
+00:00:00,000 --> 00:00:04,499 A:middle
+Bonjour à tous et bienvenue dans ce tutoriel.
+
+2
+00:00:04,500 --> 00:00:08,766
+aujourd'hui, je vais vous montrer 
+une autre façon plus credible
+
+3
+00:00:08,767 --> 00:00:10,199
+d'installer VirtualBox
+
+4
+00:00:10,200 --> 00:00:12,366
+si vous vous demandez pourquoi
+
+5
+00:00:12,367 --> 00:00:15,966
+je vous montrais une autre manière d'utiliser le RPM
+
+6
+00:00:15,967 --> 00:00:18,832
+même si on ne va pas l'utiliser ici.
+
+7
+00:00:18,833 --> 00:00:21,732
+eh bien, il est toujours bon d'avoir une autre option.
+
+8
+00:00:21,733 --> 00:00:24,166
+de plus la procédure est exactement la même
+
+9
+00:00:24,167 --> 00:00:26,499
+si vous voulez installez d'autres paquets RPM.
+
+10
+00:00:26,500 --> 00:00:30,866
+il suffit de taper " rpm -i "
+
+11
+00:00:30,867 --> 00:00:34,966
+et taper le nom du paquet que vous voulez téléchargé
+
+12
+00:00:30,967 --> 00:00:35,299
+et que vous souhaitez installer.
+
+13
+00:00:35,300 --> 00:00:37,032
+la procédure est exactement la même.
+
+14
+00:00:37,033 --> 00:00:40,632
+je vous recommande d'ajouter un argument avec un H
+
+15
+00:00:40,633 --> 00:00:42,566
+pour afficher l'état de l'activité
+
+16
+00:00:42,567 --> 00:00:45,999
+parce que si vous vous contentez 
+de passer la commande comme suit
+
+17
+00:00:46,000 --> 00:00:47,832
+suivi du nom du paquet.
+
+18
+00:00:47,833 --> 00:00:49,700
+Ça va s'installer, 
+
+19
+00:00:49,701 --> 00:00:52,266
+mais l'écran clignotera.
+
+20
+00:00:52,267 --> 00:00:54,432
+et rien ne va se passer.
+
+21
+00:00:54,433 --> 00:00:56,066
+vous pouvez pensez qu'il y a un bug 
+ou quelque chose comme ça
+
+22
+00:00:56,067 --> 00:00:58,799
+au cours de la procédure d'installation.
+
+23
+00:00:58,800 --> 00:01:00,966
+Comme ça, avec le H, 
+il y a une barre d'état qui s'affiche
+
+24
+00:01:00,967 --> 00:01:03,699
+donc, vous saurez que quelque chose 
+est entrain de se passer en arrière-plan 
+
+25
+00:01:03,700 --> 00:01:05,966
+mais comme je vous l'ai dit, 
+il est bon d'avoir une autre option.
+
+26
+00:01:05,967 --> 00:01:10,699
+ce que nous voulons faire aujourd'hui 
+et maintenant c'est l'installation de VirtualBox
+
+27
+00:01:10,700 --> 00:01:14,366
+en utilisant le gestionnaire de paquet qui 
+par défaut est appelé " yum "
+
+28
+00:01:14,367 --> 00:01:17,399
+puis soutirer les paquets à partir des dépôts.
+
+29
+00:01:17,400 --> 00:01:19,766
+maintenant, les dépôts?
+
+30
+00:01:19,767 --> 00:01:24,866
+ce sont des référentiels de l'endroit ou sont stockés les progiciels 
+
+31
+00:01:24,867 --> 00:01:26,699
+pour les distributions Linux
+
+32
+00:01:26,700 --> 00:01:31,766
+puis vous pouvez tirer ces paquets
+
+33
+00:01:31,767 --> 00:01:33,232
+ces paquets de logiciels
+
+34
+00:01:33,233 --> 00:01:37,999
+de votre distribution de Linux en utilisant 
+le gestionnaire de paquet par défaut.
+
+35
+00:01:38,000 --> 00:01:38,566
+c'est très simple.
+
+36
+00:01:38,567 --> 00:01:40,832
+il est extrêmement facile
+
+37
+00:01:40,833 --> 00:01:44,299
+et c'est l'une des chose que vous avez absolument besoin d'assimiler
+
+38
+00:01:44,300 --> 00:01:48,699
+parce que vous allez installer 
+et désinstaller beaucoup de choses
+
+39
+00:01:48,700 --> 00:01:50,099
+au cours de votre carrière 
+de testeur d'intrusion.
+
+40
+00:01:50,100 --> 00:01:55,032
+au cours de nos exercices 
+de testeur de pénétration en général.
+
+41
+00:01:55,033 --> 00:01:58,722
+alors permettez-moi de vous le démontrer.
+
+42
+00:1:58.723 --> 00:02:01,599
+vous devez tapez "yum" dans l'invité de commande.
+
+43
+00:02:01,600 --> 00:02:05,766
+tout d'abord, utiliser yum pour activer
+votre gestionnaire de paquet par défaut
+
+44
+00:02:05,767 --> 00:02:08,332
+alors on utilise yum, parce qu'on est sur Fedora
+
+45
+00:02:08,333 --> 00:02:11,166
+mais si j'etais entrain d'utiliser
+une distribution de Debian
+
+46
+00:02:11,167 --> 00:02:16,166
+ce serait "aptitude"
+
+47
+00:02:16,167 --> 00:02:20,199
+ou comme suit "apt-get"
+
+48
+00:02:20,200 --> 00:02:23,799
+et il existe beaucoup d'autres distributions
+qui ont leurs propres gestionnaires de paquets
+
+49
+00:02:23,800 --> 00:02:26,832
+mais aujourd'hui on entre pas dans les détails.
+
+50
+00:02:26,833 --> 00:02:29,199
+plus tard, je vais vous montrer ce que Kali Linux utilise.
+
+51
+00:02:29,200 --> 00:02:31,599
+c'est la distribution de Linux que nous utiliserons
+
+52
+00:02:31,600 --> 00:02:35,232
+afin de mener certaines exercices d'essai de pénétration.
+
+53
+00:02:35,233 --> 00:02:40,632
+alors d'abord, tapez "yum" comme je l'ai dit
+
+54
+00:02:40,633 --> 00:02:42,666
+suivi de "chercher"
+
+55
+00:02:42,667 --> 00:02:47,132
+fondamentalement vous commandez à yum qu'est ce qu'il doit faire.
+
+56
+00:02:47,133 --> 00:02:47,266
+vous voulez chercher quelque chose, 
+alors on tape "chercher".
+
+57
+00:02:47,267 --> 00:02:53,566
+c'est à peu près exactement
+la même que la langue anglaise
+
+58
+00:02:53,567 --> 00:02:57,699
+il vous suffit de comprendre la logique
+
+59
+00:02:57,700 --> 00:03:01,766
+puis, vous ajoutez le nom du paquet que vous recherchez
+
+60
+00:03:01,767 --> 00:03:03,066
+et que vous voulez.
+
+61
+00:03:03,067 --> 00:03:06,399
+donc, vous n'avez pas besoin 
+d'un nom complet ou quelque chose comme ça.
+
+62
+00:03:06,400 --> 00:03:08,366
+et ne vous inquiétez pas à ce sujet
+
+63
+00:03:08,367 --> 00:03:10,766
+il suffit de taper une partie du nom.
+
+64
+00:03:10,767 --> 00:03:11,066
+cela suffira
+
+65
+00:03:11,067 --> 00:03:15,799
+et à peu près le contenu et le reste du nom
+
+66
+00:03:15,800 --> 00:03:16,299
+serront affichés.
+
+67
+00:03:16,300 --> 00:03:18,466
+donc, nous savons ce que nous voulons.
+
+68
+00:03:18,467 --> 00:03:20,199
+VirtualBox
+
+69
+00:03:20,200 --> 00:03:22,032
+et vous pensez que c'est le nom complet du paquet
+
+70
+00:03:22,033 --> 00:03:23,166
+mais non,
+
+71
+00:03:23,167 --> 00:03:25,532
+bientôt, vous verrez
+
+72
+00:03:25,533 --> 00:03:26,466
+et c'est parti!
+
+73
+00:03:26,467 --> 00:03:30,699
+nous avons devant nous
+
+74
+00:03:30,700 --> 00:03:33,199
+tous les paquets qui possèdent VirtualBox dans leur nom
+
+75
+00:03:33,200 --> 00:03:36,299
+le mot VirtualBox dans le nom du paquet
+
+76
+00:03:36,300 --> 00:03:38,466
+ou dans la description du paquet
+
+77
+00:03:38,467 --> 00:03:42,232
+vous voyez le nom du package par ici
+
+78
+00:03:42,233 --> 00:03:43,132
+deux-points
+
+79
+00:03:43,133 --> 00:03:45,466
+et puis vous avez la description du paquet par la.
+
+80
+00:03:45,467 --> 00:03:48,367
+beaucoup de paquets
+
+81
+00:03:48,333 --> 00:03:51,032
+beaucoup de paquets avec le nom "VirtualBox".
+
+82
+00:03:51,033 --> 00:03:54,132
+et vous vous demandez lequel 
+d'entre eux est bon pour l'installation.
+
+83
+00:03:54,133 --> 00:03:58,499
+Eh bien, vous avez besoin d'une Knod,
+et ici vous avez la version du noyau
+
+84
+00:03:58,500 --> 00:04:01,499
+et la version de Fedora
+
+85
+00:04:01,500 --> 00:04:03,599
+fc serait la version de Fedora
+
+86
+00:04:03,600 --> 00:04:06,199
+et vous avez l'architecture
+
+87
+00:04:06,200 --> 00:04:08,699
+qui est 64
+
+88
+00:04:08,700 --> 00:04:11,099
+Je ne peux pas la sélectionner - c'est 64
+
+89
+00:04:11,100 --> 00:04:14,566
+et là, vous avez la version du noyau.
+
+90
+00:04:14,567 --> 00:04:16,199
+ainsi, vous pouvez comparer à vos informations
+
+91
+00:04:16,200 --> 00:04:18,299
+et sur la base de ce que vous avez
+
+92
+00:04:18,300 --> 00:04:20,299
+votre système d'exploitation
+
+93
+00:04:20,300 --> 00:04:24,799
+vous pouvez faire ce choix, 
+en supposant qu'il est un Fedora 20.
+
+94
+00:04:24,800 --> 00:04:27,499
+c'est aussi valable pour les autres distributions.
+
+95
+00:04:27,500 --> 00:04:29,999
+la procédure est exactement la même.
+
+96
+00:04:29,000 --> 00:04:31,232
+Plus tard, pour les interrogations
+
+97
+00:04:31,233 --> 00:04:35,932
+si vous utilisez, par exemple, une distribution basée sur Debian
+
+98
+00:04:35,933 --> 00:04:39,032
+ou un openSUSE ou quelque chose comme ça
+
+99
+00:04:39,033 --> 00:04:43,599
+n'hésitez pas à me poser des questions
+si vous n'arrivez pas à le gérer.
+
+100
+00:04:43,600 --> 00:04:45,566
+je vais vous aider.
+
+101
+00:04:45,567 --> 00:04:48,732
+mais pour le moment, 
+on avance avec l'installation.
+
+102
+00:04:48,733 --> 00:04:51,099
+Permettez-moi de nettoyer l'écran
+
+103
+00:04:51,100 --> 00:04:53,432
+afin d'installer le paquet.
+
+104
+00:04:53,433 --> 00:04:54,999
+vous devez taper "yum install"
+
+105
+00:04:55,000 --> 00:04:58,166
+suivi du nom du paquet que vous voulez intallez
+
+106
+00:04:58,167 --> 00:05:01,032
+ce qui serait le dernier pour nous.
+
+107
+00:05:01,033 --> 00:05:02,766
+pour moi, alors.
+
+108
+00:05:02,767 --> 00:05:04,966
+celui-ci.
+
+109
+00:05:04,967 --> 00:05:06,099
+oups ... nous y voilà.
+
+110
+00:05:06,100 --> 00:05:09,832
+le nom est assez long, donc je vais le copier
+
+111
+00:05:09,833 --> 00:05:12,099
+mais vous voyez, il y a un problème fondamental.
+
+112
+00:05:12,100 --> 00:05:16,632
+le paquet VirtualBox
+
+113
+00:05:16,633 --> 00:05:21,866
+ne se trouve pas dans les dépôts de défaut de Fedora
+
+114
+00:05:21,867 --> 00:05:24,032
+ce qui est un problème
+
+115
+00:05:24,033 --> 00:05:28,766
+principalement parce que aucune 
+de ces commandes ne fonctionneraient
+
+116
+00:05:28,767 --> 00:05:33,866
+si je n'avais pas importé antérieurement les référentiels de fusion RPM.
+
+117
+00:05:33,867 --> 00:05:38,666
+"fusion RPM" est tout simplement le nom de certain type de dépôts
+
+118
+00:05:38,667 --> 00:05:40,632
+contenant certains types de paquets.
+
+119
+00:05:40,633 --> 00:05:43,699
+donc, j'ai importé ces référentiels
+
+120
+00:05:43,700 --> 00:05:47,732
+et maintenant je peux soutirer 
+des informations et des paquets.
+
+121
+00:05:47,733 --> 00:05:50,032
+Si je ne l'avais pas fait auparavant
+
+122
+00:05:50,033 --> 00:05:53,599
+Je n'aurais pas été capable 
+de faire quoi que ce soit
+
+123
+00:05:53,600 --> 00:05:59,533
+yum, recherche VirtualBox n'aurait donné aucun resultat.
+
+124
+00:05:59,800 --> 00:06:00,033
+J'aurai eu un fond blanc.
+
+125
+00:06:00,034 --> 00:06:05,699
+ou un message disant que ce paquet est introuvable
+
+126
+00:06:05,700 --> 00:06:07,455
+qui correspond à ce nom particulier
+
+127
+00:06:07,456 --> 00:06:09,566
+puis un écran tout noir.
+
+128
+00:06:09,567 --> 00:06:10,999
+C'est tout.
+
+129
+00:06:11,000 --> 00:06:12,299
+alors ce qui est un problème.
+
+130
+00:06:12,300 --> 00:06:13,533
+afin de résoudre ce problème
+
+131
+00:06:13,534 --> 00:06:16,766
+vous devez poursuivre en ouvrant
+votre navigateur préféré.
+
+132
+00:06:16,767 --> 00:06:20,233
+ce site était déjà ouvert 
+pour économiser un peu de temps
+
+133
+00:06:20,234 --> 00:06:26,344
+ça dit rpmfusion.org/configuration
+
+134
+00:06:26,345 --> 00:06:30,533
+mais ici, laissez-moi avancer 
+et je vais le rechercher.
+
+135
+00:06:30,534 --> 00:06:34,299
+ainsi, tapez dans n'importe 
+quel moteur de recherche "rpmfusion"
+
+136
+00:06:34,300 --> 00:06:36,766
+vous l'aurez. Ne vous inquiètez pas.
+
+137
+00:06:36,767 --> 00:06:39,344
+on a rpmfusion.org
+
+138
+00:06:39,345 --> 00:06:41,688
+cliquez sur le site Web, il faut l'ouvrir
+
+139
+00:06:41,689 --> 00:06:44,599
+et ici vous allez obtenir immédiatement les instructions.
+
+140
+00:06:44,600 --> 00:06:47,299
+c'est un site trés simple.
+
+141
+00:06:47,300 --> 00:06:50,533
+aucun truc compliqué 
+que vous devez y penser
+
+142
+00:06:50,534 --> 00:06:52,433
+ou une configuration avancée.
+
+143
+00:06:52,434 --> 00:06:53,299
+Rien de ce genre.
+
+144
+00:06:53,300 --> 00:06:56,100
+nous pouvons voir "Pour les utilisateurs"
+
+145
+00:06:56,101 --> 00:06:59,233
+et ca dit "Activer RPM Fusion sur votre système"
+
+146
+00:06:59,234 --> 00:07:00,599
+cliquez sur OK
+
+147
+00:07:00,600 --> 00:07:04,533
+je voulais dire, cliquez sur le lien et là ca y est!
+
+148
+00:07:04,534 --> 00:07:07,799
+vous obtenez une liste par ici.
+
+149
+00:07:07,800 --> 00:07:09,000
+une liste de téléchargements.
+
+150
+00:07:09,001 --> 00:07:12,499
+on voit "libre" et "non-libres"
+
+151
+00:07:12,500 --> 00:07:16,766
+et ne vous laisser pas intimider avec ce "non libre"
+
+152
+00:07:16,767 --> 00:07:20,199
+Vous n'avez pas un sou à perdre
+
+153
+00:07:20,200 --> 00:07:28,366
+Il est non-libre pour les logiciels redistribuables 
+qui ne sont pas des logiciels "open source"
+
+154
+00:07:28,367 --> 00:07:31,966
+tels ont été défini par les directives 
+des titulaires de permis de Fedora.
+
+155
+00:07:31,967 --> 00:07:37,832
+donc, ce non-libre ne se réfère pas à l'argent.
+
+156
+00:07:37,833 --> 00:07:40,732
+Vous n'avez' rien à payer  par ici.
+
+157
+00:07:40,733 --> 00:07:42,166
+on ne peut pas être plus clair.
+
+158
+00:07:42,167 --> 00:07:46,499
+Il se réfère simplement aux logiciels 
+qui ne sont pas "open source"
+
+159
+00:07:46,500 --> 00:07:50,866
+tels ont été défini par les directives 
+des titulaires de permis de Fedora.
+
+160
+00:07:50,867 --> 00:07:53,966
+ainsi, il pourrait en fait être open source, et ne pas correspondre
+
+161
+00:07:53,967 --> 00:07:57,299
+aux definitions de la Licence de Fedora
+
+162
+00:07:57,300 --> 00:08:00,033
+on avance, cette partie n'est pas vraiment interessante.
+
+163
+00:08:01,034 --> 00:08:05,455
+ci dessous, ce que vous devez savoir par ici
+
+164
+00:08:05,456 --> 00:08:08,677
+c'est que non libre est effectivement libre, en terme d'argent
+
+165
+00:08:08,678 --> 00:08:11,599
+mais pas libre en terme de code source.
+
+166
+00:08:11,600 --> 00:08:15,799
+alors, comme je le disais, ce ne est pas vraiment important pour nous
+
+167
+00:08:15,800 --> 00:08:17,633
+de toute façon, pour le moment.
+
+168
+00:08:17,634 --> 00:08:19,877
+Ci-dessous, vous avez
+
+169
+00:08:19,878 --> 00:08:21,599
+en fait des paquets RPM.
+
+170
+00:08:21,600 --> 00:08:23,433
+Rappelez-vous du tutoriel précédent
+
+171
+00:08:23,434 --> 00:08:26,033
+Je vous ai montré l'extension «.rpm»
+
+172
+00:08:26,034 --> 00:08:28,677
+lorsque vous téléchargez le paquet
+
+173
+00:08:28,678 --> 00:08:31,533
+nous pouvons télécharger l'un d'entre eux.
+
+174
+00:08:31,534 --> 00:08:33,655
+En fait, je voudrais télécharger le premier
+
+175
+00:08:33,656 --> 00:08:38,788
+puis l'installer en utilisant mon logiciel de RPM.
+
+176
+00:08:38,789 --> 00:08:42,533
+Il suffit de taper «rpm -i", et voila
+
+177
+00:08:42,534 --> 00:08:44,233
+on y est
+
+178
+00:08:44,234 --> 00:08:47,066
+Je viens de cliquer dessus
+
+179
+00:08:47,067 --> 00:08:50,366
+alors je passerais ce nom de fichier comme argument 
+
+180
+00:08:50,367 --> 00:08:52,655
+et il serait installer correctement.
+
+181
+00:08:52,656 --> 00:08:54,899
+mais je ne veux pas vraiment faire cela pour le moment.
+
+182
+00:08:54,900 --> 00:08:58,055
+Je tiens à vous montrer une autre façon de le faire.
+
+183
+00:08:58,056 --> 00:09:01,322
+Si vous vous demandez pourquoi 
+on les voit en duplication 
+
+184
+00:09:01,323 --> 00:09:05,644
+c'est pour les libres, et les non-libres.
+
+185
+00:09:05,645 --> 00:09:07,799
+Excellent
+
+186
+00:09:07,800 --> 00:09:12,966
+Ce que nous voulons est la configuration 
+de la ligne de commande en utilisant RPM.
+
+187
+00:09:12,967 --> 00:09:16,388
+on peut voir que "Fedora 14" est la plus récente.
+
+188
+00:09:16,389 --> 00:09:19,400
+Le mien est la version 20.
+
+189
+00:09:19,401 --> 00:09:21,233
+cela fonctionnera normalement
+
+190
+00:09:21,234 --> 00:09:24,022
+alors, vous avez cette très longue commande
+
+191
+00:09:24,023 --> 00:09:30,944
+et vous n'avez vraiment pas besoin 
+de savoir une portion de cette commande
+
+192
+00:09:30,945 --> 00:09:33,455
+ou ce qu'il fait.
+
+193
+00:09:33,456 --> 00:09:39,533
+quelques outils ont été importés
+dans les répertoires de votre système
+
+194
+00:09:39,534 --> 00:09:41,922
+et que vous allez utiliser plus tard.
+
+195
+00:09:41,923 --> 00:08:46,899
+Ils ont donné à cette commande, 
+pour vous faciliter la vie 
+
+196
+00:09:46,890 --> 00:09:50,366
+vous n'avez pas besoin de compliquer
+les choses ou quelque chose du genre.
+
+197
+00:09:50,367 --> 00:09:54,344
+il vous suffit de le copier coller 
+et exécutez-le.
+
+198
+00:09:54,345 --> 00:09:57,011
+vous utilisez votre gestionnaire de package par défaut.
+
+199
+00:09:57,012 --> 00:10:00,855
+vous utilisez l'option d'installation locale.
+
+200
+00:10:00,856 --> 00:10:02,366
+Vous ne vérifiez pas pour certains types de clés.
+
+201
+00:10:02,367 --> 00:10:05,933
+et voici l'endroit ou vous soutirez les paquets
+
+202
+00:10:05,934 --> 00:10:07,299
+et ainsi de suite.
+
+203
+00:10:07,300 --> 00:10:12,388
+Mais plus tard quand nous progressons dans ce tutoriel
+
+204
+00:10:12,389 --> 00:10:17,099
+nous allons traiter intensivement 
+avec ligne de commande de Linux.
+
+205
+00:10:17,100 --> 00:10:23,566
+alors,toutes ces choses 
+vous seront familiers facilement
+
+206
+00:10:23,567 --> 00:10:28,388
+une fois que je vous explique certaines 
+commandes élementaire et fondamentaux
+
+207
+00:10:29,389 --> 00:10:32,388
+alors vous serez en mesure de comprendre ces choses
+
+208
+00:10:32,389 --> 00:010:35.588
+tels quels sont listés par ici
+
+209
+00:10:35,589 --> 00:10:38,966
+entre les parenthèses
+
+210
+00:10:38,966 --> 00:10:39,844
+Et voila!
+
+211
+00:10:39,845 --> 00:10:41,855
+et ainsi de suite
+
+212
+00:10:41,856 --> 00:10:43,122
+parce que si je commence 
+à les expliquer dès maintenant
+
+213
+00:10:43,123 --> 00:10:45,788
+ce ne serait pas normal
+
+214
+00:10:45,789 --> 00:10:48,966
+je ne ferais que compliquer les choses à venir.
+
+215
+00:10:48,967 --> 00:10:51,644
+comme je l'ai dit, plus tard, quand nous naviguerons
+dans l'interface de la ligne de commande de Linux
+
+216
+00:10:51,645 --> 00:10:53,399
+quand je commence à vous expliquer les choses en détail
+
+217
+00:10:53,400 --> 00:10:56,100
+là, je vais commencer à partir de zéro.
+
+218
+00:10:56,389 --> 00:11:00,000
+Puis automatiquement vous conduire 
+du débutant à l'utilisateur avancé
+
+219
+00:11:00,101 --> 00:11:02,566
+en peu de temps
+
+220
+00:11:02,567 --> 00:11:04,988
+et puis vous serez en mesure de comprendre
+l'utilité de toutes ces choses.
+
+221
+00:11:04,989 --> 00:11:08,633
+Pour le moment, il suffit de copier ce contenu
+
+222
+00:11:08,634 --> 00:11:12,788
+qui est dans les limites de ces guillemets
+
+223
+00:11:12,789 --> 00:11:16,644
+et le coller dans votre terminal.
+
+224
+00:11:16,645 --> 00:11:18,788
+Donc, vous avez besoin d'être root
+
+225
+00:11:18,789 --> 00:11:20,866
+on avance et je ferme la session
+
+226
+00:11:20,867 --> 00:11:23,955
+comme vous le voyez, 
+je ne suis pas en mode "root".
+
+227
+00:11:23,956 --> 00:11:25,966
+Je suis maintenant mon utilisateur régulier - "chronique"
+
+228
+00:11:25,967 --> 00:11:27,344
+Tapez "SU"
+
+229
+00:11:27,345 --> 00:11:30,099
+Tapez votre mot de passe
+
+230
+00:11:30,100 --> 00:11:33,100
+et vous le collez.
+
+231
+00:11:33,101 --> 00:11:35,944
+Appuyez sur "Entrée"
+
+232
+00:11:35,945 --> 00:11:38,722
+évidemment, il ne sera pas installé par ici
+
+233
+00:11:38,723 --> 00:11:43,355
+parce que je l'ai déjà installé.
+
+234
+00:11:43,356 --> 00:11:47,788
+ca dit "rien à faire" quoi que ce soit
+
+235
+00:11:47,789 --> 00:11:53,622
+mais sur votre système, où  
+vous n'avez pas encore installé la fusion RPM 
+
+236
+00:11:53,623 --> 00:11:56,844
+l'installation serait lancée convenablement.
+
+237
+00:11:56,845 --> 00:11:58,266
+Ce serait tout simplement ok.
+
+238
+00:11:58,267 --> 00:12:00,355
+et fusion RPM aurait été installé avec succès  
+
+239
+00:12:00,356 --> 00:12:03,066
+sur votre système.
+
+240
+00:12:03,067 --> 00:12:07,744
+alors, "clair"
+
+241
+00:12:07,745 --> 00:12:10,299
+quoi qu'il en soit, je vais 
+vous montrer quelque chose d'autre
+
+242
+00:12:10,300 --> 00:12:14,900
+que j'ai oublié de vous montrer il y a un instant.
+
+243
+00:12:14,901 --> 00:12:16,988
+Cette commande que nous éxecutons
+
+244
+00:12:16,989 --> 00:12:21,500
+il installe les référentiels libres et non-libres
+
+245
+00:12:21,501 --> 00:12:26,822
+jetez un coup d'oeil de plus près 
+sur ce que je viens de sélectionner
+
+246
+00:12:26,823 --> 00:12:31,311
+c'est la partie libre
+
+247
+00:12:31,312 --> 00:12:33,644
+http://downloadl1rpmfusion.org/free/fedora/
+
+248
+00:12:33,645 --> 00:12:36,133
+rpmfusion-free-realease - $ (rpm -e% fedora) .noarch.rpm
+
+249
+00:12:36,134 --> 00:12:42,477
+et en dessous, vous avez la deuxième adresse
+
+250
+00:12:42,478 --> 00:12:45,699
+http://download1.rpmfusion.org
+
+251
+00:12:45,700 --> 00:12:48,266
+et ca dit non libre.
+
+252
+00:12:48,267 --> 00:12:50,455
+alors, je souligne le lien en entier
+
+253
+00:12:50,456 --> 00:12:54,933
+je l'agrandis un peu plus 
+pour que tout le monde puisse voir
+
+254
+00:12:54,934 --> 00:12:56,011
+et nous y sommes.
+
+255
+00:12:56,012 --> 00:12:58,588
+Vous avez deux adresses...
+
+256
+00:12:58,589 --> 00:13:01,400
+ils ne sont pas complètement si différentes 
+
+257
+00:13:01,401 --> 00:13:03,633
+mais ils sont certainement deux adresses différentes 
+
+258
+00:13:03,634 --> 00:13:06,655
+se référant aux différents types de dépôts.
+
+259
+00:13:06,656 --> 00:13:09,100
+quoi qu'il en soit, maintenant on peut revenir au terminal.
+
+260
+00:13:09,100 --> 00:13:12,233
+il ne faut pas se déconnecter de la racine
+
+261
+00:13:12,234 --> 00:13:17,066
+Restez en tant que root, parce que vous
+devez avoir les privilèges root pour faire cela.
+
+262
+00:13:17,067 --> 00:13:19,700
+Tapez "yum"
+
+263
+00:13:19,701 --> 00:13:21,133
+Recherche
+
+264
+00:13:21,134 --> 00:13:23,500
+encore une fois
+
+265
+00:13:23,501 --> 00:13:25,011
+Virtualbox
+
+266
+00:13:25,012 --> 00:13:27,877
+Appuyez sur Entrée"
+
+267
+00:13:27,878 --> 00:13:32,255
+Choississez le dernier ou ce 
+qui convient à la version de votre noyau.
+
+268
+00:13:32,256 --> 00:13:34,966
+Vous pouvez vérifiez 
+la version de votre noyau en tapant
+
+269
+00:13:34,967 --> 00:13:37,388
+"uname -a"
+
+270
+00:13:37,389 --> 00:13:39,033
+et ca y est.
+
+271
+00:13:39,034 --> 00:13:43,322
+alors, le mien est 3.18.7-100
+
+272
+00:13:43,323 --> 00:13:47,999
+3.18.7-100.fc20
+
+273
+00:13:47,000 --> 00:13:54,399
+FC20 et là vous avez l'architecture.
+
+274
+00:13:54,400 --> 00:13:57,099
+Nettoyez l'écran
+
+275
+00:13:57,100 --> 00:13:59,455
+Tapez "yum"
+
+276
+00:13:59,456 --> 00:14:00,399
+Installer
+
+277
+00:14:00,400 --> 00:14:02,533
+Collez le nom du paquet
+
+278
+00:14:02,534 --> 00:14:06,200
+Appuyez sur "Espace -Y"
+
+279
+00:14:06,201 --> 00:14:09,000
+et si vous avez déjà cette commande, 
+appuyez simplement sur "Entrée"
+
+280
+00:14:09,001 --> 00:14:11,033
+et il va l'installer.
+
+281
+00:14:11,034 --> 00:14:14,322
+Il se déroulera normalement.
+
+282
+00:14:14,323 --> 00:14:16,999
+J'ai déjà installé VirtualBox 
+pour gagner du temps.
+
+283
+00:14:17,000 --> 00:14:19,399
+il sera installé et opérationnel sur votre système
+
+284
+00:14:19,399 --> 00:14:23,099
+et après l'installation, ne pas oublier de taper "yum update"
+
+285
+00:14:23,400 --> 00:14:25,099
+pour des mises à jour.
+
+286
+00:14:25,100 --> 00:14:29,455
+le système s'en chargera des mises à jour.
+
+287
+00:14:29,456 --> 00:14:34,399
+alors, vous devez vous assurer que vous avez la dernière version
+
+288
+00:14:34,400 --> 00:14:39,533
+que vous avez tout mis à jour et qu'ils fonctionnent correctement.
+
+289
+00:14:39,534 --> 00:14:42,200
+En gros, c'est correct pour ce tutoriel.
+
+290
+00:14:42,201 --> 00:14:44,388
+dans le prochain, nous allons éxplorer VirtualBox 
+
+291
+00:14:44,389 --> 00:14:46,033
+expliquer certaines de ses caractéristiques
+
+292
+00:14:46,034 --> 00:14:50,322
+et nous espérons à travers le didacticiel suivant
+
+293
+00:14:50,323 --> 00:14:53,999
+de commencer à installer un système 
+d'exploitation au sein de notre machine virtuelle
+
+294
+00:14:54,000 --> 00:14:56,399
+au sein de l'environnement virtuel
+
+295
+00:14:56,400 --> 00:14:58,099
+et nous allons suivre le processus.
+
+296
+00:14:58,100 --> 00:15:01,000
+Merci d'être avec nous et j'espère vous voir dans le prochain tutoriel.

@@ -1,0 +1,1224 @@
+1
+00:00:00,728 --> 00:00:07,768
+Bienvenidos todos a este tutorial. Hoy decid
+
+2
+00:00:00,728 --> 00:00:07,768
+ayudarlos porque me di cuenta que
+
+3
+00:00:07,768 --> 00:00:18,211
+muchos de ustedes estaban teniendo problemas
+
+4
+00:00:07,768 --> 00:00:18,211
+al crear un Live USB de Kali y me di cuenta de que muchas
+
+5
+00:00:18,211 --> 00:00:25,127
+personas han estado usando muchas guas extraas
+
+6
+00:00:18,211 --> 00:00:25,127
+de internet. En realidad no los puedo culpar
+
+7
+00:00:25,127 --> 00:00:33,323
+por eso, yo tiendo a hacerlo tambin.
+
+8
+00:00:25,127 --> 00:00:33,323
+Hoy les mostrar como pueden crear
+
+9
+00:00:33,323 --> 00:00:42,089
+un USB booteable de Kali y como hacerlo funcional
+
+10
+00:00:33,323 --> 00:00:42,089
+Es muy sencillo. No es tan dificil. Estoy seguro
+
+11
+00:00:42,089 --> 00:00:47,929
+de que todos ustedes podrn repetir este
+
+12
+00:00:42,089 --> 00:00:47,929
+procedimiento. Si tienes alguna pregunta slo
+
+13
+00:00:47,929 --> 00:00:55,282
+ve a las discusiones de Udemy y te ayudar de
+
+14
+00:00:47,929 --> 00:00:55,282
+cualquier forma que pueda. As que primero,
+
+15
+00:00:55,282 --> 00:01:02,440
+asumo que tienes VirtualBox instalado, listo
+
+16
+00:00:55,282 --> 00:01:02,440
+y corriendo, que tienes adiciones de invitado y
+
+17
+00:01:02,440 --> 00:01:11,269
+extensiones corriendo para VirtualBox.
+
+18
+00:01:02,440 --> 00:01:11,269
+Eso es lo primero que asumo.
+
+19
+00:01:11,269 --> 00:01:16,962
+Claro, hay otras formas de lograr
+
+20
+00:01:11,269 --> 00:01:16,962
+esto, si ya tienes Kali instalado
+
+21
+00:01:16,962 --> 00:01:24,287
+en tu computadora, est bien, pero
+
+22
+00:01:16,962 --> 00:01:24,287
+igual necesitars VirtualBox. As que
+
+23
+00:01:24,287 --> 00:01:30,091
+o tienes Kali instalado en tu computadora
+
+24
+00:01:24,287 --> 00:01:30,091
+fsica o tienes una mquina virtual de Kali
+
+25
+00:01:30,091 --> 00:01:36,336
+dentro de VirtualBox con todas las extensiones
+
+26
+00:01:30,091 --> 00:01:36,336
+y adiciones de invitado instaladas. Si ests usando
+
+27
+00:01:36,336 --> 00:01:41,771
+VMware, porque he notado que algunas personas
+
+28
+00:01:36,336 --> 00:01:41,771
+han usado VMware, no estoy seguro porqu
+
+29
+00:01:41,771 --> 00:01:48,379
+VirtualBox es gratis, pero necesitars pasar
+
+30
+00:01:41,771 --> 00:01:48,379
+ese USB a tu computadora si quieres
+
+31
+00:01:48,379 --> 00:01:58,344
+hacer esta parte. As que, slo si
+
+32
+00:01:48,379 --> 00:01:58,344
+quieres crear un Live USB con
+
+33
+00:01:58,344 --> 00:02:05,623
+almacenamiento permanente que sea mayor
+
+34
+00:01:58,344 --> 00:02:05,623
+a 4 GB deberas ver estos tutoriales. Si no
+
+35
+00:02:05,623 --> 00:02:10,467
+te importa hacer un USB
+
+36
+00:02:05,623 --> 00:02:10,467
+booteable, puedes omitir
+
+37
+00:02:10,467 --> 00:02:15,716
+estos tutoriales. No hablar sobre nada
+
+38
+00:02:10,467 --> 00:02:15,716
+ms aqu, slo quiero mostrarte
+
+39
+00:02:15,716 --> 00:02:25,902
+como crear un Live USB que puedas usar.
+
+40
+00:02:15,716 --> 00:02:25,902
+Ahora, empecemos conectando una memoria USB.
+
+41
+00:02:25,902 --> 00:02:32,130
+Asumo que tienes uno USB con
+
+42
+00:02:25,902 --> 00:02:32,130
+capacidad mayor a 8GB.
+
+43
+00:02:32,130 --> 00:02:39,285
+El mo es de 64GB y recomiendo que tengas un USB
+
+44
+00:02:32,130 --> 00:02:39,285
+3.0, pero si no lo tienes est bien. Yo no tengo un
+
+45
+00:02:39,285 --> 00:02:45,111
+USB que sea 3.0. Si tu lo tienes no es
+
+46
+00:02:39,285 --> 00:02:45,111
+una mala idea usarlo por la
+
+47
+00:02:45,111 --> 00:02:51,953
+velocidad. Como lo usars tu sistema tambin
+
+48
+00:02:45,111 --> 00:02:51,953
+ser un poco ms rpido. Sin embargo.
+
+49
+00:02:51,953 --> 00:02:59,207
+no es obligatorio o algo as. De todos modos,
+
+50
+00:02:51,953 --> 00:02:59,207
+vamos y hacemos clic derecho en tu
+
+51
+00:02:59,207 --> 00:03:04,597
+mquina virtual Kali. Ten en cuenta que mi
+
+52
+00:02:59,207 --> 00:03:04,597
+mquina virtual Kali est apagada, as que
+
+53
+00:03:04,597 --> 00:03:14,223
+la tuya debe estar apagado para esta parte
+
+54
+00:03:04,597 --> 00:03:14,223
+tambin. Ve a configuracin, ve a USB. Voy a
+
+55
+00:03:14,223 --> 00:03:20,445
+remover este filtro. Selecciona habilitar USB
+
+56
+00:03:14,223 --> 00:03:20,445
+2.0 EHCI controller. Luego, haz clic en
+
+57
+00:03:20,445 --> 00:03:30,454
+este smbolo ms verde aqu y encontrars tu memoria
+
+58
+00:03:20,445 --> 00:03:30,454
+USB. Aqu esta la mia, luego en Ok. He enlistado los prerrequisitos
+
+59
+00:03:30,454 --> 00:03:37,498
+para esto. Todos los prerrequisitos estn incluidos
+
+60
+00:03:30,454 --> 00:03:37,498
+en este curso. Slo ve atrs unos tutoriales y
+
+61
+00:03:37,498 --> 00:03:43,822
+encontrars cmo instalar extensiones, como
+
+62
+00:03:37,498 --> 00:03:43,822
+instalar adiciones de invitado, como instalar
+
+63
+00:03:43,822 --> 00:03:52,013
+VirtualBox, etc. Todo esto est incluido en las lecturas
+
+64
+00:03:43,822 --> 00:03:52,013
+ms arriba. De todos modos, ahora que pasamos un
+
+65
+00:03:52,013 --> 00:03:57,031
+USB a la mquina de Kali. As que tengo un
+
+66
+00:03:52,013 --> 00:03:57,031
+USB conectado a mi mquina fsica y
+
+67
+00:03:57,031 --> 00:04:03,246
+ahora lo pas a la mquina de Kali, o mi
+
+68
+00:03:57,031 --> 00:04:03,246
+mquina virtual, desde mi mquina fsica.
+
+69
+00:04:03,246 --> 00:04:13,336
+Y ahora, inciar Kali. As que, empecemos.
+
+70
+00:04:03,246 --> 00:04:13,336
+esto es de mi configuracin incial,
+
+71
+00:04:13,336 --> 00:04:25,564
+olvida que viste esto. Brrenlo de sus
+
+72
+00:04:13,336 --> 00:04:25,564
+mentes. Ahi est inciando, est booteando.
+
+73
+00:04:25,564 --> 00:04:44,686
+As que presionamos enter. Bueno, el tiempo de booteo no es el ms rpido
+
+74
+00:04:25,564 --> 00:04:44,686
+generalmente. Por eso me gustara bootear la mquina antes de empezar
+
+75
+00:04:44,686 --> 00:04:51,009
+el tutorial. Pero en este caso fue un poco
+
+76
+00:04:44,686 --> 00:04:51,009
+dificil. De todos modos, vamos a
+
+77
+00:04:51,009 --> 00:04:56,647
+empezar con esto en un momento. Ahora, ten en
+
+78
+00:04:51,009 --> 00:04:56,647
+cuenta que a pesar que este procedimiento debera
+
+79
+00:04:56,647 --> 00:05:02,025
+poder hacerse desde otros sistemas operativos,
+
+80
+00:04:56,647 --> 00:05:02,025
+como Fedora, cuando repet el mismo
+
+81
+00:05:02,025 --> 00:05:09,816
+procedimiento desde Fedora, no funcion.
+
+82
+00:05:02,025 --> 00:05:09,816
+Fue un inconveniente. No supe porque no
+
+83
+00:05:09,816 --> 00:05:14,093
+funcion porque el procedimiento
+
+84
+00:05:09,816 --> 00:05:14,093
+es casi exacto al que se hace en Kali.
+
+85
+00:05:14,093 --> 00:05:24,058
+Pero simplemente no funcion. El mtodo que
+
+86
+00:05:14,093 --> 00:05:24,058
+voy a usar para este tutorial en particular es el
+
+87
+00:05:24,058 --> 00:05:32,950
+mtodo que est posteado en el sitio oficial
+
+88
+00:05:24,058 --> 00:05:32,950
+de Kali. Te lo mostrar para que lo puedas seguir.
+
+89
+00:05:32,950 --> 00:05:48,280
+Puedes usarlo como referencia.
+
+90
+00:05:32,950 --> 00:05:48,280
+Ah est, creo que es este.
+
+91
+00:05:48,280 --> 00:06:10,873
+En esta pgina escribe...
+
+92
+00:05:48,280 --> 00:06:10,873
+Djame mostrarte la URL
+
+93
+00:06:10,873 --> 00:06:14,080
+Espero que puedas ver la direccin.
+
+94
+00:06:14,080 --> 00:06:21,862
+Est seleccionada aqu. El mtodo es
+
+95
+00:06:14,080 --> 00:06:21,862
+muy simple. No lo mostr por
+
+96
+00:06:21,862 --> 00:06:26,530
+mucho tiempo, pero si quieres puedes pausar
+
+97
+00:06:21,862 --> 00:06:26,530
+el video o puedes usar un motor de bsqueda
+
+98
+00:06:26,530 --> 00:06:31,604
+y buscar cmo crear un USB booteable
+
+99
+00:06:26,530 --> 00:06:31,604
+de Kali y luego seleccionar el sitio oficial.
+
+100
+00:06:31,604 --> 00:06:37,968
+No es muy dificil. Personalmente creo que es un
+
+101
+00:06:31,604 --> 00:06:37,968
+mtodo ms sencillo. De todos modos, aqu tienes
+
+102
+00:06:37,968 --> 00:06:45,722
+una gua en la usaremos DD.
+
+103
+00:06:37,968 --> 00:06:45,722
+As que este es el comando que
+
+104
+00:06:45,722 --> 00:06:57,194
+vamos a necesitar y esto es toda la gua. Pero antes
+
+105
+00:06:45,722 --> 00:06:57,194
+de que usemos este comando necesitamos
+
+106
+00:06:57,194 --> 00:07:03,255
+pasar el USB a la mquina
+
+107
+00:06:57,194 --> 00:07:03,255
+virtual o algo as y puedes ver
+
+108
+00:07:03,255 --> 00:07:09,425
+aqu que dice que primero necesitas
+
+109
+00:07:03,255 --> 00:07:09,425
+que nombre tiene. Explicar
+
+110
+00:07:09,425 --> 00:07:16,673
+esto ms a fondo, no te preocupes. Puedes ver
+
+111
+00:07:09,425 --> 00:07:16,673
+esto es todo, literamente. Los otros
+
+112
+00:07:16,673 --> 00:07:25,691
+son para otros sistemas. Este es
+
+113
+00:07:16,673 --> 00:07:25,691
+para como hacerlo en Windows.
+
+114
+00:07:25,691 --> 00:07:30,002
+El mtodo que estoy usando puede usarse en cualquier
+
+115
+00:07:25,691 --> 00:07:30,002
+sistema siempre y cuando tengas VirtualBox y Kali
+
+116
+00:07:30,002 --> 00:07:36,687
+instalados. Es muy simple. Entonces esto es todo,
+
+117
+00:07:30,002 --> 00:07:36,687
+es toda la gua completa para hacerlo en
+
+118
+00:07:36,687 --> 00:07:44,509
+Linux. Esta es toda la gua. Si tienes
+
+119
+00:07:36,687 --> 00:07:44,509
+una mquina virtual en Mac OSX
+
+120
+00:07:44,509 --> 00:07:53,407
+o en Windows, puedes seguir el mismo
+
+121
+00:07:44,509 --> 00:07:53,407
+mtodo. Puedes hacer lo mismo que estoy
+
+122
+00:07:53,407 --> 00:07:57,766
+haciendo. Si no quieres hacer lo que
+
+123
+00:07:53,407 --> 00:07:57,766
+estoy haciendo ahora, puedes hacer
+
+124
+00:07:57,766 --> 00:08:04,940
+lo que dicen una de estas otras dos guas.
+
+125
+00:07:57,766 --> 00:08:04,940
+En realidad no las he probado, como veo
+
+126
+00:08:04,940 --> 00:08:12,091
+esta es una manera ms universal de
+
+127
+00:08:04,940 --> 00:08:12,091
+hacerlo. En los tutoriales anteriores
+
+128
+00:08:12,091 --> 00:08:17,862
+la mayora de ustedes trataron de instalar
+
+129
+00:08:12,091 --> 00:08:17,862
+VirtualBox y ya haban instalado Kali en l.
+
+130
+00:08:17,862 --> 00:08:25,737
+As que creo que este mtodo le puede servir
+
+131
+00:08:17,862 --> 00:08:25,737
+a la mayora. Antes de empezar, djame
+
+132
+00:08:25,737 --> 00:08:32,724
+aclarar un par de cosas. Este mtodo que estoy
+
+133
+00:08:25,737 --> 00:08:32,724
+usando sirve para Kali, dentro de Kali. as que,
+
+134
+00:08:32,724 --> 00:08:38,735
+que necesitas hacer esto desde Kali y necesitas
+
+135
+00:08:32,724 --> 00:08:38,735
+crear un Kali con este mtodo, un USB booteable.
+
+136
+00:08:38,735 --> 00:08:43,646
+He tratado de hacer lo mismo para otras distribuciones pero no lo he probado
+
+137
+00:08:43,646 --> 00:08:49,414
+en otras distribuciones basadas en Debian,
+
+138
+00:08:43,646 --> 00:08:49,414
+lo he probado con Fedora y no funcion.
+
+139
+00:08:49,414 --> 00:08:56,369
+No se porqu. No lo investigu muy
+
+140
+00:08:49,414 --> 00:08:56,369
+a fondo, simplemente no funcion.
+
+141
+00:08:56,369 --> 00:09:01,747
+As que no te puedo decir si vaya a funcionar. Tal
+
+142
+00:08:56,369 --> 00:09:01,747
+vez a ti te funcionar con otras distribuciones pero
+
+143
+00:09:01,747 --> 00:09:08,965
+no lo s, no hay garantas. Sin embargo, si
+
+144
+00:09:01,747 --> 00:09:08,965
+quisieras que haga una demostracin sobre como
+
+145
+00:09:08,965 --> 00:09:16,686
+crear un Live USB con otras distribuciones
+
+146
+00:09:08,965 --> 00:09:16,686
+de Linux como Ubuntu o Fedora
+
+147
+00:09:16,686 --> 00:09:24,646
+o no lo s, CentOS, Linux Mint o
+
+148
+00:09:16,686 --> 00:09:24,646
+algo as, hzmelo saber en la
+
+149
+00:09:24,646 --> 00:09:29,308
+seccin de discusin. Slo pregntame y
+
+150
+00:09:24,646 --> 00:09:29,308
+ver lo que pueda hacer. Esos
+
+151
+00:09:29,308 --> 00:09:36,803
+videos son relativamente simples de hacer, as que
+
+152
+00:09:29,308 --> 00:09:36,803
+puedo hacerlos para ti. Tratar de encontrar
+
+153
+00:09:36,803 --> 00:09:40,200
+la forma ms universal de
+
+154
+00:09:36,803 --> 00:09:40,200
+hacerlo. Puedes, por ejemplo,
+
+155
+00:09:40,200 --> 00:09:50,676
+Preguntarme "Oye, Erman, me gustara que me mostraras como puedo hacer esto
+
+156
+00:09:40,200 --> 00:09:50,676
+desde Windows?"  "Oye, s que ests corriendo Fedora como tu
+
+157
+00:09:50,676 --> 00:09:55,325
+sistema principal pero me gustara que me mostraras
+
+158
+00:09:50,676 --> 00:09:55,325
+como hacerlo desde Ubuntu, cmo crear un
+
+159
+00:09:55,325 --> 00:10:04,821
+Live USB de Mint desde Ubuntu, as que slo
+
+160
+00:09:55,325 --> 00:10:04,821
+especfica que es lo que necesitas, de que
+
+161
+00:10:04,821 --> 00:10:10,360
+sistema operativo quieres que haga
+
+162
+00:10:04,821 --> 00:10:10,360
+esto y hay un 99% de probabilidad
+
+163
+00:10:10,360 --> 00:10:15,240
+de que lo haga, de que te pueda ayudar
+
+164
+00:10:10,360 --> 00:10:15,240
+con videos. No de puedo prometer hacerlo
+
+165
+00:10:15,240 --> 00:10:22,319
+en un par de horas, pero si lo puedo hacer, no te
+
+166
+00:10:15,240 --> 00:10:22,319
+preocupes. Otra cosa, no puedes pedirme que lo haga desde
+
+167
+00:10:22,319 --> 00:10:30,575
+Mac porque no tengo una Mac. No tengo OSX y de
+
+168
+00:10:22,319 --> 00:10:30,575
+verdad no puedo hacerlo. Sin embargo, este procedimiento
+
+169
+00:10:30,575 --> 00:10:37,063
+que estoy haciendo ahora, si tienes VirtualBox en
+
+170
+00:10:30,575 --> 00:10:37,063
+Mac, funciona para Kali. Si necesitas algn consejo
+
+171
+00:10:37,063 --> 00:10:41,585
+puedes preguntarme en la seccin
+
+172
+00:10:37,063 --> 00:10:41,585
+de discusin, y de nuevo,
+
+173
+00:10:41,585 --> 00:10:48,437
+antes de proseguir, si quieres una instalacin
+
+174
+00:10:41,585 --> 00:10:48,437
+diferente, si quieres crear un Live USB
+
+175
+00:10:48,437 --> 00:10:53,178
+de una diferente distribucin, slo
+
+176
+00:10:48,437 --> 00:10:53,178
+preguntame en las discusiones
+
+177
+00:10:53,178 --> 00:10:59,675
+y lo ms probable es que te pueda
+
+178
+00:10:53,178 --> 00:10:59,675
+ayudar con videos. Queria dejar ese
+
+179
+00:10:59,675 --> 00:11:08,089
+ese punto claro. Empecemos,
+
+180
+00:10:59,675 --> 00:11:08,089
+abre el terminal
+
+181
+00:11:08,089 --> 00:11:20,806
+Djame expandirlo. Escribe 'su', bueno, no lo hagas
+
+182
+00:11:08,089 --> 00:11:20,806
+si ya eres root. Yo escribir 'clear'. Ahora, lo que
+
+183
+00:11:20,806 --> 00:11:26,096
+tambin necesitars para este tutorial ser una
+
+184
+00:11:20,806 --> 00:11:26,096
+imgen de Kali Linux. Supongo que
+
+185
+00:11:26,096 --> 00:11:39,240
+no la tienes descargada dentro de tu mquina
+
+186
+00:11:26,096 --> 00:11:39,240
+virtual. As que hazlo. Slo escribe "Kali"
+
+187
+00:11:44,360 --> 00:11:51,746
+Descargas, y puedes descargar alguno de estos dos.
+
+188
+00:11:51,746 --> 00:11:57,510
+Alguno de los dos primeros, puede ser ISO por descarga
+
+189
+00:11:51,746 --> 00:11:57,510
+directa o Torrent. As que si ests haciendo esto en Linux
+
+190
+00:11:57,510 --> 00:12:03,671
+puedes chequear el sha1 sum, que es muy simple.
+
+191
+00:11:57,510 --> 00:12:03,671
+Djame mostrarte
+
+192
+00:12:03,671 --> 00:12:09,865
+como chequear los sha sums para verificar
+
+193
+00:12:03,671 --> 00:12:09,865
+que lo que descargaste est correcto.
+
+194
+00:12:09,865 --> 00:12:18,634
+As que ya yo hice la descarga, y tengo la
+
+195
+00:12:09,865 --> 00:12:18,634
+imgen aqu. Puedes ver que es Kali Linux
+
+196
+00:12:18,634 --> 00:12:29,360
+Todo lo que tengo que escribir es
+
+197
+00:12:18,634 --> 00:12:29,360
+'sha1sum Kali-linux' y luego lo voy
+
+198
+00:12:29,360 --> 00:12:38,497
+a colocar en un archivo llamado test.
+
+199
+00:12:29,360 --> 00:12:38,497
+Este comando usar este archivo y
+
+200
+00:12:38,497 --> 00:12:47,399
+generar el sha1 sum y luego podremos
+
+201
+00:12:38,497 --> 00:12:47,399
+compararlo con este. Si ambos coinciden
+
+202
+00:12:47,399 --> 00:12:53,065
+significa que son exactamente el mismo
+
+203
+00:12:47,399 --> 00:12:53,065
+archivo. Si no no coinciden el archivo esta
+
+204
+00:12:53,065 --> 00:12:59,906
+daado, simplemente tendrs que descargarlo
+
+205
+00:12:53,065 --> 00:12:59,906
+de nuevo. Esto puede tardar algo de tiempo
+
+206
+00:12:59,906 --> 00:13:07,021
+No demasiado, pero puede tardar un poco de
+
+207
+00:12:59,906 --> 00:13:07,021
+tiempo. Es muy importante verificar que tus
+
+208
+00:13:07,021 --> 00:13:10,817
+archivos se descargaron correctamente,
+
+209
+00:13:07,021 --> 00:13:10,817
+especialmente cuando uses este mtodo
+
+210
+00:13:10,817 --> 00:13:19,055
+Porque puedes tener un archivo daado
+
+211
+00:13:10,817 --> 00:13:19,055
+y luego intentar crear un USB booteable
+
+212
+00:13:19,055 --> 00:13:24,123
+cincuenta veces y ninguna funcionar
+
+213
+00:13:19,055 --> 00:13:24,123
+porque no recibirs ningn mensaje
+
+214
+00:13:24,123 --> 00:13:29,138
+y simplemente no podrs bootear.
+
+215
+00:13:24,123 --> 00:13:29,138
+Ok, ya hicimos eso, ahora ejecutamos
+
+216
+00:13:29,138 --> 00:13:40,547
+cat test y puedes ver que tenemos este shasum
+
+217
+00:13:29,138 --> 00:13:40,547
+de este archivo. As que lo como comparamos
+
+218
+00:13:40,547 --> 00:13:46,233
+con este archivo de aqu? Bueno, podras
+
+219
+00:13:40,547 --> 00:13:46,233
+ponerlo uno junto a otro y podras ver
+
+220
+00:13:46,233 --> 00:13:55,592
+los nmeros y letras. No haremos esto.
+
+221
+00:13:46,233 --> 00:13:55,592
+Ejecutaremos cat test y grep el otro patrn
+
+222
+00:13:55,592 --> 00:14:01,437
+Si podemos ejecutar grep con el patrn exacto
+
+223
+00:13:55,592 --> 00:14:01,437
+significa que ambos coinciden, y de hecho coinciden
+
+224
+00:14:01,437 --> 00:14:08,625
+La descarga se realiz correctamente. Excelente!,
+
+225
+00:14:01,437 --> 00:14:08,625
+as que ahora tenemos eso resuelto.
+
+226
+00:14:08,625 --> 00:14:28,472
+Sigamos y usaremos fdisk-l. Ok, as que el
+
+227
+00:14:08,625 --> 00:14:28,472
+ltimo, sdb, ese es mi dispositivo USB.
+
+228
+00:14:28,472 --> 00:14:32,952
+Para ustedes lo ms probable es que sea
+
+229
+00:14:28,472 --> 00:14:32,952
+el mismo nombre, sdb. Ten en cuenta que
+
+230
+00:14:32,952 --> 00:14:41,176
+lo que sea que tengas en tu USB ser destrudo,
+
+231
+00:14:32,952 --> 00:14:41,176
+eliminado completamente. As que hazlo y lmpialo
+
+232
+00:14:41,176 --> 00:15:11,676
+Sigamos y escribe fdisk /dev/sdb.
+
+233
+00:14:41,176 --> 00:15:11,676
+Usa el comando d para borrar particiones.
+
+234
+00:15:14,266 --> 00:15:23,403
+"El Kernel todava usa la tabla vieja"
+
+235
+00:15:14,266 --> 00:15:23,403
+Cargumoslo de nuevo.
+
+236
+00:15:23,403 --> 00:15:28,385
+"Advertencia: No se pudo abrir /dev/sr0"
+
+237
+00:15:23,403 --> 00:15:28,385
+Ok, a quien le importa eso? No es un roblema.
+
+238
+00:15:28,385 --> 00:15:33,574
+Por cierto, sr0 es la Unidad de disco ptico.
+
+239
+00:15:28,385 --> 00:15:33,574
+No me importa eso por el momento.
+
+240
+00:15:33,574 --> 00:15:39,352
+"Error: Particin(es) 2 en /dev/sdb ha sido sobreescrita
+
+241
+00:15:33,574 --> 00:15:39,352
+pero no se pudo informar al Kernel
+
+242
+00:15:39,352 --> 00:15:47,430
+sobre el cambio, probablemente porque todava
+
+243
+00:15:39,352 --> 00:15:47,430
+est/estn en uso. Ok, apararentemente est
+
+244
+00:15:47,430 --> 00:16:00,077
+en uso. No importa. Sigamos y usemos gparted
+
+245
+00:15:47,430 --> 00:16:00,077
+Estos son el tipo de problemas con los que te
+
+246
+00:16:00,077 --> 00:16:03,299
+encontrars, incluso a pesar de que he
+
+247
+00:16:00,077 --> 00:16:03,299
+hecho pruebas anteriormente.
+
+248
+00:16:03,299 --> 00:16:09,488
+Es por eso que tengo esas particiones
+
+249
+00:16:03,299 --> 00:16:09,488
+preparadas en el USB. Muy bien, as que
+
+250
+00:16:09,488 --> 00:16:18,884
+gparted de hecho ve que hemos borrado
+
+251
+00:16:09,488 --> 00:16:18,884
+casi todo all, lo que es muy bueno.
+
+252
+00:16:18,884 --> 00:16:29,554
+Cerraremos gparted porque ya
+
+253
+00:16:18,884 --> 00:16:29,554
+no lo necesitamos. Escribe: fdisk -l
+
+254
+00:16:29,554 --> 00:16:36,796
+Muy bien. As que ya no podemos ver
+
+255
+00:16:29,554 --> 00:16:36,796
+las particiones porque no hay ninguna
+
+256
+00:16:36,796 --> 00:16:44,828
+Mi disco duro es de 64GB pero slo
+
+257
+00:16:36,796 --> 00:16:44,828
+puedo utilizar 62.5. No es una gran
+
+258
+00:16:44,828 --> 00:16:54,407
+prdida. Ahora, lo que necesitamos
+
+259
+00:16:44,828 --> 00:16:54,407
+hacer es escribir dd if (que significa input file
+
+260
+00:16:54,407 --> 00:17:07,840
+fichero de entrada) =/home/test/downloads/kali
+
+261
+00:16:54,407 --> 00:17:07,840
+Ten en cuenta de que la ruta de tu archivo puede
+
+262
+00:17:07,840 --> 00:17:12,513
+ser diferente a la ma. Debes averiguar
+
+263
+00:17:07,840 --> 00:17:12,513
+dnde se encuentra descargado. Probablemente
+
+264
+00:17:12,513 --> 00:17:16,486
+se encuentre en la carpeta de Descargas
+
+265
+00:17:12,513 --> 00:17:16,486
+del usuario en uso. Mi usuario es test
+
+266
+00:17:16,486 --> 00:17:24,404
+Tu usuario puede ser root o algo parecido.
+
+267
+00:17:16,486 --> 00:17:24,404
+Por favor, debes averiguar eso.
+
+268
+00:17:24,404 --> 00:17:40,130
+Luego escribimos el fichero de salida, as
+
+269
+00:17:24,404 --> 00:17:40,130
+que escribimos of=/dev/sdb bs=512k
+
+270
+00:17:40,130 --> 00:17:43,264
+512k es la velocidad de escritura.
+
+271
+00:17:40,130 --> 00:17:43,264
+Puedes aumentarla para reducir la
+
+272
+00:17:43,264 --> 00:17:47,768
+cantidad de tiempo pero mientras ms
+
+273
+00:17:43,264 --> 00:17:47,768
+rpida sea la velocidad de escritura
+
+274
+00:17:47,768 --> 00:17:52,170
+es mayor la posibilidad de que haya un error
+
+275
+00:17:47,768 --> 00:17:52,170
+de escritura. As que ten eso en cuenta.
+
+276
+00:17:52,170 --> 00:17:59,010
+En los foros y otros sitios dicen que dd no
+
+277
+00:17:52,170 --> 00:17:59,010
+es una forma viable de hacer esto por
+
+278
+00:17:59,010 --> 00:18:05,395
+la posibilidad de que surjan errores.
+
+279
+00:17:59,010 --> 00:18:05,395
+De hecho hace un momento lo prob
+
+280
+00:18:05,395 --> 00:18:10,801
+y he gastado tiempo y esfuerzo intentando
+
+281
+00:18:05,395 --> 00:18:10,801
+muchos otros mtodos tambin y de verdad
+
+282
+00:18:10,801 --> 00:18:14,436
+creo que este es el ms fcil de realizar
+
+283
+00:18:10,801 --> 00:18:14,436
+y el ms universal.
+
+284
+00:18:14,436 --> 00:18:18,299
+Ahora voy a seguir y apretar Enter
+
+285
+00:18:14,436 --> 00:18:18,299
+y este proceso va a empezar.
+
+286
+00:18:18,299 --> 00:18:24,110
+El hecho de que esta es una mquina virtual
+
+287
+00:18:18,299 --> 00:18:24,110
+puede hacer que se tome una cantidad
+
+288
+00:18:24,110 --> 00:18:31,510
+significativa de tiempo. Creo que se tard como 15
+
+289
+00:18:24,110 --> 00:18:31,510
+minutos la ltima vez que ejecut el comando.
+
+290
+00:18:31,510 --> 00:18:36,059
+Y se me est acabando el tiempo del tutorial.
+
+291
+00:18:31,510 --> 00:18:36,059
+Antes de que se me acabe el tiempo,
+
+292
+00:18:36,059 --> 00:18:41,341
+Debo decir que no puedes ver ninguna barra
+
+293
+00:18:36,059 --> 00:18:41,341
+de progreso o algo parecido aqu, sin embargo
+
+294
+00:18:41,341 --> 00:18:49,006
+Si ves tu dispositivo USB, si tiene algn tipo de
+
+295
+00:18:41,341 --> 00:18:49,006
+luz que parpadee, mientras est parpadeando
+
+296
+00:18:49,006 --> 00:18:52,783
+significa que el proceso se est llevando a acabo,
+
+297
+00:18:49,006 --> 00:18:52,783
+que el USB est siendo utilizado, algo se est
+
+298
+00:18:52,783 --> 00:18:59,638
+haciendo. Lo ms probable en este caso es que
+
+299
+00:18:52,783 --> 00:18:59,638
+dd est escribiendo archivos en el. As que no
+
+300
+00:18:59,638 --> 00:19:05,521
+te preocupes y djalo correr hasta que finalice.
+
+301
+00:18:59,638 --> 00:19:05,521
+No lo interrumpas, djalo que termine, no hay
+
+302
+00:19:05,521 --> 00:19:08,855
+ningn problema. Puedes beber un caf o algo
+
+303
+00:19:05,521 --> 00:19:08,855
+mientras tanto.
+
+304
+00:19:08,855 --> 00:19:14,513
+De todos modos, dejar el tutorial hasta aqu y
+
+305
+00:19:08,855 --> 00:19:14,513
+lo continuar cuando esto termine y pueda hacer
+
+306
+00:19:14,513 --> 00:19:17,306
+la parte 2. Hasta entonces, me despido.
+

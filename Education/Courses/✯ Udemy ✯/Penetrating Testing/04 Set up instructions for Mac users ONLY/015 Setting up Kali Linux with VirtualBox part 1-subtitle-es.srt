@@ -1,0 +1,787 @@
+1
+00:00:00,000 --> 00:00:01,305
+Bienvenidos de nuevo.
+
+2
+00:00:01,540 --> 00:00:06,907
+La descarga ha terminado,
+y lo tenemos en la carpeta de Descargas.
+
+3
+00:00:07,142 --> 00:00:09,734
+Abrid Finder y buscad las Descargas,
+
+4
+00:00:09,769 --> 00:00:13,182
+Finder está aquí, 
+luego vamos a la carpeta de Descargas
+
+5
+00:00:13,217 --> 00:00:14,700
+y veréis algo así:
+
+6
+00:00:14,780 --> 00:00:18,350
+Kali-Linux-2.0.0-vbox-amd64.7z
+
+7
+00:00:21,599 --> 00:00:24,630
+Si hay una versión más reciente, descargáosla,
+
+8
+00:00:24,665 --> 00:00:27,953
+os debería valer,
+debería funcionar sin ningún problema.
+
+9
+00:00:27,988 --> 00:00:31,683
+Lo que necesitamos ahora es descomprimir esto
+
+10
+00:00:31,718 --> 00:00:35,122
+porque es un archivo zip, es un paquete.
+
+11
+00:00:37,566 --> 00:00:39,519
+Podéis ir a la App Store
+
+12
+00:00:39,554 --> 00:00:41,749
+y descargar el software de ahí si queréis.
+
+13
+00:00:41,884 --> 00:00:45,340
+Personalmente,
+yo aún no he instalado Homebrew,
+
+14
+00:00:45,375 --> 00:00:48,578
+Macports, o algo similar.
+Yo he optado por Homebrew
+
+15
+00:00:48,613 --> 00:00:51,143
+y ahora voy a proceder a instalarlo
+
+16
+00:00:51,178 --> 00:00:54,709
+y luego voy a instalar
+el software para descomprimir el archivo,
+
+17
+00:00:54,744 --> 00:00:55,886
+para desempaquetarlo.
+
+18
+00:00:55,921 --> 00:00:59,942
+Si tenéis otro software
+que queráis o prefiráis usar
+
+19
+00:00:59,977 --> 00:01:03,835
+no hace falta que
+sigáis este tutorial entero,
+
+20
+00:01:03,870 --> 00:01:08,205
+os podéis saltar esta parte,
+pero si lo queréis hacer como yo
+
+21
+00:01:08,240 --> 00:01:10,597
+podéis seguirme.
+
+22
+00:01:11,771 --> 00:01:15,007
+Todo vale mientras
+descomprimáis el archivo.
+
+23
+00:01:16,533 --> 00:01:21,613
+Así que vamos a abrir
+Safari y vamos a buscar
+
+24
+00:01:23,374 --> 00:01:28,328
+"homebrew mac". Ahí esta,
+
+25
+00:01:28,363 --> 00:01:31,343
+el paquete que falta para OS X.
+
+26
+00:01:31,478 --> 00:01:33,874
+Debería ser el primer resultado.
+
+27
+00:01:35,436 --> 00:01:37,925
+No tiene cifrado https,
+
+28
+00:01:37,960 --> 00:01:39,803
+pero bueno, no hay nada,
+
+29
+00:01:39,838 --> 00:01:42,742
+no hay que registrarse en el sitio ni nada.
+
+30
+00:01:42,977 --> 00:01:45,323
+Solo hay instrucciones de instalación,
+
+31
+00:01:45,399 --> 00:01:47,920
+y yo mismo las voy a seguir.
+
+32
+00:01:48,652 --> 00:01:49,993
+Nada del otro mundo.
+
+33
+00:01:50,156 --> 00:01:53,525
+Vamos a copiar esto.
+
+34
+00:01:53,560 --> 00:01:57,706
+Para copiar solo hay que
+dar dos golpes para seleccionar
+
+35
+00:01:57,741 --> 00:01:59,808
+o tres golpes para seleccionar todo.
+
+36
+00:01:59,843 --> 00:02:04,913
+Pulsamos Cmd+C y
+ahora voy a abrir la terminal.
+
+37
+00:02:06,328 --> 00:02:09,377
+Este color es horrible, a mi parecer,
+
+38
+00:02:10,615 --> 00:02:12,222
+pero bueno, no pasa nada.
+
+39
+00:02:12,457 --> 00:02:15,742
+Pego el comando y le doy a Enter.
+
+40
+00:02:15,878 --> 00:02:18,313
+Seguramente me pedirá privilegios sudo.
+
+41
+00:02:21,769 --> 00:02:23,583
+No, vale, parece que no.
+
+42
+00:02:23,618 --> 00:02:27,665
+El comando "Xcrun" requiere
+herramientas de la línea de comandos.
+
+43
+00:02:27,700 --> 00:02:30,051
+¿Quiere instalar las herramientas ahora?
+
+44
+00:02:33,409 --> 00:02:37,808
+Vale, instálalas. Acuerdo de Mac SDK y Xcode.
+
+45
+00:02:39,092 --> 00:02:41,772
+Vale, lo que sea. Debería valer.
+
+46
+00:02:46,979 --> 00:02:49,507
+Bueno, dice que menos de un minuto.
+
+47
+00:02:52,524 --> 00:02:55,151
+Debería acabar bastante rápido.
+
+48
+00:02:57,081 --> 00:03:01,709
+Espero haber acertado
+la página: brew.sh. Debería ser esa.
+
+49
+00:03:02,044 --> 00:03:06,715
+Estaba anunciada,
+y luego está el resto de sitios.
+
+50
+00:03:06,850 --> 00:03:12,752
+También podemos ir a Homebrew
+GitHub y seguir el enlace desde ahí.
+
+51
+00:03:13,812 --> 00:03:15,387
+Tendría que estar en el Readme.
+
+52
+00:03:15,922 --> 00:03:21,862
+¿Qué paquetes hay disponibles?
+Homebrew resumido en la página principal.
+
+53
+00:03:22,297 --> 00:03:26,507
+Eso es, esta es la página principal, brew.sh.
+
+54
+00:03:30,245 --> 00:03:32,488
+Vale, vamos a ello.
+
+55
+00:03:49,333 --> 00:03:51,632
+Parece que está bien.
+
+56
+00:03:51,867 --> 00:03:55,330
+Dice "pulsa Return para
+continuar o cualquier tecla para cancelar".
+
+57
+00:03:55,365 --> 00:03:59,277
+Vamos a pulsar Return y dejarlo.
+
+58
+00:03:59,612 --> 00:04:03,556
+Ahora os pedirá la contraseña de administrador.
+
+59
+00:04:04,988 --> 00:04:08,616
+Tenéis que estar en la cuenta de administrador
+
+60
+00:04:08,651 --> 00:04:12,752
+o iniciar sesión en la cuenta
+de administrador mediante la terminal.
+
+61
+00:04:12,787 --> 00:04:15,460
+Para iniciar sesión en la terminal podéis...
+
+62
+00:04:15,495 --> 00:04:19,461
+Bueno, os voy a enseñar
+cómo hacerlo. Podéis usar el comando "su",
+
+63
+00:04:19,496 --> 00:04:23,750
+"su", espacio, cuenta de
+administrador, nombre de usuario, Enter,
+
+64
+00:04:23,785 --> 00:04:25,409
+y luego escribís la contraseña
+
+65
+00:04:25,444 --> 00:04:27,448
+y escribís lo que tengáis que escribir.
+
+66
+00:04:27,483 --> 00:04:29,744
+Simplemente, escribid el comando que he escrito,
+
+67
+00:04:29,779 --> 00:04:31,911
+o más bien, que he copiado de internet.
+
+68
+00:04:31,946 --> 00:04:34,674
+Así que vamos a escribir nuestra contraseña.
+
+69
+00:04:38,969 --> 00:04:40,767
+Y ya está, está iniciando.
+
+70
+00:04:41,889 --> 00:04:44,306
+Está descargando e instalando Homebrew.
+
+71
+00:04:44,341 --> 00:04:47,204
+No tengo ni idea de cuánto va a tardar esto,
+
+72
+00:04:47,239 --> 00:04:52,015
+puede que fuera más fácil usar un Apple ID
+
+73
+00:04:52,610 --> 00:04:54,546
+pero no tengo ganas, la verdad...
+
+74
+00:04:56,885 --> 00:04:58,932
+No me apetece ahora mismo,
+
+75
+00:04:59,067 --> 00:05:00,668
+me gusta coger el camino largo.
+
+76
+00:05:00,803 --> 00:05:03,053
+Creo que de todas formas lo necesito,
+
+77
+00:05:04,218 --> 00:05:06,913
+no para el curso,
+sino para otras cosas que tengo que hacer
+
+78
+00:05:06,948 --> 00:05:09,930
+y he pensado que estaría bien enseñar cómo
+
+79
+00:05:09,965 --> 00:05:12,893
+para los que lo quieran hacer sin mucho lío.
+
+80
+00:05:12,928 --> 00:05:17,576
+Vamos a escribir "brew search".
+Veamos si funciona igual que en Linux,
+
+81
+00:05:17,611 --> 00:05:21,343
+sería genial si fuera
+como el gestor de paquetes de Linux.
+
+82
+00:05:22,721 --> 00:05:25,540
+Brew search...
+
+83
+00:05:28,140 --> 00:05:32,085
+No sé... 7zip
+
+84
+00:05:33,273 --> 00:05:37,892
+Y encontraremos... Eso,
+p7zip, ese lo conozco de Linux.
+
+85
+00:05:37,927 --> 00:05:43,154
+Ese me sirve, así que "brew install",
+
+86
+00:05:43,189 --> 00:05:47,393
+es genial que pueda tener
+funcionalidades de Linux en Mac
+
+87
+00:05:48,462 --> 00:05:50,787
+y yo suelo usar
+la línea de comandos para instalar.
+
+88
+00:05:51,222 --> 00:05:54,587
+Me diréis que es más simple usar un GUI,
+
+89
+00:05:54,622 --> 00:05:57,802
+pero es que no me apetece.
+
+90
+00:06:00,452 --> 00:06:04,683
+Te da una interfaz que tienes que seguir,
+
+91
+00:06:04,718 --> 00:06:07,672
+tienes que hacer clic en un montón de cosas, etc.
+
+92
+00:06:07,707 --> 00:06:10,549
+Así solo escribo
+el nombre del paquete, instalar y listo.
+
+93
+00:06:10,884 --> 00:06:15,857
+Descargando binario HT,
+descargando Yosemite bottle...
+
+94
+00:06:17,802 --> 00:06:22,365
+Ya debería estar,
+vamos a probar a escribir p7.
+
+95
+00:06:24,668 --> 00:06:26,553
+No. ¿Cómo se llamaba?
+
+96
+00:06:30,533 --> 00:06:35,019
+Voy a ver dónde estoy
+y luego iré a la carpeta de Descargas
+
+97
+00:06:35,354 --> 00:06:38,981
+y aquí tengo un archivo que necesita descomprimir.
+
+98
+00:06:39,016 --> 00:06:42,244
+Lo puedo hacer con un GUI,
+pero vamos a ver si lo consigo con la terminal.
+
+99
+00:06:46,247 --> 00:06:48,833
+"Unzip", bien, ya lo tenemos.
+
+100
+00:06:51,226 --> 00:06:53,433
+Perfecto, pulsamos Enter.
+
+101
+00:06:54,786 --> 00:06:58,512
+"End-of-central-directory signature not found".
+
+102
+00:06:58,747 --> 00:07:03,567
+No es un archivo zip...
+Vale, pues me he equivocado.
+
+103
+00:07:06,686 --> 00:07:08,328
+Supongo que no está extraido.
+
+104
+00:07:09,977 --> 00:07:12,911
+Por supuesto que no. Vamos a usar...
+
+105
+00:07:17,307 --> 00:07:19,555
+Vamos a probar con GUI para extraerlo,
+
+106
+00:07:19,790 --> 00:07:21,559
+porque me he olvidado por completo del comando
+
+107
+00:07:21,694 --> 00:07:23,447
+y seguro que no funciona.
+
+108
+00:07:24,142 --> 00:07:25,671
+Elegir aplicación.
+
+109
+00:07:30,853 --> 00:07:36,832
+"7zip". Aquí. ¿Es así como funciona Homebrew?
+
+110
+00:07:37,580 --> 00:07:42,143
+No, no funciona así.
+Recordar que podría haber hecho esto
+
+111
+00:07:42,178 --> 00:07:45,591
+previamente, preo quería
+encontrarme con todos los problemas
+
+112
+00:07:45,826 --> 00:07:49,295
+que se encontraría el usuario primerizo de Mac
+
+113
+00:07:49,330 --> 00:07:52,621
+para que todos veáis que se puede hacer.
+
+114
+00:07:52,756 --> 00:07:55,337
+Y si me tengo que tragar mis propias palabras,
+
+115
+00:07:55,372 --> 00:07:57,958
+pues supongo que me las tragaré.
+
+116
+00:08:05,945 --> 00:08:09,543
+¿Y si hacemos "ls /bin/"?
+Debería estar en la Papelera, ¿no?
+
+117
+00:08:19,294 --> 00:08:20,848
+No, aquí no está.
+
+118
+00:08:20,483 --> 00:08:23,895
+A ver cuál era la
+carpeta de instalación, debería ser
+
+119
+00:08:24,030 --> 00:08:28,481
+/usr/local/cellar/p7zip
+
+120
+00:08:58,201 --> 00:09:02,830
+ChangeLog, readme, todo list, bin, share.
+
+121
+00:09:02,965 --> 00:09:06,777
+Vamos a la Papelera. ¡Aquí está!
+
+122
+00:09:13,280 --> 00:09:18,952
+"7z --help", para que me dé el botón de ayuda.
+
+123
+00:09:21,083 --> 00:09:26,389
+Añadir a archivo, benchmark,
+borrar archivos, extraer de archivo
+
+124
+00:09:26,424 --> 00:09:29,292
+sin usar el nombre del directorio.
+
+125
+00:09:30,588 --> 00:09:34,617
+BIen, vamos a probar a extraer "-e"
+
+126
+00:09:41,002 --> 00:09:44,755
+/Downloads/. Si os
+preguntáis qué es este símbolo, la tilde,
+
+127
+00:09:44,790 --> 00:09:49,027
+es la abreviatura del
+directorio Home del usuario actual.
+
+128
+00:09:49,462 --> 00:09:53,534
+En Linux podría haber escrito esto,
+
+129
+00:09:53,569 --> 00:09:55,756
+si no me equivoco, funcionará.
+
+130
+00:10:04,046 --> 00:10:07,505
+Pues no. Así no se va al directorio Home en Mac,
+
+131
+00:10:07,540 --> 00:10:10,122
+así es cómo se hace en Linux, pero da igual.
+
+132
+00:10:10,157 --> 00:10:14,791
+Esta es la abreviatura universal
+para el directorio Home del usuario actual,
+
+133
+00:10:15,026 --> 00:10:21,350
+Tengo Kali... 7z,
+pulso Enter. Línea de comando incorrecta.
+
+134
+00:10:21,385 --> 00:10:23,046
+Me pregunto cuál es el problema.
+
+135
+00:10:30,710 --> 00:10:36,128
+Ahora estoy aquí,
+y me gustaría ir hacia
+
+136
+00:10:38,102 --> 00:10:43,155
+Home. No es Descargas, no me da nada más.
+
+137
+00:10:45,730 --> 00:10:48,564
+Vale, pues vamos a ver dónde está físicamente
+
+138
+00:10:48,699 --> 00:10:50,898
+porque como veis, me está costando bastante.
+
+139
+00:10:55,836 --> 00:10:58,086
+Vamos a ir a Usuarios
+
+140
+00:11:01,610 --> 00:11:04,831
+Udemy y luego Descargas.
+
+141
+00:11:04,966 --> 00:11:07,613
+Espero que os guste verme pelear con Mac,
+
+142
+00:11:07,748 --> 00:11:09,688
+supongo que debe ser bastante interesante,
+
+143
+00:11:09,723 --> 00:11:11,374
+o bastante aburrido para algunos.
+
+144
+00:11:12,801 --> 00:11:17,547
+Vamos a usar el mismo
+comando de antes para obtener ayuda
+
+145
+00:11:17,582 --> 00:11:20,005
+porque necesito asistencia, la verdad.
+
+146
+00:11:21,724 --> 00:11:27,528
+Dice "7z command, switches,
+archive names, file names, affiliates".
+
+147
+00:11:27,763 --> 00:11:33,155
+Parece que todo está bien,
+y necesito pasar un comando "e".
+
+148
+00:11:33,190 --> 00:11:36,193
+A lo mejor no se pasa como yo creo que se pasa.
+
+149
+00:11:36,328 --> 00:11:39,978
+Igual se pasa sin el guion, es otra posibilidad,
+
+150
+00:11:40,213 --> 00:11:45,096
+a ver si eso funciona.
+Sistemas diferentes, formatos diferentes.
+
+151
+00:11:45,231 --> 00:11:49,986
+Voilà. Lo tenemos. He conseguido solucionarlo.
+
+152
+00:11:51,595 --> 00:11:53,155
+Seguro que muchos de los que me vean
+
+153
+00:11:53,190 --> 00:11:55,780
+dirán "¿por que haces esto?"
+
+154
+00:11:55,815 --> 00:11:58,863
+"estás demostrando que no sabes hacerlo".
+
+155
+00:11:58,998 --> 00:12:01,958
+Pero como he dicho, me compré el Mac hace unos días
+
+156
+00:12:02,193 --> 00:12:06,277
+y pensé que sería buena idea
+
+157
+00:12:06,512 --> 00:12:11,149
+grabarlo mientras lo hago
+para encontrarme con los mismos problemas
+
+158
+00:12:11,184 --> 00:12:15,149
+que os encontraríais
+vosotros, y así ponerme en el lugar
+
+159
+00:12:15,184 --> 00:12:19,144
+de todos los que puedan pasar por esto,
+
+160
+00:12:19,179 --> 00:12:21,506
+y para encontrarme
+obstáculos y que veáis que me cuesta
+
+161
+00:12:21,541 --> 00:12:24,404
+y cómo encuentro la solución al problema,
+
+162
+00:12:25,885 --> 00:12:29,812
+de manera que os pueda ayudar a todos mejor.
+
+163
+00:12:29,847 --> 00:12:32,170
+Está procesando, puede tardar un rato.
+
+164
+00:12:32,505 --> 00:12:35,306
+Vamos a dejarlo en marcha
+
+165
+00:12:35,341 --> 00:12:37,100
+y luego veremos qué hacemos con él.
+
+166
+00:12:37,165 --> 00:12:38,848
+Creo que voy a pausar aquí el tutorial
+
+167
+00:12:39,083 --> 00:12:43,999
+y continuar en la siguiente unidad
+
+168
+00:12:44,000 --> 00:12:46,004
+y ver cómo lo resolvemos.
+
+169
+00:12:46,039 --> 00:12:49,994
+Creo que le voy a dar un poco más de tiempo y
+
+170
+00:12:50,029 --> 00:12:54,047
+luego lo pauso, pero...
+
+171
+00:12:55,338 --> 00:12:58,144
+Ojalá tuviera a quien consultar ahora,
+
+172
+00:12:58,179 --> 00:13:01,646
+pero estoy aquí solo,
+lo estoy haciendo por primera vez,
+
+173
+00:13:01,781 --> 00:13:04,644
+así que perdonad los errores que cometa,
+
+174
+00:13:04,779 --> 00:13:07,559
+pero al menos os he
+enseñado las soluciones de estos errores,
+
+175
+00:13:07,694 --> 00:13:10,473
+y pueden resolver vuestros posibles problemas.
+
+176
+00:13:12,699 --> 00:13:15,333
+Estoy oyendo que el disco gira muy rápido,
+
+177
+00:13:15,368 --> 00:13:17,933
+En estos momentos me gustaría tener una SSD,
+
+178
+00:13:18,917 --> 00:13:22,081
+pero el precio era
+un poco excesivo por un Mac con SSD,
+
+179
+00:13:23,417 --> 00:13:25,484
+y teniendo en cuenta que es solo para Udemy...
+
+180
+00:13:26,488 --> 00:13:28,110
+Me lo perdonaréis, claro.
+
+181
+00:13:28,150 --> 00:13:30,191
+Así que voy a dividir el tutorial aquí
+
+182
+00:13:30,226 --> 00:13:32,560
+y luego continuaremos
+
+183
+00:13:32,595 --> 00:13:38,466
+en el siguiente cuando
+haya acabado de descomprimir.
+

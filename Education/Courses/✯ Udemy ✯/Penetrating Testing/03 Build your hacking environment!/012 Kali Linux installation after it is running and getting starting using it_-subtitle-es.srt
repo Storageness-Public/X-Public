@@ -1,0 +1,794 @@
+1
+00:00:00,100 --> 00:00:02,316
+Hola a todos, bienvenidos a este tutorial.
+
+2
+00:00:03,030 --> 00:00:05,720
+Tengo en marcha Kali Linux.
+
+3
+00:00:07,056 --> 00:00:10,327
+Dejé el vídeo anterior en el proceso de instalación
+
+4
+00:00:10,362 --> 00:00:13,706
+porque era bastante inútil estar de brazos cruzados
+
+5
+00:00:13,741 --> 00:00:16,421
+y esperar a que termine.
+
+6
+00:00:16,956 --> 00:00:21,704
+Porque la instalación
+de Kali Linux suele tardar más
+
+7
+00:00:21,739 --> 00:00:24,625
+que otros sistemas operativos de Linux.
+
+8
+00:00:24,860 --> 00:00:29,111
+Más que nada por
+las herramientas que trae de serie.
+
+9
+00:00:29,146 --> 00:00:32,300
+No obstante, he hecho unas capturas de pantalla
+
+10
+00:00:34,161 --> 00:00:37,932
+con algunas de las opciones que
+da durante el proceso de instalación.
+
+11
+00:00:39,882 --> 00:00:44,469
+Solo son tres. Voy a abrirlas aquí.
+
+12
+00:00:44,704 --> 00:00:49,397
+La primera es de cuando me ha preguntado
+
+13
+00:00:49,632 --> 00:00:55,699
+"¿Quieres usar un espejo para
+complementar el software incluido en el CD-ROM?
+
+14
+00:00:59,554 --> 00:01:03,034
+Esto también puede
+proporcionar nuevas versiones del software".
+
+15
+00:01:03,269 --> 00:01:04,599
+Le he dicho que no,
+
+16
+00:01:04,434 --> 00:01:08,655
+porque voy a actualizar
+en cuanto finalice la instalación
+
+17
+00:01:09,399 --> 00:01:12,212
+y haya configurado todo adecuadamente.
+
+18
+00:01:14,305 --> 00:01:18,074
+La actualización es parte de lo que voy a configurar.
+
+19
+00:01:19,572 --> 00:01:22,572
+No, no quiero usar espejos ni nada de eso.
+
+20
+00:01:22,607 --> 00:01:27,445
+Voy a decir que "No" y a seguir con la instalación.
+
+21
+00:01:29,818 --> 00:01:34,027
+La siguiente es GRUB, GRUB boot loader.
+
+22
+00:01:34,062 --> 00:01:39,618
+Me pregunta si quiero instalar GRUB boot loader
+
+23
+00:01:39,557 --> 00:01:41,119
+en el registro de arranque maestro.
+
+24
+00:01:41,204 --> 00:01:44,016
+Sí, quiero. Hacemos clic.
+
+25
+00:01:44,051 --> 00:01:48,239
+Como este es el único
+sistema operativo de esta máquina
+
+26
+00:01:50,307 --> 00:01:54,772
+no hay nada que se pueda
+estropear instalando GRUB boot loader
+
+27
+00:01:54,807 --> 00:01:58,775
+en el registro de arranque
+maestro del primer disco duro,
+
+28
+00:01:58,810 --> 00:02:00,960
+tal y como dice aquí en las instrucciones.
+
+29
+00:02:00,995 --> 00:02:05,183
+GRUB boot loader se puede
+usar para configurar varios arranques
+
+30
+00:02:06,577 --> 00:02:09,691
+o puedes poner tres,
+cuatro, cinco sistemas operativos,
+
+31
+00:02:09,926 --> 00:02:13,319
+tantos como quieras y soporte el hardware.
+
+32
+00:02:13,354 --> 00:02:15,085
+No a la vez, obviamente,
+
+33
+00:02:15,120 --> 00:02:17,985
+pero a la hora de arrancar te preguntará
+
+34
+00:02:18,020 --> 00:02:20,996
+qué sistema operativo quieres arrancar.
+
+35
+00:02:21,031 --> 00:02:24,176
+Esa es una de las opciones que te da GRUB.
+
+36
+00:02:24,511 --> 00:02:28,110
+Pero dejando eso aparte, haced clic en "Sí".
+
+37
+00:02:28,145 --> 00:02:30,344
+Y queda la última.
+
+38
+00:02:30,679 --> 00:02:34,250
+Simplemente dice que
+se ha completado la instalación
+
+39
+00:02:34,585 --> 00:02:39,380
+y si habéis usado un CD
+para la instalación, o un USB,
+
+40
+00:02:40,604 --> 00:02:46,468
+tenéis que sacarlo y volver a arrancar el sistema
+
+41
+00:02:47,518 --> 00:02:50,447
+para que todo esto funcione.
+
+42
+00:02:50,682 --> 00:02:55,311
+Eso es todo. Te hace estas
+tres preguntas, muy simples.
+
+43
+00:02:55,346 --> 00:02:56,861
+Tenéis las respuestas aquí.
+
+44
+00:02:57,096 --> 00:03:00,449
+Hacedlo. No va a suponer una gran diferencia.
+
+45
+00:03:03,219 --> 00:03:08,736
+Cierro esto y voy a iniciar
+sesión en la máquina virtual Kali Linux.
+
+46
+00:03:08,771 --> 00:03:10,495
+El nombre de usuario es...
+
+47
+00:03:11,590 --> 00:03:15,597
+Esta es una de las raras
+ocasiones, por no decir que es la única,
+
+48
+00:03:15,632 --> 00:03:18,493
+en que entro en GUI con root.
+
+49
+00:03:20,485 --> 00:03:24,587
+Pronto veréis que todo
+el mundo entra en Kali Linux con root
+
+50
+00:03:24,922 --> 00:03:29,960
+porque no lo vamos
+a usar para navegar por internet.
+
+51
+00:03:31,494 --> 00:03:36,836
+El 99% de las veces
+se usa para llevar a cabo un ataque.
+
+52
+00:03:37,171 --> 00:03:42,455
+Y casi todas esas
+herramientas necesitan que seas root
+
+53
+00:03:42,490 --> 00:03:44,498
+o tengas privilegios root.
+
+54
+00:03:47,388 --> 00:03:52,915
+Casi nunca hay razón para tener
+otros usuarios en una distro Kali.
+
+55
+00:03:54,605 --> 00:03:56,632
+Escribid "root", Enter.
+
+56
+00:03:56,667 --> 00:03:58,755
+Mi contraseña es "test", Enter.
+
+57
+00:03:58,790 --> 00:04:01,315
+La vuestra es la que hayáis elegido.
+
+58
+00:04:02,485 --> 00:04:05,345
+Si es una máquina virtual,
+no hace falta preocuparse mucho,
+
+59
+00:04:05,380 --> 00:04:08,024
+pero si fuera vuestro ordenador principal...
+
+60
+00:04:08,359 --> 00:04:13,120
+No se recomienda usar
+Kali como ordenador principal.
+
+61
+00:04:13,255 --> 00:04:16,771
+No es buena idea,
+es mejor usarla como máquina virtual.
+
+62
+00:04:17,106 --> 00:04:21,802
+Vale, primero tengo que
+hacer algunas cosas, actualizaciones
+
+63
+00:04:22,137 --> 00:04:26,254
+para poder instalar
+las Guest Additions de VirtualBox
+
+64
+00:04:26,589 --> 00:04:32,404
+y poder usar la pantalla completa
+y poder compartir el portapapeles.
+
+65
+00:04:37,859 --> 00:04:41,059
+Abro la terminal y ajusto la vista.
+
+66
+00:04:42,479 --> 00:04:44,748
+Esto son cosas no técnicas, lo podéis hacer,
+
+67
+00:04:44,683 --> 00:04:46,578
+lo podéis configurar como queráis.
+
+68
+00:04:46,513 --> 00:04:50,300
+Solo lo estoy acercando
+para que lo veáis mejor durante el tutorial.
+
+69
+00:04:50,535 --> 00:04:54,785
+Pero antes de actualizar,
+antes de que podamos hacer nada,
+
+70
+00:04:54,920 --> 00:04:57,915
+debemos que comprobar
+que tenemos conexión a internet.
+
+71
+00:04:58,150 --> 00:05:01,545
+Escribo "ping yahoo.com". Listo.
+
+72
+00:05:02,212 --> 00:05:06,346
+No pasa nada, así que
+no puedo ejecutar yahoo.com con ping,
+
+73
+00:05:06,381 --> 00:05:09,130
+lo cual significa que
+no hay salida a la red externa.
+
+74
+00:05:09,365 --> 00:05:12,383
+No puedo acceder a internet.
+
+75
+00:05:13,643 --> 00:05:16,281
+Esto es un problema gordo,
+porque casi todo lo que haremos
+
+76
+00:05:16,316 --> 00:05:19,832
+requiere estar conectados a internet
+
+77
+00:05:20,267 --> 00:05:24,509
+para descargar paquetes de repositorios, actualizar,
+
+78
+00:05:26,106 --> 00:05:28,966
+para hacer escaneos, etc.
+
+79
+00:05:30,330 --> 00:05:32,301
+Así que vamos a hacer clic en "Devices",
+
+80
+00:05:33,654 --> 00:05:36,917
+"Network", "Network settings"
+
+81
+00:05:36,952 --> 00:05:41,041
+y aquí podéis ver que por defecto está NAT,
+
+82
+00:05:41,076 --> 00:05:43,959
+pero no queremos NAT, queremos "Bridged adapter"
+
+83
+00:05:43,994 --> 00:05:46,965
+y aquí elegimos el adaptador que tengamos.
+
+84
+00:05:47,000 --> 00:05:49,824
+El mío es p8p1, mirad cuál es el vuestro
+
+85
+00:05:49,859 --> 00:05:54,036
+y haced clic en "Allow VMs", virtual machines.
+
+86
+00:05:54,471 --> 00:05:59,997
+Si no sabes qué adaptador tiene
+vuestra máquina y usáis un sistema Linux
+
+87
+00:06:00,032 --> 00:06:02,970
+abrid la terminal
+
+88
+00:06:05,059 --> 00:06:06,908
+y escribid "ifconfig".
+
+89
+00:06:08,426 --> 00:06:12,878
+Aquí veréis una lista
+de los adaptadores que tenéis.
+
+90
+00:06:12,913 --> 00:06:15,444
+Por ejemplo, "lo", que es loopback,
+
+91
+00:06:15,479 --> 00:06:17,967
+está "p8p1", que es mi conexión ethernet.
+
+92
+00:06:18,002 --> 00:06:19,958
+Esta también es para algunas máquinas virtuales.
+
+93
+00:06:19,993 --> 00:06:24,003
+Y "wlp2s0", que es mi interfaz inalámbrica.
+
+94
+00:06:24,038 --> 00:06:27,407
+Estoy seguro de que estoy usando p8p1
+
+95
+00:06:27,442 --> 00:06:30,055
+porque me lo dice el gestor de redes.
+
+96
+00:06:30,090 --> 00:06:32,246
+¿Veis? Conectado a p8p1.
+
+97
+00:06:33,447 --> 00:06:38,524
+De hecho, esta es una forma mejor
+de comprobar a qué estás conectado
+
+98
+00:06:38,559 --> 00:06:40,596
+y qué adaptador estás utilizando.
+
+99
+00:06:40,631 --> 00:06:43,757
+Así que abrid el gestor de
+redes, en la esquina superior derecha.
+
+100
+00:06:45,025 --> 00:06:47,649
+Fijaos en p8p1, dice "connected".
+
+101
+00:06:47,884 --> 00:06:50,343
+La posición del gestor de redes puede cambiar
+
+102
+00:06:50,178 --> 00:06:52,380
+dependiendo de cómo hayáis configurado el sistema.
+
+103
+00:06:52,315 --> 00:06:55,400
+Por defecto, está en la esquina superior derecha.
+
+104
+00:06:55,435 --> 00:06:58,675
+Pero, de todas formas,
+es bastante fácil de encontrar.
+
+105
+00:06:58,710 --> 00:07:02,144
+Vamos a seguir. Cerramos la terminal.
+
+106
+00:07:02,779 --> 00:07:05,705
+Ahora que hemos configurado la red.
+
+107
+00:07:05,640 --> 00:07:07,328
+¿La hemos configurado? Sí.
+
+108
+00:07:07,363 --> 00:07:11,286
+Aun así, estoy bastante seguro
+de que no tendré conexión a internet.
+
+109
+00:07:11,321 --> 00:07:12,949
+Voy a probar ping otra vez.
+
+110
+00:07:13,084 --> 00:07:14,805
+Ya veis, no funciona.
+
+111
+00:07:14,840 --> 00:07:16,672
+Hay algún problema de nuevo.
+
+112
+00:07:16,807 --> 00:07:20,166
+Vamos a comprobar el gestor de redes de Kali Linux.
+
+113
+00:07:20,301 --> 00:07:23,401
+Dice que hay red por cable,
+pero el dispositivo no está gestionado.
+
+114
+00:07:23,636 --> 00:07:27,123
+Esto es un problema, un problema general
+
+115
+00:07:27,358 --> 00:07:31,251
+que os encontraréis con
+las interfaces cableadas casi siempre.
+
+116
+00:07:32,288 --> 00:07:35,034
+Hay una forma relativamente fácil de arreglarlo.
+
+117
+00:07:35,169 --> 00:07:38,503
+En la terminal escribimos "cd",
+que viene de "change directory",
+
+118
+00:07:39,858 --> 00:07:43,756
+"etc", "networkmanager". Veamos lo que tiene.
+
+119
+00:07:43,791 --> 00:07:48,380
+Perfecto. Tenemos "NetworkManager.conf".
+
+120
+00:07:50,028 --> 00:07:54,910
+Voy a escribir "nano",
+que es el editor de texto que usaré,
+
+121
+00:07:54,945 --> 00:07:59,816
+y seguido "NetworkManager.conf", Enter, listo.
+
+122
+00:07:59,951 --> 00:08:02,453
+Se abre el archivo de configuración.
+
+123
+00:08:02,488 --> 00:08:04,939
+Para hacer cambios aquí no hace falta ser root.
+
+124
+00:08:05,274 --> 00:08:11,259
+Dice "main", "plugins", "ifupdown",
+"keyfile", "ifupdown", "managed=false".
+
+125
+00:08:11,394 --> 00:08:15,131
+Donde dice "false",
+lo borramos y vamos a poner "true".
+
+126
+00:08:16,662 --> 00:08:22,148
+Control+O para guardar,
+pulsamos Enter, Control+X para salir.
+
+127
+00:08:23,376 --> 00:08:26,524
+Ahora tenemos que reiniciar el gestor de redes.
+
+128
+00:08:26,559 --> 00:08:30,694
+Vamos a escribir "service network",
+
+129
+00:08:33,543 --> 00:08:36,820
+"network manager restart".
+
+130
+00:08:39,079 --> 00:08:41,150
+Deteniendo e iniciando. Perfecto.
+
+131
+00:08:41,962 --> 00:08:46,291
+Conexión establecida.
+Ahora estoy conectado a ifupdown (ath0).
+
+132
+00:08:47,295 --> 00:08:52,357
+Comprobemos la conectividad, "ping yahoo.com".
+
+133
+00:08:52,792 --> 00:08:56,184
+Genial. Ahora tenemos conexión a internet.
+
+134
+00:08:56,419 --> 00:08:59,872
+Prestad atención a estos
+pasos. Son bastante importantes,
+
+135
+00:09:00,949 --> 00:09:04,351
+no tanto para la parte del hackeo ético,
+
+136
+00:09:04,386 --> 00:09:08,360
+puesto que son para preparar el entorno,
+
+137
+00:09:08,395 --> 00:09:10,784
+porque preparar el entorno
+puede ser un poco problemático.
+
+138
+00:09:10,819 --> 00:09:14,415
+Te puedes encontrar varios problemas, virus, etc.
+
+139
+00:09:14,450 --> 00:09:19,158
+y en vez de tener que ir de
+un foro a otro buscando una solución
+
+140
+00:09:19,493 --> 00:09:22,444
+podéis simplemente seguir
+este tutorial. Solo prestad un poco de atención
+
+141
+00:09:23,823 --> 00:09:28,217
+y os enseñaré a resolver casi
+todas las cuestiones que puedan surgir.
+
+142
+00:09:28,252 --> 00:09:32,183
+Porque yo mismo he instalado de cero
+
+143
+00:09:32,218 --> 00:09:36,029
+y me voy a encontrar
+los mismos problemas que cualquiera
+
+144
+00:09:36,064 --> 00:09:38,269
+y me gustaría analizarlos,
+
+145
+00:09:39,281 --> 00:09:42,363
+porque lo más probable
+al instalar una máquina virtual
+
+146
+00:09:42,498 --> 00:09:45,310
+es que os encontréis con problemas similares.
+
+147
+00:09:46,973 --> 00:09:52,080
+Pero si os surgen otros problemas,
+podéis publicar vuestras preguntas
+
+148
+00:09:53,057 --> 00:09:57,545
+y yo estaré encantado
+de responder lo mejor que pueda.
+
+149
+00:09:57,580 --> 00:10:00,242
+Voy a despejar la pantalla.
+
+150
+00:10:00,377 --> 00:10:02,975
+Ahora que tenemos conexión a internet
+
+151
+00:10:04,645 --> 00:10:10,072
+voy a llevar a cabo las
+actualizaciones, porque son necesarias.
+
+152
+00:10:10,307 --> 00:10:14,620
+En serio, hay que
+actualizar el sistema regularmente
+
+153
+00:10:14,855 --> 00:10:19,632
+porque veréis que algunas cosas
+dejan de funcionar después de un tiempo.
+
+154
+00:10:19,667 --> 00:10:21,646
+Voy a cambiar el directorio.
+
+155
+00:10:21,681 --> 00:10:25,207
+Despejo la pantalla. Escribo "apt-get update.
+
+156
+00:10:27,128 --> 00:10:29,507
+Esto lo podría hacer con un comando en Fedora
+
+157
+00:10:29,542 --> 00:10:31,666
+pero aquí voy a necesitar dos.
+
+158
+00:10:31,901 --> 00:10:35,479
+Está cogiendo cosas de los repositorios. Bien.
+
+159
+00:10:35,514 --> 00:10:38,371
+Ahora tengo que escribir "apt-get upgrade".
+
+160
+00:10:41,713 --> 00:10:43,353
+Y ahora dice que después de esta operación
+
+161
+00:10:43,388 --> 00:10:48,235
+se usarán 73.3 MB más de espacio de disco.
+
+162
+00:10:48,270 --> 00:10:51,340
+Es esta última frase que he seleccionado.
+
+163
+00:10:52,701 --> 00:10:54,754
+Eso es mucho,
+en lo que se refiere a actualizaciones.
+
+164
+00:10:54,589 --> 00:10:56,182
+Mirad cuántos paquetes.
+
+165
+00:10:56,833 --> 00:11:01,644
+Todos estos paquetes
+necesitan actualizarse. Y la lista sigue.
+
+166
+00:11:03,657 --> 00:11:08,081
+Aquí empieza y acaba bastante más abajo.
+
+167
+00:11:10,048 --> 00:11:11,714
+De todas formas, escribid que sí.
+
+168
+00:11:11,949 --> 00:11:17,467
+Basta con escribir la "y",
+pulsar Enter y empieza el proceso.
+
+169
+00:11:18,002 --> 00:11:20,710
+Depende de vuestra conexión a internet,
+
+170
+00:11:20,927 --> 00:11:24,694
+puede tardar más o menos tiempo.
+
+171
+00:11:26,394 --> 00:11:31,176
+Voy a terminar el tutorial aquí
+hasta que se acabe de actualizar.
+
+172
+00:11:31,211 --> 00:11:33,858
+Porque no quiero estar aquí cara a la pantalla.
+
+173
+00:11:36,206 --> 00:11:37,865
+Se actualizará todo hasta el final.
+
+174
+00:11:39,113 --> 00:11:42,461
+No va a salir ninguna pregunta durante el proceso.
+
+175
+00:11:43,687 --> 00:11:46,197
+A lo mejor os informa de alguna cosa.
+
+176
+00:11:46,232 --> 00:11:49,522
+Puede salir alguna ventana de texto. No pasa nada.
+
+177
+00:11:49,557 --> 00:11:52,153
+La podéis leer y luego cerrar.
+
+178
+00:11:52,188 --> 00:11:56,929
+Son archivos "Léeme" que especifican
+las características de algunos paquetes
+
+179
+00:11:56,964 --> 00:12:02,577
+y qué se ha actualizado,
+pero no hace falta leerlo, las podéis cerrar.
+
+180
+00:12:03,212 --> 00:12:10,188
+Después, si queréis,
+podéis averiguar qué contiene cada paquete.
+
+181
+00:12:12,312 --> 00:12:15,422
+Seguiremos con este proceso en el próximo tutorial.
+
+182
+00:12:15,457 --> 00:12:18,794
+Hasta entonces, me despido.
+

@@ -1,0 +1,937 @@
+1
+00:00:00,000 --> 00:00:03,499 A:middle
+Bonjour à tous et bienvenue dans ce tutoriel.
+
+2
+00:00:03,500 --> 00:00:07,766
+Aujourd'hui, nous allons parler 
+de quelques termes de base
+
+3
+00:00:07,767 --> 00:00:10,199
+dont vous en aurez besoin pour 
+suivre ce cours tout le long.
+
+4
+00:00:10,200 --> 00:00:14,366
+En premier lieu, vous avez trois 
+principales catégories de personnes.
+
+5
+00:00:14,367 --> 00:00:19,966
+Il y a les Pirates aux Chapeaux Blancs, 
+aux Chapeaux Gris  et aux Chapeaux Noirs.
+
+6
+00:00:19,967 --> 00:00:23,832
+tout ce que nous allons faire concerne
+la categorie suivante 
+
+7
+00:00:23,833 --> 00:00:26,732
+donc, les Chapeaux Blancs -
+
+8
+00:00:26,733 --> 00:00:30,166
+ce sont des gens dont les activités
+sont conformes aux règles de la loi.
+
+9
+00:00:30,167 --> 00:00:35,499
+des gens comme les testeurs d'intrusions, 
+les pirates éthiques, des gens comme vous et moi
+
+10
+00:00:35,500 --> 00:00:36,866
+et ainsi de suite.
+
+11
+00:00:36,867 --> 00:00:38,966
+ensuite, vous avez les Pirates aux Chapeaux Gris
+
+12
+00:00:38,967 --> 00:00:43,299
+dont leurs activités dont sont centrées 
+entre légale et illégale.
+
+13
+00:00:43,300 --> 00:00:45,032
+il y a surement quelque chose de louche
+
+14
+00:00:45,033 --> 00:00:49,632
+en dernier, vous avez la catégorie la plus connue
+
+15
+00:00:49,633 --> 00:00:51,566
+qui sont les Pirates aux Chapeaux Noirs.
+
+16
+00:00:51,567 --> 00:00:57,999
+généralement, et, malheureusement, chaque fois 
+que quelqu'un entend le terme de piratage
+
+17
+00:00:58,000 --> 00:01:02,832
+ils sont associés  aux Chapeaux Noirs
+
+18
+00:01:02,833 --> 00:01:07,700
+ce sont les gens qui effectuent 
+toutes sortes d'activités illégales
+
+19
+00:01:07,701 --> 00:01:10,266
+ou qui mènent des activités sans 
+aucun égard pour la loi
+
+20
+00:01:10,267 --> 00:01:15,432
+et, je ne sais pas, extraire de nouvelles 
+informations de certains serveurs
+
+21
+00:01:15,433 --> 00:01:19,699
+informations confidentielles, 
+carte de crédit, geler des systèmes
+
+22
+00:01:19,700 --> 00:01:24,966
+habituellement, pour soutirer 
+une sorte de gain financier
+
+23
+00:01:24,967 --> 00:01:28,699
+en tout cas, en bas vous avez le footprinting.
+
+24
+00:01:28,700 --> 00:01:34,366
+l’empreinte est essentiellement 
+l’action de collecter des informations.
+
+25
+00:01:34,367 --> 00:01:39,399
+vous menez une sorte de travail de reconnaissance
+
+26
+00:01:39,400 --> 00:01:42,766
+vous déterminez l’IP du serveur
+
+27
+00:01:42,767 --> 00:01:44,866
+déterminer quels ports sont ouverts
+
+28
+00:01:44,867 --> 00:01:49,699
+et avec cela, vous pouvez conclure que 
+les services sont en cours d'exécution
+
+29
+00:01:49,700 --> 00:01:52,766
+mais vous ne devez pas vous limiter 
+nécessairement à l'univers digital.
+
+30
+00:01:52,767 --> 00:01:57,232
+quand vous allez physiquement dans la société 
+peut être considéré comme l’acte du footprinting
+
+31
+00:01:57,233 --> 00:01:58,000
+marcher dans l’enceinte.
+
+32
+00:01:58,001 --> 00:02:01,566
+elle ne doit pas être 
+forcement une entreprise.
+
+33
+00:02:01,567 --> 00:02:04,832
+elle peut être à peu près n’importe 
+quel bâtiment qui garde des serveurs 
+
+34
+00:02:04,833 --> 00:02:06,299
+et vous pouvez jeter 
+un coup d'oeil autour.
+
+35
+00:02:06,300 --> 00:02:09,699
+pour essayer de recueillir 
+quelques informations sur place
+
+36
+00:02:09,700 --> 00:02:12,099
+ou vous pouvez encore 
+par le biais de leurs poubelles.
+
+37
+00:02:12,100 --> 00:02:16,032
+vous allez derrière le bâtiment, 
+sautez dans les poubelles
+
+38
+00:02:16,033 --> 00:02:18,132
+et obtenir des informations clés.
+
+39
+00:02:18,133 --> 00:02:21,599
+aussi, les gens ont l’habitude 
+de fréquenter le stationnement
+
+40
+00:02:21,600 --> 00:02:24,766
+pour voir qui sont les employés
+
+41
+00:02:24,767 --> 00:02:26,332
+et qui y travaille.
+
+42
+00:02:26,333 --> 00:02:27,166
+toutes sortes de choses.
+
+43
+00:02:27,167 --> 00:02:34,166
+donc, ceci c’est une collecte générale d'information, 
+en ce qui concerne la cible choisie.
+
+44
+00:02:34,167 --> 00:02:38,199
+Il n'a pas besoin d'être centre au monde numérique.
+
+45
+00:02:38,200 --> 00:39:.799
+quoi qu'il en soit, en dessous
+
+46
+00:02:39,800 --> 00:02:41,832
+vous avez certains types d'attaques -
+
+47
+00:02:41,833 --> 00:02:44,199
+vous avez DoS and DDoS.
+
+48
+00:02:44,200 --> 00:02:50,599
+très simple. fondamentalement, la même 
+implémentationd'une manière différente
+
+49
+00:02:50,600 --> 00:02:54,232
+DoS signifie " refus de service"
+
+50
+00:02:54,233 --> 00:02:58,632
+habituellement appelé "attaques enfantin" parce qu'ils
+sont relativement faciles à mettre en oeuvre
+
+51
+00:02:58,633 --> 00:03:02,666
+et ils sont aussi valables si vous avez plusieurs machines, 
+
+52
+00:03:02,667 --> 00:03:05,132
+dans le cas de DDoS
+
+53
+00:03:05,133 --> 00:03:11,266
+en général, ce qui se passe ici c’est quand 
+vous effectuez une certaine quantité de demandes
+
+54
+00:03:11,267 --> 00:02:13,566
+plus de demandes qu'un serveur peut gérer
+
+55
+00:03:13,567 --> 00:03:16,699
+et le serveur refusera les autres connections
+
+56
+00:03:16,700 --> 00:03:19,766
+par exemple, Apache serveur web — 
+je le prends par défaut
+
+57
+00:03:19,767 --> 00:03:24,066
+il peut gérer jusqu'a 10.000 connexions ou plus
+
+58
+00:03:24,067 --> 00:03:27,399
+et si vous pouvez faire plus de 10.000 demandes
+
+59
+00:03:27,400 --> 00:03:32,366
+fondamentalement, tout le monde 
+pratique toutes sortes de demandes
+
+60
+00:03:32,367 --> 00:03:34,766
+vous ne serez pas en mesure 
+d'accéder au site internet
+
+61
+00:03:34,767 --> 00:03:36,066
+parce que les connexions seront gelées
+
+62
+00:03:36,067 --> 00:03:38,799
+tout simplement parce que Apache dira
+
+63
+00:03:38,800 --> 00:03:42,299
+"ok, je suis au maximum du nombre d’utilisateurs.
+j’ai plus de connexions disponible à la quantité adhérée"
+
+64
+00:03:42,300 --> 00:03:45,466
+toutes les autres connexions 
+seront gelées par défaut.
+
+65
+00:03:45,467 --> 00:03:52,199
+rendant les sites inaccessibles, même si vous 
+n’avez pas vraiment brisé aucuns codes
+
+66
+00:03:52,200 --> 00:03:57,032
+et n’avez pas vraiment franchi les pare-feu
+ou vole des mots de passe
+
+67
+00:03:57,033 --> 00:03:59,166
+ou quelque chose du genre
+
+68
+00:03:59,167 --> 00:04:04,532
+mais quand vous êtes utilisez dos, 
+c’est seulement vous.
+
+69
+00:04:04,533 --> 00:04:07,466
+toutes les connexions, toutes les demandes
+
+70
+00:04:07,467 --> 00:04:12,699
+tout vient simplement à partir 
+de votre propre ordinateur
+
+74
+00:04:12,700 --> 00:04:15,199
+et ce ne sont pas toujours 
+la manière la plus efficace
+
+75
+00:04:15,200 --> 00:04:19,299
+en fait, généralement, il peut 
+fonctionner que s’il y a une faille
+
+76
+00:04:19,300 --> 00:04:22,466
+de quelle façon les demandes sont-elles traitées
+
+77
+00:04:22,467 --> 00:04:27,233
+cependant, c’est la raison pour laquelle 
+vous avez des attaques DDoS
+
+78
+00:04:27,234 --> 00:04:31,132
+lorsque vous avez plusieurs ordinateurs, 
+et des connexions multiples
+
+79
+00:04:31,133 --> 00:04:36,466
+et ils font tous des requêtes 
+simultanées à un certain serveur
+
+80
+00:04:36,467 --> 00:04:38,367
+cette lutte est vraiment difficile
+
+81
+00:04:38,368 --> 00:04:45,032
+je veux dire, vous avez vraiment besoin d'avoir 
+une configuration intelligente de votre pare-feu
+
+82
+00:04:45,033 --> 00:04:46,132
+et un bon pare-feu robuste. 
+
+83
+00:04:46,133 --> 00:04:51,499
+habituellement, vous auriez besoin d'un pare –feu 
+physique pour prévenir ce genre d'attaques DDoS
+
+
+84
+00:04:51,500 --> 00:04:55,499
+en terme physique, je veux dire le pare-feu 
+d’un routeur ou quelque chose du genre
+
+85
+00:04:55,500 --> 00:04:57,599
+ceci a l'air très difficile 
+
+86
+00:04:57,600 --> 00:05:02,199
+il n’est pas difficile 
+de mener une certaine attaque
+
+87
+00:05:02,200 --> 00:05:05,699
+il nécessite cependant une impeccable 
+et bonne préparation.
+
+88
+00:05:05,700 --> 00:05:10,099
+tout d'abord, vous devez infecter
+d'autres appareils, que vous utiliserai
+
+89
+00:05:10,100 --> 00:05:15,566
+pour hypnotise et utiliser  
+dans l’ordre de ce genre d'attaque
+
+90
+00:05:15,567 --> 00:05:17,199
+ceci est la partie la plus difficile.
+ 
+91
+00:05:17,200 --> 00:05:21,299
+la partie DDoS est assez 
+facile par rapport à cela.
+
+92
+00:05:21,300 --> 00:05:26,299
+pour cela, dans l'ordre d’infecter d'autres ordinateurs,
+ vous avez besoin de deux choses -
+
+93
+00:05:26,300 --> 00:05:30,799
+vous avez besoin de rats 
+(outils administrations à distance)
+
+94
+00:05:30,800 --> 00:05:32,499
+et vous avez besoin de vous RCI (FUD)
+
+95
+00:05:32,500 --> 00:05:35,999
+vous devez vous rendre complétement indétectable.
+
+96
+00:05:36,000 --> 00:05:38,244
+voilà ce que le terme FUD signifie.
+
+97
+00:05:38,245 --> 00:05:42,866
+donc, cela signifie qu'ils ne peuvent 
+pas être détectes par l’antivirus
+
+98
+00:05:42,867 --> 00:05:44,033
+ou bien pour être plus précis
+
+99
+00:05:44,034 --> 00:05:49,599
+ils ne sont pas étiquetés comme quelque chose
+de malveillant par les programmes antivirus
+
+100
+00:05:49,600 --> 00:05:55,566
+en passant, parfois  et même la plupart du temps
+
+101
+00:05:55,567 --> 00:05:59,732
+vous n'avez réellement pas besoin de faire
+vos propres applications totalement indétectable.
+
+102
+00:05:59,733 --> 00:06:02,099
+il y a beaucoup de sociétés 
+de  test d'intrusions.
+
+103
+00:06:02,100 --> 00:06:05,433
+non seulement les entreprises de test d’intrusion,
+mais beaucoup d'autres entreprises 
+
+104
+00:06:05,434 --> 00:06:07,999
+sont prets a payer de très forte somme d'argent
+
+105
+00:06:08,000 --> 00:06:14,166
+si vous pouvez rendre leur programme totalement 
+indétectable par les programmes antivirus
+
+106
+00:06:14,167 --> 00:06:18,033
+en dessous, les rats (outils d’administration à distance)
+
+107
+00:06:18,034 --> 00:06:24,966
+ils ne sont pas une sorte d’attaque 
+ou quelque chose du genre.
+
+108
+00:06:24,967 --> 00:06:26,099
+ils leurs mettent sur une clé USB 
+
+109
+00:06:26,100 --> 00:06:30,855
+les envois par courriel
+
+110
+00:06:30,856 --> 00:06:34,099
+les partages sous forme de fichier zip
+
+111
+00:06:34,100 --> 00:06:36,644
+en quelque sorte
+
+112
+00:06:36,645 --> 00:06:38,866
+une des manières d'infecter d'autres ordinateurs
+
+113
+00:06:38,867 --> 00:06:40,011
+ou d’autres dispositifs
+
+114
+00:06:40,012 --> 00:06:42,766
+prendre le contrôle 
+
+115
+00:06:42,767 --> 00:06:46,866
+convertir les terminals en esclave au
+du serveur principal
+
+116
+00:06:46,867 --> 00:06:52,666
+ou chaque attaque pourrait être partout
+où vous pourriez les mettre en place
+
+117
+00:06:52,667 --> 00:06:56,122
+et qui vous donne la possibilité d’utiliser 
+l'ensemble de ces ordinateurs
+
+118
+00:06:56,123 --> 00:06:58,699
+pour mener toutes sortes d'activités.
+
+119
+00:06:58,700 --> 00:07:02,755
+ça parait le mieux parce que votre niveau 
+d’anonymat est à son plus grand extension.
+
+120
+00:07:02,756 --> 00:07:06,066
+il est très difficile de retracer 
+une personne en ce sens, 
+
+121
+00:07:06,067 --> 00:07:09,599
+principalement parce que les utilisateurs, 
+qui sont infectés
+
+122
+00:07:09,600 --> 00:07:16,533
+ils ne savent pas que quelqu'un d’autre
+est entrain de contrôler de leurs appareils
+
+123
+00:07:16,534 --> 00:07:20,799
+parce que rien ne se passe réellement sur votre 
+ordinateur vous ne pouvez vraiment pas voir.
+
+124
+00:07:20,800 --> 00:07:23,033
+tous les processus en cours d'exécution 
+marchent parfaitement en arrière-plan
+
+125
+00:07:23,034 --> 00:07:26,699
+et votre processeur les exécute normalement
+
+126
+00:07:26,700 --> 00:07:29,455
+la seule manière de découvrir cela, 
+
+127
+00:07:29,456 --> 00:07:32,566
+serait essentiellement de démarrer
+le gestionnaire des taches
+
+128
+00:07:32,567 --> 00:07:34,999
+ou quelque chose d'un genre
+
+129
+00:07:35,000 --> 00:07:36,299
+et visualiser les processus en éxécution
+
+130
+00:07:36,300 --> 00:07:38,533
+et peut-être que vous pourriez les arrêter d’ici
+
+132
+00:07:38,534 --> 00:07:42,766
+mais même par le si quelqu'un 
+a mis en place un rootkit.
+
+133
+00:07:42,767 --> 00:07:46,233
+donc, un rootkit est un outil essentiel
+
+134
+00:07:46,234 --> 00:07:49,344
+que vous installez sur un système d'exploitation
+
+135
+00:07:49,345 --> 00:07:57,533
+il est capable de cacher les processus 
+en cours d'exécution du système 
+
+136
+00:07:57,534 --> 00:08:00,299
+ainsi, lorsque vous lancez, par exemple, 
+le gestionnaire des taches dans Windows
+
+137
+00:08:00,300 --> 00:08:02,766
+ou quelque chose d'un genre
+
+138
+00:08:02,767 --> 00:08:07,344
+le but d'un rootkit serait de cacher 
+les processus du gestionnaire de taches
+
+139
+00:08:07,345 --> 00:08:12,688
+fondamentalement comment cela fonctionne
+dans le gestionnaire de taches du système
+
+140
+00:08:12,689 --> 00:08:13,599
+le noyau (kernel) répond
+
+141
+00:08:13,600 --> 00:08:17,299
+quel est le coeur du système?
+
+142
+00:08:17,300 --> 00:08:20,533
+ou sont  les pilotes et les fonctionnalités 
+qu’ils remplissent.
+
+143
+00:08:20,534 --> 00:08:22,433
+le noyau du système répondra alors
+
+144
+00:08:22,434 --> 00:08:26,299
+"hé, j’ai tel ou tel ou tel ou tel processus en cours."
+
+145
+00:08:26,300 --> 00:08:30,100
+le rôle du rootkit est de rediriger ces demandes
+du gestionnaire de taches d’où ils proviennent
+
+146
+00:08:30,101 --> 00:08:37,233
+et la réponse serait essentiellement de dire "je n’ai pas
+de tels ou tels processus en cours d'exécution"
+
+147
+00:08:37,234 --> 00:08:40,599
+donc ces combinaisons sont très 
+dangereuses et puissantes
+
+148
+00:08:40,600 --> 00:08:44,533
+celle que nous allons utiliser en progressons 
+dans les prochains vidéo de ce tutoriel
+
+149
+00:08:44,534 --> 00:08:49,799
+mais pour le moment, je voulais juste 
+vous donner un aperçu d’introduction
+
+150
+00:08:49,800 --> 00:08:52,000
+et vous donner une idée 
+de ce que nous allons faire
+
+151
+00:08:52,001 --> 00:08:54,499
+grâce à certains de ces termes 
+et concepts de base.
+
+152
+00:08:54,500 --> 00:08:58,766
+On poursuit avec les attaques par phishing 
+ou d’hameçonnage.
+
+153
+00:08:58,767 --> 00:09:07,199
+maintenant, les attaques par phishing sont
+essentiellement lorsque vous appliquez une sorte d'appât
+
+154
+00:09:07,200 --> 00:09:10,366
+lorsque quelqu'un a mordu, 
+vous tirez dessus.
+
+155
+00:09:10,367 --> 00:09:12,966
+aussi simple que ça, non?
+
+156
+00:09:12,967 --> 00:09:14,832
+de la même façon que vous le feriez à la pêche.
+
+157
+00:09:14,833 --> 00:09:18,732
+les attaques de phishing 
+seraient quand vous obtenez 
+
+158
+00:09:18,733 --> 00:09:20,166
+je ne sais pas, un courriel de quelqu'un
+
+159
+00:09:20,167 --> 00:09:22,499
+et il se trouve qu'il y a un lien 
+
+160
+00:09:22,500 --> 00:09:24,866
+que vous devez cliquer dessus
+
+161
+00:09:24,867 --> 00:09:29,966
+et qui vous redirigerez quelque part, 
+je ne sais pas, sur un certain site web
+
+162
+00:09:29,967 --> 00:09:32,299
+peut-être qu'il ressemble a 
+quelque chose de légale.
+
+163
+00:09:32,300 --> 00:09:35,032
+peut-être qu’il ressemble à un site web 
+que vous utilisez ou quelque chose d'un genre
+
+164
+00:09:35,033 --> 00:09:37,455
+mais c’est faux et vous tapez vos informations 
+d'identification comme d’habitude
+
+165
+00:09:37,456 --> 00:09:39,677
+cela peut être un problème
+
+167
+00:09:39,678 --> 00:09:41,599
+mais ce qui est généralement 
+évitée aujourd'hui
+
+168
+00:09:41,600 --> 00:09:48,799
+plutôt a place ce qui se passe ces jours-ci 
+c’est que les serveurs DNS sont tous changés
+
+169
+00:09:48,800 --> 00:09:49,633
+dans les routeurs
+
+170
+00:09:49,634 --> 00:09:51,877
+et une fois que cela arrive
+
+171
+00:09:51,878 --> 00:09:56,599
+la demande précédente que vous avez fait 
+sur votre navigateur web est redirige
+
+172
+00:09:56,600 --> 00:09:58,433
+ainsi, par exemple, 
+si vous tapez dans facebook.com
+
+173
+00:09:58,434 --> 00:10:01,033
+vous allez obtenir un domaine 
+avec facebook.com
+
+174
+00:10:01,034 --> 00:10:01,677
+d’un serveur DNS privé
+
+175
+00:10:01,678 --> 00:10:03,533
+de nulle part
+
+176
+00:10:03,534 --> 00:10:09,655
+qui sont des enregistrements MX, 
+modifiés et ils ont été configurés.
+
+177
+00:10:09,656 --> 00:10:14,788
+par exemple, pour faire des redirections 
+pour interpréter facebook.com
+
+178
+00:10:14,789 --> 00:10:22,533
+désole, au lieu de redirection disons plutôt 
+interpréter facebook.com avec une fausse adresse  IP
+
+179
+00:10:22,534 --> 00:10:24,233
+donc, vous ouvrez votre facebook
+
+180
+00:10:24,234 --> 00:10:26,066
+il ressemble exactement a la même
+
+181
+00:10:26,067 --> 00:10:32,366
+il n'y a aucune façon de les distinguer 
+parce que dans le coin supérieur gauche de l'écran
+
+182
+00:10:32,367 --> 00:10:34,655
+vous avez le nom de domaine écrit -
+
+183
+00:10:34,656 --> 00:10:36,899
+qui est wwww.facebook.com
+
+184
+00:10:36,900 --> 00:10:40,056
+et essentiellement la page de connexion
+
+185
+00:10:40,057 --> 00:10:43,322
+une fois que vous tapez vos informations, 
+elles sont toutes parties.
+
+186
+00:10:43,323 --> 00:10:46,632
+assurez-vous qu’une personne les a en possession.
+
+187
+00:10:46,633 --> 00:10:49,799
+une façon de vérifier ce qui se passe
+
+188
+00:10:49,800 --> 00:10:52,466
+même si elle est très, 
+je veux dire qu'il n’est pas difficile
+
+189
+00:10:52,467 --> 00:10:55,388
+mais personne ne fait vraiment 
+pas attention à cela.
+
+190
+00:10:55,389 --> 00:11:01,788
+dans le coin supérieur gauche, 
+vous pouvez vérifier avec le protocole qui est HTTPS 
+
+191
+00:11:01,789 --> 00:11:03,899
+au lieu de HTTP
+
+192
+00:11:03,900 --> 00:11:05,122
+parce que d'habitude, 
+si ce genre d'attaques sont menées
+
+193
+00:11:05,123 --> 00:11:08,632
+ça ne va pas être HTTPS
+
+194
+00:11:08,633 --> 00:11:10,599
+un statut beaucoup plus difficile 
+à mettre en oeuvre
+
+195
+00:11:10,600 --> 00:11:14,544
+mais si elle est HTTPS, 
+il n’existe aucune façon légale de le découvrir
+
+196
+00:11:14,545 --> 00:11:16,633
+autres que de vérifier effectivement les clés
+
+197
+00:11:16,634 --> 00:11:18,700
+vérifier les certificats et
+
+198
+00:11:18,701 --> 00:11:20,522
+personne ne pratique cela
+
+199
+00:11:20,523 --> 00:11:22,500
+eh bien peut-être pas personne
+
+200
+00:11:22,501 --> 00:11:25,500
+mais 99% des utilisateurs ne le font pas
+
+201
+00:11:25,501 --> 00:11:29,366
+pour effectuer ces types de vérifications.
+
+202
+00:11:29,367 --> 00:11:32,300
+quoi qu'il en soit, je sais que 
+cela semble un peu complexe
+
+203
+00:11:32,301 --> 00:11:35,366
+mais croyez-moi; je vais vous expliquer 
+cela avec beaucoup plus de détails
+
+204
+00:11:35,367 --> 00:11:37,400
+je vais vous faire plusieurs démonstrations
+
+205
+00:11:37,401 --> 00:11:39,300
+et à la fin du cours
+
+206
+00:11:39,301 --> 00:11:45,066
+vous allez comprendre et savoir
+comment opérer avec une grande facilite.
+
+207
+00:11:45,067 --> 00:11:48,100
+il ne se présentera aucun obstacle 
+dans votre ligne de travail.
+
+208
+00:11:48,101 --> 00:11:54,011
+excellent. maintenant que nous avons fait connaissance 
+d’environ la moitié de ces termes 
+
+209
+00:11:54,012 --> 00:11:58,366
+que je vais continuer à traiter 
+avec eux dans le tutoriel suivant
+
+210
+00:11:58,367 --> 00:12:00,000
+et je souhaite sincèrement d'être vous voir bientôt.
+
+
+
+

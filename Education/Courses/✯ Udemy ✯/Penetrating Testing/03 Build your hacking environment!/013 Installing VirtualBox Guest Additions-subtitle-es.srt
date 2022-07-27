@@ -1,0 +1,1010 @@
+1
+00:00:00,000 --> 00:00:02,365
+Hola a todos, bienvenidos a este tutorial.
+
+2
+00:00:02,700 --> 00:00:07,093
+Hoy voy a seguir por
+donde lo dejé en el vídeo anterior.
+
+3
+00:00:07,428 --> 00:00:10,837
+Si os acordáis, utilizamos
+el comando "apt-get update"
+
+4
+00:00:10,872 --> 00:00:13,233
+y el comando "apt-get upgrade".
+
+5
+00:00:14,218 --> 00:00:16,252
+El proceso ha tardado bastante en terminar.
+
+6
+00:00:16,487 --> 00:00:19,645
+Me ha salido solo una vez un archivo "Léeme"
+
+7
+00:00:19,680 --> 00:00:22,483
+con respecto al programa Wget, el paquete Wget.
+
+8
+00:00:24,065 --> 00:00:28,347
+Lo que hay que hacer es pulsar Q para salir.
+
+9
+00:00:28,382 --> 00:00:31,200
+No hay que cerrar la
+terminal y finalizar las actualizaciones,
+
+10
+00:00:31,235 --> 00:00:34,120
+sino pulsar Q para salir del archivo "Léeme"
+
+11
+00:00:34,355 --> 00:00:38,070
+y las actualizaciones seguirán sin problemas.
+
+12
+00:00:39,248 --> 00:00:43,430
+Hoy vamos a configurar la lista de fuentes.
+
+13
+00:00:43,665 --> 00:00:47,807
+Esta es la lista de
+repositorios de la cual la distro Linux
+
+14
+00:00:47,942 --> 00:00:51,398
+extrae diversos paquetes e información.
+
+15
+00:00:51,433 --> 00:00:56,145
+Igual que Fedora, Kali Linux tiene repositorios.
+
+16
+00:00:56,180 --> 00:00:57,639
+Si vamos a su página web,
+
+17
+00:00:57,674 --> 00:01:00,414
+el enlace es este que he marcado aquí,
+
+18
+00:01:02,230 --> 00:01:03,856
+tenemos estos cuatro repositorios
+
+19
+00:01:03,891 --> 00:01:06,614
+que son los repositorios
+predeterminados de Kali Linux.
+
+20
+00:01:06,749 --> 00:01:08,866
+Podemos copiarlos y pegarlos.
+
+21
+00:01:08,901 --> 00:01:11,196
+No es mala idea, la verdad.
+
+22
+00:01:12,927 --> 00:01:15,563
+No sé por qué, pero no consigo encontrarlos
+
+23
+00:01:15,598 --> 00:01:18,273
+en la lista de repositorios, la lista de fuentes.
+
+24
+00:01:18,308 --> 00:01:20,144
+Así que lo tengo que hacer manualmente.
+
+25
+00:01:20,779 --> 00:01:28,317
+Ahora tenéis que escribir "cd /etc/apt".
+
+26
+00:01:31,206 --> 00:01:35,459
+"Ls" y listo. Tenemos "sources.list".
+
+27
+00:01:35,494 --> 00:01:39,518
+Ahora escribimos "nano sources.list".
+
+28
+00:01:39,753 --> 00:01:44,534
+Pulsamos Enter
+y aquí tenemos el archivo de repositorios.
+
+29
+00:01:45,922 --> 00:01:49,259
+Aquí es donde aparecen
+en lista y los podemos escribir.
+
+30
+00:01:49,294 --> 00:01:51,704
+Así que vamos a copiar estos dos.
+
+31
+00:01:51,739 --> 00:01:54,810
+Ahora no me voy a preocupar
+por los duplicados y cosas así.
+
+32
+00:01:54,945 --> 00:01:58,492
+Los repositorios 
+duplicados no estropean nada, tranquilos.
+
+33
+00:01:59,529 --> 00:02:02,316
+El sistema es lo suficientemente
+inteligente como para darse cuenta.
+
+34
+00:02:02,351 --> 00:02:05,558
+Seguimos, vamos a copiar estos cuatro.
+
+35
+00:02:05,593 --> 00:02:07,671
+Después, si queremos, podemos arreglar esto
+
+36
+00:02:07,706 --> 00:02:09,647
+y eliminar duplicados o lo que haga falta.
+
+37
+00:02:09,682 --> 00:02:13,178
+Pero por ahora,
+no importa, no van a dañar nada.
+
+38
+00:02:13,213 --> 00:02:18,525
+copiad los cuatro,
+pulsad Control+O, Enter, Control+X para salir
+
+39
+00:02:20,555 --> 00:02:23,919
+y listo. Una vez más, Control+O para guardar.
+
+40
+00:02:25,341 --> 00:02:28,484
+Pulsad Control+O,
+Enter y luego Control+X para salir.
+
+41
+00:02:29,470 --> 00:02:31,507
+Perfecto. Ahora que eso ya está solucionado
+
+42
+00:02:31,742 --> 00:02:37,515
+despejamos la pantalla,
+y aunque hayamos puesto ahí los repositorios
+
+43
+00:02:37,880 --> 00:02:41,810
+no pasa nada, el sistema
+no podrá extraer nada de ellos
+
+44
+00:02:41,845 --> 00:02:44,640
+hasta que hagamos lo siguiente.
+
+45
+00:02:44,875 --> 00:02:49,593
+Lo que tenemos que hacer es "apt-get update".
+
+46
+00:02:50,785 --> 00:02:54,456
+No queremos una nueva versión del sistema,
+sino actualizar la lista de repositorios.
+
+47
+00:02:56,767 --> 00:02:59,949
+Supuestamente, irá bastante rápido y al final
+
+48
+00:02:59,984 --> 00:03:03,276
+lo más probable es
+que informe de resultados duplicados.
+
+49
+00:03:03,311 --> 00:03:05,838
+Pero está bien, no pasa nada, ningún problema.
+
+50
+00:03:05,873 --> 00:03:08,670
+Si os preguntáis por qué hacemos esto, bueno,
+
+51
+00:03:08,805 --> 00:03:11,196
+necesitamos los repositorios para instalar
+
+52
+00:03:11,231 --> 00:03:14,257
+los encabezados necesarios para el núcleo de Kali
+
+53
+00:03:14,292 --> 00:03:18,344
+que nos hacen falta para
+instalar las Guest Additions de VirtualBox
+
+54
+00:03:18,379 --> 00:03:20,955
+y poder tener la función de pantalla completa.
+
+55
+00:03:21,905 --> 00:03:25,598
+Porque si seguimos
+trabajando así, con la pantalla pequeña
+
+56
+00:03:26,622 --> 00:03:28,176
+no es buena idea, creedme.
+
+57
+00:03:28,870 --> 00:03:31,030
+Sobre todo, porque
+vamos a hacer muchas cosas
+
+58
+00:03:31,165 --> 00:03:33,677
+y necesitaremos tener muchas ventanas abiertas
+
+59
+00:03:33,712 --> 00:03:35,901
+y pueden surgir problemas.
+
+60
+00:03:35,936 --> 00:03:39,338
+No es un error.
+Lleva una W, así que es una advertencia.
+
+61
+00:03:39,373 --> 00:03:41,648
+Dice "duplicate sources list".
+
+62
+00:03:43,606 --> 00:03:48,656
+Nada grave, lo podemos
+solucionar después si queremos
+
+63
+00:03:48,691 --> 00:03:51,100
+pero ahora mismo no es necesario.
+
+64
+00:03:51,135 --> 00:03:54,083
+Voy a despejar la pantalla.
+
+65
+00:03:56,280 --> 00:04:01,331
+Ahora lo que quiero es instalar
+dos paquetes más que me permitirán
+
+66
+00:04:01,366 --> 00:04:06,231
+instalar y ejecutar las
+Guest Additions de VirtualBox.
+
+67
+00:04:06,266 --> 00:04:10,427
+Aquí tengo un comando
+preparado para vosotros que voy a usar.
+
+68
+00:04:10,662 --> 00:04:15,237
+Viene a ser lo siguiente: apt-get,
+
+69
+00:04:15,272 --> 00:04:18,877
+llamamos al gestor de paquetes
+y le decimos que queremos actualizar
+
+70
+00:04:18,912 --> 00:04:21,334
+pero como ya hemos actualizado algunas cosas
+
+71
+00:04:21,369 --> 00:04:23,783
+no necesitamos ese fragmento del comando.
+
+72
+00:04:23,818 --> 00:04:29,100
+Lo que voy a hacer
+es emplear "apt-get install -y"
+
+73
+00:04:29,135 --> 00:04:33,951
+luego está "dkms", que es
+un paquete, y luego tengo el otro paquete.
+
+74
+00:04:33,986 --> 00:04:36,468
+Aquí se pueden especificar
+varios paquetes, tantos como quieras.
+
+75
+00:04:37,925 --> 00:04:42,747
+Después tenemos
+"linux headers-" y lo que significa
+
+76
+00:04:42,782 --> 00:04:47,468
+es que es una variable, el dólar
+es una especie de variable, una cadena
+
+77
+00:04:50,277 --> 00:04:54,883
+y lo que genere el comando "uname -r"
+
+78
+00:04:54,918 --> 00:04:57,529
+se almacenará en esta variable
+
+79
+00:04:57,564 --> 00:05:01,840
+y se añadirá a la línea de texto, aquí.
+
+80
+00:05:01,875 --> 00:05:07,121
+Veréis, tengo el comando
+"uname -r" que he ejecutado en mi terminal
+
+81
+00:05:07,156 --> 00:05:09,756
+y me ha dado la versión del núcleo
+
+82
+00:05:09,791 --> 00:05:14,039
+y la arquitectura del sistema, 64 o 32 bits.
+
+83
+00:05:14,174 --> 00:05:16,835
+Voy a seguir, pulso Enter.
+
+84
+00:05:17,070 --> 00:05:21,113
+No hay nada que hacer,
+porque yo ya lo he instalado antes.
+
+85
+00:05:21,148 --> 00:05:24,357
+No quería perder tiempo durante el tutorial.
+
+86
+00:05:25,311 --> 00:05:28,507
+Pero el comando irá como la seda,
+
+87
+00:05:28,542 --> 00:05:31,615
+sobre todo por el argumento "-y",
+
+88
+00:05:31,650 --> 00:05:35,331
+con el que le decimos al gestor de paquetes
+
+89
+00:05:35,366 --> 00:05:38,934
+"si tienes alguna
+pregunta, respóndelas todas con Sí".
+
+90
+00:05:38,969 --> 00:05:43,593
+Así que el proceso de instalación ha ido bien.
+
+91
+00:05:43,828 --> 00:05:48,539
+Ahora voy a ejecutar "apt-get upgrade".
+
+92
+00:05:49,646 --> 00:05:52,862
+Aseguraos de hacer
+esto después de la instalación.
+
+93
+00:05:52,897 --> 00:05:56,031
+Yo ya lo he hecho,
+pero voy a hacer una pequeña demostración.
+
+94
+00:05:56,066 --> 00:05:59,087
+Dice que dos tienen nuevas versiones
+
+95
+00:05:59,122 --> 00:06:01,907
+metasploit y metasploit-framework,
+
+96
+00:06:01,942 --> 00:06:04,566
+pero dice que los paquetes han sido retenidos.
+
+97
+00:06:04,601 --> 00:06:07,100
+Esto se hace por un motivo razonable.
+
+98
+00:06:07,135 --> 00:06:10,226
+Más adelante
+entraremos en eso, pero por ahora
+
+99
+00:06:10,261 --> 00:06:11,958
+voy a despejar la pantalla.
+
+100
+00:06:12,093 --> 00:06:14,017
+Una de las primeras cosas que hay que hacer
+
+101
+00:06:14,052 --> 00:06:19,649
+es hacer clic en Devices,
+Insert Guest Additions CD image.
+
+102
+00:06:21,217 --> 00:06:23,003
+Eso es, ha aparecido.
+
+103
+00:06:23,038 --> 00:06:25,906
+Esta es una advertencia que hace Kali
+
+104
+00:06:25,941 --> 00:06:29,553
+y muchos otros sistemas operativos de Linux.
+
+105
+00:06:29,888 --> 00:06:34,895
+Si tenéis algún
+contenido en un CD o en un USB
+
+106
+00:06:34,930 --> 00:06:38,482
+y está configurado para
+ejecutarse automáticamente, el sistema lo bloquea
+
+107
+00:06:38,517 --> 00:06:40,828
+y luego te pide permiso,
+
+108
+00:06:41,849 --> 00:06:45,512
+dice "the medium contains software
+intended to be automatically started."
+
+109
+00:06:45,547 --> 00:06:46,518
+"Would you like to run it?"
+
+110
+00:06:46,553 --> 00:06:50,194
+Voy a decirle que sí
+y seguramente me dará un error.
+
+111
+00:06:51,089 --> 00:06:55,859
+Ahí está. "Error autorunning
+software. Cannot find autorun program".
+
+112
+00:06:56,572 --> 00:07:02,123
+El mensaje de error
+no nos da mucha información en este caso.
+
+113
+00:07:02,158 --> 00:07:05,545
+Supongo que podemos
+echarle un vistazo al historial
+
+114
+00:07:05,580 --> 00:07:08,342
+pero esta es una solución que podéis emplear
+
+115
+00:07:08,377 --> 00:07:11,575
+porque es un problema
+común y le sudece a mucha gente
+
+116
+00:07:11,610 --> 00:07:14,307
+y hay algunas soluciones estandarizadas
+
+117
+00:07:14,342 --> 00:07:17,125
+y parches que solucionan el problema.
+
+118
+00:07:17,160 --> 00:07:20,498
+Voy a escribir en la terminal "cd"
+
+119
+00:07:20,533 --> 00:07:24,270
+para cambiar el directorio y navegar
+
+120
+00:07:24,305 --> 00:07:26,984
+adonde está el CD
+de Guest Additions de VirtualBox,
+
+121
+00:07:27,019 --> 00:07:30,412
+es este, podéis usar la misma ruta que yo,
+
+122
+00:07:30,447 --> 00:07:38,305
+es "/media/" luego "ls", "cd", "cdrom0".
+
+123
+00:07:38,640 --> 00:07:42,988
+Genial. Ahora estamos
+aquí y mirad, tengo una lista
+
+124
+00:07:43,023 --> 00:07:48,558
+de prácticamente todo lo que contiene el CD.
+
+125
+00:07:48,593 --> 00:07:54,139
+Este es un CD virtual
+pero si fuera real funcionaría igual.
+
+126
+00:07:54,174 --> 00:07:59,020
+Este es el archivo que quiero,
+así que lo voy a mover de aquí
+
+127
+00:07:59,055 --> 00:08:01,762
+y para ello voy a usar el comando "cp".
+
+128
+00:08:01,797 --> 00:08:03,968
+También se puede usar el comando "move",
+
+129
+00:08:04,003 --> 00:08:06,121
+pero así lo quitas permanentemente de aquí
+
+130
+00:08:06,156 --> 00:08:07,959
+y no queremos hacer eso.
+
+131
+00:08:07,994 --> 00:08:11,356
+Escribís "cp" de copiar.
+
+132
+00:08:11,391 --> 00:08:15,373
+Y escribís el nombre de
+lo que queráis copiar. Muy simple.
+
+133
+00:08:15,408 --> 00:08:19,602
+Luego especificáis
+la ruta adonde queréis que se copie.
+
+134
+00:08:19,637 --> 00:08:22,382
+Yo quiero copiarlo en Home.
+
+135
+00:08:22,417 --> 00:08:24,494
+Pulsamos Enter, y listo.
+
+136
+00:08:24,529 --> 00:08:26,562
+Ahora vamos al directorio Home.
+
+137
+00:08:28,250 --> 00:08:30,460
+Pedimos una lista. Perfecto, está ahí.
+
+138
+00:08:31,825 --> 00:08:33,627
+La manera de ejecutar cualquier script en Linux,
+
+139
+00:08:33,662 --> 00:08:38,070
+cualquier archivo ejecutable,
+no solo un script, consiste simplemente
+
+140
+00:08:38,842 --> 00:08:43,402
+en pulsar "./" y el nombre
+del archivo, Enter, y ya está. En marcha.
+
+141
+00:08:44,402 --> 00:08:47,556
+Se están instalando las Guest Additions.
+
+142
+00:08:49,775 --> 00:08:51,469
+Yo he probado a hacerlo antes
+
+143
+00:08:51,504 --> 00:08:54,553
+para asegurarme de que todo iría bien
+
+144
+00:08:54,588 --> 00:08:57,452
+y por eso dice "removing existing things".
+
+145
+00:08:58,740 --> 00:09:02,372
+Puede que tarde un rato en acabar,
+
+146
+00:09:02,799 --> 00:09:06,857
+pero os aseguro de que
+lo hará. Hay muchas cosas pendientes
+
+147
+00:09:06,892 --> 00:09:11,694
+y por ese motivo está tardando algo más.
+
+148
+00:09:11,929 --> 00:09:14,590
+Aparte de la función de pantalla completa
+
+149
+00:09:14,625 --> 00:09:17,693
+que obtenemos al instalar Guest Additions,
+
+150
+00:09:17,828 --> 00:09:20,588
+por si pensáis que todo esto es un poco inútil
+
+151
+00:09:20,623 --> 00:09:23,874
+si sois alumnos, porque yo, como tutor
+
+152
+00:09:23,909 --> 00:09:26,421
+necesito la pantalla completa para que veáis bien,
+
+153
+00:09:26,456 --> 00:09:32,261
+también tenéis en Devices
+Drag'n'Drop y Shared Clipboard.
+
+154
+00:09:32,596 --> 00:09:37,674
+Drag'n'Drop, el nombre en sí ya lo dice,
+
+155
+00:09:37,709 --> 00:09:39,445
+extrae un archivo de algún sitio
+
+156
+00:09:39,480 --> 00:09:42,199
+y lo deja en otro 
+sitio de la máquina virtual, o viceversa.
+
+157
+00:09:42,234 --> 00:09:44,748
+Pero a mí no me gusta habilitar Drag'n'Drop.
+
+158
+00:09:45,183 --> 00:09:50,265
+Lo que sí me gusta habilitar
+es el Shared Clipboard, host to guest.
+
+159
+00:09:50,400 --> 00:09:54,830
+Y aquí viene el porqué.
+Yo utilizo el navegador en mi host
+
+160
+00:09:54,865 --> 00:09:58,145
+sobre todo porque si quieres ver algún vídeo
+
+161
+00:09:58,380 --> 00:10:01,898
+de lo que sea,
+no vale la pena molestarse
+
+162
+00:10:03,116 --> 00:10:06,997
+en instalar Flash
+en Kali Linux. Puede dar problemas.
+
+163
+00:10:08,122 --> 00:10:12,201
+Entonces, copiar y pegar de anfitrión a huésped
+
+164
+00:10:12,236 --> 00:10:15,706
+es muy útil y lo necesitaréis. Os lo aseguro.
+
+165
+00:10:15,741 --> 00:10:18,902
+También están los ajustes de carpetas compartidas.
+
+166
+00:10:18,937 --> 00:10:21,201
+Se puede crear una carpeta compartida
+
+167
+00:10:21,236 --> 00:10:23,735
+o se puede tener un servidor web localizado
+
+168
+00:10:23,770 --> 00:10:27,724
+en ambas máquinas, del que sacar la información
+
+169
+00:10:27,759 --> 00:10:30,699
+y al que introducir
+información si se configura adecuadamente,
+
+170
+00:10:30,734 --> 00:10:34,262
+pero las carpetas
+compartidas son mejores para eso.
+
+171
+00:10:34,297 --> 00:10:39,808
+Bueno, podéis revisar
+lo que ha pasado aquí. Está todo escrito.
+
+172
+00:10:39,843 --> 00:10:42,360
+La parte más importante de todo
+
+173
+00:10:42,395 --> 00:10:46,246
+es que no hay ningún informe de fallos.
+
+174
+00:10:46,281 --> 00:10:50,008
+Vamos a echarle un vistazo. Todo bien.
+
+175
+00:10:51,393 --> 00:10:52,933
+Ningún fallo,
+
+176
+00:10:53,168 --> 00:10:55,553
+"copiando módulos adicionales de instalación",
+
+177
+00:10:56,499 --> 00:11:00,063
+instalándolos. Hecho. Hecho. Hecho. Perfecto.
+
+178
+00:11:00,098 --> 00:11:02,813
+"Instalando los nuevos
+drivers de Windows", muy importante.
+
+179
+00:11:04,222 --> 00:11:08,460
+Hecho. Hecho "O reiniciar
+el sistema". El sistema Windows.
+
+180
+00:11:08,495 --> 00:11:12,894
+Voy a intentar reiniciar los gráficos.
+
+181
+00:11:12,929 --> 00:11:15,304
+Entonces, "init", ejecutar nivel 3. No.
+
+182
+00:11:15,405 --> 00:11:19,811
+"init" ejecutar nivel 5, ¿funcionará? No.
+
+183
+00:11:20,081 --> 00:11:22,080
+Parece ser que funciona en Fedora,
+
+184
+00:11:22,115 --> 00:11:25,304
+pero igual aquí el comando es diferente.
+
+185
+00:11:25,339 --> 00:11:29,290
+Voy a escribir "reboot".
+
+186
+00:11:29,325 --> 00:11:35,817
+Reboot es una opción más segura,
+init 3 y 5 son modos de arranque de Linux.
+
+187
+00:11:35,852 --> 00:11:39,464
+Uno no tiene interfaz gráfica, es puro texto.
+
+188
+00:11:39,499 --> 00:11:42,040
+Y el otro funciona con GUI.
+
+189
+00:11:43,277 --> 00:11:48,346
+La opción más segura
+cuando instalas ciertos paquetes
+
+190
+00:11:48,381 --> 00:11:50,679
+que están directamente
+vinculados con el núcleo,
+
+191
+00:11:51,014 --> 00:11:56,155
+sobre todo si tienes varios,
+lo más simple es volver a arrancar
+
+192
+00:11:56,190 --> 00:12:00,090
+por seguridad, simplemente.
+No cuesta mucho tiempo hacerlo.
+
+193
+00:12:00,425 --> 00:12:02,490
+Pasa bastante rápido
+
+194
+00:12:04,525 --> 00:12:07,358
+y es una opción mucho más segura.
+
+195
+00:12:07,493 --> 00:12:11,453
+Os ahorraréis muchos
+dolores de cabeza luego. Muy bien.
+
+196
+00:12:11,488 --> 00:12:14,957
+Aquí tenemos el arranque. Pulsamos Enter.
+
+197
+00:12:17,232 --> 00:12:21,425
+Voy a cerrar esto.
+Dejadme que cargue la pantalla completa.
+
+198
+00:12:21,460 --> 00:12:24,344
+Vamos a ver si va o no,
+
+199
+00:12:24,379 --> 00:12:28,477
+si las Guest Additions
+de VirtualBox que hemos instalado funcionan.
+
+200
+00:12:28,512 --> 00:12:31,697
+Si funcionan, genial, y si no
+
+201
+00:12:31,732 --> 00:12:33,487
+tendremos que intentar otra cosa
+
+202
+00:12:33,522 --> 00:12:39,744
+porque estas cosas tienden
+a fallar y pueden ocurrir errores.
+
+203
+00:12:43,421 --> 00:12:47,574
+Hay que iniciar sesión
+primero, "root" y debajo "test".
+
+204
+00:12:49,652 --> 00:12:52,258
+Perfecto, eso es. Ya tengo pantalla completa.
+
+205
+00:12:56,229 --> 00:12:58,819
+Está ajustando esta imagen. ¡Genial! Ahí la tenemos.
+
+206
+00:12:58,854 --> 00:13:01,919
+Tenemos Kali Linux en marcha con pantalla completa,
+
+207
+00:13:01,954 --> 00:13:06,062
+fantástico, ahora tenemos
+una vista general de la situación.
+
+208
+00:13:06,097 --> 00:13:08,936
+Si abro la terminal y...
+
+209
+00:13:09,171 --> 00:13:12,445
+Parece que el scroll no funciona,
+hay que configurarlo manualmente.
+
+210
+00:13:12,480 --> 00:13:17,300
+Acercamos. Esta es una de las cosas que me molestan
+
+211
+00:13:18,035 --> 00:13:20,897
+de Kali Linux, pero...
+
+212
+00:13:22,521 --> 00:13:25,159
+Ya está, así se acerca.
+
+213
+00:13:26,161 --> 00:13:31,962
+Control+- para alejar. Y para acercar Control++.
+
+214
+00:13:33,430 --> 00:13:37,488
+Estoy pulsando Control++,
+y parece que está minimizando.
+
+215
+00:13:39,295 --> 00:13:40,752
+No tiene importancia.
+
+216
+00:13:40,887 --> 00:13:43,845
+Lo agrandaré después
+según avancemos el tutorial.
+
+217
+00:13:44,080 --> 00:13:47,844
+Aquí hay un par de cosas defectuosas
+
+218
+00:13:47,879 --> 00:13:49,805
+sobre todo por el teclado
+
+219
+00:13:50,140 --> 00:13:52,863
+que usamos, porque es una máquina virtual.
+
+220
+00:13:52,898 --> 00:13:56,137
+Si usáis Kali Linux
+como máquina principal, como host
+
+221
+00:13:56,172 --> 00:13:59,155
+no tendréis estos
+problemas, pero como he dicho antes
+
+222
+00:13:59,190 --> 00:14:02,099
+no es una opción muy recomendable.
+
+223
+00:14:02,134 --> 00:14:05,570
+Bueno, eso es todo por hoy.
+
+224
+00:14:05,605 --> 00:14:09,188
+Estas son casi todas
+las preparaciones que había que hacer
+
+225
+00:14:09,223 --> 00:14:14,168
+y seguiremos con la
+interfaz de la línea de comandos de Linux.
+
+226
+00:14:14,203 --> 00:14:18,058
+Os tenéis que familiarizar con ella.
+Aunque hemos hecho algunos comandos,
+
+227
+00:14:18,293 --> 00:14:23,523
+son una pequeña parte de lo que vamos a hacer
+
+228
+00:14:23,558 --> 00:14:26,452
+y necesito explicároslos porque
+
+229
+00:14:26,487 --> 00:14:29,127
+vamos a usar mucho la línea de comandos de Linux.
+
+230
+00:14:29,162 --> 00:14:31,663
+Básicamente, lo necesitaremos para cualquier cosa.
+
+231
+00:14:34,541 --> 00:14:38,772
+Me despido y, sinceramente,
+espero veros en el próximo tutorial.
+

@@ -1,0 +1,929 @@
+1
+00:00:03,381 --> 00:00:04,984
+Hola a todos, bienvenidos a este tutorial.
+
+2
+00:00:05,219 --> 00:00:09,339
+Hoy os enseñaré una forma
+más fiable de instalar VirtualBox.
+
+3
+00:00:09,874 --> 00:00:14,725
+Si os preguntáis por qué
+os enseñé la otra forma usando RPM
+
+4
+00:00:14,960 --> 00:00:17,361
+si no la vamos a utilizar,
+
+5
+00:00:17,396 --> 00:00:20,971
+bueno, nunca está de más tener otra opción.
+
+6
+00:00:21,106 --> 00:00:23,900
+Y además, el procedimiento es el mismo
+
+7
+00:00:23,935 --> 00:00:26,737
+para instalar cualquier otro paquete RPM.
+
+8
+00:00:26,772 --> 00:00:32,620
+Escribís "rpm -i" y el nombre del paquete
+
+9
+00:00:32,655 --> 00:00:35,654
+que habéis descargado y queréis instalar.
+
+10
+00:00:35,689 --> 00:00:37,416
+El proceso es igual.
+
+11
+00:00:37,451 --> 00:00:41,872
+Recomiendo pasar también
+un argumento "h" para tener una barra de estado
+
+12
+00:00:41,965 --> 00:00:46,404
+porque si lo escribís
+directamente así, con el nombre del paquete
+
+13
+00:00:47,776 --> 00:00:49,316
+lo instalará, por supuesto,
+
+14
+00:00:49,498 --> 00:00:53,562
+pero la pantalla estará en espera. No pasará nada.
+
+15
+00:00:53,586 --> 00:00:57,181
+Y podéis pensar que es un virus
+o algo así durante la instalación.
+
+16
+00:00:57,560 --> 00:00:59,800
+De esta forma, con la "h", hay una barra de estado
+
+17
+00:01:00,035 --> 00:01:02,834
+que muestra que hay algo procesando.
+
+18
+00:01:03,269 --> 00:01:05,533
+Pero, lo dicho, está bien tener otra opción.
+
+19
+00:01:05,568 --> 00:01:10,461
+Lo que queremos hacer ahora es instalar VirtualBox
+
+20
+00:01:10,496 --> 00:01:13,977
+mediante el gestor de paquetes YUM,
+
+21
+00:01:14,012 --> 00:01:16,768
+sacando el paquete de los repositorios.
+
+22
+00:01:18,001 --> 00:01:19,656
+¿Y qué son los repositorios?
+
+23
+00:01:20,933 --> 00:01:24,507
+Son unos lugares donde se
+almacenan los paquetes de software
+
+24
+00:01:24,542 --> 00:01:26,381
+para distros de Linux.
+
+25
+00:01:26,916 --> 00:01:32,329
+Y luego puedes abrir los paquetes, paquetes de software
+
+26
+00:01:32,464 --> 00:01:36,565
+desde la distro de Linux mediante
+un gestor de paquetes predeterminado.
+
+27
+00:01:36,900 --> 00:01:39,772
+Es muy simple, es facilísimo.
+
+28
+00:01:40,007 --> 00:01:44,311
+Y es una de esas cosas que
+de verdad necesitáis saber hacer
+
+29
+00:01:44,346 --> 00:01:47,752
+porque vais a instalar y desinstalar muchas cosas
+
+30
+00:01:47,787 --> 00:01:49,823
+a lo largo de vuestra carrera de pentesters,
+
+31
+00:01:50,058 --> 00:01:53,885
+durante cualquier ejercicio de pentesting en general.
+
+32
+00:01:56,376 --> 00:01:58,201
+Voy a hacer una demostración.
+
+33
+00:01:58,336 --> 00:02:01,092
+Escribimos "yum" y luego le damos un comando.
+
+34
+00:02:01,227 --> 00:02:05,090
+Primero, usamos "yum"
+para llamar al gestor de paquetes,
+
+35
+00:02:05,125 --> 00:02:08,029
+que es YUM porque estoy usando Fedora,
+
+36
+00:02:08,264 --> 00:02:13,144
+pero si utilizara otro tipo
+de distro Debian, podría ser "aptitude"
+
+37
+00:02:16,755 --> 00:02:20,062
+O podría ser "apt-get".
+
+38
+00:02:21,378 --> 00:02:24,163
+Otras distros tienen sus propios gestores de paquetes,
+
+39
+00:02:24,198 --> 00:02:26,232
+pero ahora no vamos a entrar ahí.
+
+40
+00:02:26,267 --> 00:02:29,603
+Más adelante, os enseñaré el que usa Kali Linux.
+
+41
+00:02:29,638 --> 00:02:32,265
+Esa es la distro de Linux que usaremos
+
+42
+00:02:32,400 --> 00:02:35,361
+para llevar a cabo tareas de pentesting.
+
+43
+00:02:39,052 --> 00:02:41,828
+Entonces, escribimos "yum" y luego "search",
+
+44
+00:02:42,263 --> 00:02:46,761
+con el que le decimos a YUM qué hacer.
+
+45
+00:02:46,796 --> 00:02:50,248
+Queremos que busque algo y escribimos "search".
+
+46
+00:02:50,283 --> 00:02:53,439
+Es básicamente lo que dirías en inglés.
+
+47
+00:02:53,574 --> 00:02:56,870
+Solo hay que entender cuál es la lógica que usa.
+
+48
+00:02:57,105 --> 00:03:03,085
+Después vamos a buscar un nombre
+aproximado del paquete que queremos
+
+49
+00:03:03,120 --> 00:03:06,007
+porque puede que no sepamos el nombre completo.
+
+50
+00:03:07,582 --> 00:03:11,356
+No os preocupéis, escribid
+una parte del nombre, con eso basta.
+
+51
+00:03:11,991 --> 00:03:15,479
+Aparecerá cualquier cosa que contenga esa parte.
+
+52
+00:03:16,235 --> 00:03:20,016
+Sabemos lo que queremos, que es VirtualBox.
+
+53
+00:03:20,151 --> 00:03:22,735
+Y pensaréis que ese es el
+nombre completo del paquete, pero no.
+
+54
+00:03:22,770 --> 00:03:24,536
+No lo es, ahora lo veréis.
+
+55
+00:03:27,574 --> 00:03:33,403
+Ha escrito cada paquete
+que contiene VirtualBox en el nombre,
+
+56
+00:03:33,438 --> 00:03:38,470
+la palabra "virtualbox" en
+el nombre o en la descripción del paquete.
+
+57
+00:03:38,905 --> 00:03:43,581
+Como veis, aquí está el nombre del paquete, dos puntos
+
+58
+00:03:43,616 --> 00:03:45,704
+y luego la descripción del paquete.
+
+59
+00:03:47,550 --> 00:03:51,274
+Hay muchas cosas con el nombre "VirtualBox"
+
+60
+00:03:51,309 --> 00:03:53,701
+y puede que os preguntéis cuál instalar.
+
+61
+00:03:53,736 --> 00:03:59,873
+Necesitáis el Kmod, y aquí tenéis
+la versión del núcleo y de Fedora.
+
+62
+00:04:01,181 --> 00:04:03,439
+FC sería la versión de Fedora.
+
+63
+00:04:03,474 --> 00:04:07,645
+Aquí tenéis la arquitectura: 64.
+
+64
+00:04:11,767 --> 00:04:14,463
+Y aquí la versión del núcleo.
+
+65
+00:04:14,698 --> 00:04:17,134
+Lo podéis comparar con lo que tengáis
+
+66
+00:04:17,269 --> 00:04:20,225
+y según lo que tengáis
+y cuál sea vuestro sistema operativo
+
+67
+00:04:20,360 --> 00:04:24,438
+lo podéis coger de aquí,
+dando por hecho que es Fedora 20.
+
+68
+00:04:24,573 --> 00:04:29,013
+Podéis usar cualquier otra distro.
+El procedimiento es prácticamente el mismo.
+
+69
+00:04:29,048 --> 00:04:32,163
+Más adelante, en el apartado de preguntas
+
+70
+00:04:32,198 --> 00:04:34,733
+si utilizáis, por ejemplo, una distro basada en Debian,
+
+71
+00:04:36,073 --> 00:04:38,707
+OpenSUSE o similar,
+
+72
+00:04:38,742 --> 00:04:41,865
+podéis preguntarme
+lo que sea si no sabéis qué hacer aquí.
+
+73
+00:04:42,100 --> 00:04:44,648
+Yo os ayudaré sin problema.
+
+74
+00:04:44,783 --> 00:04:47,909
+Pero, por el momento, voy a seguir y lo voy a instalar.
+
+75
+00:04:48,444 --> 00:04:50,602
+Despejo la pantalla.
+
+76
+00:04:50,837 --> 00:04:53,900
+Para instalar el paquete hay que escribir "yum install"
+
+77
+00:04:54,135 --> 00:04:57,915
+seguido del nombre del paquete,
+
+78
+00:04:57,950 --> 00:05:01,846
+que para nosotros sería
+el último. Para mí, al menos.
+
+79
+00:05:06,868 --> 00:05:09,441
+El nombre es un poco largo, así que lo voy a copiar.
+
+80
+00:05:09,476 --> 00:05:11,801
+Aquí hay un problema fundamental.
+
+81
+00:05:14,196 --> 00:05:18,370
+El paquete VirtualBox no se puede encontrar
+
+82
+00:05:18,405 --> 00:05:21,423
+en los repositorios predeterminados de Fedora,
+
+83
+00:05:21,658 --> 00:05:24,168
+y eso es un inconveniente,
+
+84
+00:05:24,403 --> 00:05:28,291
+porque ninguno de estos comandos funcionaría
+
+85
+00:05:28,326 --> 00:05:32,976
+si no importase primero los repositorios RPM Fusion.
+
+86
+00:05:33,011 --> 00:05:37,771
+"RPM Fusion" es el nombre de un tipo de repositorios
+
+87
+00:05:38,106 --> 00:05:40,443
+que contienen determinados tipos de paquetes.
+
+88
+00:05:40,478 --> 00:05:42,833
+Así que he importado esos repositorios
+
+89
+00:05:42,868 --> 00:05:46,969
+y ahora puedo extraer información y paquetes de ellos.
+
+90
+00:05:47,304 --> 00:05:49,455
+Si no lo hubiera hecho previamente,
+
+91
+00:05:49,590 --> 00:05:53,977
+ahora no podría hacer nada de esto.
+
+92
+00:05:54,512 --> 00:05:58,614
+"Yum search virtualbox" no daría ningún resultado.
+
+93
+00:05:59,049 --> 00:06:01,131
+Saldría una pantalla en blanco.
+
+94
+00:06:01,266 --> 00:06:05,238
+Habría un mensaje diciendo
+que no se encuentra ningún paquete
+
+95
+00:06:05,573 --> 00:06:07,555
+que coincida con este nombre
+
+96
+00:06:07,590 --> 00:06:09,240
+y luego una pantalla en blanco.
+
+97
+00:06:09,675 --> 00:06:11,445
+Esto puede ser un problema.
+
+98
+00:06:11,680 --> 00:06:16,377
+Para solucionarlo,
+vamos a ir previamente al navegador.
+
+99
+00:06:16,712 --> 00:06:20,496
+Yo ya tengo la página abierta para no perder tiempo.
+
+100
+00:06:20,931 --> 00:06:26,103
+Es rpmfusion.org/configuration,
+
+101
+00:06:26,638 --> 00:06:29,224
+pero la voy a buscar.
+
+102
+00:06:31,178 --> 00:06:33,815
+Escribimos en cualquier buscador "rpmfusion"
+
+103
+00:06:34,150 --> 00:06:38,070
+y va a salir, no os preocupéis, rpmfusion.org.
+
+104
+00:06:39,226 --> 00:06:41,188
+Pinchamos en la web, la abrimos
+
+105
+00:06:41,223 --> 00:06:44,040
+y aquí tenemos las instrucciones.
+
+106
+00:06:44,375 --> 00:06:46,833
+Es una página muy simple,
+
+107
+00:06:47,368 --> 00:06:52,243
+no hace falta pensar mucho
+ni configurar nada de manera avanzada.
+
+108
+00:06:54,671 --> 00:06:56,564
+Hay un apartado para usuarios
+
+109
+00:06:56,599 --> 00:06:59,303
+donde dice "Active RPM Fusion en su sistema".
+
+110
+00:07:02,151 --> 00:07:04,220
+Hacéis clic en el enlace y listo.
+
+111
+00:07:04,455 --> 00:07:08,274
+Aquí encontramos una lista de descargas,
+
+112
+00:07:08,309 --> 00:07:11,031
+Pueden ser "free" o "nonfree".
+
+113
+00:07:13,807 --> 00:07:19,126
+Que no os asuste lo de
+"nonfree", no tenéis que pagar nada,
+
+114
+00:07:23,165 --> 00:07:27,333
+"nonfree" para software
+redistribuible que no es de código abierto
+
+115
+00:07:27,368 --> 00:07:31,372
+según las pautas de licencia de Fedora,
+
+116
+00:07:32,760 --> 00:07:36,908
+Así que no se refiere al dinero.
+
+117
+00:07:37,043 --> 00:07:39,024
+No hace falta pagar nada.
+
+118
+00:07:39,259 --> 00:07:41,523
+No lo puedo decir más claro.
+
+119
+00:07:41,758 --> 00:07:45,100
+Solo quiere decir que
+el software no es de código abierto
+
+120
+00:07:45,435 --> 00:07:49,697
+según las pautas de licencia de Fedora.
+
+121
+00:07:49,732 --> 00:07:54,800
+Así que puede ser de código abierto y no servir
+
+122
+00:07:54,835 --> 00:07:56,773
+según delimitan de las pautas de licencia de Fedora.
+
+123
+00:07:57,008 --> 00:08:01,004
+De cualquier manera, esto no os interesa.
+
+124
+00:08:04,395 --> 00:08:06,904
+Lo único que tenéis que saber es que "nonfree"
+
+125
+00:08:07,139 --> 00:08:11,101
+es libre, gratis, pero no de código libre.
+
+126
+00:08:12,368 --> 00:08:17,108
+Pero bueno, ya he dicho
+que no es importante por ahora.
+
+127
+00:08:17,443 --> 00:08:21,556
+Debajo tenemos paquetes RPM.
+
+128
+00:08:21,791 --> 00:08:26,604
+Recordad que en el vídeo anterior
+hablamos de la extensión ".rpm".
+
+129
+00:08:28,374 --> 00:08:33,021
+Podríamos descargar uno de estos.
+Yo me he descargaría el primero.
+
+130
+00:08:34,696 --> 00:08:38,102
+Y luego lo instalaría con mi software RPM,
+
+131
+00:08:40,335 --> 00:08:42,805
+escribiendo "rpm -i".
+
+132
+00:08:45,155 --> 00:08:46,681
+He pinchado encima.
+
+133
+00:08:47,045 --> 00:08:50,018
+Luego pasaría el nombre del archivo como argumento
+
+134
+00:08:50,706 --> 00:08:52,714
+y se instalaría sin problema.
+
+135
+00:08:52,749 --> 00:08:54,938
+Pero ahora no quiero hacer eso.
+
+136
+00:08:54,973 --> 00:08:57,931
+Os quiero enseñar otra forma de hacerlo.
+
+137
+00:08:59,065 --> 00:09:01,581
+Si os preguntáis por qué se repite dos veces,
+
+138
+00:09:01,716 --> 00:09:05,236
+esto es para "free" y esto para "nonfree".
+
+139
+00:09:08,809 --> 00:09:12,511
+Nos interesa la configuración
+de la línea de comandos con RPM.
+
+140
+00:09:12,590 --> 00:09:16,873
+Aquí dice "Fedora 14 hasta la más actual".
+
+141
+00:09:16,908 --> 00:09:20,709
+La mía es 20, pero va a funcionar sin problema.
+
+142
+00:09:20,744 --> 00:09:24,288
+Aquí tenemos este comando tan largo.
+
+143
+00:09:24,623 --> 00:09:29,543
+No hace falta que conozcáis cada parte del comando,
+
+144
+00:09:30,193 --> 00:09:32,483
+lo que significa o lo que hace.
+
+145
+00:09:34,432 --> 00:09:38,784
+La suma total importa un repositorio al sistema
+
+146
+00:09:39,019 --> 00:09:41,934
+que usaremos después.
+
+147
+00:09:42,169 --> 00:09:46,611
+Nos dan este comando,
+así que lo podemos hacer de una vez.
+
+148
+00:09:46,803 --> 00:09:49,826
+No tenemos que hacer nada,
+
+149
+00:09:51,023 --> 00:09:53,572
+solo copiar, pegar y ejecutarlo.
+
+150
+00:09:53,607 --> 00:09:56,272
+Usamos el gestor de paquetes predeterminado,
+
+151
+00:09:56,307 --> 00:09:58,467
+usamos la opción "local install".
+
+152
+00:09:58,502 --> 00:10:00,863
+No vamos a comprobar ciertas claves,
+
+153
+00:10:03,267 --> 00:10:07,998
+le decimos de dónde tiene que extraerlo, etc.
+
+154
+00:10:09,968 --> 00:10:12,042
+Según vayamos avanzando con el tutorial
+
+155
+00:10:12,586 --> 00:10:17,252
+Veremos en profundidad
+la línea de comandos de Linux.
+
+156
+00:10:19,300 --> 00:10:23,122
+Solo entonces veréis esto más claro.
+
+157
+00:10:23,357 --> 00:10:28,717
+Cuando explique las
+ideas más básicas y fundamentales
+
+158
+00:10:29,152 --> 00:10:34,840
+podréis entender cosas
+como lo que hay dentro de este corchete,
+
+159
+00:10:36,429 --> 00:10:39,338
+perdón, corchete no, dentro de este paréntesis.
+
+160
+00:10:40,806 --> 00:10:42,847
+Porque si empiezo a explicarlo ahora,
+
+161
+00:10:42,882 --> 00:10:46,978
+no tendrá sentido y solo lo complicará más.
+
+162
+00:10:47,013 --> 00:10:50,893
+Como he dicho, cuando lleguemos
+a la interfaz de línea de comandos de Linux,
+
+163
+00:10:51,028 --> 00:10:53,250
+cuando empiece a entrar en detalles,
+
+164
+00:10:54,853 --> 00:10:59,697
+empezaré de cero y
+os llevaré del nivel básico al avanzado
+
+165
+00:10:59,587 --> 00:11:01,788
+en un periodo de tiempo relativamente corto.
+
+166
+00:11:01,823 --> 00:11:04,447
+Entonces podréis comprender qué son estas cosas.
+
+167
+00:11:04,782 --> 00:11:09,030
+Por el momento, copiad el contenido,
+
+168
+00:11:09,265 --> 00:11:12,577
+lo que hay entre las comillas,
+
+169
+00:11:13,512 --> 00:11:16,632
+y pegadlo en la terminal.
+
+170
+00:11:16,767 --> 00:11:20,773
+No hace falta ser root.
+Voy a salir. Ya no soy root.
+
+171
+00:11:21,593 --> 00:11:24,813
+Ahora solo soy mi usuario normal, Chronic.
+
+172
+00:11:24,848 --> 00:11:28,683
+Escribid "SU", vuestra contraseña
+
+173
+00:11:31,164 --> 00:11:32,473
+y pegadlo.
+
+174
+00:11:33,810 --> 00:11:35,346
+Pulsad Enter.
+
+175
+00:11:37,140 --> 00:11:42,573
+Vale, no se va a instalar
+porque yo ya lo tengo instalado.
+
+176
+00:11:45,448 --> 00:11:47,562
+Y aquí dice "nothing to do".
+
+177
+00:11:49,689 --> 00:11:53,327
+Pero en vuestro sistema,
+donde no está instalado RPM fusion,
+
+178
+00:11:53,362 --> 00:11:56,910
+sí que iría, pasaría sin problema.
+
+179
+00:11:56,945 --> 00:12:03,255
+Y podríais instalar RPM fusion
+con éxito en vuestro sistema.
+
+180
+00:12:03,290 --> 00:12:04,578
+Así que, "clear".
+
+181
+00:12:08,228 --> 00:12:10,333
+Os quería enseñar otra cosa más
+
+182
+00:12:11,449 --> 00:12:13,428
+que se me ha pasado hace un momento.
+
+183
+00:12:13,663 --> 00:12:16,013
+El comando que hemos usado
+
+184
+00:12:16,448 --> 00:12:21,333
+instala repositorios libres y no libres.
+
+185
+00:12:22,168 --> 00:12:26,164
+Si os fijáis un momento en lo que voy a resaltar,
+
+186
+00:12:26,699 --> 00:12:29,037
+esto es la parte libre,
+
+187
+00:12:37,003 --> 00:12:38,532
+en la que pone "free release".
+
+188
+00:12:39,979 --> 00:12:42,981
+Y debajo está la segunda dirección
+
+189
+00:12:46,135 --> 00:12:48,144
+y dice "non-free".
+
+190
+00:12:47,478 --> 00:12:52,585
+Lo tengo seleccionado,
+voy a hacerlo un poco más grande
+
+191
+00:12:52,620 --> 00:12:54,236
+para que todos lo veáis bien.
+
+192
+00:12:56,005 --> 00:12:59,641
+Tenemos dos direcciones diferentes
+
+193
+00:13:00,076 --> 00:13:05,879
+que hacen referencia
+a diferentes tipos de repositorios.
+
+194
+00:13:07,533 --> 00:13:08,860
+Ahora podemos volver a la terminal.
+
+195
+00:13:09,195 --> 00:13:11,289
+No salgáis de root,
+
+196
+00:13:13,034 --> 00:13:17,101
+porque se requieren privilegios root para hacer esto.
+
+197
+00:13:17,388 --> 00:13:19,304
+Escribid "yum",
+
+198
+00:13:19,339 --> 00:13:21,549
+"search" otra vez,
+
+199
+00:13:24,346 --> 00:13:26,837
+"Virtualbox". Pulsad Enter.
+
+200
+00:13:27,172 --> 00:13:32,307
+Seleccionad el último
+o el que se ajuste a vuestro núcleo.
+
+201
+00:13:32,542 --> 00:13:36,486
+El núcleo se averigua escribiendo "uname -a".
+
+202
+00:13:40,910 --> 00:13:44,005
+El mío es 3.18.7-100.
+
+203
+00:13:47,359 --> 00:13:51,811
+Fc20, y también aparece aquí la arquitectura.
+
+204
+00:13:55,345 --> 00:13:57,328
+Despejamos la pantalla.
+
+205
+00:13:57,663 --> 00:14:00,473
+Escribimos "yum install",
+
+206
+00:14:00,474 --> 00:14:05,769
+pegamos el nombre del paquete, espacio "-y".
+
+207
+00:14:05,927 --> 00:14:10,686
+Si tenéis el comando, pulsad Enter y se instalará.
+
+208
+00:14:12,447 --> 00:14:15,242
+Yo ya he instalado VirtualBox para no perder tiempo.
+
+209
+00:14:16,744 --> 00:14:20,533
+Vosotros lo tendréis
+en marcha, y después de instalarlo
+
+210
+00:14:21,731 --> 00:14:25,446
+no os olvidéis de escribir "yum update"
+
+211
+00:14:26,617 --> 00:14:29,634
+para que el sistema repase las actualizaciones,
+
+212
+00:14:30,507 --> 00:14:34,988
+para aseguraros de que tenéis la última versión,
+
+213
+00:14:35,123 --> 00:14:37,404
+de que todo funciona como debe.
+
+214
+00:14:38,680 --> 00:14:40,643
+Eso es todo por hoy.
+
+215
+00:14:40,678 --> 00:14:43,818
+En el siguiente vídeo empezaré con VirtualBox,
+
+216
+00:14:43,853 --> 00:14:45,497
+explicaré algunos de sus rasgos
+
+217
+00:14:45,732 --> 00:14:48,426
+y en los próximos tutoriales
+
+218
+00:14:48,761 --> 00:14:52,703
+instalaré un sistema operativo en la máquina virtual,
+
+219
+00:14:52,738 --> 00:14:54,550
+en mi entorno virtual
+
+220
+00:14:54,585 --> 00:14:57,347
+y veremos en qué consiste el proceso.
+
+221
+00:14:58,088 --> 00:15:01,118
+Gracias por verlo, nos vemos en el siguiente tutorial.
+

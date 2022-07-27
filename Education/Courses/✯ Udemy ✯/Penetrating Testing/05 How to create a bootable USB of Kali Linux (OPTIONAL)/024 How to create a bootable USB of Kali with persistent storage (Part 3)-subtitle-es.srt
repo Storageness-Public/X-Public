@@ -1,0 +1,444 @@
+1
+00:00:00,000 --> 00:00:06,277
+Ok, eso tom mucho tiempo para terminar
+
+2
+00:00:00,000 --> 00:00:06,277
+No estoy seguro que tanto tardar en tu
+
+3
+00:00:06,277 --> 00:00:14,046
+computadora, pero en la ma tom mucho.
+
+4
+00:00:06,277 --> 00:00:14,046
+Mir como 10 videos en Youtube mas o menos
+
+5
+00:00:14,046 --> 00:00:22,091
+No estoy seguro de que tan largos eran,
+
+6
+00:00:14,046 --> 00:00:22,091
+pero igual, captas la idea. De todos modos
+
+7
+00:00:22,091 --> 00:00:28,072
+de aqu en adelante puedes solamente copiar
+
+8
+00:00:22,091 --> 00:00:28,072
+la mayoria de estos comandos. Esto es exactamente
+
+9
+00:00:28,072 --> 00:00:38,152
+lo que yo har. Puedes crear tu punto de montaje
+
+10
+00:00:28,072 --> 00:00:38,152
+o simplemente copiar esto, no importa. Despus
+
+11
+00:00:38,152 --> 00:00:43,662
+montaremos este. Ya que usamos los mismos
+
+12
+00:00:38,152 --> 00:00:43,662
+nombres. Podemos simplemente copiar y pegar.
+
+13
+00:00:43,662 --> 00:00:52,276
+Verificamos. S, listo. El montaje se ha realizado
+
+14
+00:00:43,662 --> 00:00:52,276
+perfectamente. Luego debemos hacer esto.
+
+15
+00:00:52,276 --> 00:01:01,305
+Utilizaremos echo con esta lnea de comando
+
+16
+00:00:52,276 --> 00:01:01,305
+a este archivo que se encuentra aqu.
+
+17
+00:01:01,305 --> 00:01:12,719
+Y que es esto que he seleccionado? Es el
+
+18
+00:01:01,305 --> 00:01:12,719
+punto de montaje de nuestro almacenamiento
+
+19
+00:01:12,719 --> 00:01:17,488
+As que "my_usb", lo que hemos formateado
+
+20
+00:01:12,719 --> 00:01:17,488
+con LUKS. Bueno, ahora que hemos terminado
+
+21
+00:01:17,488 --> 00:01:28,036
+con eso puedes desmontarlo. Primero, presiona
+
+22
+00:01:17,488 --> 00:01:28,036
+Enter y luego desmontalo. Luego dice
+
+23
+00:01:28,036 --> 00:01:33,907
+"Cierra el canal encriptado a la particin
+
+24
+00:01:28,036 --> 00:01:33,907
+persistente". As que si, bsicamente vamos
+
+25
+00:01:33,907 --> 00:01:41,403
+y lo cerramos con crypt. Asegrate de
+
+26
+00:01:33,907 --> 00:01:41,403
+que sabes la contrasea. Listo
+
+27
+00:01:41,403 --> 00:01:45,961
+Ya no se debera poder acceder.
+
+28
+00:01:41,403 --> 00:01:45,961
+Y eso es prcticamente todo.
+
+29
+00:01:45,961 --> 00:01:55,926
+No hay otra cosa que necesites hacer aqu.
+
+30
+00:01:45,961 --> 00:01:55,926
+Djame explicar esta parte dnde no hay
+
+31
+00:01:55,926 --> 00:02:00,876
+encriptacin. Es muy similar, prcticamente
+
+32
+00:01:55,926 --> 00:02:00,876
+lo mismo, de hecho.
+
+33
+00:02:00,876 --> 00:02:13,492
+Ok, as que en esta parte realmente no necesitas
+
+34
+00:02:00,876 --> 00:02:13,492
+copiar y pegar. Slo debes usar Fdisk como
+
+35
+00:02:13,492 --> 00:02:18,892
+lo he usado antes, y crear otra particin.
+
+36
+00:02:13,492 --> 00:02:18,892
+As que esa parte es igual. Slo usa Fdisk
+
+37
+00:02:18,892 --> 00:02:23,335
+cmo lo hemos usado anteriormente.
+
+38
+00:02:18,892 --> 00:02:23,335
+As que fdisk, espacio, de esta forma
+
+39
+00:02:23,335 --> 00:02:32,571
+fdisk /dev/ y el nombre del dispositivo, algo como
+
+40
+00:02:23,335 --> 00:02:32,571
+fdisk/dev/sdb o el que sea. Puedes averiguar
+
+41
+00:02:32,571 --> 00:02:39,564
+cual es con la opcin "-l" y verlo aqu.
+
+42
+00:02:32,571 --> 00:02:39,564
+El siguiente paso es que necesitars
+
+43
+00:02:39,564 --> 00:02:46,554
+formatearlo. Si es Sdb3, puedes simplemente
+
+44
+00:02:39,564 --> 00:02:46,554
+copiar y pegar este comando. Y luego
+
+45
+00:02:46,554 --> 00:02:54,466
+copiar y pegar esto tambin. No es muy dificil.
+
+46
+00:02:46,554 --> 00:02:54,466
+Y luego slo seguir copiando y pegando esto
+
+47
+00:02:54,466 --> 00:03:01,123
+hasta el final. Lo nico que tal vez necesitars
+
+48
+00:02:54,466 --> 00:03:01,123
+cambiar ser Sdb3, slo tal vez, como dije,
+
+49
+00:03:01,123 --> 00:03:07,781
+debes averiguar con fdisk cual es el nombre,
+
+50
+00:03:01,123 --> 00:03:07,781
+luego creas una particin con fdisk, cmo
+
+51
+00:03:07,781 --> 00:03:19,980
+te mostr en el tutorial anterior.
+
+52
+00:03:07,781 --> 00:03:19,980
+Este segmento de aqu se tard demasiado
+
+53
+00:03:19,980 --> 00:03:27,704
+tiempo, y me refiero demasiado tiempo,
+
+54
+00:03:19,980 --> 00:03:27,704
+Pero no te desanimes. No pienses que
+
+55
+00:03:27,704 --> 00:03:32,765
+el sistema est bloqueado o que hubo
+
+56
+00:03:27,704 --> 00:03:32,765
+un error o algo. Es slamente que tarda
+
+57
+00:03:32,765 --> 00:03:37,455
+demasiado tiempo en una mquina virtual.
+
+58
+00:03:32,765 --> 00:03:37,455
+Y tambin tiene que ver con el hecho de que
+
+59
+00:03:37,455 --> 00:03:45,652
+tengo un USB de bastante capacidad.
+
+60
+00:03:37,455 --> 00:03:45,652
+De todos modos, teniendo eso en cuenta,
+
+61
+00:03:45,652 --> 00:03:51,750
+Todo est listo aqu. Ahora la reiniciar a mi
+
+62
+00:03:45,652 --> 00:03:51,750
+mquina de Kali. Usar mi telfono
+
+63
+00:03:51,750 --> 00:04:02,947
+Para mostrarte algunas imgenes. Prcticamente
+
+64
+00:03:51,750 --> 00:04:02,947
+no hay nada que necesites hacer. Hemos creado
+
+65
+00:04:02,947 --> 00:04:07,479
+un Live USB con persistencia encriptada.
+
+66
+00:04:02,947 --> 00:04:07,479
+Slo selecciona el Live USB con persistencia
+
+67
+00:04:07,479 --> 00:04:13,644
+encriptada cuando bootee. Voy a grabar con
+
+68
+00:04:07,479 --> 00:04:13,644
+mi telfono. La imgen no va a ser muy buena
+
+69
+00:04:13,644 --> 00:04:19,822
+porque todava no tengo mi nuevo telfono
+
+70
+00:04:13,644 --> 00:04:19,822
+pero no importa porque no hay ms nada
+
+71
+00:04:19,822 --> 00:04:26,841
+que necesites hacer. Todo est preparado.
+
+72
+00:04:19,822 --> 00:04:26,841
+Todo est listo. Todo est funcionando.
+
+73
+00:04:26,841 --> 00:04:31,583
+Todo lo que necesitas hacer es bootear desde
+
+74
+00:04:26,841 --> 00:04:31,583
+el nuevo USB. Slo lo grabar para probar
+
+75
+00:04:31,583 --> 00:04:37,108
+que funciona. Si no te funciona a ti, tal vez ests
+
+76
+00:04:31,583 --> 00:04:37,108
+haciendo algo de manera incorrecta.
+
+77
+00:04:37,108 --> 00:04:42,993
+Hzmelo saber en la seccin de discusin
+
+78
+00:04:37,108 --> 00:04:42,993
+Lo discutiremos all y veremos cmo funciona.
+
+79
+00:04:42,993 --> 00:04:51,816
+Djame recordarles a todos antes de que
+
+80
+00:04:42,993 --> 00:04:51,816
+empezar que no esperes que monitores
+
+81
+00:04:51,816 --> 00:04:59,096
+mltiples vayan a funcionar. Simplemente
+
+82
+00:04:51,816 --> 00:04:59,096
+no va a funcionar fcilmente. Necesitars
+
+83
+00:04:59,096 --> 00:05:02,682
+meterte con los drivers y personalmente
+
+84
+00:04:59,096 --> 00:05:02,682
+te digo que no es una buena idea, especialmente
+
+85
+00:05:02,682 --> 00:05:08,487
+en un USB booteable. Segundo, si el Wifi
+
+86
+00:05:02,682 --> 00:05:08,487
+no funciona, debes arreglar eso. Puedes
+
+87
+00:05:08,487 --> 00:05:14,720
+hacerlo con drivers. Pinsalo un poco,
+
+88
+00:05:08,487 --> 00:05:14,720
+si tienes una tarjeta inalmbrica en tu
+
+89
+00:05:14,720 --> 00:05:21,267
+computadora que no soporta muchas
+
+90
+00:05:14,720 --> 00:05:21,267
+cosas, por ejemplo, no soporta Aircrack
+
+91
+00:05:21,267 --> 00:05:29,560
+pero que es compatible con Kali,
+
+92
+00:05:21,267 --> 00:05:29,560
+no tiene importancia. Igual podrs
+
+93
+00:05:29,560 --> 00:05:33,108
+conectarte al punto de acceso remoto,
+
+94
+00:05:29,560 --> 00:05:33,108
+pero me refiero, no podrs hacer
+
+95
+00:05:33,108 --> 00:05:36,409
+la mitad de las cosas inalmbricamente
+
+96
+00:05:33,108 --> 00:05:36,409
+as que no tiene importancia. Te sugiero
+
+97
+00:05:36,409 --> 00:05:42,635
+que consigas otro adaptador USB inalmbrico
+
+98
+00:05:36,409 --> 00:05:42,635
+que puedas slamente conectar y usar y funcionar.
+
+99
+00:05:42,635 --> 00:05:55,031
+De todos modos, voy a cerrar mi mquina virtual
+
+100
+00:05:42,635 --> 00:05:55,031
+y luego voy a bootear desde mi dispositivo
+
+101
+00:05:55,031 --> 00:06:00,205
+USB y a grabar esto desde mi telfono.
+
+102
+00:05:55,031 --> 00:06:00,205
+Por favor no dejes de ver si la calidad
+
+103
+00:06:00,205 --> 00:06:06,938
+de la imgen no es muy buena. Desde este
+
+104
+00:06:00,205 --> 00:06:06,938
+punto no hay ms configuraciones. No hay
+
+105
+00:06:06,938 --> 00:06:10,213
+ms nada que necesitas hacer. La nica
+
+106
+00:06:06,938 --> 00:06:10,213
+razn por la que estoy grabando el siguiente
+
+107
+00:06:10,213 --> 00:06:17,331
+segmento es para poder mostrarte que el booteo
+
+108
+00:06:10,213 --> 00:06:17,331
+de hecho funciona. Y que de hecho puedes bootear
+
+109
+00:06:17,331 --> 00:06:21,750
+desde un Live USB sin ningn problema.
+
+110
+00:06:17,331 --> 00:06:21,750
+Que es funcional, y que el procedimiento
+
+111
+00:06:21,750 --> 00:06:26,610
+est funcionando. As que hagamos eso.
+

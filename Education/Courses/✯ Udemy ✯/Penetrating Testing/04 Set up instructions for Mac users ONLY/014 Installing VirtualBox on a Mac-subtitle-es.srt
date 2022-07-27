@@ -1,0 +1,1107 @@
+1
+00:00:00,300 --> 00:00:02,471
+Bienvenidos.
+
+2
+00:00:03,706 --> 00:00:07,155
+Hoy traigo buenas noticias para todos,
+
+3
+00:00:07,290 --> 00:00:10,348
+bueno, no para todos,
+pero sí para mucha gente.
+
+4
+00:00:10,883 --> 00:00:14,238
+Debido a la demanda popular que hay en Udemy
+
+5
+00:00:17,934 --> 00:00:22,973
+sobre Mac, instrucciones
+para Mac, tutoriales para Mac,
+
+6
+00:00:23,408 --> 00:00:28,515
+he decidido hacerme con un
+MacBook Pro para demostrar con él
+
+7
+00:00:29,150 --> 00:00:32,544
+cómo instalar VirtualBox,
+
+8
+00:00:32,579 --> 00:00:34,104
+cómo hacer un passthrough
+
+9
+00:00:34,914 --> 00:00:38,247
+y prácticamente todo
+lo que me pidáis que haga.
+
+10
+00:00:38,282 --> 00:00:40,619
+Si puedo, lo haré encantado.
+
+11
+00:00:42,179 --> 00:00:46,151
+También, por los
+problemas que habéis tenido algunos
+
+12
+00:00:46,286 --> 00:00:51,169
+en Mac, ahora puedo entenderos.
+Podéis escribirme y yo intentaré
+
+13
+00:00:51,404 --> 00:00:53,561
+recrear los problemas y encontrar soluciones.
+
+14
+00:00:55,163 --> 00:00:58,399
+Pero antes de empezar con el tutorial,
+
+15
+00:00:58,834 --> 00:01:04,036
+me gustaría compartir mi
+experiencia hasta ahora con Mac.
+
+16
+00:01:05,066 --> 00:01:07,309
+Es algo que creo que tengo que hacer.
+
+17
+00:01:07,650 --> 00:01:13,116
+En primer lugar, el precio.
+Cuando vi los precios de los Mac...
+
+18
+00:01:13,151 --> 00:01:17,177
+fue bastante doloroso y desmoralizador
+
+19
+00:01:17,212 --> 00:01:21,102
+ir dando vueltas en busca de un Mac usado.
+
+20
+00:01:23,122 --> 00:01:27,246
+Pero supongo que había
+que hacerlo, así que aquí está.
+
+21
+00:01:27,481 --> 00:01:32,933
+Lo que me he comprado es
+un MacBook Pro de finales de 2011
+
+22
+00:01:33,068 --> 00:01:36,491
+con un procesador i7 Quad-core de 2.4 GHz
+
+23
+00:01:36,826 --> 00:01:42,610
+y 4GB de RAM y
+8 dedicados a la tarjeta gráfica AMD.
+
+24
+00:01:44,185 --> 00:01:49,400
+He reemplazado la RAM,
+fui al distribuidor oficial de Mac
+
+25
+00:01:50,295 --> 00:01:53,667
+y les pregunté por la RAM
+en Mac, y básicamente me dijeron
+
+26
+00:01:53,802 --> 00:01:57,382
+que o bien podía insertar una ranura de 8GB
+
+27
+00:01:58,017 --> 00:02:02,583
+que complementaría la
+de 2GB, cuya frecuencia es más baja,
+
+28
+00:02:02,789 --> 00:02:05,119
+y entonces irían las dos a menor frecuencia,
+
+29
+00:02:05,254 --> 00:02:07,113
+o bien podía insertar dos.
+
+30
+00:02:07,248 --> 00:02:10,852
+Cuando vi cuál era el
+precio por dos, le pedí enseguida
+
+31
+00:02:11,287 --> 00:02:15,171
+que insertara solo una
+en el Mac, porque no necesito
+
+32
+00:02:15,206 --> 00:02:20,084
+más de 10GB de RAM,
+aunque la frecuencia sea más baja.
+
+33
+00:02:20,119 --> 00:02:23,609
+Bueno, ese es el hardware que tengo,
+
+34
+00:02:23,744 --> 00:02:28,412
+para que sepáis
+con qué trabajo, y podáis compararlo
+
+35
+00:02:28,447 --> 00:02:31,995
+con el vuestro y entender
+mis limitaciones, si las hay.
+
+36
+00:02:32,130 --> 00:02:37,281
+También tengo instalada
+la última versión de Yosemite.
+
+37
+00:02:38,386 --> 00:02:41,669
+Y he creado una cuenta dedicada solo a Udemy,
+
+38
+00:02:41,804 --> 00:02:45,326
+como podéis ver, en la
+esquina superior derecha pone Udemy.
+
+39
+00:02:45,961 --> 00:02:51,465
+No he instalado nada con esta cuenta,
+
+40
+00:02:52,232 --> 00:02:53,977
+así que está como viene de serie.
+
+41
+00:02:56,901 --> 00:02:58,970
+Ahora iré a los tutoriales
+
+42
+00:02:59,005 --> 00:03:01,492
+y os enseí±aré a instalar VirtualBox, Kali
+
+43
+00:03:01,890 --> 00:03:04,741
+passthrough, establecer un passthrough.
+
+44
+00:03:04,976 --> 00:03:09,331
+Las cosas son muy similares, si no iguales
+
+45
+00:03:09,666 --> 00:03:12,295
+pero algunas personas
+han tenido ciertos problemas.
+
+46
+00:03:12,330 --> 00:03:14,401
+No he hecho nada en este Mac,
+
+47
+00:03:14,436 --> 00:03:19,340
+No he hecho ninguna
+instalación ni nada de eso, y quiero ver
+
+48
+00:03:19,575 --> 00:03:22,721
+si me encuentro los
+mismos problemas mientras os enseí±o
+
+49
+00:03:22,956 --> 00:03:26,030
+y ver si los podemos resolver rápidamente.
+
+50
+00:03:26,065 --> 00:03:28,649
+Si los puedo resolver
+rápido, lo dejaré en este tutorial.
+
+51
+00:03:28,684 --> 00:03:32,168
+Si no, cortaré las partes
+largas y veré qué puedo hacer.
+
+52
+00:03:34,299 --> 00:03:38,030
+Mi experiencia hasta ahora con Yosemite,
+
+53
+00:03:38,465 --> 00:03:42,701
+bueno, no estoy muy
+emocionado, no me entusiasma.
+
+54
+00:03:42,936 --> 00:03:46,929
+O sea, el diseí±o está bien.
+ El diseí±o del MacBook Pro está bien
+
+55
+00:03:47,064 --> 00:03:49,743
+y la apariencia del
+sistema operativo está muy bien
+
+56
+00:03:49,978 --> 00:03:53,387
+pero no es tan personalizable
+
+57
+00:03:53,422 --> 00:03:57,392
+ni tiene tantas opciones como Fedora, la verdad.
+
+58
+00:03:57,427 --> 00:03:59,599
+No tengo la misma libertad.
+
+59
+00:03:59,734 --> 00:04:02,900
+Pero es verdad lo que
+dicen de que Mac suele ir bien.
+
+60
+00:04:02,935 --> 00:04:04,597
+No da problemas de ningún tipo.
+
+61
+00:04:06,849 --> 00:04:09,276
+Va fluido, la batería es genial y todo eso,
+
+62
+00:04:09,311 --> 00:04:12,638
+pero no tiene las características que tiene Linux,
+
+63
+00:04:12,673 --> 00:04:15,824
+aunque los comandos
+de la terminal son casi iguales,
+
+64
+00:04:16,988 --> 00:04:20,259
+no tengo tanta libertad
+para trastear con el sistema
+
+65
+00:04:20,294 --> 00:04:24,506
+como en Linux, y ese es
+uno de los motivos por los que
+
+66
+00:04:24,541 --> 00:04:28,318
+no me ha gustado mucho
+la experiencia con Mac, pero
+
+67
+00:04:28,453 --> 00:04:32,044
+es decir, está bien, es un
+sistema operativo perfectamente válido.
+
+68
+00:04:35,638 --> 00:04:37,151
+Podría usarlo sin duda alguna,
+
+69
+00:04:38,052 --> 00:04:40,926
+no creo que fuera una mala experiencia,
+
+70
+00:04:41,261 --> 00:04:43,953
+al contrario, creo que
+sería una experiencia fantástica,
+
+71
+00:04:44,253 --> 00:04:47,658
+pero no lo cambio por Linux, para nada.
+
+72
+00:04:51,034 --> 00:04:53,590
+Vamos a empezar con los básicos.
+
+73
+00:04:53,625 --> 00:04:56,932
+Lo primero que necesitáis, si sois usuarios de Mac,
+
+74
+00:04:57,267 --> 00:05:01,707
+para seguir este tutorial, tendréis que instalar
+
+75
+00:05:01,742 --> 00:05:05,600
+una máquina virtual
+Kali Linux, o crear un doble arranque.
+
+76
+00:05:06,743 --> 00:05:11,039
+Hoy no vamos a ver cómo hacer
+un doble arranque con Kali, pero
+
+77
+00:05:12,403 --> 00:05:15,380
+el doble arranque con Kali no es muy recomendable
+
+78
+00:05:15,556 --> 00:05:17,337
+porque no tiene mucho sentido,
+
+79
+00:05:17,433 --> 00:05:19,866
+es mucho más fácil instalar VirtualBox,
+
+80
+00:05:20,101 --> 00:05:23,268
+ya que casi todas las tarjetas inalábricas de Mac
+
+81
+00:05:23,403 --> 00:05:25,851
+no son buenas para inyectar paquetes.
+
+82
+00:05:28,563 --> 00:05:30,546
+Me preguntaréis cuál es la diferencia.
+
+83
+00:05:30,781 --> 00:05:35,056
+Â¿Podemos inyectar paquetes con
+VirtualBox y pasar cosas a la máquina virtual?
+
+84
+00:05:35,191 --> 00:05:36,855
+No, no podéis hacerlo.
+
+85
+00:05:36,790 --> 00:05:39,981
+Porque si instalamos una máquina virtual,
+
+86
+00:05:40,016 --> 00:05:42,939
+esta no tiene acceso a
+la tarjeta inalámbrica integrada,
+
+87
+00:05:42,974 --> 00:05:47,078
+lo único que podéis hacer
+es pasar un adaptador USB inalámbrico
+
+88
+00:05:47,113 --> 00:05:49,745
+a la máquina virtual
+y entonces inyectar paquetes.
+
+89
+00:05:49,780 --> 00:05:52,514
+Creo que esto también lo tengo que demostrar.
+
+90
+00:05:54,256 --> 00:05:57,504
+La solución en casi todos
+los portátiles, MacBooks incluidos
+
+91
+00:05:57,639 --> 00:06:02,304
+es crear un doble arranque,
+o un arranque live, y luego...
+
+92
+00:06:03,912 --> 00:06:06,551
+Un arranque live es
+básicamente crear un USB de Kali.
+
+93
+00:06:07,510 --> 00:06:09,059
+Hay otro tutorial aparte para eso.
+
+94
+00:06:11,785 --> 00:06:15,766
+Estas dos opciones permanecen
+y puedes acceder directamente al hardware.
+
+95
+00:06:16,101 --> 00:06:18,779
+Pero, lo dicho, no tiene sentido hacerlo
+
+96
+00:06:18,814 --> 00:06:22,469
+si la tarjeta inalámbrica
+no soporta la inyección de paquetes
+
+97
+00:06:22,504 --> 00:06:25,048
+o simplemente no vale para ello.
+
+98
+00:06:25,083 --> 00:06:29,000
+Así que os aconsejo que
+consigáis un adaptador inalámbrico
+
+99
+00:06:29,235 --> 00:06:33,364
+y si aún queréis intentar
+el doble arranque o la versión live
+
+100
+00:06:33,399 --> 00:06:35,375
+estáis en vuestro derecho de hacerlo
+
+101
+00:06:35,410 --> 00:06:39,323
+y de verdad, de verdad, espero que funcione.
+
+102
+00:06:39,358 --> 00:06:43,828
+Pero en este tutorial
+os voy a enseí±ar a instalar VirtualBox.
+
+103
+00:06:43,863 --> 00:06:47,055
+Por cierto, si tenéis alguna petición,
+
+104
+00:06:47,090 --> 00:06:51,063
+algo que queráis que enseí±e
+con Mac, no dudéis en pedírmelo,
+
+105
+00:06:51,398 --> 00:06:54,348
+siempre que tenga que ver con la configuración,
+
+106
+00:06:54,383 --> 00:06:57,794
+si se trata de lo que hago en el curso con Linux
+
+107
+00:06:57,829 --> 00:06:59,550
+y queréis hacer lo mismo con Mac,
+
+108
+00:07:01,420 --> 00:07:04,224
+no es buena idea, dejémoslo ahí.
+
+109
+00:07:06,451 --> 00:07:08,296
+Voy a seguir y empezar con esto ya
+
+110
+00:07:08,331 --> 00:07:12,484
+porque he mirado el temporizador,
+y llevo hablando unos siete minutos.
+
+111
+00:07:15,703 --> 00:07:18,525
+Abrimos el navegador predeterminado,
+
+112
+00:07:18,560 --> 00:07:20,950
+No voy a instalar Firefox ni nada.
+
+113
+00:07:21,085 --> 00:07:23,385
+En el usuario principal
+sí que he instalado Firefox,
+
+114
+00:07:23,720 --> 00:07:26,950
+pero ya he dicho que este viene de serie.
+
+115
+00:07:27,685 --> 00:07:31,790
+No tengo intención
+de cambiar la configuración.
+
+116
+00:07:32,984 --> 00:07:35,265
+Vamos a abrir la página web de VirtualBox.
+
+117
+00:07:37,935 --> 00:07:42,551
+Escribid "virtualbox" para buscarla.
+
+118
+00:07:44,901 --> 00:07:48,517
+Tenemos https://www.virtualbox.org.
+
+119
+00:07:54,050 --> 00:07:56,397
+Eso es, comprobad que es segura.
+
+120
+00:07:56,632 --> 00:07:58,561
+Safari está usando una conexión cifrada.
+
+121
+00:08:02,223 --> 00:08:03,816
+Mostrar los certificados.
+
+122
+00:08:07,866 --> 00:08:10,679
+Emitido por VeriSign, vale, estos son los que
+
+123
+00:08:11,310 --> 00:08:13,712
+emiten el certificado
+en esta página, así que bien.
+
+124
+00:08:14,970 --> 00:08:16,837
+Comprobad el certificado, de todas formas,
+
+125
+00:08:17,172 --> 00:08:21,221
+y aseguraos de que es https, por si acaso,
+
+126
+00:08:21,256 --> 00:08:24,313
+porque la gente suele colgar webs falsas
+
+127
+00:08:24,348 --> 00:08:28,333
+muchas veces.
+Luego vamos a ir a Downloads
+
+128
+00:08:30,995 --> 00:08:32,938
+y en Downloads podemos ver...
+
+129
+00:08:34,598 --> 00:08:36,469
+No he configurado la barra inferior.
+
+130
+00:08:36,804 --> 00:08:39,246
+Vamos a configurar la barra.
+
+131
+00:08:39,281 --> 00:08:41,020
+Lo siento, es solo un minuto.
+
+132
+00:08:41,155 --> 00:08:44,814
+El Dock. Seguro que todos
+los usuarios de Mac saben hacerlo.
+
+133
+00:08:47,044 --> 00:08:49,316
+Esconder. Gracias.
+
+134
+00:08:51,091 --> 00:08:54,180
+Ahora vamos a expandir esto.
+Esto es algo que me gusta bastante de Mac,
+
+135
+00:08:54,215 --> 00:08:58,199
+el poder desplazarte a
+la izquierda y la derecha, con tres dedos.
+
+136
+00:09:00,095 --> 00:09:05,014
+Vamos a seleccionar
+la versión OS X de VirtualBox .
+
+137
+00:09:05,149 --> 00:09:08,715
+Tenemos VirtualBox para
+hosts Windows, hosts OS X.
+
+138
+00:09:08,750 --> 00:09:11,707
+Vamos a seleccionar ese.
+
+139
+00:09:12,622 --> 00:09:15,337
+La descarga está en proceso.
+
+140
+00:09:19,226 --> 00:09:23,001
+Y va bastante rápido.
+La mía, al menos. O eso me gusta pensar.
+
+141
+00:09:24,403 --> 00:09:27,273
+Y mi conexión no es la más rápida del mundo,
+
+142
+00:09:27,608 --> 00:09:31,932
+tiene 8MB de bajada y 10Mb de subida,
+
+143
+00:09:32,267 --> 00:09:36,991
+80Mb de bajada y 10Mb
+de subida, pero cumple su función.
+
+144
+00:09:39,116 --> 00:09:41,631
+Ahora vamos a abrir el archivo.
+
+145
+00:09:46,312 --> 00:09:50,120
+Ejecuta, ejecuta.
+No debería tardar mucho rato.
+
+146
+00:09:50,555 --> 00:09:53,890
+Comprobando volúmenes. Finalizando. Gracias.
+
+147
+00:09:56,575 --> 00:09:59,894
+Así que vamos a continuar con la instalación.
+
+148
+00:10:00,029 --> 00:10:03,463
+Esta es la primera vez
+que voy a instalar algo en Mac,
+
+149
+00:10:04,526 --> 00:10:06,136
+lo he hecho a propósito.
+
+150
+00:10:06,571 --> 00:10:10,016
+No quería hacer la instalación antes
+
+151
+00:10:10,251 --> 00:10:12,732
+para poder ponerme en el lugar de cualquiera
+
+152
+00:10:13,067 --> 00:10:16,569
+y encontrarme con los mismos problemas
+
+153
+00:10:16,804 --> 00:10:19,254
+que vosotros os encontraríais,
+
+154
+00:10:19,289 --> 00:10:22,763
+Espero encontrármelos, hasta cierto punto.
+
+155
+00:10:26,827 --> 00:10:28,754
+Vamos a ver lo que dice.
+
+156
+00:10:28,789 --> 00:10:31,930
+"Doble clic sobre este icono". Ni caso.
+
+157
+00:10:31,965 --> 00:10:33,683
+"Ejecutar la aplicación VirtualBox..."
+
+158
+00:10:37,246 --> 00:10:40,349
+Â¿Funcionará esto? No. Sí. Perfecto.
+
+159
+00:10:42,966 --> 00:10:45,847
+Miento. En mi usuario sí que instalé Firefox.
+
+160
+00:10:45,982 --> 00:10:49,593
+Ya es algo. Pero nunca
+antes he instalado VirtualBox.
+
+161
+00:10:52,142 --> 00:10:53,949
+Vamos a abrir Aplicaciones.
+
+162
+00:11:01,568 --> 00:11:04,152
+Listo. Paquete VirtualBox.
+
+163
+00:11:07,191 --> 00:11:09,461
+"Este paquete abrirá un programa para determinar
+
+164
+00:11:09,496 --> 00:11:12,808
+si se puede instalar el software". Vale.
+
+165
+00:11:15,124 --> 00:11:18,718
+Introducción. Gracias por la introducción.
+
+166
+00:11:18,753 --> 00:11:22,163
+Cambiar ubicación de instalación.
+Â¿Cuál es la ubicación predeterminada?
+
+167
+00:11:23,374 --> 00:11:25,121
+Instalar solo para mí.
+
+168
+00:11:29,555 --> 00:11:31,499
+Â¿Por qué no da esta opción?
+
+169
+00:11:37,774 --> 00:11:39,467
+Igual está pillado o algo.
+
+170
+00:11:42,676 --> 00:11:44,745
+No, definitivamente, no está pillado.
+
+171
+00:11:49,114 --> 00:11:50,845
+Esto es solo un certificado.
+
+172
+00:11:52,829 --> 00:11:56,757
+Instalar para todos los usuarios
+de este ordenador. No sé cómo cambiarlo.
+
+173
+00:11:56,892 --> 00:11:59,349
+Parece ser que no tengo esa capacidad.
+
+174
+00:12:03,435 --> 00:12:05,215
+Personalizar. A ver qué hace esto.
+
+175
+00:12:08,083 --> 00:12:12,619
+Herramientas de la línea
+de comandos, tal vez las use.
+
+176
+00:12:12,854 --> 00:12:16,909
+Utilidades, no es mala idea.
+Extensiones del núcleo de VirtualBox.
+
+177
+00:12:18,452 --> 00:12:23,258
+Parece que está todo
+previamente empaquetado. Muy bien.
+
+178
+00:12:23,593 --> 00:12:27,461
+Podría deshabilitar un paquete, pero no me permite
+
+179
+00:12:27,596 --> 00:12:29,936
+que destruya las extensiones del núcleo.
+
+180
+00:12:29,971 --> 00:12:32,908
+Pero bueno, no pasa nada, ahí está si lo necesito.
+
+181
+00:12:39,456 --> 00:12:42,728
+Lo que más me molesta...
+y seguro que alguien que me vea
+
+182
+00:12:44,074 --> 00:12:46,886
+estará diciendo "madre mía, qué estúpido eres",
+
+183
+00:12:46,921 --> 00:12:49,968
+"ni siquiera sabes cambiar la ubicación".
+
+184
+00:12:57,571 --> 00:13:00,416
+Supongo que lo tengo que instalar para todos.
+
+185
+00:13:01,354 --> 00:13:03,617
+Es un poco raro, Â¿verdad?
+
+186
+00:13:04,639 --> 00:13:07,271
+Bueno, tampoco pasa nada. Si soy sincero,
+
+187
+00:13:07,306 --> 00:13:10,176
+también necesito
+VirtualBox en los otros usuarios.
+
+188
+00:13:12,980 --> 00:13:15,401
+En mi usuario principal necesito VirtualBox,
+
+189
+00:13:15,436 --> 00:13:16,939
+lo iba a instalar de todas formas.
+
+190
+00:13:17,890 --> 00:13:19,957
+Así que vamos a saltarnos la humillante parte
+
+191
+00:13:20,092 --> 00:13:22,501
+en la que el instructor no sabe nada.
+
+192
+00:13:24,791 --> 00:13:27,476
+Me pide que lo confirme con una contraseí±a,
+
+193
+00:13:27,711 --> 00:13:31,185
+Pues la escribimos.
+
+194
+00:13:33,879 --> 00:13:37,659
+Lo que me más me
+extraí±a de Mac es que puedo,
+
+195
+00:13:38,094 --> 00:13:42,565
+o sea, está Homebrew, que es un
+gestor de paquetes que puedo instalar
+
+196
+00:13:44,285 --> 00:13:49,284
+para OS X, pero me molesta
+un poco tener que instalarlo
+
+197
+00:13:49,419 --> 00:13:52,230
+y que no venga por defecto el gestor de paquetes.
+
+198
+00:13:52,565 --> 00:13:54,856
+Me quedan treinta minutos.
+
+199
+00:13:55,852 --> 00:13:58,306
+Espero poder acabar, porque me queda poco,
+
+200
+00:13:58,441 --> 00:14:01,007
+ya que solo tengo unos seis minutos más
+
+201
+00:14:02,125 --> 00:14:03,770
+debido a las limitaciones de Udemy.
+
+202
+00:14:04,005 --> 00:14:07,843
+Pues ese es el proceso
+de instalación de VirtualBox.
+
+203
+00:14:07,878 --> 00:14:09,436
+Parece que ya está instalado.
+
+204
+00:14:10,830 --> 00:14:16,689
+Vamos a ejecutarlo,
+creo que ya no necesitaré esto.
+
+205
+00:14:21,576 --> 00:14:23,120
+Â¿Es así como se borran las cosas?
+
+206
+00:14:23,155 --> 00:14:25,245
+No, así solo desaparecen del Dock.
+
+207
+00:14:26,663 --> 00:14:29,900
+Usaré el gestor de archivos para borrarlo.
+
+208
+00:14:29,935 --> 00:14:32,358
+Â¿Puedo usar el gestor de archivos para borrarlo?
+
+209
+00:14:46,160 --> 00:14:49,342
+Genial, ya está.
+Vamos a las aplicaciones.
+
+210
+00:14:52,452 --> 00:14:54,033
+Y movemos a la papelera.
+
+211
+00:14:55,273 --> 00:14:57,396
+Ahora vamos a iniciar VirtualBox.
+
+212
+00:14:59,626 --> 00:15:02,907
+No tengo una SSD, tenedlo en cuenta.
+
+213
+00:15:04,182 --> 00:15:07,199
+La versión con SSD era bastante cara.
+
+214
+00:15:08,627 --> 00:15:13,971
+Pero igual decido hacerme
+con ella más adelante si vale la pena.
+
+215
+00:15:15,002 --> 00:15:18,388
+Puede que en cuestión de velocidad,
+sí, pero repito que uso este ordenador
+
+216
+00:15:18,423 --> 00:15:20,524
+para navegar y poco más.
+
+217
+00:15:21,676 --> 00:15:26,843
+Sigamos, ahora que tenemos esto establecido,
+
+218
+00:15:26,878 --> 00:15:28,576
+vamos a continuar y
+
+219
+00:15:29,907 --> 00:15:31,536
+nos vamos a bajar Kali
+
+220
+00:15:31,771 --> 00:15:34,060
+y en el próximo tutorial lo instalaremos.
+
+221
+00:15:35,135 --> 00:15:38,855
+Id a Safari y escribid Kali.
+
+222
+00:15:40,374 --> 00:15:41,919
+Debería aparecer la buena.
+
+223
+00:15:43,013 --> 00:15:48,108
+Https. Cambiar a inglés. Gracias.
+
+224
+00:15:49,586 --> 00:15:53,304
+Eso es, la primera es
+Kali Linux, Penetration Testing, https.
+
+225
+00:15:56,225 --> 00:15:58,150
+Vamos a ir hacia Downloads.
+
+226
+00:16:00,291 --> 00:16:04,364
+Y recordad que también podéis
+descargar una imagen Kali 2.0 desde aquí
+
+227
+00:16:04,699 --> 00:16:08,701
+en diferentes secciones de las
+instrucciones. Yo he usado diferentes versiones.
+
+228
+00:16:08,836 --> 00:16:11,116
+He actualizado algunas secciones del tutorial
+
+229
+00:16:11,251 --> 00:16:13,249
+que considero que son vitales.
+
+230
+00:16:16,090 --> 00:16:18,777
+Cuando veáis esto,
+si existe una versión nueva de Kali
+
+231
+00:16:18,812 --> 00:16:21,919
+descargadla sin problema, debería funcionar.
+
+232
+00:16:21,954 --> 00:16:26,938
+Así que os podéis descargar
+este, el archivo ISO de aquí
+
+233
+00:16:27,173 --> 00:16:29,945
+o también podéis...
+
+234
+00:16:38,013 --> 00:16:42,729
+Ahora. Decía que os podéis
+descargar el archivo ISO de aquí
+
+235
+00:16:43,164 --> 00:16:48,959
+o podéis bajar y seleccionar "Official ARM
+
+236
+00:16:49,094 --> 00:16:51,431
+and VMWare images" para máquinas virtuales.
+
+237
+00:16:52,710 --> 00:16:57,300
+Tenéis imágenes VMware
+prefabricadas de Kali Linux
+
+238
+00:16:57,435 --> 00:17:01,331
+y tenéis imágenes
+prefabricadas del VirtualBox Kali Linux.
+
+239
+00:17:01,466 --> 00:17:04,692
+Podéis usar estas también, tenedlo en cuenta.
+
+240
+00:17:08,226 --> 00:17:12,619
+Por el momento,
+me gustaría que os descargarais
+
+241
+00:17:12,854 --> 00:17:18,145
+esta versión prefabricada, Kali Linux 64 bit VBox.
+
+242
+00:17:18,380 --> 00:17:20,861
+Así que vamos a hacer clic encima...
+
+243
+00:17:21,196 --> 00:17:24,178
+Â¿Tengo algún cliente de torrent instalado?
+
+244
+00:17:26,825 --> 00:17:30,926
+Â¿En serio? Lo tengo. No, esto es solo la imagen,
+
+245
+00:17:31,261 --> 00:17:33,680
+este es el archivo que inicia la descarga.
+
+246
+00:17:36,247 --> 00:17:38,874
+Â¿Alguna posibilidad de que lo tenga instalado?
+
+247
+00:17:40,978 --> 00:17:42,555
+Â¡Pues claro que no!
+
+248
+00:17:43,628 --> 00:17:47,984
+Así que vamos a hacer clic
+en la imagen para descargarla.
+
+249
+00:17:49,248 --> 00:17:52,099
+La descarga está en marcha. Para cuando vuelva
+
+250
+00:17:52,134 --> 00:17:55,276
+en el siguiente tutorial, habrá terminado
+
+251
+00:17:55,311 --> 00:17:58,236
+y os podré enseí±ar cómo se instala
+
+252
+00:17:58,371 --> 00:18:02,195
+y luego trataremos los passthrough USB en Mac.
+
+253
+00:18:03,440 --> 00:18:05,377
+Hasta entonces, me despido.
+
+254
+00:18:05,412 --> 00:18:07,916
+Y sinceramente espero que estéis satisfechos.
+

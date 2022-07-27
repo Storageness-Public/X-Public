@@ -1,0 +1,1092 @@
+1
+00:00:00,939 --> 00:00:09,201
+Bienvenido de nuevo a todos. Este proceso
+
+2
+00:00:00,939 --> 00:00:09,201
+ha terminado y se supone que debes tener
+
+3
+00:00:09,201 --> 00:00:14,785
+un resultado como este. Kali Linux
+
+4
+00:00:09,201 --> 00:00:14,785
+ocupa 3.1 GB.
+
+5
+00:00:14,785 --> 00:00:27,156
+Escribamos fdisk -l una vez mas, y podemos
+
+6
+00:00:14,785 --> 00:00:27,156
+ver que se han creado dos particiones, no
+
+7
+00:00:27,156 --> 00:00:30,478
+hay ningn problema, se supone que
+
+8
+00:00:27,156 --> 00:00:30,478
+eso debe suceder, as que vamos y
+
+9
+00:00:30,478 --> 00:00:38,527
+despejamos la pantalla con clear
+
+10
+00:00:30,478 --> 00:00:38,527
+e inciemos gparted una vez ms
+
+11
+00:00:38,527 --> 00:00:48,079
+Espera a que empiece, seleccionamos sdb,
+
+12
+00:00:38,527 --> 00:00:48,079
+Excelente, as que est la particin de booteo,
+
+13
+00:00:48,079 --> 00:00:56,760
+est la de Kali Live y FAT32 y luego tenemos
+
+14
+00:00:48,079 --> 00:00:56,760
+55GB de espacio no usado, as que
+
+15
+00:00:56,760 --> 00:01:03,600
+formatearemos esto a un tipo diferente de
+
+16
+00:00:56,760 --> 00:01:03,600
+particin pero primero veamos lo que dice
+
+17
+00:01:03,600 --> 00:01:09,408
+la gua, creo que nos dicen que debemos
+
+18
+00:01:03,600 --> 00:01:09,408
+formatearla como EXT3 en lugar de EXT4
+
+19
+00:01:09,408 --> 00:01:13,487
+Me imagino que debe ser por algunos
+
+20
+00:01:09,408 --> 00:01:13,487
+problemas de compatibilidad o algo parecido
+
+21
+00:01:13,487 --> 00:01:20,086
+Incluso si esto es FAT16 en vez de FAT32, pero
+
+22
+00:01:13,487 --> 00:01:20,086
+no importa, volvamos de nuevo a la pgina
+
+23
+00:01:20,086 --> 00:01:25,424
+para ver que otra cosa debemos hacer
+
+24
+00:01:20,086 --> 00:01:25,424
+As que en cuanto al almacenamiento se
+
+25
+00:01:25,424 --> 00:01:30,718
+refiere, en cuanto al Live USB se refiere,
+
+26
+00:01:25,424 --> 00:01:30,718
+eso sera prcticamente todo lo que dice
+
+27
+00:01:30,718 --> 00:01:39,846
+esta gua, y no hay literalmente ms nada
+
+28
+00:01:30,718 --> 00:01:39,846
+que debas hacer, puedes conectar tu USB
+
+29
+00:01:39,846 --> 00:01:45,111
+y configurar tu computadora para
+
+30
+00:01:39,846 --> 00:01:45,111
+bootear desde tu USB en la BIOS
+
+31
+00:01:45,111 --> 00:01:50,136
+En las computadoras Dell, porque yo tengo
+
+32
+00:01:45,111 --> 00:01:50,136
+una computadora Dell, presionas F2 o F12
+
+33
+00:01:50,136 --> 00:01:55,903
+durante el arranque y puedes seleccionar
+
+34
+00:01:50,136 --> 00:01:55,903
+las opciones de booteo, en algunas otras
+
+35
+00:01:55,903 --> 00:02:02,602
+computadoras como Acer o HP debes
+
+36
+00:01:55,903 --> 00:02:02,602
+usar otras teclas, pero no te preocupes
+
+37
+00:02:02,602 --> 00:02:06,784
+Slo reinicia tu computadora y vers
+
+38
+00:02:02,602 --> 00:02:06,784
+que tecla debes usar en la esquina derecha
+
+39
+00:02:06,784 --> 00:02:11,257
+inferior o la esquina izquierda inferior,
+
+40
+00:02:06,784 --> 00:02:11,257
+durante el arranque vers algo que diga
+
+41
+00:02:11,257 --> 00:02:14,493
+"Presiona esta tecla para entrar a la
+
+42
+00:02:11,257 --> 00:02:14,493
+configuracin"
+
+43
+00:02:14,493 --> 00:02:18,710
+De todos modos, como dije, no hay
+
+44
+00:02:14,493 --> 00:02:18,710
+ms nada que necesites hacer, esto es todo
+
+45
+00:02:18,710 --> 00:02:23,925
+Ya tienes un Live USB, sin embargo,
+
+46
+00:02:18,710 --> 00:02:23,925
+si tambin quisieras tener almacenamiento
+
+47
+00:02:23,925 --> 00:02:33,509
+persistente, pues eso es otra cosa
+
+48
+00:02:23,925 --> 00:02:33,509
+distinta. As que busquemos la gua
+
+49
+00:02:33,509 --> 00:02:37,483
+de almacenamiento persistente,
+
+50
+00:02:33,509 --> 00:02:37,483
+slo quiero que puedas usarla como
+
+51
+00:02:37,483 --> 00:02:45,025
+referencia, voy a buscarla aqu
+
+52
+00:02:37,483 --> 00:02:45,025
+"Kali Linux USB Live almacenamiento
+
+53
+00:02:45,025 --> 00:03:01,669
+persistente" S, es esta. Dice Kali Linux
+
+54
+00:02:45,025 --> 00:03:01,669
+Live tiene dos opciones en el men de
+
+55
+00:03:01,669 --> 00:03:03,717
+booteo predeterminado que habilitan
+
+56
+00:03:01,669 --> 00:03:03,717
+almacenamiento persistente, as
+
+57
+00:03:03,717 --> 00:03:06,471
+que primero que todo tienes el
+
+58
+00:03:03,717 --> 00:03:06,471
+almacenamiento persistente Live
+
+59
+00:03:06,471 --> 00:03:10,846
+y el almacenamiento persistente encriptado
+
+60
+00:03:06,471 --> 00:03:10,846
+Live. Personalmente yo recomendara el
+
+61
+00:03:10,846 --> 00:03:19,607
+almacenamiento persistente Live,
+
+62
+00:03:10,846 --> 00:03:19,607
+puedes usar el encriptado tambin
+
+63
+00:03:19,607 --> 00:03:30,416
+pero eso depende totalmente de ti,
+
+64
+00:03:19,607 --> 00:03:30,416
+as que veamos como funciona esto con
+
+65
+00:03:30,416 --> 00:03:36,097
+la encriptacin LUKS, sin embargo,
+
+66
+00:03:30,416 --> 00:03:36,097
+si olvidas tu contrasea, si no usas
+
+67
+00:03:36,097 --> 00:03:43,079
+tu USB por un tiempo o algo as y olvidas
+
+68
+00:03:36,097 --> 00:03:43,079
+tu contrasea nunca ms podrs, y repito,
+
+69
+00:03:43,079 --> 00:03:49,132
+nunca ms, si seleccionas una contrasea
+
+70
+00:03:43,079 --> 00:03:49,132
+muy larga y complicada de encriptacin
+
+71
+00:03:49,132 --> 00:03:54,937
+nunca ms podrs acceder a esa informacin
+
+72
+00:03:49,132 --> 00:03:54,937
+estar perdida, perdida completamente,
+
+73
+00:03:54,937 --> 00:04:06,481
+As que debes tener eso en cuenta, porque
+
+74
+00:03:54,937 --> 00:04:06,481
+creas cosas encriptadas, si lo vas a usar, est bien,
+
+75
+00:04:06,481 --> 00:04:14,771
+no hay problema, si no lo vas a usar y lo vas
+
+76
+00:04:06,481 --> 00:04:14,771
+a dejar tirado en algn lugar y olvidas tu
+
+77
+00:04:14,771 --> 00:04:20,662
+contrasea perders toda tu informacin,
+
+78
+00:04:14,771 --> 00:04:20,662
+debes pensarlo, de verdad vale la pena?
+
+79
+00:04:20,662 --> 00:04:27,569
+Si de verdad tienes algo en tu USB que es
+
+80
+00:04:20,662 --> 00:04:27,569
+tan importante para necesitar tenerlo
+
+81
+00:04:27,569 --> 00:04:39,441
+encriptado. As que veamos lo que dice
+
+82
+00:04:27,569 --> 00:04:39,441
+la gua de abajo, ambas guas son bastante
+
+83
+00:04:39,441 --> 00:04:47,872
+similares y funcionan bajo el mismo concepto,
+
+84
+00:04:39,441 --> 00:04:47,872
+slo usan formas diferentes de crear particiones
+
+85
+00:04:47,872 --> 00:04:51,750
+"Alternativamente puedes crear una gran
+
+86
+00:04:47,872 --> 00:04:51,750
+rea de almacenamiento para almacenamiento
+
+87
+00:04:51,750 --> 00:05:01,742
+persistente, esto aade una capa adicional
+
+88
+00:04:51,750 --> 00:05:01,742
+de seguridad" "Se crear una nueva particin
+
+89
+00:05:01,742 --> 00:05:04,906
+para almacenar informacin de persistencia
+
+90
+00:05:01,742 --> 00:05:04,906
+y empezar a escribir sobre la segunda particin
+
+91
+00:05:04,906 --> 00:05:22,195
+de Kali Live. En realidad no necesitamos esto,
+
+92
+00:05:04,906 --> 00:05:22,195
+as que voy a saltearlo. As que este archivo
+
+93
+00:05:22,195 --> 00:05:26,921
+persistence.conf, definitivamente
+
+94
+00:05:22,195 --> 00:05:26,921
+necesitaremos eso y necesitaremos
+
+95
+00:05:26,921 --> 00:05:37,508
+un instalador de LUKS, as que tienen
+
+96
+00:05:26,921 --> 00:05:37,508
+este comando pero no lo puedes copiar.
+
+97
+00:05:41,028 --> 00:05:46,090
+No va a funcionar de la manera que quieres
+
+98
+00:05:41,028 --> 00:05:46,090
+que funcione, es por eso que tendremos que
+
+99
+00:05:46,090 --> 00:06:02,345
+hacerlo nosotros mismos. Abajo tenemos
+
+100
+00:05:46,090 --> 00:06:02,345
+cryptsetup, as que necesitamos crear una
+
+101
+00:06:02,345 --> 00:06:12,000
+particin, formatearla con LUKS, abrirla
+
+102
+00:06:02,345 --> 00:06:12,000
+con LUKS, luego formatearla con el
+
+103
+00:06:12,000 --> 00:06:18,389
+formato de archivos ext3, etiquetarla y
+
+104
+00:06:12,000 --> 00:06:18,389
+despus necesitamos crear este archivo
+
+105
+00:06:18,389 --> 00:06:25,572
+persistence.conf aqu, luego debemos
+
+106
+00:06:18,389 --> 00:06:25,572
+cerrarlo, una vez que est cerrado,
+
+107
+00:06:25,572 --> 00:06:28,818
+reiniciar la computadora y la,
+
+108
+00:06:25,572 --> 00:06:28,818
+prxima vez que botee, seleccionamos el
+
+109
+00:06:28,818 --> 00:06:37,159
+Live USB encriptado con persistencia de
+
+110
+00:06:28,818 --> 00:06:37,159
+almacenamiento y te pedir ingresas
+
+111
+00:06:37,159 --> 00:06:41,547
+una contrasea. De verdad no puedo
+
+112
+00:06:37,159 --> 00:06:41,547
+mostrar eso mientras estoy grabando
+
+113
+00:06:41,547 --> 00:06:46,290
+as que ver si puedo usar la cmara de
+
+114
+00:06:41,547 --> 00:06:46,290
+mi telfono para grabar la pantalla
+
+115
+00:06:46,290 --> 00:06:49,596
+mientras se hace el booteo porque
+
+116
+00:06:46,290 --> 00:06:49,596
+ten en cuenta que cuando booteas
+
+117
+00:06:49,596 --> 00:06:55,195
+una versin Live de Kali te encontrars
+
+118
+00:06:49,596 --> 00:06:55,195
+con algunos problemas, el primer problema
+
+119
+00:06:55,195 --> 00:07:01,327
+que te encontrars es si ests usando varios
+
+120
+00:06:55,195 --> 00:07:01,327
+monitores como yo lo estoy hacendo
+
+121
+00:07:01,327 --> 00:07:10,691
+Live Kali simplemente no las detectar,
+
+122
+00:07:01,327 --> 00:07:10,691
+esto es para ser usado principalmente
+
+123
+00:07:10,691 --> 00:07:18,371
+en una laptop o una computadora de escritorio
+
+124
+00:07:10,691 --> 00:07:18,371
+as que no funcionar con monitores mltiples
+
+125
+00:07:18,371 --> 00:07:22,926
+Adems, tal vez te encontrars con algunos
+
+126
+00:07:18,371 --> 00:07:22,926
+problemas con el WiFi, eso slo significa que
+
+127
+00:07:22,926 --> 00:07:30,228
+no tienes instalados los drivers correctos,
+
+128
+00:07:22,926 --> 00:07:30,228
+pero para adaptadores Wi-Fi por USB
+
+129
+00:07:30,228 --> 00:07:38,233
+puedes ver las lecturas 35 y 36, creo que
+
+130
+00:07:30,228 --> 00:07:38,233
+lo expliqu muy bien all, cuales puedes
+
+131
+00:07:38,233 --> 00:07:42,509
+usar y que tienen garanta que funcionarn,
+
+132
+00:07:38,233 --> 00:07:42,509
+sin embargo hay algunos que tambin
+
+133
+00:07:42,509 --> 00:07:48,999
+pueden funcionar, slo eleg ese porque
+
+134
+00:07:42,509 --> 00:07:48,999
+era barato y se poda encontrar fcilmente
+
+135
+00:07:48,999 --> 00:07:57,657
+en eBay, as que empecemos.
+
+136
+00:07:57,657 --> 00:08:03,019
+No necesitaremos gparted ahora mismo,
+
+137
+00:07:57,657 --> 00:08:03,019
+slo quiero mostrarte estas cosas aqu,
+
+138
+00:08:03,019 --> 00:08:12,356
+As que, qu deberamos hacer primero?
+
+139
+00:08:03,019 --> 00:08:12,356
+Escribe fdisk -l. Ok, es sdb
+
+140
+00:08:12,356 --> 00:08:25,366
+fdisk /dev/sdb, brelo, presiona n
+
+141
+00:08:12,356 --> 00:08:25,366
+porque queremos crear una particin nueva
+
+142
+00:08:25,366 --> 00:08:30,211
+Puedes tener 4 particiones primarias,
+
+143
+00:08:25,366 --> 00:08:30,211
+nmero de particin, la predeterminada
+
+144
+00:08:30,211 --> 00:08:37,880
+es 3 porque ya tenemos 1 y 2, y ya
+
+145
+00:08:30,211 --> 00:08:37,880
+que slo puedes tener 4, entonces
+
+146
+00:08:37,880 --> 00:08:45,344
+crearemos una tercera, as que 3,
+
+147
+00:08:37,880 --> 00:08:45,344
+"Primer sector", bien, el primer sector
+
+148
+00:08:45,344 --> 00:08:55,318
+es el ltimo sector de sdb2, as que puedes
+
+149
+00:08:45,344 --> 00:08:55,318
+ver que este y este son prcticamente el mismo
+
+150
+00:08:55,318 --> 00:09:03,664
+Es slo que este termina en 104 y este en 103,
+
+151
+00:08:55,318 --> 00:09:03,664
+entonces el siguiente, est bien, slo presiona Enter
+
+152
+00:09:03,664 --> 00:09:10,916
+y ahora puedes definir el tamao, as que dice
+
+153
+00:09:03,664 --> 00:09:10,916
+"ltimo sector, +sectores o +tamao", as que
+
+154
+00:09:10,916 --> 00:09:22,333
+si no quieres ocupar el USB totalmente, escribe
+
+155
+00:09:10,916 --> 00:09:22,333
+"+ 10G" Eso sera 10 Gigabytes. Voy a expandir un
+
+156
+00:09:22,333 --> 00:09:36,504
+poco esto. Cual es el problema ahora?
+
+157
+00:09:22,333 --> 00:09:36,504
+Lo siento, parece que se atasc
+
+158
+00:09:36,504 --> 00:09:45,638
+As que n (new), p (primary), 3, Enter.
+
+159
+00:09:36,504 --> 00:09:45,638
+Excelente, as que ahora puedo decir
+
+160
+00:09:45,638 --> 00:09:54,971
+"+10G" y eso sera la siguiente particin, dnde
+
+161
+00:09:45,638 --> 00:09:54,971
+puedo especficar los sectores que quisiera.
+
+162
+00:09:54,971 --> 00:10:00,111
+Pero yo slo quisiera que tomara el resto
+
+163
+00:09:54,971 --> 00:10:00,111
+del espacio disponible, este el el ltimo
+
+164
+00:10:00,111 --> 00:10:08,175
+posible que puede tomar y estos seran
+
+165
+00:10:00,111 --> 00:10:08,175
+los sectores ocupados all, debera ser
+
+166
+00:10:08,175 --> 00:10:19,457
+aproximadamente 40-50G, algo as,
+
+167
+00:10:08,175 --> 00:10:19,457
+en realidad no importa, slo va a tomar
+
+168
+00:10:19,457 --> 00:10:23,122
+el resto del espacio que est disponible,
+
+169
+00:10:19,457 --> 00:10:23,122
+slo presiona Enter y usa el predeterminado
+
+170
+00:10:23,122 --> 00:10:29,094
+Dice "Usando el valor predeterminado"
+
+171
+00:10:23,122 --> 00:10:29,094
+Ahora presiona w para escribir,
+
+172
+00:10:29,094 --> 00:10:58,286
+Ok, ahora escribiremos df -h
+
+173
+00:10:29,094 --> 00:10:58,286
+"sdb2 est montado", unmount dev/sdb2
+
+174
+00:10:58,286 --> 00:11:16,959
+Ok, ahora intentremos esto de nuevo,
+
+175
+00:10:58,286 --> 00:11:16,959
+Ok, ahora hemos hecho eso exitosamente
+
+176
+00:11:16,959 --> 00:11:26,451
+fdisk -l, Si, lo hicimos, si logramos
+
+177
+00:11:16,959 --> 00:11:26,451
+particionarlo y hemos obtenido esa
+
+178
+00:11:26,451 --> 00:11:32,465
+particin adicional, as que el prximo paso
+
+179
+00:11:26,451 --> 00:11:32,465
+que debemos hacer... Voy a usar un poco
+
+180
+00:11:32,465 --> 00:11:42,940
+esta gua porque honestamente no he formateado
+
+181
+00:11:32,465 --> 00:11:42,940
+nada con LUKS en mucho tiempo, primeramente porque
+
+182
+00:11:42,940 --> 00:11:53,050
+no necesit formatear nada con LUKS, usualmente lo
+
+183
+00:11:42,940 --> 00:11:53,050
+haces una vez, cuando instalas tu sistema y no lo vuelves
+
+184
+00:11:53,050 --> 00:11:59,977
+a hacer casi que nunca ms, porque no hay necesidad,
+
+185
+00:11:53,050 --> 00:11:59,977
+slo vas a encriptar tu unidad una vez, no lo utilizars
+
+186
+00:11:59,977 --> 00:12:07,869
+nunca ms, y eso es exactamente lo que digo,
+
+187
+00:11:59,977 --> 00:12:07,869
+si no los usas frecuentemente y tienes una
+
+188
+00:12:07,869 --> 00:12:11,630
+contrasea complicada, bueno, lo ms
+
+189
+00:12:07,869 --> 00:12:11,630
+seguro es que tendrs que decirle adis
+
+190
+00:12:11,630 --> 00:12:19,622
+a tu informacin. As que ahora, lo que
+
+191
+00:12:11,630 --> 00:12:19,622
+puedo hacer es copiar y pegar este comando
+
+192
+00:12:19,622 --> 00:12:27,763
+porque mi particin se llama sdb3 y la tuya
+
+193
+00:12:19,622 --> 00:12:27,763
+tiene un nombre diferente, por favor, cambialo
+
+194
+00:12:31,583 --> 00:12:38,528
+As que vamos a formatear esto con LUKS,
+
+195
+00:12:31,583 --> 00:12:38,528
+y el dispositivo es sdb y la particin es 3,
+
+196
+00:12:38,528 --> 00:12:44,484
+por favor, verifica que este sea el dispositivo
+
+197
+00:12:38,528 --> 00:12:44,484
+y que esta es la particin porque la tuya
+
+198
+00:12:44,484 --> 00:12:51,622
+pueda que sea diferente, podra ser sdd3 o
+
+199
+00:12:44,484 --> 00:12:51,622
+scd3 o algo as, no lo s, slo verifcalo.
+
+200
+00:12:51,622 --> 00:12:55,486
+Lo ms probable es que sea el mismo pero
+
+201
+00:12:51,622 --> 00:12:55,486
+verficalo de todas formas, vamos y presionamos
+
+202
+00:12:55,486 --> 00:13:12,968
+Enter, "Advertencia: La informacin de sobreescribir"
+
+203
+00:12:55,486 --> 00:13:12,968
+"YES", "Ingresa contrasea", yo voy a escribir test
+
+204
+00:13:12,968 --> 00:13:20,389
+Ten mucho, mucho cuidado con lo que escribes aqu,
+
+205
+00:13:12,968 --> 00:13:20,389
+una vez bloqueado, una vez encriptado si la contrasea
+
+206
+00:13:20,389 --> 00:13:27,213
+es lo suficientemente compleja nunca volvers a
+
+207
+00:13:20,389 --> 00:13:27,213
+poder desencriptar con la contrasea indicada
+
+208
+00:13:28,303 --> 00:13:38,473
+Olvda si viste algo en las pelculas dnde rompen
+
+209
+00:13:28,303 --> 00:13:38,473
+encriptaciones o algo as, simplemente no sucede.
+
+210
+00:13:38,473 --> 00:13:44,126
+Si la contrasea es lo suficientemente compleja
+
+211
+00:13:38,473 --> 00:13:44,126
+no importa lo rpida que sea tu computadora,
+
+212
+00:13:44,126 --> 00:13:51,470
+Podras usar Google Data Center y todos los
+
+213
+00:13:44,126 --> 00:13:51,470
+procesadores y todas las tarjetas grficas y
+
+214
+00:13:51,470 --> 00:13:57,752
+GPUs y CPUs y lo todo lo que te puedas
+
+215
+00:13:51,470 --> 00:13:57,752
+imaginar y podras generar billones y
+
+216
+00:13:57,752 --> 00:14:06,722
+billones y billones de contraseas pero
+
+217
+00:13:57,752 --> 00:14:06,722
+te tomara mas o menos 20 aos para
+
+218
+00:14:06,722 --> 00:14:13,923
+desencriptar una buena contrasea.
+
+219
+00:14:06,722 --> 00:14:13,923
+As que s, imaginate lo que le tomara a
+
+220
+00:14:13,923 --> 00:14:20,166
+una computadora regular, olvdalo.
+
+221
+00:14:13,923 --> 00:14:20,166
+Esa es una de las razones, si no me
+
+222
+00:14:20,166 --> 00:14:26,693
+equivoco, por las que en algunos pases dnde
+
+223
+00:14:20,166 --> 00:14:26,693
+las autoridades pueden confiscar unidades encriptadas
+
+224
+00:14:26,693 --> 00:14:33,364
+indefinidamente porque te toma una cantidad de
+
+225
+00:14:26,693 --> 00:14:33,364
+tiempo ridcula para desencriptarlas y es cuestionable
+
+226
+00:14:33,364 --> 00:14:38,995
+si alguna vez se podrn desencriptar por la cantidad
+
+227
+00:14:33,364 --> 00:14:38,995
+de recursos que deben ser usados exclusivamente
+
+228
+00:14:38,995 --> 00:14:47,080
+para algo as. Lo siento si estoy aburriendo
+
+229
+00:14:38,995 --> 00:14:47,080
+con algo as, pero es realmente importante
+
+230
+00:14:47,080 --> 00:14:54,944
+que recuerdes la contrasea porque no podrs
+
+231
+00:14:47,080 --> 00:14:54,944
+decirme en la seccin de discuciones algo como
+
+232
+00:14:54,944 --> 00:15:02,466
+"Ey, mi contrasea no funciona", as que, no podr
+
+233
+00:14:54,944 --> 00:15:02,466
+hacer nada al respecto, no importa si accedo
+
+234
+00:15:02,466 --> 00:15:07,690
+remotamente a tu sistema o algo as, es
+
+235
+00:15:02,466 --> 00:15:07,690
+completamente irrelevante, no habr nada,
+
+236
+00:15:07,690 --> 00:15:14,293
+y digo literalmente nada que podr hacer sobre eso,
+
+237
+00:15:07,690 --> 00:15:14,293
+por favor, recuerda la contrasea si ests eligiendo
+
+238
+00:15:14,293 --> 00:15:21,406
+esta instalacin o escribe algo extremadamente
+
+239
+00:15:14,293 --> 00:15:21,406
+simple que podrs recordar fcilmente,
+
+240
+00:15:21,406 --> 00:15:29,252
+De todos modos, suficiente acerca de mi
+
+241
+00:15:21,406 --> 00:15:29,252
+paranoia aqu, sigamos y hagamos esto.
+
+242
+00:15:29,252 --> 00:15:48,272
+As que, ingresar contrasea, cul es la
+
+243
+00:15:29,252 --> 00:15:48,272
+contrasea que acabaste de ingresar?
+
+244
+00:15:50,602 --> 00:16:08,181
+Ah est, pudimos abrirlo, ahora podemos
+
+245
+00:15:50,602 --> 00:16:08,181
+seguir y crear esto, podemos formatearlo
+
+246
+00:16:08,181 --> 00:16:15,695
+As que lo formateamos con ext3, con etiqueta
+
+247
+00:16:08,181 --> 00:16:15,695
+de persistencia y este es el dispositivo que
+
+248
+00:16:15,695 --> 00:16:22,712
+formatearemos. Esto no debera tardar
+
+249
+00:16:15,695 --> 00:16:22,712
+demasiado, pero definitivamente va a tardar
+
+250
+00:16:22,712 --> 00:16:35,474
+un rato. Vamos, vamos, de verdad odio cuando
+
+251
+00:16:22,712 --> 00:16:35,474
+en el medio del tutorial me encuentro con algo
+
+252
+00:16:35,474 --> 00:16:45,632
+por lo que tenga que esperar como esto. Haba
+
+253
+00:16:35,474 --> 00:16:45,632
+hecho pruebas antes sin la encriptacin y sin
+
+254
+00:16:45,632 --> 00:16:52,331
+la encriptacin todo pareci funcionar bien,
+
+255
+00:16:45,632 --> 00:16:52,331
+sin ningn problema, es bsicamente lo
+
+256
+00:16:52,331 --> 00:16:58,566
+mismo, lo nico que debes hacer es crear
+
+257
+00:16:52,331 --> 00:16:58,566
+otra particin. La nica diferencia entre este
+
+258
+00:16:58,566 --> 00:17:06,162
+y el que no incluye encriptacin es bsicamente
+
+259
+00:16:58,566 --> 00:17:06,162
+la instalacin de LUKS para que los datos estuvieran
+
+260
+00:17:06,162 --> 00:17:12,333
+encriptados, pero no es una mala idea, digo,
+
+261
+00:17:06,162 --> 00:17:12,333
+es un buen concepto, de proteger tu informacin
+
+262
+00:17:12,333 --> 00:17:18,137
+y todo eso. Pero en cualquier caso, se me est
+
+263
+00:17:12,333 --> 00:17:18,137
+acabando el tiempo y no creo que esto vaya a
+
+264
+00:17:18,137 --> 00:17:27,163
+terminar pronto, algn da voy a comprar
+
+265
+00:17:18,137 --> 00:17:27,163
+otra computadora y voy a correr Xen corriendo
+
+266
+00:17:27,163 --> 00:17:40,121
+a gran velocidad. De todos modos, me despido aqu
+
+267
+00:17:27,163 --> 00:17:40,121
+y luego vamos a seguir en el siguiente tutorial,
+
+268
+00:17:40,121 --> 00:17:45,036
+verdad espero que la gua que eleg es lo
+
+269
+00:17:40,121 --> 00:17:45,036
+suficientemente simple y la instalacin es
+
+270
+00:17:45,036 --> 00:17:55,548
+lo suficientemente simple, si tu quisieras que
+
+271
+00:17:45,036 --> 00:17:55,548
+creara instrucciones para otras distribuciones
+
+272
+00:17:55,548 --> 00:18:01,661
+como he dicho, puedes pedirmelo en la seccin
+
+273
+00:17:55,548 --> 00:18:01,661
+de discusin. Adis.
+

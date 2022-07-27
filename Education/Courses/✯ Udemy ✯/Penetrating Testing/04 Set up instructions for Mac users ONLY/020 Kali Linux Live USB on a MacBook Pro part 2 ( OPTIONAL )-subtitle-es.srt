@@ -1,0 +1,771 @@
+1
+00:00:00,000 --> 00:00:02,067
+Bueno, bienvenidos todos otra vez.
+
+2
+00:00:02,102 --> 00:00:05,199
+Ahora vamos a tener que hacer unas cosas
+
+3
+00:00:05,434 --> 00:00:07,800
+para tener esto en orden y en funcionamiento.
+
+4
+00:00:08,235 --> 00:00:12,574
+Igual os habéis fijado en que
+unetbootin ya no está en marcha.
+
+5
+00:00:12,709 --> 00:00:16,238
+Al final del proceso
+de instalación he pulsado Salir,
+
+6
+00:00:17,426 --> 00:00:20,942
+pero he hecho una captura
+de pantalla y esto es lo que aparece.
+
+7
+00:00:22,520 --> 00:00:25,394
+Un momento. Ahora.
+
+8
+00:00:25,429 --> 00:00:28,215
+Tengo un montón de cosas detrás:
+
+9
+00:00:28,250 --> 00:00:32,000
+foros, cosas que estoy ejecutando,
+
+10
+00:00:32,135 --> 00:00:34,718
+descargando, volviéndome loco, majara.
+
+11
+00:00:34,853 --> 00:00:39,083
+Pero no pasa nada, dice
+"descargando", "extrayendo",
+
+12
+00:00:39,218 --> 00:00:42,321
+"instalando", "instalación
+completada". Y debajo dice, mirad...
+
+13
+00:00:43,694 --> 00:00:45,825
+Bueno, en realidad es una
+captura de los intentos anteriores,
+
+14
+00:00:46,933 --> 00:00:50,376
+no pasa nada, os va a salir este mismo mensaje.
+
+15
+00:00:51,998 --> 00:00:53,532
+Esta es la moraleja de la historia.
+
+16
+00:00:53,667 --> 00:00:56,842
+Dirá que el Mac no arrancará
+desde el dispositivo USB que se ha creado.
+
+17
+00:00:56,897 --> 00:01:01,313
+"Insértalo en un PC y selecciona la
+opción de arranque USB en el menú BIOS"
+
+18
+00:01:01,448 --> 00:01:03,431
+Esto es verdad, totalmente cierto.
+
+19
+00:01:03,466 --> 00:01:06,804
+Unetbootin os ha dicho que este USB
+
+20
+00:01:07,039 --> 00:01:10,520
+no funcionará en un Mac, y da igual cuál,
+
+21
+00:01:11,260 --> 00:01:13,535
+si es de 2013, 14, 15,
+
+22
+00:01:13,570 --> 00:01:16,290
+o de 2009, 10, 11, da igual.
+
+23
+00:01:16,325 --> 00:01:20,650
+Es completamente irrelevante.
+El USB no irá tal y como está.
+
+24
+00:01:20,785 --> 00:01:23,448
+Hay que modificarlo,
+trastear un poco con él
+
+25
+00:01:23,583 --> 00:01:25,092
+para hacer que funcione.
+
+26
+00:01:25,776 --> 00:01:28,293
+Vamos a cerrar esta imagen
+porque ya no la necesitamos
+
+27
+00:01:28,428 --> 00:01:33,279
+y vamos a abrir el gestor
+de archivos, en Mac es Finder,
+
+28
+00:01:33,614 --> 00:01:37,934
+y vamos a la partición
+que acabamos de modificar.
+
+29
+00:01:39,519 --> 00:01:42,756
+Esta carpeta, Efi, la he creado hace un momento
+
+30
+00:01:42,891 --> 00:01:45,676
+cuando intentaba grabar el
+vídeo y he fallado estrepitosamente
+
+31
+00:01:45,911 --> 00:01:48,360
+Voy a darle a "mover a la Papelera".
+
+32
+00:01:48,495 --> 00:01:50,485
+En principio, no tendréis esto,
+
+33
+00:01:50,620 --> 00:01:53,474
+así que lo he eliminado por completo.
+
+34
+00:01:54,438 --> 00:01:57,449
+Ahora lo que tengo que hacer es darle a
+
+35
+00:01:57,584 --> 00:02:01,054
+nueva carpeta, escribo "Efi", Enter.
+
+36
+00:02:02,088 --> 00:02:04,633
+Y luego entro en Efi y
+
+37
+00:02:06,488 --> 00:02:09,526
+creo una nueva carpeta y escribo "Boot",
+
+38
+00:02:10,632 --> 00:02:12,411
+y luego voy a entrar en Boot.
+
+39
+00:02:12,446 --> 00:02:15,086
+Bueno, en realidad no hacía falta entrar en Boot.
+
+40
+00:02:16,617 --> 00:02:19,561
+Ya está, eso es lo que
+tenéis que hacer. Cread las carpetas.
+
+41
+00:02:22,385 --> 00:02:25,218
+Funciona así. Este es
+el directorio que necesitáis,
+
+42
+00:02:25,253 --> 00:02:28,030
+está Efi y luego Boot. En la raíz.
+
+43
+00:02:28,065 --> 00:02:30,924
+Entonces, en la raíz del
+USB, en la primera partición,
+
+44
+00:02:30,959 --> 00:02:32,915
+la que hemos creado, para mí es Untitled 1,
+
+45
+00:02:33,050 --> 00:02:35,085
+a lo mejor vosotros le
+habéis puesto otro nombre, da igual.
+
+46
+00:02:35,320 --> 00:02:38,769
+Ya he dicho que tenéis
+libertad en eso, no afecta.
+
+47
+00:02:38,804 --> 00:02:42,442
+No afecta en un sentido
+técnico al proceso de arranque.
+
+48
+00:02:42,477 --> 00:02:44,895
+Va a arrancar se llame Tralala
+
+49
+00:02:44,930 --> 00:02:47,404
+o se llame Untitled 1,
+es completamente irrelevante.
+
+50
+00:02:48,804 --> 00:02:51,874
+Aquí pone "Efi" y aquí "Boot".
+
+51
+00:02:51,909 --> 00:02:54,295
+Esto necesitáis crearlo. Si no, no funcionará.
+
+52
+00:02:55,714 --> 00:02:58,890
+Los siguientes archivos que
+voy a copiar en la carpeta Boot
+
+53
+00:02:58,925 --> 00:03:02,982
+os los dejaré en Udemy y si no pondré los enlaces
+
+54
+00:03:03,117 --> 00:03:05,752
+para descargarlos también en Udemy,
+
+55
+00:03:05,887 --> 00:03:08,284
+para que os los podáis bajar de internet.
+
+56
+00:03:08,319 --> 00:03:11,421
+Voy a copiarlos de mi otro USB.
+
+57
+00:03:14,201 --> 00:03:17,148
+Eso es, necesitáis bootX64.efi,
+
+58
+00:03:17,383 --> 00:03:22,637
+grub.cfg, grubx64.efi, MokManager.efi.
+
+59
+00:03:24,004 --> 00:03:27,889
+Uno de estos cuatro
+funcionará, los otros no valen.
+
+60
+00:03:29,210 --> 00:03:32,571
+No es que no valgan, pero no sirven para arrancar,
+
+61
+00:03:32,906 --> 00:03:34,883
+no podréis usarlos para arrancar,
+
+62
+00:03:35,414 --> 00:03:37,067
+veréis a qué me refiero en un momento.
+
+63
+00:03:38,140 --> 00:03:39,677
+Voy a darle a Copiar 4 objetos.
+
+64
+00:03:39,912 --> 00:03:42,241
+Y los cuatro objetos que estoy copiando aquí,
+
+65
+00:03:42,376 --> 00:03:44,372
+como ya he dicho, os los pasaré.
+
+66
+00:03:44,507 --> 00:03:48,376
+Podréis descargarlos, ya sea por enlaces o
+
+67
+00:03:48,411 --> 00:03:50,710
+pondré los archivos directamente en Udemy.
+
+68
+00:03:50,845 --> 00:03:52,426
+Veré si me lo permiten.
+
+69
+00:03:53,409 --> 00:03:55,367
+Así que los podréis conseguir de internet
+
+70
+00:03:55,502 --> 00:03:57,644
+porque, obviamente, no los tendréis en el ordenador.
+
+71
+00:03:58,835 --> 00:04:00,875
+Volved a la carpeta que acabáis de crear, Efi
+
+72
+00:04:00,910 --> 00:04:04,222
+y luego Boot. Entrad en
+Boot y le dais a Pegar 4 objetos.
+
+73
+00:04:05,559 --> 00:04:10,679
+Y ya está, tenemos aquí
+cuatro objetos que hemos pegado.
+
+74
+00:04:12,141 --> 00:04:14,109
+Solo hay que dejarlos
+tal cual, nada importante.
+
+75
+00:04:15,226 --> 00:04:18,835
+Ahora, si habéis seguido
+los tutoriales como toca,
+
+76
+00:04:18,970 --> 00:04:22,261
+como los he enseñado,
+en el orden que os los he hecho,
+
+77
+00:04:22,496 --> 00:04:25,368
+si habéis seguido toda esta sección para Mac,
+
+78
+00:04:25,503 --> 00:04:29,555
+sobre cómo hacer esto,
+cómo crear una máquina virtual,
+
+79
+00:04:29,890 --> 00:04:33,609
+instalarla... lo
+siguiente no será ningún problema.
+
+80
+00:04:33,844 --> 00:04:36,530
+Si os resulta difícil, si os vais
+
+81
+00:04:36,665 --> 00:04:38,662
+saltando los vídeos y yendo a lo que podéis
+
+82
+00:04:38,797 --> 00:04:41,509
+o lo que os parece interesante, os recomiendo
+
+83
+00:04:41,544 --> 00:04:45,153
+retroceder un par de vídeos
+en esta sección y echar un vistazo
+
+84
+00:04:45,188 --> 00:04:48,164
+a cómo he creado esta configuración especial.
+
+85
+00:04:49,998 --> 00:04:53,388
+Digo esto porque voy a abrir la máquina virtual
+
+86
+00:04:53,523 --> 00:04:57,146
+y a formatear una partición desde Kali.
+
+87
+00:04:59,648 --> 00:05:01,975
+He mostrado cómo crear esta configuración,
+
+88
+00:05:02,010 --> 00:05:05,194
+y ahora vamos a utilizar lo que hemos configurado
+
+89
+00:05:05,329 --> 00:05:07,547
+en los anteriores tutoriales a nuestro favor.
+
+90
+00:05:08,209 --> 00:05:09,587
+Entramos en Descargas... bueno.
+
+91
+00:05:10,746 --> 00:05:12,418
+Perdón, ahí no, en la carpeta de Aplicaciones
+
+92
+00:05:12,868 --> 00:05:15,643
+Si habéis seguido todo
+el proceso, tendréis aquí VirtualBox.
+
+93
+00:05:15,678 --> 00:05:17,762
+Abridlo.
+
+94
+00:05:20,062 --> 00:05:23,872
+También vamos a tener que
+
+95
+00:05:24,919 --> 00:05:26,465
+expulsar este dispositivo.
+
+96
+00:05:28,103 --> 00:05:29,683
+Expulsar todo. Sí, por favor.
+
+97
+00:05:32,867 --> 00:05:34,405
+¿Otra vez? ¿En serio?
+
+98
+00:05:41,266 --> 00:05:43,328
+No lo estoy usando, seguro.
+
+99
+00:05:51,258 --> 00:05:52,788
+Vamos a desmontarlo.
+
+100
+00:05:53,946 --> 00:05:57,319
+Bueno, esto no es desmontar,
+es expulsar, pero vale, lo que sea.
+
+101
+00:06:00,082 --> 00:06:01,608
+Está expulsado.
+
+102
+00:06:03,018 --> 00:06:04,583
+Vamos a arrancar Kali.
+
+103
+00:06:05,692 --> 00:06:07,387
+Espera, espera, espera...
+
+104
+00:06:10,443 --> 00:06:14,230
+Vamos primero a Ajustes, perdón.
+
+105
+00:06:14,531 --> 00:06:19,354
+Vamos a Puertos, USB, USB 2,
+
+106
+00:06:19,589 --> 00:06:22,772
+a no ser que uséis un
+USB 3.0, que es... no sé,
+
+107
+00:06:23,207 --> 00:06:25,097
+una exageración, pero bueno.
+
+108
+00:06:25,232 --> 00:06:28,326
+Y luego seleccionáis el
+USB que queráis en este menú.
+
+109
+00:06:28,461 --> 00:06:32,164
+Bueno, primero tenéis que...
+Olvidadlo... borradlo por completo.
+
+110
+00:06:32,199 --> 00:06:36,759
+Haced clic en el signo +
+y seleccionad aquí vuestro USB,
+
+111
+00:06:38,164 --> 00:06:41,126
+aparece aquí y luego clicamos en OK.
+
+112
+00:06:42,501 --> 00:06:44,865
+Luego lo extraemos.
+
+113
+00:06:46,713 --> 00:06:48,534
+Extraer todo.
+
+114
+00:06:51,101 --> 00:06:52,874
+And then boot up Kali
+
+115
+00:06:55,378 --> 00:06:57,392
+Esta es la máquina virtual Kali que hemos creado
+
+116
+00:06:57,955 --> 00:07:00,144
+en los vídeos anteriores.
+Por si os acabáis de unir
+
+117
+00:07:00,179 --> 00:07:04,081
+retroceded un par de
+tutoriales y veréis cómo se hace.
+
+118
+00:07:08,163 --> 00:07:10,389
+El motivo por el que estoy
+haciendo esto es que no puedo...
+
+119
+00:07:10,524 --> 00:07:13,904
+No tengo ni idea de cómo...
+Es decir, podría entrar en internet
+
+120
+00:07:14,039 --> 00:07:16,638
+y averiguar cómo se hace en un Mac,
+
+121
+00:07:16,773 --> 00:07:20,410
+pero me resulta más fácil hacer esto en Linux
+
+122
+00:07:21,874 --> 00:07:25,576
+y formatear la partición como yo quiera.
+
+123
+00:07:25,611 --> 00:07:30,269
+Vamos a usar Gparted,
+que es una herramienta impresionante
+
+124
+00:07:30,304 --> 00:07:33,534
+que he llegado a apreciar
+y admirar con el paso del tiempo,
+
+125
+00:07:34,838 --> 00:07:36,656
+para formatear la segunda partición.
+
+126
+00:07:39,204 --> 00:07:42,214
+Así que eso es lo que vamos a hacer.
+
+127
+00:07:51,103 --> 00:07:53,329
+Venga, venga.
+
+128
+00:07:56,081 --> 00:08:00,483
+Arrancando. Genial.
+Veis que ya tengo estas dos aquí.
+
+129
+00:08:02,079 --> 00:08:04,395
+Kali puede ver ambas particiones sin problema.
+
+130
+00:08:04,430 --> 00:08:09,837
+Ahora vamos a abrir la
+terminal y escribir "gparted".
+
+131
+00:08:28,079 --> 00:08:30,160
+Vale, por lo visto no sé escribir.
+
+132
+00:08:36,620 --> 00:08:40,207
+En la esquina superior derecha,
+seleccionad el dispositivo USB.
+
+133
+00:08:40,242 --> 00:08:43,028
+Aseguraos de que elegís vuestro dispositivo USB.
+
+134
+00:08:44,512 --> 00:08:47,040
+Fijaos en el tamaño y eso os ayudará.
+
+135
+00:08:47,075 --> 00:08:50,089
+Dirá que una partición es la ejecutable
+
+136
+00:08:50,124 --> 00:08:54,084
+y que la otra es simplemente un fat32
+
+137
+00:08:54,119 --> 00:08:55,937
+y dirá cuál es el tamaño.
+
+138
+00:08:57,209 --> 00:08:58,934
+Ahora vamos a desmontarlo.
+
+139
+00:09:01,353 --> 00:09:03,620
+Desmontando, desmontando. Venga.
+
+140
+00:09:07,485 --> 00:09:09,421
+Cuando quieras, hombre. Cuando quieras.
+
+141
+00:09:09,456 --> 00:09:13,544
+Ahora haced clic con el botón
+derecho y dadle a Cambiar formato,
+
+142
+00:09:13,679 --> 00:09:16,350
+y ahora vamos a...
+
+143
+00:09:17,791 --> 00:09:21,367
+Bueno, lo voy a eliminar primero
+
+144
+00:09:22,361 --> 00:09:26,827
+y luego voy a darle a Nuevo
+
+145
+00:09:26,962 --> 00:09:30,526
+Dejad todo como está, solo aquí,
+
+146
+00:09:38,474 --> 00:09:42,816
+casper-rw. Dejadlo como partición primaria,
+
+147
+00:09:42,951 --> 00:09:47,873
+ahora haced clic Añadir
+y luego vamos a entrar en
+
+148
+00:09:50,579 --> 00:09:53,896
+Editar, Aplicar todas las operaciones.
+Bueno, antes de que hagamos eso
+
+149
+00:09:55,378 --> 00:09:58,824
+vamos a ver si podemos cambiar la etiqueta,
+
+150
+00:09:58,959 --> 00:10:00,636
+ya que soy muy listo y no la he cambiado
+
+151
+00:10:00,771 --> 00:10:04,340
+y me gusta complicar las cosas,
+porque seguro que lo estropeo.
+
+152
+00:10:04,475 --> 00:10:06,220
+Creo que no lo voy a poder hacer,
+
+153
+00:10:06,455 --> 00:10:08,478
+pero vamos a ver si hay una opción
+
+154
+00:10:11,486 --> 00:10:13,272
+para cambiar la etiqueta del dispositivo.
+
+155
+00:10:15,232 --> 00:10:17,424
+Lo más probable es que lo tenga que reformatear.
+
+156
+00:10:19,479 --> 00:10:23,159
+Olvidadlo, no voy a echar
+a perder la sesión por eso.
+
+157
+00:10:24,675 --> 00:10:26,863
+No importa, lo he desmontado,
+
+158
+00:10:26,898 --> 00:10:28,564
+dice "creando partición primaria"
+
+159
+00:10:28,799 --> 00:10:34,671
+"ext4,49.78" eso son 50 gigas, en "/dev/sdb".
+
+160
+00:10:35,745 --> 00:10:38,593
+Fantástico, no tenía
+muchas ganas de reformatear
+
+161
+00:10:38,628 --> 00:10:41,666
+y volver directo al principio
+solo porque se llama Untitled 1.
+
+162
+00:10:41,801 --> 00:10:44,366
+Ya sé que es mejor que sea
+Kali, pero viviré con ello.
+
+163
+00:10:44,501 --> 00:10:46,426
+O sea, si queréis cambiarlo, adelante.
+
+164
+00:10:47,971 --> 00:10:49,582
+Cambiadlo al principio si queréis
+
+165
+00:10:49,617 --> 00:10:52,286
+o volved a hacer el proceso, da igual.
+
+166
+00:10:52,421 --> 00:10:57,611
+Ahora que todo esto
+está hecho, voy a darle a Cerrar.
+
+167
+00:10:57,746 --> 00:11:01,604
+Vamos a cerrar la máquina virtual
+
+168
+00:11:03,732 --> 00:11:05,741
+y vamos a cerrar...
+
+169
+00:11:06,958 --> 00:11:08,639
+sí, esto lo podemos cerrar también.
+
+170
+00:11:08,774 --> 00:11:12,387
+Y en el siguiente tutorial instalaremos
+
+171
+00:11:12,622 --> 00:11:16,624
+otra cosa de internet.
+Una vez más, os daré los enlaces
+
+172
+00:11:16,659 --> 00:11:20,473
+o un archivo para
+descargar, que podremos utilizar
+
+173
+00:11:20,608 --> 00:11:24,131
+para crear el arranque
+en lo que será la tercera
+
+174
+00:11:24,166 --> 00:11:26,545
+y esperemos que la última parte de esta sección.
+
+175
+00:11:26,680 --> 00:11:28,505
+Si os preguntáis por qué los fragmento así
+
+176
+00:11:28,540 --> 00:11:31,143
+es porque tengo ciertas
+limitaciones de tiempo para los vídeos
+
+177
+00:11:31,478 --> 00:11:33,755
+cuando los subo a Udemy.
+
+178
+00:11:33,790 --> 00:11:36,423
+Hasta entonces, me despido de vosotros.
+

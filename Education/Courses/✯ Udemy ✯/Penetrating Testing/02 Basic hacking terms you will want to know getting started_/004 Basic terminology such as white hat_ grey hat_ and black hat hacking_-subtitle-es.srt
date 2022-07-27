@@ -1,0 +1,704 @@
+1
+00:00:00,000 --> 00:00:03,497
+Hola a todos, bienvenidos al tutorial.
+
+2
+00:00:04,032 --> 00:00:09,587
+Hoy veremos los términos
+básicos que necesitáis para seguir el curso.
+
+3
+00:00:11,195 --> 00:00:14,758
+Primero, hay tres categorías principales de gente.
+
+4
+00:00:14,793 --> 00:00:19,077
+Hay sombreros blancos,
+sombreros grises y sombreros negros.
+
+5
+00:00:20,558 --> 00:00:24,151
+Todo lo que haremos pertenece a esta categoría,
+
+6
+00:00:24,186 --> 00:00:26,064
+sombreros blancos.
+
+7
+00:00:26,099 --> 00:00:31,083
+Las actividades de estas
+personas están dentro de los límites legales.
+
+8
+00:00:31,118 --> 00:00:35,864
+Se trata de pentesters,
+hackers éticos, gente como tú y yo.
+
+9
+00:00:37,174 --> 00:00:39,373
+Luego están los sombreros grises,
+
+10
+00:00:39,408 --> 00:00:43,148
+cuyas actividades están entre lo legal y lo ilegal,
+
+11
+00:00:43,283 --> 00:00:45,512
+en una especie de área gris.
+
+12
+00:00:46,047 --> 00:00:51,201
+Y además, están los más
+conocidos, que son los sombreros negros.
+
+13
+00:00:51,536 --> 00:00:57,226
+Y a menudo, por desgracia,
+cada vez que alguien oye el término "hackeo"
+
+14
+00:00:57,361 --> 00:01:01,474
+se asocia con gente del mundillo de sombreros negros.
+
+15
+00:01:03,675 --> 00:01:07,120
+Estos llevan a cabo todo tipo de actividades ilegales
+
+16
+00:01:07,155 --> 00:01:10,389
+o que actúan sin tener en cuenta la ley,
+
+17
+00:01:12,338 --> 00:01:15,257
+y extraen información de determinados servidores
+
+18
+00:01:15,292 --> 00:01:17,362
+como credenciales, datos de las tarjetas de crédito,
+
+19
+00:01:17,835 --> 00:01:19,589
+hacen que caigan los servidores
+
+20
+00:01:19,924 --> 00:01:23,125
+normalmente para obtener algún beneficio financiero.
+
+21
+00:01:25,375 --> 00:01:28,263
+Debajo tenemos el término "footprinting".
+
+22
+00:01:30,934 --> 00:01:33,629
+Esto consiste en recopilar información,
+
+23
+00:01:37,842 --> 00:01:39,420
+en hacer un reconocimiento,
+
+24
+00:01:39,855 --> 00:01:45,055
+averiguar la IP del servidor,
+qué puertos están abiertos
+
+25
+00:01:45,090 --> 00:01:48,201
+y con esto, concluir qué servicios hay en marcha.
+
+26
+00:01:49,013 --> 00:01:52,613
+Pero no está restringido al mundo digital.
+
+27
+00:01:52,948 --> 00:01:54,696
+Footprinting también puede ser
+
+28
+00:01:54,731 --> 00:01:58,440
+cuando vas en persona a una empresa,
+
+29
+00:01:59,669 --> 00:02:03,042
+o bien a cualquier edificio
+en general que tenga servidores,
+
+30
+00:02:05,044 --> 00:02:09,062
+y echas un vistazo para obtener cierta información.
+
+31
+00:02:09,497 --> 00:02:12,166
+O rebuscas en su basura.
+
+32
+00:02:12,201 --> 00:02:16,537
+Vas por la parte de atrás y saltas a los cubos de basura
+
+33
+00:02:16,572 --> 00:02:18,765
+y obtienes información a partir de eso.
+
+34
+00:02:18,800 --> 00:02:21,752
+También hay gente que va a los parkings
+
+35
+00:02:21,787 --> 00:02:25,383
+para ver quiénes son
+los empeados, quién trabaja allí.
+
+36
+00:02:25,418 --> 00:02:27,452
+Cosas de todo tipo.
+
+37
+00:02:27,487 --> 00:02:33,156
+Es solo recopilar información relativa a un objetivo.
+
+38
+00:02:33,291 --> 00:02:36,340
+No solo con relación al mundo digital.
+
+39
+00:02:38,502 --> 00:02:41,401
+Debajo tenemos varios tipos de ataque.
+
+40
+00:02:42,036 --> 00:02:44,127
+Están DoS y DDoS.
+
+41
+00:02:44,562 --> 00:02:48,671
+Viene a ser lo mismo implementado de forma diferente.
+
+42
+00:02:50,090 --> 00:02:53,308
+DoS viene de Denial of Service
+(denegación de servicio).
+
+43
+00:02:53,343 --> 00:02:55,640
+A menudo son llamados ataques infantiles
+
+44
+00:02:55,675 --> 00:02:57,886
+porque son relativamente fáciles de hacer
+
+45
+00:03:00,269 --> 00:03:02,538
+siempre que tengas las suficientes máquinas.
+
+46
+00:03:02,573 --> 00:03:05,051
+Pero ese es el dominio de DDoS.
+
+47
+00:03:05,686 --> 00:03:11,211
+En general, lo que pasa
+es que se generan más solicitudes
+
+48
+00:03:11,246 --> 00:03:13,352
+de las que un servidor puede abarcar
+
+49
+00:03:13,387 --> 00:03:16,453
+y entonces empieza a fallar la conexión.
+
+50
+00:03:17,088 --> 00:03:22,957
+Por ejemplo, Apache soporta
+hasta 10.000 conexiones por defecto.
+
+51
+00:03:23,592 --> 00:03:27,109
+Si puedes generar más de 10.000 solicitudes
+
+52
+00:03:30,019 --> 00:03:33,769
+cualquier otro que intente acceder a la web no podrá
+
+53
+00:03:33,804 --> 00:03:36,181
+puesto que la conexión habrá caído
+
+54
+00:03:36,216 --> 00:03:40,277
+simplemente porque Apache
+dirá que tiene demasiados usuarios,
+
+55
+00:03:40,312 --> 00:03:42,353
+más usuarios de los que puede abastecer
+
+56
+00:03:42,388 --> 00:03:44,678
+y la conexión se perderá por defecto.
+
+57
+00:03:47,834 --> 00:03:52,928
+El sitio queda inaccesible
+aunque no hayas desencriptado nada,
+
+58
+00:03:53,263 --> 00:03:57,681
+ni hayas atravesado
+cortafuegos o robado contraseñas.
+
+59
+00:04:01,426 --> 00:04:03,753
+Al denegar el servicio, lo haces solo tú.
+
+60
+00:04:05,075 --> 00:04:10,144
+Todas las solicitudes, todo sale de tu ordenador.
+
+61
+00:04:11,782 --> 00:04:14,243
+Y esta no es siempre la manera más eficiente.
+
+62
+00:04:14,278 --> 00:04:17,510
+De hecho, por lo general, solo funciona
+
+63
+00:04:17,545 --> 00:04:21,647
+si hay un fallo en la
+forma de procesar las solicitudes.
+
+64
+00:04:22,738 --> 00:04:26,098
+No obstante, para eso está el ataque DDoS.
+
+65
+00:04:27,825 --> 00:04:31,081
+Cuando tienes varios ordenadores, varias conexiones
+
+66
+00:04:31,116 --> 00:04:36,898
+y todos generan solicitudes
+simultáneas a un determinado servidor.
+
+67
+00:04:36,933 --> 00:04:41,125
+Esto es muy difícil de
+combatir, es decir, necesitarías tener
+
+68
+00:04:41,160 --> 00:04:46,302
+una buena configuración del
+cortafuegos y un buen cortafuegos en sí.
+
+69
+00:04:46,337 --> 00:04:50,291
+Normalmente, se necesita
+uno físico para frenar estos ataques.
+
+70
+00:04:50,626 --> 00:04:54,547
+Y con físico me refiero
+a un router firewall o algo así.
+
+71
+00:04:58,568 --> 00:05:02,337
+No es tan complicado hacer el ataque
+
+72
+00:05:02,372 --> 00:05:05,466
+como hacer las preparaciones necesarias.
+
+73
+00:05:05,501 --> 00:05:09,584
+Primero, tienes que infectar otros dispositivos
+
+74
+00:05:09,619 --> 00:05:16,380
+que esclavizarás y
+usarás para llevar a cabo el ataque.
+
+75
+00:05:16,415 --> 00:05:20,309
+Esta es la parte difícil.
+El DDoS es fácil comparado con eso.
+
+76
+00:05:22,255 --> 00:05:26,003
+Para infectar otros
+ordenadores se necesitan dos cosas:
+
+77
+00:05:26,038 --> 00:05:29,364
+RATS (Remote Administration Tools)
+
+78
+00:05:29,399 --> 00:05:35,315
+y hay que hacerlas FUD,
+completamente indetectables.
+
+79
+00:05:35,350 --> 00:05:38,787
+De ahí viene FUD, fully undetectable.
+
+80
+00:05:39,222 --> 00:05:43,258
+Esto significa que el antivirus no las detecta.
+
+81
+00:05:43,293 --> 00:05:47,378
+Más bien, quiere decir que
+estos no las etiquetan como maliciosas.
+
+82
+00:05:52,028 --> 00:05:58,436
+A veces, no se trata de que
+solo tus aplicaciones sean indetectables.
+
+83
+00:05:58,771 --> 00:06:01,004
+Hay muchas empresas de pentesting
+
+84
+00:06:01,039 --> 00:06:04,141
+y no solo de pentesting, empresas en general,
+
+85
+00:06:04,176 --> 00:06:07,595
+que pagan grandes sumas de dinero
+
+86
+00:06:07,630 --> 00:06:12,648
+para que sus programas sean
+completamente indetectables por antivirus.
+
+87
+00:06:15,074 --> 00:06:19,778
+Debajo tenemos RATS,
+herramientas de administración a distancia.
+
+88
+00:06:20,113 --> 00:06:23,761
+Ellas solas no son un tipo de hackeo.
+
+89
+00:06:26,881 --> 00:06:29,117
+Básicamente se guardan en memorias USB,
+
+90
+00:06:30,318 --> 00:06:33,940
+se envían por correo, se comparten por archivos zip.
+
+91
+00:06:37,144 --> 00:06:42,276
+Esta es otra forma de
+infectar ordenadores, otros dispositivos,
+
+92
+00:06:43,011 --> 00:06:49,526
+y esclavizarlos, convertirlos
+en esclavos del servidor principal
+
+93
+00:06:49,827 --> 00:06:51,617
+donde quiera que esté,
+
+94
+00:06:52,780 --> 00:06:57,281
+y poder usar esos ordenadores
+para realizar cualquier actividad.
+
+95
+00:06:57,716 --> 00:07:02,499
+Esto está bien para tener
+un nivel muy alto de anonimato.
+
+96
+00:07:02,834 --> 00:07:06,644
+Resulta muy difícil localizarte,
+es difícil localizar a alguien al hacer esto.
+
+97
+00:07:06,879 --> 00:07:11,950
+Sobre todo porque los
+usuarios infectados no tienen ni idea
+
+98
+00:07:11,985 --> 00:07:15,172
+de que otra persona controla su dispositivo,
+
+99
+00:07:15,207 --> 00:07:19,025
+porque en el escritorio
+no sucede nada, no se puede ver.
+
+100
+00:07:19,060 --> 00:07:22,973
+Los procesos están en marcha en un segundo plano,
+
+101
+00:07:23,308 --> 00:07:26,109
+el procesador los está ejecutando.
+
+102
+00:07:27,826 --> 00:07:31,844
+La única forma de verlos sería
+abriendo el Administrador de tareas.
+
+103
+00:07:36,780 --> 00:07:42,065
+Igual ahí los podrías ver,
+pero puede que no si se usa un rootkit.
+
+104
+00:07:44,343 --> 00:07:50,184
+Un rootkit es una herramienta
+que se instala en un sistema operativo
+
+105
+00:07:51,119 --> 00:07:56,799
+y es capaz de esconder
+procesos en marcha del mismo sistema.
+
+106
+00:07:58,009 --> 00:08:02,049
+Por ejemplo, cuando inicias el
+Administrador de tareas en Windows
+
+107
+00:08:02,184 --> 00:08:06,763
+el objetivo del rootkit sería esconder
+los procesos del Administrador de tareas.
+
+108
+00:08:06,798 --> 00:08:09,065
+Veamos cómo funciona.
+
+109
+00:08:09,100 --> 00:08:13,367
+El Administrador de tareas
+solicita información al sistema, al núcleo.
+
+110
+00:08:13,402 --> 00:08:16,438
+Y el núcleo del sistema responde.
+
+111
+00:08:16,473 --> 00:08:20,028
+Es el centro del sistema,
+donde están todos los drivers y las funciones.
+
+112
+00:08:21,381 --> 00:08:25,950
+Entonces, este responde
+"tengo en marcha este, este y este. Ahí tienes".
+
+113
+00:08:26,485 --> 00:08:32,347
+Pero lo que hace el rootkit es
+redireccionar las solicitudes a sí mismo.
+
+114
+00:08:32,682 --> 00:08:36,206
+Y el Administrador dice
+"no tengo esos procesos en marcha".
+
+115
+00:08:36,741 --> 00:08:40,180
+Hay combinaciones muy peligrosas y potentes
+
+116
+00:08:40,215 --> 00:08:44,523
+que iremos usando conforme avance el tutorial.
+
+117
+00:08:44,558 --> 00:08:48,258
+Pero, de momento, solo
+quería hacer una breve introducción
+
+118
+00:08:48,293 --> 00:08:51,508
+para que tengáis una idea de lo que haremos
+
+119
+00:08:51,543 --> 00:08:54,465
+a partir de estos términos y conceptos básicos.
+
+120
+00:08:56,110 --> 00:08:58,207
+El siguiente es "phishing".
+
+121
+00:09:00,098 --> 00:09:02,674
+El phising consiste básicamente
+
+122
+00:09:03,009 --> 00:09:06,782
+en lanzar un anzuelo,
+
+123
+00:09:06,817 --> 00:09:09,943
+que alguien pique y tirar de él.
+
+124
+00:09:09,978 --> 00:09:13,775
+Simple, ¿verdad?
+Es como ir a pescar.
+
+125
+00:09:17,179 --> 00:09:20,756
+Un ataque de este tipo sería cuando recibes un correo
+
+126
+00:09:20,791 --> 00:09:24,105
+con un enlace y pinchas en él
+
+127
+00:09:24,140 --> 00:09:28,593
+y te lleva a otro sitio, a una página web
+
+128
+00:09:28,628 --> 00:09:33,649
+que parece fiable o parece una web que utilizas tú,
+
+129
+00:09:34,643 --> 00:09:36,166
+pero no lo es.
+
+130
+00:09:36,101 --> 00:09:38,870
+Y envías tus datos y eso puede ser un problema.
+
+131
+00:09:38,905 --> 00:09:43,475
+Pero hoy en día, esto se evita y no sucede tanto.
+
+132
+00:09:43,810 --> 00:09:49,152
+Lo que sí pasa es que te
+pueden cambiar el DNS del router
+
+133
+00:09:51,975 --> 00:09:55,703
+y las solicitudes que hagas
+después en el buscador se redirigen.
+
+134
+00:09:55,738 --> 00:09:58,033
+Por ejemplo, si escribes facebook.com
+
+135
+00:09:58,068 --> 00:10:03,511
+irás a un dominio de algún servidor DNS privado,
+
+136
+00:10:03,546 --> 00:10:04,784
+de Dios sabe dónde,
+
+137
+00:10:04,819 --> 00:10:10,043
+cuyos registros MX han
+sido modificados y configurados
+
+138
+00:10:15,943 --> 00:10:18,375
+para, por ejemplo, interpretar facebook.com
+
+139
+00:10:18,410 --> 00:10:21,682
+en una determinada IP que no pertenece a Facebook.
+
+140
+00:10:23,121 --> 00:10:25,707
+Entonces, abres Facebook,
+la apariencia es la misma.
+
+141
+00:10:25,742 --> 00:10:31,346
+No hay forma de notarlo
+porque en la esquina superior izquierda
+
+142
+00:10:31,381 --> 00:10:36,296
+aparece escrito el dominio:
+www.facebook.com
+
+143
+00:10:39,062 --> 00:10:42,073
+Y una vez introduces
+tus datos, los has perdido.
+
+144
+00:10:42,108 --> 00:10:43,318
+Alguien los tiene.
+
+145
+00:10:45,183 --> 00:10:47,930
+Una de las formas de detectarlo...
+
+146
+00:10:50,169 --> 00:10:53,996
+no es que sea difícil,
+pero la gente no repara en esto.
+
+147
+00:10:54,031 --> 00:10:57,427
+En la esquina superior izquierda, podéis mirar
+
+148
+00:10:57,562 --> 00:11:01,113
+si el protocolo es https en lugar de http.
+
+149
+00:11:01,148 --> 00:11:07,513
+Porque si se ejecuta un ataque no va a ser https,
+
+150
+00:11:07,548 --> 00:11:09,651
+ya que eso es más difícil de hacer.
+
+151
+00:11:09,686 --> 00:11:14,816
+Si fuera https no habría forma de averiguarlo
+
+152
+00:11:14,851 --> 00:11:18,529
+aparte de comprobar las claves, los certificados...
+
+153
+00:11:18,564 --> 00:11:20,149
+Y nadie hace eso.
+
+154
+00:11:21,803 --> 00:11:28,083
+Al menos el 99% de los
+usuarios no se molesta en comprobarlo.
+
+155
+00:11:29,780 --> 00:11:35,165
+Sé que suena un poco
+complejo, pero lo explicaré mejor.
+
+156
+00:11:35,200 --> 00:11:37,723
+Haré varias demostraciones
+
+157
+00:11:38,058 --> 00:11:44,193
+y para cuando acabe el
+curso sabréis hacerlo sin problema,
+
+158
+00:11:44,828 --> 00:11:48,526
+no será un obstáculo en vuestro proceso de trabajo.
+
+159
+00:11:50,333 --> 00:11:53,183
+Ahora que hemos tomado contacto con estos términos
+
+160
+00:11:53,218 --> 00:11:56,354
+seguiré con ellos en el próximo vídeo.
+
+161
+00:11:57,944 --> 00:12:00,469
+Espero veros allí.
+

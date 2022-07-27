@@ -1,0 +1,1056 @@
+1
+00:00:00,000 --> 00:00:02,153
+Hola a todos y bienvenidos al tutorial.
+
+2
+00:00:02,588 --> 00:00:05,774
+Voy a seguir por donde lo dejé en el vídeo anterior.
+
+3
+00:00:06,509 --> 00:00:10,274
+Si no lo habéis visto, os pido que lo veáis,
+
+4
+00:00:10,609 --> 00:00:14,517
+puesto que están relacionados entre sí.
+
+5
+00:00:17,738 --> 00:00:22,514
+Hemos hablado de algunas de
+estas cosas, como DoS, RATS, phising, etc.
+
+6
+00:00:22,949 --> 00:00:28,871
+Pero voy a ir un paso más allá
+y voy a hablar de las inyecciones SQL,
+
+7
+00:00:30,906 --> 00:00:34,685
+VPNs, proxies, Tors, VPS, keyloggers...
+
+8
+00:00:37,005 --> 00:00:41,071
+Veréis qué papel tienen
+estas cosas a lo largo del curso.
+
+9
+00:00:41,106 --> 00:00:44,388
+Pero, por ahora, tenemos las inyecciones SQL,
+
+10
+00:00:44,423 --> 00:00:48,945
+que consisten en pasar
+consultas SQL a solicitudes http.
+
+11
+00:00:49,895 --> 00:00:53,709
+Si el código PHP del servidor
+no las formatea adecuadamente
+
+12
+00:00:54,344 --> 00:00:56,772
+se puede producir un problema grave.
+
+13
+00:00:57,307 --> 00:01:02,547
+Esto es de lo primero que
+tienen en cuenta los programadores web.
+
+14
+00:01:03,182 --> 00:01:05,979
+Después demostraré cómo podéis usarlas, formularlas.
+
+15
+00:01:06,614 --> 00:01:11,288
+Hay una cantidad enorme de
+webs que son vulnerables a ellas.
+
+16
+00:01:11,823 --> 00:01:15,778
+Sobre todo, porque se basan en
+unas infraestructuras también vulnerables.
+
+17
+00:01:16,513 --> 00:01:19,799
+A continuación, tenemos
+Virtual Private Network (Red Privada Virtual).
+
+18
+00:01:21,423 --> 00:01:23,565
+Las VPN son formas de convertirte en anónimo.
+
+19
+00:01:26,623 --> 00:01:32,051
+Si tienes un proveedor VPN y quieres ser anónimo
+
+20
+00:01:32,086 --> 00:01:35,312
+diriges todo el tráfico a través del proveedor VPN
+
+21
+00:01:35,347 --> 00:01:40,005
+y el tráfico entre tú y la VPN estará encriptado.
+
+22
+00:01:41,278 --> 00:01:44,179
+Si hay otro servidor que recibe solicitudes tuyas
+
+23
+00:01:44,214 --> 00:01:48,133
+las está recibiendo de la VPN.
+
+24
+00:01:50,878 --> 00:01:55,727
+No existe la forma de
+detectarte o localizar tu situación física
+
+25
+00:01:55,762 --> 00:01:59,336
+a menos que el proveedor VPN la diga,
+
+26
+00:01:59,871 --> 00:02:03,141
+cosa que no pasa si eliges el adecuado.
+
+27
+00:02:03,376 --> 00:02:05,313
+Debajo tenemos proxies.
+
+28
+00:02:05,648 --> 00:02:09,319
+Los proxies no te aseguran tanto el anonimato,
+
+29
+00:02:09,954 --> 00:02:15,345
+pero deberíais usar siempre proxies Socks5.
+
+30
+00:02:15,380 --> 00:02:19,651
+Explicaré lo que son
+cuando hagamos cadenas de proxies
+
+31
+00:02:19,686 --> 00:02:22,756
+y cuando os cuente cómo ser anónimo de verdad.
+
+32
+00:02:26,697 --> 00:02:30,178
+Veréis que podéis dirigir vuestra
+conexión por medio de varios proxies
+
+33
+00:02:31,320 --> 00:02:35,138
+y también veréis pronto que eso no siempre funciona.
+
+34
+00:02:35,673 --> 00:02:39,725
+En las películas sale gente usando 10 o 20 proxies
+
+35
+00:02:40,060 --> 00:02:44,035
+pero en realidad eso es muy difícil de hacer.
+
+36
+00:02:44,370 --> 00:02:49,187
+Más que nada por la
+velocidad de internet y el ancho de banda.
+
+37
+00:02:49,222 --> 00:02:53,089
+La mayoría de los proxies gratuitos son lentos
+
+38
+00:02:53,124 --> 00:02:59,904
+y dirigir tu conexión a través
+de varios hará que te resulte muy difícil
+
+39
+00:03:00,339 --> 00:03:03,462
+hacer nada más en un buen rato.
+
+40
+00:03:05,906 --> 00:03:07,468
+Hay proxies de pago, por supuesto,
+
+41
+00:03:07,603 --> 00:03:10,854
+pero al pagar un proxy dejas una huella digital
+
+42
+00:03:10,789 --> 00:03:12,345
+y pueden rastrearte.
+
+43
+00:03:13,813 --> 00:03:15,847
+Debajo tenemos Tor.
+
+44
+00:03:16,582 --> 00:03:18,933
+Tor es totalmente gratis, de código abierto
+
+45
+00:03:18,968 --> 00:03:22,642
+y mucho más rápido que los proxies.
+
+46
+00:03:22,677 --> 00:03:25,642
+No tanto como las VPN, pero más que los proxies sí.
+
+47
+00:03:25,977 --> 00:03:29,797
+Te permite torificar aplicaciones,
+
+48
+00:03:30,032 --> 00:03:34,633
+lo cual significa llevar
+el tráfico por determinadas rutas
+
+49
+00:03:37,887 --> 00:03:40,155
+y utilizar routers en internet para...
+
+50
+00:03:41,973 --> 00:03:46,012
+no solo routers, también otros
+dispositivos para que tus paquetes
+
+51
+00:03:46,047 --> 00:03:47,515
+y tu conexión pasen por ahí.
+
+52
+00:03:47,950 --> 00:03:52,396
+Algunas veces va lento.
+No se puede garantizar al 100%
+
+53
+00:03:52,431 --> 00:03:59,029
+pero tu nivel de
+anonimato será muy alto si usas Tor.
+
+54
+00:03:59,064 --> 00:04:00,819
+Hay formas de detectarte,
+
+55
+00:04:00,854 --> 00:04:04,443
+pero es muy improbable que eso pase.
+
+56
+00:04:04,478 --> 00:04:10,364
+El 99,99% de las veces, serás anónimo casi al 100%
+
+57
+00:04:10,399 --> 00:04:14,391
+lo cual es una buena forma de funcionar.
+
+58
+00:04:14,426 --> 00:04:16,186
+También está el buscador Tor,
+
+59
+00:04:16,221 --> 00:04:20,103
+que te permite acceder
+a la web profunda o invisible.
+
+60
+00:04:22,201 --> 00:04:24,765
+Básicamente, son webs .onion
+
+61
+00:04:24,800 --> 00:04:28,305
+y no están indexadas por otros motores de búsqueda.
+
+62
+00:04:28,340 --> 00:04:34,222
+No se puede llegar a ellas por una ruta normal,
+
+63
+00:04:34,257 --> 00:04:37,887
+en lo referente a buscadores.
+
+64
+00:04:39,478 --> 00:04:45,579
+Es decir, si abres Firefox y no
+tienes la conexión a internet configurada
+
+65
+00:04:45,614 --> 00:04:48,521
+de manera que pueda conectarse a una red,
+
+66
+00:04:49,629 --> 00:04:55,600
+no podrás acceder a la web profunda, invisible, etc.
+
+67
+00:04:58,297 --> 00:05:01,337
+También os enseñaré cómo
+acceder y usar la web profunda,
+
+68
+00:05:01,372 --> 00:05:04,946
+ya que te permite disponer de muchos recursos,
+
+69
+00:05:05,181 --> 00:05:07,775
+la mayoría libres, otros de pago.
+
+70
+00:05:10,757 --> 00:05:14,176
+A continuación, está VPS,
+Virtual Private Server (servidor virtual privado).
+
+71
+00:05:17,431 --> 00:05:19,279
+Se podría interpretar como una capa de seguridad.
+
+72
+00:05:19,614 --> 00:05:22,974
+Si en vuestro ordenador físico
+está en marcha un servidor Apache
+
+73
+00:05:23,009 --> 00:05:26,126
+podéis tener una máquina
+virtual dentro del ordenador físico
+
+74
+00:05:26,161 --> 00:05:29,661
+que funcionará como
+servidor SQL para el servidor Apache.
+
+75
+00:05:29,696 --> 00:05:34,467
+Esto se hace para que no se pueda
+acceder al servidor SQL desde fuera
+
+76
+00:05:34,502 --> 00:05:39,015
+y para no tener un
+puerto SQL abierto en tu ordenador.
+
+77
+00:05:39,050 --> 00:05:44,906
+Solo los dispositivos, los usuarios
+y los programas de ese ordenador
+
+78
+00:05:44,941 --> 00:05:49,115
+podrán ir a la máquina virtual
+donde se encuentra el servidor SQL.
+
+79
+00:05:52,818 --> 00:05:54,777
+Puede parecer que es un lío,
+
+80
+00:05:54,812 --> 00:05:57,129
+pero ahora no quiero que os preocupéis por esto.
+
+81
+00:05:57,164 --> 00:06:02,092
+Cuando os enseñe ejemplos,
+cuando lleguemos a eso, lo entenderéis.
+
+82
+00:06:02,127 --> 00:06:03,706
+Os lo garantizo.
+
+83
+00:06:05,836 --> 00:06:07,706
+Ahora solo os estoy presentando la terminología
+
+84
+00:06:07,741 --> 00:06:10,175
+y dando una idea de lo que vamos a ver.
+
+85
+00:06:13,323 --> 00:06:15,490
+También tenemos "Keyloggers",
+
+86
+00:06:17,121 --> 00:06:20,200
+que son herramientas que se usan para robar datos
+
+87
+00:06:22,135 --> 00:06:24,954
+y para obtener información.
+
+88
+00:06:26,080 --> 00:06:30,032
+Si consigues implementar
+un keylogger en un ordenador
+
+89
+00:06:30,067 --> 00:06:34,598
+puedes configurarlo para que
+registre las pulsaciones del teclado
+
+90
+00:06:34,633 --> 00:06:37,469
+y te las envíe por correo o a un servidor FTP.
+
+91
+00:06:37,704 --> 00:06:40,355
+Hoy en día han avanzado hasta el punto
+
+92
+00:06:42,431 --> 00:06:45,229
+de tener unas cien opciones
+
+93
+00:06:47,348 --> 00:06:49,824
+configurables totalmente.
+
+94
+00:06:50,159 --> 00:06:53,085
+Prácticamente, puedes hacer lo que quieras.
+
+95
+00:06:53,320 --> 00:06:56,693
+Es decir, tienen las funciones básicas
+
+96
+00:06:58,486 --> 00:07:00,517
+y estas siguen ahí para registrar el tecleo.
+
+97
+00:07:00,852 --> 00:07:02,737
+Pero la cosa no acaba ahí,
+
+98
+00:07:03,838 --> 00:07:06,576
+también pueden extraer información existente.
+
+99
+00:07:07,685 --> 00:07:09,404
+Puedes configurar su comportamiento,
+
+100
+00:07:12,290 --> 00:07:17,258
+el nivel de cautela, dónde
+se esconde, dónde se instala,
+
+101
+00:07:17,693 --> 00:07:20,784
+qué tipo de información quieres extraer,
+
+102
+00:07:20,819 --> 00:07:25,405
+si quieres vigilar determinadas
+carpetas y registrar la actividad.
+
+103
+00:07:25,440 --> 00:07:28,136
+Puedes configurarlos
+para que hagan capturas de pantalla,
+
+104
+00:07:28,171 --> 00:07:31,546
+para utilizar la cámara del dispositivo,
+
+105
+00:07:33,012 --> 00:07:37,838
+en la cual has puesto un keylogger
+para que haga fotos cada cinco minutos.
+
+106
+00:07:39,149 --> 00:07:41,429
+Eso no es muy buena idea,
+
+107
+00:07:41,464 --> 00:07:44,686
+porque, obviamente,
+alguien verá que estás haciendo fotos.
+
+108
+00:07:46,083 --> 00:07:50,492
+Pero solo son ejemplos de lo que se puede hacer.
+
+109
+00:07:51,027 --> 00:07:55,094
+Más adelante descargaremos el keylogger original,
+
+110
+00:07:55,129 --> 00:07:56,903
+lo instalaremos, implementaremos,
+
+111
+00:07:56,938 --> 00:08:00,689
+veremos cómo se puede usar y configurar.
+
+112
+00:08:02,414 --> 00:08:05,862
+Tenéis que tener cuidado con
+los sitios donde descargáis las herramientas
+
+113
+00:08:05,697 --> 00:08:09,982
+ya sean keyloggers, herramientas
+de demostración remota, rootkits, etc.
+
+114
+00:08:11,760 --> 00:08:16,298
+Sobre todo porque hay que
+evitar a toda costa descargar
+
+115
+00:08:16,333 --> 00:08:19,989
+archivos binarios sin
+compilar que no sean de código abierto
+
+116
+00:08:20,024 --> 00:08:24,026
+porque es imposible saber lo que contienen
+
+117
+00:08:24,361 --> 00:08:28,825
+y por nada del mundo queremos ejecutarlos.
+
+118
+00:08:31,095 --> 00:08:34,587
+A lo mejor conseguís lo que
+buscáis, un keylogger o lo que sea,
+
+119
+00:08:34,622 --> 00:08:38,663
+pero el ordenador
+quedará infectado por el keylogger
+
+120
+00:08:38,798 --> 00:08:42,697
+que pensabais implementar en otro sitio.
+
+121
+00:08:45,039 --> 00:08:46,561
+Así que no es buena idea.
+
+122
+00:08:47,407 --> 00:08:51,221
+Debéis usar fuentes
+verificadas de estas herramientas.
+
+123
+00:08:51,256 --> 00:08:58,045
+Os mostraré algunas más adelante,
+cuando entre en internet y los descargue.
+
+124
+00:08:59,465 --> 00:09:04,770
+Solo quiero dejar claro que hay
+que tener mucho cuidado con estas cosas.
+
+125
+00:09:04,805 --> 00:09:08,830
+Un método infalible de hacerlo
+es configurando una máquina virtual
+
+126
+00:09:08,865 --> 00:09:14,551
+y hacer esto desde ella,
+porque en caso de infección no pasa nada.
+
+127
+00:09:14,786 --> 00:09:17,960
+Es una máquina virtual,
+se puede reinstalar en cualquier momento.
+
+128
+00:09:18,595 --> 00:09:22,094
+Prácticamente, no se perderá casi nada.
+
+129
+00:09:22,429 --> 00:09:25,917
+Y, más importante, desde la máquina virtual
+
+130
+00:09:25,952 --> 00:09:31,183
+no se podrá acceder al sistema
+de archivos primario del ordenador.
+
+131
+00:09:33,987 --> 00:09:35,577
+La siguiente es "terminal".
+
+132
+00:09:38,274 --> 00:09:45,187
+La terminal es básicamente la interfaz
+que te permite controlar el sistema operativo.
+
+133
+00:09:46,830 --> 00:09:52,611
+La de Linux es muy potente y la usaremos bastante.
+
+134
+00:09:52,646 --> 00:09:54,704
+Os tenéis que familiarizar con ella.
+
+135
+00:09:54,939 --> 00:09:58,309
+Yo os ayudaré, os enseñaré cómo se usa.
+
+136
+00:10:00,101 --> 00:10:05,923
+A algunos les parecerá
+un poco complicado a primera vista.
+
+137
+00:10:05,958 --> 00:10:08,835
+Hay muchos comandos que escribir,
+
+138
+00:10:10,181 --> 00:10:14,025
+cómo memorizarlos, qué usar dónde, etc.
+
+139
+00:10:14,560 --> 00:10:20,920
+Pero, creedme, tiene su lógica
+y una vez os deis cuenta, el resto va solo.
+
+140
+00:10:21,955 --> 00:10:28,441
+Yo me sé de memoria un 30%
+de los comandos posibles en terminales Linux.
+
+141
+00:10:30,138 --> 00:10:34,161
+Y el resto lo averiguo con /H o //help.
+
+142
+00:10:35,316 --> 00:10:38,014
+El sistema te dice todo lo que necesitas saber.
+
+143
+00:10:38,049 --> 00:10:43,732
+Te ayuda muchísimo
+y puedes averiguar muchas cosas
+
+144
+00:10:43,767 --> 00:10:48,046
+si entiendes la lógica básica de su funcionamiento.
+
+145
+00:10:51,305 --> 00:10:56,325
+Siempre habrá discusiones,
+por ejemplo, habrá gente que diga
+
+146
+00:10:56,560 --> 00:10:59,908
+"¿Por qué usar terminales
+en vez de herramientas GUI?"
+
+147
+00:11:02,144 --> 00:11:07,131
+La respuesta más simple es
+porque no son ni la mitad de potentes.
+
+148
+00:11:09,368 --> 00:11:12,934
+Además, las terminales son menos dependientes
+
+149
+00:11:13,169 --> 00:11:18,324
+y casi todas las herramientas
+de hackeo están diseñadas para terminales.
+
+150
+00:11:18,559 --> 00:11:22,371
+No tienen GUIs.
+Hoy en día, algunas sí.
+
+151
+00:11:24,159 --> 00:11:26,421
+Pero hablaré de ello brevemente
+
+152
+00:11:26,856 --> 00:11:30,444
+porque las interfaces GUI no son tan relevantes.
+
+153
+00:11:30,779 --> 00:11:35,640
+Cuando sabes hacerlo con la
+terminal, automáticamente, por defecto,
+
+154
+00:11:35,775 --> 00:11:38,867
+sabes cómo hacerlo con
+la interfaz gráfica de usuario (GUI).
+
+155
+00:11:43,630 --> 00:11:45,202
+Debajo tenemos "firewalls" (cortafuegos).
+
+156
+00:11:45,437 --> 00:11:49,720
+En Linux, el cortafuegos
+se configura desde los comandos iptables.
+
+157
+00:11:54,354 --> 00:12:00,490
+Este es uno de los motivos
+por los que no deberíais usar Windows
+
+158
+00:12:00,625 --> 00:12:02,985
+para seguir este tutorial.
+
+159
+00:12:08,451 --> 00:12:12,409
+Tendréis que instalar una máquina
+virtual Linux o crear un arranque doble.
+
+160
+00:12:15,408 --> 00:12:17,345
+Os enseñaré detalladamente cómo se hace esto.
+
+161
+00:12:19,747 --> 00:12:23,380
+Pero los cortafuegos
+son uno de los motivos principales
+
+162
+00:12:23,415 --> 00:12:25,280
+para no usar Windows con estos fines.
+
+163
+00:12:28,164 --> 00:12:30,635
+El cortafuegos de Linux es de código abierto
+
+164
+00:12:32,774 --> 00:12:35,902
+y tiene miles de opciones. Miles.
+
+165
+00:12:37,666 --> 00:12:40,722
+Puedes hacer con él lo que quieras.
+
+166
+00:12:41,257 --> 00:12:46,069
+Se puede configurar, abrir y cerrar puertos,
+
+167
+00:12:46,104 --> 00:12:49,844
+reenviar conexiones por puertos o direcciones IP.
+
+168
+00:12:51,738 --> 00:12:56,301
+Puedes impedir determinados
+protocolos de algunos puertos
+
+169
+00:12:56,336 --> 00:12:58,380
+o de algunas direcciones IP.
+
+170
+00:12:59,690 --> 00:13:02,738
+Puedes hacer todo tipo de reenvío y redirección.
+
+171
+00:13:04,712 --> 00:13:07,821
+Todo esto gratuitamente
+con el cortafuegos de Linux.
+
+172
+00:13:07,856 --> 00:13:11,982
+Mientras que en Windows
+no tienes algunas de estas opciones,
+
+173
+00:13:12,017 --> 00:13:17,025
+la mayoría no a no ser
+que compres un paquete o similar,
+
+174
+00:13:17,060 --> 00:13:20,453
+cosa que no queremos hacer aquí.
+
+175
+00:13:20,488 --> 00:13:23,132
+Queremos que nos salga económico
+
+176
+00:13:23,167 --> 00:13:28,654
+y queremos un buen
+cortafuegos que haga lo que nos apetezca.
+
+177
+00:13:29,760 --> 00:13:32,322
+Hay dos formas de configurar el cortafuegos.
+
+178
+00:13:33,957 --> 00:13:36,530
+Si os da miedo liarla, no os preocupéis.
+
+179
+00:13:36,865 --> 00:13:42,090
+Casi todas las configuraciones
+que haremos serán de corta duración
+
+180
+00:13:44,470 --> 00:13:48,395
+porque todas las configuraciones
+al cortafuegos desde el comando iptable,
+
+181
+00:13:48,430 --> 00:13:50,353
+salvo que se especifique lo contrario,
+
+182
+00:13:50,388 --> 00:13:54,799
+serán temporales,
+hasta que se reinicie el sistema.
+
+183
+00:13:55,651 --> 00:13:57,684
+Obviamente, hay una forma de evitarlo
+
+184
+00:13:57,819 --> 00:14:02,357
+y configurar las normas del cortafuegos
+directamente en la configuración del archivo,
+
+185
+00:14:02,639 --> 00:14:04,549
+y así hacer los cambios permanentes.
+
+186
+00:14:05,499 --> 00:14:09,063
+Es otra forma de hacerlo,
+pero normalmente prefiero
+
+187
+00:14:09,098 --> 00:14:12,891
+tener en algún sitio un script
+que pueda ejecutar cuando sea
+
+188
+00:14:12,926 --> 00:14:15,511
+y que configure el cortafuegos por defecto.
+
+189
+00:14:20,099 --> 00:14:24,597
+Sobre todo, porque interesa
+tener las herramientas en una memoria USB
+
+190
+00:14:24,598 --> 00:14:26,425
+o en un sitio online, por ejemplo,
+
+191
+00:14:27,895 --> 00:14:29,862
+y tener unos scripts generados
+
+192
+00:14:30,380 --> 00:14:34,644
+que hacen las cosas por ti de manera automática.
+
+193
+00:14:34,879 --> 00:14:37,894
+Es muy simple.
+Os enseñaré cómo hacer estos scripts.
+
+194
+00:14:38,229 --> 00:14:42,785
+No necesitáis ningún
+conocimiento previo de programación.
+
+195
+00:14:42,820 --> 00:14:47,639
+Estos scripts son,
+básicamente, una lista de los comandos
+
+196
+00:14:47,874 --> 00:14:50,640
+de la terminal Linux, que haremos de todas formas.
+
+197
+00:14:53,146 --> 00:14:55,733
+Entonces, el script consistiría
+en una lista de estos comandos.
+
+198
+00:14:56,428 --> 00:15:00,896
+Después, se cambia el mod
+del script para que sea un archivo ejecutable,
+
+199
+00:15:01,670 --> 00:15:06,796
+lo ponéis en marcha y todos
+esos comandos se pasan al sistema
+
+200
+00:15:06,831 --> 00:15:10,756
+y las tareas finalizan de manera automática, por defecto.
+
+201
+00:15:11,691 --> 00:15:17,540
+Una de las últimas cosas
+que quiero abordar son las "reverse-shells".
+
+202
+00:15:19,943 --> 00:15:25,670
+Hay cientos, si no miles,
+de reverse-shells que puedes usar.
+
+203
+00:15:25,705 --> 00:15:29,408
+Escogeré unas pocos,
+que usaremos dependiendo del caso,
+
+204
+00:15:29,643 --> 00:15:33,668
+dependiendo del entorno que queramos infectar.
+
+205
+00:15:35,058 --> 00:15:37,293
+Pero hablamos de reverse-shells
+
+206
+00:15:39,823 --> 00:15:45,248
+cuando tienes un programa
+con el que infectas otro dispositivo
+
+207
+00:15:45,283 --> 00:15:51,760
+y ese programa abre una
+conexión inversa de ese dispositivo hacia ti.
+
+208
+00:15:51,795 --> 00:15:59,827
+Puedes seguir pasando comandos
+y controlando el sistema aunque estés lejos.
+
+209
+00:16:02,304 --> 00:16:03,902
+Hay diferentes tipos, claro.
+
+210
+00:16:04,337 --> 00:16:07,899
+Hoy en día, con routers
+con semejantes cortafuegos
+
+211
+00:16:07,934 --> 00:16:11,128
+hay que hacer bastantes configuraciones
+
+212
+00:16:11,163 --> 00:16:15,010
+y hay problemas que necesitan solución.
+
+213
+00:16:15,045 --> 00:16:19,383
+Veréis cómo al intentar entrar en un ordenador
+
+214
+00:16:19,618 --> 00:16:22,776
+a veces hay que entrar primero en el router.
+
+215
+00:16:22,811 --> 00:16:25,460
+A menudo hay que entrar primero en el router
+
+216
+00:16:25,495 --> 00:16:28,211
+a no ser que estés haciendo un ataque phishing
+
+217
+00:16:28,246 --> 00:16:31,758
+o haya un servidor web en marcha.
+
+218
+00:16:31,793 --> 00:16:34,337
+Pero para atacar un dispositivo privado,
+
+219
+00:16:34,372 --> 00:16:36,767
+un ordenador privado, que es lo que se suele hacer
+
+220
+00:16:36,802 --> 00:16:41,661
+como preludio al gran ataque
+para extraer algún tipo de información
+
+221
+00:16:41,696 --> 00:16:46,780
+por ejemplo, de un empleado que es administrador de la red,
+
+222
+00:16:49,836 --> 00:16:52,759
+uno de los factores básicos sería atacar al router,
+
+223
+00:16:52,794 --> 00:16:56,098
+cambiar los ajustes DNS e intentar robar los datos.
+
+224
+00:16:57,608 --> 00:17:02,024
+O poner el ordenador en la
+DMZ del router, zona desmilitarizada,
+
+225
+00:17:02,059 --> 00:17:06,347
+para que el router deje de ser efectivo para el dispositivo
+
+226
+00:17:06,382 --> 00:17:09,689
+y mande todo el tráfico a dicho dispositivo.
+
+227
+00:17:12,997 --> 00:17:17,320
+Esos son algunos de los ataques que se pueden hacer
+
+228
+00:17:17,855 --> 00:17:26,112
+pero las reverse-shells dependen
+del entorno que se intenta infectar.
+
+229
+00:17:26,647 --> 00:17:30,615
+Y dependen también
+de la elección de la ruta de ataque.
+
+230
+00:17:33,407 --> 00:17:37,088
+Bueno, espero haber hecho
+una introducción a estos términos.
+
+231
+00:17:38,785 --> 00:17:42,380
+Repito, si no ha quedado
+claro ahora, no os preocupéis.
+
+232
+00:17:42,415 --> 00:17:47,474
+Lo veremos todo en detalle
+y con más ejemplos y lo entenderéis.
+
+233
+00:17:47,689 --> 00:17:49,671
+No es complicado.
+
+234
+00:17:50,206 --> 00:17:55,262
+No permitáis que el miedo
+os disuada y seguid adelante.
+
+235
+00:17:55,297 --> 00:17:59,727
+Y si conseguís llegar al final del curso
+
+236
+00:18:00,874 --> 00:18:04,230
+os garantizo que lo entenderéis.
+
+237
+00:18:04,265 --> 00:18:09,574
+Con un poco de concentración
+y curiosidad tendréis la habilidad necesaria
+
+238
+00:18:09,009 --> 00:18:13,275
+para ser pentesters o hackers éticos.
+
+239
+00:18:14,337 --> 00:18:15,624
+Hasta la próxima.
+

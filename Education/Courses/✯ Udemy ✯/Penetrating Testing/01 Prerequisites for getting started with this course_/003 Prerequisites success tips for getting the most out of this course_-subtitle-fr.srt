@@ -1,0 +1,661 @@
+1
+00:00:00,000 --> 00:00:03,499 A:middle
+Bonjour à tous et bienvenue dans ce tutoriel.
+
+2
+00:00:03,500 --> 00:00:07,766
+Aujourd'hui, nous allons parler 
+des prérequis nécessaires
+
+3
+00:00:07,767 --> 00:00:11,199
+Si vous voulez suivre ce cours normalement
+
+4
+00:00:11,200 --> 00:00:18,366
+la première chose à faire  
+c'est de vous familiariser avec
+
+5
+00:00:18,367 --> 00:00:19,966
+votre environnement de travail.
+
+6
+00:00:19,967 --> 00:00:23,832
+de mon coté, j'ai choisi d'utiliser 
+deux distributions de Linux
+
+7
+00:00:23,833 --> 00:00:26,732
+l'une sera Fedora 20, qui est 
+
+8
+00:00:26,733 --> 00:00:29,166
+le système d'exploitation que j'utilise
+
+9
+00:00:29,167 --> 00:00:30,499
+alors
+
+10
+00:00:30,500 --> 00:00:33,866
+je vais aussi installer une machine virtuelle
+
+11
+00:00:33,867 --> 00:00:37,966
+cette machine virtuelle sera kali Linux.
+
+12
+00:00:37,967 --> 00:00:40,299
+fondamentalement, elle est une distribution Linux
+
+13
+00:00:40,300 --> 00:00:45,032
+qui contient un grand nombre 
+d'outils de test de pénétration.
+
+14
+00:00:45,033 --> 00:00:46,632
+donc, il est très utile en ce sens
+
+15
+00:00:46,633 --> 00:00:47,566
+ne vous inquiétez pas à ce sujet
+
+16
+00:00:47,567 --> 00:00:50,999
+je vais vous expliquer ce processus 
+en long et en large
+
+17
+00:00:51,000 --> 00:00:53,832
+comment configurer la machine virtuelle
+
+18
+00:00:53,833 --> 00:00:54,700
+comment l'installer
+
+19
+00:00:54,701 --> 00:00:55,266
+et ainsi de suite
+
+20
+00:00:55,267 --> 00:00:58,432
+cependant, est ce que l'on devrait 
+utiliser Windows
+
+21
+00:00:58,433 --> 00:01:03,066
+certainement pas. il est déconseillé 
+fortement pour ce genre d'activité
+
+22
+00:01:03,067 --> 00:01:06,799
+principalement parce que vous allez
+
+23
+00:01:06,800 --> 00:01:11,966
+je veux dire, depuis que je pratique cela 
+dans un environnement que je possède
+
+24
+00:01:11,967 --> 00:01:15,699
+il n'a pas vraiment d'importance
+à mon avis si je suis anonyme ou pas
+
+25
+00:01:15,700 --> 00:01:17,966
+mais dans le monde réel
+
+26
+00:01:17,967 --> 00:01:20,699
+tous les essais de pénétrations 
+qui se font dans le monde réel
+
+27
+00:01:20,700 --> 00:01:23,366
+vous essayez toujours 
+de vous rendre « invisible »
+
+28
+00:01:23,367 --> 00:01:26,399
+vous essayez d'être aussi 
+invisible que possible
+
+29
+00:01:26,400 --> 00:01:30,766
+autant que possible.
+
+30
+00:01:30,767 --> 00:01:35,866
+vous ne voulez vraiment pas qu'ils découvrent  
+d'où et de qui provient l'attaque 
+
+31
+00:01:35,867 --> 00:01:36,699
+ou quoi que ce soit du genre
+
+32
+00:01:36,700 --> 00:01:40,766
+vous souhaitez effacer vos traces 
+ou quelque chose du genre
+
+33
+00:01:40,767 --> 00:01:44,232
+et Windows n'est vraiment pas 
+l'idéal pour ces types de choses.
+
+34
+00:01:44,233 --> 00:01:47,999
+ce qui implique que votre niveau 
+d'anonymat sera très faible
+
+35
+00:01:48,000 --> 00:01:52,566
+et l'ensemble des outils que 
+nous allons utiliser
+
+36
+00:01:52,567 --> 00:01:55,832
+ils sont presque tous originaires 
+de l'environnement de Linux.
+
+37
+00:01:55,833 --> 00:01:56,299
+ils ont été faits pour Linux
+
+38
+00:01:56,300 --> 00:02:01,699
+ainsi, certains d'entre eux pourraient 
+ne pas fonctionner sous Windows.
+
+39
+00:02:01,700 --> 00:02:03,099
+je ne les ai pas tous teste.
+
+40
+00:02:03,100 --> 00:02:05,032
+cependant beaucoup d'entre eux 
+fonctionneront
+
+41
+00:02:05,033 --> 00:02:07,132
+Ainsi, vous pouvez toujours utiliser 
+Windows si vous le voulez
+
+42
+00:02:07,133 --> 00:02:10,599
+mais attendez vous a ne pas 
+être invisible à quiconque
+
+43
+00:02:10,600 --> 00:02:14,766
+sur ce, je vais créer le scenario dans la vie réelle, 
+et voila comment ça se passe
+
+44
+00:02:14,767 --> 00:02:17,332
+je vais devoir utiliser des proxies, VPNs
+et ainsi de suite, etc.
+
+45
+00:02:17,333 --> 00:02:21,166
+juste pour vous montrer comment marche
+
+46
+00:02:21,167 --> 00:02:22,166
+et comment pouvez vous le faire.
+
+47
+00:02:22,167 --> 00:02:25,199
+en outre, pour tous les utilisateurs de Mac
+
+48
+00:02:25,200 --> 00:02:27,799
+si vous utilisez Mac OS X
+
+49
+00:02:27,800 --> 00:02:30,832
+la version n'a pas vraiment d'importance
+
+50
+00:02:30,833 --> 00:02:34,199
+la plupart de ces versions devraient 
+fonctionner correctement.
+
+51
+00:02:34,200 --> 00:02:36,599
+les procédures sont assez simples
+
+52
+00:02:36,600 --> 00:02:38,232
+les commandes sont les mêmes
+
+53
+00:02:38,233 --> 00:02:41,632
+la façon de les installer est différente
+
+54
+00:02:41,633 --> 00:02:46,666
+mais à peu près nous serons en mesure d'exécuter 
+les mêmes commandes que moi.
+
+55
+00:02:46,667 --> 00:02:48,132
+donc, il ne devrait pas y avoir de problème.
+
+56
+00:02:48,133 --> 00:02:51,266
+votre niveau d'anonymat avec mac os x
+
+57
+00:02:51,267 --> 00:02:54,566
+devrait être au top
+
+58
+00:02:54,567 --> 00:02:59,699
+mais sur Linux, vous avez 
+le plus grand niveau d'anonymat
+
+59
+00:02:59,700 --> 00:03:02,766
+et vous êtes plutot en sécurité en ce sens.
+
+60
+00:03:02,767 --> 00:03:09,066
+En plus, vous aurez également besoin 
+d'une connexion internet active
+
+61
+00:03:09,067 --> 00:03:13,399
+et concernant les attaques que nous allons
+faire aujourd'hui
+
+62
+00:03:13,400 --> 00:03:15,366
+la majorité d'entre eux
+
+63
+00:03:15,367 --> 00:03:20,766
+fonctionnent beaucoup mieux si vous avez 
+une connexion extrêmement rapide
+
+64
+00:03:20,767 --> 00:03:25,066
+mais certaines de ces attaques sont effectivement 
+menées à partir de Wi-Fi public
+
+65
+00:03:25,067 --> 00:03:27,799
+dans la vraie vie.
+
+66
+00:03:27,800 --> 00:03:29,299
+nous allons faire semblant
+
+67
+00:03:29,300 --> 00:03:33,466
+je vais mettre en place un point d'accès 
+sans fil dans ma maison et l'activer.
+
+68
+00:03:33,467 --> 00:03:37,199
+similaire à la connexion Wi-Fi public,
+qui est très lent.
+
+69
+00:03:37,200 --> 00:03:40,032
+certaines de ces attaques, 
+comme je le disais
+
+70
+00:03:40,033 --> 00:03:43,166
+sont operées sur un Wi-Fi public
+
+71
+00:03:43,167 --> 00:03:48,532
+et comme nous le savons tous et comme 
+nous l'avons tous appris malheureusement
+
+72
+00:03:48,533 --> 00:03:52,466
+les Wi-Fi public ne sont pas les plus 
+rapides des connexions internet.
+
+73
+00:03:52,467 --> 00:03:56,699
+principalement parce que vous avez 
+beacucoup de gens qui sont connectés dessus.
+
+74
+00:03:56,700 --> 00:03:58,199
+et il y a beaucoup de données qui se transmettent.
+
+75
+00:03:58,200 --> 00:04:03,299
+ils ne sont pas les réseaux les plus surs
+
+76
+00:04:03,300 --> 00:04:07,466
+mais si vous voulez absolument 
+vous rendre invisible
+
+77
+00:04:07,467 --> 00:04:09,232
+comme certaines personnes le font.
+
+78
+00:04:09,233 --> 00:04:13,132
+en fait, ils sortent de chez eux et vont se connecter 
+à un réseau Wi-Fi public
+
+79
+00:04:13,133 --> 00:04:15,466
+ou ils vont dans un bar, 
+ou quelque chose du genre
+
+80
+00:04:15,467 --> 00:04:18,367
+et ils mènent leurs attaques 
+à partir de là.
+
+81
+00:04:18,368 --> 00:04:22,032
+maintenant, avant de passer à l'action
+
+82
+00:04:22,033 --> 00:04:25,132
+ils ont besoin de savoir concernant 
+la bande passante de ce Wi-Fi
+
+83
+00:04:25,133 --> 00:04:27,499
+s'il peut soutenir leurs attaques.
+
+84
+00:04:27,500 --> 00:04:29,499
+ils ont donc besoin de se réduire.
+
+85
+00:04:29,500 --> 00:04:31,599
+de se réduire au minimum
+
+86
+00:04:31,600 --> 00:04:34,199
+et voila comment ils deviennent 
+complétement anonymes.
+
+87
+00:04:34,200 --> 00:04:38,699
+quoi qu'il en soit, la troisième chose 
+que vous en aurez besoin
+
+88
+00:04:38,700 --> 00:04:40,099
+ainsi, ces trois choses
+
+89
+00:04:40,100 --> 00:04:43,566
+ce sont les exigences de base.
+
+90
+00:04:43,567 --> 00:04:45,199
+tout le reste, s'en suivra.
+
+91
+00:04:45,200 --> 00:04:47,299
+je vais vous montrer comment le faire, 
+il y a pas de problème 
+
+92
+00:04:47,300 --> 00:04:50,299
+mais ces trois choses, c'est inutile 
+de poursuivre.Par exemple, 
+
+93
+00:04:50,300 --> 00:04:56,799
+passer par votre fournisseur de services internet 
+et vous brancher à internet
+
+94
+00:04:56,800 --> 00:04:59,499
+et brancher votre téléphone via internet
+
+95
+00:04:59,500 --> 00:05:02,999
+ou quelque chose du genre
+
+96
+00:05:03,000 --> 00:05:08,232
+mais en tout cas, la troisième condition 
+est une carte réseau sans fil qui fonctionne
+
+97
+00:05:08,233 --> 00:05:11,932
+et quand je dis 
+"carte de réseau sans fil qui fonctionne"
+
+98
+00:05:11,933 --> 00:05:13,032
+la plupart des appareils ont une carte réseau.
+
+99
+00:05:13,033 --> 00:05:17,599
+quasiment tous les ordinateurs portables 
+de 2005 ou à partir de 2008
+
+100
+00:05:17,600 --> 00:05:20,566
+ont été normalisées avec
+des cartes sans fil.
+
+101
+00:05:20,567 --> 00:05:23,732
+si vous utilisez un ordinateur de bureau 
+qui n'a pas une carte sans fil
+
+102
+00:05:23,733 --> 00:05:24,099
+vous pouvez
+
+103
+00:05:24,100 --> 00:05:25,432
+vous devriez
+
+104
+00:05:25,433 --> 00:05:27,999
+mais cependant, si vous voulez
+
+105
+00:05:28,000 --> 00:05:32,166
+vous ne serez pas en mesure de suivre a
+fond une partie de ce tutoriel.
+
+106
+00:05:32,167 --> 00:05:37,032
+vous devez sortir de chez vous
+et vous procurez une carte USB sans fil
+
+107
+00:05:37,033 --> 00:05:38,966
+ou quelque chose du genre.
+
+108
+00:05:38,967 --> 00:05:39,099
+ils ne sont si pas chers
+
+109
+00:05:40,100 --> 00:05:41,832
+je ne sais pas.10 ou 15 dollars
+
+110
+00:05:41,833 --> 00:05:46,099
+donc, ils ne sont pas si chers que ça et 
+vous pouvez les obtenir de partout.
+
+111
+00:05:46,100 --> 00:05:48,632
+quoi qu'il en soit, comme je le disais
+
+112
+00:05:48,633 --> 00:05:52,866
+qu'est-ce que je veux dire par une carte 
+réseau sans fil fonctionnelle
+
+113
+00:05:52,867 --> 00:05:56,032
+elle doit être adaptée a
+votre système d'exploitation.
+
+114
+00:05:56,033 --> 00:06:00,766
+donc, si vous utilisez une distribution 
+de Linux comme moi
+
+115
+00:06:00,767 --> 00:06:02,866
+vous devez vous assurer que
+
+116
+00:06:02,867 --> 00:06:04,666
+cette distribution de Linux
+
+117
+00:06:04,667 --> 00:06:06,632
+que le noyau de cette distribution
+
+118
+00:06:06,633 --> 00:06:08,699
+possède le pilote adapté
+
+119
+00:06:08,700 --> 00:06:12,732
+pour que la carte sans fil que 
+vous utilisez en ce moment.
+
+120
+00:06:12,733 --> 00:06:15,032
+vous utilisez probablement Atheros ou Broadcom.
+
+121
+00:06:15,033 --> 00:06:17,599
+Atheros devrait être parfait.
+
+122
+00:06:17,600 --> 00:06:20,533
+Bien qu'un support externe
+
+123
+00:06:20,534 --> 00:06:23,799
+une grande quantité de dispositifs Atheros, 
+sinon la totalité d'entre eux
+
+124
+00:06:23,800 --> 00:06:27,033
+sont tout ce qu'il faut
+en termes de cartes réseau,
+
+125
+00:06:27,034 --> 00:06:29,699
+il y avait quelques problèmes avec Broadcom
+
+126
+00:06:29,700 --> 00:06:30,455
+mais tant que je sache
+
+127
+00:06:30,456 --> 00:06:31,299
+cela a été résolu
+
+128
+00:06:31,300 --> 00:06:32,533
+donc, c'est parfait, 
+
+129
+00:06:32,534 --> 00:06:35,766
+si vous êtes incertain de savoir 
+comment vérifier
+
+130
+00:06:35,767 --> 00:06:40,233
+si les fonctions de la carte sans fil 
+se remplissent sous Linux
+
+131
+00:06:40,234 --> 00:06:42,344
+essayez de vous connecter à un réseau Wi-Fi.
+
+132
+00:06:42,345 --> 00:06:46,533
+si vous pouvez vous connecter 
+à un point d'accès Wi-Fi
+
+133
+00:06:46,534 --> 00:06:48,299
+si vous pouvez vous connecter, 
+évidemment cela fonctionne
+
+135
+00:06:48,300 --> 00:06:50,766
+si vous ne pouvez pas, 
+c'est que cela ne fonctionne pas
+
+136
+00:06:50,767 --> 00:06:53,344
+mais ne vous contentez pas de sauter à la 
+conclusion que cela ne fonctionne pas.
+
+137
+00:06:53,344 --> 00:06:55,688
+peut-être qu'il est juste éteint ou 
+quelque chose du genre
+
+138
+00:06:55,689 --> 00:06:56,599
+mais ne vous en faites pas
+
+139
+00:06:56,600 --> 00:07:00,299
+je vais vous donner beaucoup plus de détail 
+dans les tutoriels suivants
+
+140
+00:07:00,300 --> 00:07:05,533
+ou nous allons commencer avec le processus 
+d'installation et tout cela.
+
+141
+00:07:05,534 --> 00:07:07,433
+maintenant, il y a beaucoup plus de choses 
+que nous avons besoin d'éclaircir
+
+142
+00:07:07,434 --> 00:07:09,299
+avant d'aller plus loin jusqu'à l'installation.
+
+143
+00:07:09,300 --> 00:07:13,100
+je voulais juste revenir sur 
+certains termes de base
+
+144
+00:07:13,101 --> 00:07:16,233
+et la terminologie de base
+
+145
+00:07:16,234 --> 00:07:21,599
+que vous aurez besoin pour être 
+en mesure de suivre ce cours
+
+146
+00:07:21,600 --> 00:07:24,533
+et pour que vous soyez en mesure 
+de suivre les futurs tutoriels.
+
+147
+00:07:24,534 --> 00:07:26,799
+en tout cas, je dis au revoir
+
+148
+00:07:26,800 --> 00:07:28,000
+et je vous remercie de votre attention.

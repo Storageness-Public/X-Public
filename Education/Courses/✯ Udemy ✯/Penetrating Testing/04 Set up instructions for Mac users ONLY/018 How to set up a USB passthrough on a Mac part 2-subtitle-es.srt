@@ -1,0 +1,630 @@
+1
+00:00:00,400 --> 00:00:06,104
+Vale, la solución era de lo más simple.
+
+2
+00:00:06,339 --> 00:00:10,126
+Lo he arreglado nada más pararlo.
+
+3
+00:00:13,103 --> 00:00:15,334
+Voy a compartirlo con vosotros para que lo sepáis
+
+4
+00:00:15,569 --> 00:00:17,778
+porque lo más probable
+es que se os bloquee también.
+
+5
+00:00:18,737 --> 00:00:22,397
+Lo primero, mirad el icono
+de la esquina superior derecha
+
+6
+00:00:22,632 --> 00:00:24,774
+el que estoy señalando con el ratón,
+
+7
+00:00:24,909 --> 00:00:28,176
+el que está iluminado, la señal inalámbrica,
+
+8
+00:00:28,411 --> 00:00:32,190
+no la de mi Mac, sino la de
+la máquina virtual, tiene que estar así.
+
+9
+00:00:33,407 --> 00:00:36,140
+¿Por qué no funcionaba?
+Como veis, ahora sí que funciona.
+
+10
+00:00:36,375 --> 00:00:40,117
+Así que escribo "ping google.com"
+
+11
+00:00:41,924 --> 00:00:43,478
+los pings están pasando,
+
+12
+00:00:43,613 --> 00:00:45,669
+y por si creéis que
+he hecho algún chanchullo con la red,
+
+13
+00:00:45,704 --> 00:00:50,679
+no la he tocado, mirad el estado de la red:
+
+14
+00:00:50,714 --> 00:00:54,116
+sigue como "not attached". No lo he tocado.
+
+15
+00:00:57,123 --> 00:00:59,066
+Lo que ha sucedido aquí es más que nada
+
+16
+00:01:00,788 --> 00:01:02,790
+lo que pasa a veces cuando se cambia
+
+17
+00:01:03,685 --> 00:01:05,799
+de la conexión por cable a la inalámbrica.
+
+18
+00:01:07,882 --> 00:01:11,130
+Básicamente, sigue utilizando la interfaz cableada
+
+19
+00:01:11,265 --> 00:01:13,620
+aunque esta no tenga conexión
+
+20
+00:01:14,055 --> 00:01:18,260
+y no sabe que la he desconectado ni nada de eso.
+
+21
+00:01:19,294 --> 00:01:21,045
+Sigue empleando esa IP
+
+22
+00:01:21,180 --> 00:01:23,204
+e intenta enviar paquetes por medio de la interfaz
+
+23
+00:01:23,339 --> 00:01:26,221
+pero no puede, no es posible.
+
+24
+00:01:27,600 --> 00:01:29,629
+Por eso,lo que tenéis que hacer es lo siguiente:
+
+25
+00:01:30,754 --> 00:01:36,002
+Despejad la pantalla y escribid "ifconfig eth0".
+
+26
+00:01:37,687 --> 00:01:39,769
+Mirad, esta es la interfaz Ethernet
+
+27
+00:01:39,904 --> 00:01:44,032
+y tenéis que escribir "ifconfig eth0 down".
+
+28
+00:01:45,544 --> 00:01:49,687
+Y luego solo tenéis que escribir este comando,
+
+29
+00:01:49,922 --> 00:01:51,879
+¿Dónde lo tengo? Aquí está,
+
+30
+00:01:52,014 --> 00:01:56,505
+"systemctl restart network-manager", Enter.
+
+31
+00:01:58,085 --> 00:01:59,808
+Se ha reiniciado,
+eso es todo lo que hay que hacer,
+
+32
+00:02:01,344 --> 00:02:04,236
+y puedo escribir otra vez "ifconfig".
+
+33
+00:02:05,934 --> 00:02:08,347
+La interfaz ha vuelto
+
+34
+00:02:09,891 --> 00:02:13,990
+pero, fijaos,
+no tiene ninguna dirección IPv4,
+
+35
+00:02:14,125 --> 00:02:16,645
+aquí no hay ninguna dirección IPv4,
+
+36
+00:02:16,680 --> 00:02:19,773
+sin embargo, la dirección IPv4 está aquí.
+
+37
+00:02:20,008 --> 00:02:24,071
+Como veis, es 192.158.1.10.
+
+38
+00:02:24,206 --> 00:02:27,739
+Y ahí la tenéis,
+está ahí, funciona, la puedo usar.
+
+39
+00:02:27,774 --> 00:02:31,551
+Si vuelvo a escribir "ping google.com"
+
+40
+00:02:31,686 --> 00:02:35,351
+funciona, está pasando, voy a pararlo
+
+41
+00:02:35,486 --> 00:02:37,875
+y voy a intentar abrir Udemy otra vez.
+
+42
+00:02:40,378 --> 00:02:44,551
+Eso es, no estoy usando la conexión del Mac.
+
+43
+00:02:44,686 --> 00:02:48,768
+Puedo deshabilitar el Wi-Fi en el Mac
+
+44
+00:02:50,367 --> 00:02:53,633
+y aún sería posible hacer esto.
+
+45
+00:02:53,868 --> 00:02:55,815
+Voy a abrir el Facebook de Udemy.
+
+46
+00:02:58,384 --> 00:03:01,467
+Lo va a abrir, igual
+va un poco rezagado, un poco lento
+
+47
+00:03:01,702 --> 00:03:06,018
+pero es una máquina virtual, así que perdonadla.
+
+48
+00:03:07,667 --> 00:03:09,784
+Ya está, bueno, abrirá la página,
+
+49
+00:03:09,919 --> 00:03:12,203
+solo va un poco lento,
+pero ahí la tenéis. Abierta.
+
+50
+00:03:12,438 --> 00:03:14,910
+Solo quería demostrar que a pesar de que
+
+51
+00:03:15,045 --> 00:03:17,354
+tengo el Wi-Fi del MacBook Pro desconectado
+
+52
+00:03:18,357 --> 00:03:22,969
+y ahora no tengo conexión,
+ahora la vuelvo a conectar,
+
+53
+00:03:24,425 --> 00:03:26,742
+solo era eso. Tened en cuenta
+
+54
+00:03:26,977 --> 00:03:31,678
+que esta es la primera vez en mi vida,
+
+55
+00:03:31,813 --> 00:03:35,146
+lo digo literalmente,
+en mi vida, que he usado el Mac.
+
+56
+00:03:35,181 --> 00:03:39,783
+Está claro que tengo
+una larga experiencia en Linux,
+
+57
+00:03:39,918 --> 00:03:43,694
+lo he usado muchísimo
+y he sufrido muchísimo con él
+
+58
+00:03:43,829 --> 00:03:47,607
+hasta que he aprendido. Pero esto, para mí,
+
+59
+00:03:47,642 --> 00:03:49,975
+es la primera vez que he usado el Mac.
+
+60
+00:03:50,110 --> 00:03:52,184
+Claro que Linux me da una pequeña ventaja
+
+61
+00:03:52,319 --> 00:03:55,289
+frente a un usuario
+de Windows, pero aun así, recordad
+
+62
+00:03:55,624 --> 00:03:59,205
+que esta es la primera
+vez que he usado Mac en toda mi vida
+
+63
+00:04:00,487 --> 00:04:03,177
+y he conseguido hacer que funcione.
+
+64
+00:04:04,470 --> 00:04:08,358
+Este ha sido el primer
+intento, delante de todos, en directo.
+
+65
+00:04:08,393 --> 00:04:11,990
+Me han surgido problemas
+tontos, he tenido errores tontos,
+
+66
+00:04:15,025 --> 00:04:17,026
+ninguno ha sido demasiado complicado o complejo,
+
+67
+00:04:17,261 --> 00:04:18,905
+pero eran más que nada tontos, es decir,
+
+68
+00:04:18,848 --> 00:04:23,543
+no sabía ni cómo descomprimir un archivo en Mac.
+
+69
+00:04:23,978 --> 00:04:29,209
+Ese nivel de estupidez. Así que
+entré en internet y busqué Homebrew
+
+70
+00:04:29,344 --> 00:04:31,323
+y averigüé que había algo llamado
+
+71
+00:04:31,358 --> 00:04:33,102
+Homebrew y está Macports
+
+72
+00:04:33,337 --> 00:04:37,949
+y he investigado en profundidad en
+Stack Overflow, o Buffer Overflow,
+
+73
+00:04:37,984 --> 00:04:39,554
+no, es Stack Overflow.
+
+74
+00:04:40,853 --> 00:04:43,802
+He buscado en los foros
+de Apple, he buscado en todas partes
+
+75
+00:04:43,937 --> 00:04:46,052
+y he averiguado dónde son seguros y dónde no.
+
+76
+00:04:46,287 --> 00:04:48,283
+Luego he pasado por todas estas instalaciones,
+
+77
+00:04:48,418 --> 00:04:50,540
+que como veis, han ido bastante despacio.
+
+78
+00:04:50,775 --> 00:04:54,164
+No estaba seguro de
+lo que hacía, iba con pies de plomo
+
+79
+00:04:55,265 --> 00:04:57,642
+avanzando y descubriéndolo junto a vosotros
+
+80
+00:04:57,677 --> 00:05:02,071
+y así lo quería hacer,
+porque me pongo en vuestro lugar
+
+81
+00:05:02,206 --> 00:05:05,703
+me pongo en el lugar de
+alguien que ha tenido problemas
+
+82
+00:05:05,938 --> 00:05:10,261
+y básicamente, así lo
+puedo hacer desde vuestra perspectiva
+
+83
+00:05:10,396 --> 00:05:15,108
+y veis que funciona.
+No hay necesidad de instalar nada en el Mac,
+
+84
+00:05:15,443 --> 00:05:19,454
+no necesitáis drivers adicionales. Nada.
+
+85
+00:05:19,589 --> 00:05:21,926
+Solo tenéis que descargaros
+las extensiones de VirtualBox,
+
+86
+00:05:22,061 --> 00:05:25,059
+eso es todo, conectar un USB. El Mac no lo verá,
+
+87
+00:05:25,194 --> 00:05:26,818
+no lo podréis usar en vuestro Mac.
+
+88
+00:05:26,853 --> 00:05:28,556
+Si lo queréis usar en el Mac, podéis ir
+
+89
+00:05:28,962 --> 00:05:31,375
+y descargaros los drivers
+necesarios si de verdad lo queréis.
+
+90
+00:05:31,995 --> 00:05:33,761
+pero no hay motivo para usarlo en un Mac.
+
+91
+00:05:33,796 --> 00:05:36,743
+Es decir, el Mac ya tiene una tarjeta inalámbrica.
+
+92
+00:05:38,012 --> 00:05:41,282
+Me he bajado las extensiones de Oracle VirtualBox,
+
+93
+00:05:41,517 --> 00:05:46,134
+he conectado el USB, no tenía actividad
+
+94
+00:05:46,269 --> 00:05:50,952
+hasta que he arrancado la
+máquina virtual Kali para controlarlo
+
+95
+00:05:51,723 --> 00:05:55,623
+y he podido utilizarlo en la MV.
+
+96
+00:05:55,758 --> 00:05:57,732
+Primer intento,
+
+97
+00:05:58,901 --> 00:06:02,108
+ha sido complicado,
+pero he conseguido salir adelante
+
+98
+00:06:02,443 --> 00:06:05,690
+y he podido configurarlo
+sin problemas de ningún tipo.
+
+99
+00:06:05,925 --> 00:06:10,787
+Así que esta es la prueba
+de que funciona en Mac sin problemas,
+
+100
+00:06:10,822 --> 00:06:13,921
+esto es Yosemite, las últimas actualizaciones,
+
+101
+00:06:15,253 --> 00:06:17,402
+es verdad que el Mac
+es un poco viejo, es de 2011,
+
+102
+00:06:17,737 --> 00:06:20,457
+pero tiene Yosemite con las últimas versiones
+
+103
+00:06:23,546 --> 00:06:27,207
+y tampoco es que haya mucha
+diferencia respecto a un Mac de 2015.
+
+104
+00:06:27,342 --> 00:06:31,414
+Seguro que tiene mejor
+pantalla, pero eso no afecta al USB.
+
+105
+00:06:33,128 --> 00:06:35,029
+Tendrá el hardware interno algo diferente
+
+106
+00:06:35,164 --> 00:06:38,118
+pero tampoco afecta a la hora de pasar el USB.
+
+107
+00:06:40,390 --> 00:06:44,431
+Eso es casi igual,
+puede que lo única diferencia
+
+108
+00:06:44,566 --> 00:06:47,327
+entre este Mac y uno de 2015 es que este último,
+
+109
+00:06:47,462 --> 00:06:51,533
+que ha sido producido en 2015,
+será muco más rápido que este,
+
+110
+00:06:51,668 --> 00:06:55,468
+tal vez por la memoria
+flash, o por un mejor procesador,
+
+111
+00:06:56,942 --> 00:06:58,700
+una RAM mejor, etcétera.
+
+112
+00:07:01,651 --> 00:07:04,433
+Si tenéis alguna pregunta,
+si os quedáis atascados en el proceso
+
+113
+00:07:05,876 --> 00:07:07,999
+podéis, por supuesto, escribir vuestras dudas
+
+114
+00:07:08,134 --> 00:07:12,103
+en la sección de debate y yo,
+como siempre, estaré más que encantado
+
+115
+00:07:12,138 --> 00:07:15,958
+de ayudaros en todo lo que pueda, pero
+
+116
+00:07:17,227 --> 00:07:18,930
+lo primero que os aconsejo que hagáis
+
+117
+00:07:19,065 --> 00:07:23,045
+es simplemente que cojáis aire.
+
+118
+00:07:23,280 --> 00:07:25,846
+Alejaos del ordenador, volved,
+
+119
+00:07:25,981 --> 00:07:29,012
+echad un vistazo al tema otra vez,
+
+120
+00:07:30,173 --> 00:07:34,360
+despacio, mirad lo que
+he hecho, no me he saltado ningún paso.
+
+121
+00:07:34,395 --> 00:07:36,171
+Al menos, eso espero.
+
+122
+00:07:37,279 --> 00:07:39,990
+E intentad rehacer el proceso.
+
+123
+00:07:41,259 --> 00:07:44,565
+También hay varios foros que son vuestros amigos.
+
+124
+00:07:44,700 --> 00:07:47,085
+Podéis ir a los foros de Apple, podéis
+
+125
+00:07:47,320 --> 00:07:52,296
+ir a foros de Linux, uno de
+los foros de Linux que recomiendo es
+
+126
+00:07:52,331 --> 00:07:54,981
+linux.org/linuxquestions
+
+127
+00:07:57,913 --> 00:07:59,875
+y luego también podéis ir a Stack Overflow,
+
+128
+00:08:01,306 --> 00:08:03,474
+donde tienen algunas secciones muy buenas.
+
+129
+00:08:03,509 --> 00:08:08,128
+Bueno, espero de verdad
+que esto os haya ayudado mucho
+
+130
+00:08:08,263 --> 00:08:11,557
+y que hayáis conseguido que funcione en Mac.
+
+131
+00:08:11,792 --> 00:08:14,911
+Como podéis ver, en realidad no es tan diferente
+
+132
+00:08:15,246 --> 00:08:18,267
+de la instalación en
+Windows o de la instalación en Linux.
+
+133
+00:08:18,502 --> 00:08:20,798
+Es un poco diferente de la instalación en Linux
+
+134
+00:08:20,933 --> 00:08:24,337
+pero no hay mucha diferencia
+con la instalación en Windows
+
+135
+00:08:24,372 --> 00:08:28,500
+y he elegido la forma más
+simple posible de instalar la MV Kali
+
+136
+00:08:29,954 --> 00:08:33,078
+en un Mac, así que ni
+siquiera la he instalado con un ISO.
+
+137
+00:08:33,213 --> 00:08:36,815
+Solo he descargado una
+versión prefabricada de VirtualBox
+
+138
+00:08:36,950 --> 00:08:39,854
+para que no os tuvierais
+que molestar con esas cosas.
+
+139
+00:08:40,089 --> 00:08:41,671
+Me despido de vosotros,
+
+140
+00:08:41,806 --> 00:08:44,968
+decidme en los debates lo que pensáis de esto,
+
+141
+00:08:45,103 --> 00:08:49,416
+si ha sido útil y
+os gustaría ver más vídeos para Mac,
+
+142
+00:08:49,451 --> 00:08:51,677
+y qué tipo de vídeos os gustaría ver para Mac.
+
+143
+00:08:51,812 --> 00:08:53,778
+Todo lo que se pueda hacer y tenga sentido,
+
+144
+00:08:54,213 --> 00:08:57,705
+lo tendré en cuenta y puede que intente hacerlo.
+
+145
+00:08:57,840 --> 00:09:00,294
+Hasta entonces, me despido.
+

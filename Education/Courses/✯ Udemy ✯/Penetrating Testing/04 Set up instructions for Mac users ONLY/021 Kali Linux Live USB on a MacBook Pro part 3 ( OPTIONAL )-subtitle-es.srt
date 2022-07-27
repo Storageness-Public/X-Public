@@ -1,0 +1,959 @@
+1
+00:00:00,000 --> 00:00:00,854
+Ya hemos vuelto.
+
+2
+00:00:01,301 --> 00:00:05,125
+La siguiente parte, el siguiente paso, quería
+
+3
+00:00:05,360 --> 00:00:08,629
+segmentarlo en una sección,
+no solo por las limitaciones de tiempo sino
+
+4
+00:00:08,664 --> 00:00:13,586
+porque esta es la parte en la que si hacéis esto,
+
+5
+00:00:14,021 --> 00:00:17,693
+corréis el riesgo de dañar vuestro sistema,
+
+6
+00:00:18,028 --> 00:00:20,208
+puede que no de manera física,
+
+7
+00:00:20,343 --> 00:00:22,805
+pero sí en lo que respecta al software porque
+
+8
+00:00:23,614 --> 00:00:25,175
+lo más probable es que...
+
+9
+00:00:25,210 --> 00:00:28,768
+si algo va mal, no hay mucho que podáis hacer.
+
+10
+00:00:28,903 --> 00:00:31,367
+Seguramente tendréis que
+volver a instalar desde cero
+
+11
+00:00:31,402 --> 00:00:34,917
+y lo he dicho repetidas veces al principio.
+
+12
+00:00:34,952 --> 00:00:37,325
+He dicho que no se recomienda esta configuración
+
+13
+00:00:37,360 --> 00:00:40,372
+pero bueno, así es cómo lo podéis hacer.
+
+14
+00:00:42,664 --> 00:00:44,535
+En primer lugar, vamos a
+
+15
+00:00:45,835 --> 00:00:50,322
+entrar en internet y
+podéis echar un vistazo a este sitio.
+
+16
+00:00:50,664 --> 00:00:52,835
+También os daré un enlace
+
+17
+00:00:54,085 --> 00:00:56,018
+o el archivo descargable,
+
+18
+00:00:56,153 --> 00:00:59,134
+pero si queréis podéis echarle un vistazo.
+
+19
+00:01:01,426 --> 00:01:03,249
+Esta es la herramienta que necesitáis,
+
+20
+00:01:03,284 --> 00:01:07,714
+dice que rEFit es un menú de arranque
+y un kit de herramientas de mantenimiento
+
+21
+00:01:08,552 --> 00:01:10,902
+para máquinas basadas en EFI, como Macs Intel.
+
+22
+00:01:12,337 --> 00:01:16,957
+Y también dice "como habrás observado, rEFit
+
+23
+00:01:16,992 --> 00:01:22,291
+ha dejado de ser
+mantenido. Echa un vistazo a rEFind,
+
+24
+00:01:22,326 --> 00:01:25,586
+una bifurcación en
+continuo mantenimiento y desarrollo".
+
+25
+00:01:26,346 --> 00:01:27,948
+Así que también podéis usar ese,
+
+26
+00:01:28,943 --> 00:01:31,130
+yo he tenido algunos problemas con él y he pensado
+
+27
+00:01:31,465 --> 00:01:34,467
+que como tengo un Mac de 2011,
+
+28
+00:01:34,502 --> 00:01:39,043
+voy a seguir con este, el antiguo.
+
+29
+00:01:40,542 --> 00:01:42,572
+Vosotros también podéis probar con el otro,
+
+30
+00:01:42,607 --> 00:01:45,124
+yo lo he intentado y no he tenido éxito.
+
+31
+00:01:47,804 --> 00:01:51,090
+No lo voy a descargar,
+pero este es el que yo voy a utilizar.
+
+32
+00:01:51,625 --> 00:01:56,258
+Es una imagen de disco de Mac, rEFit, y
+
+33
+00:01:57,615 --> 00:01:59,288
+voy a entrar en...
+
+34
+00:02:01,215 --> 00:02:02,741
+No, debería estar por aquí.
+
+35
+00:02:02,976 --> 00:02:08,473
+En Descargas, podéis
+ver que sí que lo he descargado
+
+36
+00:02:08,708 --> 00:02:12,821
+pero este es un archivo dmg, doble clic encima
+
+37
+00:02:13,370 --> 00:02:15,889
+y ahora lo va a abrir.
+
+38
+00:02:20,739 --> 00:02:22,895
+No me hagas esto, por favor.
+
+39
+00:02:24,451 --> 00:02:28,735
+Ahora, esto es lo que necesitáis: mpkg.
+
+40
+00:02:28,770 --> 00:02:30,490
+Doble clic encima
+
+41
+00:02:32,014 --> 00:02:35,037
+y os va a llevar al proceso de instalación
+
+42
+00:02:35,072 --> 00:02:36,997
+Yo ya lo tengo aquí,
+
+43
+00:02:37,000 --> 00:02:42,213
+pero es solo clicar, clicar,
+clicar, clicar hasta el final. No hay más.
+
+44
+00:02:44,991 --> 00:02:47,253
+Esto os puede estropear...
+
+45
+00:02:47,388 --> 00:02:50,929
+estropear el sistema, recordadlo.
+
+46
+00:02:50,964 --> 00:02:53,490
+Esto no tiene nada especial, solo continuar,
+
+47
+00:02:55,291 --> 00:02:58,305
+licencia, continuar, aceptar.
+
+48
+00:03:00,288 --> 00:03:02,295
+Podéis simplemente hacer clic en
+
+49
+00:03:02,811 --> 00:03:05,504
+Instalar y la instalación
+se completa y luego el resto.
+
+50
+00:03:05,839 --> 00:03:10,155
+No tenéis que seleccionar ninguna opción especial.
+
+51
+00:03:10,972 --> 00:03:14,188
+Es básicamente hacer clic
+y listo. Nada del otro mundo.
+
+52
+00:03:14,223 --> 00:03:16,060
+A no ser que queráis personalizar algo,
+
+53
+00:03:16,095 --> 00:03:18,956
+cosa que definitivamente no recomendaría esta vez.
+
+54
+00:03:19,291 --> 00:03:23,193
+Este archivo os lo daré,
+obviamente, pero también podéis
+
+55
+00:03:23,428 --> 00:03:26,218
+ir a la página y descargarlo de ahí si queréis.
+
+56
+00:03:28,047 --> 00:03:31,883
+Vale, pues ahora voy a seguir,
+
+57
+00:03:32,768 --> 00:03:38,473
+voy a minimizar esto y vamos a continuar
+
+58
+00:03:38,508 --> 00:03:41,527
+cambiando a mi móvil, que me va a servir para
+
+59
+00:03:41,562 --> 00:03:45,430
+grabar el resto del vídeo,
+porque tengo que reiniciar el ordenador
+
+60
+00:03:45,465 --> 00:03:47,959
+y enseñaros cómo...
+
+61
+00:03:47,994 --> 00:03:52,622
+cómo se hace. Vamos a dejarlo aquí
+
+62
+00:03:52,657 --> 00:03:56,102
+y vuelvo en un momento para hacer lo dicho.
+
+63
+00:03:59,692 --> 00:04:02,035
+Vale, pues bienvenidos otra vez.
+
+64
+00:04:02,270 --> 00:04:04,057
+Ya me he cambiado al móvil.
+
+65
+00:04:05,438 --> 00:04:10,749
+He cambiado esto un poco. Ahora es Kali 2.
+
+66
+00:04:12,049 --> 00:04:15,579
+Es totalmente irrelevante
+para vosotros, solo he cambiado el nombre
+
+67
+00:04:15,714 --> 00:04:19,408
+a algo más agradable a la vista, pero no os afecta
+
+68
+00:04:19,543 --> 00:04:22,132
+de ninguna manera.
+
+69
+00:04:22,167 --> 00:04:24,850
+Lo podéis hacer también, volver a hacer el proceso
+
+70
+00:04:24,885 --> 00:04:29,461
+y al principio podéis
+etiquetarlo como Kali 2 si queréis.
+
+71
+00:04:29,496 --> 00:04:32,181
+Ya os he enseñado cómo
+podéis etiquetar los dispositivos con
+
+72
+00:04:34,921 --> 00:04:38,351
+Utilidad de discos en Mac.
+
+73
+00:04:39,368 --> 00:04:42,584
+Pero es totalmente irrelevante, os sugiero
+
+74
+00:04:42,619 --> 00:04:44,792
+que sigáis adelante. Yo soy perfeccionista
+
+75
+00:04:44,927 --> 00:04:47,465
+y me estaba molestando un poco verlo.
+
+76
+00:04:47,600 --> 00:04:51,177
+Pero bueno, sigamos. Aquí tenéis,
+
+77
+00:04:51,993 --> 00:04:55,523
+tengo el cable de corriente conectado al MacBook,
+
+78
+00:04:56,698 --> 00:04:59,223
+os aconsejo que lo tengáis durante el proceso,
+
+79
+00:04:59,258 --> 00:05:03,336
+un USB que acabamos
+de crear, conectado directamente,
+
+80
+00:05:04,322 --> 00:05:07,835
+no a través de un hub
+o similar. Eso es un hub USB.
+
+81
+00:05:07,970 --> 00:05:12,507
+No lo he usado, he intentado hacerlo via hub USB
+
+82
+00:05:12,542 --> 00:05:14,290
+y parece que funciona bien, pero en algunos foros
+
+83
+00:05:14,703 --> 00:05:16,562
+sugerían y aconsejaban no usarlo.
+
+84
+00:05:17,392 --> 00:05:19,222
+Ahora que tenéis todo esto preparado
+
+85
+00:05:20,481 --> 00:05:23,536
+os recomiendo que apaguéis el ordenador.
+
+86
+00:05:23,571 --> 00:05:26,425
+No reiniciar, apagarlo, por completo.
+
+87
+00:05:29,053 --> 00:05:32,005
+Estoy casi seguro de que
+veis las letras, pero si no
+
+88
+00:05:32,040 --> 00:05:34,953
+solo tenéis que apagar el equipo, literalmente.
+
+89
+00:05:37,124 --> 00:05:41,041
+Sí, me gustaría volver a abrir
+las ventanas y apágate, por favor.
+
+90
+00:05:42,660 --> 00:05:44,257
+Vamos a dejar de sembrar.
+
+91
+00:05:45,309 --> 00:05:48,006
+Solo estoy sembrando Kali Linux en descarga.
+
+92
+00:05:53,507 --> 00:05:55,696
+Cuando quieras, a tu ritmo.
+
+93
+00:05:57,017 --> 00:06:00,562
+Y aquí podéis verme con esta camiseta
+
+94
+00:06:00,597 --> 00:06:02,796
+que llevo desde hace unos días,
+
+95
+00:06:03,031 --> 00:06:05,831
+y detrás de mí, el resto de mi casa, supongo.
+
+96
+00:06:07,220 --> 00:06:08,793
+En el reflejo de la pantalla.
+
+97
+00:06:08,928 --> 00:06:12,478
+Después de esto voy a
+contestar vuestras preguntas en Udemy
+
+98
+00:06:12,513 --> 00:06:15,042
+y me voy directo a la ducha y a la cama.
+
+99
+00:06:16,606 --> 00:06:19,817
+Aquí abajo, tenéis el botón de Encendido,
+
+100
+00:06:19,852 --> 00:06:22,451
+puede que lo tengáis en un sitio diferente,
+
+101
+00:06:22,486 --> 00:06:25,427
+pero lo que tenéis que hacer
+es volver a encender el ordenador.
+
+102
+00:06:25,462 --> 00:06:28,496
+Botón de Encendido, muy importante, miradlo,
+
+103
+00:06:28,531 --> 00:06:31,449
+sabed dónde esta, tendréis
+que volver a pulsarlo luego.
+
+104
+00:06:31,888 --> 00:06:34,184
+Vamos a volver a encender el ordenador.
+
+105
+00:06:36,004 --> 00:06:38,392
+Se oye el CD y el arranque..
+
+106
+00:06:39,835 --> 00:06:43,039
+Podéis ver en la esquina izquierda,
+
+107
+00:06:43,074 --> 00:06:46,431
+donde tengo el dedo, que el USB parpadea
+
+108
+00:06:46,766 --> 00:06:52,201
+y este no es un arranque
+normal de Mac, veis que dice rEFit,
+
+109
+00:06:53,115 --> 00:06:55,995
+así que vamos a seleccionar lo que nos hace falta.
+
+110
+00:06:56,130 --> 00:06:59,930
+Voy a hacer zoom para que leáis lo que pone
+
+111
+00:07:00,065 --> 00:07:01,696
+porque ahora es un poco más importante.
+
+112
+00:07:02,031 --> 00:07:07,296
+Tenemos Boot EFI. No, necesitamos... Manager,
+
+113
+00:07:07,331 --> 00:07:09,215
+no, este no va a funcionar, lo he probado.
+
+114
+00:07:09,250 --> 00:07:12,118
+Si a vosotros os va, genial. Si no, seguid
+
+115
+00:07:12,153 --> 00:07:13,785
+y seleccionad el que he seleccionado yo,
+
+116
+00:07:13,969 --> 00:07:16,566
+que dice boot EFI\boot\grubx64.efi
+
+117
+00:07:16,601 --> 00:07:19,290
+y es el que tengo que arrancar ahora.
+
+118
+00:07:19,325 --> 00:07:20,763
+Vamos a ello.
+
+119
+00:07:23,418 --> 00:07:27,284
+Nos da este GNU GRUB versión 2.0
+
+120
+00:07:27,319 --> 00:07:29,478
+Ahora voy a elegir "boot persistent",
+
+121
+00:07:29,513 --> 00:07:34,370
+aunque no va a tener
+la importancia que tiene normalmente
+
+122
+00:07:34,405 --> 00:07:37,505
+pero aun así tendremos una partición persistente.
+
+123
+00:07:38,939 --> 00:07:40,656
+Así que elegid el arranque con persistencia.
+
+124
+00:07:41,091 --> 00:07:42,849
+Yo otra vez.
+
+125
+00:07:44,058 --> 00:07:45,836
+Podéis mirarme todo lo que queráis.
+
+126
+00:07:47,394 --> 00:07:49,736
+Esto está leyendo, leyendo, leyendo,
+
+127
+00:07:49,771 --> 00:07:52,984
+cargando, cargando,
+cargando. Vale, lo que tú digas.
+
+128
+00:07:53,865 --> 00:07:58,622
+Acaba ya. Es decir, podéis leerlo si queréis,
+
+129
+00:07:58,757 --> 00:08:00,294
+pero no es importante.
+
+130
+00:08:00,329 --> 00:08:03,545
+Es algo que está
+haciendo el sistema y nos informa
+
+131
+00:08:03,680 --> 00:08:05,312
+de qué está haciendo exactamente.
+
+132
+00:08:07,858 --> 00:08:09,949
+Procesando, procesando.
+
+133
+00:08:09,950 --> 00:08:12,927
+Venga...
+
+134
+00:08:15,898 --> 00:08:17,471
+Madre mía, es mucho.
+
+135
+00:08:18,939 --> 00:08:22,102
+Vale, hay un truco en el proceso de arranque
+
+136
+00:08:24,605 --> 00:08:27,017
+y tendremos que trastear
+un poco con el botón de Encendido
+
+137
+00:08:27,052 --> 00:08:29,237
+No os preocupéis, no hay que abrir nada
+
+138
+00:08:29,272 --> 00:08:31,129
+ni hacer nada por el estilo.
+
+139
+00:08:31,164 --> 00:08:33,796
+Veis que arranca y,
+
+140
+00:08:33,831 --> 00:08:35,605
+bueno, en realidad no arranca.
+
+141
+00:08:35,840 --> 00:08:38,230
+Se queda en blanco, una pantalla en negro
+
+142
+00:08:38,265 --> 00:08:40,157
+y el USB empieza a parpadear.
+
+143
+00:08:40,192 --> 00:08:43,394
+Espero de verdad que
+tengáis un USB que parpadee. Si no,
+
+144
+00:08:43,429 --> 00:08:46,524
+después de que aparezca
+la pantalla negra, le dais 10 minutos
+
+145
+00:08:46,559 --> 00:08:48,474
+y hacéis lo siguiente. Si tenéis uno que parpadea,
+
+146
+00:08:49,226 --> 00:08:50,321
+solo tenéis que esperar,
+
+147
+00:08:50,955 --> 00:08:52,276
+igual que yo.
+
+148
+00:08:53,165 --> 00:08:56,828
+Parece que el parpadeo
+ha parado y podéis ver que el ordenador...
+
+149
+00:08:56,863 --> 00:09:01,628
+¿Veis esta luz? No está
+en modo espera ni nada de eso.
+
+150
+00:09:01,663 --> 00:09:04,374
+Si os acercáis más al ordenador,
+aún se puede oír al ventilador girar
+
+151
+00:09:04,809 --> 00:09:08,194
+y ahora voy a...
+Igual hasta vosotros lo escucháis.
+
+152
+00:09:08,229 --> 00:09:10,802
+Mirad, el botón de Encendido. Está aquí.
+
+153
+00:09:11,337 --> 00:09:16,712
+Pulsad el botón brevemente.
+Una pulsación muy corta basta.
+
+154
+00:09:16,747 --> 00:09:19,218
+No lo mantengáis pulsado, si lo mantenéis más tiempo
+
+155
+00:09:19,253 --> 00:09:21,393
+la vais a liar, porque
+
+156
+00:09:21,428 --> 00:09:23,994
+apagaréis el ordenador por completo.
+
+157
+00:09:24,029 --> 00:09:26,893
+Así que estad atentos
+
+158
+00:09:30,640 --> 00:09:34,848
+a la luz y vamos a encender el ordenador,
+
+159
+00:09:34,883 --> 00:09:36,743
+bueno, a despertarlo, más bien.
+
+160
+00:09:36,778 --> 00:09:38,350
+Pulsad una vez.
+
+161
+00:09:38,785 --> 00:09:42,339
+Y veis que el LED se ha encendido
+
+162
+00:09:42,374 --> 00:09:45,085
+y que ahora parpadea
+lentamente, tan lento que desespera.
+
+163
+00:09:45,320 --> 00:09:48,920
+Luego pulsad otra vez. He hecho una pulsación corta
+
+164
+00:09:54,530 --> 00:09:56,926
+Segunda pulsación corta hecha y listo.
+
+165
+00:09:57,061 --> 00:09:59,405
+Va a volver a procesar.
+
+166
+00:10:03,999 --> 00:10:05,502
+Ya está, ¡voilà!
+
+167
+00:10:05,637 --> 00:10:08,206
+Tenemos Kali en marcha.
+
+168
+00:10:08,241 --> 00:10:10,719
+Así que podemos iniciar sesión.
+
+169
+00:10:12,441 --> 00:10:17,530
+La contraseña será t-o-o-r, por defecto
+
+170
+00:10:17,865 --> 00:10:20,192
+y el usuario por defecto será "root", y ya está.
+
+171
+00:10:20,227 --> 00:10:21,873
+Kali está en marcha.
+
+172
+00:10:23,410 --> 00:10:28,348
+Es semipersistente,
+tenemos la partición persistente
+
+173
+00:10:28,383 --> 00:10:30,397
+en la esquina superior derecha.
+
+174
+00:10:30,432 --> 00:10:36,705
+Vamos a abrirla. Esta es
+una partición persistente y todo lo demás
+
+175
+00:10:36,740 --> 00:10:40,988
+que haya en la otra partición
+que hemos creado no es persistente.
+
+176
+00:10:41,023 --> 00:10:45,154
+Así que en esta partición
+podéis hacer un script y luego...
+
+177
+00:10:45,389 --> 00:10:50,228
+un bash script y establecer
+un conjunto de comandos que queráis ejecutar.
+
+178
+00:10:50,263 --> 00:10:51,679
+Así, cuando la máquina arranque,
+
+179
+00:10:51,714 --> 00:10:54,300
+abrís la partición
+persistente y ejecutáis el script.
+
+180
+00:10:56,494 --> 00:11:00,731
+Todo lo que se guarde aquí,
+donde tengo el cursor y la mano,
+
+181
+00:11:00,966 --> 00:11:05,057
+en esta partición, casper-rw, es permanente.
+
+182
+00:11:05,092 --> 00:11:08,349
+La podéis nombrar de
+otra forma, porque "casper" es porque
+
+183
+00:11:09,420 --> 00:11:12,273
+lo expliqué así con un PC,
+y solo he mantenido el nombre.
+
+184
+00:11:14,790 --> 00:11:17,117
+Todo lo que guardéis aquí será persistente,
+
+185
+00:11:17,152 --> 00:11:22,199
+el resto, en cualquier otra
+partición, no sobrevivirá al reiniciar.
+
+186
+00:11:22,234 --> 00:11:25,387
+Cualquier acción o cualquier cosa que hagáis,
+
+187
+00:11:25,422 --> 00:11:28,130
+la podéis guardar aquí y continuar desde ahí.
+
+188
+00:11:28,165 --> 00:11:31,904
+Si queréis guardar la
+configuración en Kali, muy importante,
+
+189
+00:11:31,939 --> 00:11:35,097
+podéis hacer un bash script con los comandos
+
+190
+00:11:35,132 --> 00:11:37,240
+que escribiríais en la terminal, exactamente iguales,
+
+191
+00:11:38,392 --> 00:11:41,008
+y ejecutar el bash script
+con dichos comandos, uno a uno,
+
+192
+00:11:41,043 --> 00:11:44,723
+y Kali se configurará cada vez que iniciéis.
+
+193
+00:11:44,758 --> 00:11:47,271
+Abrís el script una vez y
+lo configura según vuestras preferencias,
+
+194
+00:11:47,406 --> 00:11:49,465
+solo hay que crear el script y ya está.
+
+195
+00:11:49,600 --> 00:11:53,210
+Si necesitáis ayuda con el bash
+script, poneos en contacto conmigo
+
+196
+00:11:53,345 --> 00:11:55,967
+en la sección de debate.
+Sabéis que siempre estoy ahí para ayudaros.
+
+197
+00:11:56,002 --> 00:11:58,693
+Contesto todas las preguntas que puedo
+
+198
+00:11:58,728 --> 00:12:00,090
+prácticamente a diario.
+
+199
+00:12:00,125 --> 00:12:04,252
+Pero los últimos días
+he estado muy atascado con esto,
+
+200
+00:12:04,287 --> 00:12:07,396
+es casi imposible crear un arranque en
+
+201
+00:12:09,149 --> 00:12:11,767
+los MacBooks posteriores a 2012.
+
+202
+00:12:13,362 --> 00:12:17,390
+2013, 14, algo así, eso funcionará sin problema.
+
+203
+00:12:17,425 --> 00:12:20,883
+Enchufar y usar, utilizad
+el programa que os he dicho,
+
+204
+00:12:20,918 --> 00:12:23,782
+cread un USB y...
+
+205
+00:12:23,817 --> 00:12:27,185
+Es decir, lo he comprobado en un MacBook de 2013.
+
+206
+00:12:28,609 --> 00:12:33,489
+Con una pantalla Retina,
+funciona sin ningún tipo de problema.
+
+207
+00:12:33,524 --> 00:12:36,113
+Creo que es Retina, no me toméis la palabra.
+
+208
+00:12:36,148 --> 00:12:38,367
+Pero da igual, lo único que importa es el año.
+
+209
+00:12:38,402 --> 00:12:41,461
+Funciona sin problema, pero en los más antiguos
+
+210
+00:12:41,496 --> 00:12:44,580
+es una experiencia agotadora.
+
+211
+00:12:44,615 --> 00:12:48,478
+Todos los archivos que
+necesitáis para esto estarán en Udemy,
+
+212
+00:12:48,513 --> 00:12:51,399
+ya sea en un enlace
+
+213
+00:12:52,134 --> 00:12:56,391
+o el lugar de donde lo podéis descargar.
+
+214
+00:12:56,426 --> 00:12:59,550
+Bueno, con esto acaba este capítulo con Macs.
+
+215
+00:12:59,585 --> 00:13:03,836
+Si tenéis alguna pregunta
+que tenga que ver con Macs,
+
+216
+00:13:03,871 --> 00:13:06,494
+una vez más, no dudéis
+en contactarme en los debates.
+
+217
+00:13:08,430 --> 00:13:11,272
+De nuevo, al final de este tutorial,
+
+218
+00:13:12,694 --> 00:13:14,689
+de este capítulo, voy a decir
+
+219
+00:13:14,724 --> 00:13:18,022
+que no recomiendo hacer esto en un Mac.
+
+220
+00:13:18,057 --> 00:13:21,061
+Para empezar, corres el riesgo de
+
+221
+00:13:21,196 --> 00:13:24,195
+tener que reiniciar el sistema forzosamente y
+
+222
+00:13:24,230 --> 00:13:28,193
+básicamente, es muy
+probable encontrar problemas,
+
+223
+00:13:28,228 --> 00:13:30,100
+dificultades, etcétera.
+
+224
+00:13:31,303 --> 00:13:33,095
+Eso es todo. Me despido de vosotros
+
+225
+00:13:33,130 --> 00:13:38,395
+y espero haberos ayudado a
+algunos a conseguir vuestro objetivo.
+

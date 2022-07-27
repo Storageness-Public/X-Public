@@ -1,0 +1,822 @@
+1
+00:00:00,000 --> 00:00:03,499 A:middle
+bonjour  tous et bienvenue dans ce tutoriel.
+
+2
+00:00:03,500 --> 00:00:07,766
+aujourd'hui, nous allons parler 
+de notre environnement de travail.
+
+3
+00:00:07,767 --> 00:00:09,199
+je vais vous montrer comment pouvez le configurer.
+
+4
+00:00:09,200 --> 00:00:15,366
+en premier lieu, 
+nous devons installer VirtualBox
+
+5
+00:00:15,367 --> 00:00:21,966
+peu importe si vous utilisez Mac OS X, Linux ou Windows
+
+6
+00:00:21,967 --> 00:00:24,832
+vous en aurez toujours besoin
+
+7
+00:00:24,833 --> 00:00:26,732
+tout d'abord,
+
+8
+00:00:26,733 --> 00:00:29,166
+nous allons faire beaucoup de choses
+
+9
+00:00:29,167 --> 00:00:34,499
+et nous devons les faire en tant que root
+
+10
+00:00:34,500 --> 00:00:37,866
+donc nous sommes  confrontes a lide que 
+nous pourrions casser quelque chose
+
+11
+00:00:37,867 --> 00:00:42,966
+ou semer le dsordre dans le systme
+
+12
+00:00:42,967 --> 00:00:44,299
+je vais vous montrer
+comment vous pouvez le configurer.
+
+13
+00:00:44,300 --> 00:00:46,032
+parce que mme si vous cassez quelque chose
+
+14
+00:00:46,033 --> 00:00:48,632
+et mme si vous ne savez pas 
+comment y remdier
+
+15
+00:00:48,633 --> 00:00:49,566
+cela ne fait rien
+
+16
+00:00:49,567 --> 00:00:51,999
+dou limportance de la machine virtuelle
+
+17
+00:00:52,000 --> 00:00:55,832
+vous navez pas vraiment 
+dimportantes donnes dessus.
+
+18
+00:00:55,833 --> 00:01:01,700
+toutefois, si vous gcher 
+quelque chose sur votre machine principale
+
+19
+00:01:01,701 --> 00:01:03,266
+si vous tes oblige de rinstaller 
+ou quelque chose d'un genre
+
+20
+00:01:03,267 --> 00:01:06,432
+vous devez sauvegarder toutes vos donnes.
+
+21
+00:01:06,433 --> 00:01:10,066
+vous devez connaitre ou se trouve vos fichiers, etc.
+
+22
+00:01:10,067 --> 00:01:12,799
+et vous serez en mesure de rgler le problme
+
+23
+00:01:12,800 --> 00:01:14,966
+et, en fonction de ce que cest
+
+
+24
+00:01:14,967 --> 00:01:17,699
+il pourrait occuper une grande partie de votre temps
+
+25
+00:01:17,700 --> 00:01:18,966
+donc, prenez ce conseil
+
+26
+00:01:18,967 --> 00:01:22,699
+et  installez VirtualBox
+
+27
+00:01:22,700 --> 00:01:23,366
+ce nest pas si complique que a.
+
+28
+00:01:23,367 --> 00:01:25,399
+tres simple
+
+29
+00:01:25,400 --> 00:01:28,766
+je vais vous montrer 
+comment le faire en une minute
+
+30
+00:01:28,767 --> 00:01:31,866
+il existe une autre raison pour laquelle 
+nous devons installer une machine virtuelle
+
+31
+00:01:31,867 --> 00:01:32,699
+qui est la scurit.
+
+32
+00:01:32,700 --> 00:01:36,766
+nous allons telecharger un tas de choses sur le net
+
+33
+00:01:36,767 --> 00:01:42,232
+et je vais utiliser des sites conforme a la scurit
+
+34
+00:01:42,233 --> 00:01:45,999
+et que beaucoup de gens considrent 
+comme des sites normales 
+35
+00:01:46,000 --> 00:01:49,566
+il est toujours bon d'avoir
+cette couche supplmentaire de protection.
+
+36
+00:01:49,567 --> 00:01:51,832
+mme si quelque chose se passe 
+et votre machine virtuelle
+
+37
+00:01:51,833 --> 00:01:55,299
+mme si elle est compromis
+ou quelque chose du genre, ce serait ok.
+
+38
+00:01:55,300 --> 00:01:57,699
+N'oubliez pas que c'est une machine virtuelle
+
+39
+00:01:57,700 --> 00:01:58,099
+pas de problme.
+
+40
+00:01:58,100 --> 00:02:01,032
+ca n'a vraiment pas dimportance.
+
+41
+00:02:01,033 --> 00:02:03,132
+votre information prive est ailleurs.
+
+42
+00:02:03,133 --> 00:02:04,599
+votre carte de crdit n'y est pas
+
+43
+00:02:04,600 --> 00:02:07,766
+il n'y a littralement rien a part 
+que les outils que vous utilisez
+
+44
+00:02:07,767 --> 00:02:10,332
+qui peut tre obtenu a partir d'internet.
+
+45
+00:02:10,333 --> 00:02:11,166
+bref,
+
+46
+00:02:11,167 --> 00:02:16,166
+alors sans plus tarder
+
+47
+00:02:16,167 --> 00:02:20,199
+poursuivons avec linstallation de  VirtualBox.
+
+48
+00:02:20,200 --> 00:02:23,799
+il existe deux faons de faire linstallation.
+
+49
+00:02:23,800 --> 00:02:25,832
+l'un est preferable a l'autre.
+
+50
+00:02:25,833 --> 00:02:29,199
+donc, la premire mthode est beaucoup plus simple.
+
+51
+00:02:29,200 --> 00:02:34,599
+sur ce, je vous invite a lancer 
+votre navigateur prefer.
+
+52
+00:02:34,600 --> 00:02:36,232
+le mien est Firefox.
+
+53
+00:02:36,233 --> 00:02:38,632
+utilisez votre moteur de recherche prefer.
+
+54
+00:02:38,633 --> 00:02:44,666
+tapez "VirtualBox"
+
+55
+00:02:44,667 --> 00:02:46,132
+appuyez sur entree
+
+56
+00:02:46,133 --> 00:02:47,266
+et ca y est!
+
+57
+00:02:47,267 --> 00:02:48,566
+en plein dans le mille!
+
+58
+00:02:48,567 --> 00:02:52,699
+vous avez  le site officiel - VirtualBox.
+
+59
+00:02:52,700 --> 00:02:54,766
+naviguez et cliquez dessus.
+
+60
+00:02:54,767 --> 00:02:56,066
+dans le coin gauche, a dit  
+"About", "Screenshot"
+
+61
+00:02:56,067 --> 00:02:58,399
+et une quantite de documentation
+
+62
+00:02:58,400 --> 00:03:02,366
+Anyway, there are few things which 
+you will require in order to follow through
+
+63
+00:03:02,367 --> 00:03:04,766
+pour le moment, on na pas besoin d'aller dessus.
+
+64
+00:03:04,767 --> 00:03:06,066
+cependant, vous devez  cliquer sur  
+"Tlchargements"
+
+65
+00:03:06,067 --> 00:03:07,799
+excellent!
+
+66
+00:03:07,800 --> 00:03:11,299
+alors la, vous avez une liste de machines 
+d'hbrgement
+
+67
+00:03:11,300 --> 00:03:15,466
+vous avez "VirtualBox pour Windows hotes " 
+pour "Mac os x hotes"
+
+68
+00:03:15,467 --> 00:03:18,199
+pour les " Linux hotes ", " Solaris hotes "...
+
+69
+00:03:18,200 --> 00:03:21,032
+en fait, pour solaris, vous pouvez simplement 
+utiliser des rfrentiels
+
+70
+00:03:21,033 --> 00:03:27,166
+nous avons besoin de les configurer dans Linux
+
+71
+00:03:27,167 --> 00:03:32,532
+et les referentiels sous Linux sont placs
+
+72
+00:03:32,533 --> 00:03:36,466
+ lendroit ou vous retirez 
+votre logiciel de la distribution de Linux.
+
+73
+00:03:36,467 --> 00:03:41,699
+quoi qu'il en soit, nous aurons besoin 
+de VirtualBox pour les htes de Linux.
+
+74
+00:03:41,700 --> 00:03:46,199
+je l'ai dj tlcharge afin de 
+gagner du temps dans ce tutoriel
+
+75
+00:03:46,200 --> 00:03:50,299
+mais il vous suffit de cliquer dessus, 
+puis il sera lance.
+
+76
+00:03:50,300 --> 00:03:51,466
+donc, vous lavez
+
+77
+00:03:51,467 --> 00:03:53,232
+ces gars-la sont fantastiques
+
+78
+00:03:53,233 --> 00:03:56,132
+ils ont le fichier de programmation 
+de la configuration de la machine virtuelle
+
+79
+00:03:56,133 --> 00:03:59,466
+pour plusieurs distributions  de Linux.
+
+80
+00:03:59,467 --> 00:04:01,367
+donc, vous avez Ubuntu
+
+81
+00:04:01,333 --> 00:04:02,032
+et Debian
+
+82
+00:04:02,033 --> 00:04:05,132
+je ne sais pas pourquoi ils
+ont spar Ubuntu et Debian
+
+83
+00:4:05.133 --> 00:04:09,499
+mais ca n'a pas vraiment d'importance
+puisque Ubuntu est base sur Debian
+
+84
+00:04:09,500 --> 00:04:11,499
+tout ce qui fonctionne 
+sur Debian fonctionne aussi sur Ubuntu
+
+85
+00:04:11,500 --> 00:04:13,599
+vous avez OpenUSE
+
+86
+00:04:13,600 --> 00:04:16,199
+super, vous avez aussi entreprise
+
+87
+00:04:16,200 --> 00:04:18,699
+mais pour le moment,
+je suis interesse par Fedora
+
+88
+00:04:18,700 --> 00:04:22,099
+et meme si Fedora 21 
+est fraichement sorti
+
+89
+00:04:22,100 --> 00:04:24,566
+ils ont dit que Fedora 18
+
+90
+00:04:24,567 --> 00:04:26,199
+cest tout ce quil vous faut.
+
+91
+00:04:26,200 --> 00:04:28,299
+il  fonctionnera sans aucun problme.
+
+92
+00:04:28,300 --> 00:04:32,299
+quoi qu'il en soit, juste a cot
+
+93
+00:04:32,300 --> 00:04:36,799
+vous avez i386 et amd64.
+
+94
+00:04:36,800 --> 00:04:38,499
+que signifient-elles?
+
+95
+00:04:38,500 --> 00:04:42,999
+eh bien en fait, ils sont  des rfrences
+au 32 bits et au 64 bits des architectures.
+
+96
+00:04:42,000 --> 00:04:46,232
+si vous ne savez pas la catgorie 
+des deux quexistent  votre machine
+
+97
+00:04:46,233 --> 00:04:48,932
+qu'il en soit 32 bits ou 64 bits
+
+98
+00:04:48,933 --> 00:04:50,032
+eh bien, cela ne drange pas.
+
+99
+00:04:50,033 --> 00:04:55,599
+il suffit d'aller de l'avant 
+et ouvrez votre terminal
+
+100
+00:04:55,600 --> 00:04:59,566
+tapez "uname -a"
+
+101
+00:04:59,567 --> 00:05:02,732
+appuyez sur "entre"
+
+102
+00:05:02,733 --> 00:05:04,099
+vous navez pas besoin dtre root 
+pour faire cela.
+
+103
+00:05:04,100 --> 00:05:06,432
+vous pouvez le faire 
+sous nimporte quel  utilisateur
+
+104
+00:05:06,433 --> 00:05:07,999
+et vous obtiendrez la liste des informations ici.
+
+105
+00:05:08,000 --> 00:05:10,166
+donc, vous avez la plate-forme de Linux
+
+106
+00:05:10,167 --> 00:05:12,032
+hbergeur local
+
+107
+00:05:12,033 --> 00:05:15,766
+voici  le domaine.
+
+108
+00:05:15,767 --> 00:05:17,966
+vous avez la version du noyau
+
+109
+00:05:17,967 --> 00:05:19,099
+et la distribution de Fedora 
+
+110
+00:05:19,100 --> 00:05:21,832
+le numro 20
+
+111
+00:05:21,833 --> 00:05:23,099
+et puis vous avez l'architecture.
+
+112
+00:05:23,100 --> 00:05:26,632
+donc, il est x86_64
+
+113
+00:05:26,633 --> 00:05:29,866
+nous y voila.
+
+114
+00:05:29,867 --> 00:05:30,032
+architecture 64 bits.
+
+115
+00:05:30,033 --> 00:05:31,766
+formidable!
+
+116
+00:05:31,767 --> 00:05:34,866
+maintenant que nous avons tout tabli, 
+nous sommes enfin prts 
+
+117
+00:05:34,867 --> 00:05:36,666
+vous pouvez cliquez dessus.
+
+118
+00:05:36,667 --> 00:05:38,632
+si vous utilisez un 32-bit
+
+119
+00:05:38,633 --> 00:05:40,699
+il suffit de cliquer sur le 32-bit
+
+120
+00:05:40,700 --> 00:05:41,732
+la procdure est absolument le mme
+
+121
+00:05:41,733 --> 00:05:44,032
+il ny a littralement pas de diffrences.
+
+122
+00:05:44,033 --> 00:05:48,599
+il me donne une option
+pour enregistrer un fichier.
+
+123
+00:05:48,600 --> 00:05:51,533
+il suffit donc de cliquer 
+sur "enregistrer" puis cliquez sur "ok"
+
+124
+00:05:51,800 --> 00:05:55,033
+le fichier sera telecharge dans le dossier 
+de tlchargement par dfaut
+
+125
+00:05:55,034 --> 00:05:58,699
+sauf si vous lavez configure 
+d'une manire diffrente.
+
+126
+00:05:58,700 --> 00:06:01,455
+je vais juste aller de l'avant et l'annuler
+
+127
+00:06:01,456 --> 00:06:03,566
+comme je l'ai dit, je l'ai dj tlcharg 
+
+128
+00:06:03,567 --> 00:06:05,999
+afin de gagner du temps dans ce tutoriel.
+
+129
+00:06:06,000 --> 00:06:07,299
+on annule
+
+130
+00:06:07,300 --> 00:06:09,533
+retour au terminal.
+
+132
+00:06:09,534 --> 00:06:11,766
+maintenant effacer l'cran.
+
+133
+00:06:11,767 --> 00:06:14,233
+vous aurez besoin d'tre root pour faire cela.
+
+134
+00:06:14,234 --> 00:06:19,344
+il suffit donc de taper "su", 
+appuyez sur "entre" et tapez votre mot de passe
+
+135
+00:06:19,345 --> 00:06:22,533
+et bien sur, mon mot de passe erron.
+
+136
+00:06:22,534 --> 00:06:25,299
+je suis dou quand il s'agit de cela.
+
+137
+00:06:25,300 --> 00:06:27,766
+je ne sais pas pourquoi
+
+138
+00:06:27,767 --> 00:06:31,344
+mais cest bien quand joublie 
+mes mots de passe.
+
+139
+00:06:31,345 --> 00:06:34,688
+mais quand joublie mes cls 
+de cryptage cela peut tre un petit problme
+
+140
+00:06:34,689 --> 00:06:38,599
+quoi qu'il en soit, il y a un outil de gestion 
+des paquets rpm
+
+141
+00:06:38,600 --> 00:06:40,299
+alors que c'est une distribution Red Hat.
+
+142
+00:06:40,300 --> 00:06:42,533
+tous les paquets
+
+143
+00:06:42,534 --> 00:06:44,433
+paquets de logiciels 
+
+144
+00:06:44,434 --> 00:06:46,299
+ca donne une extension -.rpm
+
+145
+00:06:46,300 --> 00:06:48,100
+je poursuis ici ,je vais vous le montrer .
+
+146
+00:06:48,101 --> 00:06:51,233
+je vais essayer de faire
+un plus grand zoom
+
+147
+00:06:51,234 --> 00:06:53,599
+ainsi, vous pouvez voir 
+tout ce que je fais d'ici.
+
+148
+00:06:53,600 --> 00:06:55,533
+et maintenant je suis entrain
+dutiliser le terminal
+
+149
+00:06:55,534 --> 00:06:58,799
+et je vais vous donner des 
+explications plus dtailles.
+
+150
+00:06:58,800 --> 00:07:02,000
+et vous donner une ide 
+de ce que nous allons faire
+
+151
+00:07:02,001 --> 00:07:04,499
+je vais vous donner la faon de l'utiliser.
+
+152
+00:07:04,500 --> 00:07:06,766
+je vais vous expliquer a peu prs 
+toutes les commandes que nous utiliserons 
+
+153
+00:07:06,767 --> 00:07:08,199
+en long et en large
+
+154
+00:07:08,200 --> 00:07:12,366
+mais pour le moment, vous devez 
+suivre avec attention
+
+155
+00:07:12,367 --> 00:07:14,966
+donc, il ya une commande "ls"
+
+156
+00:07:14,967 --> 00:07:17,832
+et puis je veux aller dans
+le dossier Tlchargements
+
+157
+00:07:17,833 --> 00:07:20,732
+Accueil
+
+158
+00:07:20,733 --> 00:07:23,166
+Chronic - ce moi. voici le nom d'utilisateur.
+
+159
+00:07:23,167 --> 00:07:25,499
+Tlchargements
+
+160
+00:07:25,500 --> 00:07:28,866
+et VirtualBox. ca y est.
+
+161
+00:07:28,867 --> 00:07:30,966
+appuyez sur "entre"
+
+162
+00:07:30,967 --> 00:07:32,299
+nous poursuivons et nous
+allons encore nettoyer lcran.
+
+163
+00:07:32,300 --> 00:07:34,032
+nous y voila.
+
+164
+00:07:34,033 --> 00:07:37,455
+vous avez exactement la mme chose, 
+mais un meilleur look.
+
+165
+00:07:37,456 --> 00:07:40,677
+quoi qu'il en soit vous voyez 
+cette extension que jai marque?
+
+167
+00:07:40,678 --> 00:07:42,599
+il dit: ".rpm "
+
+168
+00:07:42,600 --> 00:07:45,799
+maintenant ".rpm "
+reprsente un type de paquet 
+
+169
+00:07:45,800 --> 00:07:50,633
+qui est destine spcifiquement 
+a certaines distributions Linux 
+
+170
+00:07:50,634 --> 00:07:55,877
+comme Red Hat, Fedora, Syntax 
+et  quelques autres.
+
+171
+00:07:55,878 --> 00:07:58,599
+qu'est-ce que vous pouvez faire est 
+d'utiliser votre logiciel rpm par dfaut
+
+172
+00:07:58,600 --> 00:08:03,433
+il suffit donc de taper "rpm -i"
+
+173
+00:08:03,434 --> 00:08:05,033
+argument "-i" pour linstaller
+
+174
+00:08:05,034 --> 00:08:09,677
+et puis spcifiez  le dossier 
+de votre paquet.
+
+175
+00:08:09,678 --> 00:08:17,533
+Accueil / Chronic / Tlchargements / VirtualBox
+
+176
+00:08:17,534 --> 00:08:18,655
+et appuyez sur entre.
+
+177
+00:08:18,656 --> 00:08:20,788
+encore une fois, 
+ce processus est automatis.
+
+178
+00:08:20,789 --> 00:08:23,533
+il n'y a pas grand-chose a faire 
+
+179
+00:08:23,534 --> 00:08:25,233
+peut-tre appuyez sur "oui" 
+et voila le long du chemin
+
+180
+00:08:25,234 --> 00:08:27,066
+en tout cas, ce ne sont pas la mthode 
+que vous devriez utiliser.
+
+181
+00:08:27,067 --> 00:08:32,366
+ceci est une mthode que je vais vous montrer
+
+182
+00:08:32,367 --> 00:08:37,655
+mais je ne vous dconseillerais pas, 
+si vous  l'installez comme a
+
+183
+00:08:37,656 --> 00:08:39,899
+elle tend a rompre avec les mises a jour 
+les plus rcentes
+
+184
+00:08:39,900 --> 00:08:40,056
+donc, cela peut tre un peu  problmatique.
+
+185
+00:08:40,057 --> 00:08:43,322
+je tiens a vous montrer une autre mthode
+dans le prochain tutoriel
+
+186
+00:08:43,323 --> 00:08:46,632
+ou vous pouvez rellement utiliser "yum", 
+qui est un gestionnaire de paquets par dfaut.
+
+187
+00:08:46,633 --> 00:08:49,799
+pour installer ce paquet
+
+188
+00:08:49,800 --> 00:08:52,466
+et la mise a jour en convenablement.
+
+189
+00:08:52,467 --> 00:08:54,388
+en tout cas, je vous dis au revoir
+
+190
+00:08:54,389 --> 00:08:58,000
+rendez-vous dans le prochain tutoriel, 
+ou je serai avec vous.
+

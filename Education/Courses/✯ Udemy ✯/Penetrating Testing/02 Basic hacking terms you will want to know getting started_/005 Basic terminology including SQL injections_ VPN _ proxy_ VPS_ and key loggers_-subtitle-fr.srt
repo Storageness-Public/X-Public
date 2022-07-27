@@ -1,0 +1,1461 @@
+1
+00:00:00,000 --> 00:00:03,499 A:middle
+Bonjour à  tous et bienvenue dans cette tutoriel.
+
+2
+00:00:03,500 --> 00:00:07,766
+Ici, je vais juste continuer de la ou 
+on a laissé le tutoriel précédent.
+
+3
+00:00:07,767 --> 00:00:09,199
+Si vous n'avez pas vu le tutoriel précédent, je vous conseille fortement de le faire
+
+4
+00:00:09,200 --> 00:00:14,366
+parce que les deux sont étroitement liés.
+
+5
+00:00:14,367 --> 00:00:17,966
+Quoi qu'il en soit, nous avons discuté 
+précédemment de certaines choses
+
+6
+00:00:17,967 --> 00:00:22,832
+comme DOS, RAT, Fishing et ainsi de suite.
+
+7
+00:00:22,833 --> 00:00:27,732
+Mais ici, je veux aller plus loin.
+
+8
+00:00:27,733 --> 00:00:33,166
+avec les injections SQL, les VPN, proxies, Tor, VPS, les Key loggers
+
+9
+00:00:33,167 --> 00:00:35,499
+et ainsi de suite.
+
+10
+00:00:35,500 --> 00:00:40,866
+Vous verrez les roles de chacun d'eux un peu plus tard
+
+11
+00:00:40,867 --> 00:00:42,966
+pendant le cours.
+
+12
+00:00:42,967 --> 00:00:44,299
+Mais pour le moment
+
+13
+00:00:44,300 --> 00:00:49,032
+vous avez les injections SQL, qui sont simplement
+ des requêtes de passage SQL à des requêtes HTTP.
+
+14
+00:00:49,033 --> 00:00:54,632
+Si elles ne sont pas formatés correctement 
+par un code PHP sur le serveur
+
+15
+00:00:54,633 --> 00:00:57,566
+cela peut poser un sérieux problème
+
+16
+00:00:57,567 --> 00:01:00,999
+et cela est toujours l'une des principales considérations
+
+17
+00:01:01,000 --> 00:01:03,832
+de tous les développeurs web.
+
+18
+00:01:03,833 --> 00:01:06,700
+Plus tard, je vais vous montrer comment utiliser ce terme
+
+19
+00:01:06,701 --> 00:01:08,266
+et les formuler
+
+20
+00:01:08,267 --> 00:01:11,433
+et il y a une grande quantité de sites qui sont vulnérables
+
+21
+00:01:11,434 --> 00:01:14,066
+principalement parce que leurs cadres de fonctionnement
+
+22
+00:01:14,067 --> 00:01:16,799
+sont faibles.
+
+23
+00:01:16,800 --> 00:01:19,966
+Ensuite, vous avez les réseaux virtuels privés 
+
+24
+00:01:19,967 --> 00:01:21,699
+Donc les VPN
+
+25
+00:01:21,700 --> 00:01:24,966
+Ce sont des façons de vous rendre anonymes.
+
+26
+00:01:24,967 --> 00:01:29,699
+Fondamentalement, si vous avez un fournisseur de VPN quelque part
+
+27
+00:01:29,700 --> 00:01:31,366
+et si vous voulez vous rendre anonyme
+
+28
+00:01:31,367 --> 00:01:34,399
+vous acheminera tout leur trafic grâce à ce fournisseur de VPN
+
+29
+00:01:34,400 --> 00:01:40,766
+et tout le trafic entre vous et le fournisseur de VPN 
+sera fortement cryptée.
+
+30
+00:01:40,767 --> 00:01:42,866
+Alors si un autre serveur 
+
+31
+00:01:42,867 --> 00:01:45,699
+reçoit des demandes venant de vous
+
+32
+00:01:45,700 --> 00:01:48,766
+il les reçoit effectivement du VPN.
+
+33
+00:01:48,767 --> 00:01:55,255
+Il n'y a véritablement aucun moyen de vous détecter 
+ou de localiser votre emplacement physique
+
+34
+00:01:55,256 --> 00:01:59,999
+à moins que le fournisseur de VPN laisse tomber l'affaire.
+
+35
+00:02:00,000 --> 00:02:04,566
+et cela ne se produit pas si facilement, 
+si vous choisissez la bonne.
+
+36
+00:02:04,567 --> 00:02:06,832
+En bas, vous avez les mandataires.
+
+37
+00:02:06,833 --> 00:02:09,299
+ils sont une façon moins fiable de rester anonyme
+
+38
+00:02:09,300 --> 00:02:14,699
+mais vous devriez savoir comment utiliser les mandataires SOCKS5.
+
+39
+00:02:14,700 --> 00:02:16,099
+Je vais vous expliquer 
+
+40
+00:02:16,100 --> 00:02:19,032
+Je vais vous les présenter quand nous ferons des chaînes de proxy
+
+41
+00:02:19,033 --> 00:02:24,722
+et quand je vous expliquerai comment 
+vous pouvez réellement vous rendre anonyme
+
+42
+00:02:24,723 --> 00:02:30,599
+Vous vous rendrez compte que vous pouvez acheminer 
+votre connexion à travers plusieurs mandataires
+
+43
+00:02:30,600 --> 00:02:34,766
+mais très vite vous verrez que 
+cela ne fonctionne pas toujours ainsi.
+
+44
+00:02:34,767 --> 00:02:40,377
+Dans les films ou quelque chose dans le genre 
+vous voyez des gens passant par 10 ou
+
+45
+00:02:40,378 --> 00:02:42,166
+20 mandataires différents.
+
+46
+00:02:42,167 --> 00:02:45,166
+En réalité, ce serait très, très difficile à mettre en oeuvre
+
+47
+00:02:45,167 --> 00:02:48,199
+principalement en raison de la vitesse de connexion
+
+48
+00:02:48,200 --> 00:02:50,799
+et de la bande passante disponible.
+
+49
+00:02:50,800 --> 00:02:53,833
+La plupart des mandataire gratuit ne sont pas très rapide
+
+50
+00:02:53,834 --> 00:02:57,199
+et le routage de votre connexion à travers eux
+
+51
+00:02:57,200 --> 00:03:04,599
+rendra très difficile de faire quoi que ce soit
+dans un laps de temps raisonnable.
+
+52
+00:03:04,600 --> 00:03:08,688
+Il y a, bien sûr, les mandataire payants
+
+53
+00:03:08,687 --> 00:03:11,933
+mais quand vous payez un proxy, vous laissez des empreintes numériques quelque part
+
+54
+00:03:11,934 --> 00:03:13,666
+de sorte que vous pouvez être retracé.
+
+55
+00:03:13,667 --> 00:03:15,166
+En bas, vous avez Tor.
+
+56
+00:03:15,167 --> 00:03:18,266
+Maintenant Tor est logiciel libre
+qui est absolument gratuit
+
+57
+00:03:18,267 --> 00:03:22,566
+et il est beaucoup plus rapide que les mandataires.
+
+58
+00:03:22,567 --> 00:03:26,699
+moins rapide que les VPN, mais il est plus rapide que les mandataires.
+
+59
+00:03:26,700 --> 00:03:29,766
+Il vous donne la possibilité 
+de torréfier vos applications
+
+60
+00:03:29,767 --> 00:03:35,066
+Dans le sens, signifie tout simplement
+le trafic de routage à travers certaines routes
+
+61
+00:03:35,067 --> 00:03:40,399
+et l'utilisation de certains routeurs sur Internet pour réellement
+
+62
+00:03:40,400 --> 00:03:45,366
+pas seulement les routeurs, mais l'utilisation de certains dispositifs sur Internet pour vos paquets
+
+63
+00:03:45,367 --> 00:03:48,766
+pour passer sur votre connexion.
+
+64
+00:03:48,767 --> 00:03:51,066
+Il peut être lent de temps à autre.
+
+65
+00:03:51,067 --> 00:03:53,799
+Il est pas une garantie à 100%
+
+66
+00:03:53,800 --> 00:03:54,299
+vous serez.
+
+67
+00:03:54,300 --> 00:03:57,466
+mais vous serez invisible a un haut niveau
+
+68
+00:03:57,467 --> 00:03:59,199
+si vous utilisez Tor.
+
+69
+00:03:59,200 --> 00:04:02,088
+Il y a plusieurs façons de vous détecter
+
+70
+00:04:02,089 --> 00:04:05,166
+mais ils sont très peu susceptibles de se produire
+
+71
+00:04:05,167 --> 00:04:10,533
+Comme 99,99% du temps, vous serez presque anonyme à 100% 
+
+72
+00:04:10,534 --> 00:04:14,466
+qui est un très bon moyen de fonctionnement.
+
+73
+00:04:14,467 --> 00:04:16,699
+En outre, vous avez le navigateur Tor
+
+74
+00:04:16,700 --> 00:04:20,199
+qui vous permet d'accéder 
+à Internet en mode furtif ou web caché
+
+75
+00:04:20,200 --> 00:04:22,299
+appelez cela comme vous voulez.
+
+76
+00:04:22,300 --> 00:04:25,466
+Fondamentalement, ce sont des sites «.onion"
+
+77
+00:04:25,467 --> 00:04:28,233
+et ils ne sont pas indexés par tous les autres moteurs de recherche
+
+78
+00:04:28,234 --> 00:04:34,566
+et ils ne peuvent pas être accessibles 
+sur un navigateur d'Internet régulier  ...
+
+79
+00:04:34,567 --> 00:04:37,466
+du point de vue de navigation regulier sur Internet.
+
+80
+00:04:37,467 --> 00:04:41,366
+Vous ne pouvez pas ... Je veux dire que si vous ouvrez Firefox
+
+81
+00:04:41,367 --> 00:04:43,099
+et si vous avez une connexion d'Internet
+
+82
+00:04:43,100 --> 00:04:48,155
+et si vous ne disposez pas d'une connexion
+d'Internet configurée de manière appropriée
+
+83
+00:4:48.156 --> 00:04:51,499
+pour le connecter à un réseau, ou quelque chose d'un genre
+
+84
+00:04:51,500 --> 00:04:56,499
+vous ne serez pas en mesure d'accéder 
+aux sites cachés, sites furtifs, services de site Web
+
+85
+00:04:56,500 --> 00:04:58,599
+et ainsi de suite.
+
+86
+00:04:58,600 --> 00:05:02,199
+Maintenant, je vais aussi vous montrer comment accéder
+a un site en mode furtif et comment l'utiliser
+
+87
+00:05:02,200 --> 00:05:05,699
+car il a une grande quantité de ressources 
+qui sont à votre disposition
+
+88
+00:05:05,700 --> 00:05:07,099
+la plupart sont gratuites
+
+89
+00:05:07,100 --> 00:05:09,566
+certains payants, et ainsi de suite.
+
+90
+00:05:09,567 --> 00:05:12,199
+En dessous, vous avez VPS.
+
+91
+00:05:12,200 --> 00:05:15,299
+Ce sont des serveurs privés virtuels.
+
+92
+00:05:15,300 --> 00:05:17,299
+Elle porte sur un procédé de ...
+
+93
+00:05:17,300 --> 00:05:18,799
+il est un titre ...
+
+94
+00:05:18,800 --> 00:05:20,499
+il peut considérée comme une couche de sécurité.
+
+95
+00:05:20,500 --> 00:05:23,999
+Par exemple, si vous avez un serveur Apache 
+en cours d'exécution sur votre machine physique
+
+96
+00:05:24,000 --> 00:05:26,232
+vous pouvez avoir une machine virtuelle
+au sein de cette machine physique
+
+97
+00:05:26,233 --> 00:05:29,932
+qui servira comme un SQL Server pour le serveur Apache.
+
+98
+00:05:29,933 --> 00:05:34,032
+Ceci est fait dans le sens que 
+le serveur SQL ne soit pas accessible de l'extérieur
+
+99
+00:05:34,033 --> 00:05:39,599
+et que vous ne disposez pas d'un port SQL 
+ouvert sur votre machine physique.
+
+100
+00:05:39,600 --> 00:05:41,566
+Donc, que les périphériques
+
+101
+00:05:41,567 --> 00:05:43,744
+et les programmes
+
+102
+00:05:43,745 --> 00:05:45,099
+des utilisateurs de cette machine particulière
+
+103
+00:05:45,100 --> 00:05:49,488
+seront en mesure d'accéder à la machine virtuelle
+où au dit SQL Server.
+
+104
+00:05:49,489 --> 00:05:52,999
+On est en plein d'action la maintenant.
+
+105
+00:05:53,000 --> 00:05:55,166
+Cela peut etre flou ou quelque chose comme ça
+
+106
+00:05:55,167 --> 00:05:57,300
+mais je ne veux pas que vous vous inquiétez à ce sujet.
+
+107
+00:05:57,301 --> 00:06:00,766
+Quand je vais vous montrer quelques exemples
+
+108
+00:06:00,767 --> 00:06:02,966
+vous allez comprendre.
+
+109
+00:06:02,967 --> 00:06:04,099
+et je vous le garantie.
+
+110
+00:06:04,100 --> 00:06:05,399
+Donc, pas de problème.
+
+111
+00:06:05,400 --> 00:06:07,099
+Je suis entrain de vous présenter à la terminologie
+
+112
+00:06:07,100 --> 00:06:12,644
+et vous donner une idée de ce qui est à venir.
+
+113
+00:06:12,645 --> 00:06:14,866
+Excellent
+
+114
+00:06:14,867 --> 00:06:16,988
+Donc, nous avons aussi les "key loggers"
+
+115
+00:06:16,989 --> 00:06:20,766
+qui sont des outils qui sont utilisés 
+pour voler des informations d'identification
+
+116
+00:06:20,767 --> 00:06:23,866
+et autre que les clés d'identification
+
+117
+00:06:23,867 --> 00:06:26,666
+ils sont aussi utilisés pour extraire des informations.
+
+118
+00:06:26,667 --> 00:06:30,655
+Si vous parvenez à déployer un enregistreur de frappe sur une machine
+
+119
+00:06:30,656 --> 00:06:33,699
+vous pouvez le configurer aussi pour envoyer,
+
+120
+00:06:33,700 --> 00:06:35,799
+pour enregistrer toutes les frappes et 
+les envoyer à une adresse e-mail
+
+121
+00:06:35,800 --> 00:06:37,055
+à un serveur FTP.
+
+122
+00:06:37,056 --> 00:06:40,599
+Aujourd'hui, les enregistreurs de frappe sont avancés dans la mesure
+
+123
+00:06:40,600 --> 00:06:41,533
+qu'ils possèdent comme...
+
+124
+00:06:41,800 --> 00:06:44,033
+plus d'une centaine d'options ou même plus
+
+125
+00:06:44,034 --> 00:06:49,699
+configurable au maximum d'extensions
+
+126
+00:06:49,700 --> 00:06:52,455
+et vous pouvez faire à peu près 
+tout ce que vous voulez avec eux
+
+127
+00:06:52,456 --> 00:06:54,566
+Je veux dire, ils ont leurs fonctionnalités de base
+
+128
+00:06:54,567 --> 00:06:57,999
+les fonctionnalités de base sont toujours là
+
+129
+00:06:58,000 --> 00:07:01,299
+pour enregistrer les clés
+
+130
+00:07:01,300 --> 00:07:03,533
+mais aussi d'autres choses que d'enregistrer des clés
+
+131
+00:07:03,534 --> 00:07:04,766
+par exemple 
+
+132
+00:07:04,767 --> 00:07:08,233
+ils peuvent extraire des informations existantes.
+
+133
+00:07:08,234 --> 00:07:11,344
+Vous pouvez configurer leur comportement
+
+134
+00:07:11,345 --> 00:07:13,533
+comment est le niveau de furtivité du "key logger"?
+
+135
+00:07:13,534 --> 00:07:15,299
+Comment faut-il cacher?
+
+136
+00:07:15,300 --> 00:07:17,766
+Où va-t-il aller?
+
+137
+00:07:17,767 --> 00:07:19,344
+Où va-t-il être installé?
+
+138
+00:07:19,345 --> 00:07:21,688
+Quel genre d'information voulez-vous extraire?
+
+139
+00:07:21,689 --> 00:07:23,599
+Voulez-vous suivre dans des dossiers particuliers ?
+
+140
+00:07:23,600 --> 00:07:26,299
+et vous voulez l'enregistrer?
+
+141
+00:07:26,300 --> 00:07:29,533
+Vous pouvez les configurer pour prendre des captures d'écran.
+
+142
+00:07:29,534 --> 00:07:33,433
+Vous pouvez les configurer pour 
+utiliser l'appareil photo sur le périphérique
+
+143
+00:07:33,434 --> 00:07:37,299
+sur lequel vous aviez déployé un enregistreur de frappe 
+pour prendre une photo toutes les cinq minutes
+
+144
+00:07:37,300 --> 00:07:39,100
+ou quelque chose comme ça
+
+145
+00:07:39,101 --> 00:07:40,233
+Ce ne serait pas une brillante idée
+
+146
+00:07:40,234 --> 00:07:45,599
+car il est évident que quelqu'un aurait 
+remarqué que la prise de photo
+
+147
+00:07:45,600 --> 00:07:50,533
+mais ce ne sont que des exemples 
+de ce que vous pouvez faire
+
+148
+00:07:50,534 --> 00:07:55,799
+et plus tard, nous allons réellement 
+télécharger un véritable keylogger
+
+149
+00:07:55,800 --> 00:07:57,000
+l'intaller, le déployer
+
+150
+00:07:57,001 --> 00:08:02,499
+et vous montrez les méthodes de déploiement 
+et la façon dont vous pouvez aussi les configurer 
+
+151
+00:08:02,500 --> 00:08:06,766
+bien que vous devriez être très prudent 
+lorsque vous téléchargerez certains outils
+
+152
+00:08:06,767 --> 00:08:10,199
+tels que les enregistreurs de frappe, outils de démonstration à distance, les rootkits
+
+153
+00:08:10,200 --> 00:08:12,366
+et ainsi de suite.
+
+154
+00:08:12,367 --> 00:08:16,966
+Principalement parce que vous ne voulez 
+jamais et en aucun cas de télécharger
+
+155
+00:08:16,967 --> 00:08:21,844
+un fichier binaire non compilé qui n'est pas 
+un logiciel libre de bonne source
+
+156
+00:08:21,845 --> 00:08:24,722
+parce que vous n'avez aucun moyen 
+de savoir ce qu'il y a dedans
+
+157
+00:08:24,723 --> 00:08:29,166
+et vous ne devriez absolument JAMAIS 
+l'exécuter sur votre ordinateur
+
+158
+00:08:29,167 --> 00:08:31,499
+Vous pouvez obtenir ce que vous voulez
+
+159
+00:08:31,500 --> 00:08:35,866
+mais, un enregistreur de frappe 
+ou de quelque chose dans le genre
+
+160
+00:08:35,867 --> 00:08:39,966
+mais, votre ordinateur peut être infecté 
+avec exactement le même key logger
+
+161
+00:08:39,967 --> 00:08:41,299
+que vous avez prévu de déployer quelque part
+
+162
+00:08:41,300 --> 00:08:45,200
+ou avec exactement le même RAT que vous avez
+l'intention de déployer quelque part.
+
+163
+00:08:45,201 --> 00:08:47,455
+donc c'est une brillante idée.
+
+164
+00:08:47,456 --> 00:08:51,677
+d'utiliser des sources vérifiées de ces outils.
+
+165
+00:08:51,678 --> 00:08:54,599
+Je vais vous montrer quelques-uns d'entre eux plus tard
+
+166
+00:08:54,600 --> 00:08:58,799
+en surfant sur Internet et je vais les télécharger
+
+167
+00:08:58,800 --> 00:09:01,633
+mais j'essai de vous éclaircir un tout petit peu.
+
+168
+00:09:01,634 --> 00:09:03,877
+et vous suggérez d'être très prudent avec ces choses
+
+169
+00:09:03,878 --> 00:09:06,599
+l'une des methodes les plus appropriées 
+de diriger ces attaques
+
+170
+00:09:06,600 --> 00:09:09,433
+est en fait la configuration d'une machine virtuelle
+
+171
+00:09:09,434 --> 00:09:12,033
+et de faire ce genre d'activité 
+sur cette machine virtuelle
+
+172
+00:09:12,034 --> 00:09:14,677
+Donc, même si vous êtes infecté 
+ou quelque chose dans le genre
+
+173
+00:09:14,678 --> 00:09:15,533
+cela n'a pas d'importance.
+
+174
+00:09:15,534 --> 00:09:17,655
+C'est une machine virtuelle.
+
+175
+00:09:17,656 --> 00:09:19,788
+Vous pouvez le réinstaller quand vous le voulez.
+
+176
+00:09:19,789 --> 00:09:20,533
+Très rapide
+
+177
+00:09:20,534 --> 00:09:23,233
+Certe, vos informations seront anéanties.
+
+178
+00:09:23,234 --> 00:09:27,066
+mais le plus important, c'est que les fichiers 
+sur votre système de la machine physique principale
+
+179
+00:09:27,067 --> 00:09:31,366
+ne seront pas accessible 
+à partir de la machine virtuelle
+
+180
+00:09:31,367 --> 00:09:35,655
+En gros c'est ca et 
+en dessous vous avez le Terminal
+
+181
+00:09:35,656 --> 00:09:40,899
+Donc un terminal est essentiellement une interface
+
+182
+00:09:40,900 --> 00:09:45,055
+qui vous permet de contrôler votre système d'exploitation.
+
+183
+00:09:45,056 --> 00:09:49,322
+un terminal de Linux est très puissant.
+
+184
+00:09:49,323 --> 00:09:52,677
+Nous allons beaucoup l'utiliser.
+
+185
+00:09:54,678 --> 00:09:56,799
+Vous devez vous familiariser avec elle.
+
+186
+00:09:56,800 --> 00:09:58,966
+Je vais vous familiariser avec elle.
+
+187
+00:09:58,967 --> 00:10:00,388
+Je vais vous apprendre comment l'utiliser.
+
+188
+00:10:00,389 --> 00:10:03,400
+Certaines personnes trouvent cela difficile
+
+189
+00:10:03,401 --> 00:10:06,233
+ou compliqué à première vue.
+
+190
+00:10:06,234 --> 00:10:07,022
+Vous savez, il y a beaucoup de commandes
+à taper dans le terminal.
+
+191
+00:10:07,023 --> 00:10:10,944
+Comment les mémoriser tous
+
+192
+00:10:10,945 --> 00:10:14,455
+a quoi sert telle ou telle commande 
+et ainsi de suite.
+
+193
+00:10:14,456 --> 00:10:18,533
+mais croyez-moi, il y a une certaine logique
+
+194
+00:10:18,534 --> 00:10:22,922
+et une fois qu'on a compris, 
+le tour sera joué tout naturellement
+
+195
+00:10:22,923 --> 00:10:26,899
+Je sais par coeur environ 30% des commandes.
+
+196
+00:10:26,900 --> 00:10:29,366
+concernant les terminaux Linux
+
+197
+00:10:29,367 --> 00:10:34,344
+et le reste je les découvre 
+tout simplement avec le -H ou --Aide.
+
+198
+00:10:34,345 --> 00:10:38,011
+Le système vous dit à peu près tout ce que vous devez savoir.
+
+199
+00:10:38,012 --> 00:10:41,855
+Il vous aide dans une grande mesure
+
+200
+00:10:41,856 --> 00:10:45,366
+et vous êtes capable de comprendre beaucoup de choses
+
+201
+00:10:45,367 --> 00:10:48,933
+il faut seulement comprendre la logique de base
+la façon qu'il fonctionne
+
+202
+00:10:48,934 --> 00:10:50,288
+et ainsi de suite.
+
+203
+00:10:50,289 --> 00:10:54,388
+Maintenant, il y aura toujours, bien entendu, des arguments
+
+204
+00:10:54,389 --> 00:10:58,099
+Je ne sais pas, peut-être des gens qui se disent
+"Pourquoi devrions-nous utiliser des terminaux?"
+
+205
+00:10:58,100 --> 00:11:01,566
+"Pourquoi ne pas simplement utiliser les outils de l'interface graphique ou quelque chose comme ça?"
+
+206
+00:11:01,567 --> 00:11:05,388
+La réponse est simple: parce qu'ils ne sont pas aussi puissant
+
+207
+00:11:05,389 --> 00:11:08,388
+que les outils du terminal.
+
+208
+00:11:08,389 --> 00:11:13,588
+De plus, les outils du terminal ont beaucoup moins de dépendances.
+
+209
+00:11:13,589 --> 00:11:18,966
+et la plupart des outils de piratage sont 
+essentiellement conçus pour le terminal.
+
+210
+00:11:18,967 --> 00:11:21,844
+Ils n'ont pas... ils ne disposent pas d'interface graphique.
+
+211
+00:11:21,845 --> 00:11:24,855
+Un grand nombre de logiciel GUI 
+ont été developpés de nos jours
+
+212
+00:11:24,856 --> 00:11:27,122
+mais je pourrais brièvement les essayer a un moment donné
+
+213
+00:11:27,123 --> 00:11:29,788
+mais ils ne sont pas ...
+
+214
+00:11:29,789 --> 00:11:31,966
+les interfaces graphiques ne sont pas si pertinente
+
+215
+00:11:31,967 --> 00:11:33,644
+lorsque vous serez en mesure d'utiliser le terminal
+
+216
+00:11:33,645 --> 00:11:35,399
+par défaut, vous serez automatiquement, 
+
+217
+00:11:35,400 --> 00:11:38,100
+en mesure d'utiliser l'interface utilisateur graphique
+
+218
+00:11:38,101 --> 00:11:40,000
+pour ce programme particulier.
+
+219
+00:11:40,001 --> 00:11:45,566
+On avance, ci-dessous vous avez le pare-feu.
+
+220
+00:11:45,567 --> 00:11:50,988
+un pare-feu sur Linux est configuré via 
+les commandes de la table IP
+
+221
+00:11:50,989 --> 00:11:54,633
+Vous continuez à vous demander 
+a quoi ca sert la configuration d'un pare-feu
+
+222
+00:11:54,634 --> 00:11:56,788
+et ceci est une des raisons principales
+
+223
+00:11:56,789 --> 00:12:00,644
+que vous ne devriez pas utiliser une version de Windows
+
+224
+00:12:00,645 --> 00:12:02,788
+pour ce tutoriel notamment -
+
+225
+00:12:02,789 --> 00:12:04,866
+pour suivre ce tutoriel.
+
+226
+00:12:04,867 --> 00:12:06,955
+Vous aurez besoin d'installer
+
+227
+00:12:06,956 --> 00:12:08,966
+comme je le disais précédemment
+
+228
+00:12:08,967 --> 00:12:13,344
+nous devons installer soit une machine virtuelle de Linux
+ou de créer une invité de demarrage (dual boot)
+
+229
+00:12:13,345 --> 00:12:15,099
+ou quelque chose dans le genre.
+
+230
+00:12:15,100 --> 00:12:18,100
+Je vais, bien sûr, vous montrez 
+comment le faire et vous le démontrer en détails.
+
+231
+00:12:18,101 --> 00:12:21,944
+mais une des raisons principales -
+
+232
+00:12:21,945 --> 00:12:23,722
+les pare-feu sont l'une des principales raisons
+
+233
+00:12:23,723 --> 00:12:26,355
+pourquoi nous ne pouvons pas utiliser Windows pour ces sortes de fins.
+
+234
+00:12:26,356 --> 00:12:29,788
+Pare-feu de Linux est un logiciel libre
+
+235
+00:12:29,789 --> 00:12:31,622
+Pas beaucoup d'options
+
+236
+00:12:31,623 --> 00:12:34,844
+très peu d'options.
+
+237
+00:12:34,845 --> 00:12:36,266
+Arrivé ici ...
+
+238
+00:12:36,267 --> 00:12:40,355
+Vous pouvez commencer à l'éxplorer. 
+
+239
+00:12:40,356 --> 00:12:45,066
+Vous pouvez le configurer.
+
+240
+00:12:45,067 --> 00:12:47,744
+Vous pouvez fermer et ouvrir les ports.
+
+241
+00:12:47,745 --> 00:12:50,299
+Attaquant des connexions via les ports ou via les adresses IP.
+
+242
+00:12:50,300 --> 00:12:52,900
+Vous pouvez fermer ...
+
+243
+00:12:52,901 --> 00:12:56,988
+vous pouvez simplement interdire 
+certains protocoles sur certains ports
+
+244
+00:12:56,989 --> 00:13:00,500
+ou interdire certains protocoles pour certaines adresses IP.
+
+245
+00:13:00,501 --> 00:13:05,822
+Faites tout les modalités de transmission et de redirection
+
+246
+00:13:05,823 --> 00:13:06,911
+et ainsi de suite.
+
+247
+00:13:06,912 --> 00:13:09,644
+Tout cela est disponible gratuitement
+avec un pare-feu de Linux
+
+248
+00:13:09,645 --> 00:13:12,133
+Alors que dans Windows, vous aurez certaines de ces options
+
+249
+00:13:12,134 --> 00:13:15,477
+mais pas beaucoup, à moins que, par exemple
+
+250
+00:13:15,478 --> 00:13:17,699
+vous achetez un certain paquet
+ou quelque chose comme ça
+
+251
+00:13:17,700 --> 00:13:21,266
+qui ne sont pas quelque chose 
+que nous voulons vraiment par ici.
+
+252
+00:13:21,267 --> 00:13:24,455
+Nous voulons garder ce budget-amical
+
+253
+00:13:24,456 --> 00:13:28,933
+et nous voulons avoir un puissant pare-feu
+
+254
+00:13:28,934 --> 00:13:31,011
+qui peut éxecuter correctement à peu près 
+tout ce que nous commandons.
+
+255
+00:13:31,012 --> 00:13:34,588
+Maintenant, il existe deux façons de configurer ce pare-feu
+
+256
+00:13:34,589 --> 00:13:39,400
+et si vous avez peur de gâcher quelque chose, 
+ne vous inquiétez pas à ce sujet
+
+257
+00:13:39,401 --> 00:13:43,633
+parce que la plupart des configurations 
+que nous ferons seront des configurations de courte durée 
+
+258
+00:13:43,634 --> 00:13:45,655
+pour ainsi dire
+
+259
+00:13:45,656 --> 00:13:48,100
+principalement parce que toutes les configurations
+que vous allez faire sur le pare-feu
+
+260
+00:13:48,101 --> 00:13:49,233
+des commandes de table IP
+
+261
+00:13:49,234 --> 00:13:51,066
+Sauf indication du contraire,
+
+262
+00:13:51,067 --> 00:13:54,700
+seront temporaire, et ils resteront jusqu'à la prochaine réinitialisation du système.
+
+263
+00:13:54,701 --> 00:13:57,133
+Il existe un moyen de contourner cela, bien sûr
+
+264
+00:13:57,134 --> 00:14:01,500
+et de configurer les règles de pare-feu 
+dans le fichier de configuration directement
+
+265
+00:14:01,501 --> 00:14:04,011
+et ce qui rend les changements permanents
+
+266
+00:14:04,012 --> 00:14:07,877
+qui est aussi l'une des façons de le faire.
+
+267
+00:14:07,878 --> 00:14:10,255
+mais je ne le préfère pas généralement.
+
+268
+00:14:10,256 --> 00:14:14,966
+Je préfère qu'elle ait un script 
+quelque part que vous pouvez exécuter à tout moment
+
+269
+00:14:14,967 --> 00:14:16,388
+et il permet de configurer le pare-feu par défaut.
+
+270
+00:14:16,389 --> 00:14:24,033
+Ceci est une avantage principalement parce que
+vous aurez vos outils dans une clé USB
+
+271
+00:14:24,034 --> 00:14:25,322
+ou quelque part d'autre.
+
+272
+00:14:25,323 --> 00:14:26,999
+ou quelque chose du genre.
+
+273
+00:14:27,000 --> 00:14:30,399
+et vous avez ces scripts rapides, que vous générez
+
+274
+00:14:30,400 --> 00:14:33,099
+et puis ils effectuent ces tâches 
+pour vous de manière automatisée..
+
+275
+00:14:33,100 --> 00:14:34,455
+Trés trés simple.
+
+276
+00:14:34,456 --> 00:14:37,399
+Je vais vous montrer comment faire ces scripts.
+
+277
+00:14:37,400 --> 00:14:39,533
+Vous n'êtes pas obligés ...
+
+278
+00:14:39,534 --> 00:14:42,200
+Nécessairement vous n'en aurez pas 
+besoin de connaissances de programmation avancée
+
+279
+00:14:42,201 --> 00:14:44,000
+ou quelque chose du genre.
+
+280
+00:14:44,001 --> 00:14:46,033
+Fondamentalement, ces scripts 
+
+281
+00:14:46,034 --> 00:14:49,322
+sont des listes de commandes de terminaux Linux
+
+282
+00:14:49,323 --> 00:14:51,999
+que nous allons faire de toute façon. 
+
+283
+00:14:52,000 --> 00:14:55,399
+fondamentalement, le script serait constitué d'une liste de ces commandes
+
+284
+00:14:55,400 --> 00:15:00,099
+alors que vous changerai le mode du script 
+en un fichier exécutable
+
+285
+00:15:00,100 --> 00:15:03,099
+exécuter le 
+
+286
+00:15:03,100 --> 00:15:07,455
+et toutes ces commandes seront exécutées sur le système
+
+287
+00:15:07,456 --> 00:15:11,399
+et ces tâches seront terminées de façon automatique, par défaut.
+
+288
+00:15:11,400 --> 00:15:15,533
+L'une des dernières choses que je souhaite aborder ici
+
+289
+00:15:15,534 --> 00:15:20,200
+sont les options de "Reverse-shells"
+
+290
+00:15:21,201 --> 00:15:24,000
+Il y a des centaines, sinon des milliers de reverse-shells
+
+291
+00:15:24,001 --> 00:15:26,033
+que vous pouvez utiliser.
+
+292
+00:15:26,034 --> 00:15:30,322
+Je vais reprendre quelques-uns que 
+nous allons utiliser, en fonction du cadre
+
+293
+00:15:30,323 --> 00:15:34,999
+en fonction de l'environnement, bien sûr,
+que nous voulons pour infecter.
+
+294
+00:15:35,000 --> 00:15:40,399
+Mais en substance, qu'est ce qu'on entend par "reverse-shells"
+
+295
+00:15:40,400 --> 00:15:43,099
+comme son nom l'indique
+
+296
+00:15:43,100 --> 00:15:46,455
+vous avez un programme qui va infecter un autre appareil
+
+297
+00:15:46,456 --> 00:15:50,399
+puis ce programme ouvre une connexion inverse de ce dispositif
+
+298
+00:15:50,400 --> 00:15:52,533
+une connexion inverse à vous.
+
+299
+00:15:52,534 --> 00:15:55,000
+Ainsi, vous pouvez continuer à passer des commandes.
+
+300
+00:15:55,001 --> 00:15:58,366
+Vous pouvez continuer à contrôler le système
+
+301
+00:15:58,367 --> 00:16:01,933
+même si vous êtes n'importe ou et à distance. 
+
+302
+00:16:01,934 --> 00:16:06,299
+Il existe différents types de cours, bien sûr,
+aujourd'hui, avec les routeurs
+
+303
+00:16:06,300 --> 00:16:08,388
+et ainsi de suite.
+
+304
+00:16:08,389 --> 00:16:13,099
+Avec de tels pare-feu, vous pouvez 
+faire beaucoup de configuration supplémentaire
+
+305
+00:16:13,100 --> 00:16:15,566
+et il y a des problèmes qui doivent être résolus et traités.
+
+306
+00:16:15,567 --> 00:16:19,388
+Vous verrez comment et essayez 
+de pénétrer dans un seul ordinateur
+
+307
+00:16:19,389 --> 00:16:22,388
+parfois vous aurez besoin 
+de pénétrer dans le routeur en premier. 
+
+308
+00:16:22,389 --> 00:16:25,588
+Habituellement, vous devez percer dans le routeur en premier 
+
+309
+00:16:25,589 --> 00:16:28,966
+sauf dans le cas ou vous exécutez les attaques d'hammeçonnages. 
+
+310
+00:16:28,967 --> 00:16:31,844
+ou il y a un serveur web, 
+ou quelque chose du genre, en arrière-plan
+
+311
+00:16:31,845 --> 00:16:33,855
+Mais attaquer un dispositif privé -
+
+312
+00:16:33,856 --> 00:16:37,122
+un ordinateur privé, c'est ce que font les gens généralement 
+
+313
+00:16:37,123 --> 00:16:40,788
+comme prélude à de plus grandes attaques de piratages
+
+314
+00:16:40,789 --> 00:16:42,966
+parce qu'ils veulent extraire une sorte d'informations
+
+315
+00:16:42,967 --> 00:16:43,644
+ou quelque chose d'un genre
+
+316
+00:16:43,645 --> 00:16:46,399
+à partir, disons, d'un employé 
+d'une entreprise qui est un administrateur de réseau
+
+317
+00:16:46,400 --> 00:16:48,100
+ou quelqu'un comme ça.
+
+318
+00:16:48,101 --> 00:16:49,000
+Ils seront ...
+
+319
+00:16:49,001 --> 00:16:52,566
+l'un des facteurs de base serait d'attaquer un routeur à la maison
+
+320
+00:16:52,567 --> 00:16:54,988
+modifier les paramètres DNS 
+
+321
+00:16:54,989 --> 00:16:57,633
+et essayer de voler les informations d'identification
+d'une manière ou d'une autre
+
+322
+00:16:57,634 --> 00:17:00,788
+ou de mettre l'ordinateur dans la DMZ du routeur
+
+323
+00:17:00,789 --> 00:17:02,644
+zone démilitarisée
+
+324
+00:17:02,645 --> 00:17:06,788
+de sorte que le routeur ne soit 
+plus disponible et efficace pour l'appareil.
+
+325
+00:17:06,789 --> 00:17:10,866
+Plutôt à la place,tout le trafic 
+se rédirige vers ce dispositif indépendamment
+
+326
+00:17:10,867 --> 00:17:13,955
+Alors ca devrait être ...
+
+327
+00:17:13,956 --> 00:17:17,966
+quelques types d'attaques que vous pouvez faire
+
+328
+00:17:17,967 --> 00:17:22,344
+mais les "reverse-shells" dépendra du choix de l'environnement
+
+329
+00:17:22,345 --> 00:17:25,099
+que vous essayez d'infecter
+
+330
+00:17:25,100 --> 00:17:32,100
+et dépendra aussi du choix de votre itinéraire d'attaque,
+
+331
+00:17:32,101 --> 00:17:37,944
+En tout cas, j'espère que vous avez retenu 
+l'introduction de base de ces termes
+
+332
+00:17:37,945 --> 00:17:41,722
+et je vous le répète, si vous n'avez pas 
+encore bien compris jusqu'à présent
+
+333
+00:17:41,723 --> 00:17:43,355
+Ne soyez pas alarmés
+
+334
+00:17:43,356 --> 00:17:46,788
+Nous allons faire tout cela avec 
+plus de détails et beaucoup d'exemples
+
+335
+00:17:46,789 --> 00:17:48,622
+et vous allez comprendre.
+
+336
+00:17:48,623 --> 00:17:53,844
+Ne laissez pas intimider par la peur ou de vous arrêter.
+
+337
+00:17:53,845 --> 00:17:57,266
+en dépit de tout il faut continuer d'avancer
+
+338
+00:17:57,267 --> 00:18:00,355
+et il suffit de bien suivre et à la fin de ce cours 
+
+339
+00:18:00,356 --> 00:18:03,066
+Je vous le garantis, vous le comprendrez
+
+340
+00:18:03,067 --> 00:18:06,744
+avec un peu d'attention et de curiosité
+
+341
+00:18:06,745 --> 00:18:10,299
+vous serez en mesure d'évoluer les compétences nécessaires
+
+342
+00:18:10,300 --> 00:18:15,900
+pour devenir un testeur d'intruision ou un pirate éthique.
+
+343
+00:18:15,901 --> 00:18:18,000
+Je vous dis au revoir et j'espère vous voir dans le prochain tutoriel.
+

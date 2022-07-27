@@ -1,0 +1,688 @@
+1
+00:00:00,589 --> 00:00:08,412
+Hola a todos y bienvenidos a este tutorial.
+
+2
+00:00:00,589 --> 00:00:08,412
+Hoy slo voy a mostrarte que de hecho
+
+3
+00:00:08,412 --> 00:00:12,814
+puedes bootear desde este dispositivo
+
+4
+00:00:08,412 --> 00:00:12,814
+USB. Este no es un tutorial obligatorio,
+
+5
+00:00:12,814 --> 00:00:18,850
+o algo as. Esto es slo para probar que
+
+6
+00:00:12,814 --> 00:00:18,850
+esto es funcional de hecho funciona
+
+7
+00:00:18,850 --> 00:00:22,682
+y que puedes bootear desde el
+
+8
+00:00:18,850 --> 00:00:22,682
+dispositivo USB que hemos creado
+
+9
+00:00:22,682 --> 00:00:31,754
+de Kali Linux con almacenamiento
+
+10
+00:00:22,682 --> 00:00:31,754
+encriptado persistente. Voy a conectarlo
+
+11
+00:00:31,754 --> 00:00:37,692
+Luego voy a encender mi laptop. Estoy
+
+12
+00:00:31,754 --> 00:00:37,692
+usando una laptop Dell. En mi caso, debo
+
+13
+00:00:37,692 --> 00:00:47,900
+presionar F2 o F12. Voy a presionar F12 para
+
+14
+00:00:37,692 --> 00:00:47,900
+las opciones de booteo, ya que F2 es para
+
+15
+00:00:47,900 --> 00:00:54,911
+BIOS y F12 es para opciones de booteo en una
+
+16
+00:00:47,900 --> 00:00:54,911
+mquina Dell. Si ests usando Acer o HP o algo
+
+17
+00:00:54,911 --> 00:00:59,890
+as, puede que sea diferente. Siempre estar
+
+18
+00:00:54,911 --> 00:00:59,890
+mostrado en la pantalla, cuales teclas debes
+
+19
+00:00:59,890 --> 00:01:04,026
+presionar para que opciones al bootear.
+
+20
+00:00:59,890 --> 00:01:04,026
+Ves, me encontr con este problema que
+
+21
+00:01:04,026 --> 00:01:09,194
+quiero mostrarles tambin. Me encuentro
+
+22
+00:01:04,026 --> 00:01:09,194
+con la pantalla as cuando selecciono las
+
+23
+00:01:09,194 --> 00:01:13,377
+opciones de booteo, y no puedo seleccionar
+
+24
+00:01:09,194 --> 00:01:13,377
+las opciones. No asumas inmediatamente que
+
+25
+00:01:13,377 --> 00:01:19,230
+has hecho algo incorrectamente, que tu
+
+26
+00:01:13,377 --> 00:01:19,230
+USB no est funcionando o algo.
+
+27
+00:01:19,230 --> 00:01:23,444
+En lugar de eso, lo que puedes hacer es
+
+28
+00:01:19,230 --> 00:01:23,444
+simplemente apagar la computadora.
+
+29
+00:01:23,444 --> 00:01:33,852
+No pasa nada. Volverla a encender y entrar
+
+30
+00:01:23,444 --> 00:01:33,852
+a la BIOS. As que para mi, es F2. No debes
+
+31
+00:01:33,852 --> 00:01:39,378
+hacer nada en la BIOS en este momento.
+
+32
+00:01:33,852 --> 00:01:39,378
+Por supuesto, si quieres, puedes seleccionar
+
+33
+00:01:39,378 --> 00:01:51,170
+al USB cmo la opcin predeterminada
+
+34
+00:01:39,378 --> 00:01:51,170
+de booteo. Ah esta, as que voy a ir a
+
+35
+00:01:51,170 --> 00:01:59,026
+boot. Y ah est Legacy Boot, voy a presionar
+
+36
+00:01:51,170 --> 00:01:59,026
+Enter. No veo un USB por aqu. Ok, est bien
+
+37
+00:01:59,026 --> 00:02:06,579
+Slo presiona Esc varias veces hasta que diga
+
+38
+00:01:59,026 --> 00:02:06,579
+Salir sin guardar cambios, s.
+
+39
+00:02:06,579 --> 00:02:13,006
+Control + Alt + Del para reiniciar la computadora
+
+40
+00:02:06,579 --> 00:02:13,006
+de nuevo. Luego puedes presionar la tecla de
+
+41
+00:02:13,006 --> 00:02:21,228
+opciones de Booteo. Y ah est, ahora tengo las
+
+42
+00:02:13,006 --> 00:02:21,228
+opciones de Booteo. Se puede ver que dice
+
+43
+00:02:21,228 --> 00:02:26,347
+Dispositivo de Almacenamiento USB (USB
+
+44
+00:02:21,228 --> 00:02:26,347
+Storage Device), y voy a seleccionarlo.
+
+45
+00:02:26,347 --> 00:02:31,370
+Ahora tengo las opciones de booteo para
+
+46
+00:02:26,347 --> 00:02:31,370
+Kali Linux. He booteado desde un USB
+
+47
+00:02:31,370 --> 00:02:39,553
+Voy a seleccionar Live USB con Encriptacin
+
+48
+00:02:31,370 --> 00:02:39,553
+Persistente porque es el que decidimos crear
+
+49
+00:02:39,553 --> 00:02:48,574
+Espero que sea el que te funcione a ti tambin.
+
+50
+00:02:39,553 --> 00:02:48,574
+Presiona Enter, y est avanzando y avanzando
+
+51
+00:02:48,574 --> 00:02:53,695
+Y como tengo otras particiones encriptadas
+
+52
+00:02:48,574 --> 00:02:53,695
+en esta laptop, me preguntar si las quiero
+
+53
+00:02:53,695 --> 00:02:59,956
+desencriptar tambin. Dir que no. Tu no te
+
+54
+00:02:53,695 --> 00:02:59,956
+encontrars con esto a menos que tengas
+
+55
+00:02:59,956 --> 00:03:06,144
+otras particiones encriptadas. Me est pidiendo
+
+56
+00:02:59,956 --> 00:03:06,144
+desbloquear mi disco. No quiero desbloquearlo,
+
+57
+00:03:06,144 --> 00:03:11,113
+Presiono 'N' para 'no'. Simplemente presiona
+
+58
+00:03:06,144 --> 00:03:11,113
+cualquier tecla al azar y luego presiona Enter.
+
+59
+00:03:11,113 --> 00:03:19,941
+De nuevo para SDA3. No quiero desencriptar
+
+60
+00:03:11,113 --> 00:03:19,941
+esto, slo presiona 'N' o S. 'N' para No y 'Y' S
+
+61
+00:03:19,941 --> 00:03:37,131
+Si quieres repetir el proceso de desencriptacin
+
+62
+00:03:19,941 --> 00:03:37,131
+Quisiera desencriptar SDB3 porque ese es mi
+
+63
+00:03:37,131 --> 00:03:43,570
+USB. Necesitas estar familiarizado con el
+
+64
+00:03:37,131 --> 00:03:43,570
+Scheme de particin para saber cuales
+
+65
+00:03:43,570 --> 00:03:49,189
+quieres desencriptar. Mira el resultado de
+
+66
+00:03:43,570 --> 00:03:49,189
+fdisk -l como se mostr en los tutoriales
+
+67
+00:03:49,189 --> 00:03:59,142
+anteriores para saber que particin es tu
+
+68
+00:03:49,189 --> 00:03:59,142
+USB. Es DEV SDA, o es DEV SDB? Puede
+
+69
+00:03:59,142 --> 00:04:04,633
+ser DEV SDC o algo as, dependiendo de que
+
+70
+00:03:59,142 --> 00:04:04,633
+es. Me lo est diciendo ahora, "Por favor,
+
+71
+00:04:04,633 --> 00:04:09,832
+desbloquea el disco DEV SDB3". Voy a
+
+72
+00:04:04,633 --> 00:04:09,832
+escribir mi contrasea de desencriptacin
+
+73
+00:04:09,832 --> 00:04:14,354
+y presionar Enter. No te preocupes si no puedes
+
+74
+00:04:09,832 --> 00:04:14,354
+ver nada mientras escribes. Est bien.
+
+75
+00:04:14,354 --> 00:04:26,556
+Esa es la manera que debe ser as alguien que
+
+76
+00:04:14,354 --> 00:04:26,556
+est detrs de ti no pueda ver que tan larga
+
+77
+00:04:26,556 --> 00:04:32,170
+es tu contrasea. Es una medida de seguridad.
+
+78
+00:04:26,556 --> 00:04:32,170
+Y es algo que de verdad me gusta de Linux.
+
+79
+00:04:32,170 --> 00:04:36,434
+No es el mismo caso en Windows, desafortunadamente
+
+80
+00:04:32,170 --> 00:04:36,434
+dnde la extensin de prcticamente todo lo
+
+81
+00:04:36,434 --> 00:04:42,276
+que escribes y cualquier contrasea es revelada.
+
+82
+00:04:36,434 --> 00:04:42,276
+As que tengo mi sistema. Ahora, mi WiFi
+
+83
+00:04:42,276 --> 00:04:45,847
+est funcionando, dice "conexiones inalmbricas
+
+84
+00:04:42,276 --> 00:04:45,847
+disponibles" No me voy a conectar a ninguna
+
+85
+00:04:45,847 --> 00:04:52,762
+de ellas porque no tiene sentido. La nica cosa
+
+86
+00:04:45,847 --> 00:04:52,762
+que voy a hacer ahora es crear un archivo en
+
+87
+00:04:52,762 --> 00:04:58,491
+mi escritorio y rebootear la mquina, para que
+
+88
+00:04:52,762 --> 00:04:58,491
+puedas ver que tengo almacenamiento
+
+89
+00:04:58,491 --> 00:05:04,430
+persistente. Vamos y hacemos clic derecho en
+
+90
+00:04:58,491 --> 00:05:04,430
+en el escritorio para crear una nueva carpeta.
+
+91
+00:05:04,430 --> 00:05:10,280
+Le puedes poner cualquier nombre y luego
+
+92
+00:05:04,430 --> 00:05:10,280
+presionar Enter.
+
+93
+00:05:10,280 --> 00:05:14,738
+Puedes ver este carpeta que estoy moviendo
+
+94
+00:05:10,280 --> 00:05:14,738
+y est ahora ubicada en el centro de mi
+
+95
+00:05:14,738 --> 00:05:22,231
+escritorio. Esa es la carpeta que hemos creado
+
+96
+00:05:14,738 --> 00:05:22,231
+Djame abrirla y crear un nuevo documento
+
+97
+00:05:22,231 --> 00:05:36,427
+Un documento vaco que se llamar "algo".
+
+98
+00:05:22,231 --> 00:05:36,427
+Si abro "algo" y escribir algo en l.
+
+99
+00:05:36,427 --> 00:05:44,404
+Pero no importa. S que la calidad de imgen
+
+100
+00:05:36,427 --> 00:05:44,404
+en este celular es pobre as que esto es lo que har.
+
+101
+00:05:44,404 --> 00:05:48,782
+Puedes ver que hay algo en la carpeta, el
+
+102
+00:05:44,404 --> 00:05:48,782
+contenido es completamente irrelevante
+
+103
+00:05:48,782 --> 00:05:52,784
+la nica razn por la que estoy haciendo
+
+104
+00:05:48,782 --> 00:05:52,784
+esto es para mostrarte que este archivo se
+
+105
+00:05:52,784 --> 00:05:58,344
+mantendr durante el reboot. Que puedo
+
+106
+00:05:52,784 --> 00:05:58,344
+desconectar el USB de la mquina y que
+
+107
+00:05:58,344 --> 00:06:07,032
+igual seguir all. As que todo lo que escrib
+
+108
+00:05:58,344 --> 00:06:07,032
+en el documento fue "AAA". Sigamos y guardemos
+
+109
+00:06:07,032 --> 00:06:11,899
+Cerrar, cerrar, as que tengo una carpeta
+
+110
+00:06:07,032 --> 00:06:11,899
+aqu, si la abro tengo un archivo llamado
+
+111
+00:06:11,899 --> 00:06:23,914
+"algo" si lo abro hay "AAA" escrito en l.
+
+112
+00:06:11,899 --> 00:06:23,914
+As que lo cerramos. Ahora voy a reiniciar
+
+113
+00:06:23,914 --> 00:06:33,894
+la mquina o mejor an, la apagamos. Ahora
+
+114
+00:06:23,914 --> 00:06:33,894
+la mquina se apagar completamente.
+
+115
+00:06:33,894 --> 00:06:49,247
+Y aqu, desconect el dispositivo USB.
+
+116
+00:06:33,894 --> 00:06:49,247
+La mquina est apagada, puedes ver que
+
+117
+00:06:49,247 --> 00:07:03,686
+no hay nada conectado. No hay cables ni
+
+118
+00:06:49,247 --> 00:07:03,686
+nada parecido. Conctalo de nuevo.
+
+119
+00:07:03,686 --> 00:07:15,501
+Reiniciemos la mquina. Vamos y entramos
+
+120
+00:07:03,686 --> 00:07:15,501
+a la BIOS de nuevo. Estoy presionando F2
+
+121
+00:07:15,501 --> 00:07:31,313
+para Dell. La tuya puede ser diferente.
+
+122
+00:07:15,501 --> 00:07:31,313
+Slo te lo recuerdo de nuevo. As que vamos
+
+123
+00:07:31,313 --> 00:07:35,539
+a Legacy. Todava no puedo ver ningn USB
+
+124
+00:07:31,313 --> 00:07:35,539
+aqu, lo que est perfectamente bien.
+
+125
+00:07:35,539 --> 00:07:49,139
+Salir sin guardar cambios, Control + Alt + Del
+
+126
+00:07:35,539 --> 00:07:49,139
+Presionar F12 para opciones de booteo.
+
+127
+00:07:49,139 --> 00:07:55,408
+Ok, as que Dispositivo de almacenamiento USB,
+
+128
+00:07:49,139 --> 00:07:55,408
+bootear desde un USB. Ve hasta abajo a Live USB
+
+129
+00:07:55,408 --> 00:08:03,731
+con encriptacin persistente. Me pedir desencriptar
+
+130
+00:07:55,408 --> 00:08:03,731
+todo todas las unidades de nuevo. As que no
+
+131
+00:08:03,731 --> 00:08:11,233
+explicar ese procedimiento. Pasar rpidamente.
+
+132
+00:08:03,731 --> 00:08:11,233
+Slo estoy desencriptando la unidad USB.
+
+133
+00:08:11,233 --> 00:08:18,083
+Tengo la opcin de desencriptar todas mis
+
+134
+00:08:11,233 --> 00:08:18,083
+particiones en esta lista pero no har eso.
+
+135
+00:08:18,083 --> 00:08:35,836
+Eso arruinara el propsito de este
+
+136
+00:08:18,083 --> 00:08:35,836
+ejercicio. SDB3 Test. Slo puse una
+
+137
+00:08:35,836 --> 00:08:44,759
+contrasea genrica cmo referencia.
+
+138
+00:08:35,836 --> 00:08:44,759
+Voy a borrar el contenido de este USB
+
+139
+00:08:44,759 --> 00:08:51,018
+cuanto termine este tutorial, as puedo
+
+140
+00:08:44,759 --> 00:08:51,018
+usarlo para otra cosa. Y aprovechar esta
+
+141
+00:08:51,018 --> 00:08:55,754
+oportunidad para recordarles a todos que
+
+142
+00:08:51,018 --> 00:08:55,754
+pueden preguntar en la seccin de discusiones
+
+143
+00:08:55,754 --> 00:09:02,669
+si quisieras que te mostrara como crear un Live
+
+144
+00:08:55,754 --> 00:09:02,669
+USB de otra distribucin de Linux tambin.
+
+145
+00:09:02,669 --> 00:09:07,260
+As que si quieres otra distribucin puedes pedirlo
+
+146
+00:09:02,669 --> 00:09:07,260
+en la seccin de discusin y slo di "Hey, nos puedes
+
+147
+00:09:07,260 --> 00:09:14,631
+mostrar cmo crear un Live USB de esta
+
+148
+00:09:07,260 --> 00:09:14,631
+distribucin, etc" Lo har con gusto, pero
+
+149
+00:09:14,631 --> 00:09:21,191
+por favor elige una de las distribuciones principales.
+
+150
+00:09:14,631 --> 00:09:21,191
+No elijas por ejemplo Slackware o algo porque
+
+151
+00:09:21,191 --> 00:09:28,000
+sera muy til para ti en general. A pesar de
+
+152
+00:09:21,191 --> 00:09:28,000
+que es genial, bueno, Slackware no es exctamente
+
+153
+00:09:28,000 --> 00:09:37,821
+Linux tal como dice la comunidad, pero es
+
+154
+00:09:28,000 --> 00:09:37,821
+muy similar. De todos modos, ah est la carpeta
+
+155
+00:09:37,821 --> 00:09:51,058
+Haz doble click en ella. Tengo un archivo llamado
+
+156
+00:09:37,821 --> 00:09:51,058
+"algo" y mira, est lleno de "AAA" en l. He podido
+
+157
+00:09:51,058 --> 00:09:57,706
+hacer un Live USB persistente con almacenamiento
+
+158
+00:09:51,058 --> 00:09:57,706
+encriptado mayor a 4GB. Esto slo est limitado
+
+159
+00:09:57,706 --> 00:10:06,060
+por la capacidad de tu USB. Esto es completamente
+
+160
+00:09:57,706 --> 00:10:06,060
+funcional, funciona sin problemas. Es totalmente
+
+161
+00:10:06,060 --> 00:10:13,574
+funcional. Si tienes alguna pregunta o quisieras
+
+162
+00:10:06,060 --> 00:10:13,574
+pedir contenido adicional sobre este tema,
+
+163
+00:10:13,574 --> 00:10:18,325
+por favor ve a la seccin de discusin.
+
+164
+00:10:13,574 --> 00:10:18,325
+Una cosa ms que me gustara recordarte
+
+165
+00:10:18,325 --> 00:10:25,996
+de nuevo es que no esperes que esta
+
+166
+00:10:18,325 --> 00:10:25,996
+instalacin funciona con monitores duales o algo
+
+167
+00:10:25,996 --> 00:10:35,189
+parecido. Quiero decir, puedes hacerlo con
+
+168
+00:10:25,996 --> 00:10:35,189
+un procedimiento complejo o algo, pero
+
+169
+00:10:35,189 --> 00:10:39,653
+en general no funcionar, estas cosas estn
+
+170
+00:10:35,189 --> 00:10:39,653
+hechas slo para bootear en laptops y para
+
+171
+00:10:39,653 --> 00:10:48,067
+ser usadas en una laptop. De todos modos
+
+172
+00:10:39,653 --> 00:10:48,067
+me despido, espero verte en el siguiente tutorial.
+

@@ -1,0 +1,956 @@
+1
+00:00:00,900 --> 00:00:02,390
+Welcome back everybody.
+
+2
+00:00:02,640 --> 00:00:11,550
+So this process has finished and you're supposed to get a output like this.
+
+3
+00:00:11,560 --> 00:00:14,910
+Cohen took three point on gigabytes.
+
+4
+00:00:14,920 --> 00:00:18,550
+Let's take this one more time.
+
+5
+00:00:19,380 --> 00:00:26,770
+And we see that it has created this has created two partitions.
+
+6
+00:00:26,790 --> 00:00:27,730
+No big deal there.
+
+7
+00:00:27,750 --> 00:00:29,190
+That's supposed to go like that.
+
+8
+00:00:29,190 --> 00:00:33,460
+So let's go ahead and clear the screen and start you parse it one more time.
+
+9
+00:00:38,710 --> 00:00:40,910
+Wait for it to start.
+
+10
+00:00:40,990 --> 00:00:44,260
+Select this TB X on.
+
+11
+00:00:44,540 --> 00:00:47,820
+So there is the boot partition.
+
+12
+00:00:48,170 --> 00:00:56,380
+There is the color you live FAT 32 and then we have 55 gigabytes of allocated space.
+
+13
+00:00:56,510 --> 00:01:03,500
+So we will format this to a different type of a partition but let's first take a look at what guide
+
+14
+00:01:03,860 --> 00:01:04,690
+what the guide says.
+
+15
+00:01:04,700 --> 00:01:09,700
+I believe they have instructed us to formatted as ex-state 3 instead of 64.
+
+16
+00:01:09,740 --> 00:01:13,610
+I suppose it's due to some compatibility issues or something of a kind.
+
+17
+00:01:13,610 --> 00:01:17,410
+Even this is FAT 16 instead of FAT 32 but ok.
+
+18
+00:01:17,630 --> 00:01:18,360
+No big deal there.
+
+19
+00:01:18,380 --> 00:01:22,030
+Let's go back to their site and see what else do we have to do.
+
+20
+00:01:22,380 --> 00:01:28,700
+So as far as the as far as the storage is concerned as far as the live US is concerned that would literally
+
+21
+00:01:28,700 --> 00:01:35,100
+be it as far as this guy says and I haven't detested this out at this point of time.
+
+22
+00:01:35,180 --> 00:01:36,800
+There is nothing else that you need to do.
+
+23
+00:01:36,800 --> 00:01:42,740
+You can just literally plug your you is me into your machine and set your physical machine to boot for
+
+24
+00:01:42,740 --> 00:01:47,540
+me you will be in bio in BIOS on Dell machines because I have a Dell machine.
+
+25
+00:01:47,540 --> 00:01:56,560
+You press F 2 or F F 12 at boot time and you can select the boot options on some other machines something
+
+26
+00:01:56,570 --> 00:01:59,490
+like Acer or HP.
+
+27
+00:01:59,560 --> 00:02:02,370
+You use different keys but no worries.
+
+28
+00:02:02,540 --> 00:02:05,160
+Just reboot the machine and you will see the key.
+
+29
+00:02:05,160 --> 00:02:11,270
+Like somewhere in the bottom right corner or the bottom left corner somewhere at butan you will see
+
+30
+00:02:11,270 --> 00:02:14,830
+press to enter setup or something anyway.
+
+31
+00:02:15,020 --> 00:02:17,570
+So as I said there is nothing else that you need to do.
+
+32
+00:02:17,600 --> 00:02:18,670
+This is it.
+
+33
+00:02:18,800 --> 00:02:22,180
+You now have a live Juez B.
+
+34
+00:02:22,240 --> 00:02:25,210
+However if you would like to have some persistent storage.
+
+35
+00:02:25,370 --> 00:02:28,640
+Well that's another thing entirely.
+
+36
+00:02:28,840 --> 00:02:31,870
+And let's go about things.
+
+37
+00:02:31,880 --> 00:02:35,860
+So let's go ahead and find the guide for persistent storage.
+
+38
+00:02:35,960 --> 00:02:38,450
+I just want you to be able to use that as a reference.
+
+39
+00:02:38,450 --> 00:02:41,020
+So I'm just going to type it in here.
+
+40
+00:02:41,110 --> 00:02:47,150
+Culley next to us the file systems
+
+41
+00:02:50,720 --> 00:02:51,760
+is this.
+
+42
+00:02:51,950 --> 00:02:55,270
+Yup this is the one.
+
+43
+00:02:55,270 --> 00:03:03,310
+So look it says call it Linux Live has two options the default boot menu which enable persistence.
+
+44
+00:03:03,300 --> 00:03:08,730
+So first of all you have the life persistence and the live use be it cryptic persistence.
+
+45
+00:03:08,740 --> 00:03:15,300
+I would I would personally recommend that you just use the live use be persistence.
+
+46
+00:03:15,580 --> 00:03:23,730
+You can go with the encrypted one as well but that is completely your choice.
+
+47
+00:03:23,800 --> 00:03:31,350
+So you know what let's go ahead and see how this works with the Locsin encryption.
+
+48
+00:03:31,360 --> 00:03:39,010
+However you know if you forget your key if you don't use your USP for a while or something like that
+
+49
+00:03:39,050 --> 00:03:42,670
+and you forget your key you will never again.
+
+50
+00:03:42,820 --> 00:03:48,970
+And I mean never again if you've selected the complicated enough in a long enough encryption key you
+
+51
+00:03:48,970 --> 00:03:55,060
+will never again be able to access that information will be lost to you gone completely.
+
+52
+00:03:55,060 --> 00:04:06,430
+So please keep that in mind because when creating encrypted things if you're going to use it fine.
+
+53
+00:04:06,580 --> 00:04:12,190
+No problems if you're not going to use it and you're going to leave it standing somewhere lying around
+
+54
+00:04:12,190 --> 00:04:18,710
+somewhere and forget the key and then lose all your data.
+
+55
+00:04:18,730 --> 00:04:19,400
+Think about it.
+
+56
+00:04:19,420 --> 00:04:20,620
+Is it really worth it.
+
+57
+00:04:20,620 --> 00:04:27,870
+Do you have anything on that stick that's that important that you absolutely need to encrypt the data
+
+58
+00:04:27,880 --> 00:04:29,000
+much.
+
+59
+00:04:29,290 --> 00:04:34,280
+Think about it just see if it's worth it at all.
+
+60
+00:04:34,330 --> 00:04:41,860
+So let's go and see what the guy below says both guides are fairly similar and they function on very
+
+61
+00:04:41,860 --> 00:04:42,850
+similar costs.
+
+62
+00:04:42,880 --> 00:04:44,930
+They function in a very similar concept.
+
+63
+00:04:45,070 --> 00:04:47,220
+They just use a bit of a different partitioning.
+
+64
+00:04:47,530 --> 00:04:52,040
+So alternatively you can create Luxon encrypt persistent storage area.
+
+65
+00:04:52,040 --> 00:04:55,840
+This is an extra layer of security.
+
+66
+00:04:56,280 --> 00:04:58,680
+And the following example.
+
+67
+00:04:59,710 --> 00:05:04,600
+OK so what does it say will create a new partition to store a persistent data and starting right above
+
+68
+00:05:04,600 --> 00:05:08,340
+the second call the life dition and then adding 70 gigabytes.
+
+69
+00:05:08,590 --> 00:05:10,760
+So you don't really need this.
+
+70
+00:05:10,760 --> 00:05:16,370
+So we're just going to go ahead and skip that set up blocks encryption and you partition put the next
+
+71
+00:05:17,080 --> 00:05:20,860
+default system on it and create persistence dot com file.
+
+72
+00:05:21,250 --> 00:05:23,610
+Ok so this persistence can file.
+
+73
+00:05:23,620 --> 00:05:30,460
+We will definitely need this and we will need a Luchs setup.
+
+74
+00:05:30,580 --> 00:05:40,040
+So they have this command that you can I'm pretty sure you can copy this or anything of a kind.
+
+75
+00:05:40,250 --> 00:05:43,870
+So it's not going to work the way you want it to work.
+
+76
+00:05:43,880 --> 00:05:51,270
+So that's why we're going to have to do this ourselves down below.
+
+77
+00:05:51,290 --> 00:05:57,120
+So we have crypto set up and system to set up looks open.
+
+78
+00:05:57,500 --> 00:06:01,520
+OK so devastated B-3 my USPSA That's the third partition.
+
+79
+00:06:01,550 --> 00:06:03,170
+So we need to make a partition.
+
+80
+00:06:03,350 --> 00:06:12,090
+Open it up with locks and well formatted with locks then open it with locks that formatted with exit
+
+81
+00:06:12,110 --> 00:06:13,210
+three false system.
+
+82
+00:06:13,250 --> 00:06:23,360
+Give it a label and then we need to create this persistence file here and then we need to go ahead and
+
+83
+00:06:23,360 --> 00:06:29,320
+close it once it's closed just reboot the machine and the next time it boots just select the live use
+
+84
+00:06:29,330 --> 00:06:36,650
+be with persistence alive is be with persistent encrypted Ligers be with persistence and you will be
+
+85
+00:06:36,650 --> 00:06:38,360
+prompted for a key.
+
+86
+00:06:38,580 --> 00:06:46,040
+And now I can't really show this as I'm recording so I'll see if I can use my cell phone camera to record
+
+87
+00:06:46,040 --> 00:06:52,730
+the screen as I boot because keep in mind when you put a live version of Cali you're going to encounter
+
+88
+00:06:52,730 --> 00:06:59,600
+some problems for the very first problem that you will encounter is if you're working on multiple screens
+
+89
+00:06:59,630 --> 00:07:00,700
+like I.
+
+90
+00:07:01,180 --> 00:07:01,600
+Yeah.
+
+91
+00:07:01,670 --> 00:07:04,750
+Cali live Cali is just not going to see them.
+
+92
+00:07:04,970 --> 00:07:09,060
+So you can kiss that goodbye.
+
+93
+00:07:09,320 --> 00:07:13,550
+This is primarily for you using it on your laptop or your desktop machine somewhere.
+
+94
+00:07:13,550 --> 00:07:18,480
+It will not work with multiple monitor setups.
+
+95
+00:07:18,590 --> 00:07:21,490
+Also you might encounter some problems with Wi-Fi.
+
+96
+00:07:21,740 --> 00:07:25,900
+That just means that you don't have the proper drivers installed.
+
+97
+00:07:25,910 --> 00:07:34,160
+That is it for Wi-Fi use be adapters you can go ahead and check out lecture's 35 and 36.
+
+98
+00:07:34,160 --> 00:07:37,870
+I do believe that I have explained it in great detail.
+
+99
+00:07:37,940 --> 00:07:42,350
+Which one you can use that is practically guaranteed to work although there are other ones that are
+
+100
+00:07:42,350 --> 00:07:44,240
+guaranteed to work as well.
+
+101
+00:07:44,240 --> 00:07:51,160
+I just picked that one because it was cheap and it was supplied in great abundance on eBay.
+
+102
+00:07:51,200 --> 00:07:54,770
+So let's let's begin shall we.
+
+103
+00:07:54,920 --> 00:07:56,560
+So that's part of it.
+
+104
+00:07:56,900 --> 00:07:59,500
+And we're not going to need you parted now.
+
+105
+00:07:59,600 --> 00:08:02,680
+I just want these things here.
+
+106
+00:08:03,160 --> 00:08:09,970
+So show what shall we do first step in this space of this space.
+
+107
+00:08:10,010 --> 00:08:19,780
+Well OK so it says the b f this space of STV open it up press.
+
+108
+00:08:19,790 --> 00:08:25,050
+And because we wanted to create a new one it will be a primary partition.
+
+109
+00:08:25,400 --> 00:08:31,040
+You can have four primary partitions partition numbers so its default is three.
+
+110
+00:08:31,040 --> 00:08:35,110
+Because look we already have one and then we have two.
+
+111
+00:08:35,390 --> 00:08:38,670
+And since you can only have four it's one to four.
+
+112
+00:08:38,670 --> 00:08:41,290
+And we're going to go ahead and create a third one.
+
+113
+00:08:41,930 --> 00:08:44,340
+So three first sector.
+
+114
+00:08:44,370 --> 00:08:50,290
+OK the first sector is the last sector of SATB.
+
+115
+00:08:50,690 --> 00:08:56,450
+So you can see that this one and this one are pretty much the same so it just this one ends.
+
+116
+00:08:56,460 --> 00:08:58,900
+But for this was in answer to 103.
+
+117
+00:08:58,910 --> 00:09:07,700
+So just the next one that's fine just press enter and now you can define the size so it's as a last
+
+118
+00:09:07,700 --> 00:09:10,510
+sector plus sectors or plus size.
+
+119
+00:09:10,520 --> 00:09:16,390
+So look you can basically if you don't want to take your entire week type in plus and then see then
+
+120
+00:09:17,320 --> 00:09:20,570
+gee that would b plus then gigabytes.
+
+121
+00:09:20,570 --> 00:09:22,460
+Sorry let me just explain this
+
+122
+00:09:32,370 --> 00:09:34,020
+what is the problem.
+
+123
+00:09:34,560 --> 00:09:36,600
+Sorry that seems to have gotten stuck.
+
+124
+00:09:36,600 --> 00:09:41,460
+So new primary three term
+
+125
+00:09:44,140 --> 00:09:51,070
+exons So now I can say it like plus 10 G and B plus them gigabytes and that would be the next partition
+
+126
+00:09:51,080 --> 00:09:57,160
+or I could actually specify the set of sectors I would like but I would just like it to basically take
+
+127
+00:09:57,160 --> 00:09:59,390
+the rest of my the rest of available space.
+
+128
+00:09:59,390 --> 00:10:06,400
+So this is the last possible secretary that is going to take and this will be the occupied sectors there
+
+129
+00:10:07,570 --> 00:10:10,110
+should be roughly around.
+
+130
+00:10:10,450 --> 00:10:19,030
+I don't know let's see maybe 40 gig 40 50 gig or something like that doesn't really matter it's just
+
+131
+00:10:19,030 --> 00:10:23,950
+going to take the rest of the space that's available just press enter and use the default one says using
+
+132
+00:10:23,950 --> 00:10:25,090
+default value.
+
+133
+00:10:25,180 --> 00:10:28,960
+Now press W2 right.
+
+134
+00:10:29,230 --> 00:10:31,560
+OK so warning.
+
+135
+00:10:31,660 --> 00:10:39,470
+Rereading the two filters 16 device or resource busy the kernel still use the old table.
+
+136
+00:10:42,150 --> 00:10:46,070
+OK so let's go ahead and type in the space age
+
+137
+00:10:49,100 --> 00:10:55,510
+CB2 is mounted amount of too.
+
+138
+00:10:55,610 --> 00:10:57,670
+I don't really want it.
+
+139
+00:10:58,600 --> 00:11:05,370
+OK so let's go ahead and attempt this again the full.
+
+140
+00:11:06,580 --> 00:11:10,510
+Hopefully it has loaded its part.
+
+141
+00:11:11,620 --> 00:11:12,390
+Will you succeed.
+
+142
+00:11:12,390 --> 00:11:13,240
+Unable to.
+
+143
+00:11:13,320 --> 00:11:13,610
+OK.
+
+144
+00:11:13,630 --> 00:11:18,630
+So we have successfully done that found a mistaken if this space dush else.
+
+145
+00:11:18,760 --> 00:11:19,450
+Yup we have.
+
+146
+00:11:19,450 --> 00:11:25,900
+So we indeed have managed to formatted format formatted we have managed to partition it and we have
+
+147
+00:11:25,900 --> 00:11:28,240
+gotten that extra partition.
+
+148
+00:11:28,390 --> 00:11:31,020
+So the next steps that we're going to need to do.
+
+149
+00:11:31,060 --> 00:11:36,700
+I'm just going to go ahead and use this use a little bit of this guide here because I honestly haven't
+
+150
+00:11:36,850 --> 00:11:38,100
+used locks.
+
+151
+00:11:38,380 --> 00:11:44,150
+I haven't formatted anything with locks in a really long time primarily because I didn't really need
+
+152
+00:11:44,150 --> 00:11:52,870
+to form a hidden thing with Luxx you usually do it once when you install your system and you don't do
+
+153
+00:11:52,870 --> 00:11:56,010
+it like ever again because there is no need.
+
+154
+00:11:56,010 --> 00:11:59,020
+You're only going to encrypt your drives once and that's it.
+
+155
+00:11:59,380 --> 00:12:02,160
+You're never going to mess with them again.
+
+156
+00:12:02,440 --> 00:12:03,670
+And that's exactly what I'm saying.
+
+157
+00:12:03,670 --> 00:12:09,610
+So if you don't use them on a daily basis or something like that if you have a complex key out you're
+
+158
+00:12:09,610 --> 00:12:14,820
+most likely going to have to say goodbye to your data at a certain point of time.
+
+159
+00:12:15,610 --> 00:12:23,370
+OK so now I can just pretty much copy paste this command because my drive my partition is called S-D
+
+160
+00:12:23,380 --> 00:12:23,840
+beat.
+
+161
+00:12:23,910 --> 00:12:27,490
+If yours is called differently please change accordingly.
+
+162
+00:12:28,010 --> 00:12:33,130
+Base it's crypto set up for Bowse verify password locks formats and we're just formatting this with
+
+163
+00:12:33,130 --> 00:12:38,920
+locks and a partition is Esty the device is a sleepy and the partition is three.
+
+164
+00:12:38,920 --> 00:12:45,120
+Please verify that this is the device and that this is the partition because yours might be different.
+
+165
+00:12:45,160 --> 00:12:50,180
+Could be the D-3 or Esti C-3 or something of a kind.
+
+166
+00:12:50,180 --> 00:12:50,630
+I don't know.
+
+167
+00:12:50,650 --> 00:12:51,770
+Just check.
+
+168
+00:12:51,850 --> 00:12:54,470
+Most likely will be the same but check it anyway.
+
+169
+00:12:55,060 --> 00:12:56,560
+Let's go ahead and press enter.
+
+170
+00:12:56,560 --> 00:12:59,740
+Warning it will overwrite the data.
+
+171
+00:12:59,950 --> 00:13:03,260
+Yes command failed in voevoda argument.
+
+172
+00:13:03,290 --> 00:13:07,090
+Got them on the ass.
+
+173
+00:13:07,460 --> 00:13:12,900
+Enter a passphrase so I'm going to go ahead and type in test.
+
+174
+00:13:13,210 --> 00:13:17,080
+Be very very careful what you type in here.
+
+175
+00:13:17,080 --> 00:13:23,500
+Once locked once encrypted if the password is complex enough you will never again be able to decrypt
+
+176
+00:13:23,500 --> 00:13:26,380
+it without a proper passphrase.
+
+177
+00:13:27,670 --> 00:13:34,340
+So forget about if you saw the thing in the movies like when they break the encryption on the drive
+
+178
+00:13:34,420 --> 00:13:36,020
+or something like it.
+
+179
+00:13:36,520 --> 00:13:40,440
+It just doesn't happen if the passphrase is complex enough.
+
+180
+00:13:40,450 --> 00:13:44,320
+It doesn't matter how fast your computer is it doesn't.
+
+181
+00:13:44,320 --> 00:13:51,400
+You can use the Google data center and utilize all the processors and all the old the graphics cards
+
+182
+00:13:51,460 --> 00:13:58,990
+and GPU use and use and whatever else you can think of and you can generate billions upon billions upon
+
+183
+00:13:58,990 --> 00:14:07,480
+billions upon billions of passwords and keys a second would take you about 20 years to decrypt.
+
+184
+00:14:07,530 --> 00:14:10,520
+He could pass a good key.
+
+185
+00:14:10,570 --> 00:14:15,640
+So yeah imagine how long it would take like a regular PC to do it.
+
+186
+00:14:15,650 --> 00:14:22,770
+Like forget about that that's one of that's one of the reasons I'm mistaken like in some countries where
+
+187
+00:14:23,190 --> 00:14:31,020
+the authorities can hold the encrypted drives indefinitely because it takes a ridiculous amount of time
+
+188
+00:14:31,020 --> 00:14:35,340
+to decrypt them and it's even questionable whether ever they will be decrypted because of the amount
+
+189
+00:14:35,340 --> 00:14:40,860
+of resources that have to be devoted to such a task.
+
+190
+00:14:42,530 --> 00:14:47,150
+Again I repeat myself I'm really sorry if I'm boring or something like that but it's very important
+
+191
+00:14:47,150 --> 00:14:54,260
+today to remember the passphrase because you won't be able to come to me in the discussion section and
+
+192
+00:14:54,260 --> 00:14:57,370
+say hey you know my passphrase doesn't work.
+
+193
+00:14:57,590 --> 00:15:00,830
+So I'm not going to be able to do anything about it.
+
+194
+00:15:00,830 --> 00:15:06,160
+It doesn't matter if my remote into your system or something like that completely irrelevant.
+
+195
+00:15:06,420 --> 00:15:11,060
+There will be nothing and I mean literally nothing that I will be able to do about it.
+
+196
+00:15:11,060 --> 00:15:19,460
+Please remember it a passphrase if you are opting for this setup or just type in something extremely
+
+197
+00:15:19,460 --> 00:15:25,370
+simple that you will be able to remember anyway enough about it enough about my Enough of my paranoid
+
+198
+00:15:25,420 --> 00:15:26,450
+chatter here.
+
+199
+00:15:26,570 --> 00:15:29,390
+Let's go ahead and do this.
+
+200
+00:15:29,430 --> 00:15:33,090
+So why is it called My b.
+
+201
+00:15:33,380 --> 00:15:35,930
+Have you made it.
+
+202
+00:15:36,160 --> 00:15:36,650
+OK.
+
+203
+00:15:36,740 --> 00:15:37,780
+OK.
+
+204
+00:15:38,570 --> 00:15:43,210
+So you can let it be my USPS fine.
+
+205
+00:15:43,310 --> 00:15:44,600
+So enter passphrase.
+
+206
+00:15:44,630 --> 00:15:50,600
+What is the passphrase that you just typed in.
+
+207
+00:15:50,770 --> 00:15:51,500
+There we go.
+
+208
+00:15:51,550 --> 00:15:52,740
+We have managed to open it.
+
+209
+00:15:52,780 --> 00:15:58,750
+If you fail if you fail this this one that you typed in here and this one for disks they are exactly
+
+210
+00:15:58,750 --> 00:15:59,630
+the same.
+
+211
+00:15:59,800 --> 00:16:02,880
+So no worries there.
+
+212
+00:16:03,280 --> 00:16:08,090
+And now we can go ahead and create this we can format it.
+
+213
+00:16:08,350 --> 00:16:14,160
+So just go ahead and formatted with extra 3 with label persistence.
+
+214
+00:16:14,170 --> 00:16:17,970
+And this is the device that we will be formatting.
+
+215
+00:16:17,970 --> 00:16:19,710
+This should take a while.
+
+216
+00:16:19,730 --> 00:16:23,000
+I mean it shouldn't take too long but it's going to take a while.
+
+217
+00:16:23,010 --> 00:16:25,130
+Definitely.
+
+218
+00:16:25,400 --> 00:16:31,210
+Sorry that's come on come on come on come C'mon.
+
+219
+00:16:31,510 --> 00:16:35,030
+It really hit it right in the middle of a story.
+
+220
+00:16:35,260 --> 00:16:38,770
+Get a waiting thing like this.
+
+221
+00:16:38,820 --> 00:16:46,660
+And you have done some test runs without the encryption so without the encryption everything seemed
+
+222
+00:16:46,660 --> 00:16:50,840
+to have worked out just fine without any problems.
+
+223
+00:16:50,890 --> 00:16:53,490
+And the principle is exactly the same.
+
+224
+00:16:53,560 --> 00:16:56,960
+All you need to do is create another partition.
+
+225
+00:16:57,160 --> 00:17:04,750
+The only difference between this one and the one without encryption is basically the locks set up so
+
+226
+00:17:04,750 --> 00:17:07,410
+that the data would be encrypted.
+
+227
+00:17:07,540 --> 00:17:08,100
+That's it.
+
+228
+00:17:08,170 --> 00:17:09,650
+But it's not a bad idea.
+
+229
+00:17:09,910 --> 00:17:13,630
+I mean it's a good concept to protect your information and all of that.
+
+230
+00:17:14,050 --> 00:17:19,240
+But in any case I am running out of time and I don't think this is going to finish in any reasonable
+
+231
+00:17:19,240 --> 00:17:20,460
+amount of time.
+
+232
+00:17:20,860 --> 00:17:25,000
+At some point of time I swear I'm going to get to another computer and I'm going to have the Senate
+
+233
+00:17:24,990 --> 00:17:31,570
+running as a virtualise which is going to work crazy fast because it gives like 95 percent of native
+
+234
+00:17:31,570 --> 00:17:34,010
+performance anyway.
+
+235
+00:17:34,060 --> 00:17:38,820
+I'm going to bid you farewell here and then we're going to continue in the follow up to Tauriel.
+
+236
+00:17:38,900 --> 00:17:40,210
+And before I leave.
+
+237
+00:17:40,210 --> 00:17:47,450
+I sincerely hope that the God that I have chosen is simple enough and the set up is simple enough.
+
+238
+00:17:47,920 --> 00:17:58,360
+If you would like me to create instructions for other other distributions as I have said feel free to
+
+239
+00:17:58,900 --> 00:18:01,180
+just let me know in the discussion section by.
+

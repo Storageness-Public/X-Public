@@ -1,0 +1,1183 @@
+1
+00:00:00,000 --> 00:00:02,644
+Hoy vamos a continuar y vamos a ver
+
+2
+00:00:02,679 --> 00:00:08,423
+cómo podemos pasar un USB a la máquina virtual Kali.
+
+3
+00:00:08,458 --> 00:00:11,682
+¿Por qué tenemos que hacer esto? El motivo principal
+
+4
+00:00:11,717 --> 00:00:14,414
+sería poder pasar un adaptador inalámbrico USB
+
+5
+00:00:14,449 --> 00:00:18,002
+porque, como ya he dicho,
+la máquina virtual no tiene acceso
+
+6
+00:00:18,037 --> 00:00:20,403
+a la tarjeta de red inalámbrica integrada.
+
+7
+00:00:20,938 --> 00:00:26,978
+Si escribo la contraseña aquí, voy a hacer zoom,
+
+8
+00:00:29,783 --> 00:00:32,258
+escribo "ifconfig" y podéis ver
+
+9
+00:00:32,293 --> 00:00:34,766
+que tengo aquí dos interfaces.
+
+10
+00:00:36,954 --> 00:00:39,560
+Esta interfaz, esta no es
+una interfaz inalámbrica, y aunque
+
+11
+00:00:40,146 --> 00:00:43,178
+estoy conectado a la red de manera inalámbrica,
+
+12
+00:00:43,213 --> 00:00:46,311
+no estoy conectado a la red por cable,
+
+13
+00:00:46,346 --> 00:00:48,967
+sino utilizando la red inalámbrica,
+
+14
+00:00:49,102 --> 00:00:52,089
+como podéis ver en la esquina superior derecha.
+
+15
+00:00:55,475 --> 00:00:58,201
+Esto es un problema, porque no podréis
+
+16
+00:00:58,236 --> 00:01:00,173
+hacer la parte inalámbrica del curso.
+
+17
+00:01:00,208 --> 00:01:01,832
+Podréis ver el contenido y todo eso,
+
+18
+00:01:01,867 --> 00:01:04,315
+pero no tener acceso a la tarjeta inalámbrica
+
+19
+00:01:04,350 --> 00:01:06,737
+puede suponer problema. Como he dicho antes,
+
+20
+00:01:06,772 --> 00:01:08,805
+hay dos formas de abordar esto.
+
+21
+00:01:08,840 --> 00:01:12,805
+Una de ellas es comprobar
+la compatibilidad de la tarjeta inalámbrica
+
+22
+00:01:12,840 --> 00:01:15,577
+no solo con Kali Linux sino con Aircrack
+
+23
+00:01:15,712 --> 00:01:20,095
+y ver si es compatible en la web de aircrack-ng.
+
+24
+00:01:22,130 --> 00:01:26,777
+Sin embargo, este
+procedimiento no está muy bien visto
+
+25
+00:01:27,112 --> 00:01:30,522
+porque no puedes usar el modelo de la tarjeta.
+
+26
+00:01:30,557 --> 00:01:33,240
+Tienes que ir a internet y buscar el chipset
+
+27
+00:01:33,275 --> 00:01:38,173
+que usa tu tarjeta y luego utilizarlo
+
+28
+00:01:38,208 --> 00:01:42,377
+para ir a la página de
+Aircrack y buscar ese número de chipset,
+
+29
+00:01:44,794 --> 00:01:47,334
+llamémoslo número,
+demarcación, como quiera que lo llaméis.
+
+30
+00:01:47,369 --> 00:01:49,351
+buscarlo y mirar si es compatible.
+
+31
+00:01:50,363 --> 00:01:51,937
+Si queréis llevar a cabo ese proceso,
+
+32
+00:01:52,072 --> 00:01:54,912
+por supuesto, estáis en vuestro derecho.
+
+33
+00:01:56,724 --> 00:01:59,434
+Hasta os ayudaré, si queréis,
+
+34
+00:01:59,634 --> 00:02:02,185
+pero yo he optado por otra solución,
+
+35
+00:02:02,220 --> 00:02:04,939
+he optado por hacerme
+con un adaptador inalámbrico USB,
+
+36
+00:02:04,974 --> 00:02:07,197
+pasarlo a la máquina virtual y obtener
+
+37
+00:02:07,232 --> 00:02:09,388
+otra interfaz para la inalámbrica.
+
+38
+00:02:09,723 --> 00:02:14,492
+Así que lo primero que
+tenemos que hacer es apagar la máquina.
+
+39
+00:02:14,827 --> 00:02:20,625
+Escribimos "poweroff". Vamos a apagar.
+
+40
+00:02:20,860 --> 00:02:24,570
+Después, lo que tenemos que hacer es comprobar
+
+41
+00:02:24,605 --> 00:02:27,963
+si podemos pasar un USB a través de ella.
+
+42
+00:02:28,098 --> 00:02:30,558
+Si no, tendremos que instalar otro software más.
+
+43
+00:02:30,793 --> 00:02:33,420
+Os enseñaré el USB que tengo yo,
+
+44
+00:02:33,455 --> 00:02:35,053
+cuál es mi adaptador inalámbrico USB.
+
+45
+00:02:35,488 --> 00:02:39,649
+Entonces, si vamos a Ports,
+
+46
+00:02:41,785 --> 00:02:47,133
+y entramos en USB, tengo USB 1.1, USB 2.0,
+
+47
+00:02:47,968 --> 00:02:52,271
+voy a conectar el dispositivo
+
+48
+00:02:52,453 --> 00:02:54,862
+y a comprobar si va o no.
+
+49
+00:02:55,097 --> 00:02:58,482
+Solo tengo dos puertos USB, lo cual es genial.
+
+50
+00:03:03,470 --> 00:03:08,051
+Si digo USB 2.0, ajustes
+no válidos detectados. ¿Por qué?
+
+51
+00:03:17,011 --> 00:03:21,322
+Vale, necesitamos una extensión para poder hacerlo.
+
+52
+00:03:21,357 --> 00:03:24,236
+Voy a desconectar el dispositivo, luego os enseñaré
+
+53
+00:03:24,371 --> 00:03:27,017
+qué adaptador USB estoy utilizando,
+
+54
+00:03:27,552 --> 00:03:32,397
+pero aquí vamos a decir OK y ahora
+
+55
+00:03:32,432 --> 00:03:36,092
+vamos a abrir el navegador.
+
+56
+00:03:36,427 --> 00:03:38,551
+Voy a usar el predeterminado, Safari
+
+57
+00:03:38,586 --> 00:03:40,438
+aunque normalmente uso Firefox
+
+58
+00:03:42,518 --> 00:03:44,592
+pero lo estoy haciendo como viene de serie,
+
+59
+00:03:44,727 --> 00:03:48,411
+así que vamos a usar
+lo que podamos del propio sistema.
+
+60
+00:03:50,440 --> 00:03:52,604
+Seguimos, vamos a buscar
+
+61
+00:03:55,278 --> 00:03:57,862
+"oracle virtualbox".
+
+62
+00:04:01,581 --> 00:04:05,914
+Aquí lo tenemos.
+Oracle VM VirtualBox. Hacemos clic.
+
+63
+00:04:09,511 --> 00:04:12,141
+Claro, lo podemos sacar de aquí,
+
+64
+00:04:12,176 --> 00:04:14,710
+pero quería ir directamente a Oracle.
+
+65
+00:04:19,246 --> 00:04:21,152
+Bueno, un momento.
+Vamos a ver si lo puedo sacar de aquí
+
+66
+00:04:21,187 --> 00:04:23,140
+y así no me tengo que ir a su página.
+
+67
+00:04:27,060 --> 00:04:31,331
+Downloads. Extension Pack. Aquí está.
+
+68
+00:04:31,366 --> 00:04:33,702
+Lo tengo aquí. La verdad
+es que no me había dado cuenta.
+
+69
+00:04:33,937 --> 00:04:36,606
+De normal, lo que hacía era ir a la página de Oracle
+
+70
+00:04:36,841 --> 00:04:39,499
+y navegar por ella hasta encontrar
+
+71
+00:04:39,734 --> 00:04:41,440
+la página dedicada a VirtualBox.
+
+72
+00:04:43,571 --> 00:04:46,996
+"Si usas el 4.3.30,
+descarga la extensión aquí",
+
+73
+00:04:47,031 --> 00:04:51,730
+Pero nosotros usamos el 5.0.4.
+Por cierto, antes de que la descarguemos
+
+74
+00:04:51,865 --> 00:04:55,041
+podemos comprobar la versión de VirtualBox en Help.
+
+75
+00:04:58,214 --> 00:05:01,371
+Entrad en Content, debería estar ahí.
+
+76
+00:05:06,232 --> 00:05:08,328
+No. Sí, sí que está.
+
+77
+00:05:08,363 --> 00:05:11,517
+Es la versión 5.0.4. Listo.
+
+78
+00:05:13,016 --> 00:05:15,050
+Hay algunas ligeras diferencias
+
+79
+00:05:15,085 --> 00:05:18,760
+entre los VirtualBox para Windows, Mac y Linux.
+
+80
+00:05:20,408 --> 00:05:23,303
+Pero nada muy drástico, así que no os preocupéis.
+
+81
+00:05:24,598 --> 00:05:27,062
+Volvemos a Safari y dice
+
+82
+00:05:27,097 --> 00:05:31,092
+VirtualBox 5.0.4 Oracle
+VM VirtualBox Extension Pack,
+
+83
+00:05:31,127 --> 00:05:32,844
+todas las plataformas soportadas.
+
+84
+00:05:33,179 --> 00:05:36,849
+Vamos a hacer clic en este enlace.
+
+85
+00:05:36,984 --> 00:05:40,386
+La descarga está en marcha,
+esto debería de tardar menos,
+
+86
+00:05:40,421 --> 00:05:43,571
+puesto que estas
+cosas no pesan mucho, son solo 16MB.
+
+87
+00:05:43,606 --> 00:05:45,503
+Lo vamos a abrir.
+
+88
+00:05:47,488 --> 00:05:49,049
+¿Vas a funcionar?
+
+89
+00:05:51,761 --> 00:05:54,240
+¿Por favor? ¿Sí, no, tal vez? ¿No? Vale.
+
+90
+00:05:55,618 --> 00:06:01,366
+Pues Downloads. Extension Pack. Eso es.
+
+91
+00:06:05,488 --> 00:06:07,571
+"Está a punto de instalar la extensión de VirtualBox.
+
+92
+00:06:07,606 --> 00:06:10,819
+Las extensiones complementan
+las características de VirtualBox..."
+
+93
+00:06:11,054 --> 00:06:13,273
+Lo estoy leyendo porque
+igual es muy pequeño y no lo veis.
+
+94
+00:06:13,308 --> 00:06:15,859
+A lo mejor no. Yo lo puedo
+ver claro desde una cierta distancia.
+
+95
+00:06:16,929 --> 00:06:20,005
+"...las características de VirtualBox
+y pueden contener software a nivel de sistema
+
+96
+00:06:20,420 --> 00:06:22,184
+que podría ser perjudicial para su sistema.
+
+97
+00:06:22,319 --> 00:06:23,967
+Lea la siguiente descripción
+
+98
+00:06:23,992 --> 00:06:25,571
+y proceda solo si ha obtenido
+
+99
+00:06:25,806 --> 00:06:28,548
+el paquete de extensión de una fuente segura".
+
+100
+00:06:31,758 --> 00:06:35,325
+Espero sinceramente
+haberlo obtenido de una fuente segura.
+
+101
+00:06:37,542 --> 00:06:40,393
+Esto es ciencia.
+Safari está usando una conexión segura...
+
+102
+00:06:43,264 --> 00:06:44,786
+Muéstrame el certificado.
+
+103
+00:06:46,656 --> 00:06:51,520
+VeriSign Class 3, vale,
+entonces debería ser bueno, por lo que veo,
+
+104
+00:06:55,534 --> 00:06:59,613
+Parece que tiene https, por lo visto.
+
+105
+00:06:59,648 --> 00:07:02,565
+Nunca hay una garantía del 100%.
+
+106
+00:07:02,800 --> 00:07:08,439
+Siempre esta la posibilidad del 0.0.0.00000algo
+
+107
+00:07:08,474 --> 00:07:09,951
+de que algo saldrá mal.
+
+108
+00:07:11,162 --> 00:07:14,755
+Otra cosa, si tenéis en marcha algo más,
+
+109
+00:07:14,790 --> 00:07:17,137
+otros programas que sean como VirtualBox,
+
+110
+00:07:19,319 --> 00:07:25,296
+si tenéis VMWare
+o paralelos o algo de ese tipo,
+
+111
+00:07:26,031 --> 00:07:30,324
+puede que no debáis instalar VirtualBox a la vez
+
+112
+00:07:30,359 --> 00:07:32,478
+porque, por lo general, no es buena idea ejecutar
+
+113
+00:07:32,513 --> 00:07:37,617
+dos instancias de este
+tipo de virtualización, softwares de este...
+
+114
+00:07:38,949 --> 00:07:43,847
+Simplemente, no es buena idea,
+no solo en Mac sino en cualquier sistema,
+
+115
+00:07:43,882 --> 00:07:45,988
+en Linux y Windows tampoco.
+
+116
+00:07:46,023 --> 00:07:49,604
+Así que si tenéis alguno, o lo quitáis o lo usáis,
+
+117
+00:07:50,711 --> 00:07:52,921
+pero no instaléis otro a la vez.
+
+118
+00:07:52,956 --> 00:07:55,790
+Es decir, lo podéis hacer
+y puede que todo vaya bien,
+
+119
+00:07:56,025 --> 00:07:59,381
+pero, ya sabéis, más vale prevenir que curar.
+
+120
+00:07:59,416 --> 00:08:02,335
+Bueno, voy a hacer clic en Install.
+
+121
+00:08:02,670 --> 00:08:07,793
+Hay que aceptar un acuerdo
+de licencia de Oracle. De acuerdo.
+
+122
+00:08:09,432 --> 00:08:13,225
+Ahora nos va a pedir una contraseña, la escribimos.
+
+123
+00:08:16,242 --> 00:08:18,180
+Y ahora está instalando el paquete de extensión.
+
+124
+00:08:19,575 --> 00:08:22,960
+Listo. Lo ha instalado satisfactoriamente
+
+125
+00:08:22,995 --> 00:08:26,163
+sin ningún problema.
+Ahora lo que tenemos que hacer
+
+126
+00:08:26,198 --> 00:08:30,334
+es simplemente entrar en Settings,
+
+127
+00:08:32,432 --> 00:08:34,199
+vamos a Ports.
+
+128
+00:08:36,603 --> 00:08:39,488
+Estos son los puertos serie, ni caso. Vamos a USB
+
+129
+00:08:41,031 --> 00:08:45,839
+y ahora podéis seleccionar
+2.0, 3.0, 1.1, lo que queráis.
+
+130
+00:08:46,074 --> 00:08:49,784
+Vamos a seleccionar 2.0 y ver si funciona.
+
+131
+00:08:50,830 --> 00:08:53,685
+Aquí puedo ver algunas cosas.
+
+132
+00:08:53,720 --> 00:08:57,593
+Definitivamente, Logitech USB Headset
+es el que estoy usando para grabar esto.
+
+133
+00:08:58,954 --> 00:09:00,499
+Tengo acceso a él.
+
+134
+00:09:01,743 --> 00:09:05,233
+Voy a seguir, por ahora le doy a OK y no añado nada.
+
+135
+00:09:05,268 --> 00:09:09,115
+Voy a ir a internet para enseñaros una imagen
+
+136
+00:09:09,450 --> 00:09:15,368
+y el número de modelo del
+adaptador de red inalámbrica que tengo aquí.
+
+137
+00:09:17,012 --> 00:09:20,785
+No es obligatorio que os
+hagáis con este adaptador en concreto,
+
+138
+00:09:21,120 --> 00:09:24,440
+podéis tener otro que sea compatible
+
+139
+00:09:25,075 --> 00:09:30,049
+o que os sea fácil de conseguir,
+pero aseguraos de que sea compatible
+
+140
+00:09:30,084 --> 00:09:35,049
+con Kali Linux, de que
+sea compatible con aircrack-ng.
+
+141
+00:09:38,325 --> 00:09:40,519
+Voy a ver cuál es el número del modelo,
+
+142
+00:09:40,554 --> 00:09:42,283
+es un poco largo.
+
+143
+00:10:05,691 --> 00:10:07,543
+Vale, lo está abriendo.
+
+144
+00:10:09,685 --> 00:10:11,900
+Espero que podáis ver el número de modelo,
+
+145
+00:10:11,935 --> 00:10:18,311
+es "awus036nhr v.2".
+
+146
+00:10:23,572 --> 00:10:27,482
+Quiero imágenes. Eso es.
+Este es el aspecto que tiene.
+
+147
+00:10:28,540 --> 00:10:30,625
+Esto es lo que tengo ahora mismo en la mano,
+
+148
+00:10:31,705 --> 00:10:34,502
+cualquiera de estas imágenes sirve, todas muestran,
+
+149
+00:10:35,398 --> 00:10:40,018
+supongo, el mismo adaptador,
+y este es el que estoy usando yo.
+
+150
+00:10:41,932 --> 00:10:44,357
+Este es el que yo he probado,
+si vosotros queréis usar otra cosa,
+
+151
+00:10:44,592 --> 00:10:47,285
+lo podéis hacer, por supuesto.
+
+152
+00:10:47,520 --> 00:10:50,710
+Este adaptador en particular no es necesario,
+
+153
+00:10:50,745 --> 00:10:53,530
+podéis coger otro, obviamente,
+
+154
+00:10:53,565 --> 00:10:56,589
+con el que hayáis comprobado la compatibilidad.
+
+155
+00:10:57,024 --> 00:11:02,789
+Comprobad la compatibilidad aquí: aircrack-ng.
+
+156
+00:11:06,939 --> 00:11:10,164
+Ahora seleccionáis Compatibility
+
+157
+00:11:12,955 --> 00:11:15,103
+y ya está, os da todos los chipsets disponibles.
+
+158
+00:11:17,585 --> 00:11:21,559
+Dice "supported by airodump
+for Linux", "supported by aireplay",
+
+159
+00:11:23,004 --> 00:11:25,589
+"supported by airodump
+for Windows", este nos da igual.
+
+160
+00:11:30,155 --> 00:11:33,219
+Pero hay que tener en cuenta
+"supported by airodump for Linux"
+
+161
+00:11:33,254 --> 00:11:36,044
+y "supported by aireplay for Linux".
+
+162
+00:11:36,179 --> 00:11:38,755
+Tenéis que averiguar cuál
+es el chipset de vuestra tarjeta.
+
+163
+00:11:38,790 --> 00:11:40,910
+¿Como se averigua cuál es el chipset de la tarjeta?
+
+164
+00:11:42,274 --> 00:11:44,979
+Escribís el número del modelo y luego
+
+165
+00:11:45,014 --> 00:11:47,907
+escribís la siguiente pregunta en el buscador:
+
+166
+00:11:47,942 --> 00:11:52,005
+"¿Cuál es el chipset de
+(número de modelo)", pulsáis Enter
+
+167
+00:11:52,040 --> 00:11:56,005
+y podréis solucionarlo, no es nada difícil de hacer.
+
+168
+00:11:57,982 --> 00:12:01,743
+Luego cogéis el número de chipset y venís aquí.
+
+169
+00:12:03,388 --> 00:12:05,329
+Perdón, el número de chipset no, la denominación.
+
+170
+00:12:06,408 --> 00:12:10,726
+Venís aquí e intentáis encontrarlo.
+
+171
+00:12:10,961 --> 00:12:13,334
+Aunque no esté en la lista, puede que funcione.
+
+172
+00:12:13,569 --> 00:12:16,837
+Pero, ya sabéis, puede ser un poco chungo.
+
+173
+00:12:17,072 --> 00:12:19,317
+Algunas características irán, otras a lo mejor no,
+
+174
+00:12:19,552 --> 00:12:23,396
+o igual no funciona nada.
+Pero bueno, podéis ir a internet
+
+175
+00:12:23,431 --> 00:12:25,169
+y buscar adaptadores compatibles.
+
+176
+00:12:25,404 --> 00:12:27,775
+Si no podéis haceros con este, este era...
+
+177
+00:12:28,010 --> 00:12:31,657
+Creo que lo conseguí por 20$ o algo así.
+
+178
+00:12:32,638 --> 00:12:35,141
+Bastante bueno, de Ebay.
+
+179
+00:12:35,176 --> 00:12:38,885
+Pero si encontráis algo
+más barato que funcione, adelante.
+
+180
+00:12:39,520 --> 00:12:42,472
+Yo no he probado ningún otro,
+
+181
+00:12:42,507 --> 00:12:44,326
+solo he probado este adaptador,
+
+182
+00:12:44,361 --> 00:12:48,267
+también he probado la tarjeta
+inalámbrica de mi máquina principal
+
+183
+00:12:49,759 --> 00:12:52,064
+y otras cosas más, en términos inalámbricos
+
+184
+00:12:52,199 --> 00:12:55,330
+pero en lo que se refiere
+a adaptadores inalámbricos USB,
+
+185
+00:12:55,365 --> 00:12:57,449
+este es el único que he probado.
+
+186
+00:12:57,884 --> 00:13:01,133
+Por el resto no puedo poner la mano en el fuego,
+
+187
+00:13:01,368 --> 00:13:04,751
+pero, es decir, lo podéis
+comprobar vosotros en los dos
+
+188
+00:13:07,919 --> 00:13:11,574
+si en esta parte dice Yes y
+en esta columna también dice Yes,
+
+189
+00:13:11,809 --> 00:13:14,844
+entonces debe funcionar. Nada del otro mundo.
+
+190
+00:13:15,079 --> 00:13:19,016
+Así que elegid la opción
+con la que os sintáis más cómodos
+
+191
+00:13:20,679 --> 00:13:23,955
+y tened en cuenta el coste,
+intentad que sea rentable también.
+
+192
+00:13:25,687 --> 00:13:27,375
+Bueno, vamos a seguir,
+
+193
+00:13:28,798 --> 00:13:31,615
+lo conectamos, solo hay que coger el cable USB.
+
+194
+00:13:32,406 --> 00:13:34,463
+Todo lo que estoy haciendo es coger el cable USB
+
+195
+00:13:34,798 --> 00:13:38,689
+que venía con el adaptador y conectarlo al adaptador.
+
+196
+00:13:38,924 --> 00:13:42,243
+Luego le doy vueltas y voy a conectar
+
+197
+00:13:42,278 --> 00:13:44,649
+el adaptador USB al ordenador.
+
+198
+00:13:44,984 --> 00:13:48,722
+Esta es la segunda vez
+que lo conecto en cinco minutos,
+
+199
+00:13:48,857 --> 00:13:50,676
+pero no he llegado a hacer
+nada, solo he intentado conectarlo.
+
+200
+00:13:51,691 --> 00:13:54,091
+Así que voy a conectarlo al ordenador,
+
+201
+00:13:57,818 --> 00:14:01,549
+espero que no esté muerto.
+Sería genial que esté vivo,
+
+202
+00:14:02,603 --> 00:14:06,022
+por lo menos, porque no
+veo ninguna luz azul parpadeante.
+
+203
+00:14:07,810 --> 00:14:09,819
+Voy a intentar conectarlo a mi portátil
+
+204
+00:14:09,854 --> 00:14:11,633
+para ver si está vivo o no,
+
+205
+00:14:13,124 --> 00:14:14,877
+porque llevo un tiempo sin usarlo.
+
+206
+00:14:16,383 --> 00:14:18,654
+Vale, funciona, ahora sí que veo la luz azul.
+
+207
+00:14:19,605 --> 00:14:21,317
+Esa parte es obvia.
+
+208
+00:14:22,815 --> 00:14:25,121
+Vamos a conectarlo y ver lo que pasa.
+
+209
+00:14:26,546 --> 00:14:28,117
+Nada, pero bueno.
+
+210
+00:14:28,991 --> 00:14:31,235
+A ver si puedo conseguir pasarlo de todas formas.
+
+211
+00:14:31,570 --> 00:14:36,810
+Entonces, tengo el dispositivo
+conectado, eso es todo lo que he hecho.
+
+212
+00:14:36,845 --> 00:14:38,956
+No he instalado drivers previamente.
+
+213
+00:14:39,191 --> 00:14:45,413
+No he hecho nada más
+que conectar el dispositivo al Mac.
+
+214
+00:14:45,648 --> 00:14:49,850
+Eso es todo. Mediante el puerto USB
+con un cable que venía con el dispositivo.
+
+215
+00:14:49,885 --> 00:14:51,458
+Eso es todo, nada más.
+
+216
+00:14:53,699 --> 00:14:55,759
+Y esta es la primera vez que estoy haciendo esto.
+
+217
+00:14:58,206 --> 00:15:03,297
+Vamos a hacer clic aquí, Settings, vamos a Ports
+
+218
+00:15:04,683 --> 00:15:07,976
+USB, es 2.0 EHC Controller.
+
+219
+00:15:08,459 --> 00:15:11,826
+Hacemos clic en el signo de suma y 11n USB.
+
+220
+00:15:12,113 --> 00:15:14,303
+Seleccionamos ese y OK.
+
+221
+00:15:14,538 --> 00:15:18,433
+Ahora vamos a encender
+la máquina Kali y ver lo que pasa.
+
+222
+00:15:18,668 --> 00:15:22,500
+Vale, perfecto, mi USB está azul.
+
+223
+00:15:24,651 --> 00:15:29,065
+Se ha encendido la luz azul.
+No he instalado nada en Mac.
+
+224
+00:15:29,100 --> 00:15:32,912
+No he instalado drivers,
+el Mac no reconoce el dispositivo,
+
+225
+00:15:32,947 --> 00:15:35,352
+Mac no tiene ni idea de qué es este dispositivo.
+
+226
+00:15:35,387 --> 00:15:38,559
+Solo lo está pasando como si fuera un USB
+
+227
+00:15:38,894 --> 00:15:43,560
+y va a través de VirtualBox a esta máquina virtual.
+
+228
+00:15:43,595 --> 00:15:45,146
+Eso es todo.
+
+229
+00:15:45,147 --> 00:15:48,052
+Lo normal sería no poder usar
+el dispositivo sin haber instalado los drivers,
+
+230
+00:15:48,187 --> 00:15:50,537
+pero no voy a hacerlo,
+porque no lo voy a usar nunca en el Mac.
+
+231
+00:15:50,572 --> 00:15:53,411
+¿Para qué iba a usar esto en el Mac?
+
+232
+00:15:54,543 --> 00:15:57,329
+Entonces, Control Shift +++ para maximizar.
+
+233
+00:15:57,364 --> 00:16:01,260
+Escribo "ifconfig", pulso Enter, voilà.
+
+234
+00:16:01,295 --> 00:16:06,322
+Tengo Wlan0. No estoy conectado a ninguna red,
+
+235
+00:16:06,357 --> 00:16:11,007
+pero ahí está, la puedo usar, obviamente.
+
+236
+00:16:13,023 --> 00:16:18,025
+Si aprieto esto, No conectado. Vale, claro.
+
+237
+00:16:19,366 --> 00:16:23,435
+Seleccionar una red. Listo,
+aquí tengo un montón de redes
+
+238
+00:16:23,570 --> 00:16:26,936
+que puedo usar para conectarme,
+
+239
+00:16:26,971 --> 00:16:28,873
+ahora voy a cancelar esto.
+
+240
+00:16:28,908 --> 00:16:31,530
+Voy a Network,
+entro en Network Settings.
+
+241
+00:16:31,565 --> 00:16:35,771
+Voy a ir a Network, y voy a elegir,
+
+242
+00:16:35,806 --> 00:16:39,080
+mirad, aquí donde dice
+Bridged Adapter, voy a elegir "not attached".
+
+243
+00:16:39,115 --> 00:16:43,282
+Así no está sujeto a ningún
+adaptador integrado de la máquina,
+
+244
+00:16:43,317 --> 00:16:45,713
+no tiene importancia, da igual.
+
+245
+00:16:45,748 --> 00:16:48,605
+Esto va a hacer que caiga
+completamente la conexión a internet,
+
+246
+00:16:48,640 --> 00:16:51,055
+la conexión por cable. Lo estoy haciendo
+
+247
+00:16:53,301 --> 00:16:56,309
+para demostrar que el
+adaptador inalámbrico funciona de verdad.
+
+248
+00:16:58,828 --> 00:17:01,419
+Voy a intentar hacer ping a google.com,
+
+249
+00:17:01,654 --> 00:17:05,129
+ahora no va a funcionar, como os podéis imaginar.
+
+250
+00:17:05,564 --> 00:17:08,575
+Aprieto Control+C para detenerlo.
+
+251
+00:17:08,910 --> 00:17:12,968
+Ahora lo que tengo que
+hacer es ir al administrador de redes,
+
+252
+00:17:13,003 --> 00:17:17,188
+ir a Wi-Fi, Select
+a network. Seleccionar esta red.
+
+253
+00:17:17,423 --> 00:17:21,196
+Hacer clic en Connect, escribir la contraseña.
+
+254
+00:17:25,246 --> 00:17:27,562
+Dejar que se conecte,
+voy a dejarlo intentando hacer ping
+
+255
+00:17:27,597 --> 00:17:29,150
+para ver en qué momento se conecta.
+
+256
+00:17:29,385 --> 00:17:32,665
+¿En serio? ¿He olvidado la contraseña?
+
+257
+00:17:41,624 --> 00:17:44,196
+Ya sabéis, cuando no
+usas tu inalámbrica en un tiempo,
+
+258
+00:17:44,231 --> 00:17:45,992
+se te olvida la contraseña, lo cual es...
+
+259
+00:17:46,227 --> 00:17:49,428
+puede ser muy frustrante, por decir lo mínimo.
+
+260
+00:17:58,265 --> 00:18:00,340
+Por favor, que sea esta. ¡Ahora sí!
+
+261
+00:18:01,446 --> 00:18:05,409
+El ping a google.com
+ha pasado satisfactoriamente.
+
+262
+00:18:07,212 --> 00:18:11,024
+Aún tengo algún que otro problema, podría ser la señal
+
+263
+00:18:11,159 --> 00:18:12,943
+porque estoy sentado a cierta distancia
+
+264
+00:18:13,178 --> 00:18:15,296
+y esto es una máquina virtual, tenedlo en cuenta.
+
+265
+00:18:15,531 --> 00:18:19,102
+Y el ISP del router es un asco, os lo digo.
+
+266
+00:18:19,337 --> 00:18:22,809
+Pero vale, el ping ha pasado
+al menos una vez, así que sabemos que...
+
+267
+00:18:23,144 --> 00:18:26,762
+En realidad no ha pasado.
+He resuelto la dirección IP,
+
+268
+00:18:26,797 --> 00:18:30,012
+ya es algo, ¿verdad? Nada, no quiere.
+
+269
+00:18:30,047 --> 00:18:32,430
+Bueno, no pasa nada, lo arreglaremos.
+
+270
+00:18:34,481 --> 00:18:38,965
+Ha hecho ping a google pero va superlento.
+
+271
+00:18:40,460 --> 00:18:42,475
+Voy a intentar abrir el navegador
+
+272
+00:18:42,810 --> 00:18:45,029
+y voy a ir a Udemy.
+
+273
+00:18:48,188 --> 00:18:52,406
+¿Abrirá la página?
+No, no va a abrir la página.
+
+274
+00:18:56,058 --> 00:18:58,089
+Lo bueno es que me he encontrado un problema.
+
+275
+00:18:58,124 --> 00:19:00,223
+Lo malo es que voy a necesitar hacer
+
+276
+00:19:00,258 --> 00:19:02,357
+otro tutorial para resolverlo.
+

@@ -1,0 +1,274 @@
+1
+00:00:00,110 --> 00:00:07,160
+Okay, so – that took a lot of time to finish.
+Not sure how long it took on your system,
+
+2
+00:00:07,160 --> 00:00:14,099
+but on mine it took a lot of time. I watched
+like 10 YouTube videos or something like that.
+
+3
+00:00:14,099 --> 00:00:23,940
+I'm not sure how long they were, yet you get
+the idea. Anyway, from here onward we can
+
+4
+00:00:23,940 --> 00:00:30,140
+just copy most of these commands. That's exactly
+what I shall do. You can make own mount point
+
+5
+00:00:30,140 --> 00:00:37,870
+or you can just go ahead and copy this one.
+I mean, no big deal-- whatever. Then we can
+
+6
+00:00:37,870 --> 00:00:43,480
+go ahead and mount this one. Since we used
+the same names, we can just copy and paste.
+
+7
+00:00:43,480 --> 00:00:49,880
+Let's just verify. Yes, there we go. The mount
+has went up perfectly. Then, we need to go
+
+8
+00:00:49,880 --> 00:01:02,239
+ahead and do this. We will echo this line
+into this file located here. What is this
+
+9
+00:01:02,239 --> 00:01:14,580
+that I have selected now? That is the mount
+point of our storage. So, my USB we have just
+
+10
+00:01:14,580 --> 00:01:25,720
+formatted with LUKS. We can feel free to unmount
+it. First, press enter. Let's go ahead and
+
+11
+00:01:25,720 --> 00:01:32,590
+unmount it. Then, it says close the encrypted
+channel to our persistent partition. We can
+
+12
+00:01:32,590 --> 00:01:40,869
+basically just go in to and close it with
+crypt. Make sure to know the password. There
+
+13
+00:01:40,869 --> 00:01:46,840
+we go! This shouldn't be accessible anymore.
+Then, that is literally it. There is nothing
+
+14
+00:01:46,840 --> 00:01:54,720
+else that you need to do here. I'll just go
+ahead and explain a little bit with this portion
+
+15
+00:01:54,720 --> 00:02:01,729
+where you don't have encryption. I mean, it's
+fairly similar, pretty much the same, actually.
+
+16
+00:02:01,729 --> 00:02:11,760
+Okay, I'll just go and see. This part, you
+don't actually need to copy and paste. Just
+
+17
+00:02:11,760 --> 00:02:16,590
+go ahead and use the FDISK, as I have used
+it, and create a another partition. So, that
+
+18
+00:02:16,590 --> 00:02:20,630
+that part is the same. Just use FDISK as we
+have used it before.
+
+19
+00:02:20,630 --> 00:02:31,819
+Fdisk, space-- like this "fdisk /dev/DEVICENAME"
+-- the device name should be USB or SDB or
+
+20
+00:02:31,819 --> 00:02:39,030
+whatever it is. You can figure out what it
+is with "-L option" and see it here. So you
+
+21
+00:02:39,030 --> 00:02:46,660
+will need to format it. If it is SDB3, you
+can go ahead and copy paste this. Then go
+
+22
+00:02:46,660 --> 00:02:54,120
+ahead and copy paste this as well. So, no
+big deal there at all. Then, I just keep copy
+
+23
+00:02:54,120 --> 00:03:00,680
+pasting until the end. The only thing that
+you will need to change it is SDB3-- maybe.
+
+24
+00:03:00,680 --> 00:03:06,370
+As I said, check it out with your fdisk and
+figure out what it is. Just go ahead and create
+
+25
+00:03:06,370 --> 00:03:14,069
+a partition with fdisk, as I have shown as
+I have showed you in the previous tutorial.
+
+26
+00:03:14,069 --> 00:03:27,550
+This segment here took a lot of time. I mean,
+a lot! So don't be discouraged. If the thinking
+
+27
+00:03:27,550 --> 00:03:32,920
+that the system is blocked or there is a bug
+or something. Know it just takes a lot of
+
+28
+00:03:32,920 --> 00:03:37,030
+time in a virtual machine. That's the fact
+of the matter, and it has something to do
+
+29
+00:03:37,030 --> 00:03:46,150
+with the fact that I have a pretty large USB
+stick. Anyway, keep all that in mind. Now,
+
+30
+00:03:46,150 --> 00:03:51,970
+everything is done here. I shall now reboot
+it to my Kali machine. I will use my phone
+
+31
+00:03:51,970 --> 00:04:02,459
+just to give you some images. There is nothing
+that you need to do pretty much. We've created
+
+32
+00:04:02,459 --> 00:04:07,700
+a live USB with encrypted persistence. Just
+select live USB and encrypted persistence
+
+33
+00:04:07,700 --> 00:04:13,739
+when it boots. I'm going to do some shooting
+with my phone. The image is not to be great
+
+34
+00:04:13,739 --> 00:04:18,049
+because my new phone is still not here and
+this camera is terrible. It doesn't really
+
+35
+00:04:18,049 --> 00:04:24,259
+matter that much because there is nothing
+that you need to do. Everything is set up.
+
+36
+00:04:24,259 --> 00:04:29,219
+Everything is ready. Everything is working.
+All you need to do is boot from the new USB.
+
+37
+00:04:29,219 --> 00:04:34,080
+I'm just going to record it to prove that
+it functions. If it doesn't function for you,
+
+38
+00:04:34,080 --> 00:04:40,919
+you might be doing something wrong. Let me
+know in the discussion section. We'll discuss
+
+39
+00:04:40,919 --> 00:04:44,719
+it there and see how it works. Let me just
+remind everybody
+
+40
+00:04:44,719 --> 00:04:55,520
+before we start that, you shouldn't expect
+multiple monitors to work. That's just not
+
+41
+00:04:55,520 --> 00:05:01,240
+going to happen easily at all. You will need
+to mess around with the drivers and personally
+
+42
+00:05:01,240 --> 00:05:07,169
+that's not a good idea, especially not for
+a bootable USB. Second, if wireless doesn't
+
+43
+00:05:07,169 --> 00:05:13,339
+work, you need to fix that. You can do it
+with drivers. Think about it for second. If
+
+44
+00:05:13,339 --> 00:05:19,259
+you have a wireless card within your machine
+and doesn't support a lot of things, like
+
+45
+00:05:19,259 --> 00:05:26,589
+aircrack or something, or that is supported
+in Kali. Why bother with the drivers at all,
+
+46
+00:05:26,589 --> 00:05:31,180
+if it's not going to connect. You'll still
+be able to connect to the wireless access
+
+47
+00:05:31,180 --> 00:05:35,539
+point, but I mean you won't be able to do
+half of the stuff with wireless, so why bother.
+
+48
+00:05:35,539 --> 00:05:41,219
+I suggest getting another wireless USB adapter
+which you can just plug-n-play and it will
+
+49
+00:05:41,219 --> 00:05:54,289
+work. Anyway, I am going to close my virtual
+machine and then I'm gonna go ahead and boot
+
+50
+00:05:54,289 --> 00:06:00,089
+from my USB drive and record this for my phone.
+Please don't hang me if the images of the
+
+51
+00:06:00,089 --> 00:06:05,899
+qualities not super great or something like
+that. From this point on, There is no more
+
+52
+00:06:05,899 --> 00:06:09,659
+configuration. There is nothing else to do
+need to do. The only reason that I'm shooting
+
+53
+00:06:09,659 --> 00:06:17,199
+at this next segment is so I can show you
+the the boot does indeed work. You can actually
+
+54
+00:06:17,199 --> 00:06:22,199
+boot from a live USB without any problems.
+That it is functional, and the procedure is
+
+55
+00:06:22,199 --> 00:06:26,139
+working. So, let's get into that.
+
