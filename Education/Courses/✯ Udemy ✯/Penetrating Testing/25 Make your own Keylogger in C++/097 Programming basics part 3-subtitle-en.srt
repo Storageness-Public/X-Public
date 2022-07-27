@@ -1,0 +1,602 @@
+1
+00:00:00,000 --> 00:00:03,000
+Welcome back to this tutorial.
+
+2
+00:00:03,000 --> 00:00:06,000
+So let's just get into it right away.
+
+3
+00:00:06,000 --> 00:00:08,800
+Just go ahead and switch these around.
+
+4
+00:00:08,800 --> 00:00:12,000
+So it's "less than" and then "equal to"
+
+5
+00:00:12,000 --> 00:00:15,000
+Sorry, I think I committed error there in the last tutorial.
+
+6
+00:00:15,000 --> 00:00:17,000
+Doesn't really matter. Just switch it around.
+
+7
+00:00:17,000 --> 00:00:19,500
+We still didn't run the code
+
+8
+00:00:19,500 --> 00:00:23,200
+and I have also added, prior to the beginning of this tutorial
+
+9
+00:00:23,200 --> 00:00:30,000
+"i" at the end of each one of these lines, just for the sake of demonstration purposes
+
+10
+00:00:30,000 --> 00:00:34,400
+so that you can see that "i", with each pass, will increase.
+
+11
+00:00:34,400 --> 00:00:39,840
+So let us conduct a first pass and see what happens
+
+12
+00:00:39,840 --> 00:00:44,000
+Okay, let's go ahead and compile
+
+13
+00:00:44,000 --> 00:00:47,860
+It says nothing to do because I haven't really haven't done anything.
+
+14
+00:00:47,860 --> 00:00:50,500
+11
+
+15
+00:00:50,500 --> 00:00:53,800
+It should be "A is greater than B" now.
+
+16
+00:00:53,800 --> 00:00:57,800
+A is greater than B, and i is zero.
+
+17
+00:00:57,800 --> 00:01:02,660
+So you can see that it's here, it's getting printed out, and it's zero.
+
+18
+00:01:02,660 --> 00:01:10,020
+so let's go ahead and continue to loop
+at state being in four and then type in
+
+19
+00:01:10,020 --> 00:01:15,780
+10 should bibi is rated M for ya
+
+20
+00:01:15,780 --> 00:01:23,220
+is less than be there so rude but these
+pages then it says here one so it has
+
+21
+00:01:23,220 --> 00:01:30,509
+increased by one and if I just keep on
+doing this to allow its 3 end once it
+
+22
+00:01:30,509 --> 00:01:38,229
+reaches 3 it says game over it can't go
+it can't go any further than that
+
+23
+00:01:38,229 --> 00:01:43,579
+because we just stated it can to go the
+loop cannot repeat itself one more time
+
+24
+00:01:43,579 --> 00:01:48,950
+because then it would be greater because
+then it would be greater than three and
+
+25
+00:01:48,950 --> 00:01:53,979
+it becomes greater than three this
+evaluates to false and this entire loop
+
+26
+00:01:53,979 --> 00:02:02,270
+gets terminated as it exits the loop and
+it's just rinse out game over
+
+27
+00:02:02,270 --> 00:02:11,830
+anyway that would be D while loop which
+you can use we also have a for loop so
+
+28
+00:02:11,830 --> 00:02:25,269
+let's go ahead and actually lets you use
+most of the code here and we need to
+
+29
+00:02:25,269 --> 00:02:30,239
+delete the last curly bracket and we're
+not gonna have the eye plus plus here
+
+30
+00:02:30,239 --> 00:02:35,380
+let's go ahead and delete that as well
+and we won't need the creation site here
+
+31
+00:02:35,380 --> 00:02:46,860
+I know what's going to deport AP in for
+open open parenthesis in equal now you
+
+32
+00:02:46,860 --> 00:02:48,220
+can do this without any problems
+
+33
+00:02:48,220 --> 00:03:07,710
+equals 0 semicolon is less than three
+
+34
+00:03:07,710 --> 00:03:16,170
+bottom ok here we go this will do
+exactly the same thing even the compiler
+
+35
+00:03:16,170 --> 00:03:20,290
+it's pretty much the same thing there
+was no different machine doesn't
+
+36
+00:03:20,290 --> 00:03:23,890
+differentiate I don't think it
+differentiates at all there might be
+
+37
+00:03:23,890 --> 00:03:29,200
+some slight differences between for a
+while but I do believe that many that I
+
+38
+00:03:29,200 --> 00:03:31,940
+have read many statements that they're
+pretty much the same as far as the
+
+39
+00:03:31,940 --> 00:03:36,860
+machine is concerned for a while so
+we're just using them to create
+
+40
+00:03:36,860 --> 00:03:43,540
+repetitive action something or
+continuous action of something anyway
+
+41
+00:03:43,540 --> 00:03:53,630
+let's go ahead and go ahead and run this
+see what happens
+
+42
+00:03:53,630 --> 00:03:57,030
+changes
+
+43
+00:03:57,030 --> 00:04:08,660
+so it does run again the eye is it
+rating as you can see and it reaches to
+
+44
+00:04:08,660 --> 00:04:13,760
+because we didn't state that it is equal
+to not within the stated that's equal we
+
+45
+00:04:13,760 --> 00:04:19,940
+just said ok I needs to be less than
+three and that is quite literally all
+
+46
+00:04:19,940 --> 00:04:22,780
+while I'm here on the subject
+
+47
+00:04:22,780 --> 00:04:30,990
+go ahead and introduce one more value so
+another value would be float variable
+
+48
+00:04:30,990 --> 00:04:35,990
+type sorry has introduced senator
+variable day load that would be in BC D
+
+49
+00:04:35,990 --> 00:04:37,120
+E
+
+50
+00:04:37,120 --> 00:04:44,820
+that be equal to zero point something so
+if you want you can put it in like this
+
+51
+00:04:44,820 --> 00:04:53,590
+then them win three or zero points so
+this is just a great zero point that
+
+52
+00:04:53,590 --> 00:04:59,320
+sounded terrible type anyway if you are
+uncertain as to which variable to use if
+
+53
+00:04:59,320 --> 00:05:04,580
+numbers are concerned just use double
+you can't actually in terms of numbers
+
+54
+00:05:04,580 --> 00:05:12,150
+you can't actually go wrong with double
+next up what I would like to do is just
+
+55
+00:05:12,150 --> 00:05:17,380
+go ahead and show you a little bit of
+the mathematical operations that happen
+
+56
+00:05:17,380 --> 00:05:36,270
+so let's delete this ok so let's go
+ahead and demonstrate an idea
+
+57
+00:05:36,270 --> 00:05:46,540
+exxon so we have three variable types so
+let's let's play around and just give
+
+58
+00:05:46,540 --> 00:06:14,540
+them five and this is going to be so if
+I don't see out if I did I B B equals
+
+59
+00:06:14,540 --> 00:06:28,290
+sorry be easy to do and a is equal to
+five and if I do this I see a device a
+
+60
+00:06:28,290 --> 00:06:35,180
+divided by the way I would like you to
+take a wild guess what the result will
+
+61
+00:06:35,180 --> 00:06:40,790
+be remembered into juice can only be
+whole numbers and we are dividing one
+
+62
+00:06:40,790 --> 00:06:48,230
+introduced by a mother integers so let's
+see what what the result will be let's
+
+63
+00:06:48,230 --> 00:06:55,100
+go ahead and press it
+
+64
+00:06:55,100 --> 00:07:19,510
+yes I did but we need we need this
+petition ok so is 5/8 be which is to the
+
+65
+00:07:19,510 --> 00:07:27,640
+result is to now as far as I know 5/2 is
+not equal to two but you know that's
+
+66
+00:07:27,640 --> 00:07:28,220
+just me
+
+67
+00:07:28,220 --> 00:07:35,320
+could be wrong and the whole mass of
+this world could be wrong as well let's
+
+68
+00:07:35,320 --> 00:07:39,520
+just assume that it's not let's assume
+that the mathematics of this world is
+
+69
+00:07:39,520 --> 00:07:41,410
+correct
+
+70
+00:07:41,410 --> 00:07:48,230
+5/2 is not to why why does this happen
+
+71
+00:07:48,230 --> 00:07:57,360
+well everything if you if you divide one
+in by a another in and if you get a
+
+72
+00:07:57,360 --> 00:08:04,630
+result something like then . blah blah
+blah the blah blah blah part will be
+
+73
+00:08:04,630 --> 00:08:09,540
+gone it will get truncated it will be
+like it didnt never existence of the
+
+74
+00:08:09,540 --> 00:08:15,200
+result is then put in something then
+will remain everything behind it will go
+
+75
+00:08:15,200 --> 00:08:20,150
+away I'm just using these numbers for
+reference sake it could be any other
+
+76
+00:08:20,150 --> 00:08:27,510
+number could be whatever whatever so
+this could be a result of integer
+
+77
+00:08:27,510 --> 00:08:34,650
+division and this whole number could be
+the result of integer division but you
+
+78
+00:08:34,650 --> 00:08:39,849
+will get this as a result and nothing
+else if you divide two in two years and
+
+79
+00:08:39,849 --> 00:08:50,120
+the other hand if we were to divide see
+by the so the lead this part I really
+
+80
+00:08:50,120 --> 00:08:55,190
+feel a crew rating it all the time and
+sure the student appreciated I do you
+
+81
+00:08:55,190 --> 00:09:03,620
+can see clearly what is going on it's
+double so see divided by Andy
+
+82
+00:09:03,620 --> 00:09:07,180
+template 3/16 2.34
+
+83
+00:09:07,180 --> 00:09:15,840
+or by the way when I see you don't
+appreciate it I mean like you just find
+
+84
+00:09:15,840 --> 00:09:19,650
+it boring today keep on retyping the
+same things over and over again that's
+
+85
+00:09:19,650 --> 00:09:28,280
+what I meant by that anyway you get a
+result 0.17% you will get the small
+
+86
+00:09:28,280 --> 00:09:33,260
+points here if you divide to double
+numbers also if you divide float numbers
+
+87
+00:09:33,260 --> 00:09:42,450
+as well so please be very careful with
+that was a lot of mistakes can happen
+
+88
+00:09:42,450 --> 00:09:48,320
+with this and you should be aware these
+things also by this point of time if you
+
+89
+00:09:48,320 --> 00:09:53,070
+haven't noticed each line of code has
+its own designated number indeed era
+
+90
+00:09:53,070 --> 00:09:57,720
+section in the console down below where
+the output is given if there are any
+
+91
+00:09:57,720 --> 00:10:02,260
+errors it will report the line where the
+area has
+
+92
+00:10:02,260 --> 00:10:06,800
+you will get you will get a report weird
+error has occurred occurred on which
+
+93
+00:10:06,800 --> 00:10:12,900
+line because it's fairly simple now but
+imagine if you had 300 400 lines that
+
+94
+00:10:12,900 --> 00:10:18,500
+the nightmare have reduced the font size
+but aside from that just take a look at
+
+95
+00:10:18,500 --> 00:10:22,370
+some other functionalities of the
+console which we're going to need to
+
+96
+00:10:22,370 --> 00:10:45,040
+follow tutorials safe I just a pin ups
+please
+
+97
+00:10:45,040 --> 00:10:59,899
+we use can I lead and I don't know these
+exclamation marks this is gonna run
+
+98
+00:10:59,899 --> 00:11:07,680
+forever basically this program will
+never stop until we terminated so how do
+
+99
+00:11:07,680 --> 00:11:14,180
+you deal with something like this right
+
+100
+00:11:14,180 --> 00:11:31,040
+summit oh well then they have to press
+it in time basically it's the let's
+
+101
+00:11:31,040 --> 00:11:35,389
+think of a better example of this is a
+really good way to crash a virtual
+
+102
+00:11:35,389 --> 00:11:42,029
+machine just overloaded like this I was
+think of a better example it's just type
+
+103
+00:11:42,029 --> 00:11:48,110
+something in that will not be harmful in
+any way caused the split maxi it will
+
+104
+00:11:48,110 --> 00:11:51,870
+just keep on printing the same word over
+and over again as fast as it possibly
+
+105
+00:11:51,870 --> 00:11:53,449
+can
+
+106
+00:11:53,449 --> 00:12:05,600
+which is not a good thing at all so
+let's go ahead and open sea in basically
+
+107
+00:12:05,600 --> 00:12:11,519
+this program will not consume CPU much
+the CPU or anything it will just wait
+
+108
+00:12:11,519 --> 00:12:18,019
+for user to improve something but it
+will continue to run anyway on the right
+
+109
+00:12:18,019 --> 00:12:23,190
+side you have a discriminate but so you
+can go ahead and click it but you can
+
+110
+00:12:23,190 --> 00:12:30,000
+also you also have the clear console so
+far this if I press STOP to see this
+
+111
+00:12:30,000 --> 00:12:36,750
+till the program is not running but this
+still remains and they could just the
+
+112
+00:12:36,750 --> 00:12:39,880
+console and it's gone forever
+
+113
+00:12:39,880 --> 00:12:44,399
+no more players a console is nice neat
+and clean basically the equivalent of a
+
+114
+00:12:44,399 --> 00:12:53,100
+clear command in Linux anyway I like to
+be you all farewell here
+
+115
+00:12:53,100 --> 00:12:57,550
+and we will see each other in a
+follow-up story will continue on the
+
+116
+00:12:57,550 --> 00:13:04,540
+basics they will be a few more of these
+tutorials and then we will actually jump
+
+117
+00:13:04,540 --> 00:13:10,800
+into the loggers source code don't worry
+if you don't catch everything don't
+
+118
+00:13:10,800 --> 00:13:18,080
+worry if you don't understand everything
+straight away it's ok no big deal just
+
+119
+00:13:18,080 --> 00:13:22,540
+ask in the discussions I'll be happy to
+help you out I'll be happy to explain
+
+120
+00:13:22,540 --> 00:13:29,080
+anything that remains unclear but I'm
+just saying don't be like I didn't
+
+121
+00:13:29,080 --> 00:13:32,660
+figure it out without all known not this
+is well just one word what am I gonna do
+
+122
+00:13:32,660 --> 00:13:34,260
+about it
+
+123
+00:13:34,260 --> 00:13:42,400
+addict not good so just asking to
+discussions and I will help you out no
+
+124
+00:13:42,400 --> 00:13:49,060
+worries there again you don't need to
+understand all of it immediately you
+
+125
+00:13:49,060 --> 00:13:54,580
+will as we progress through the course a
+lot of things will repeat themselves in
+
+126
+00:13:54,580 --> 00:13:58,500
+one form or another
+
+127
+00:13:58,500 --> 00:14:01,930
+anyway farewell and I'll see you in
+default story
+

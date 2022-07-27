@@ -1,0 +1,1364 @@
+1
+00:00:00,720 --> 00:00:03,030
+Welcome everybody to this tutorial.
+
+2
+00:00:03,030 --> 00:00:06,030
+Today, I will open up
+a chapter on reverse shells.
+
+3
+00:00:06,030 --> 00:00:09,880
+Now, let me begin by just explaining
+what they are in general.
+
+4
+00:00:09,880 --> 00:00:16,057
+Basically, a reverse shell would be
+something that you put a piece of code,
+
+5
+00:00:16,057 --> 00:00:20,609
+that you would place on a device,
+mainly on a computer.
+
+6
+00:00:20,609 --> 00:00:25,201
+But you can also place it on a phone and
+pretty much SmartPhone like an Android
+
+7
+00:00:25,201 --> 00:00:28,089
+device, or an iPhone,
+or something of a kind.
+
+8
+00:00:28,089 --> 00:00:32,383
+And then you are able
+to control such devices
+
+9
+00:00:32,383 --> 00:00:36,688
+remotely from the location of your choice.
+
+10
+00:00:36,688 --> 00:00:40,981
+Now, to do this over the Internet,
+it's a little bit trickier and
+
+11
+00:00:40,981 --> 00:00:45,748
+you would have to combine several things,
+what we have learned thus far.
+
+12
+00:00:45,748 --> 00:00:52,786
+For example, you would have to first,
+if you had a computer at home and
+
+13
+00:00:52,786 --> 00:00:56,960
+if you didn't have a VPN with a static IP,
+
+14
+00:00:56,960 --> 00:01:01,520
+you would need to
+configure your own router.
+
+15
+00:01:01,520 --> 00:01:03,517
+Well actually it's not that hard,
+
+16
+00:01:03,517 --> 00:01:06,920
+all you would need to do is put
+an IP address of your computer.
+
+17
+00:01:06,920 --> 00:01:12,198
+So I have config, you can also use
+the IP of a virtual machine no problem.
+
+18
+00:01:12,198 --> 00:01:14,159
+If it's in the bridge mode
+as I have showed you.
+
+19
+00:01:14,159 --> 00:01:17,451
+And you would need to find an option DMZ,
+so
+
+20
+00:01:17,451 --> 00:01:21,298
+demilitarized zone as it
+is usually referred to.
+
+21
+00:01:21,298 --> 00:01:24,899
+And you would basically
+put this IP address.
+
+22
+00:01:24,899 --> 00:01:27,938
+Keep in mind if it changes that
+you need to put it back in.
+
+23
+00:01:27,938 --> 00:01:30,258
+That you need to change the DMZ as well.
+
+24
+00:01:30,258 --> 00:01:35,337
+I've decided not to show you how to do
+this on a router because I could only show
+
+25
+00:01:35,337 --> 00:01:40,199
+you how to do it on my own router, and
+there are various routers out there.
+
+26
+00:01:40,199 --> 00:01:41,859
+But, look, it's pretty simple.
+
+27
+00:01:41,859 --> 00:01:47,779
+Just open up your Web interface
+of a router, and find DMZ.
+
+28
+00:01:47,779 --> 00:01:50,258
+So DMZ.
+
+29
+00:01:50,258 --> 00:01:53,678
+There's usually just one option,
+one field.
+
+30
+00:01:53,678 --> 00:01:56,660
+You can only put one IP address.
+
+31
+00:01:56,660 --> 00:01:58,430
+And just type in this IP address, and
+
+32
+00:01:58,430 --> 00:02:01,730
+then you will be able to
+use your public IP address
+
+33
+00:02:01,730 --> 00:02:06,650
+which you can get by typing in your
+favorite search engine, what is my IP.
+
+34
+00:02:06,650 --> 00:02:10,701
+Then get that public IP address, and you
+can use that IP address as a listener for
+
+35
+00:02:10,701 --> 00:02:12,650
+all the reverse-shells you create.
+
+36
+00:02:12,650 --> 00:02:16,134
+Now, there are several approaches here,
+
+37
+00:02:16,134 --> 00:02:20,888
+in terms of deployment and
+creation of a reverse-shell.
+
+38
+00:02:20,888 --> 00:02:24,475
+To create them you can
+either code it yourself,
+
+39
+00:02:24,475 --> 00:02:29,676
+which is a preferable way primary
+because the reverse shells that you
+
+40
+00:02:29,676 --> 00:02:34,789
+can generate automatically,
+can be detected by anti viruses, and
+
+41
+00:02:34,789 --> 00:02:40,728
+that's not what you really want,
+you want something that's undetectable.
+
+42
+00:02:40,728 --> 00:02:44,893
+But for the time, coding a reverse shell
+on your own, I can tell you, it's not
+
+43
+00:02:44,893 --> 00:02:49,061
+a simple task, especially when you need
+to do hex dumps to avoid privileges and
+
+44
+00:02:49,061 --> 00:02:51,610
+stuff of a kind,
+to avoid firewall detection.
+
+45
+00:02:51,610 --> 00:02:57,149
+But look, basically if you code
+
+46
+00:02:57,149 --> 00:03:02,279
+it yourself, it's probably
+
+47
+00:03:02,279 --> 00:03:08,070
+going to be something simple.
+
+48
+00:03:08,070 --> 00:03:15,520
+It's going to be far away from
+professional, it's going to be bad.
+
+49
+00:03:15,520 --> 00:03:17,920
+Let's face the reality of things.
+
+50
+00:03:17,920 --> 00:03:21,980
+However, because it's bad,
+because it's unprofessional,
+
+51
+00:03:21,980 --> 00:03:26,820
+because it doesn't contain any
+complex functions, because it
+
+52
+00:03:26,820 --> 00:03:32,400
+doesn't contain the usual patterns that
+a pro reverse shell would contain,
+
+53
+00:03:32,400 --> 00:03:36,150
+it is not that likely to
+be detected by antiviruses.
+
+54
+00:03:36,150 --> 00:03:37,810
+So that's a big plus for you.
+
+55
+00:03:37,810 --> 00:03:43,137
+So if you can even code the basic reverse
+
+56
+00:03:43,137 --> 00:03:47,988
+shells, just look it up on the net.
+
+57
+00:03:47,988 --> 00:03:48,501
+I'm not gonna get into
+that because that would be
+
+58
+00:03:48,501 --> 00:03:49,088
+a separate course for itself,
+a programming course.
+
+59
+00:03:49,088 --> 00:03:52,717
+If you can code even
+the basic reverse shells,
+
+60
+00:03:52,717 --> 00:03:58,209
+you stand a very good chance of not
+getting detected primarily because
+
+61
+00:03:58,209 --> 00:04:03,250
+your reverse shells will be noobish,
+and that's a good thing.
+
+62
+00:04:03,250 --> 00:04:06,489
+That can be a good thing, actually.
+
+63
+00:04:06,489 --> 00:04:12,082
+Anyway, it is unlikely that
+you will pass the detection
+
+64
+00:04:12,082 --> 00:04:16,604
+by an automatically
+generated reverse shell
+
+65
+00:04:16,604 --> 00:04:21,490
+on a fully updated system,
+so keep that in mind.
+
+66
+00:04:22,620 --> 00:04:28,051
+You need to look for a system that
+doesn't have the latest updates,
+
+67
+00:04:28,051 --> 00:04:30,538
+that is behind in such a sense.
+
+68
+00:04:30,538 --> 00:04:35,839
+And then you have a very good chance of
+passing with an automated reverse shell.
+
+69
+00:04:35,839 --> 00:04:39,276
+The tool for or the framework for
+
+70
+00:04:39,276 --> 00:04:43,739
+creating reverse shells is Metasploit.
+
+71
+00:04:43,739 --> 00:04:48,578
+Metasploit is a fantastic framework used
+by pen testers all around the world.
+
+72
+00:04:48,578 --> 00:04:53,886
+Now professionals use a paid version,
+pro version, which costs,
+
+73
+00:04:53,886 --> 00:05:00,419
+I remember a long time ago, I knew the
+exact price, but it doesn't really matter.
+
+74
+00:05:00,419 --> 00:05:06,730
+It was around $5000, so
+5k per license per month.
+
+75
+00:05:06,730 --> 00:05:07,930
+That costs quite a bit.
+
+76
+00:05:09,950 --> 00:05:12,460
+Things might have changed.
+
+77
+00:05:12,460 --> 00:05:16,260
+In the meantime, it's been a while
+since I checked those prices out.
+
+78
+00:05:16,260 --> 00:05:19,980
+But I'm just trying to make a point that
+even though the pen testing companies
+
+79
+00:05:19,980 --> 00:05:22,480
+are paying such prices, and
+they're not paying it for
+
+80
+00:05:22,480 --> 00:05:24,740
+a single license,
+usually they're paying for more than one.
+
+81
+00:05:24,740 --> 00:05:27,160
+Even though the program is open source.
+
+82
+00:05:27,160 --> 00:05:28,674
+If the program is open source,
+
+83
+00:05:28,674 --> 00:05:31,600
+that doesn't necessarily mean
+that it's free of charge.
+
+84
+00:05:31,600 --> 00:05:36,098
+Of course,
+we will be using a free of charge version.
+
+85
+00:05:36,098 --> 00:05:38,840
+You don't have a good interface there.
+
+86
+00:05:38,840 --> 00:05:39,978
+You have to do everything by terminal.
+
+87
+00:05:39,978 --> 00:05:45,819
+So that's kind of a down side for some but
+not to the fullest of extents, and
+
+88
+00:05:45,819 --> 00:05:51,218
+there are some features that are only
+available for the pro version.
+
+89
+00:05:51,218 --> 00:05:54,624
+However, if you feel
+like paying 5k per month,
+
+90
+00:05:54,624 --> 00:05:59,193
+just go over on the net,
+type in Metasploit in the search engine,
+
+91
+00:05:59,193 --> 00:06:03,199
+and your first result should
+be their official website.
+
+92
+00:06:03,199 --> 00:06:09,438
+Anyway, without further ado, we're
+gonna get into Metasploit immediately.
+
+93
+00:06:09,438 --> 00:06:12,261
+I'm gonna go ahead and
+clear the screen and
+
+94
+00:06:12,261 --> 00:06:17,060
+we will use it to generate a script,
+and we will also use it as a Listener.
+
+95
+00:06:17,060 --> 00:06:21,850
+Now, Metasploit, I mean you can run
+it just by default in Kali without
+
+96
+00:06:22,940 --> 00:06:25,720
+actually doing any sort of
+configuration of whatsoever.
+
+97
+00:06:25,720 --> 00:06:28,080
+But I don't recommend it.
+
+98
+00:06:28,080 --> 00:06:32,762
+Primarily because you can speed
+up pretty much everything by
+
+99
+00:06:32,762 --> 00:06:35,950
+just doing a few simple things.
+
+100
+00:06:35,950 --> 00:06:38,710
+So go ahead and type in, service.
+
+101
+00:06:38,710 --> 00:06:42,590
+We will give Metasploit
+framework a database to use.
+
+102
+00:06:42,590 --> 00:06:44,629
+And if it's use as
+a database it is faster.
+
+103
+00:06:44,629 --> 00:06:48,168
+So type in postage, SQL.
+
+104
+00:06:48,168 --> 00:06:49,488
+Start.
+
+105
+00:06:49,488 --> 00:06:51,729
+You will need to start postage SQL.
+
+106
+00:06:51,729 --> 00:06:53,030
+It's already running for me.
+
+107
+00:06:53,030 --> 00:06:55,060
+I can just type in status.
+
+108
+00:06:57,050 --> 00:06:58,940
+And there you go,
+it says running clusters.
+
+109
+00:06:58,940 --> 00:06:59,610
+Anyway.
+
+110
+00:06:59,610 --> 00:07:03,400
+Go ahead and clear the screen.
+
+111
+00:07:03,400 --> 00:07:05,730
+Type in service Metasploit.
+
+112
+00:07:07,330 --> 00:07:07,940
+Start.
+
+113
+00:07:07,940 --> 00:07:12,358
+And, this should start
+the Metasploit service, as well.
+
+114
+00:07:12,358 --> 00:07:15,598
+I'm gonna type in status.
+
+115
+00:07:15,598 --> 00:07:17,058
+And, okay.
+
+116
+00:07:17,058 --> 00:07:20,636
+So there are a few things
+that will start up,
+
+117
+00:07:20,636 --> 00:07:25,060
+once you type in service Metasploit start.
+
+118
+00:07:25,060 --> 00:07:26,630
+Anyway, go ahead and clear the screen.
+
+119
+00:07:26,630 --> 00:07:29,808
+Type in msfconsole.
+
+120
+00:07:29,808 --> 00:07:31,128
+Press Enter.
+
+121
+00:07:31,128 --> 00:07:34,210
+And and I gotta warn you.
+
+122
+00:07:34,210 --> 00:07:36,150
+This is gonna take a while,
+actually, to start.
+
+123
+00:07:38,868 --> 00:07:43,228
+Primarily because Metasploit is pretty
+big, it has a lot of things in it.
+
+124
+00:07:43,228 --> 00:07:47,309
+And it takes a while on a virtual
+machine to actually start,
+
+125
+00:07:47,309 --> 00:07:50,508
+primarily because of
+the limited resources.
+
+126
+00:07:50,508 --> 00:07:56,928
+Let me just go ahead and
+open up another terminal and
+
+127
+00:07:56,928 --> 00:08:00,968
+type in msfupdate, this is it.
+
+128
+00:08:00,968 --> 00:08:04,452
+Excellent.
+So if you type in msfupdate in a root
+
+129
+00:08:04,452 --> 00:08:09,328
+terminal, it will update
+the Metasploit framework.
+
+130
+00:08:09,328 --> 00:08:14,145
+I would suggest to do this
+as often as possible, says,
+
+131
+00:08:14,145 --> 00:08:20,300
+note, expect weekly or
+weekish updates using this method.
+
+132
+00:08:20,300 --> 00:08:24,632
+So, I mean, if you are,
+if they issue weekly updates you should
+
+133
+00:08:24,632 --> 00:08:29,540
+definitely consider updating it at
+least twice a week, just to be sure.
+
+134
+00:08:29,540 --> 00:08:34,300
+Just to make sure that you have those
+latest updates readily available at hand.
+
+135
+00:08:34,300 --> 00:08:37,050
+Now this here, where it says,
+username and security password line.
+
+136
+00:08:37,050 --> 00:08:39,728
+This is nothing, this is a banner.
+
+137
+00:08:39,728 --> 00:08:41,748
+Don't let that confuse you,
+let me just show you.
+
+138
+00:08:41,748 --> 00:08:43,668
+Banner.
+
+139
+00:08:43,668 --> 00:08:44,729
+You see?
+
+140
+00:08:44,729 --> 00:08:46,528
+It changes, and then it changes again.
+
+141
+00:08:46,528 --> 00:08:51,250
+I don't know why, but
+a lot of these banners are actually cows.
+
+142
+00:08:51,250 --> 00:08:53,190
+There is a logic to it.
+
+143
+00:08:53,190 --> 00:08:56,890
+But I'm gonna let you
+actually figure that one out.
+
+144
+00:08:56,890 --> 00:08:59,548
+I'm pretty sure, I knew that a while ago,
+but it doesn't really matter.
+
+145
+00:08:59,548 --> 00:09:01,569
+So, a cow, this one, Metasploit.
+
+146
+00:09:01,569 --> 00:09:02,228
+A cow again.
+
+147
+00:09:02,228 --> 00:09:08,491
+Cow again.
+
+148
+00:09:08,491 --> 00:09:10,580
+This sign, cow again.
+
+149
+00:09:10,580 --> 00:09:11,887
+So there we go,
+you can just keep on typing in banner, and
+
+150
+00:09:11,887 --> 00:09:12,858
+it's gonna give you different banners.
+
+151
+00:09:12,858 --> 00:09:16,661
+I do believe that every
+time you start Metasploit,
+
+152
+00:09:16,661 --> 00:09:20,118
+it does actually give
+you a different banner.
+
+153
+00:09:20,118 --> 00:09:22,485
+Now go ahead and type in help,
+
+154
+00:09:22,485 --> 00:09:27,841
+just to see a ton load of options
+that you have here that you can use.
+
+155
+00:09:27,841 --> 00:09:33,220
+And the usage of commands is pretty much
+
+156
+00:09:33,220 --> 00:09:36,330
+the same as in a Linux shell,
+so don't worry about it.
+
+157
+00:09:36,330 --> 00:09:39,410
+What you have used thus far,
+you can use here.
+
+158
+00:09:39,410 --> 00:09:44,480
+You see I've changed directory,
+okay, for a change of banner back.
+
+159
+00:09:44,480 --> 00:09:48,891
+Now instead of using cd space ..,
+you would use
+
+160
+00:09:48,891 --> 00:09:53,850
+back to exit a current payload or
+exploit or whatever.
+
+161
+00:09:53,850 --> 00:09:59,800
+Anyway you can apparently,
+can even change colors.
+
+162
+00:09:59,800 --> 00:10:00,630
+I'm not gonna do that now.
+
+163
+00:10:00,630 --> 00:10:02,840
+Now those are all aesthetics,
+doesn't matter.
+
+164
+00:10:02,840 --> 00:10:04,660
+So you have connected it.
+
+165
+00:10:04,660 --> 00:10:05,860
+Exit will exit completely.
+
+166
+00:10:05,860 --> 00:10:07,670
+That's how you quit.
+
+167
+00:10:09,960 --> 00:10:10,980
+MSFConsole.
+
+168
+00:10:10,980 --> 00:10:15,430
+We've got a lot of things down here,
+so help for help menus.
+
+169
+00:10:15,430 --> 00:10:19,950
+And you usually would use,
+space -H for commands here.
+
+170
+00:10:19,950 --> 00:10:21,790
+Just like you would use
+in a Linux shell as well.
+
+171
+00:10:21,790 --> 00:10:24,240
+It would give you a list of options.
+
+172
+00:10:24,240 --> 00:10:27,880
+Info, it displays info about modules.
+
+173
+00:10:29,420 --> 00:10:30,790
+We'll soon get into that.
+
+174
+00:10:30,790 --> 00:10:36,296
+You can also save jobs, because in
+Metasploit you can issues several jobs and
+
+175
+00:10:36,296 --> 00:10:38,848
+they can all run in the background.
+
+176
+00:10:38,848 --> 00:10:44,266
+And you can list them and then you can
+summon them into foreground as well
+
+177
+00:10:44,266 --> 00:10:50,160
+to see what is going on to give you real
+time update, so that's not a bad idea.
+
+178
+00:10:50,160 --> 00:10:52,850
+Now, you might get a, there's
+an option that goes like this, Search.
+
+179
+00:10:52,850 --> 00:10:56,782
+Now if you type in search, and there is
+a yellow flag telling you that you're
+
+180
+00:10:56,782 --> 00:10:59,800
+not connected to a database
+after all that we did thus far.
+
+181
+00:10:59,800 --> 00:11:00,990
+Well, we didn't do that much.
+
+182
+00:11:00,990 --> 00:11:07,440
+We just started two services basically.
+
+183
+00:11:07,440 --> 00:11:10,810
+We have given Metasploit
+a database to use.
+
+184
+00:11:10,810 --> 00:11:16,360
+Just go ahead and type in DB rebuild
+cache, the one that I am selecting now.
+
+185
+00:11:16,360 --> 00:11:20,456
+If that doesn't work,
+go ahead and exit Metasploit,
+
+186
+00:11:20,456 --> 00:11:23,580
+reset the computer and repeat the steps.
+
+187
+00:11:23,580 --> 00:11:24,340
+See if that helps you out.
+
+188
+00:11:24,340 --> 00:11:28,284
+If it doesn't help you out, come back on
+Udemy, post it in the discussions, and
+
+189
+00:11:28,284 --> 00:11:29,450
+I will see what I can do.
+
+190
+00:11:29,450 --> 00:11:35,370
+But just try resetting it a couple
+of times, resetting Metasploit,
+
+191
+00:11:35,370 --> 00:11:40,180
+resetting post SQL, and
+resetting reboot the system.
+
+192
+00:11:40,180 --> 00:11:42,190
+Don't know why sometimes it breaks.
+
+193
+00:11:44,530 --> 00:11:47,180
+I don't know.
+It's a free version, it's open source, and
+
+194
+00:11:47,180 --> 00:11:48,250
+it's fantastic.
+
+195
+00:11:48,250 --> 00:11:52,310
+But of course, it's not perfect.
+
+196
+00:11:52,310 --> 00:11:56,400
+So you have to work with me here and
+adapt a little bit.
+
+197
+00:11:56,400 --> 00:11:58,900
+Anyway, we will use some
+of these commands but
+
+198
+00:11:58,900 --> 00:12:03,950
+I wanted you to have a look at them,
+and just know how to summon them.
+
+199
+00:12:03,950 --> 00:12:06,750
+I would strongly recommend that you
+go at least through some of them,
+
+200
+00:12:06,750 --> 00:12:09,870
+through at least a couple more
+that we're going to use today,
+
+201
+00:12:11,410 --> 00:12:17,130
+just to familiarize yourself with a bit of
+extra information, as Metasploit is huge.
+
+202
+00:12:17,130 --> 00:12:18,000
+It is gigantic.
+
+203
+00:12:19,870 --> 00:12:21,530
+There are so many things in it.
+
+204
+00:12:21,530 --> 00:12:22,500
+There are so many exploits.
+
+205
+00:12:22,500 --> 00:12:23,810
+There are so many modules.
+
+206
+00:12:23,810 --> 00:12:29,585
+There are so many payloads.
+
+207
+00:12:29,585 --> 00:12:34,239
+It is ridiculous.
+
+208
+00:12:34,239 --> 00:12:36,390
+So let me just, banner.
+
+209
+00:12:36,390 --> 00:12:41,691
+Okay, so there are 1,400 there,
+900 here, 244 here,
+
+210
+00:12:41,691 --> 00:12:47,230
+363, 378, I think it sums up around 3k or
+something of a kind.
+
+211
+00:12:47,230 --> 00:12:49,297
+Not sure.
+
+212
+00:12:49,297 --> 00:12:54,757
+But 3,000 things to use in
+general is a pretty large number.
+
+213
+00:12:54,757 --> 00:12:57,457
+Plus Metasploit also supports scripting.
+
+214
+00:12:57,457 --> 00:13:01,920
+You can write your own scripts,
+you can use as payloads and deploy them.
+
+215
+00:13:01,920 --> 00:13:05,092
+It's just ridiculous how
+many options it possesses.
+
+216
+00:13:05,092 --> 00:13:09,148
+We're gonna through some of them today,
+but
+
+217
+00:13:09,148 --> 00:13:14,271
+I would strongly recommend
+that you keep on exploring and
+
+218
+00:13:14,271 --> 00:13:17,378
+see what else you can do with them.
+
+219
+00:13:17,378 --> 00:13:21,336
+Out of 3,000 things basically that
+are there something is bound to work.
+
+220
+00:13:21,336 --> 00:13:27,036
+So you have 1,443 exploits that you
+can attempt on various systems.
+
+221
+00:13:27,036 --> 00:13:31,830
+Because exploits come with payloads and
+axillary comes without payloads.
+
+222
+00:13:31,830 --> 00:13:37,331
+And if you just keep on trying,
+something is bound to work.
+
+223
+00:13:37,331 --> 00:13:39,803
+I mean,
+they pretty much got an exploit for
+
+224
+00:13:39,803 --> 00:13:43,250
+every single piece of code that
+was ever created out there.
+
+225
+00:13:43,250 --> 00:13:47,130
+Probably not like that but
+you get the idea.
+
+226
+00:13:47,130 --> 00:13:48,193
+You get what I'm saying.
+
+227
+00:13:48,193 --> 00:13:50,851
+Okay, so
+let's just clear it one more time.
+
+228
+00:13:50,851 --> 00:13:53,912
+I like to keep it neat,
+and now we're gonna,
+
+229
+00:13:53,912 --> 00:13:59,810
+today we're gonna actually generate an
+automatic reverse shelf for Windows 8.1.
+
+230
+00:13:59,810 --> 00:14:03,651
+How you deploy it is up to you.
+
+231
+00:14:03,651 --> 00:14:08,739
+You have the benefit of the previous
+tutorials of me showing you
+
+232
+00:14:08,739 --> 00:14:14,307
+a couple of things with the DNS and
+with Wi-Fi, and with all of that,
+
+233
+00:14:14,307 --> 00:14:19,779
+how you can redirect the users,
+how you can reroute their traffic,
+
+234
+00:14:19,779 --> 00:14:24,867
+how you can manipulate it and
+you can use some of those methods,
+
+235
+00:14:24,867 --> 00:14:29,859
+actually you can use almost all
+of them to actually inject this
+
+236
+00:14:29,859 --> 00:14:33,960
+sort of code onto your victim's computer.
+
+237
+00:14:33,960 --> 00:14:37,600
+Well, not to inject it, but actually to
+trick the user into downloading it and
+
+238
+00:14:37,600 --> 00:14:38,120
+into running it.
+
+239
+00:14:38,120 --> 00:14:42,740
+You can even force it by
+denying connection, or
+
+240
+00:14:42,740 --> 00:14:47,320
+by saying that it's a new security feature
+of a browser, or something of a kind.
+
+241
+00:14:47,320 --> 00:14:51,950
+Once the user is redirected to your
+website because if you alter the DNS
+
+242
+00:14:51,950 --> 00:14:57,680
+settings, you can basically say,
+whenever the user opens up a browser and
+
+243
+00:14:57,680 --> 00:15:02,508
+browses for any website, redirect him
+here, and you can just say, I don't know,
+
+244
+00:15:02,508 --> 00:15:08,440
+Firefox, or Internet Explorer
+
+245
+00:15:08,440 --> 00:15:12,240
+requires this piece of
+code as a security update.
+
+246
+00:15:12,240 --> 00:15:15,340
+You need to install, you just need
+to click here to install it and
+
+247
+00:15:15,340 --> 00:15:16,710
+they click there and they install it.
+
+248
+00:15:17,720 --> 00:15:18,980
+Guess what?
+
+249
+00:15:18,980 --> 00:15:21,245
+You have a reverse shell back to them.
+
+250
+00:15:21,245 --> 00:15:23,783
+It's not really that difficult.
+
+251
+00:15:23,783 --> 00:15:25,003
+It's not really that hard.
+
+252
+00:15:25,003 --> 00:15:29,436
+Play around with it and
+see how it works out for you.
+
+253
+00:15:29,436 --> 00:15:31,146
+Benefits can be numerous.
+
+254
+00:15:31,146 --> 00:15:36,564
+Anyway, before I actually go ahead and
+start generating reverse shells,
+
+255
+00:15:36,564 --> 00:15:42,506
+you also have an option search which you
+are gonna probably be using extensively.
+
+256
+00:15:42,506 --> 00:15:44,425
+Let's just usespace-h.
+
+257
+00:15:44,425 --> 00:15:48,086
+And here you have various
+arguments it can pass.
+
+258
+00:15:48,086 --> 00:15:50,185
+Here is how it actually looks like.
+
+259
+00:15:50,185 --> 00:15:53,225
+The example of the search command.
+
+260
+00:15:53,225 --> 00:15:55,405
+We will just go ahead type in search.
+
+261
+00:15:55,405 --> 00:16:00,545
+I like to use name, and
+what shall we use with name?
+
+262
+00:16:00,545 --> 00:16:06,787
+Let's say, I want meterpreter,
+
+263
+00:16:06,787 --> 00:16:10,666
+which is a listener.
+
+264
+00:16:10,666 --> 00:16:15,126
+It's a session that you can open.
+
+265
+00:16:15,126 --> 00:16:19,190
+If I got some of the terminology wrong,
+
+266
+00:16:19,190 --> 00:16:24,126
+feel free to hang me in
+the discussion section.
+
+267
+00:16:24,126 --> 00:16:31,566
+I'll be more than happy to
+accept any reviews or criticism.
+
+268
+00:16:31,566 --> 00:16:34,265
+Nobody's perfect.
+
+269
+00:16:34,265 --> 00:16:38,103
+But anyway, here you go,
+you have these payloads,
+
+270
+00:16:38,103 --> 00:16:41,865
+what else do we got, okay,
+so, yep, there we go.
+
+271
+00:16:41,865 --> 00:16:44,845
+These are a bit meter here.
+
+272
+00:16:44,845 --> 00:16:50,035
+Says payload for Android,
+I've only set at one
+
+273
+00:16:50,035 --> 00:16:55,486
+meterpreter and
+here it's usually reverse TCP,
+
+274
+00:16:55,486 --> 00:17:00,287
+blind TCP, reverse HTTP, reverse HTTPS,
+
+275
+00:17:00,287 --> 00:17:04,585
+so you can even encrypt the tri-fect.
+
+276
+00:17:04,585 --> 00:17:06,366
+You see there's one for Android for
+BSD, out of all operating systems.
+
+277
+00:17:07,865 --> 00:17:11,866
+There's Java one.
+
+278
+00:17:11,866 --> 00:17:15,956
+Java one will work on pretty much
+anything that has Java installed on it,
+
+279
+00:17:15,956 --> 00:17:18,386
+which is pretty much anything these days.
+
+280
+00:17:18,386 --> 00:17:25,665
+You even got ones for Linux via PHP.
+
+281
+00:17:25,665 --> 00:17:27,925
+PHP will work on pretty much
+anything out there as well.
+
+282
+00:17:27,925 --> 00:17:32,605
+Python, well if they have it
+installed sure, if not then not.
+
+283
+00:17:32,605 --> 00:17:36,740
+There we go, so there is payload for
+Windows meterpreter,
+
+284
+00:17:36,740 --> 00:17:40,805
+and then you have different
+variants of different types.
+
+285
+00:17:43,765 --> 00:17:47,152
+I have a specific one in mind
+that I planned to use today but
+
+286
+00:17:47,152 --> 00:17:49,140
+feel free to take a look at these.
+
+287
+00:17:49,140 --> 00:17:51,360
+You have descriptions here.
+
+288
+00:17:51,360 --> 00:17:52,820
+You have their rating here.
+
+289
+00:17:52,820 --> 00:17:55,500
+They can be poor, normal and excellent.
+
+290
+00:17:57,030 --> 00:18:00,665
+I think those three parameters apply, and
+
+291
+00:18:00,665 --> 00:18:04,490
+then you have a description
+here of what it actually does.
+
+292
+00:18:04,490 --> 00:18:06,990
+A brief description of how it is done.
+
+293
+00:18:08,280 --> 00:18:14,340
+Anyway, let's just go ahead and
+clear the screen.
+
+294
+00:18:14,340 --> 00:18:17,897
+Now that you have some of the basic
+options, in the follow up tutorial,
+
+295
+00:18:17,897 --> 00:18:21,890
+I'm gonna come back and actually generate
+a reverse shell and see how it works.
+
+296
+00:18:21,890 --> 00:18:25,171
+There will be a demo.
+
+297
+00:18:25,171 --> 00:18:26,930
+Until then, I bid you farewell.
+

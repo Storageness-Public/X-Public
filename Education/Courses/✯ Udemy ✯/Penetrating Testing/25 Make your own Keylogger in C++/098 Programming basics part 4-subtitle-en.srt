@@ -1,0 +1,766 @@
+1
+00:00:00,000 --> 00:00:02,700
+Welcome everybody to this tutorial.
+
+2
+00:00:02,700 --> 00:00:09,000
+Today we're gonna go ahead and do a quite an important lecture on functions.
+
+3
+00:00:09,000 --> 00:00:14,300
+So functions is something that we are going to need for the creation of our keylogger
+
+4
+00:00:14,300 --> 00:00:17,000
+and you will soon see what they are.
+
+5
+00:00:17,000 --> 00:00:21,000
+Basically, you create a function to group code
+
+6
+00:00:21,000 --> 00:00:28,279
+and let's say we create another function outside of our main function, in which everything gets code
+
+7
+00:00:28,279 --> 00:00:32,800
+and everything works through from the main function
+
+8
+00:00:32,800 --> 00:00:39,000
+but we can also create functions outside of main, and then code them within the main function.
+
+9
+00:00:39,000 --> 00:00:40,200
+Why will we need this?
+
+10
+00:00:40,200 --> 00:00:43,290
+Well as I said, we need to group certain parts of the code
+
+11
+00:00:43,290 --> 00:00:47,000
+and create different functionalities for our program
+
+12
+00:00:47,000 --> 00:00:53,500
+that we are going to incorporate later on in process of the creation of the keylogger.
+
+13
+00:00:53,500 --> 00:00:56,800
+Now here's a simple example --
+
+14
+00:00:56,800 --> 00:01:01,699
+Suppose you need a function to add two numbers
+
+15
+00:01:01,699 --> 00:01:08,110
+Do you want to really write a plus be every
+time I mean ok he's a really simple
+
+16
+00:01:08,110 --> 00:01:13,930
+example but suppose you need the you
+needed addition subtraction division and
+
+17
+00:01:13,930 --> 00:01:19,560
+multiplication so those could be four
+functions and they could get called
+
+18
+00:01:19,560 --> 00:01:26,360
+whenever you would need to divide or
+numbers or something like that
+
+19
+00:01:26,360 --> 00:01:30,759
+functions can do extremely complex
+things they can do pretty much any thing
+
+20
+00:01:30,759 --> 00:01:36,759
+you can imagine and you can separate
+your code with them and reuse it
+
+21
+00:01:36,759 --> 00:01:42,180
+basically so if you have a function that
+is intended for one purpose you might be
+
+22
+00:01:42,180 --> 00:01:46,189
+in need of that purpose at a certain any
+later point of time during the creation
+
+23
+00:01:46,189 --> 00:01:51,270
+of programs you can just reused that
+particular function let me shoot us in a
+
+24
+00:01:51,270 --> 00:01:58,219
+practical example and it will be a lot a
+lot clearer so up here above the main we
+
+25
+00:01:58,219 --> 00:02:03,460
+will declare our functions and down here
+we will find them so to see when we will
+
+26
+00:02:03,460 --> 00:02:05,079
+write the proper code for them
+
+27
+00:02:05,079 --> 00:02:10,340
+functions have a return type so for me
+it is an integer
+
+28
+00:02:10,340 --> 00:02:20,269
+a utopian turn 0 the statement read at
+this instruction return 0 it terminates
+
+29
+00:02:20,269 --> 00:02:28,530
+the program but 00 is a integer and you
+see here in front of the function will
+
+30
+00:02:28,530 --> 00:02:37,069
+you always have to specify the return
+type so what are the main reasons by the
+
+31
+00:02:37,069 --> 00:02:41,870
+way that I thought perhaps using
+strictly technical terms that he
+
+32
+00:02:41,870 --> 00:02:52,370
+full-time programmer or use as because I
+barely learned in terms of C++ in terms
+
+33
+00:02:52,370 --> 00:02:57,480
+of other programming languages the only
+two things that I needed for my purpose
+
+34
+00:02:57,480 --> 00:03:05,110
+which is pretty much a part and that is
+what I'm trying to impress upon you as
+
+35
+00:03:05,110 --> 00:03:06,400
+well
+
+36
+00:03:06,400 --> 00:03:13,910
+fewer ads not a way to make games or
+something like that is purely a way to
+
+37
+00:03:13,910 --> 00:03:21,190
+create pretty much malicious code which
+we are not going to abused but we are
+
+38
+00:03:21,190 --> 00:03:26,930
+going to use for benevolent purpose in
+any case it will be an illegal purpose
+
+39
+00:03:26,930 --> 00:03:33,260
+so yeah just throw that in somewhere
+
+40
+00:03:33,260 --> 00:03:39,160
+anyway let's go ahead and start breaking
+our first function this function will
+
+41
+00:03:39,160 --> 00:03:44,220
+return integer as well or even better
+let's go ahead and make this function
+
+42
+00:03:44,220 --> 00:03:54,010
+returns a double double and you can't AP
+in sales call this function and
+
+43
+00:03:54,010 --> 00:04:05,560
+dysfunction to double values double A
+and then chroma double B functions do
+
+44
+00:04:05,560 --> 00:04:12,239
+not necessarily need argument need to
+receive these values so I will show you
+
+45
+00:04:12,239 --> 00:04:15,560
+in a moment how you get past these
+values to function so it can also be
+
+46
+00:04:15,560 --> 00:04:18,820
+like this this part can be empty no big
+deal
+
+47
+00:04:18,820 --> 00:04:26,020
+it all depends what it is meant to do so
+we have declared a function here and we
+
+48
+00:04:26,020 --> 00:04:33,160
+have put least a semicolon here but down
+below we will open up curly brackets and
+
+49
+00:04:33,160 --> 00:04:44,360
+we will start writing or function or we
+need to do is type in their return as
+
+50
+00:04:44,360 --> 00:04:52,090
+we've taped him before in the main and
+we can just a peer a plus being that's
+
+51
+00:04:52,090 --> 00:04:58,060
+it that's all we need to do we we can
+you can of course rate in more complex
+
+52
+00:04:58,060 --> 00:05:04,220
+code but for the title just use this as
+a demonstration and now just a pin
+
+53
+00:05:04,220 --> 00:05:32,510
+see out here and i cant AP in five and
+five is over here so some and then open
+
+54
+00:05:32,510 --> 00:05:42,710
+parentheses and here would type in mypin
+35 colon
+
+55
+00:05:42,710 --> 00:05:49,400
+and let's go ahead pile that
+
+56
+00:05:49,400 --> 00:05:55,540
+the sum of three and five is this is
+basically the simplest example I could
+
+57
+00:05:55,540 --> 00:05:59,479
+give of pretty much the simplest
+function I could think up so it has a
+
+58
+00:05:59,479 --> 00:06:05,759
+return type of double it will return a
+doubled and we have named it sum you
+
+59
+00:06:05,759 --> 00:06:09,130
+could you can pretty much do you want as
+long as you use lowercase uppercase
+
+60
+00:06:09,130 --> 00:06:20,050
+letters underlines and then you have a
+double do double values inside 2002
+
+61
+00:06:20,050 --> 00:06:25,240
+double types inside this or not they
+don't have we have not a site that
+
+62
+00:06:25,240 --> 00:06:31,310
+values when we passed a min like this so
+just instead of writing this in here we
+
+63
+00:06:31,310 --> 00:06:37,620
+take in two values into a is substituted
+with 3d is given a value of three and
+
+64
+00:06:37,620 --> 00:06:45,380
+the is given a value of 5 which in turn
+is placed here which in turn is here
+
+65
+00:06:45,380 --> 00:06:53,160
+here there are added and did that value
+is returned so you can write these
+
+66
+00:06:53,160 --> 00:06:59,349
+functions for division and subtraction
+and pretty much all the functionalities
+
+67
+00:06:59,349 --> 00:07:04,370
+of week out later this is how to calc
+leaders are made you have a series of
+
+68
+00:07:04,370 --> 00:07:08,010
+these functions for every one of those
+options here actually with me just
+
+69
+00:07:08,010 --> 00:07:28,110
+calculator here
+
+70
+00:07:28,110 --> 00:07:33,870
+there we go so you have some basic
+functions here but if we switch to
+
+71
+00:07:33,870 --> 00:07:38,600
+scientific you have a lot more so you
+have these mathematical function here
+
+72
+00:07:38,600 --> 00:07:44,180
+cosine sine tension accept all of those
+functions have a mathematical
+
+73
+00:07:44,180 --> 00:07:51,850
+representation which in turn is written
+like this this would be for example of
+
+74
+00:07:51,850 --> 00:07:56,100
+function to add two numbers you could
+also write more complex mathematical
+
+75
+00:07:56,100 --> 00:08:00,930
+functions if that's something that you
+would be interested in what we gonna do
+
+76
+00:08:00,930 --> 00:08:06,760
+that now primarily because we needed and
+something is eating up my CPU well
+
+77
+00:08:06,760 --> 00:08:11,320
+apparently not just a slow virtual
+machine anyway
+
+78
+00:08:11,320 --> 00:08:17,670
+get so that would be one of them let's
+go ahead and deal with something else so
+
+79
+00:08:17,670 --> 00:08:25,510
+you can also have a void function which
+can do do something for you but it
+
+80
+00:08:25,510 --> 00:08:30,140
+doesn't necessarily need to return a
+number or anything about it doesn't need
+
+81
+00:08:30,140 --> 00:08:38,040
+to return a value so let's call this one
+
+82
+00:08:38,040 --> 00:08:48,150
+know what squalid welcome welcome and
+we're not gonna get any arguments but we
+
+83
+00:08:48,150 --> 00:08:59,700
+definitely can if we would like to do
+might do that a bit later on as in
+
+84
+00:08:59,700 --> 00:09:05,820
+voided doesn't return anything empty
+function of course there are things that
+
+85
+00:09:05,820 --> 00:09:11,460
+get the idea just saying that it cannot
+return a number in mind and we can just
+
+86
+00:09:11,460 --> 00:09:17,880
+a pins see out
+
+87
+00:09:17,880 --> 00:09:31,750
+well to somewhere where I have no idea
+
+88
+00:09:31,750 --> 00:09:40,200
+ok so let's put a semicolon the and and
+let's go ahead call this function down
+
+89
+00:09:40,200 --> 00:09:47,000
+below us see actual
+
+90
+00:09:47,000 --> 00:09:56,680
+but actually one would think here soon
+as something this is so much to show you
+
+91
+00:09:56,680 --> 00:10:03,290
+and i got a compressive welcome does not
+work
+
+92
+00:10:03,290 --> 00:10:09,300
+why does it not work or what is the
+problem let's go ahead and take a look
+
+93
+00:10:09,300 --> 00:10:13,820
+so
+
+94
+00:10:13,820 --> 00:10:22,680
+configuration parameters church and void
+
+95
+00:10:22,680 --> 00:10:38,970
+ok ok ok so we are this is able to
+actually deal with that but if I was
+
+96
+00:10:38,970 --> 00:10:43,520
+start explaining it that would be
+hilarious take forever but this is
+
+97
+00:10:43,520 --> 00:10:48,380
+actually pretty stupid this would be the
+equivalent of me typing in just take a
+
+98
+00:10:48,380 --> 00:10:52,950
+look at what I did I'm gonna write an
+example of why did they basically roads
+
+99
+00:10:52,950 --> 00:11:01,860
+see out and then something and then
+again see out and then again something
+
+100
+00:11:01,860 --> 00:11:10,910
+statement something just some random
+text so this is pretty stupid of my part
+
+101
+00:11:10,910 --> 00:11:12,089
+on my part
+
+102
+00:11:12,089 --> 00:11:16,040
+let's go ahead and just delete see out
+because we literally have no need for it
+
+103
+00:11:16,040 --> 00:11:20,790
+we can just call the function on its own
+and it will print out whatever we can to
+
+104
+00:11:20,790 --> 00:11:24,820
+protect and there you go
+
+105
+00:11:24,820 --> 00:11:38,270
+welcome to somewhere where no idea let's
+go ahead and tell here for center
+
+106
+00:11:38,270 --> 00:11:46,170
+so it has three and 58 welcome to
+somewhere I have no idea where if you
+
+107
+00:11:46,170 --> 00:11:57,070
+wanted to do vote like this you would
+need to get of course would need to be a
+
+108
+00:11:57,070 --> 00:12:03,770
+stream so a function that returns a
+string string is also another type of a
+
+109
+00:12:03,770 --> 00:12:11,050
+variable which can contain basically as
+I said spaces contain lots of letters
+
+110
+00:12:11,050 --> 00:12:15,600
+can pretty much tape in what ever you
+want
+
+111
+00:12:15,600 --> 00:12:27,700
+distinguished sure let's call it of
+course X and we're going to give it a
+
+112
+00:12:27,700 --> 00:12:39,400
+dream X gonna give it these ring X
+before we actually put it we will ask
+
+113
+00:12:39,400 --> 00:12:52,920
+the user kindly see out and what ever
+you would like
+
+114
+00:12:52,920 --> 00:13:06,200
+yeah actually do in a different sense
+well done and then we taped in C and
+
+115
+00:13:06,200 --> 00:13:09,720
+again we would need a some sort of a
+string in our main function because when
+
+116
+00:13:09,720 --> 00:13:15,380
+you define a variable inside a function
+somewhere that variable is only valid
+
+117
+00:13:15,380 --> 00:13:20,750
+for it that particular function there so
+let's go ahead and take the in string x
+
+118
+00:13:20,750 --> 00:13:25,320
+I can call this one again by the same
+name but it doesn't have any relation to
+
+119
+00:13:25,320 --> 00:13:33,400
+these three X in the function welcome
+here just leave it as it is and I will
+
+120
+00:13:33,400 --> 00:13:34,560
+take the end
+
+121
+00:13:34,560 --> 00:13:48,050
+see in X and will actually need a
+different on like this
+
+122
+00:13:48,050 --> 00:13:55,410
+get line
+
+123
+00:13:55,410 --> 00:13:59,040
+so this should work
+
+124
+00:13:59,040 --> 00:14:03,680
+decline is one of those functions that's
+embedded into C++ and it will use in
+
+125
+00:14:03,680 --> 00:14:09,790
+order to insert a whole line not just a
+single character and that's pretty much
+
+126
+00:14:09,790 --> 00:14:15,319
+all you need to know about Sealine this
+is its syntax you type in get low I need
+
+127
+00:14:15,319 --> 00:14:24,209
+a P&C in here and the newspaper stream
+here these text manipulation things will
+
+128
+00:14:24,209 --> 00:14:28,899
+come in handy later on we deal with a
+keylogger and down below
+
+129
+00:14:28,899 --> 00:14:32,269
+we're gonna go ahead and see see well
+come and we shall pass
+
+130
+00:14:32,269 --> 00:14:39,910
+expedite function that's actually so
+it's just go ahead
+
+131
+00:14:39,910 --> 00:14:47,699
+oh this look so the sum of three and
+five is eight enter whatever you would
+
+132
+00:14:47,699 --> 00:15:04,740
+like high here or take a wild guess
+their ego it says hi I am here or am I
+
+133
+00:15:04,740 --> 00:15:14,420
+take a wild guess there are several new
+things here basically the deadline which
+
+134
+00:15:14,420 --> 00:15:18,149
+we just need to see the syntax of it
+that's pretty much it you don't need to
+
+135
+00:15:18,149 --> 00:15:22,430
+completely understand it there is a
+whole background to this function and
+
+136
+00:15:22,430 --> 00:15:28,459
+you have these sort of functions which
+are basically just return types and you
+
+137
+00:15:28,459 --> 00:15:32,720
+type in the name whatever you like
+pretty much and specify the return type
+
+138
+00:15:32,720 --> 00:15:39,019
+in front of this fun this return type
+strain it will return a string string x
+
+139
+00:15:39,019 --> 00:15:46,870
+and that that X will be given to it by
+the user input so this is like an echo
+
+140
+00:15:46,870 --> 00:15:52,899
+something and it just gets printed back
+on the screen
+
+141
+00:15:52,899 --> 00:15:58,680
+fairly simple no lot of complications
+and just show you that
+
+142
+00:15:58,680 --> 00:16:03,000
+this would work without me actually
+importing anything it doesn't really
+
+143
+00:16:03,000 --> 00:16:17,510
+matter he doesn't need to have a X I can
+do this this this just say return and
+
+144
+00:16:17,510 --> 00:16:31,529
+then how is it going are you showing a
+totally see myself spending a lot of
+
+145
+00:16:31,529 --> 00:16:58,610
+things here to the horse is you use the
+slide my subliminal message that is
+
+146
+00:16:58,610 --> 00:17:03,740
+supposed to be like hidden in his number
+should do any harm
+
+147
+00:17:03,740 --> 00:17:17,520
+so go ahead and start over the program
+oh yes of course sorry to see out we
+
+148
+00:17:17,520 --> 00:17:26,410
+need something printed out because we've
+got from function and there we go
+
+149
+00:17:26,410 --> 00:17:30,630
+hey how's it going are you enjoyed the
+chorus please do not have used the
+
+150
+00:17:30,630 --> 00:17:36,990
+knowledge and at this particular
+function here says just turn that is all
+
+151
+00:17:36,990 --> 00:17:40,990
+the difference do it now you also have
+these things
+
+152
+00:17:40,990 --> 00:17:51,420
+charge hrs see this would be a single
+characters that single quotes there it
+
+153
+00:17:51,420 --> 00:17:58,910
+can be whatever character you would like
+it to be so what's a character something
+
+154
+00:17:58,910 --> 00:17:59,670
+like that
+
+155
+00:17:59,670 --> 00:18:02,380
+see out
+
+156
+00:18:02,380 --> 00:18:17,190
+and if I just go ahead and go just ate
+no big deal so we have charged and we
+
+157
+00:18:17,190 --> 00:18:26,320
+have a string which we can play around
+with complex things because we will need
+
+158
+00:18:26,320 --> 00:18:31,540
+strength that there'll be a lot of pics
+with a keylogger and there's no way of
+
+159
+00:18:31,540 --> 00:18:35,310
+doing it without strings or jars anyway
+
+160
+00:18:35,310 --> 00:18:38,280
+Jul farewell until next oriole
+

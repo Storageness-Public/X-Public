@@ -1,0 +1,867 @@
+1
+00:00:00,310 --> 00:00:01,200
+Welcome back everybody.
+
+2
+00:00:01,200 --> 00:00:05,700
+We're just going to go ahead and
+create a persistent reverse shell.
+
+3
+00:00:07,320 --> 00:00:08,630
+We already have a reverse shell.
+
+4
+00:00:08,630 --> 00:00:09,860
+We're just gonna make it persistent.
+
+5
+00:00:09,860 --> 00:00:12,030
+That would be a better way to put it.
+
+6
+00:00:12,030 --> 00:00:14,940
+Anyway, hopefully you have
+the same setup as before.
+
+7
+00:00:14,940 --> 00:00:16,660
+If not, just go ahead and
+repeat the steps.
+
+8
+00:00:16,660 --> 00:00:18,080
+No big deal.
+
+9
+00:00:18,080 --> 00:00:21,670
+Let me just show you sessions- l.
+
+10
+00:00:21,670 --> 00:00:23,370
+I still have it up and running here.
+
+11
+00:00:23,370 --> 00:00:24,640
+My session IDs are 5 and 6.
+
+12
+00:00:24,640 --> 00:00:28,710
+Yours will be probably different if
+you have decided to redo the process.
+
+13
+00:00:29,750 --> 00:00:32,200
+Or if you were doing the process
+like me in the first place,
+
+14
+00:00:32,200 --> 00:00:33,790
+you'll probably have
+different session IDs.
+
+15
+00:00:33,790 --> 00:00:37,030
+It'll probably be 1 and 2 or something
+of a kind because I've opened quite
+
+16
+00:00:37,030 --> 00:00:38,940
+a bit of them and I haven't closed MSF.
+
+17
+00:00:38,940 --> 00:00:41,870
+I have not cleared the cache or
+anything of a kind.
+
+18
+00:00:41,870 --> 00:00:42,620
+Doesn't really matter.
+
+19
+00:00:42,620 --> 00:00:44,800
+Different session IDs
+don'really mean that much.
+
+20
+00:00:44,800 --> 00:00:45,795
+You can just change them.
+
+21
+00:00:45,795 --> 00:00:47,716
+That's just one number
+in the whole command.
+
+22
+00:00:47,716 --> 00:00:51,510
+Be careful about that.
+
+23
+00:00:51,510 --> 00:00:56,936
+Anyway, once you go ahead and
+bring one of the sessions into foreground,
+
+24
+00:00:56,936 --> 00:01:02,731
+session 6 is the one with elevated
+privileges, so let's go ahead and use it.
+
+25
+00:01:02,731 --> 00:01:06,688
+And just like I showed you before,
+sessions -i 6.
+
+26
+00:01:06,688 --> 00:01:10,965
+So this session ID, you see where I'm
+typing 6 here, might be different for you.
+
+27
+00:01:10,965 --> 00:01:13,301
+Just change it accordingly.
+
+28
+00:01:13,301 --> 00:01:17,824
+Press Enter, there we go,
+meterpreter is now up and running.
+
+29
+00:01:17,824 --> 00:01:22,302
+So if I just, I cannot clear the screen
+here, this is annoying beyond belief.
+
+30
+00:01:24,767 --> 00:01:26,602
+Excellent.
+
+31
+00:01:26,602 --> 00:01:27,988
+So what do we need here?
+
+32
+00:01:27,988 --> 00:01:33,516
+We need to type in run persistence -h for
+
+33
+00:01:33,516 --> 00:01:37,100
+help menu and wait for it.
+
+34
+00:01:37,100 --> 00:01:38,440
+There we go.
+
+35
+00:01:40,600 --> 00:01:42,130
+So we got several options here.
+
+36
+00:01:42,130 --> 00:01:46,360
+It says automatically start a matching
+multi/handler to connect to the agent.
+
+37
+00:01:46,360 --> 00:01:49,930
+Location, payload use,
+automatically start the agent, alternate.
+
+38
+00:01:49,930 --> 00:01:51,980
+There are a lot of things.
+
+39
+00:01:51,980 --> 00:01:56,620
+We want this one, automatically start
+the agent when the system boots.
+
+40
+00:01:56,620 --> 00:02:02,460
+Feel free to experiment with pretty much
+anything else here that you can see.
+
+41
+00:02:02,460 --> 00:02:04,520
+Use different ones.
+
+42
+00:02:04,520 --> 00:02:07,680
+See what sort of options will you get.
+
+43
+00:02:07,680 --> 00:02:13,573
+But they will work on pretty much the same
+principle like what I'm going to do now.
+
+44
+00:02:13,573 --> 00:02:19,610
+I just want the agent to boot immediately
+when somebody turns on the computer.
+
+45
+00:02:19,610 --> 00:02:24,090
+And that is what interests me the most.
+
+46
+00:02:24,090 --> 00:02:27,906
+[SOUND] So, same as before,
+run persistence space -h.
+
+47
+00:02:27,906 --> 00:02:32,950
+Instead of space -h, you must type in -X.
+
+48
+00:02:32,950 --> 00:02:35,200
+Press Enter and wait for it.
+
+49
+00:02:35,200 --> 00:02:39,674
+[SOUND] Running,
+installing persistence script.
+
+50
+00:02:39,674 --> 00:02:40,239
+Excellent.
+
+51
+00:02:41,440 --> 00:02:46,268
+So one of the bad things about this is
+that these sessions don't actually require
+
+52
+00:02:46,268 --> 00:02:47,761
+any login credentials.
+
+53
+00:02:47,761 --> 00:02:54,140
+Anyone listening to this, yeah,
+they would be able to connect.
+
+54
+00:02:54,140 --> 00:02:59,572
+Anybody following through the connections,
+anybody attempting to connect would
+
+55
+00:02:59,572 --> 00:03:05,093
+be able to listen for the connections that
+are being transmitted from the other end.
+
+56
+00:03:05,093 --> 00:03:06,511
+They would be able to,
+
+57
+00:03:06,511 --> 00:03:11,226
+well not perhaps connect directly
+because the IP addresses are set there.
+
+58
+00:03:11,226 --> 00:03:14,288
+But those IP addresses,
+if you're going over the net, are dynamic.
+
+59
+00:03:14,288 --> 00:03:17,168
+And if you're in LAN, okay maybe
+there's static, maybe there's static,
+
+60
+00:03:17,168 --> 00:03:18,380
+maybe they're dynamic in LAN.
+
+61
+00:03:18,380 --> 00:03:20,118
+I don't know,
+depending on how it was configured.
+
+62
+00:03:20,118 --> 00:03:24,661
+But they will still definitely be able
+to listen to the traffic as well.
+
+63
+00:03:24,661 --> 00:03:26,293
+So that's gonna be a bit problematic.
+
+64
+00:03:29,537 --> 00:03:31,158
+And it's an open type connection.
+
+65
+00:03:31,158 --> 00:03:33,035
+It only depends on the IP address.
+
+66
+00:03:33,035 --> 00:03:40,060
+There are no actual log in
+credentials which is not really nice.
+
+67
+00:03:40,060 --> 00:03:46,180
+However, remember to clean
+up after yourselves.
+
+68
+00:03:46,180 --> 00:03:48,150
+It says here resource file for cleanup.
+
+69
+00:03:49,180 --> 00:03:50,750
+You can see where it is.
+
+70
+00:03:50,750 --> 00:03:52,750
+The first line I believe.
+
+71
+00:03:52,750 --> 00:03:58,000
+And then it says installing into autorun
+as HKLM\Software CurrentVersion.
+
+72
+00:03:58,000 --> 00:04:01,500
+This is the regedit files
+if I'm not mistaken.
+
+73
+00:04:01,500 --> 00:04:02,825
+There you can see it as well.
+
+74
+00:04:02,825 --> 00:04:06,290
+And here you can see where
+the script is located.
+
+75
+00:04:06,290 --> 00:04:08,170
+It's actually a visual basic script.
+
+76
+00:04:09,740 --> 00:04:10,980
+That's not a surprise really.
+
+77
+00:04:12,540 --> 00:04:14,700
+Anyway, you get the idea here.
+
+78
+00:04:14,700 --> 00:04:18,850
+Now the persistence is up and running,
+the meterpreter is up and running.
+
+79
+00:04:18,850 --> 00:04:21,520
+Let's just try to reboot
+the system on the other end and
+
+80
+00:04:22,710 --> 00:04:24,930
+see what happens if I type in help.
+
+81
+00:04:24,930 --> 00:04:32,080
+I'm sure that the command for reboot is
+reboot, but let's just be certain of that.
+
+82
+00:04:32,080 --> 00:04:32,640
+Come on.
+
+83
+00:04:33,730 --> 00:04:35,470
+Read, resource, run.
+
+84
+00:04:35,470 --> 00:04:35,970
+Nope.
+
+85
+00:04:38,010 --> 00:04:40,480
+Upload, search okay there.
+
+86
+00:04:40,480 --> 00:04:41,966
+It doesn't seem to be here.
+
+87
+00:04:44,376 --> 00:04:45,520
+Okay so here it is.
+
+88
+00:04:45,520 --> 00:04:50,460
+Reboots the remote computer system
+under system commands of course.
+
+89
+00:04:50,460 --> 00:04:54,210
+Me, being a genius that I am,
+looking in wrong places all the time.
+
+90
+00:04:54,210 --> 00:04:55,213
+So type in reboot.
+
+91
+00:04:55,213 --> 00:04:56,830
+And this is unlikely to work.
+
+92
+00:04:58,680 --> 00:05:00,450
+Operation failed.
+
+93
+00:05:00,450 --> 00:05:02,250
+Let's see if the Windows
+machine is still running.
+
+94
+00:05:02,250 --> 00:05:02,820
+It is.
+
+95
+00:05:03,840 --> 00:05:04,620
+Yep, there we go.
+
+96
+00:05:04,620 --> 00:05:05,530
+No problems there.
+
+97
+00:05:05,530 --> 00:05:06,850
+No change has taken effect.
+
+98
+00:05:08,070 --> 00:05:10,460
+As I said, some commands here will work,
+some will not.
+
+99
+00:05:10,460 --> 00:05:14,115
+But you always have the option
+of typing in shell and
+
+100
+00:05:14,115 --> 00:05:16,750
+then doing it manually yourselves.
+
+101
+00:05:16,750 --> 00:05:21,763
+Type in shutdown /r, press Enter.
+
+102
+00:05:21,763 --> 00:05:23,768
+Oh, access is denied.
+
+103
+00:05:25,868 --> 00:05:27,020
+Which session have I opened?
+
+104
+00:05:35,329 --> 00:05:38,146
+Meterpreter session 6 closed.
+
+105
+00:05:38,146 --> 00:05:42,145
+Oh no, I've closed it,
+that's not what I want.
+
+106
+00:05:42,145 --> 00:05:43,296
+But it doesn't really matter.
+
+107
+00:05:43,296 --> 00:05:45,600
+The persistence is still
+running on the other side.
+
+108
+00:05:45,600 --> 00:05:46,997
+Let's just see.
+
+109
+00:05:46,997 --> 00:05:50,220
+I do believe that I have
+another one that is running.
+
+110
+00:05:50,220 --> 00:05:56,278
+Okay, session 5 is running, sessions -i 5.
+
+111
+00:05:56,278 --> 00:05:56,960
+Press Enter.
+
+112
+00:05:56,960 --> 00:06:01,473
+Interaction is active, shell,
+
+113
+00:06:01,473 --> 00:06:04,703
+meterpreter is there.
+
+114
+00:06:04,703 --> 00:06:08,704
+Process, you gonna give me the shell?
+
+115
+00:06:08,704 --> 00:06:11,790
+Yep, you will give me the shell.
+
+116
+00:06:11,790 --> 00:06:13,032
+Let's go cd.
+
+117
+00:06:13,032 --> 00:06:18,010
+I'm gonna exit out of here and
+then shutdown /r.
+
+118
+00:06:18,010 --> 00:06:23,369
+Shutdown is not, oh, shutdown /r.
+
+119
+00:06:26,728 --> 00:06:28,200
+Are you gonna do it?
+
+120
+00:06:28,200 --> 00:06:30,970
+Okay, so
+there's a default timer of one minute.
+
+121
+00:06:30,970 --> 00:06:32,380
+I should've configured a timer.
+
+122
+00:06:32,380 --> 00:06:36,270
+As well if I just type it in one more time
+
+123
+00:06:36,270 --> 00:06:40,710
+you will see, a system shutdown
+has already been scheduled.
+
+124
+00:06:40,710 --> 00:06:45,850
+So, this is gonna start pretty soon.
+
+125
+00:06:45,850 --> 00:06:46,780
+Should've given a timer.
+
+126
+00:06:46,780 --> 00:06:48,220
+Let's see, shutdown /r /t 0.
+
+127
+00:06:48,220 --> 00:06:52,570
+Will this work better?
+
+128
+00:06:53,700 --> 00:06:54,960
+Excellent.
+So it will.
+
+129
+00:06:54,960 --> 00:06:57,443
+If you give it a time,
+it's gonna shut down immediately.
+
+130
+00:06:57,443 --> 00:07:01,492
+If you don't give it a time, I think
+the default is one minute which is,
+
+131
+00:07:01,492 --> 00:07:02,381
+I don't know.
+
+132
+00:07:02,381 --> 00:07:05,248
+I guess I could have waited,
+but it's a tutorial,
+
+133
+00:07:05,248 --> 00:07:07,200
+so I didn't wanna waste any time.
+
+134
+00:07:07,200 --> 00:07:12,510
+Anyway, you can see that the Windows
+8.1 machine is actually rebooting.
+
+135
+00:07:12,510 --> 00:07:16,206
+And what you need to do on the other end,
+
+136
+00:07:16,206 --> 00:07:20,240
+just press Enter here and type in session.
+
+137
+00:07:23,557 --> 00:07:25,103
+No active sessions.
+
+138
+00:07:25,103 --> 00:07:29,520
+Okay, so just go as before.
+
+139
+00:07:29,520 --> 00:07:35,067
+Use exploit multi handler,
+
+140
+00:07:35,067 --> 00:07:41,315
+use explot/multi/handler.
+
+141
+00:07:41,315 --> 00:07:46,063
+And let's see, show options, cuz you
+need to reopen it again on your end.
+
+142
+00:07:46,063 --> 00:07:47,770
+Excellent.
+
+143
+00:07:47,770 --> 00:07:50,440
+So all seems to be in order here.
+
+144
+00:07:50,440 --> 00:07:54,230
+If I type in exploit, it's listening.
+
+145
+00:07:54,230 --> 00:07:56,360
+So as soon as the.
+
+146
+00:07:56,360 --> 00:07:59,160
+Okay, the machine has booted,
+but I haven't really logged in.
+
+147
+00:07:59,160 --> 00:08:04,554
+Let me just login and
+see what happens on the other end.
+
+148
+00:08:04,554 --> 00:08:09,560
+[SOUND] Windows, Kali.
+
+149
+00:08:09,560 --> 00:08:10,708
+No, nothing?
+
+150
+00:08:10,708 --> 00:08:14,429
+Come on be a pal here.
+
+151
+00:08:15,880 --> 00:08:19,622
+Start up.
+
+152
+00:08:19,622 --> 00:08:21,125
+It just started, I interrupted it.
+
+153
+00:08:21,125 --> 00:08:22,587
+But oh, no, okay.
+
+154
+00:08:22,587 --> 00:08:28,561
+It did open, meterpreter session opened,
+
+155
+00:08:28,561 --> 00:08:32,602
+so if I type in shell, shell.
+
+156
+00:08:36,100 --> 00:08:39,393
+I don't know.
+It didn't work the first time,
+
+157
+00:08:39,393 --> 00:08:40,880
+but let's see.
+
+158
+00:08:40,880 --> 00:08:42,520
+Just cd, cd, dir.
+
+159
+00:08:42,520 --> 00:08:43,340
+There we go.
+
+160
+00:08:43,340 --> 00:08:46,450
+I am effectively in a Windows machine and
+I can do, again,
+
+161
+00:08:46,450 --> 00:08:50,480
+whatever I want to it
+from this point onwards.
+
+162
+00:08:50,480 --> 00:08:53,960
+I am in command of this Windows machine.
+
+163
+00:08:53,960 --> 00:08:55,630
+I am omnipotent on it.
+
+164
+00:08:55,630 --> 00:08:57,120
+I have greater power than the user.
+
+165
+00:08:57,120 --> 00:09:02,463
+I just don't have the access to
+that shutdown physical button.
+
+166
+00:09:02,463 --> 00:09:06,804
+But anyway, I don't know,
+it does make some difference I guess, but
+
+167
+00:09:06,804 --> 00:09:08,288
+nothing significant.
+
+168
+00:09:08,288 --> 00:09:09,838
+You have full control over the machine.
+
+169
+00:09:09,838 --> 00:09:13,679
+You can do, from this point on,
+you can do whatever you want to it.
+
+170
+00:09:13,679 --> 00:09:16,460
+Your options are countless.
+
+171
+00:09:16,460 --> 00:09:20,540
+I've already showed you where you can find
+the options for key logging and web cam.
+
+172
+00:09:22,200 --> 00:09:23,490
+Web cam is actually quite nice.
+
+173
+00:09:23,490 --> 00:09:25,900
+It does take up quite a bit of bandwidth.
+
+174
+00:09:25,900 --> 00:09:29,060
+And keep in mind, that somebody's
+going to be able to see when you
+
+175
+00:09:29,060 --> 00:09:33,325
+turn the web cam on because
+the light is gonna be turned on.
+
+176
+00:09:33,325 --> 00:09:37,620
+However, I was honestly
+surprised when I saw that people
+
+177
+00:09:37,620 --> 00:09:39,070
+didn't actually notice that always.
+
+178
+00:09:39,070 --> 00:09:41,670
+They do notice it after awhile,
+but not immediately.
+
+179
+00:09:44,030 --> 00:09:45,880
+Anyway, feel free to play around.
+
+180
+00:09:46,900 --> 00:09:48,620
+Do whatever you wish with it.
+
+181
+00:09:48,620 --> 00:09:51,800
+Try to find new ways of doing this.
+
+182
+00:09:51,800 --> 00:09:54,710
+Of elevating privileges,
+try out other exploits.
+
+183
+00:09:54,710 --> 00:10:00,850
+And feel free to report your results
+on Udemy in the discussions.
+
+184
+00:10:00,850 --> 00:10:03,690
+And if you get stuck with anything,
+as always,
+
+185
+00:10:03,690 --> 00:10:06,210
+I am more than happy to help you out.
+
+186
+00:10:07,980 --> 00:10:10,240
+Just ask your questions away.
+
+187
+00:10:10,240 --> 00:10:13,140
+Quick reminder, I had mentioned in
+one of the other tutorials as well.
+
+188
+00:10:13,140 --> 00:10:19,940
+If you could boast the error
+messages that you get immediately,
+
+189
+00:10:19,940 --> 00:10:24,570
+that does help me a lot
+when solving your problem.
+
+190
+00:10:24,570 --> 00:10:28,510
+And if you type in the exact command that
+you used, and if you type in the exact
+
+191
+00:10:28,510 --> 00:10:33,800
+error that you got from the system,
+that does help me a great deal because
+
+192
+00:10:33,800 --> 00:10:39,590
+then I can provide the solution far faster
+than you describing your problem and
+
+193
+00:10:39,590 --> 00:10:42,990
+then me asking what your messages and
+what the command is.
+
+194
+00:10:42,990 --> 00:10:45,450
+And you get one or
+
+195
+00:10:45,450 --> 00:10:50,480
+two unnecessary cycles as opposed to
+just going immediately to the problem.
+
+196
+00:10:52,180 --> 00:10:56,330
+Anyway, I bid you all farewell and
+I hope to see you in the next tutorial.
+

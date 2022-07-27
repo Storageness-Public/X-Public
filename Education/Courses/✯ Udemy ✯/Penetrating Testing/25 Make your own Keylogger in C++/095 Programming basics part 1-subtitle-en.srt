@@ -1,0 +1,793 @@
+1
+00:00:00,000 --> 00:00:04,300
+Welcome all to this tutorial.
+
+2
+00:00:04,300 --> 00:00:10,000
+Today I will go ahead and begin the crash course C++
+
+3
+00:00:10,000 --> 00:00:17,700
+Keep in mind that we will mainly learn things that will be of to us in order to create a keylogger
+
+4
+00:00:17,700 --> 00:00:20,700
+but before we can get into the creation of the keylogger
+
+5
+00:00:20,700 --> 00:00:23,700
+we have to go through some basic things
+
+6
+00:00:23,700 --> 00:00:28,500
+so that you would actually understand the code that you see before yourselves
+
+7
+00:00:28,500 --> 00:00:34,000
+I will give you fairly good explanations of what I am doing here
+
+8
+00:00:34,000 --> 00:00:38,600
+and of some basic terms that you will need
+
+9
+00:00:38,600 --> 00:00:43,300
+and then later on, as we keep on progressing through the creation of the keylogger
+
+10
+00:00:43,300 --> 00:00:47,320
+you will learn more and more and more and more
+
+11
+00:00:47,320 --> 00:00:53,200
+until eventually you pretty much figure it all out.
+
+12
+00:00:53,200 --> 00:00:56,200
+Now let's go ahead and begin, shall we?
+
+13
+00:00:56,200 --> 00:01:00,030
+Last time you saw a program hello world run printed out
+
+14
+00:01:00,030 --> 00:01:04,570
+something onto the screen now let's see
+let's let's let's go ahead and try to
+
+15
+00:01:04,570 --> 00:01:10,780
+understand the first of all you have
+this includes statement here and it says
+
+16
+00:01:10,780 --> 00:01:17,810
+basically iostream include your
+including libraries and other things
+
+17
+00:01:17,810 --> 00:01:22,200
+yeah so libraries and other things I
+know how it sounds
+
+18
+00:01:22,200 --> 00:01:28,470
+believe me that is all you need to know
+for the time being basically the
+
+19
+00:01:28,470 --> 00:01:34,390
+contents of this file just comes in
+front of the main function and it's
+
+20
+00:01:34,390 --> 00:01:39,600
+taken into consideration by the program
+why do we need this well so that we can
+
+21
+00:01:39,600 --> 00:01:47,280
+write see out we wouldn't be able to
+rate see out without iostream also slash
+
+22
+00:01:47,280 --> 00:01:53,070
+slash is a comment line so it just means
+that that particular line will not be
+
+23
+00:01:53,070 --> 00:01:57,479
+taken into consideration by the system
+that's just something that we use as
+
+24
+00:01:57,479 --> 00:02:02,219
+reference for our cells and four other
+people who read through the code you can
+
+25
+00:02:02,219 --> 00:02:07,140
+also use multi comment multi-line
+comments like this just write in a
+
+26
+00:02:07,140 --> 00:02:08,270
+stream
+
+27
+00:02:08,270 --> 00:02:14,080
+/ Asterix and then at the end rate in
+Asterix / and that all that intersection
+
+28
+00:02:14,080 --> 00:02:20,550
+will be taken will be taken out of the
+consideration by the machine over here
+
+29
+00:02:20,550 --> 00:02:26,110
+you see it immediately says that it
+immediately gives you a red underline of
+
+30
+00:02:26,110 --> 00:02:31,410
+see out doesn't recognize it because we
+have commented out this library so let's
+
+31
+00:02:31,410 --> 00:02:39,380
+go ahead and delete this and see out is
+perfectly fine and dandy now except it's
+
+32
+00:02:39,380 --> 00:02:43,910
+missing a few things that we will take
+in now so tape in less and less than
+
+33
+00:02:43,910 --> 00:02:45,890
+sign a pin
+
+34
+00:02:45,890 --> 00:03:08,320
+hey hey it is for its 4 o'clock at my
+place now and awake if we just go ahead
+
+35
+00:03:08,320 --> 00:03:09,100
+and press Enter
+
+36
+00:03:09,100 --> 00:03:18,470
+2010 we need a semicolon Germany and
+Karen 02 pretty much finished program go
+
+37
+00:03:18,470 --> 00:03:26,970
+ahead and take press Ctrl F 11 to Reddit
+and every code it says hey it is 4
+
+38
+00:03:26,970 --> 00:03:33,950
+o'clock at my place and it's for plucked
+my place now and I am awake so we've
+
+39
+00:03:33,950 --> 00:03:41,240
+successfully managed to print this onto
+the screen now weekend go ahead and play
+
+40
+00:03:41,240 --> 00:03:50,740
+around with it a little bit of a pin and
+Elton sir a new line but you need lesser
+
+41
+00:03:50,740 --> 00:03:57,130
+then lets you then and we can also do
+this this the simple fact that we
+
+42
+00:03:57,130 --> 00:04:01,060
+pressed enter here does not mean that
+program into the new line this is just
+
+43
+00:04:01,060 --> 00:04:05,580
+purely for aesthetic purposes for us it
+makes no difference whatsoever
+
+44
+00:04:05,580 --> 00:04:11,870
+machine until we actually tell us and
+you line with and L and now we can go
+
+45
+00:04:11,870 --> 00:04:25,010
+in Western Western Cape in another
+sentence why awake now so that's it
+
+46
+00:04:25,010 --> 00:04:30,650
+going through going through there we go
+
+47
+00:04:30,650 --> 00:04:35,880
+says you have the initial state you have
+the initial sentence which is here and
+
+48
+00:04:35,880 --> 00:04:40,639
+then you have and L and then you have
+this just to make a point here
+
+49
+00:04:40,639 --> 00:04:51,000
+delete or if I just a pin can tell if I
+just commented out can do dis going
+
+50
+00:04:51,000 --> 00:04:55,280
+through and you see now it's a single
+line it makes no difference whatsoever
+
+51
+00:04:55,280 --> 00:05:00,000
+to replace this section in a different
+line here until we actually tell the
+
+52
+00:05:00,000 --> 00:05:07,580
+program so that would be see out that's
+how you print something out now they're
+
+53
+00:05:07,580 --> 00:05:12,510
+now if you want to insert something into
+the system if you want to emphasize
+
+54
+00:05:12,510 --> 00:05:17,039
+something healthy certainly if you want
+to put something you would use see in
+
+55
+00:05:17,039 --> 00:05:23,330
+but before we can actually go into sea
+in just talking about a concept which is
+
+56
+00:05:23,330 --> 00:05:28,210
+common to all programming languages
+which is variables which variables
+
+57
+00:05:28,210 --> 00:05:36,889
+variables are memory locations allocated
+in ran that's their used in order to
+
+58
+00:05:36,889 --> 00:05:45,280
+store data basically you have a lot of
+variables see a lot of variable types
+
+59
+00:05:45,280 --> 00:05:48,970
+let's put it so that the correct way of
+putting it
+
+60
+00:05:48,970 --> 00:06:05,400
+you have in low flow there are there are
+there are others training and so on and
+
+61
+00:06:05,400 --> 00:06:05,849
+so forth
+
+62
+00:06:05,849 --> 00:06:09,680
+we're gonna get to do no worries there
+but for the time being
+
+63
+00:06:09,680 --> 00:06:16,099
+let's deal with it so integers it just
+basically just whole numbers meaning
+
+64
+00:06:16,099 --> 00:06:21,590
+12345 1010 billion in five
+
+65
+00:06:21,590 --> 00:06:27,560
+11 something like that so does would be
+integers let's let's get let's create an
+
+66
+00:06:27,560 --> 00:06:39,700
+interview so in a equals then semicolon
+and I could have also done this the
+
+67
+00:06:39,700 --> 00:06:46,690
+equals 20 all these places they're just
+Julie first for aesthetic reasons
+
+68
+00:06:46,690 --> 00:06:53,140
+they're not needed by the program by the
+machine you also have another variable
+
+69
+00:06:53,140 --> 00:06:59,760
+type which is a double those are numbers
+with the small points so fight AP in C
+
+70
+00:06:59,760 --> 00:07:09,170
+equals ten-point 10.3% AP in D
+
+71
+00:07:09,170 --> 00:07:25,120
+the equals 62234 those would be doubles
+next up if I type in Sialkot they close
+
+72
+00:07:25,120 --> 00:07:45,220
+attention here- see out enter the values
+for a and B give it and we'll see and
+
+73
+00:07:45,220 --> 00:08:01,060
+greater Denver greater than sign that in
+mind and then we shall taken co2
+
+74
+00:08:01,060 --> 00:08:27,060
+values of a and B value of a space less
+than less than and L because we would
+
+75
+00:08:27,060 --> 00:08:53,330
+like a new line of value apps be and we
+need to do this so value of a is a and
+
+76
+00:08:53,330 --> 00:09:04,930
+value of b is basically be and we don't
+really needed here so I just go ahead
+
+77
+00:09:04,930 --> 00:09:13,980
+and put it like this icon and let's go
+ahead and run the program
+
+78
+00:09:13,980 --> 00:09:19,180
+existent required project now this is
+how well aside from just knowing that
+
+79
+00:09:19,180 --> 00:09:24,830
+scenario where tells you that you go and
+take a look at the code and you go and
+
+80
+00:09:24,830 --> 00:09:30,850
+take a look at the lines close to the
+one where you have a red X mark so let's
+
+81
+00:09:30,850 --> 00:09:34,940
+see what what sort of mistake did we
+meet here so first thought can you
+
+82
+00:09:34,940 --> 00:09:40,370
+spotted just take a look it's in this
+line for sure it doesn't always the
+
+83
+00:09:40,370 --> 00:09:45,430
+Sunni to be it can be in the preceding
+lines lines that come afterwards but
+
+84
+00:09:45,430 --> 00:09:49,890
+take a look in see out is that of using
+less than less than we used greater
+
+85
+00:09:49,890 --> 00:09:58,490
+denigrated n so just changed out and it
+should run now so enter the values for
+
+86
+00:09:58,490 --> 00:10:03,649
+A&B go ahead and tape in 50 and then
+take pain
+
+87
+00:10:03,649 --> 00:10:15,589
+30 value fee is 50 value of b is 38 UCC
+AC even do we have assigned values we
+
+88
+00:10:15,589 --> 00:10:20,230
+could have we've reassigned be
+reassigned him with user input so the
+
+89
+00:10:20,230 --> 00:10:27,379
+user has placed seven different values
+here and we can also changed is to be a
+
+90
+00:10:27,379 --> 00:10:45,040
+bit premier just a entered value and to
+develop you of a just and after you have
+
+91
+00:10:45,040 --> 00:10:59,779
+entered the value of a you can hear
+
+92
+00:10:59,779 --> 00:11:21,170
+ok so rigid and greeted n entered the
+value be and do dis yeah we will need
+
+93
+00:11:21,170 --> 00:11:26,949
+and L and I will explain in a moment
+
+94
+00:11:26,949 --> 00:11:37,459
+CNNA and now we need to enter B C in B
+let's run the program to see if
+
+95
+00:11:37,459 --> 00:11:47,240
+everything works well it says enter the
+value of a but since replaced and the
+
+96
+00:11:47,240 --> 00:11:52,399
+new lie here maybe that wasn't the
+brightest the fight years ok and enter
+
+97
+00:11:52,399 --> 00:12:00,470
+the value of b which is going to be no
+it so it's as the value of a stand value
+
+98
+00:12:00,470 --> 00:12:06,949
+of b is eighty so made a slight slip up
+in aesthetics here we can feel free to
+
+99
+00:12:06,949 --> 00:12:14,899
+remove death part and have a prettier
+output
+
+100
+00:12:14,899 --> 00:12:24,649
+value fee one of B will be to go anyway
+what did we do here we rode see how to
+
+101
+00:12:24,649 --> 00:12:31,100
+print something out to screen so console
+out and see in console in and we've
+
+102
+00:12:31,100 --> 00:12:36,220
+printed out onto screen enter the value
+of a and since we didn't actually type
+
+103
+00:12:36,220 --> 00:12:41,089
+in any new alliance printing like that
+here the next position to enter anything
+
+104
+00:12:41,089 --> 00:12:46,309
+would be simply straight effort to text
+you saw the output when I typed in and
+
+105
+00:12:46,309 --> 00:12:51,709
+tell you has taken the value below the
+text next up you have seen in ages
+
+106
+00:12:51,709 --> 00:12:56,559
+consul in to improve the value of a you
+are asking the user to input and the
+
+107
+00:12:56,559 --> 00:13:01,100
+program is standing by for the user to
+input about you down below
+
+108
+00:13:01,100 --> 00:13:07,559
+again we've printed out and to the value
+of b and it's just new lines for
+
+109
+00:13:07,559 --> 00:13:12,980
+anything of a kind so it's waiting for
+the input of the user again with see it
+
+110
+00:13:12,980 --> 00:13:19,569
+once the boat once both values have been
+entered we are able to print out of
+
+111
+00:13:19,569 --> 00:13:26,959
+value of a is a value of b be so if
+something is in the quotation marks like
+
+112
+00:13:26,959 --> 00:13:29,870
+this we are just drinking debt out the
+screen
+
+113
+00:13:29,870 --> 00:13:34,490
+no big deal there but if we just put a
+variable legged is the value of that
+
+114
+00:13:34,490 --> 00:13:38,079
+very the value that is stored in that
+variable will be printed out so the
+
+115
+00:13:38,079 --> 00:13:42,679
+value that is stored in a at this point
+of time at this point of time into code
+
+116
+00:13:42,679 --> 00:13:52,929
+is whatever the user inputs before the
+user input its then because we have a
+
+117
+00:13:52,929 --> 00:13:58,610
+slide then and then we had the user has
+actually reassigned something else to
+
+118
+00:13:58,610 --> 00:14:02,990
+the value we didn't need to write them
+here
+
+119
+00:14:02,990 --> 00:14:07,820
+printing of a kind we could have just
+left it like this
+
+120
+00:14:07,820 --> 00:14:15,920
+this some garbage would be stored into
+A&B because something always has to be
+
+121
+00:14:15,920 --> 00:14:19,580
+within those variables anyway that be
+
+122
+00:14:19,580 --> 00:14:28,210
+user input with CNN and user output and
+standard output with C out we can go
+
+123
+00:14:28,210 --> 00:14:35,630
+ahead and well we don't necessarily to
+delete them we will as we should recycle
+
+124
+00:14:35,630 --> 00:14:40,490
+the code as much as we can so use the
+code if we've already taken somewhere in
+
+125
+00:14:40,490 --> 00:14:42,770
+the same time but oh well
+
+126
+00:14:42,770 --> 00:14:51,370
+gonna miss out on something now next up
+we have math operators so what Matt
+
+127
+00:14:51,370 --> 00:14:56,910
+operators do you have in the real world
+basically the same thing here plus minus
+
+128
+00:14:56,910 --> 00:15:04,580
+you have division multiplication and you
+also have a modulus if you don't know
+
+129
+00:15:04,580 --> 00:15:09,760
+what modulus is basically when you
+divide two numbers and whatever remains
+
+130
+00:15:09,760 --> 00:15:15,550
+that the modules for example if you
+divide that number number five with
+
+131
+00:15:15,550 --> 00:15:23,040
+number to the result would be the result
+will be basically two with the remainder
+
+132
+00:15:23,040 --> 00:15:29,960
+of one that's one way of looking at it
+that remainder one that would be the
+
+133
+00:15:29,960 --> 00:15:38,540
+modulus a way we will use these shortly
+but other than that but you also have
+
+134
+00:15:38,540 --> 00:15:44,780
+any comparison operators so the
+comparison operators are equal equal
+
+135
+00:15:44,780 --> 00:15:47,390
+which means that we can put it like this
+
+136
+00:15:47,390 --> 00:15:55,370
+a is equal all to be we are we can use a
+conditional statement if I will talk
+
+137
+00:15:55,370 --> 00:16:01,130
+about that shortly but I just wanna do
+this first so a equals equals be which
+
+138
+00:16:01,130 --> 00:16:09,620
+means equal be if I just typed in 11
+equation 1
+
+139
+00:16:09,620 --> 00:16:11,370
+11
+
+140
+00:16:11,370 --> 00:16:18,910
+equal sign a equals be all I would do
+with this quite literally is a sign the
+
+141
+00:16:18,910 --> 00:16:23,170
+value of B to A and that's it
+
+142
+00:16:23,170 --> 00:16:27,220
+huge mistake usually made by pretty much
+everybody people will be going for
+
+143
+00:16:27,220 --> 00:16:31,630
+twenty years they still make these
+mistakes cuz they literally have to
+
+144
+00:16:31,630 --> 00:16:35,160
+stare at millions of lines of code so
+it's a common area don't worry about it
+
+145
+00:16:35,160 --> 00:16:47,370
+next up we have exclamation mark equals
+which means a is not equal to be in a
+
+146
+00:16:47,370 --> 00:16:58,950
+min rated in a is great libby is no less
+than BB and that's pretty much it also
+
+147
+00:16:58,950 --> 00:17:09,949
+has also have things like and and and
+and which basically stands for the word
+
+148
+00:17:09,949 --> 00:17:23,120
+and if you have some pole and then be
+and these can be some sort of conditions
+
+149
+00:17:23,120 --> 00:17:38,730
+a is not equal 0 to see and be is not in
+B is equal this would basically stayed
+
+150
+00:17:38,730 --> 00:17:56,530
+at this and this if you have example by
+buy it for me in this or this so or
+
+151
+00:17:56,530 --> 00:18:03,660
+some very simple things there you can
+use them in if statements which are
+
+152
+00:18:03,660 --> 00:18:16,830
+conditional statements basically this
+obscure focus on if a is equal to be and
+
+153
+00:18:16,830 --> 00:18:36,130
+and then see is not equal to D then I
+would like you to announce see well not
+
+154
+00:18:36,130 --> 00:18:59,580
+leap and if this else if that is not so
+I would like to see out I will fight
+
+155
+00:18:59,580 --> 00:19:16,500
+against leaf semicolon here and we need
+a semicolon here so do you see the logic
+
+156
+00:19:16,500 --> 00:19:22,600
+of this basically and stadium if this
+condition of a Louise the true and it
+
+157
+00:19:22,600 --> 00:19:29,660
+will only evaluate the true if a is
+equal to be and he is not equal to D
+
+158
+00:19:29,660 --> 00:19:35,650
+this will be printed out and this will
+be disregard however this evaluates to
+
+159
+00:19:35,650 --> 00:19:41,940
+false so if either of these conditions
+do conditions are not true so if a is
+
+160
+00:19:41,940 --> 00:19:49,670
+different from being if let's say 10 and
+bees 2010 you're gonna go ahead and
+
+161
+00:19:49,670 --> 00:19:56,260
+execute this part the code and disregard
+this part could have also placed the or
+
+162
+00:19:56,260 --> 00:20:01,180
+logical or here so this would mean that
+only one of these two conditions would
+
+163
+00:20:01,180 --> 00:20:05,510
+have to be true in order for this
+portion of the code
+
+164
+00:20:05,510 --> 00:20:08,870
+to run well shoot an example of this in
+default store
+

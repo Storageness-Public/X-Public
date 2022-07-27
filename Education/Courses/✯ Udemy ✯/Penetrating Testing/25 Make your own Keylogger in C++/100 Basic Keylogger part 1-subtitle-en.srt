@@ -1,0 +1,873 @@
+1
+00:00:00,000 --> 00:00:03,700
+Welcome all to this tutorial.
+
+2
+00:00:03,700 --> 00:00:06,600
+Today we're going to actually start building out keylogger.
+
+3
+00:00:06,600 --> 00:00:11,170
+I will make the basic and most primitive of keyloggers.
+
+4
+00:00:11,170 --> 00:00:18,200
+It will have some inherit logical flaws, such as maxing out CPU
+
+5
+00:00:18,200 --> 00:00:23,000
+What I would like you to do is go into discussion section
+
+6
+00:00:23,000 --> 00:00:35,600
+and simply suggest what sort of abilities would you like me to give to this keylogger.
+
+7
+00:00:35,600 --> 00:00:39,000
+For example, somebody would say "Well, I would like to hide it, you know"
+
+8
+00:00:39,000 --> 00:00:47,200
+and somebody else could say "Well, I would like it to be able to have an emailing function of a sort"
+
+9
+00:00:47,200 --> 00:00:51,600
+and another person could say "Well, I would like it to have an FTP function"
+
+10
+00:00:51,600 --> 00:00:54,400
+"I would like it to be configurable in this way or in that way"
+
+11
+00:00:54,400 --> 00:00:57,610
+and "I would like to use it for this purpose and for that purpose"
+
+12
+00:00:57,610 --> 00:01:01,200
+Make sure it's all legal when you ask me about it
+
+13
+00:01:01,200 --> 00:01:11,780
+because I will not assist anything that is against
+regulation so I'm giving you the freedom
+
+14
+00:01:11,780 --> 00:01:20,009
+the choice to ask me I can't promise
+that I will fulfill your wishes I will
+
+15
+00:01:20,009 --> 00:01:23,970
+try I will have a look if there are lots
+of suggestions I hope that there will be
+
+16
+00:01:23,970 --> 00:01:28,009
+able pick a few and I'll see what I can
+do but you don't have to worry about it
+
+17
+00:01:28,009 --> 00:01:31,420
+I will add more functionality is over
+time as well
+
+18
+00:01:31,420 --> 00:01:38,170
+anyway let's go ahead and begin doing
+this
+
+19
+00:01:38,170 --> 00:01:42,090
+begin to begin writing the codes of the
+first to get real going to need are two
+
+20
+00:01:42,090 --> 00:01:48,020
+header files so windows . age and when
+user . age because we want to be using
+
+21
+00:01:48,020 --> 00:01:56,210
+some functions we age for which that
+those are the requirements anyway so
+
+22
+00:01:56,210 --> 00:02:04,360
+let's go ahead and type in char C we
+will declare one character variable and
+
+23
+00:02:04,360 --> 00:02:09,200
+clear another one which will be C-one
+
+24
+00:02:09,200 --> 00:02:13,209
+a charge can have as I said before E
+
+25
+00:02:13,209 --> 00:02:17,760
+letter which it but we can actually
+assigned a number as well so let this be
+
+26
+00:02:17,760 --> 00:02:29,700
+a and let this the 67 I believe this is
+the ASCII table sure to in a moment
+
+27
+00:02:29,700 --> 00:02:47,440
+let's go ahead and write see out see and
+and c1 let's see what we will get can
+
+28
+00:02:47,440 --> 00:02:48,299
+you guess it
+
+29
+00:02:48,299 --> 00:02:54,220
+oh yeah well though he can get so this
+is a and we are signing a numerical
+
+30
+00:02:54,220 --> 00:03:01,340
+value to each character type variable if
+you do this this will because this will
+
+31
+00:03:01,340 --> 00:03:06,230
+be taken from BS this this is actually a
+numerical representation of a character
+
+32
+00:03:06,230 --> 00:03:13,609
+from the ASCII table and 67 corresponds
+to dealer tate's let her eight so
+
+33
+00:03:13,609 --> 00:03:18,239
+assigning a like this and assigning 67
+
+34
+00:03:18,239 --> 00:03:26,290
+this is pretty much the same thing let's
+go ahead and see
+
+35
+00:03:26,290 --> 00:03:35,769
+go lol total missed their by the way
+it's not sixty seven but you can see
+
+36
+00:03:35,769 --> 00:03:41,639
+that it's thought 67 here either it's a
+capitalist who see so you are not
+
+37
+00:03:41,639 --> 00:03:46,329
+expected to know the ASCII table by
+heart here I have one in the net hundred
+
+38
+00:03:46,329 --> 00:03:51,260
+of them feel free to look for it we just
+go
+
+39
+00:03:51,260 --> 00:03:57,980
+step back I just taken one hundred and
+ninety ASCII table what had denied
+
+40
+00:03:57,980 --> 00:04:01,200
+because I want to get an extended one
+but you don't need to open one hundred
+
+41
+00:04:01,200 --> 00:04:10,319
+and ninety go ahead and click on it what
+was referring to an able to 180 I wanted
+
+42
+00:04:10,319 --> 00:04:15,879
+to have one hundred and ninety members
+that 180 characters minimum so I was
+
+43
+00:04:15,879 --> 00:04:19,410
+hoping it would help the out there
+anyway
+
+44
+00:04:19,410 --> 00:04:29,120
+lower case is a 97 and 67 as you can see
+is the capital of Terry see interesting
+
+45
+00:04:29,120 --> 00:04:35,740
+right kept illiteracy is 67 that's where
+I listed and lower case is 97 so it's
+
+46
+00:04:35,740 --> 00:04:36,919
+gonna change it
+
+47
+00:04:36,919 --> 00:04:46,210
+87% wait for it and there you go
+
+48
+00:04:46,210 --> 00:04:53,610
+a no big deal not a bigger air it's all
+fine and dandy and it all works out says
+
+49
+00:04:53,610 --> 00:05:02,150
+he can see 2012 4567 so on 255 you have
+each character has a numerical
+
+50
+00:05:02,150 --> 00:05:07,340
+representation the first call you see
+the one that at selecting downward says
+
+51
+00:05:07,340 --> 00:05:13,840
+characters down below its 200 know and
+dead characters the third coat the Turk
+
+52
+00:05:13,840 --> 00:05:17,560
+Cullen is a description which has no
+character start heading to start of
+
+53
+00:05:17,560 --> 00:05:23,900
+texts except as a descriptive values
+does not value the descriptions and on
+
+54
+00:05:23,900 --> 00:05:32,419
+the left side those are valleys so let's
+go ahead and you can find the
+
+55
+00:05:32,419 --> 00:05:37,349
+presentations fuski tables around the
+net so no worries there they will read
+
+56
+00:05:37,349 --> 00:05:44,159
+to look at as much as you want you don't
+need anything extra there that's public
+
+57
+00:05:44,159 --> 00:05:51,159
+domain basically anyway let's go ahead
+and delete this declaration that these
+
+58
+00:05:51,159 --> 00:05:55,729
+signed a lease because we don't need
+them or 1 p.m. at the moment and we
+
+59
+00:05:55,729 --> 00:05:57,689
+don't need to see out
+
+60
+00:05:57,689 --> 00:06:02,999
+statement idea what we need to do now is
+create an infinite loop and we could
+
+61
+00:06:02,999 --> 00:06:06,919
+have created it because we want to
+keylogger to be running continuously so
+
+62
+00:06:06,919 --> 00:06:13,749
+we don't want it to stop until the user
+actually stops it so let's go ahead and
+
+63
+00:06:13,749 --> 00:06:21,139
+let's go ahead and do that I will tape
+in while this is what we are doing yet
+
+64
+00:06:21,139 --> 00:06:25,399
+this is a mother a similar way of doing
+it but if you want to create an infinite
+
+65
+00:06:25,399 --> 00:06:32,589
+loop would've for it open for open
+semicolon semicolon dentists will create
+
+66
+00:06:32,589 --> 00:06:39,539
+an infinite loop with 40 just something
+I just a new piece of information that I
+
+67
+00:06:39,539 --> 00:06:45,369
+wanted to give you also we will need a
+loop within a loop so we will need
+
+68
+00:06:45,369 --> 00:06:50,369
+nested loops here will need to use them
+in order to accomplish our goal our
+
+69
+00:06:50,369 --> 00:06:54,499
+second loop will be defining the
+character the range of characters that
+
+70
+00:06:54,499 --> 00:07:03,139
+we are interested in why you say well
+are you interested in this to you at two
+
+71
+00:07:03,139 --> 00:07:08,979
+hundred and nineteen is this interesting
+to you in any way or this pipe looking
+
+72
+00:07:08,979 --> 00:07:17,179
+like thing at 205 or this health thing
+or reverse te at 193 or something like
+
+73
+00:07:17,179 --> 00:07:17,909
+that
+
+74
+00:07:17,909 --> 00:07:22,659
+those characters I don't know I guess
+you can include them but I don't think
+
+75
+00:07:22,659 --> 00:07:31,550
+it's a good idea that or I sometimes to
+think I include once 222 but I think
+
+76
+00:07:31,550 --> 00:07:38,349
+that 190 should be optimal even though
+you're gonna still includes characters
+
+77
+00:07:38,349 --> 00:07:45,379
+that you're never gonna get but doesn't
+really matter anyway let's go let's go
+
+78
+00:07:45,379 --> 00:07:52,129
+and open up clips back let's go back
+there so how do we stop before we
+
+79
+00:07:52,129 --> 00:07:56,860
+actually specified the range with me to
+show what a nested loop is Sophie taken
+
+80
+00:07:56,860 --> 00:07:59,449
+here in equals
+
+81
+00:07:59,449 --> 00:08:25,789
+0 is less than three plus and here yet
+another loop so for in 20 GA is a less
+
+82
+00:08:25,789 --> 00:08:35,310
+then just three who cares for us and for
+the sake of orientation group with the
+
+83
+00:08:35,310 --> 00:08:50,829
+curly brackets ears and CEO second and
+then I want you value of J
+
+84
+00:08:50,829 --> 00:08:57,510
+to be printed out as well and then I
+would like a new line thank you and I
+
+85
+00:08:57,510 --> 00:09:01,750
+will go outside of the second group and
+will go into the first and will take his
+
+86
+00:09:01,750 --> 00:09:23,889
+see out first and here we would like the
+value of I go it'll be a deal there
+
+87
+00:09:23,889 --> 00:09:31,870
+anyway the logic of this is following
+this for loop will begin once it begins
+
+88
+00:09:31,870 --> 00:09:37,579
+it will start to evaluating the
+conditions laid out within it if it
+
+89
+00:09:37,579 --> 00:09:42,670
+violates the true so if it is indeed
+less than three it will start the
+
+90
+00:09:42,670 --> 00:09:49,560
+execution of whatever code is within
+within the curly brackets off the for
+
+91
+00:09:49,560 --> 00:09:58,420
+loop and here we have another full loop
+which is nested here what that means is
+
+92
+00:09:58,420 --> 00:10:04,839
+that now the program will simply start
+shooting this loop and it will not it
+
+93
+00:10:04,839 --> 00:10:10,730
+will continue to execute it until it
+finishes it so what happens here is that
+
+94
+00:10:10,730 --> 00:10:12,490
+this for lou
+
+95
+00:10:12,490 --> 00:10:17,000
+sorry evaluating this condition here and
+for as long as this condition here is
+
+96
+00:10:17,000 --> 00:10:22,290
+true it's gonna keep on printing this
+when it becomes false ben je mange
+
+97
+00:10:22,290 --> 00:10:29,880
+becomes greater or equal to 3 will start
+exit the second loop and enter the first
+
+98
+00:10:29,880 --> 00:10:36,260
+loop again that it will print our
+central print this out first and go back
+
+99
+00:10:36,260 --> 00:10:40,550
+to evaluating this condition is this
+condition turns out to be true again
+
+100
+00:10:40,550 --> 00:10:46,670
+then this loop will start over and so on
+three times so basically this loop
+
+101
+00:10:46,670 --> 00:10:50,630
+starts over as everything has resided
+here Jays again
+
+102
+00:10:50,630 --> 00:10:57,300
+0 so it will repeat three times again
+just secretly how that works out to
+
+103
+00:10:57,300 --> 00:11:07,680
+sprinting sewed onto the screen no big
+deal there I am second 0 I am second one
+
+104
+00:11:07,680 --> 00:11:14,970
+I am sickened too because the situation
+goes 01223 times and then it exists as I
+
+105
+00:11:14,970 --> 00:11:22,240
+said here in it says I first heard it's
+zero here so this is the first iteration
+
+106
+00:11:22,240 --> 00:11:29,240
+you can see it's that it starts the
+second loop again and it starts to say I
+
+107
+00:11:29,240 --> 00:11:35,420
+am second 0 I am sick and one second to
+see how the numbers reset and then it
+
+108
+00:11:35,420 --> 00:11:42,190
+goes I am first one because this is the
+second pass and the second pass again we
+
+109
+00:11:42,190 --> 00:11:48,310
+have the same situation I am second 05
+second one and 2nd do and so on and so
+
+110
+00:11:48,310 --> 00:11:54,839
+forth until the end hopefully this this
+is clear if not well you have the
+
+111
+00:11:54,839 --> 00:12:08,980
+discussions I am gladly answered queries
+their semi colons and now we need to go
+
+112
+00:12:08,980 --> 00:12:15,680
+ahead and basically specified the range
+of the character is that we would like
+
+113
+00:12:15,680 --> 00:12:16,430
+to
+
+114
+00:12:16,430 --> 00:12:23,860
+get four and let's use the character
+which we have declared up above the
+
+115
+00:12:23,860 --> 00:12:31,460
+beginning just go ahead and use it and
+say that it will be equal to eight so
+
+116
+00:12:31,460 --> 00:12:38,050
+those are that that's the beginning of
+our range and the very end of our range
+
+117
+00:12:38,050 --> 00:12:45,360
+can be out two hundred and twenty to say
+let's be a little bit greedy though is
+
+118
+00:12:45,360 --> 00:12:48,209
+there really a point for it at all
+
+119
+00:12:48,209 --> 00:12:57,370
+yes actually there is there is a point
+so sequels 28 C is less or equal to 22
+
+120
+00:12:57,370 --> 00:13:09,640
+to my colon and C plus it's open curly
+brackets now we know we actually do need
+
+121
+00:13:09,640 --> 00:13:10,700
+curly brackets
+
+122
+00:13:10,700 --> 00:13:16,820
+there for statics or orientation or
+anything of a kind and you see what a
+
+123
+00:13:16,820 --> 00:13:22,430
+key is pressed there is a system
+interrupt system interrupt is is it you
+
+124
+00:13:22,430 --> 00:13:30,580
+can represent the number so it's 32767
+looks like we need to create a
+
+125
+00:13:30,580 --> 00:13:37,170
+conditional if statement to know when
+somebody presses a key on the keyboard
+
+126
+00:13:37,170 --> 00:13:43,029
+and if somebody presses a key on the
+keyboard please do something with it so
+
+127
+00:13:43,029 --> 00:13:57,540
+ok let's create a tad condition we need
+a function get get the surprise the
+
+128
+00:13:57,540 --> 00:14:01,380
+tickets until the outrageous functions
+but ok sometimes there a little bit of
+
+129
+00:14:01,380 --> 00:14:08,630
+course bailout get key state Salesi
+
+130
+00:14:08,630 --> 00:14:22,110
+and after the sea compare it 2-3 2767
+
+131
+00:14:22,110 --> 00:14:30,160
+and if that is true we are going to do
+something with it anyway
+
+132
+00:14:30,160 --> 00:14:36,540
+over here we have the range that we are
+checking so disparate groups conducting
+
+133
+00:14:36,540 --> 00:14:45,850
+checks and this one is figuring out if
+the key if there was an interrupt so if
+
+134
+00:14:45,850 --> 00:14:53,690
+there is an interrupt for a particular
+key then that key then we will do
+
+135
+00:14:53,690 --> 00:14:59,310
+something with it what shall we do with
+it I don't know what save it to a file
+
+136
+00:14:59,310 --> 00:15:03,740
+actually that could be that could be
+interesting so once again this is the
+
+137
+00:15:03,740 --> 00:15:11,610
+interim so if there is an interrupt the
+character will be store that with the
+
+138
+00:15:11,610 --> 00:15:18,130
+character will be stored and we will be
+able to do something with it so let's go
+
+139
+00:15:18,130 --> 00:15:32,230
+ahead and type in stream right but this
+and let's just go ahead and created in
+
+140
+00:15:32,230 --> 00:15:40,200
+our workspace directory so no need to go
+anywhere else was
+
+141
+00:15:40,200 --> 00:15:49,350
+in court txt and there is one more thing
+disappear into a taping and I S colon
+
+142
+00:15:49,350 --> 00:15:56,140
+colon what we are specifying what we're
+dealing with this is that we don't want
+
+143
+00:15:56,140 --> 00:16:00,510
+her file to be re-written every single
+time somebody presses a key because if
+
+144
+00:16:00,510 --> 00:16:05,800
+we didn't specify this last part here it
+would quite literally mean that once it
+
+145
+00:16:05,800 --> 00:16:11,250
+gets recorded and the next time somebody
+presses a key the file will be reopened
+
+146
+00:16:11,250 --> 00:16:17,670
+again and at that point of time whatever
+is contained within that file will get
+
+147
+00:16:17,670 --> 00:16:23,650
+overwritten with new content every every
+previous he would get overwritten by a
+
+148
+00:16:23,650 --> 00:16:31,010
+new key which would be pretty stupid so
+let's just do it doesn't Appian right
+
+149
+00:16:31,010 --> 00:16:38,620
+now we're gonna whatever gonna break
+right character see that's it
+
+150
+00:16:38,620 --> 00:16:43,520
+place a semicolon at the end and that is
+all we need to do in order to start
+
+151
+00:16:43,520 --> 00:16:48,820
+recording characters before implementing
+any sort of putting in any sort of a
+
+152
+00:16:48,820 --> 00:16:54,430
+filtration system in which we will
+absolutely need to do
+
+153
+00:16:54,430 --> 00:17:09,430
+press Ctrl F 11 to run this list where
+is the error ok so we have not included
+
+154
+00:17:09,430 --> 00:17:15,860
+the necessary header files for this to
+be possible what have we learned before
+
+155
+00:17:15,860 --> 00:17:27,640
+include stream very simple forgot to
+include Adobe deal happens all the time
+
+156
+00:17:27,640 --> 00:17:35,780
+go through it through it to exit so the
+program is running but you can't really
+
+157
+00:17:35,780 --> 00:17:42,550
+see this does running anywhere can you
+can you if you rented from the council
+
+158
+00:17:42,550 --> 00:17:46,169
+you probably could like this
+
+159
+00:17:46,169 --> 00:17:52,580
+this is the console and Eclipse you can
+it doesn't really matter because it is
+
+160
+00:17:52,580 --> 00:17:58,749
+better display anyway we don't want to
+be able to see anything however I assure
+
+161
+00:17:58,749 --> 00:18:03,509
+you this is functional so let's go ahead
+and type in Skype something into our
+
+162
+00:18:03,509 --> 00:18:09,809
+opened up a CMD you can open up whatever
+you want your browser if you want
+
+163
+00:18:09,809 --> 00:18:16,749
+actually that might be a good idea
+
+164
+00:18:16,749 --> 00:18:28,460
+yahoo.com and I still haven't removed
+this fasting thing ok and what's a sign
+
+165
+00:18:28,460 --> 00:18:29,710
+in
+
+166
+00:18:29,710 --> 00:18:42,830
+they've been the username user password
+will be worried I don't even need to
+
+167
+00:18:42,830 --> 00:18:49,019
+click Sign in or anything of a card we
+can just go ahead and open up our
+
+168
+00:18:49,019 --> 00:18:59,840
+project so once again you were project
+files by default are located in C users
+
+169
+00:18:59,840 --> 00:19:05,269
+and then choose the user name of the
+current user here but his creator and
+
+170
+00:19:05,269 --> 00:19:09,850
+then go to work space and select your
+project here which mine is key logger
+
+171
+00:19:09,850 --> 00:19:14,869
+and select the file hirsute says he
+record txt that's how we have names are
+
+172
+00:19:14,869 --> 00:19:20,779
+file and there you go I have taped in
+Yahoo and didn't record it thought so we
+
+173
+00:19:20,779 --> 00:19:27,509
+need to fix that I don't know what the
+space here is probably a tad it is a tab
+
+174
+00:19:27,509 --> 00:19:31,909
+so we need to have filtered out through
+and make it better so you see if they
+
+175
+00:19:31,909 --> 00:19:41,359
+put in username and password i mean this
+is a tuzla through the different example
+
+176
+00:19:41,359 --> 00:19:52,100
+let's use let's use Sean though that'll
+be my username and password
+
+177
+00:19:52,100 --> 00:19:56,779
+probably a little bit confusing when I
+type in the username and password with
+
+178
+00:19:56,779 --> 00:19:58,759
+when I feel username password with you
+
+179
+00:19:58,759 --> 00:20:07,609
+and password at system of record and
+their ago you have john doe there are
+
+180
+00:20:07,609 --> 00:20:11,749
+some additional characters here but we
+need to create a filtration system for
+
+181
+00:20:11,749 --> 00:20:14,209
+this anyway all farewell
+

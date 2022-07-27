@@ -1,0 +1,839 @@
+1
+00:00:00,000 --> 00:00:02,000
+Welcome back
+
+2
+00:00:02,000 --> 00:00:07,400
+So in two previous tutorial, we've been doing the conditional "if" statement
+
+3
+00:00:07,400 --> 00:00:11,200
+so let's go ahead and make something meaningful out of it.
+
+4
+00:00:11,200 --> 00:00:13,600
+Let's go ahead and change this part
+
+5
+00:00:13,600 --> 00:00:32,000
+and say "if(a > b)", I would like you to output that a is greater than b
+
+6
+00:00:32,000 --> 00:00:34,500
+So let's do it like this
+
+7
+00:00:34,500 --> 00:00:51,000
+"A is greater than B"
+
+8
+00:00:51,000 --> 00:00:54,000
+and if they're not that, then I can write something here
+
+9
+00:00:54,000 --> 00:01:00,000
+but look -- We have three possibilities and we only have two conditions here.
+
+10
+00:01:00,000 --> 00:01:01,530
+We have three possible cases here
+
+11
+00:01:01,530 --> 00:01:07,840
+but we only have we've only
+covered basically two of them although
+
+12
+00:01:07,840 --> 00:01:14,000
+the last statement covers pretty much
+all of them how does this make sense
+
+13
+00:01:14,000 --> 00:01:20,060
+well you know if a is greater than be
+this will be printed out any other case
+
+14
+00:01:20,060 --> 00:01:26,200
+it will meet the program the program
+will immediately jumped to the machine
+
+15
+00:01:26,200 --> 00:01:30,460
+will immediately jumped to D else
+statement and execute whatever whatever
+
+16
+00:01:30,460 --> 00:01:35,630
+is in DL statement however look if I
+want to write here I would like to rate
+
+17
+00:01:35,630 --> 00:01:48,770
+here is less then be how would I write
+some how would a specific case where a
+
+18
+00:01:48,770 --> 00:01:57,430
+is equal to be well I could deepen else
+if else if
+
+19
+00:01:57,430 --> 00:02:07,100
+is to be inserted between can have as
+many as many else ifs as you like so you
+
+20
+00:02:07,100 --> 00:02:23,100
+can cover pretty much an infinite amount
+of cases see out is to be ok so now we
+
+21
+00:02:23,100 --> 00:02:31,400
+have three cases let's go ahead and
+combined us with user input can take
+
+22
+00:02:31,400 --> 00:02:43,080
+note this is my name for the previous
+tutorial go ahead and type in Sialkot
+
+23
+00:02:43,080 --> 00:03:05,760
+enter value a see in a and then let's
+give it a lot still the user to enter a
+
+24
+00:03:05,760 --> 00:03:08,950
+value for beat and here
+
+25
+00:03:08,950 --> 00:03:20,660
+be here
+
+26
+00:03:20,660 --> 00:03:28,820
+their ego so distraught run once and
+we'll go ahead do this pile with ctrl
+
+27
+00:03:28,820 --> 00:03:36,820
+f11 key so enter value for let's say
+that a will be one enter value for bee
+
+28
+00:03:36,820 --> 00:03:46,640
+bee will be three so now it should print
+out that a is less than be less than be
+
+29
+00:03:46,640 --> 00:03:49,210
+but suppose we wanted to do
+
+30
+00:03:49,210 --> 00:03:56,640
+bestest multiple times this program it
+finishes this state is pretty much
+
+31
+00:03:56,640 --> 00:04:02,910
+finishes this so you enter a value and
+as soon as the user enters the values
+
+32
+00:04:02,910 --> 00:04:08,100
+the computer jumped to this portion it
+finishes this conditional statement and
+
+33
+00:04:08,100 --> 00:04:13,280
+it executes the proper condition the
+condition that develops the true so I
+
+34
+00:04:13,280 --> 00:04:20,359
+there is a is equal to be or something
+else and this particular case we only
+
+35
+00:04:20,359 --> 00:04:25,040
+have three possibilities but you could
+have a hundred possibilities and then if
+
+36
+00:04:25,040 --> 00:04:30,360
+you missed one else would always cover
+it although you need to make that makes
+
+37
+00:04:30,360 --> 00:04:39,300
+some sense anyway now we are going to
+learn about loops now we would like to
+
+38
+00:04:39,300 --> 00:04:44,310
+put this in a repetitively where things
+are going to repeat themselves until we
+
+39
+00:04:44,310 --> 00:04:51,230
+tell them to stop one of the loops which
+we can use is while loop so let's go
+
+40
+00:04:51,230 --> 00:04:59,830
+ahead and apps let's go ahead and insert
+the while loop of this while and how
+
+41
+00:04:59,830 --> 00:05:05,010
+many times have you like this to repeat
+well we don't really know so let's set
+
+42
+00:05:05,010 --> 00:05:12,720
+it to repeat as many times as long as we
+let set of repetitive cycle as long as
+
+43
+00:05:12,720 --> 00:05:19,620
+we the user tell it to stop so let's see
+through or you could just write one here
+
+44
+00:05:19,620 --> 00:05:24,460
+one stands for true and 0 stands or
+falls
+
+45
+00:05:24,460 --> 00:05:34,949
+balls or editors most of the times it's
+false or true any easier to read but
+
+46
+00:05:34,949 --> 00:05:39,680
+owell that's just your preference rate
+would you like whether you want to write
+
+47
+00:05:39,680 --> 00:05:48,639
+one or true completely up to you and
+notice that we have to close this just a
+
+48
+00:05:48,639 --> 00:05:53,639
+little bit expand the screen a little
+bit so we have to open up a curly
+
+49
+00:05:53,639 --> 00:05:59,190
+bracket and close a curly bracket in
+order to encompass this piece of code so
+
+50
+00:05:59,190 --> 00:06:06,970
+that would be inside of the loop and I'm
+just gonna press attempts earlier and we
+
+51
+00:06:06,970 --> 00:06:13,660
+also want to user input to be within the
+loop so let's go ahead and place the
+
+52
+00:06:13,660 --> 00:06:20,300
+user
+
+53
+00:06:20,300 --> 00:06:26,949
+ok so now we have this and now we have
+this we have the user input and we have
+
+54
+00:06:26,949 --> 00:06:29,280
+a conditional statement down below
+
+55
+00:06:29,280 --> 00:06:35,080
+now all we need is a something to
+terminate will it say that the negative
+
+56
+00:06:35,080 --> 00:06:51,610
+numbers will turn me into the value for
+a or enter or enter minus 12 exit
+
+57
+00:06:51,610 --> 00:07:15,190
+copiers go to the end and a space here
+ok so we can press one to accept and how
+
+58
+00:07:15,190 --> 00:07:22,819
+would we exit so maybe in another we
+could we could theoretically tape else
+
+59
+00:07:22,819 --> 00:07:40,560
+if here and then type in either A or B
+is equal 2-1 and then we would just AP
+
+60
+00:07:40,560 --> 00:07:51,629
+in break if you are using else if we if
+you're using while loops or something of
+
+61
+00:07:51,629 --> 00:07:52,349
+a kind
+
+62
+00:07:52,349 --> 00:07:56,800
+the only case for you won't need these
+curly brackets is when you have a single
+
+63
+00:07:56,800 --> 00:08:03,319
+state in single single instruction that
+is right that is below it and that's it
+
+64
+00:08:03,319 --> 00:08:08,060
+that if you don't have curly brackets it
+will only take into consideration one
+
+65
+00:08:08,060 --> 00:08:13,659
+single instruction and it will pretty
+much disregard the loop or conditional
+
+66
+00:08:13,659 --> 00:08:18,770
+statement it will disregard the rest now
+what does break too well try to figure
+
+67
+00:08:18,770 --> 00:08:23,199
+it out i mean in English language it
+just breaks out it breaks out of the
+
+68
+00:08:23,199 --> 00:08:28,740
+loop and by that I mean it exists the
+field of this curly bracket and its
+
+69
+00:08:28,740 --> 00:08:31,180
+gonna jump straight to return
+
+70
+00:08:31,180 --> 00:08:39,640
+0 so let's go ahead and CEO something
+that tells us that the program is over
+
+71
+00:08:39,640 --> 00:08:52,760
+and done with it came over for the like
+that charlie center here but you see
+
+72
+00:08:52,760 --> 00:08:59,490
+this is a very inefficient way to do it
+why tried to figure it out by the video
+
+73
+00:08:59,490 --> 00:09:05,070
+if you like but I'm gonna go ahead and
+tell it to you now you see if we place
+
+74
+00:09:05,070 --> 00:09:09,180
+the else if they didn't hear the
+conditional statement the program will
+
+75
+00:09:09,180 --> 00:09:15,209
+indeed exit when we press minus one it
+will execute to break statement it will
+
+76
+00:09:15,209 --> 00:09:20,610
+exit the loop and then it will execute
+this command here and then it will
+
+77
+00:09:20,610 --> 00:09:29,589
+return a zero it will be over the
+function will end but our condition for
+
+78
+00:09:29,589 --> 00:09:34,270
+exiting to prove we want our condition
+to program to be when a user enters
+
+79
+00:09:34,270 --> 00:09:43,260
+minus 1 484 when a user enters minus 14
+be since you have input here you will
+
+80
+00:09:43,260 --> 00:09:49,020
+first input a and even if you put this
+one for a it will go and ask you for the
+
+81
+00:09:49,020 --> 00:09:55,430
+input into it will go ahead and ask you
+to be so we have to import be valued as
+
+82
+00:09:55,430 --> 00:09:59,700
+well and then it will jump to the
+conditional statement and figure out
+
+83
+00:09:59,700 --> 00:10:03,750
+that a is minus one or the bees minus
+one and will break out of the loop
+
+84
+00:10:03,750 --> 00:10:10,100
+that's that's kinda deficient you know
+because we only need one of these values
+
+85
+00:10:10,100 --> 00:10:17,570
+and you are being forced to take the in
+both well simple solution being copied
+
+86
+00:10:17,570 --> 00:10:21,810
+cut the same here
+
+87
+00:10:21,810 --> 00:10:33,000
+appear so if a and it's one obviously
+just evaluating
+
+88
+00:10:33,000 --> 00:10:44,310
+and we can take place if underneath be
+aware we do not require 82 not required
+
+89
+00:10:44,310 --> 00:10:54,770
+you valuation of a look now we import a
+and if a business plan it will break
+
+90
+00:10:54,770 --> 00:11:03,410
+immediately and then we import be in
+case a is not equal 2-1 so i cn great
+
+91
+00:11:03,410 --> 00:11:09,270
+greeted integrated in be entered by the
+user inputs be and then he gets
+
+92
+00:11:09,270 --> 00:11:17,860
+evaluated so if B is once again it will
+break out of the loop and it will end
+
+93
+00:11:17,860 --> 00:11:22,960
+the program far more efficient way since
+you only need to enter one of them and
+
+94
+00:11:22,960 --> 00:11:28,960
+not both of them to be evaluated and
+then and only then if they get one of
+
+95
+00:11:28,960 --> 00:11:33,520
+them is minus one rule we actually this
+portion of the code now this is very
+
+96
+00:11:33,520 --> 00:11:38,920
+significant because you do need to pay
+little attention doesn't have much to do
+
+97
+00:11:38,920 --> 00:11:44,410
+with programming discussed has something
+to do with general logic of things right
+
+98
+00:11:44,410 --> 00:11:50,600
+things in a meaningful way so why why
+enter both of them and a battle read
+
+99
+00:11:50,600 --> 00:11:55,430
+both of them if we only need one of them
+to know whether we can proceed with the
+
+100
+00:11:55,430 --> 00:11:59,470
+program or not or whether we want to
+proceed with a programmer not so let's
+
+101
+00:11:59,470 --> 00:12:05,060
+go ahead and see how this works ok here
+we go
+
+102
+00:12:05,060 --> 00:12:15,760
+finished enter the value for a 4-1 to
+exit so let's go ahead and do it let's
+
+103
+00:12:15,760 --> 00:12:25,270
+go ahead and 210 and to develop or be
+tremendous 12 exit at 10:42 less than be
+
+104
+00:12:25,270 --> 00:12:35,459
+entered the value so what do we need to
+we need to add a new lines in order to
+
+105
+00:12:35,459 --> 00:12:38,910
+managed in order for this to look
+prettier so let's they've been minus one
+
+106
+00:12:38,910 --> 00:12:40,569
+game over it
+
+107
+00:12:40,569 --> 00:12:46,610
+X discuss successfully but you see a is
+less than be when it prints out the loop
+
+108
+00:12:46,610 --> 00:12:53,649
+repeats and its kinda ugly as he ran
+through the value for a 3-1 to exist but
+
+109
+00:12:53,649 --> 00:12:56,800
+it's right here there is a space it's
+quite ugly and mean you can't
+
+110
+00:12:56,800 --> 00:13:05,069
+differentiate did so what can we do well
+we could enter a new line for each one
+
+111
+00:13:05,069 --> 00:13:14,529
+of these see out statements that the one
+wit us are enough for these things have
+
+112
+00:13:14,529 --> 00:13:22,959
+deleted it actually every go control y
+is for and do so you're gonna get used
+
+113
+00:13:22,959 --> 00:13:27,220
+to pressing down so I was trying to say
+is that we could add and dealt to the
+
+114
+00:13:27,220 --> 00:13:32,389
+end of each of these lines and L
+
+115
+00:13:32,389 --> 00:13:36,110
+we only have to give them so that's a
+realistic option for us but is the head
+
+116
+00:13:36,110 --> 00:13:40,660
+something that we really want to do
+let's see if we can do something better
+
+117
+00:13:40,660 --> 00:13:44,639
+because imagine if you had ten thousand
+of these lines to each one of those ten
+
+118
+00:13:44,639 --> 00:13:48,149
+thousand you would have to add and then
+it really wouldn't be a realistic option
+
+119
+00:13:48,149 --> 00:13:58,649
+would it now rather instead he will do
+this and all its still not gonna be as
+
+120
+00:13:58,649 --> 00:14:09,870
+pretty as we like it to be but it's
+should do the job just fine control
+
+121
+00:14:09,870 --> 00:14:20,100
+now we can modify the loop additionally
+and do some other things for this for
+
+122
+00:14:20,100 --> 00:14:27,660
+this new line two basic the gone or week
+or as I said we could at them down here
+
+123
+00:14:27,660 --> 00:14:33,510
+you always end though you always had
+where you have to do the least work
+
+124
+00:14:33,510 --> 00:14:39,100
+dispose it would look pretty yet these
+down below let's just go ahead and see
+
+125
+00:14:39,100 --> 00:14:41,490
+how it works out one more time
+
+126
+00:14:41,490 --> 00:14:49,360
+20 and a is less than be this indeed
+works out so enter the value again and
+
+127
+00:14:49,360 --> 00:14:52,970
+or one is fun to exit so let's see if
+this is true
+
+128
+00:14:52,970 --> 00:15:04,850
+10 for a 10 is less than 20 so is indeed
+be these conditional statements weird if
+
+129
+00:15:04,850 --> 00:15:12,050
+and else if plus the while loop now
+indeed follow in my letter to follow in
+
+130
+00:15:12,050 --> 00:15:17,630
+developed or will do the for loop before
+we do that let's go ahead and see how
+
+131
+00:15:17,630 --> 00:15:25,279
+the increments work so if we go ahead
+and take the in here
+
+132
+00:15:25,279 --> 00:15:31,450
+wile so while in my eye out for it
+
+133
+00:15:31,450 --> 00:15:36,420
+index that's that's the naming standard
+I could have if you can name your
+
+134
+00:15:36,420 --> 00:15:40,720
+variables pretty much whatever you want
+there are some naming rules but you can
+
+135
+00:15:40,720 --> 00:15:46,150
+use any combination of lower lower and
+uppercase letters to name your variables
+
+136
+00:15:46,150 --> 00:15:52,540
+some critics a while because I can
+declare a variable here as well I don't
+
+137
+00:15:52,540 --> 00:15:56,010
+declare variables at the beginning of
+the program I can declare them anywhere
+
+138
+00:15:56,010 --> 00:16:02,070
+I like the place of my choosing be
+careful because if you declare variables
+
+139
+00:16:02,070 --> 00:16:02,980
+like this
+
+140
+00:16:02,980 --> 00:16:07,279
+these variables will only be valid for
+the duration of the loop and within the
+
+141
+00:16:07,279 --> 00:16:12,810
+loop once the loop over the variable is
+gone as well
+
+142
+00:16:12,810 --> 00:16:19,390
+so while I is less than and I would like
+this wouldn't like a continuous
+
+143
+00:16:19,390 --> 00:16:24,090
+since I will just say I would like to
+repeat this pent-up if it's if the user
+
+144
+00:16:24,090 --> 00:16:29,089
+can figure it out if the user can find
+it useful in 10 times so well then just
+
+145
+00:16:29,089 --> 00:16:37,020
+Germany so less than 10 and at the end
+of the loop to see what I'm doing here
+
+146
+00:16:37,020 --> 00:16:43,470
+the condition is well the integer is
+less than 10 but can anybody see
+
+147
+00:16:43,470 --> 00:16:49,580
+anything wrong with this we haven't
+assigned a value too high and that can
+
+148
+00:16:49,580 --> 00:16:51,650
+be problematic why
+
+149
+00:16:51,650 --> 00:16:59,029
+well because i has some random value at
+the moment as some garbage value of the
+
+150
+00:16:59,029 --> 00:17:06,069
+property but proper explanation for it
+and that's garbage value could be pretty
+
+151
+00:17:06,069 --> 00:17:12,810
+much anything so let's go ahead and take
+this out of here as the same not good
+
+152
+00:17:12,810 --> 00:17:17,220
+for us and let's declare it outside of
+the loop this is just one way to do it
+
+153
+00:17:17,220 --> 00:17:25,870
+let's say that I is equal to zero and
+then type in here is less than 10 now
+
+154
+00:17:25,870 --> 00:17:32,870
+this has sense and at the end of the
+loop at the very end of the loop we can
+
+155
+00:17:32,870 --> 00:17:45,190
+type in plus plus plus plus now what
+does this mean I plus plus plus plus
+
+156
+00:17:45,190 --> 00:17:55,890
+just show you it will be the same as me
+typing in equals I plus one that's a
+
+157
+00:17:55,890 --> 00:18:05,380
+instead of this wall line +1 I can just
+type in my plus + and that food it to
+
+158
+00:18:05,380 --> 00:18:11,350
+read by what they could have also taped
+in I thought plus one but this is a
+
+159
+00:18:11,350 --> 00:18:15,230
+shorter version of this is pretty much
+what everybody uses so what's gonna
+
+160
+00:18:15,230 --> 00:18:20,840
+happen here is going to become bigger by
+one every time this
+
+161
+00:18:20,840 --> 00:18:28,480
+loop repeats in the beginning I will be
+0 first best a second pass it will be
+
+162
+00:18:28,480 --> 00:18:36,330
+one third passport pass it always
+increased by one until this statement
+
+163
+00:18:36,330 --> 00:18:42,880
+about the false basically until when I
+reaches 10 when I become stand this
+
+164
+00:18:42,880 --> 00:18:49,559
+statement false because I will no longer
+be less than 10 equal sign here so this
+
+165
+00:18:49,559 --> 00:18:54,580
+will say it is I do you quote or less
+than and in that case the statement
+
+166
+00:18:54,580 --> 00:19:04,490
+become false when I would reach 11 so we
+can just leave it like this at a lower
+
+167
+00:19:04,490 --> 00:19:12,149
+number for the sake of this tutorial so
+I can just show you cycle and I we could
+
+168
+00:19:12,149 --> 00:19:22,190
+basically more if statements like and
+basically say okay print out and L
+
+169
+00:19:22,190 --> 00:19:27,880
+only if this is not the first repeat ins
+if it's the first repeat since don't
+
+170
+00:19:27,880 --> 00:19:33,539
+print and L and then we will and then we
+wouldn't have this gap here I would
+
+171
+00:19:33,539 --> 00:19:37,029
+encourage you to do that on your own
+
+172
+00:19:37,029 --> 00:19:45,169
+just to eliminate this by adding another
+if statement here by adding another
+
+173
+00:19:45,169 --> 00:19:47,789
+statement somewhere in this in this area
+

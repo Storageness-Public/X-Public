@@ -1,0 +1,740 @@
+1
+00:00:00,000 --> 00:00:01,600
+Welcome all
+
+2
+00:00:01,600 --> 00:00:03,000
+Welcome back
+
+3
+00:00:03,000 --> 00:00:08,200
+Anyway, we're gonna go ahead and do a release version
+
+4
+00:00:08,200 --> 00:00:10,200
+So we're gonna create a real version
+
+5
+00:00:10,200 --> 00:00:13,300
+Well, not a real version
+
+6
+00:00:13,300 --> 00:00:19,000
+We'll just create the one that we would normally use.
+
+7
+00:00:19,000 --> 00:00:22,200
+Something that we can use in a CD or in a USB
+
+8
+00:00:22,200 --> 00:00:24,650
+or something that we can send, etc
+
+9
+00:00:24,650 --> 00:00:29,500
+and then we will see one obvious problem with it
+
+10
+00:00:29,500 --> 00:00:34,800
+which you cannot see when you are doing this in eclipse.
+
+11
+00:00:34,800 --> 00:00:36,649
+It's a pretty significant problem.
+
+12
+00:00:36,649 --> 00:00:39,500
+There are a lot of workarounds.
+
+13
+00:00:39,500 --> 00:00:45,000
+The simplest workaround is simply to hide what is being shown
+
+14
+00:00:45,000 --> 00:00:47,800
+but perhaps not best one.
+
+15
+00:00:47,800 --> 00:00:53,000
+However, let's go ahead and take a look at how this example will work out.
+
+16
+00:00:53,000 --> 00:00:56,200
+So we have our program here
+
+17
+00:00:56,200 --> 00:00:59,500
+We will go on to the hammer in the upper left corner.
+
+18
+00:00:59,500 --> 00:01:03,800
+Go ahead and just select it.
+
+19
+00:01:03,800 --> 00:01:07,800
+It will be selected debug by default...
+
+20
+00:01:07,800 --> 00:01:09,900
+You will have debug selected
+
+21
+00:01:09,900 --> 00:01:12,400
+Go ahead and select release
+
+22
+00:01:12,400 --> 00:01:14,800
+and then go ahead and build it.
+
+23
+00:01:14,800 --> 00:01:16,700
+Okay, for me, it says "Nothing to build..."
+
+24
+00:01:16,700 --> 00:01:22,700
+but if I CTRL S save and if I do build, it has finished building it.
+
+25
+00:01:22,700 --> 00:01:23,800
+So what does it say?
+
+26
+00:01:23,800 --> 00:01:26,200
+Permission denied
+
+27
+00:01:26,200 --> 00:01:28,600
+Okay, so I have a keylogger running.
+
+28
+00:01:28,600 --> 00:01:31,100
+I almost always do these days
+
+29
+00:01:31,100 --> 00:01:34,700
+because I'm running a lot of test runs and testing out the code
+
+30
+00:01:34,700 --> 00:01:38,000
+in order to make sure that it is right for you guys.
+
+31
+00:01:38,000 --> 00:01:41,500
+Anyway, let's go ahead and attempt this one more time.
+
+32
+00:01:41,500 --> 00:01:43,600
+So, Release
+
+33
+00:01:43,600 --> 00:01:44,300
+Building
+
+34
+00:01:44,300 --> 00:01:44,930
+There you go
+
+35
+00:01:44,930 --> 00:01:48,000
+It finished without any problems.
+
+36
+00:01:48,000 --> 00:01:52,500
+Now we're gonna go ahead and minimize this.
+
+37
+00:01:52,500 --> 00:01:55,000
+I don't need this
+
+38
+00:01:55,000 --> 00:01:58,500
+I don't need this either
+
+39
+00:01:58,500 --> 00:02:02,000
+and let's go ahead and open up our file manager
+
+40
+00:02:02,000 --> 00:02:04,430
+and go into our workspace.
+
+41
+00:02:04,430 --> 00:02:06,400
+So it says here "Keylogger"
+
+42
+00:02:06,400 --> 00:02:07,799
+That's the name of our project.
+
+43
+00:02:07,799 --> 00:02:09,000
+I'm just go ahead and click on it
+
+44
+00:02:09,000 --> 00:02:10,200
+and you have a debug version
+
+45
+00:02:10,200 --> 00:02:11,700
+and you have the release version.
+
+46
+00:02:11,700 --> 00:02:14,230
+So we're gonna do release
+
+47
+00:02:14,230 --> 00:02:16,000
+and I already have tested it out
+
+48
+00:02:16,000 --> 00:02:18,200
+so I'm just gonna go ahead and delete this file
+
+49
+00:02:18,200 --> 00:02:24,000
+and I will go ahead and double click on this keylogger.exe file
+
+50
+00:02:24,000 --> 00:02:27,200
+and this window is a problem
+
+51
+00:02:27,200 --> 00:02:28,580
+because, you know
+
+52
+00:02:28,580 --> 00:02:29,600
+it's gonna sit here
+
+53
+00:02:29,600 --> 00:02:32,000
+and I assure you it's recording information.
+
+54
+00:02:32,000 --> 00:02:33,920
+Here we can do a test run.
+
+55
+00:02:33,920 --> 00:02:37,100
+I can open up another notepad
+
+56
+00:02:37,100 --> 00:02:53,000
+and I can type in "Feel free to make suggestions I will welcome them"
+
+57
+00:02:53,000 --> 00:02:55,000
+There you go
+
+58
+00:02:55,000 --> 00:02:58,000
+You can open up this file.
+
+59
+00:02:58,000 --> 00:03:04,200
+and you see "Feel free to make suggestions I will welcome thime"
+
+60
+00:03:04,200 --> 00:03:06,400
+but you see, when I made a mistake here
+
+61
+00:03:06,400 --> 00:03:07,900
+when I used backspaces
+
+62
+00:03:07,900 --> 00:03:09,500
+this is how it looks like.
+
+63
+00:03:09,500 --> 00:03:13,200
+So perhaps we didn't need to include a backspace
+
+64
+00:03:13,200 --> 00:03:16,540
+but then, it would just say T H I M E
+
+65
+00:03:16,540 --> 00:03:18,200
+and then E M at the end.
+
+66
+00:03:18,200 --> 00:03:23,800
+It would be a a little bit difficult to figure out what was the attempt.
+
+67
+00:03:23,800 --> 00:03:27,200
+What was supposed to be written there.
+
+68
+00:03:27,200 --> 00:03:31,200
+Anyway, in order to rectify this window
+
+69
+00:03:31,200 --> 00:03:33,900
+that is quite problematic here
+
+70
+00:03:33,900 --> 00:03:35,790
+and especially if it runs at boot time
+
+71
+00:03:35,790 --> 00:03:38,000
+you get stuck with a window like this
+
+72
+00:03:38,000 --> 00:03:41,700
+what do you think a normal user will do
+
+73
+00:03:41,700 --> 00:03:45,829
+Well, I can guarantee you that they're not going to get suspicious.
+
+74
+00:03:45,829 --> 00:03:47,500
+Most people don't care.
+
+75
+00:03:47,500 --> 00:03:49,160
+I, myself
+
+76
+00:03:49,160 --> 00:03:52,600
+if I was tired that day after a long day of work
+
+77
+00:03:52,600 --> 00:03:53,500
+or something of a kind
+
+78
+00:03:53,500 --> 00:03:56,700
+I would just click on X, close it
+
+79
+00:03:56,700 --> 00:03:58,000
+and there you go.
+
+80
+00:03:58,000 --> 00:04:00,500
+The keylogger program is no longer running.
+
+81
+00:04:00,500 --> 00:04:08,300
+It is recording nothing here.
+
+82
+00:04:08,300 --> 00:04:18,000
+AM I RECORDING?
+
+83
+00:04:18,000 --> 00:04:19,100
+Of course not
+
+84
+00:04:19,100 --> 00:04:21,600
+So there is nothing
+
+85
+00:04:21,600 --> 00:04:24,000
+because the program itself is not running.
+
+86
+00:04:24,000 --> 00:04:27,700
+So as you imagine, this can be problematic.
+
+87
+00:04:27,700 --> 00:04:30,670
+I mean, yeah
+
+88
+00:04:30,670 --> 00:04:34,020
+all your effort down the drain for no good reason.
+
+89
+00:04:34,020 --> 00:04:39,100
+That is why we're going to create a function to hide this window.
+
+90
+00:04:39,100 --> 00:04:44,300
+We are going to name this function simply "hide"
+
+91
+00:04:44,300 --> 00:04:48,500
+I can think of no a better name for it
+
+92
+00:04:48,500 --> 00:04:50,950
+and we're going to create a function prototype up here
+
+93
+00:04:50,950 --> 00:04:54,100
+and down below, I have the code listed out
+
+94
+00:04:54,100 --> 00:04:56,600
+because I really didn't want to write this during the tutorial
+
+95
+00:04:56,600 --> 00:04:59,000
+as I would make mistakes for sure
+
+96
+00:04:59,000 --> 00:05:04,000
+and I will explain this in a moment.
+
+97
+00:05:04,000 --> 00:05:11,000
+So let's just go ahead and type in "void hide"
+
+98
+00:05:11,000 --> 00:05:15,000
+and there we go.
+
+99
+00:05:15,000 --> 00:05:16,000
+Fantastic
+
+100
+00:05:16,000 --> 00:05:18,560
+So we're going to call this function within our main function
+
+101
+00:05:18,560 --> 00:05:22,690
+or we could even call it within this function.
+
+102
+00:05:22,690 --> 00:05:24,500
+We will see what we shall do
+
+103
+00:05:24,500 --> 00:05:26,500
+but let me go ahead and explain what we're doing.
+
+104
+00:05:26,500 --> 00:05:31,700
+So we're creating a handler called "stealth"
+
+105
+00:05:31,700 --> 00:05:37,500
+and you see it says "stealth=FindwindowA("ConsoleWindowClass"..."
+
+106
+00:05:37,500 --> 00:05:40,160
+and then "ShowWindow". it says "stealth"
+
+107
+00:05:40,160 --> 00:05:42,000
+and this is the handler
+
+108
+00:05:42,000 --> 00:05:43,770
+and then it says whether to show it or not.
+
+109
+00:05:43,770 --> 00:05:47,740
+It's 0, so don't show it.
+
+110
+00:05:47,740 --> 00:05:50,500
+It's not a good idea.
+
+111
+00:05:50,500 --> 00:05:55,270
+Let's go ahead and copy it.
+
+112
+00:05:55,270 --> 00:05:56,500
+We can just put it here.
+
+113
+00:05:56,500 --> 00:06:00,000
+No big deal
+
+114
+00:06:00,000 --> 00:06:05,400
+and now we can pack a release version.
+
+115
+00:06:05,410 --> 00:06:10,650
+Save it first
+
+116
+00:06:10,650 --> 00:06:13,000
+There you go
+
+117
+00:06:13,000 --> 00:06:18,000
+and if we delete this file once more
+
+118
+00:06:18,000 --> 00:06:22,000
+Run it
+
+119
+00:06:22,000 --> 00:06:25,000
+There we go
+
+120
+00:06:25,000 --> 00:06:28,400
+Okay, so apparently nothing happens
+
+121
+00:06:28,400 --> 00:06:31,500
+because I didn't do this the right way
+
+122
+00:06:31,500 --> 00:06:33,700
+or something of a kind.
+
+123
+00:06:33,700 --> 00:06:35,200
+Let's have a look
+
+124
+00:06:35,200 --> 00:06:37,800
+avoid, hide...
+
+125
+00:06:37,800 --> 00:06:39,550
+Of course it won't work
+
+126
+00:06:39,550 --> 00:06:41,900
+Of course
+
+127
+00:06:41,900 --> 00:06:42,760
+I'm a genius
+
+128
+00:06:42,760 --> 00:06:44,700
+I am a genius
+
+129
+00:06:44,700 --> 00:06:47,700
+You know there is nobody smarter than me in this world
+
+130
+00:06:47,700 --> 00:06:50,000
+Seriously
+
+131
+00:06:50,000 --> 00:06:52,200
+So let's go ahead and save it
+
+132
+00:06:52,200 --> 00:06:56,500
+and let's build it
+
+133
+00:06:56,500 --> 00:07:00,800
+and after that, we can open up our file manager
+
+134
+00:07:00,800 --> 00:07:02,410
+delete this file again
+
+135
+00:07:02,410 --> 00:07:03,900
+and start up the keylogger.exe
+
+136
+00:07:03,900 --> 00:07:08,500
+and you see, this appears.
+
+137
+00:07:08,500 --> 00:07:10,300
+We cannot see it.
+
+138
+00:07:10,300 --> 00:07:12,500
+You could see it in the processes.
+
+139
+00:07:12,500 --> 00:07:15,790
+There are ways of removing it from the processes as well
+
+140
+00:07:15,790 --> 00:07:16,900
+but that's kinda difficult
+
+141
+00:07:16,900 --> 00:07:22,700
+considering that you raise the suspicion levels with antivirus systems
+
+142
+00:07:22,700 --> 00:07:24,000
+and stuff of a kind.
+
+143
+00:07:24,000 --> 00:07:27,300
+So we'll see what we can do to bypass the antiviruses.
+
+144
+00:07:27,300 --> 00:07:30,000
+Although, this what we have with it now
+
+145
+00:07:30,000 --> 00:07:35,000
+there is a chance that it would get classified as something malicious as well.
+
+146
+00:07:35,000 --> 00:07:39,700
+We will later on see how to avoid antivirus detection
+
+147
+00:07:39,700 --> 00:07:42,500
+but you see, by creating a simple handler
+
+148
+00:07:42,500 --> 00:07:48,500
+and by calling the built-in Windows functions in C++
+
+149
+00:07:48,500 --> 00:07:49,900
+we are able...
+
+150
+00:07:49,900 --> 00:07:54,200
+well, they're basically using the functions from the Windows API
+
+151
+00:07:54,200 --> 00:07:57,400
+we are able to hide the to the window
+
+152
+00:07:57,400 --> 00:08:01,500
+and not display it at all.
+
+153
+00:08:01,500 --> 00:08:05,560
+This program is running, as you can see it here
+
+154
+00:08:05,560 --> 00:08:08,770
+and that's not really a good way to check it.
+
+155
+00:08:08,770 --> 00:08:13,300
+The best way to check it is simply to verify the functionality of the program.
+
+156
+00:08:13,300 --> 00:08:20,000
+So let's go ahead and write something
+
+157
+00:08:20,000 --> 00:08:36,780
+"i like to well i do not really know no sense"
+
+158
+00:08:36,780 --> 00:08:41,600
+Wow, this sentence is messy.
+
+159
+00:08:41,600 --> 00:08:44,600
+Okay, so "i like..."
+
+160
+00:08:44,600 --> 00:08:48,100
+I pressed the backspace because I'd leave something, I suppose
+
+161
+00:08:48,100 --> 00:08:53,700
+"to well i do not really know no sense"
+
+162
+00:08:53,700 --> 00:08:56,500
+and you can see that this recording
+
+163
+00:08:56,500 --> 00:09:00,700
+and you cannot see it unless you open a task manager and have a look there.
+
+164
+00:09:00,700 --> 00:09:05,960
+As I said, there are ways from even hiding it in the task manager as well
+
+165
+00:09:05,970 --> 00:09:08,500
+but that's really advanced stuff.
+
+166
+00:09:08,500 --> 00:09:10,360
+So we might get into that as well.
+
+167
+00:09:10,360 --> 00:09:13,100
+It's all really up to you
+
+168
+00:09:13,100 --> 00:09:16,400
+and how much of a demand for a course there is
+
+169
+00:09:16,400 --> 00:09:19,800
+and how much do you want the new videos to come.
+
+170
+00:09:19,800 --> 00:09:26,200
+As I said, please do not hesitate to submit as many suggestions as you like
+
+171
+00:09:26,200 --> 00:09:28,400
+and to ask as many questions as you like.
+
+172
+00:09:28,400 --> 00:09:36,000
+Of course, I cannot guarantee that I will adhere to every the single suggestion
+
+173
+00:09:36,000 --> 00:09:38,200
+but I definitely will.
+
+174
+00:09:38,200 --> 00:09:41,040
+I usually just take them, I copy/paste them into a file
+
+175
+00:09:41,040 --> 00:09:43,800
+and then, when I want to decide what to make
+
+176
+00:09:43,800 --> 00:09:45,000
+I take a look at them and I say
+
+177
+00:09:45,000 --> 00:09:48,400
+"Okay we're going to do this, this we can't, etc"
+
+178
+00:09:48,400 --> 00:09:53,300
+So as long as you guys want me to bring you new videos, I will.
+
+179
+00:09:53,300 --> 00:09:54,200
+So no worries there.
+
+180
+00:09:54,200 --> 00:09:58,580
+Also, take a look at the date when this video was published
+
+181
+00:09:58,580 --> 00:10:00,700
+and during this month
+
+182
+00:10:00,700 --> 00:10:05,100
+there's gonna be a lot more videos to come, I assure you.
+
+183
+00:10:05,100 --> 00:10:07,960
+Anyway, I bid you farewell
+
+184
+00:10:07,960 --> 00:10:11,900
+and I hope that you have enjoyed this segment
+
+185
+00:10:11,900 --> 00:10:14,000
+of the keylogger chapter.
+

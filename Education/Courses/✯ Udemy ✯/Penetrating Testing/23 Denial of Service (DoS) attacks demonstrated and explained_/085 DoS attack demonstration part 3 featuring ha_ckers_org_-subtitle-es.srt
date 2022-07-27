@@ -1,0 +1,684 @@
+1
+00:00:01,682 --> 00:00:05,407
+Vale, vamos a continuar por donde lo dejamos.
+
+2
+00:00:07,475 --> 00:00:08,869
+Aún tengo la terminal abierta
+
+3
+00:00:09,803 --> 00:00:12,024
+y ahora tenemos que ir a internet,
+
+4
+00:00:12,359 --> 00:00:14,874
+esta es la dirección.
+
+5
+00:00:16,006 --> 00:00:17,532
+Vale, esto ya no lo necesitáis.
+
+6
+00:00:17,567 --> 00:00:27,915
+Solo necesitáis http://ha.ckers.org/slowloris/.
+
+7
+00:00:29,376 --> 00:00:31,440
+Tenéis que visitar esta página web.
+
+8
+00:00:33,778 --> 00:00:38,093
+Esta es la página web oficial
+de este exploit, de este script Perl.
+
+9
+00:00:40,661 --> 00:00:42,344
+No tiene demasiada información,
+
+10
+00:00:43,049 --> 00:00:45,674
+pero sí la suficiente para un script de este tipo,
+
+11
+00:00:45,609 --> 00:00:48,930
+Os recomiendo que simplemente...
+
+12
+00:00:48,965 --> 00:00:52,139
+no hace falta que lo leáis todo,
+pero echadle un vistazo.
+
+13
+00:00:52,174 --> 00:00:55,241
+Leedlo por encima. Mirad lo que hay,
+
+14
+00:00:55,276 --> 00:00:59,699
+mirad qué han escrito los
+desarrolladores, cómo funciona,
+
+15
+00:00:59,734 --> 00:01:04,337
+para qué sirve, junto con
+lo que ya he explicado yo.
+
+16
+00:01:04,372 --> 00:01:08,517
+Podéis profundizar más en cómo
+funciona este ataque en realidad.
+
+17
+00:01:08,552 --> 00:01:12,818
+Uno de los aspectos positivos
+de este ataque es que no requiere
+
+18
+00:01:14,795 --> 00:01:16,653
+no requiere mucho ancho de banda,
+
+19
+00:01:16,788 --> 00:01:19,401
+al menos, no necesariamente.
+Pero cuanto más tengáis, mejor.
+
+20
+00:01:20,574 --> 00:01:22,155
+Bueno, vamos a bajar.
+
+21
+00:01:22,190 --> 00:01:24,453
+Esta es la parte que deberíais tener en cuenta.
+
+22
+00:01:24,488 --> 00:01:27,290
+Estos son los servidores, servidores web,
+
+23
+00:01:27,325 --> 00:01:30,773
+a los que afecta este tipo de ataque
+
+24
+00:01:32,527 --> 00:01:34,262
+y debajo están los servidores
+
+25
+00:01:34,397 --> 00:01:36,909
+que no deberían ser vulnerables
+a este tipo de ataque.
+
+26
+00:01:37,044 --> 00:01:40,405
+Vale, cambio. Una pequeña
+corrección para mí mismo.
+
+27
+00:01:40,640 --> 00:01:45,691
+Estos no son los servidores
+que son vulnerables a este ataque,
+
+28
+00:01:45,726 --> 00:01:48,574
+sino los que probablemente sean vulnerables o
+
+29
+00:01:48,609 --> 00:01:51,167
+que pueden ser susceptibles a él.
+
+30
+00:01:52,343 --> 00:01:55,538
+Aquí lo mismo. Estos servidores son...
+
+31
+00:01:55,573 --> 00:01:59,092
+en estos servidores es poco
+probable que funcione el ataque.
+
+32
+00:01:59,127 --> 00:02:03,105
+Mirad, en estos dos la comunidad
+de usuarios ha verificado
+
+33
+00:02:03,140 --> 00:02:06,085
+que no funciona. Aun así podéis probar,
+
+34
+00:02:07,402 --> 00:02:11,010
+si tenéis permiso, pero
+es probable que no funcione.
+
+35
+00:02:12,029 --> 00:02:16,968
+Bueno, aquí tenemos
+Apache 2.x, muy importante porque
+
+36
+00:02:17,967 --> 00:02:20,798
+un gran número de servidores van con Apache
+
+37
+00:02:21,927 --> 00:02:25,732
+y lo que me alegro de ver aquí es que lighttpd
+
+38
+00:02:25,767 --> 00:02:29,687
+no parece verse afectado
+por esto y nginx tampoco
+
+39
+00:02:29,722 --> 00:02:31,500
+parece que verse afectado.
+
+40
+00:02:31,535 --> 00:02:34,143
+Más importante es nginx,
+si no sabéis qué es nginx...
+
+41
+00:02:35,938 --> 00:02:39,411
+por alguna extraña razón se escribe n-g-i-n-x.
+
+42
+00:02:39,446 --> 00:02:44,729
+Es una alternativa a Apache.
+No lleva mucho tiempo por ahí,
+
+43
+00:02:44,764 --> 00:02:47,786
+al contrario que Apache, pero sí lo suficiente,
+
+44
+00:02:47,821 --> 00:02:50,564
+y la gente lo ha estado
+usando como sustituto de Apache.
+
+45
+00:02:51,448 --> 00:02:55,008
+Se dice que es más rápido, pero no lo puedo confirmar.
+
+46
+00:02:55,043 --> 00:02:57,768
+Bueno, eso ha sido un poco de información extra
+
+47
+00:02:58,607 --> 00:03:01,142
+que me ha salido, no tiene mucha importancia.
+
+48
+00:03:02,263 --> 00:03:05,178
+Aquí dice también que hay ciertos requisitos
+
+49
+00:03:05,213 --> 00:03:09,120
+para que funcione el script,
+pero si lo ejecutáis en Kali Linux,
+
+50
+00:03:09,155 --> 00:03:11,001
+en la última versión, como yo,
+
+51
+00:03:11,856 --> 00:03:15,103
+no deberíais tener que instalar nada más.
+
+52
+00:03:16,638 --> 00:03:20,803
+Si lo hacéis, consultad esta
+página y mirad qué os falta, pero
+
+53
+00:03:20,838 --> 00:03:22,476
+no sé, yo lo he probado,
+
+54
+00:03:22,511 --> 00:03:25,554
+lo he probado en el Kali Linux que tengo en marcha
+
+55
+00:03:25,589 --> 00:03:28,348
+y si vosotros tenéis el mismo sistema en vuestra casa,
+
+56
+00:03:29,769 --> 00:03:32,088
+no os debería hacer falta instalar nada.
+
+57
+00:03:33,224 --> 00:03:35,032
+En fin, si seguimos bajando...
+
+58
+00:03:35,133 --> 00:03:39,113
+Solo una puntualización para aquellos
+
+59
+00:03:39,148 --> 00:03:40,907
+que quieran hacer esto en Windows.
+
+60
+00:03:42,261 --> 00:03:44,386
+Es posible, pero...
+
+61
+00:03:45,170 --> 00:03:48,418
+hay que instalar cygwin.
+
+62
+00:03:49,663 --> 00:03:53,963
+Sí... O sea, es totalmente factible,
+
+63
+00:03:53,998 --> 00:03:55,959
+pero la verdad es que no lo recomiendo.
+
+64
+00:03:57,034 --> 00:04:00,361
+Bueno, vamos más abajo y dice Download.
+
+65
+00:04:01,702 --> 00:04:05,282
+Es solaris.pl, tendréis que descargaros este...
+
+66
+00:04:05,317 --> 00:04:07,538
+tendréis que descargaros este script en particular
+
+67
+00:04:07,573 --> 00:04:11,853
+o si queréis realizar el
+ataque DoS en un protocolo IPv6
+
+68
+00:04:11,888 --> 00:04:14,716
+también os podéis bajar este script.
+
+69
+00:04:16,178 --> 00:04:20,603
+No diría que un porcentaje tan
+elevado de la población usa IPv6,
+
+70
+00:04:20,638 --> 00:04:23,984
+al menos, no por ahora, pero con el tiempo
+
+71
+00:04:24,019 --> 00:04:26,761
+cambiarán a IPv6, os diré por qué.
+
+72
+00:04:26,796 --> 00:04:32,524
+Hay unos cuatro mil millones
+de direcciones IPv4 y de forma exponencial
+
+73
+00:04:32,559 --> 00:04:37,003
+hay más direcciones IPv6.
+Como hay escasez de direcciones IP
+
+74
+00:04:37,038 --> 00:04:40,084
+se cambiaron al protocolo
+IPv6, lo proporcionaron.
+
+75
+00:04:40,833 --> 00:04:43,224
+No sé exactamente por qué,
+
+76
+00:04:43,640 --> 00:04:46,947
+pero el porcentaje que se ha
+cambiado a IPv6 no es tan alto.
+
+77
+00:04:47,082 --> 00:04:49,146
+Por lo menos de momento.
+
+78
+00:04:50,406 --> 00:04:52,205
+Pero en el futuro, seguro, ¿por qué no?
+
+79
+00:04:52,240 --> 00:04:54,373
+Bueno, por el momento, vamos a usar
+
+80
+00:04:54,508 --> 00:04:57,139
+este script que os he dicho, haced clic sobre él
+
+81
+00:04:57,174 --> 00:05:00,492
+Y como veis, este no es el típico enlace de descarga.
+
+82
+00:05:02,217 --> 00:05:05,750
+Esto es básicamente un script en internet que vais a
+
+83
+00:05:05,785 --> 00:05:09,371
+seleccionar con Ctrl+A y copiar con Ctrl+C.
+
+84
+00:05:09,406 --> 00:05:12,682
+Normalmente, no aconsejaría hacer esto, pero
+
+85
+00:05:13,769 --> 00:05:17,154
+confío bastante en esta página y
+
+86
+00:05:18,116 --> 00:05:21,005
+lo estáis haciendo en una máquina virtual, así que...
+
+87
+00:05:21,983 --> 00:05:24,195
+Si lo hacéis en una máquina
+virtual no es tan peligroso
+
+88
+00:05:24,230 --> 00:05:27,412
+pero si lo hacéis en una física,
+podría presentar algún problema.
+
+89
+00:05:28,532 --> 00:05:30,603
+Bueno, voy a seguir. Voy a...
+
+90
+00:05:32,225 --> 00:05:35,467
+Tengo otros dos archivos que he creado antes,
+
+91
+00:05:35,502 --> 00:05:39,612
+así que voy a borrar los dos y voy a crear uno nuevo.
+
+92
+00:05:40,840 --> 00:05:46,723
+"nano slowloris". Podéis llamarlo
+como queráis, por cierto,
+
+93
+00:05:46,758 --> 00:05:52,003
+".pl" pero esto tiene sentido
+y necesitáis la extensión .pl,
+
+94
+00:05:52,038 --> 00:05:56,881
+eso es totalmente necesario.
+Pulsad Enter para crear...
+
+95
+00:05:57,693 --> 00:06:02,175
+Abrid el archivo en nano,
+pegad el contenido, puede tardar...
+
+96
+00:06:02,210 --> 00:06:04,174
+no lo cerréis y guardéis enseguida.
+
+97
+00:06:04,209 --> 00:06:06,275
+Le cuesta un poco cargarlo todo.
+
+98
+00:06:07,871 --> 00:06:10,641
+Aquí tenéis el código, debajo hay explicaciones
+
+99
+00:06:10,676 --> 00:06:14,043
+por parte de los desarrolladores.
+
+100
+00:06:14,078 --> 00:06:17,081
+Tenéis aquí algunas cosas,
+podéis revisar el script si queréis,
+
+101
+00:06:17,116 --> 00:06:18,498
+si sabéis leer scripts Perl.
+
+102
+00:06:19,692 --> 00:06:23,538
+Ctrl+O para guardar, Enter. Ctrl+X para salir.
+
+103
+00:06:23,573 --> 00:06:27,729
+Usamos chmod, hacemos el archivo ejecutable.
+
+104
+00:06:27,764 --> 00:06:33,944
++x slowloris.pl, despejamos la pantalla y
+
+105
+00:06:33,979 --> 00:06:35,095
+ahora vamos a...
+
+106
+00:06:36,040 --> 00:06:37,654
+Estoy seguro de que tengo por aquí el comando
+
+107
+00:06:37,689 --> 00:06:39,351
+porque no me apetece nada escribirlo.
+
+108
+00:06:39,386 --> 00:06:42,687
+No falla que me equivoque
+al escribirlos en los tutoriales.
+
+109
+00:06:42,722 --> 00:06:48,513
+Está este comando estándar
+de ejecución de scripts "./"
+
+110
+00:06:48,548 --> 00:06:51,485
+para ejecutar casi cualquier
+script ejecutable en Linux.
+
+111
+00:06:51,520 --> 00:06:55,378
+Luego escribimos el nombre
+del script o la ruta de éste
+
+112
+00:06:55,413 --> 00:06:59,175
+y luego tenemos el argumento "dns"
+seguido de la dirección IP
+
+113
+00:06:59,210 --> 00:07:03,190
+y tenemos "-port" y creo que este es el número
+
+114
+00:07:03,225 --> 00:07:07,121
+de hilos, o debería decir sockets, sockets abiertos.
+
+115
+00:07:07,156 --> 00:07:12,050
+Bueno, sigamos, he escrito
+la dirección IP de mi router, claro,
+
+116
+00:07:12,085 --> 00:07:13,538
+en el que voy a llevar esto a cabo.
+
+117
+00:07:13,573 --> 00:07:17,053
+He hecho el nmap scan para
+esta determinada dirección IP.
+
+118
+00:07:17,088 --> 00:07:21,597
+Así que pulsamos Enter
+y esto se va a poner en marcha.
+
+119
+00:07:21,632 --> 00:07:23,629
+Vamos a abrir el navegador.
+
+120
+00:07:25,136 --> 00:07:29,728
+Es 192.168.1.1. Puede que cargue, puede que no.
+
+121
+00:07:29,763 --> 00:07:34,306
+Vale, no carga. Dice que
+la conexión se ha reiniciado.
+
+122
+00:07:34,341 --> 00:07:38,767
+No puedo acceder a él, así que vamos a Kali,
+
+123
+00:07:38,802 --> 00:07:44,767
+detenemos el ataque, volvemos a Firefox.
+
+124
+00:07:45,683 --> 00:07:47,467
+Vamos a probar recargando la página.
+
+125
+00:07:48,919 --> 00:07:51,159
+Intentar de nuevo No.
+
+126
+00:07:53,279 --> 00:07:54,856
+He detenido el script, ¿no?
+
+127
+00:08:01,164 --> 00:08:02,655
+Perfecto, allá vamos. Solo he...
+
+128
+00:08:04,231 --> 00:08:07,030
+no he pulsado Intentar de nuevo,
+sino Ctrl+R en el teclado
+
+129
+00:08:07,065 --> 00:08:10,659
+para recargar la página y ahora
+podéis ver que ya puedo escribir
+
+130
+00:08:10,694 --> 00:08:15,839
+al contrario que antes, cuando
+la conexión había sido reiniciada.
+
+131
+00:08:15,874 --> 00:08:19,447
+Así que voy a cancelar esto
+y mientras sigo con el tutorial
+
+132
+00:08:19,482 --> 00:08:22,527
+voy a hacer lo siguiente: ping Google
+
+133
+00:08:22,562 --> 00:08:25,472
+para que veáis que tengo conexión a internet,
+
+134
+00:08:25,507 --> 00:08:27,851
+que no estoy desconectado del todo de internet.
+
+135
+00:08:29,801 --> 00:08:31,837
+Q no, Ctrl+C,
+
+136
+00:08:33,087 --> 00:08:34,776
+es bastante fácil de ejecutar,
+
+137
+00:08:36,099 --> 00:08:38,270
+no hace falta que os lo curréis demasiado,
+
+138
+00:08:38,305 --> 00:08:41,212
+solo hay que escanear, si veis que es vulnerable,
+
+139
+00:08:41,247 --> 00:08:43,199
+podéis realizar el ataque, y si no,
+
+140
+00:08:43,234 --> 00:08:45,978
+si veis que no es vulnerable, entonces, obviamente,
+
+141
+00:08:46,013 --> 00:08:48,754
+no podréis llevarlo a cabo.
+
+142
+00:08:48,789 --> 00:08:51,171
+Ahora, un recordatorio antes de terminar con esto.
+
+143
+00:08:51,206 --> 00:08:55,537
+Todos estos tests los estoy
+haciendo en mi router, estoy en
+
+144
+00:08:55,772 --> 00:08:59,517
+este servidor web que estoy operando con el router.
+
+145
+00:09:00,780 --> 00:09:04,750
+Como veis, hay una lista de servidores
+en los que es probable que funcione
+
+146
+00:09:05,719 --> 00:09:07,786
+pero si lo probáis en otros servidores
+
+147
+00:09:07,821 --> 00:09:09,466
+de los que tengáis permiso para hacerlo, claro,
+
+148
+00:09:10,406 --> 00:09:13,573
+puede que no funciona. Además, podría
+
+149
+00:09:13,608 --> 00:09:17,168
+ralentizar la página, aumentar el tiempo de carga,
+
+150
+00:09:17,303 --> 00:09:19,929
+aumentar el tiempo de carga a un par de minutos.
+
+151
+00:09:19,964 --> 00:09:21,474
+Creo que ya lo he dicho antes.
+
+152
+00:09:22,449 --> 00:09:25,712
+El ataque DoS puede ser completo o parcial.
+
+153
+00:09:25,747 --> 00:09:28,074
+Si es un ataque parcial, no os desmotivéis,
+
+154
+00:09:28,109 --> 00:09:30,298
+es prácticamente igual de efectivo que el de verdad,
+
+155
+00:09:30,333 --> 00:09:32,424
+sobre todo porque nadie va a quedarse esperando
+
+156
+00:09:32,459 --> 00:09:34,560
+durante 5 minutos a que cargue la página.
+
+157
+00:09:35,620 --> 00:09:38,712
+O casi nadie, intentad poneros en la misma situación.
+
+158
+00:09:38,747 --> 00:09:42,323
+Bueno, me despido ya
+
+159
+00:09:42,358 --> 00:09:44,843
+y espero veros en el próximo tutorial.
+

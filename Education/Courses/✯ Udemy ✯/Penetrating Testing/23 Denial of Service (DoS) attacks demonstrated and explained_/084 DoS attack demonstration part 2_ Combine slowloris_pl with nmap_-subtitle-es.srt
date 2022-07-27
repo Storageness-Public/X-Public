@@ -1,0 +1,567 @@
+1
+00:00:00,000 --> 00:00:04,805
+Bienvenidos a otro tutorial más de ataques DoS,
+
+2
+00:00:04,840 --> 00:00:07,875
+esta vez vamos a combinar dos herramientas.
+
+3
+00:00:07,910 --> 00:00:13,070
+Vamos a utilizar slowloris.pl,
+
+4
+00:00:14,151 --> 00:00:15,306
+que es básicamente un script Perl,
+
+5
+00:00:15,537 --> 00:00:19,950
+y vamos a usar "nmap"
+para escanear una página web
+
+6
+00:00:19,985 --> 00:00:22,937
+para determinar si es vulnerable o no.
+
+7
+00:00:24,985 --> 00:00:29,832
+Este ataque no es perfecto, para nada,
+
+8
+00:00:30,231 --> 00:00:33,317
+cuanto más ancho de banda tengas, mejor, claro,
+
+9
+00:00:34,237 --> 00:00:36,474
+cuanto más potente sea el ordenador, mejor también,
+
+10
+00:00:36,629 --> 00:00:38,403
+porque podrás crear más hilos,
+
+11
+00:00:40,580 --> 00:00:42,303
+esto significa más tareas simultáneas.
+
+12
+00:00:42,338 --> 00:00:47,465
+Pero, a veces... bueno, casi siempre,
+
+13
+00:00:47,500 --> 00:00:48,818
+si no tienes suficiente ancho de banda
+
+14
+00:00:48,853 --> 00:00:52,343
+el sitio no se dosea de manera permanente,
+
+15
+00:00:52,378 --> 00:00:55,103
+los usuarios aún pueden acceder a él,
+
+16
+00:00:55,138 --> 00:00:59,710
+pero el tiempo de carga es,
+digamos... sí, muy largo.
+
+17
+00:00:59,745 --> 00:01:01,596
+De un minuto o dos.
+
+18
+00:01:02,483 --> 00:01:04,883
+Intentad poneros en esa situación,
+
+19
+00:01:04,918 --> 00:01:09,415
+imaginaos una página comercial que vende cosas.
+
+20
+00:01:10,821 --> 00:01:13,761
+Imaginad que los clientes
+que se conectan a ese servidor
+
+21
+00:01:13,796 --> 00:01:17,288
+tienen que esperar un par de
+minutos para que la página cargue.
+
+22
+00:01:19,391 --> 00:01:23,298
+¿Cuántos de vosotros
+os quedaríais y no os iríais
+
+23
+00:01:23,333 --> 00:01:27,014
+a otro sitio muy parecido
+que venda cosas similares?
+
+24
+00:01:27,049 --> 00:01:32,183
+Es solo una situación ficticia,
+
+25
+00:01:33,310 --> 00:01:35,503
+solo quiero demostrar
+que en realidad no hace falta
+
+26
+00:01:35,712 --> 00:01:37,227
+hacer que la web caiga permanentemente,
+
+27
+00:01:37,540 --> 00:01:40,962
+basta con dejarla inútil de esta forma
+
+28
+00:01:40,997 --> 00:01:46,814
+en que el tiempo de acceso
+de los usuarios es larguísimo
+
+29
+00:01:46,849 --> 00:01:51,277
+y el sitio se vuelve
+básicamente inútil y lo que cargas
+
+30
+00:01:51,312 --> 00:01:54,243
+tarda un minuto o dos y parece que estás...
+
+31
+00:01:54,278 --> 00:01:57,962
+No sé, todo el mundo se acordará
+
+32
+00:01:57,997 --> 00:02:01,657
+de esas conexiones RDSI o algo así,
+
+33
+00:02:01,692 --> 00:02:04,018
+donde todo iba superlento.
+
+34
+00:02:04,053 --> 00:02:07,885
+Básicamente, así quedaría la página web
+
+35
+00:02:07,920 --> 00:02:10,537
+cuando llevas a cabo este tipo de ataque.
+
+36
+00:02:10,572 --> 00:02:15,897
+Bueno, hay un par de cosas
+que tenemos que hacer aquí
+
+37
+00:02:15,932 --> 00:02:20,318
+y una de ellas es que
+tenemos que volver a escanear.
+
+38
+00:02:20,353 --> 00:02:25,118
+Así que vamos a utilizar el nmap igual que antes.
+
+39
+00:02:25,153 --> 00:02:27,767
+Ya veis que tengo los comandos memorizados,
+
+40
+00:02:27,802 --> 00:02:30,444
+porque los he usado antes para probarlos
+
+41
+00:02:30,479 --> 00:02:31,994
+y ver si funcionaban.
+
+42
+00:02:32,029 --> 00:02:33,304
+Entonces, tengo nmap.
+
+43
+00:02:33,339 --> 00:02:37,601
+Le digo a nmap que use un
+script determinado para este fin,
+
+44
+00:02:37,636 --> 00:02:42,541
+parallelism 400, y le doy una dirección IP
+
+45
+00:02:42,576 --> 00:02:46,312
+que quiero escanear para este tipo de vulnerabilidad.
+
+46
+00:02:47,656 --> 00:02:49,456
+También he usado el "double verbose output"
+
+47
+00:02:49,491 --> 00:02:54,190
+para que nmap me diga qué
+está pasando, qué está haciendo.
+
+48
+00:02:58,163 --> 00:03:02,365
+En la web de nmap, dejadme que haga esto.
+
+49
+00:03:05,363 --> 00:03:06,667
+Perfecto, este es el...
+
+50
+00:03:07,671 --> 00:03:09,812
+este es el sitio donde
+encontraréis todos los scripts.
+
+51
+00:03:09,847 --> 00:03:13,510
+Ya os he enseñado esto
+en otros tutoriales anteriores
+
+52
+00:03:13,545 --> 00:03:16,454
+con la etiqueta nmap o algo por el estilo,
+
+53
+00:03:16,489 --> 00:03:20,059
+donde tratábamos el capítulo de footprinting
+
+54
+00:03:20,094 --> 00:03:23,938
+y vimos cómo escanear las
+vulnerabilidades de los servidores
+
+55
+00:03:25,110 --> 00:03:26,561
+¿Os acordáis de que os dije que podéis
+
+56
+00:03:26,596 --> 00:03:29,489
+encontrar aquí los scripts, en su página?
+
+57
+00:03:29,524 --> 00:03:33,561
+Pues también encontráis
+categorías y qué hace cada script.
+
+58
+00:03:33,596 --> 00:03:34,804
+También he mencionado eso ya.
+
+59
+00:03:34,839 --> 00:03:38,455
+Lo que queremos es hacer clic
+en DoS, Denial of Service.
+
+60
+00:03:39,192 --> 00:03:42,508
+Estos determinados scripts
+escanearán esas vulnerabilidades.
+
+61
+00:03:42,543 --> 00:03:47,811
+Escanearán vulnerabilidades
+relacionadas con ataques DoS.
+
+62
+00:03:51,307 --> 00:03:53,591
+Y tenemos, no sé, broadcast, avahi-dos:
+
+63
+00:03:53,626 --> 00:03:56,641
+intenta descubrir hosts
+en la red local. No estamos
+
+64
+00:03:56,676 --> 00:03:59,534
+tan interesados en la red local, excepto cuando
+
+65
+00:03:59,569 --> 00:04:03,167
+me extendí en ello con la inalámbrica y
+
+66
+00:04:03,202 --> 00:04:05,438
+cómo se puede hacer un ataque DoS ahí.
+
+67
+00:04:05,473 --> 00:04:08,870
+Queremos este, http-slowloris:
+
+68
+00:04:10,979 --> 00:04:14,420
+servidor web para vulnerabilidad
+al ataque Slowloris DoS
+
+69
+00:04:14,455 --> 00:04:18,518
+lanzando este tipo de ataque.
+
+70
+00:04:18,553 --> 00:04:21,847
+También hay otros.
+No tengáis miedo de probarlos
+
+71
+00:04:21,882 --> 00:04:26,942
+en vuestro propio sistema y
+ver qué os funciona a vosotros,
+
+72
+00:04:29,689 --> 00:04:33,235
+qué tipos de ataques diferentes os funcionan.
+
+73
+00:04:34,229 --> 00:04:38,012
+Bueno, queremos este para servidores web
+
+74
+00:04:39,819 --> 00:04:42,608
+para poder dosear una web y cosas así,
+
+75
+00:04:42,643 --> 00:04:45,480
+así que voy a utilizarlo. Mirad,
+
+76
+00:04:45,515 --> 00:04:52,548
+script http-slowloris, pulsamos Enter
+y dejamos que proceda el escaneo.
+
+77
+00:04:54,169 --> 00:04:57,070
+Eso sí, el escaneo puede tardar bastante.
+
+78
+00:04:58,315 --> 00:05:01,516
+¿Por qué? No lo sé, está en LAN,
+
+79
+00:05:01,551 --> 00:05:04,171
+debería ser más rápido, pero se ve que no.
+
+80
+00:05:04,206 --> 00:05:08,277
+En internet va a ser todavía más lento,
+
+81
+00:05:08,312 --> 00:05:11,651
+así que no penséis que
+no funciona ni nada de eso.
+
+82
+00:05:11,686 --> 00:05:14,762
+Funciona, pero ya sabéis,
+si lo vais a hacer online,
+
+83
+00:05:14,797 --> 00:05:20,545
+puede tardar más rato.
+En LAN pensaba que sería más rápido
+
+84
+00:05:20,580 --> 00:05:24,484
+pero parece que esta es
+la velocidad a la que progresa.
+
+85
+00:05:25,432 --> 00:05:29,995
+En fin, aquí tenéis todo esto, que es lo normal
+
+86
+00:05:30,030 --> 00:05:36,391
+y debajo dice "Completed SYN Stealth Scan".
+
+87
+00:05:38,426 --> 00:05:40,054
+Perfecto, todo eso es lo normal.
+
+88
+00:05:40,089 --> 00:05:43,236
+Debajo pone "NSE: script scanning".
+
+89
+00:05:43,271 --> 00:05:45,636
+Hasta que no haya hecho este escaneo habitual,
+
+90
+00:05:45,671 --> 00:05:51,327
+no empezará el del script NSE.
+El script que hemos usado ha pasado el sondeo
+
+91
+00:05:51,362 --> 00:05:55,207
+y el script que queremos utilizar para averiguar
+
+92
+00:05:55,242 --> 00:05:58,614
+si el servidor es vulnerable a este tipo de ataque.
+
+93
+00:05:58,649 --> 00:06:02,511
+Hay otro temporizador para el script NSE
+
+94
+00:06:02,546 --> 00:06:06,285
+y también otro porcentaje para el script NSE.
+
+95
+00:06:06,320 --> 00:06:11,899
+Dice la hora actual y
+
+96
+00:06:11,934 --> 00:06:13,759
+este es el tiempo restante.
+
+97
+00:06:15,821 --> 00:06:17,288
+Perdón, no es la hora actual,
+
+98
+00:06:17,323 --> 00:06:20,234
+es el tiempo estimado
+para completarlo, o algo así.
+
+99
+00:06:20,269 --> 00:06:23,043
+No importa, no hagáis caso a esto.
+
+100
+00:06:23,078 --> 00:06:29,172
+Esta es la parte importante.
+Dice 02:41 restante, 01:57 restante.
+
+101
+00:06:29,207 --> 00:06:34,074
+Y así seguirá hasta que finalice la tarea.
+
+102
+00:06:34,109 --> 00:06:40,238
+Una vez hecho eso, sabremos
+si el servidor es vulnerable o no.
+
+103
+00:06:40,273 --> 00:06:42,536
+Estos routers tienden a ser vulnerables,
+
+104
+00:06:43,661 --> 00:06:44,969
+es decir, a un montón de cosas.
+
+105
+00:06:45,004 --> 00:06:47,146
+Una vez me pasó una cosa un poco embarazosa.
+
+106
+00:06:47,181 --> 00:06:51,228
+La moraleja es que nunca deberíais alejaros
+
+107
+00:06:51,263 --> 00:06:52,955
+de vuestro ordenador cuando está desbloqueado.
+
+108
+00:06:54,131 --> 00:06:56,531
+Mis amigos cogieron mi dirección IP y como
+
+109
+00:06:56,566 --> 00:07:00,483
+los routers domésticos no son
+muy buenos en términos de seguridad,
+
+110
+00:07:00,518 --> 00:07:02,620
+me dosearon, básicamente.
+
+111
+00:07:03,637 --> 00:07:07,373
+Obviamente, lo puedo evitar
+fácilmente cambiando la dirección IP,
+
+112
+00:07:07,408 --> 00:07:10,083
+apagar y encender el router haría el apaño.
+
+113
+00:07:10,118 --> 00:07:12,740
+Hay otras formas, pero no me di cuenta...
+
+114
+00:07:12,775 --> 00:07:17,570
+durante 5 o 10 minutos no me
+di cuenta de lo que estaba pasando.
+
+115
+00:07:17,605 --> 00:07:21,261
+No me enteré, de hecho, porque
+de lo primero que hace la gente
+
+116
+00:07:21,296 --> 00:07:24,117
+cuando pasa algo con la
+conexión, es reiniciar el router.
+
+117
+00:07:24,152 --> 00:07:26,967
+Eso hice y, claro está, la dirección IP cambió,
+
+118
+00:07:27,002 --> 00:07:29,861
+así que el ataque DoS paró. Más tarde me dijeron
+
+119
+00:07:29,896 --> 00:07:33,511
+que me estaban tomando un poco el pelo.
+
+120
+00:07:34,613 --> 00:07:38,830
+En fin, el escaneo se ha completado.
+
+121
+00:07:38,865 --> 00:07:44,784
+Dice "probablemente vulnerable",
+así que veamos qué podemos hacer.
+
+122
+00:07:44,819 --> 00:07:47,307
+Podemos seguir y despejar
+la pantalla a no ser que tengáis
+
+123
+00:07:47,342 --> 00:07:50,828
+como 100 clientes o más de
+un cliente al que hayáis escaneado,
+
+124
+00:07:50,863 --> 00:07:54,845
+y tengáis que redirigir esto
+a un archivo, como ya he mostrado.
+
+125
+00:07:54,880 --> 00:07:58,976
+Así que despejamos la pantalla.
+
+126
+00:07:59,011 --> 00:08:03,197
+En el siguiente tutorial... perdón por la tos,
+
+127
+00:08:04,505 --> 00:08:06,055
+tenía algo en la garganta,
+
+128
+00:08:06,090 --> 00:08:09,436
+en el siguiente tutorial seguiremos
+
+129
+00:08:09,471 --> 00:08:14,692
+y descargaremos el script Perl
+y veremos cómo se utiliza
+
+130
+00:08:14,727 --> 00:08:17,593
+para llevar a cabo este ataque.
+
+131
+00:08:17,628 --> 00:08:19,818
+Hasta entonces, me despido.
+

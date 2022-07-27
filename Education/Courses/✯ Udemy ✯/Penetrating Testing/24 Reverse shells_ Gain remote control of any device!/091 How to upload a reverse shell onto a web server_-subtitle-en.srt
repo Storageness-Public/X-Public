@@ -1,0 +1,1139 @@
+1
+00:00:00,360 --> 00:00:04,211
+Hello, everybody, and welcome to
+this last tutorial of the course.
+
+2
+00:00:04,211 --> 00:00:11,003
+Today, I will show you how you can upload
+a reverse shell onto a web server.
+
+3
+00:00:11,003 --> 00:00:14,837
+However, there are multiple problems here.
+
+4
+00:00:14,837 --> 00:00:19,560
+First of all, the filtering of extensions.
+
+5
+00:00:21,080 --> 00:00:24,620
+So, for example, I have on my desktop,
+have a nice day .php,
+
+6
+00:00:24,620 --> 00:00:27,680
+and then I have something here,
+which I have clearly striped.
+
+7
+00:00:29,590 --> 00:00:32,130
+So backslash.
+
+8
+00:00:33,560 --> 00:00:37,842
+Excellent, so this is a reverse shell of
+which I have added the extension GPG,
+
+9
+00:00:37,842 --> 00:00:41,880
+primarily because,
+web servers they have Filters.
+
+10
+00:00:43,040 --> 00:00:44,480
+And let's just open up our vulnerable app.
+
+11
+00:00:44,480 --> 00:00:47,550
+There's this neat upload section.
+
+12
+00:00:47,550 --> 00:00:51,160
+Now, somebody might say well we're not
+gonna get that from a real web server, or
+
+13
+00:00:51,160 --> 00:00:55,728
+website, my answer to this, yes you will.
+
+14
+00:00:55,728 --> 00:00:56,543
+Why?
+
+15
+00:00:56,543 --> 00:01:01,060
+Well, pretty much all social websites and
+
+16
+00:01:01,060 --> 00:01:05,400
+any sort of a website,
+that has client to client interaction.
+
+17
+00:01:05,400 --> 00:01:09,910
+And any sort of website which has
+tech support of that kind and
+
+18
+00:01:09,910 --> 00:01:12,480
+which has contact forums,
+
+19
+00:01:12,480 --> 00:01:16,570
+there's a 99% chance there will be
+an upload function somewhere on the site.
+
+20
+00:01:16,570 --> 00:01:18,250
+Just have a look around.
+
+21
+00:01:18,250 --> 00:01:22,640
+It's there almost all the sites have
+an upload function of some sort or kind.
+
+22
+00:01:22,640 --> 00:01:26,730
+Okay, just take a try to
+imagine a dating website.
+
+23
+00:01:26,730 --> 00:01:29,730
+How would a dating website function,
+
+24
+00:01:29,730 --> 00:01:32,590
+without an upload function
+to upload photos of people?
+
+25
+00:01:32,590 --> 00:01:34,970
+Practically impossible.
+
+26
+00:01:34,970 --> 00:01:36,180
+Also, social media websites and so on.
+
+27
+00:01:36,180 --> 00:01:41,950
+There are several things which you
+need to take into consideration.
+
+28
+00:01:42,970 --> 00:01:51,711
+One of them is you need to figure out
+which version of PHP are they running.
+
+29
+00:01:51,711 --> 00:02:00,890
+To do that, you will have an nmap scan.
+
+30
+00:02:00,890 --> 00:02:05,450
+And you have script equals
+http-php-version, and this is gonna give
+
+31
+00:02:05,450 --> 00:02:09,710
+you a version of HTTP, and it's gonna try
+to determine which operating system is
+
+32
+00:02:09,710 --> 00:02:14,830
+running there as well,
+if I'm not mistaken.
+
+33
+00:02:14,830 --> 00:02:19,750
+But more importantly, it will give you
+a PHP version of the web server, and
+
+34
+00:02:19,750 --> 00:02:22,560
+then based upon the version of the PHP,
+
+35
+00:02:22,560 --> 00:02:27,360
+you will be able to exercise
+certain vulnerabilities.
+
+36
+00:02:27,360 --> 00:02:31,610
+So, my version, you can find
+the script on the Nmap website.
+
+37
+00:02:31,610 --> 00:02:35,175
+Just type into Google, or
+
+38
+00:02:35,175 --> 00:02:41,075
+whatever search engine you are using.
+
+39
+00:02:41,075 --> 00:02:46,010
+Nmap PHP version scan and
+it will bring you there.
+
+40
+00:02:46,010 --> 00:02:49,230
+I hope that you know
+how to do that by now.
+
+41
+00:02:49,230 --> 00:02:54,800
+If you want to check which
+PHP version you are using,
+
+42
+00:02:54,800 --> 00:02:57,160
+type in php5-V, and there you go.
+
+43
+00:02:57,160 --> 00:03:01,192
+So let's see, php 5.4.
+
+44
+00:03:02,410 --> 00:03:04,630
+So 5439.
+You think that 53,
+
+45
+00:03:04,630 --> 00:03:09,780
+something like that was
+vulnerable to no byte inclusion.
+
+46
+00:03:09,780 --> 00:03:14,320
+This is what I was trying
+to do here previously.
+
+47
+00:03:14,320 --> 00:03:17,930
+You have, for example, php/00.jpg.
+
+48
+00:03:17,930 --> 00:03:23,610
+This thing would be dropped, and
+even though it would be recognized.
+
+49
+00:03:23,610 --> 00:03:28,760
+Truncated the last part anyway,
+but the web server would, the PHP,
+
+50
+00:03:28,760 --> 00:03:32,700
+would actually read in the JPEG and
+it would say, this is fine.
+
+51
+00:03:33,900 --> 00:03:37,520
+And then you would have a PHP script,
+somewhere on the server, which amazing.
+
+52
+00:03:40,560 --> 00:03:43,180
+Okay, so first thing's first.
+
+53
+00:03:43,180 --> 00:03:46,042
+We need to actually our reverse shell.
+
+54
+00:03:46,042 --> 00:03:54,010
+Go ahead and type in 10 test
+monkey php refer let's see.
+
+55
+00:03:54,010 --> 00:04:01,375
+Php-reverse-shell, pentestmonkey.
+
+56
+00:04:01,375 --> 00:04:02,085
+And there we go.
+
+57
+00:04:02,085 --> 00:04:04,225
+So you have php-reverse-shell-1.0 tar.gz.
+
+58
+00:04:04,225 --> 00:04:06,265
+Go ahead and click on it.
+
+59
+00:04:06,265 --> 00:04:07,045
+Okay, save file.
+
+60
+00:04:07,045 --> 00:04:08,295
+Go ahead and open it up.
+
+61
+00:04:08,295 --> 00:04:12,614
+Click on it, extract.
+
+62
+00:04:12,614 --> 00:04:15,900
+I'll type in quit.
+
+63
+00:04:15,900 --> 00:04:17,800
+Go to your downloads folder.
+
+64
+00:04:17,800 --> 00:04:20,620
+It should be here around somewhere.
+
+65
+00:04:20,620 --> 00:04:22,868
+Excellent.
+So, in the downloads folder,
+
+66
+00:04:22,868 --> 00:04:25,353
+I have PHP reverse shell 1.0, what.
+
+67
+00:04:25,353 --> 00:04:27,331
+1.0 actually.
+
+68
+00:04:27,331 --> 00:04:29,380
+Nothing else.
+
+69
+00:04:29,380 --> 00:04:31,750
+Anyway, you have some files
+here that you can read.
+
+70
+00:04:31,750 --> 00:04:34,600
+Those are license things and
+there's a change log as well.
+
+71
+00:04:34,600 --> 00:04:36,270
+But, this is what you're interested in.
+
+72
+00:04:36,270 --> 00:04:37,620
+PHP reverse shell.
+
+73
+00:04:37,620 --> 00:04:41,260
+You can copy it to a folder
+that is appropriate to you.
+
+74
+00:04:41,260 --> 00:04:43,030
+That is completely up to you.
+
+75
+00:04:43,030 --> 00:04:44,960
+I have copied mine onto desktop.
+
+76
+00:04:45,970 --> 00:04:46,750
+You can see it here.
+
+77
+00:04:46,750 --> 00:04:49,420
+I just renamed it into have a nice day.
+
+78
+00:04:49,420 --> 00:04:52,600
+You can rename it whatever you want,
+as long as it's not PHP.
+
+79
+00:04:54,140 --> 00:04:56,980
+And then you don't need to
+put this note right here.
+
+80
+00:04:56,980 --> 00:04:59,253
+So, let me just rename.
+
+81
+00:05:02,253 --> 00:05:06,672
+Excellent, so it's .php and
+I have .jpeg, but let's delete .jpeg for
+
+82
+00:05:06,672 --> 00:05:11,730
+the time being, and let's leave it at
+.php, and let's see what happens here.
+
+83
+00:05:11,730 --> 00:05:12,690
+Where is it?
+
+84
+00:05:17,140 --> 00:05:19,880
+I have so many things open down here.
+
+85
+00:05:19,880 --> 00:05:22,830
+Keep in mind that when you're
+attempting a pen test and
+
+86
+00:05:22,830 --> 00:05:24,840
+when you're attempting to do this,
+what I'm doing now,
+
+87
+00:05:24,840 --> 00:05:29,570
+you won't be able to do this on
+the latest version of PHP so, no way.
+
+88
+00:05:30,730 --> 00:05:34,030
+Very difficult,
+you're better off with an SQL injection,
+
+89
+00:05:34,030 --> 00:05:39,690
+than you are with what I am attempting
+to do now, this is just so.
+
+90
+00:05:41,780 --> 00:05:44,870
+You can conduct a scan of a few servers,
+or a mass scan because, well, not
+
+91
+00:05:44,870 --> 00:05:49,320
+saying that you should scan the servers
+that you don't have permission to scan.
+
+92
+00:05:49,320 --> 00:05:52,080
+But people have been doing
+mass scan of the servers,
+
+93
+00:05:52,080 --> 00:05:57,470
+and they've been figuring out which
+PHP versions they are running.
+
+94
+00:05:57,470 --> 00:06:00,620
+And if they see they've
+made these scripts.
+
+95
+00:06:00,620 --> 00:06:01,860
+It's a pretty simple script.
+
+96
+00:06:01,860 --> 00:06:08,080
+It basically says if the version
+is lower than this number,
+
+97
+00:06:08,080 --> 00:06:12,860
+give me the IP address, and
+attempt to do the following.
+
+98
+00:06:13,960 --> 00:06:17,440
+Believe it or not, there are a lot of
+servers out there which are not updated.
+
+99
+00:06:17,440 --> 00:06:22,740
+Obviously, not Facebook, or obviously, not
+Google or Twitter or something like that.
+
+100
+00:06:22,740 --> 00:06:27,230
+But still a large amount of sites
+would be vulnerable to something
+
+101
+00:06:28,500 --> 00:06:32,400
+of that kind, and I would strongly suggest
+that you take a look at null bite.
+
+102
+00:06:33,670 --> 00:06:35,170
+So just, null bite.
+
+103
+00:06:37,800 --> 00:06:41,930
+That is the thing that you saw in
+my file name a moment ago, like,
+
+104
+00:06:41,930 --> 00:06:46,500
+back dot PHP/00.jpg.
+
+105
+00:06:46,500 --> 00:06:51,160
+That's gonna work on just a little
+bit older versions of PHP so
+
+106
+00:06:51,160 --> 00:06:52,800
+if somebody didn't do
+the latest updates or
+
+107
+00:06:52,800 --> 00:06:55,420
+something of that kind, they're
+gonna be in a ton load of problems.
+
+108
+00:06:57,830 --> 00:07:00,040
+Anyway, we're gonna go to browse,
+
+109
+00:07:00,040 --> 00:07:03,460
+have a nice day dot PHP,
+open, we're gonna say upload.
+
+110
+00:07:03,460 --> 00:07:08,650
+You're image was not uploaded and for some
+strange reason it's popping it up here.
+
+111
+00:07:10,050 --> 00:07:10,710
+I have no idea why?
+
+112
+00:07:10,710 --> 00:07:12,190
+It doesn't matter.
+
+113
+00:07:12,190 --> 00:07:14,720
+It says your image was not uploaded so
+there was a problem.
+
+114
+00:07:14,720 --> 00:07:16,910
+Let's take a look at the source code.
+
+115
+00:07:16,910 --> 00:07:20,720
+Obviously on a real site you might,
+well maybe not obviously, but
+
+116
+00:07:20,720 --> 00:07:27,180
+on a legit site you might not be able
+to see this, the checking mechanism.
+
+117
+00:07:27,180 --> 00:07:30,480
+Anyway, it doesn't matter,
+you have a way of assuming this.
+
+118
+00:07:31,920 --> 00:07:37,210
+So it says,
+upload the type needs to be image and
+
+119
+00:07:38,360 --> 00:07:42,520
+jpeg and
+upload size needs to be lesser than this.
+
+120
+00:07:45,940 --> 00:07:49,510
+So, what shall we do when
+we can't actually see this?
+
+121
+00:07:50,880 --> 00:07:56,950
+Well, go the the Upload function and
+try uploading different file formats.
+
+122
+00:07:56,950 --> 00:07:59,990
+Don't just try the standard ones,
+try whatever you can.
+
+123
+00:07:59,990 --> 00:08:02,356
+Try the unorthodox ones,
+try the weaker ones, etc.
+
+124
+00:08:02,356 --> 00:08:05,990
+Whatever you can, try to upload it,
+
+125
+00:08:05,990 --> 00:08:11,140
+see what kind of error messages you get.
+
+126
+00:08:11,140 --> 00:08:15,710
+And, if you are unable to
+upload one type of file, but
+
+127
+00:08:15,710 --> 00:08:19,790
+you are able to upload
+another type of file,
+
+128
+00:08:19,790 --> 00:08:23,690
+you will see what the filters are like,
+and what they are doing.
+
+129
+00:08:24,930 --> 00:08:30,176
+And if you try to upload files of
+certain size, you don't need to try
+
+130
+00:08:30,176 --> 00:08:35,160
+to upload 100 of them, you can just try to
+upload those that are equal to the size
+
+131
+00:08:35,160 --> 00:08:40,440
+of your reverse shell, or that are greater
+than the size of your reverse shell.
+
+132
+00:08:40,440 --> 00:08:43,130
+In such a case you will
+be able to determine,
+
+133
+00:08:43,130 --> 00:08:47,090
+whether you will be able to
+upload your reverse shell or not.
+
+134
+00:08:47,090 --> 00:08:49,520
+In case that your reverse shell is
+significantly bigger than the size
+
+135
+00:08:49,520 --> 00:08:52,300
+allowed, look for
+another shell that's smaller.
+
+136
+00:08:52,300 --> 00:08:54,766
+These things are pretty small anyway.
+
+137
+00:08:54,766 --> 00:08:59,370
+So what shall we do?
+
+138
+00:08:59,370 --> 00:09:05,626
+We shall go to Edit > Preferences
+> Advanced > Network > Settings.
+
+139
+00:09:05,626 --> 00:09:10,820
+Manual proxy configuration,
+type in 127001 and for Port 8080.
+
+140
+00:09:10,820 --> 00:09:12,710
+Press OK.
+
+141
+00:09:12,710 --> 00:09:15,400
+Close.
+We're gonna start a burpsuite.
+
+142
+00:09:15,400 --> 00:09:18,590
+Takes a while to load,
+but well worth the wait.
+
+143
+00:09:18,590 --> 00:09:23,660
+Anyway, we're going to intercept
+the request in BurpSuite, and
+
+144
+00:09:23,660 --> 00:09:26,680
+then we're going to alter it a bit,
+
+145
+00:09:26,680 --> 00:09:32,560
+you might have noticed that I'm using
+the media setting on the downloadable app,
+
+146
+00:09:32,560 --> 00:09:36,490
+primarily because you are not going to
+be able to do this, on high setting.
+
+147
+00:09:36,490 --> 00:09:41,440
+There is no way, if you manage to do it,
+feel free to post it on the net,
+
+148
+00:09:41,440 --> 00:09:46,560
+it will be a zero day vulnerability,
+and you will get the credit for it.
+
+149
+00:09:46,560 --> 00:09:49,120
+Anyway so it's target, click on Proxy.
+
+150
+00:09:49,120 --> 00:09:54,367
+Options, make sure that this
+one is ticked 127001:8080.
+
+151
+00:09:54,367 --> 00:09:55,540
+Go back to intercept.
+
+152
+00:09:57,670 --> 00:09:58,760
+Go back to the browser.
+
+153
+00:09:58,760 --> 00:10:00,030
+Not this one.
+
+154
+00:10:03,920 --> 00:10:04,470
+Excellent.
+
+155
+00:10:04,470 --> 00:10:11,070
+Now, what we shall do is also rename
+the file as I have renamed it before.
+
+156
+00:10:11,070 --> 00:10:14,570
+Dot, what shall we name it, jpg.
+
+157
+00:10:14,570 --> 00:10:20,860
+And even though you see some sort of
+a picture here you're not gonna be
+
+158
+00:10:20,860 --> 00:10:26,869
+able to open it on site, I'll show you.
+
+159
+00:10:26,869 --> 00:10:28,520
+So where is it?
+
+160
+00:10:28,520 --> 00:10:36,040
+Okay, so browse. Open.
+Click on Upload and now go into berg suit.
+
+161
+00:10:36,040 --> 00:10:41,211
+Here you're going to be able
+to reformulate the request,
+
+162
+00:10:41,211 --> 00:10:45,230
+and to tell it pretty
+much whatever you want.
+
+163
+00:10:47,120 --> 00:10:51,110
+So it says content disposition
+form data name uploaded.
+
+164
+00:10:51,110 --> 00:10:52,220
+File name, haveaniceday.php.jpg.
+
+165
+00:10:52,220 --> 00:10:58,810
+Remove the jpg from this and
+then say forward.
+
+166
+00:10:58,810 --> 00:11:00,030
+Tell me it was uploaded.
+
+167
+00:11:00,030 --> 00:11:00,670
+Yes it was.
+
+168
+00:11:00,670 --> 00:11:01,170
+Excellent.
+
+169
+00:11:07,970 --> 00:11:13,240
+We're gonna go ahead and copy this part,
+so we see the place where it
+
+170
+00:11:13,240 --> 00:11:20,210
+was actually uploaded.
+
+171
+00:11:20,210 --> 00:11:21,410
+Ups we don't actually in the JPG.
+
+172
+00:11:21,410 --> 00:11:25,640
+Excellent and
+prior to this what I've done.
+
+173
+00:11:25,640 --> 00:11:28,440
+I mean this is generally not
+necessary now primarily,
+
+174
+00:11:28,440 --> 00:11:33,520
+because we are connecting back to
+ourselves, but take a look at this.
+
+175
+00:11:33,520 --> 00:11:37,743
+Now, this is what I've done prior, if
+you're doing this on two virtual machines,
+
+176
+00:11:37,743 --> 00:11:40,671
+or something like that,
+you're gonna need to change it.
+
+177
+00:11:40,671 --> 00:11:44,086
+I'm doing it on one, so
+it doesn't really matter that much.
+
+178
+00:11:46,878 --> 00:11:51,621
+You enter the file, you edit it with Nano,
+and there is this part,
+
+179
+00:11:51,621 --> 00:11:57,400
+where it says change this, quite literally
+and it says here change this as well.
+
+180
+00:11:58,520 --> 00:12:03,300
+So here you need to change the IP address
+to the IP address that is appropriate.
+
+181
+00:12:03,300 --> 00:12:08,620
+I have changed it previously, but
+it was also global host site IP address.
+
+182
+00:12:08,620 --> 00:12:12,760
+As I said it doesn't matter to me now,
+because I'm connecting to myself.
+
+183
+00:12:13,970 --> 00:12:15,780
+But if you're doing this
+on two virtual machines and
+
+184
+00:12:15,780 --> 00:12:18,920
+you most likely will- and in reality you
+will be doing this over the internet.
+
+185
+00:12:18,920 --> 00:12:22,020
+You will need to change this
+to an appropriate IP address.
+
+186
+00:12:22,020 --> 00:12:24,120
+Also you can change the port if you wish,
+
+187
+00:12:24,120 --> 00:12:27,130
+I wouldn't recommend using these
+default ports for anything.
+
+188
+00:12:27,130 --> 00:12:29,390
+So it's one, two, three, four.
+
+189
+00:12:29,390 --> 00:12:33,779
+Change it to whatever you want,
+you can put eight-eight-eight or whatever.
+
+190
+00:12:35,100 --> 00:12:40,157
+Anyway control x since that is
+already changed next up we need
+
+191
+00:12:40,157 --> 00:12:45,908
+to use a bit of knowledge that we
+harvested in the previous tutorial so
+
+192
+00:12:45,908 --> 00:12:51,065
+net cat n cat give me verbosity
+level increase verbosity level
+
+193
+00:12:51,065 --> 00:12:58,128
+give me demoed go into listening mode Give
+me the port on which you're gonna listen.
+
+194
+00:12:58,128 --> 00:13:01,045
+It's gonna be 1234,
+
+195
+00:13:02,503 --> 00:13:07,620
+press enter and
+now it is listening on port 1234.
+
+196
+00:13:07,620 --> 00:13:14,160
+Now let's give it k for, there's no need,
+let's just leave it as it is.
+
+197
+00:13:15,180 --> 00:13:16,540
+You see I change my mind quite often.
+
+198
+00:13:18,330 --> 00:13:22,128
+Anyway, now that we have this math,
+you can type it in here.
+
+199
+00:13:28,378 --> 00:13:33,415
+See it's spinning, and
+where is the terminal
+
+200
+00:13:33,415 --> 00:13:39,228
+nope that [INAUDIBLE] Okay so
+it should be listening and
+
+201
+00:13:39,228 --> 00:13:46,201
+the burp suite of course is not
+forwarding that was the problem so
+
+202
+00:13:46,201 --> 00:13:53,561
+forward exon there we go now we have
+a connection to the web server and
+
+203
+00:13:53,561 --> 00:14:00,330
+can't access tty job control turned off So
+now problems.
+
+204
+00:14:00,330 --> 00:14:01,210
+Give me LSTC.
+I have access.
+
+205
+00:14:01,210 --> 00:14:06,260
+So lets go to root of stab does not work.
+
+206
+00:14:06,260 --> 00:14:10,350
+Root, and
+it stands to reason that doesn't work.
+
+207
+00:14:11,660 --> 00:14:12,430
+Desktop.
+Press enter.
+
+208
+00:14:12,430 --> 00:14:13,910
+LS.
+There we go.
+
+209
+00:14:13,910 --> 00:14:16,570
+We have successfully made it full circle.
+
+210
+00:14:16,570 --> 00:14:17,680
+And now we are in.
+
+211
+00:14:17,680 --> 00:14:18,555
+Have a nice day.
+
+212
+00:14:18,555 --> 00:14:23,370
+php.jpg.
+
+213
+00:14:23,370 --> 00:14:25,410
+From this point on, you can do
+whatever you want to the machine.
+
+214
+00:14:26,950 --> 00:14:30,230
+This was an example for virtual on Linux.
+
+215
+00:14:31,960 --> 00:14:35,600
+Linux systems and
+operating systems are not invulnerable,
+
+216
+00:14:35,600 --> 00:14:38,950
+in spite of what the internet
+has been saying.
+
+217
+00:14:38,950 --> 00:14:41,080
+They are also full of vulnerabilities.
+
+218
+00:14:42,420 --> 00:14:45,590
+But they get patched really fast though.
+
+219
+00:14:45,590 --> 00:14:50,460
+Primarily because it's an open source,
+community works, non-stop on it.
+
+220
+00:14:50,460 --> 00:14:54,620
+And vulnerabilities are discovered really
+fast and patched really fast as well.
+
+221
+00:14:54,620 --> 00:14:58,160
+So it's a very secure
+system in that sense.
+
+222
+00:14:58,160 --> 00:15:02,220
+Microsoft is a bit slower, if I'm not
+mistaken, in patching these things.
+
+223
+00:15:03,840 --> 00:15:07,150
+Probably because it costs money and
+for Linux it's practically free.
+
+224
+00:15:07,150 --> 00:15:13,910
+Thanks to thousands of
+volunteers worldwide who do it.
+
+225
+00:15:13,910 --> 00:15:16,320
+But anyway.
+Keep in mind that Linux is not beyond,
+
+226
+00:15:16,320 --> 00:15:20,950
+is not unbreakable, impregnable.
+
+227
+00:15:20,950 --> 00:15:22,040
+It's not invulnerable.
+
+228
+00:15:23,460 --> 00:15:25,010
+It's an operating system like any other.
+
+229
+00:15:25,010 --> 00:15:28,830
+It has flaws, you cannot prove that
+it's impossible to break into it,
+
+230
+00:15:30,160 --> 00:15:34,540
+you can only prove that it is
+possible to break into it.
+
+231
+00:15:34,540 --> 00:15:40,500
+In any case I would like to
+say goodbye to everybody,
+
+232
+00:15:40,500 --> 00:15:43,640
+in the sense of tutorials, but I will.
+
+233
+00:15:43,640 --> 00:15:45,160
+I'm always around in
+the discussion section.
+
+234
+00:15:45,160 --> 00:15:49,610
+So feel free to ask as many
+questions as you would like to.
+
+235
+00:15:49,610 --> 00:15:53,200
+And I do encourage you to
+explore new things and
+
+236
+00:15:53,200 --> 00:15:55,230
+you can feel free to ask
+me about them if you have.
+
+237
+00:15:55,230 --> 00:15:59,370
+If you're doing some pen testing that is
+perhaps not related or not included in
+
+238
+00:15:59,370 --> 00:16:06,820
+this tutorial even though I've included
+pretty much whatever I I could think of.
+
+239
+00:16:06,820 --> 00:16:09,050
+Feel free to post such questions, as well.
+
+240
+00:16:09,050 --> 00:16:13,270
+They do not necessarily need to be
+related directly to what I am doing here,
+
+241
+00:16:13,270 --> 00:16:16,020
+although I do not vouch for those answers.
+
+242
+00:16:16,020 --> 00:16:18,710
+But I will give my best
+to help you out there.
+
+243
+00:16:18,710 --> 00:16:20,310
+If you ask about something
+within this tutorial,
+
+244
+00:16:20,310 --> 00:16:22,894
+I'll be able to help you there 100%.
+
+245
+00:16:24,600 --> 00:16:30,370
+anyway, until the next course or something
+of that kind I bid you all farewell.
+
+246
+00:16:30,370 --> 00:16:31,620
+And I thank you for watching
+

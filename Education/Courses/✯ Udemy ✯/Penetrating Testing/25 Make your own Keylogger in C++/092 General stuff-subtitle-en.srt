@@ -1,0 +1,803 @@
+1
+00:00:00,000 --> 00:00:03,000
+Welcome all to this tutorial.
+
+2
+00:00:03,000 --> 00:00:06,500
+Today I'm making an addition to the course
+
+3
+00:00:06,500 --> 00:00:10,200
+and there has been a lot of demands for a lot of different things.
+
+4
+00:00:10,200 --> 00:00:16,000
+I will keep on adding them as time keeps passing by.
+
+5
+00:00:16,000 --> 00:00:17,990
+This is a progressive course
+
+6
+00:00:17,990 --> 00:00:23,000
+so the content just keeps getting added as long as there is demand for it.
+
+7
+00:00:23,000 --> 00:00:30,000
+Now in this particular edition, I have decided to teach you more about keyloggers.
+
+8
+00:00:30,000 --> 00:00:38,400
+So here I will show you how you can make a keylogger, which will record key strokes elsewhere
+
+9
+00:00:38,400 --> 00:00:44,000
+and then later on, we will get into the deployment techniques for a keylogger
+
+10
+00:00:44,000 --> 00:00:48,300
+I already demonstrated some of the deployment techniques in the previous tutorials
+
+11
+00:00:48,300 --> 00:00:50,200
+that are general purpose
+
+12
+00:00:50,200 --> 00:00:54,300
+but these things will be very specific to a keylogger
+
+13
+00:00:54,300 --> 00:01:01,200
+even though they can easily be adapted to other malicious pieces of code.
+
+14
+00:01:02,480 --> 00:01:09,310
+Anyway, address here is is the fact that we will start to do some really advanced things here
+
+15
+00:01:09,310 --> 00:01:14,290
+here and you're going to probably
+encounter a lot of errors
+
+16
+00:01:14,290 --> 00:01:20,350
+a lot of problems along the way so
+that's natural especially because we're
+
+17
+00:01:20,350 --> 00:01:24,920
+moving into more advanced stuff and
+merely because you yourselves are doing
+
+18
+00:01:24,920 --> 00:01:29,990
+to be making a keylogger several things
+to take into consideration so several
+
+19
+00:01:29,990 --> 00:01:36,950
+prerequisites that we need to keep in
+mind and before I gone any further let
+
+20
+00:01:36,950 --> 00:01:40,110
+me just say that we're not going to
+actually do anything technical in this
+
+21
+00:01:40,110 --> 00:01:47,360
+tutorial urologists talk about what we
+will need what will our setup be and for
+
+22
+00:01:47,360 --> 00:01:53,670
+what environment is this particular
+keylogger meant for so I have decided to
+
+23
+00:01:53,670 --> 00:01:59,719
+create a keylogger for a Windows PC so
+it doesn't matter that much
+
+24
+00:01:59,719 --> 00:02:06,409
+which version of Windows are you running
+so it can be pretty much he 781
+
+25
+00:02:06,409 --> 00:02:12,379
+even ten you have it doesn't really
+matter but we will be creating a
+
+26
+00:02:12,379 --> 00:02:17,739
+keylogger 40 Windows PC why have I
+decided to create a keylogger that will
+
+27
+00:02:17,739 --> 00:02:23,690
+work on Windows well let's face it most
+of the desktop users will be using
+
+28
+00:02:23,690 --> 00:02:29,370
+windows and deploying a keylogger on a
+Windows or Mac is significantly more
+
+29
+00:02:29,370 --> 00:02:32,660
+difficult so we might get into that
+later on
+
+30
+00:02:32,660 --> 00:02:36,420
+indeed course but for the time being I
+will show you I want to show you how you
+
+31
+00:02:36,420 --> 00:02:46,879
+can meet a keylogger that will get you
+can in fact a Windows PC with so here
+
+32
+00:02:46,879 --> 00:02:50,349
+are some of the things that we will need
+first of all we will need a virtual
+
+33
+00:02:50,349 --> 00:02:55,760
+machine off windows I know that there
+are a lot of Mac users that are
+
+34
+00:02:55,760 --> 00:03:01,129
+attending a course you don't have to buy
+windows or anything of the kind you can
+
+35
+00:03:01,129 --> 00:03:05,359
+score to the Microsoft website you do
+need to register and then you can get
+
+36
+00:03:05,359 --> 00:03:11,930
+one to three month trial period three
+months is more than you really need some
+
+37
+00:03:11,930 --> 00:03:18,650
+90 days is really need to finish this up
+to finish this to follow through this
+
+38
+00:03:18,650 --> 00:03:25,489
+tutorial I am NOT encouraging piracy or
+anything like that but because you can
+
+39
+00:03:25,489 --> 00:03:29,220
+get like an IUD free trial so there is
+no need to download from the torrents or
+
+40
+00:03:29,220 --> 00:03:33,780
+anything of a kind of get cracked
+versions on Torrance I wouldn't
+
+41
+00:03:33,780 --> 00:03:40,430
+recommend them why I really don't know
+what somebody has embedded into those
+
+42
+00:03:40,430 --> 00:03:45,400
+systems somebody could have altered them
+to serve a malicious purpose when you
+
+43
+00:03:45,400 --> 00:03:48,099
+sold the monitor system or something of
+a kind
+
+44
+00:03:48,099 --> 00:03:52,370
+therefore I really really really would
+recommend doing that and there really
+
+45
+00:03:52,370 --> 00:03:56,419
+isn't any need you can just go over to
+the Microsoft website register and
+
+46
+00:03:56,419 --> 00:04:00,919
+download pretty much any Windows you
+would like a recommended be at least
+
+47
+00:04:00,919 --> 00:04:08,870
+seven and shouldn't really download
+anything below seven I mean people still
+
+48
+00:04:08,870 --> 00:04:14,220
+use some people still use four-star a
+lot of people still use XP contrary to
+
+49
+00:04:14,220 --> 00:04:17,510
+popular belief that it's extinguished
+that its extinct
+
+50
+00:04:17,510 --> 00:04:22,430
+but I wouldn't recommend downloading
+data systems just go ahead and download
+
+51
+00:04:22,430 --> 00:04:29,130
+7 and above though if you can get 8.1
+and you can it's free you can get a free
+
+52
+00:04:29,130 --> 00:04:34,110
+Windows itself is not free for you would
+have to pay for a permanent license bird
+
+53
+00:04:34,110 --> 00:04:35,520
+for a trial period
+
+54
+00:04:35,520 --> 00:04:41,710
+anybody can download and evaluate anyway
+I have also opted not to demonstrate how
+
+55
+00:04:41,710 --> 00:04:46,520
+you can download windows and install
+Aditya VirtualBox why
+
+56
+00:04:46,520 --> 00:04:51,060
+well all you need to do is go to be
+Windows web site to a Microsoft Windows
+
+57
+00:04:51,060 --> 00:04:56,210
+web site and download from there pretty
+simple if you encounter any problems or
+
+58
+00:04:56,210 --> 00:05:02,010
+difficulties there just let me know I
+will design tutorial specifically for
+
+59
+00:05:02,010 --> 00:05:06,120
+dad I can do that quite fast played on
+there is a need
+
+60
+00:05:06,120 --> 00:05:10,370
+pretty much most of the student pool
+
+61
+00:05:10,370 --> 00:05:16,600
+windows so you already installed at once
+ideas and how to do it by now if you
+
+62
+00:05:16,600 --> 00:05:21,250
+don't it's ok just let me know in the
+discussions in European or something of
+
+63
+00:05:21,250 --> 00:05:26,220
+a kind and I will create an additional
+story award at the procedure for
+
+64
+00:05:26,220 --> 00:05:31,240
+installation which in VirtualBox is
+exactly the same as for any other system
+
+65
+00:05:31,240 --> 00:05:35,980
+the dust that we have installed as far
+into virtual box there is literally no
+
+66
+00:05:35,980 --> 00:05:41,910
+difference just downloaded and installed
+to virtual box like before so all these
+
+67
+00:05:41,910 --> 00:05:47,410
+things are already short for other
+operating systems they were there are no
+
+68
+00:05:47,410 --> 00:05:56,580
+significant differences for Windows it's
+pretty much the same but as I said you
+
+69
+00:05:56,580 --> 00:06:00,530
+find it very difficult to reach
+challenging just let me know and I will
+
+70
+00:06:00,530 --> 00:06:05,410
+do a specific demonstration here when
+watching that I would like to address
+
+71
+00:06:05,410 --> 00:06:10,020
+before I continue on that is not really
+related to the subject is the discussion
+
+72
+00:06:10,020 --> 00:06:15,120
+section and the private messages so I
+would advise everybody who is pushing
+
+73
+00:06:15,120 --> 00:06:19,540
+destroyed by this point of time if you
+came this far radical to post your
+
+74
+00:06:19,540 --> 00:06:24,460
+questions in the public discussions so
+if a solution is found your problem for
+
+75
+00:06:24,460 --> 00:06:29,840
+malicious all that everybody can see it
+regardless of that if you send me a PMI
+
+76
+00:06:29,840 --> 00:06:30,910
+will help you
+
+77
+00:06:30,910 --> 00:06:35,310
+either way so whether it's a PMR with it
+and public discussions I will help you
+
+78
+00:06:35,310 --> 00:06:40,750
+either way so no worries there but if
+you could it would be very nice if you
+
+79
+00:06:40,750 --> 00:06:44,600
+could please all your problems in the
+discussion section where they are
+
+80
+00:06:44,600 --> 00:06:54,170
+visible to an accessible by all also
+there are a lot of discussions again on
+
+81
+00:06:54,170 --> 00:07:02,160
+average 25 increase in 12 hours that's a
+lot if I by some chance miss one or
+
+82
+00:07:02,160 --> 00:07:03,590
+something like that
+
+83
+00:07:03,590 --> 00:07:10,390
+go ahead and send you p.m. and a link to
+their discussions hehe my problem and I
+
+84
+00:07:10,390 --> 00:07:16,290
+will address it immediately I am really
+sorry I generally don't you to save
+
+85
+00:07:16,290 --> 00:07:20,980
+have answered like 95% of the question
+so dear but there are 25 percent always
+
+86
+00:07:20,980 --> 00:07:26,140
+that I'm missing somewhere in the fridge
+or these one percent that perhaps on the
+
+87
+00:07:26,140 --> 00:07:29,900
+table saw were something of a kind but
+as I said if you don't get an answer
+
+88
+00:07:29,900 --> 00:07:34,450
+within 12 or 24 up to 24 hours usually
+eaten within 12 you don't get it up to
+
+89
+00:07:34,450 --> 00:07:39,000
+24 just send a private message and I
+will address your problem immediately
+
+90
+00:07:39,000 --> 00:07:47,560
+anyway so before we go into next
+tutorial I would advise you to install I
+
+91
+00:07:47,560 --> 00:07:51,020
+would advise you to install a virtual
+machine of Windows if you already have
+
+92
+00:07:51,020 --> 00:07:56,750
+Windows running a physical machine there
+is no strict requirement that you should
+
+93
+00:07:56,750 --> 00:08:05,419
+install of you then it's recommended you
+do it
+
+94
+00:08:05,419 --> 00:08:10,050
+gonna be running a lot of code and India
+later tutorials will also be running
+
+95
+00:08:10,050 --> 00:08:15,700
+some destructive code that you on your
+main system and instead you want mister
+
+96
+00:08:15,700 --> 00:08:23,880
+p.m. and you can reinstall it easily if
+you can't fix the problem so that's it
+
+97
+00:08:23,880 --> 00:08:29,180
+as far as that is concerned now on to
+the requirements so as I said neither
+
+98
+00:08:29,180 --> 00:08:34,590
+windows continuing with the requirements
+actually do windows aside from that will
+
+99
+00:08:34,590 --> 00:08:40,050
+need to go ahead and download an IDE
+integrated development environment a
+
+100
+00:08:40,050 --> 00:08:43,580
+place where we will do the code where we
+will do
+
+101
+00:08:43,580 --> 00:08:49,560
+coating we will create our own key
+logger and aside from that rule Sony
+
+102
+00:08:49,560 --> 00:08:56,160
+Decompiler something to actually compile
+the code to create to create machine
+
+103
+00:08:56,160 --> 00:09:00,550
+create something that a machine can
+understand from what we taken from what
+
+104
+00:09:00,550 --> 00:09:07,490
+we use the user can understand and that
+would be it's obviously windows I D and
+
+105
+00:09:07,490 --> 00:09:11,380
+pilot those three things we're going to
+need for an idea I have chosen to use
+
+106
+00:09:11,380 --> 00:09:15,980
+Eclipse I will show you how to install
+it set up in all of that later dorial
+
+107
+00:09:15,980 --> 00:09:21,390
+but it will have some requirements so
+you will need to download e you will
+
+108
+00:09:21,390 --> 00:09:24,420
+need to download stuff from Java which I
+will also show and demonstrate no
+
+109
+00:09:24,420 --> 00:09:28,550
+worries there but it's all free so you
+won't need to pay for anything is there
+
+110
+00:09:28,550 --> 00:09:34,890
+no way no additional costs at all the
+programming language that I have chosen
+
+111
+00:09:34,890 --> 00:09:42,680
+to use is C++ code for Windows is
+written in C++ on top of that C++ has
+
+112
+00:09:42,680 --> 00:09:46,850
+the lowest amount dependencies for
+example if you are going to run each
+
+113
+00:09:46,850 --> 00:09:54,020
+other code you need any job opening in
+the backgrounds of somebody doesn't have
+
+114
+00:09:54,020 --> 00:10:01,030
+a Java Runtime Environment as it is
+called running under Windows PCs Java
+
+115
+00:10:01,030 --> 00:10:05,320
+code will not work Java is also a
+programming language like C++ is a
+
+116
+00:10:05,320 --> 00:10:12,480
+programming language if you some other
+programming languages like Python again
+
+117
+00:10:12,480 --> 00:10:16,370
+on Windows you're gonna have a lot of
+dependencies are pretty much whatever
+
+118
+00:10:16,370 --> 00:10:26,170
+you use aside from ABC sharp and C++ and
+C you will have a condo defenses which
+
+119
+00:10:26,170 --> 00:10:29,470
+you're going to need to worry about
+because you do not know what is
+
+120
+00:10:29,470 --> 00:10:33,740
+installed on somebody else's EC you need
+to create something that will
+
+121
+00:10:33,740 --> 00:10:37,730
+universally work on pretty much all the
+PCs that are running the Windows
+
+122
+00:10:37,730 --> 00:10:42,190
+environment regardless of what they have
+installed on your PC with India
+
+123
+00:10:42,190 --> 00:10:47,060
+operating system that is why that is one
+of the main reasons why actors and C++
+
+124
+00:10:47,060 --> 00:10:53,330
+and usually hacking code and stuff like
+that idea scripting language for
+
+125
+00:10:53,330 --> 00:10:57,150
+something simple or complex work like a
+keylogger
+
+126
+00:10:57,150 --> 00:11:03,550
+its C or C++ example if you used ceded
+nearly in the Linux demean as Linux is
+
+127
+00:11:03,550 --> 00:11:12,220
+mostly written in C when it says anyway
+
+128
+00:11:12,220 --> 00:11:20,800
+C++ can be can be tedious can be
+difficult can it syntax can be complex
+
+129
+00:11:20,800 --> 00:11:26,590
+and don't give up immediately just
+follow the tutorial tutorials I want
+
+130
+00:11:26,590 --> 00:11:31,540
+skip any steps I will show you how it is
+done one step at a time with no steps
+
+131
+00:11:31,540 --> 00:11:37,160
+skipped and you will be able to see each
+line of the code as you make it then
+
+132
+00:11:37,160 --> 00:11:40,650
+each line of the code will be explained
+so you will have an understanding of it
+
+133
+00:11:40,650 --> 00:11:44,060
+before we can actually get into writing
+a keylogger we will set up the
+
+134
+00:11:44,060 --> 00:11:48,700
+environment and eight unique to first of
+all introduce you to some basic things
+
+135
+00:11:48,700 --> 00:11:55,010
+about C++ so I will introduce you to see
+the basic things there and then we
+
+136
+00:11:55,010 --> 00:11:59,780
+wanted more advanced things through the
+process of creating agree keylogger so
+
+137
+00:11:59,780 --> 00:12:05,870
+learned by doing however I would also
+advise you to use external material you
+
+138
+00:12:05,870 --> 00:12:12,900
+have a lot of videos on C++ subject on
+youtube so if you expand your knowledge
+
+139
+00:12:12,900 --> 00:12:16,810
+there and take a look at some additional
+things you have the discussions don't
+
+140
+00:12:16,810 --> 00:12:19,510
+necessarily need to ask if you have a
+problem if you don't understand
+
+141
+00:12:19,510 --> 00:12:26,980
+something go ahead and ask I'll be happy
+to help you out in any way I can
+
+142
+00:12:26,980 --> 00:12:30,130
+anyway that is what is waiting for us
+here so you will learn how to make a
+
+143
+00:12:30,130 --> 00:12:35,510
+keylogger ourselves and hopefully you'll
+be able to modify it any way you like
+
+144
+00:12:35,510 --> 00:12:40,970
+this longer will be talking to be a
+professional one or something like that
+
+145
+00:12:40,970 --> 00:12:46,130
+but it will be able to serve the purpose
+that we needed to serve furthermore
+
+146
+00:12:46,130 --> 00:12:50,930
+writing custom code as opposed to just
+under three key logger from the net does
+
+147
+00:12:50,930 --> 00:12:58,480
+have tremendous advantages primarily
+because antivirus detection one of the
+
+148
+00:12:58,480 --> 00:13:03,780
+waste of within her selection is to rate
+custom code as simple as possible and
+
+149
+00:13:03,780 --> 00:13:07,410
+have it for yourself and there's nobody
+else has a 10 the security companies
+
+150
+00:13:07,410 --> 00:13:08,790
+that weekend hours program
+
+151
+00:13:08,790 --> 00:13:13,470
+know about it and even though they have
+some general detection methods they will
+
+152
+00:13:13,470 --> 00:13:17,500
+not have any dick specific detection
+methods for your piece of code so keep
+
+153
+00:13:17,500 --> 00:13:20,490
+that in mind if you wud of August on the
+net
+
+154
+00:13:20,490 --> 00:13:25,940
+especially their closed source you have
+no idea what you're done duty I mean
+
+155
+00:13:25,940 --> 00:13:32,350
+even if you buy one again the company ok
+city around with such things but you
+
+156
+00:13:32,350 --> 00:13:35,590
+still have no idea what you are down
+there you have to be really really
+
+157
+00:13:35,590 --> 00:13:38,750
+really careful with that on the other
+hand if you make yourselves you know
+
+158
+00:13:38,750 --> 00:13:41,820
+exactly what is in there you know
+exactly what it does you have for
+
+159
+00:13:41,820 --> 00:13:45,560
+understanding of it and a lot of people
+have asked me to show you as a lot of
+
+160
+00:13:45,560 --> 00:13:50,970
+advanced stuff a lot of advanced things
+and I decided to begin with Dad first
+
+161
+00:13:50,970 --> 00:13:58,240
+tutorial from this the series of the
+series of advanced been testing let's
+
+162
+00:13:58,240 --> 00:14:03,390
+put it so will be how to make your own
+key logger and then later on we will go
+
+163
+00:14:03,390 --> 00:14:05,770
+into some other interests
+
+164
+00:14:05,770 --> 00:14:10,760
+more interesting stuff so to see however
+until next tutorial I bid you farewell
+
+165
+00:14:10,760 --> 00:14:14,120
+and I wish you a ton of luck with this
+

@@ -1,0 +1,1022 @@
+1
+00:00:00,000 --> 00:00:02,000
+Welcome all to this tutorial.
+
+2
+00:00:02,000 --> 00:00:10,700
+Today we will go ahead and set up the needed environment in order to be able to code in C++
+
+3
+00:00:10,700 --> 00:00:15,400
+and in the final account of things, make a keylogger.
+
+4
+00:00:15,400 --> 00:00:21,900
+So while I was doing the testing, I had encountered into a lot of problems
+
+5
+00:00:21,900 --> 00:00:24,200
+and I have managed to solve them.
+
+6
+00:00:24,200 --> 00:00:27,000
+If anybody's wondering, I am not a magician.
+
+7
+00:00:27,000 --> 00:00:33,100
+I don't just go encounter problems and then just the type a few things and solve them immediately.
+
+8
+00:00:33,100 --> 00:00:35,000
+I do what everybody else does.
+
+9
+00:00:35,000 --> 00:00:41,000
+I go ahead and browse the web and try to figure things out where the problem lies.
+
+10
+00:00:41,000 --> 00:00:43,300
+That is exactly what I did here
+
+11
+00:00:43,300 --> 00:00:50,000
+and I will show you what you need to do and where the problems will occur.
+
+12
+00:00:50,000 --> 00:00:54,000
+Anyway, so the first thing you will need is a IDE
+
+13
+00:00:54,000 --> 00:00:55,700
+so an integrated development environment
+
+14
+00:00:55,700 --> 00:01:06,000
+and for that I have chosen to install Eclipse, which is fantastic.
+
+15
+00:01:06,299 --> 00:01:11,580
+However its java-based and if a
+java-based we will need something from
+
+16
+00:01:11,580 --> 00:01:20,820
+drama but will get that's really gotten
+tape in the lips pressed enter it says
+
+17
+00:01:20,820 --> 00:01:24,960
+mars eclipse oK so that's just the
+latest version you have
+
+18
+00:01:24,960 --> 00:01:32,880
+lunar eclipse marks mars eclipse I like
+the Cal per click that I used for those
+
+19
+00:01:32,880 --> 00:01:41,310
+are just the danes for the versions just
+like you have war for example Linux
+
+20
+00:01:41,310 --> 00:01:47,549
+distributions they can hold various
+names I can't think of any at the moment
+
+21
+00:01:47,549 --> 00:01:54,710
+but for example you have Debian Weezy or
+did you just see something of a kind for
+
+22
+00:01:54,710 --> 00:01:58,549
+experimental things and so on and so
+anyway you get the idea the area that's
+
+23
+00:01:58,549 --> 00:02:03,520
+completely irrelevant mars eclipses just
+a name for it thats mars released that
+
+24
+00:02:03,520 --> 00:02:07,619
+just the name for it again that's all
+there is to it so anyway what would you
+
+25
+00:02:07,619 --> 00:02:08,729
+like to do
+
+26
+00:02:08,729 --> 00:02:13,030
+well we would like to download it so go
+ahead and click on Download it's
+
+27
+00:02:13,030 --> 00:02:18,159
+completely free or you don't need to pay
+for anything and let scrolled downward
+
+28
+00:02:18,159 --> 00:02:24,159
+it says eclipse IDE for Java developers
+plugin in Eclipse for PHP this is the
+
+29
+00:02:24,159 --> 00:02:31,360
+one that we're looking for a solar
+eclipse IDE for C C++ developers you
+
+30
+00:02:31,360 --> 00:02:35,680
+have an option here for Windows of
+course you can change your target
+
+31
+00:02:35,680 --> 00:02:39,239
+environment here but we are downloading
+the one for Windows you can also use it
+
+32
+00:02:39,239 --> 00:02:47,010
+to Linux it's also on Linux cell accused
+UT creator for C++ in particular for
+
+33
+00:02:47,010 --> 00:02:53,540
+pretty much everything else eclipse is
+also so let's go ahead and select here I
+
+34
+00:02:53,540 --> 00:02:57,879
+have a 64 bit system running I don't
+know which sort of a system do you have
+
+35
+00:02:57,879 --> 00:03:04,010
+a 64 bit go ahead and download 32 bit
+that's pretty much all you need to do
+
+36
+00:03:04,010 --> 00:03:12,709
+just check something really fast
+
+37
+00:03:12,709 --> 00:03:16,680
+need
+
+38
+00:03:16,680 --> 00:03:24,790
+their ago so you can just go ahead and
+click on this PC or on my computer if
+
+39
+00:03:24,790 --> 00:03:29,739
+its return my computer discarding click
+on Properties and you will be given this
+
+40
+00:03:29,739 --> 00:03:35,700
+problem here or you can check with your
+system is 64 bit or 32 bit it says here
+
+41
+00:03:35,700 --> 00:03:42,209
+system type 64 bit operating 6 64 bit
+operating system
+
+42
+00:03:42,209 --> 00:03:49,269
+ok so let's go ahead and close this
+because we are not going to needed I'll
+
+43
+00:03:49,269 --> 00:03:54,450
+just minimize life file browser dare and
+let's go ahead and downloaded so for
+
+44
+00:03:54,450 --> 00:04:01,370
+Windows 64 bit just go ahead and click
+on it you will be redirected here it
+
+45
+00:04:01,370 --> 00:04:05,409
+says here download from Italy apparently
+that's the closest to my current
+
+46
+00:04:05,409 --> 00:04:13,930
+location but you can go ahead and do dis
+the link in new tab that's going to
+
+47
+00:04:13,930 --> 00:04:19,620
+prompt me to download it or I wanted to
+begin your mirror am so sorry I just
+
+48
+00:04:19,620 --> 00:04:27,120
+clicked on it wrong choice it says or
+pick a local mirror site below so done
+
+49
+00:04:27,120 --> 00:04:31,720
+with the leaders the cliffs and see how
+easily erupt can deploy get it faster
+
+50
+00:04:31,720 --> 00:04:36,190
+here anyway so you have some things here
+which are completely irrelevant for you
+
+51
+00:04:36,190 --> 00:04:44,169
+but down here it says choose a mirror
+close to you take a look at these
+
+52
+00:04:44,169 --> 00:04:48,380
+countries here since says no you have a
+lot of them
+
+53
+00:04:48,380 --> 00:04:57,250
+United Kingdom Germany Sweden whatever
+and then you have North America here for
+
+54
+00:04:57,250 --> 00:04:57,580
+it
+
+55
+00:04:57,580 --> 00:05:02,650
+think of where you are in the world in a
+physical sense and figure out which of
+
+56
+00:05:02,650 --> 00:05:06,740
+these locations is geographically
+closest to you in order to increase the
+
+57
+00:05:06,740 --> 00:05:12,550
+speed of your download for me it says
+okay this is this is your choice but you
+
+58
+00:05:12,550 --> 00:05:16,820
+can change it down below but i just i
+just basically clicking on it no big
+
+59
+00:05:16,820 --> 00:05:18,260
+deal like this
+
+60
+00:05:18,260 --> 00:05:24,450
+and you will be prompted to download
+Eclipse immediately go back to choose a
+
+61
+00:05:24,450 --> 00:05:27,130
+mirror and just gonna go ahead and
+downloaded from the link that for
+
+62
+00:05:27,130 --> 00:05:31,250
+suggested to me just go ahead and click
+on it that's all you need to do make
+
+63
+00:05:31,250 --> 00:05:38,550
+sure to select Save File and not open
+file so save it may take a bit of time
+
+64
+00:05:38,550 --> 00:05:43,910
+for a deal I already have that would
+have done that so the company canceled
+
+65
+00:05:43,910 --> 00:05:45,290
+this or something like that
+
+66
+00:05:45,290 --> 00:05:50,920
+not sure you might be prompted to
+actually give some donations or
+
+67
+00:05:50,920 --> 00:05:52,130
+something of a kind
+
+68
+00:05:52,130 --> 00:05:58,600
+site but it doesn't feel it's not
+mandatory or anything of a client you
+
+69
+00:05:58,600 --> 00:06:03,590
+can donate if you like if not its fine
+you get all the features with you donate
+
+70
+00:06:03,590 --> 00:06:09,340
+or not completely irrelevant in terms of
+functionality just go ahead and check if
+
+71
+00:06:09,340 --> 00:06:14,210
+I have it from my previous downloads
+while it was running some tests he said
+
+72
+00:06:14,210 --> 00:06:20,960
+don't need to do I have it yes I do
+excellent so I already have it
+
+73
+00:06:20,960 --> 00:06:25,900
+downloaded I don't need to do it again
+so let's save some time just gonna go
+
+74
+00:06:25,900 --> 00:06:33,040
+ahead and close this the download file
+which took from the net will be in your
+
+75
+00:06:33,040 --> 00:06:37,430
+downloads folder by default unless
+you've actually changed it so just
+
+76
+00:06:37,430 --> 00:06:41,120
+here's how you would access it just go
+ahead and click on downloads and then
+
+77
+00:06:41,120 --> 00:06:43,740
+find it here there you go
+
+78
+00:06:43,740 --> 00:06:49,280
+eclipse down below now I noticed that
+the file is zipped so you need to open
+
+79
+00:06:49,280 --> 00:06:55,510
+up to you to unpack the files first
+there are various tools to do this I'm
+
+80
+00:06:55,510 --> 00:06:58,110
+just go ahead and show you
+
+81
+00:06:58,110 --> 00:07:07,969
+virus running here so seven zip
+
+82
+00:07:07,969 --> 00:07:12,659
+that search engine that is the virus
+that infects Firefox on Windows seven
+
+83
+00:07:12,659 --> 00:07:17,899
+messing around in open exposing the
+machines as this is my test machine and
+
+84
+00:07:17,899 --> 00:07:22,089
+there is literally nothing of importance
+here but I can't do without that they
+
+85
+00:07:22,089 --> 00:07:26,360
+don't have elsewhere anyway so go ahead
+and click on Settings it this is also a
+
+86
+00:07:26,360 --> 00:07:31,679
+free software for you to unpack if you
+don't already have one most likely have
+
+87
+00:07:31,679 --> 00:07:35,509
+something like wind which is a paid
+version where you have seen as a poor
+
+88
+00:07:35,509 --> 00:07:41,249
+you have something else that's
+completely irrelevant so you have the
+
+89
+00:07:41,249 --> 00:07:50,579
+exact file here the inner thigh or down
+below you have the beta for windows I
+
+90
+00:07:50,579 --> 00:07:54,679
+really wouldn't recommend downloading
+beaten just go ahead and say download on
+
+91
+00:07:54,679 --> 00:07:56,649
+. exam and that's it
+
+92
+00:07:56,649 --> 00:08:02,889
+download size is one megabyte she's
+nothing just go ahead and run 26 file
+
+93
+00:08:02,889 --> 00:08:11,019
+software and their ago this is the
+installation procedure going through its
+
+94
+00:08:11,019 --> 00:08:18,099
+going through thank you finish so you
+don't need to follow this step if you
+
+95
+00:08:18,099 --> 00:08:23,300
+already have a software which you can
+use to unzip a package if you don't have
+
+96
+00:08:23,300 --> 00:08:26,729
+to if you don't have a thought returns
+at the package feel free to follow this
+
+97
+00:08:26,729 --> 00:08:30,769
+through or feel free to use any other
+software to unzip that's completely up
+
+98
+00:08:30,769 --> 00:08:31,269
+to you
+
+99
+00:08:31,269 --> 00:08:41,789
+ok so let's go ahead and minimize this
+and go ahead and open up 77 should pop
+
+100
+00:08:41,789 --> 00:08:42,490
+up
+
+101
+00:08:42,490 --> 00:08:48,629
+file manager takes me straight away to
+down those which is very nice to have it
+
+102
+00:08:48,629 --> 00:08:52,750
+configured from before but if it doesn't
+just change the path that whatever you
+
+103
+00:08:52,750 --> 00:08:59,600
+like or just save file open and then I
+didn't find it doesn't really matter
+
+104
+00:08:59,600 --> 00:09:06,660
+just a pin the path where this file is
+literally all you need to do
+
+105
+00:09:06,660 --> 00:09:11,519
+ok so but just double you don't even
+need to type it in but just double
+
+106
+00:09:11,519 --> 00:09:16,050
+clicking on it you can actually browse
+the file system and find whatever it is
+
+107
+00:09:16,050 --> 00:09:21,920
+that you're looking for anyway so let's
+find a glimpse here and ok so let's just
+
+108
+00:09:21,920 --> 00:09:31,350
+expand this exon so we have eclipsed CPP
+mars win32 x86 64 zip that is exactly
+
+109
+00:09:31,350 --> 00:09:36,730
+what I want to go ahead and click on
+extract it says that its want to extract
+
+110
+00:09:36,730 --> 00:09:40,720
+into downloads again basically I'm gonna
+go ahead and change that because I don't
+
+111
+00:09:40,720 --> 00:09:46,709
+want to do extracted downloads folder
+head and I already have some
+
+112
+00:09:46,709 --> 00:09:51,189
+configuration files from before when I
+was testing it out but I would like to
+
+113
+00:09:51,189 --> 00:09:56,600
+extracted to stop you can extract it
+anywhere like create a shortcut on
+
+114
+00:09:56,600 --> 00:10:00,839
+desktop whatever you wish but for
+testing purposes here I will go ahead
+
+115
+00:10:00,839 --> 00:10:10,379
+and its extracted so click on OK and ok
+again
+
+116
+00:10:10,379 --> 00:10:15,750
+extraction process will be in drug
+shouldn't take too long again this is
+
+117
+00:10:15,750 --> 00:10:21,470
+extracted anywhere you like to program
+to program files or something of a calm
+
+118
+00:10:21,470 --> 00:10:27,180
+but I'm just gonna go ahead extracted to
+desktop since it doesn't really matter
+
+119
+00:10:27,180 --> 00:10:35,300
+I'm just using this for educational
+purposes anyway it's not like this is my
+
+120
+00:10:35,300 --> 00:10:42,459
+main machine tend to be a bit disorderly
+they're probably something you can do
+
+121
+00:10:42,459 --> 00:10:48,420
+probably something that you can do
+without so let's just let it run for a
+
+122
+00:10:48,420 --> 00:10:53,810
+little while not exactly the smallest of
+packages
+
+123
+00:10:53,810 --> 00:11:01,160
+opinions of packaging this is not a
+fascist of machines because the virtual
+
+124
+00:11:01,160 --> 00:11:04,570
+machine again so please take that into
+consideration I have a signed a second
+
+125
+00:11:04,570 --> 00:11:06,350
+CPU core to it
+
+126
+00:11:06,350 --> 00:11:11,220
+expedite process you do not need to
+deliver just finally single CPU core
+
+127
+00:11:11,220 --> 00:11:18,010
+that's done you can close the sentence
+if you have eclipsed here and now we're
+
+128
+00:11:18,010 --> 00:11:31,540
+gonna get an error you have eclipsed
+except just put it on the stock closed
+
+129
+00:11:31,540 --> 00:11:38,330
+this animal so going to benefit the
+taskbar anyway so go ahead and double
+
+130
+00:11:38,330 --> 00:11:42,940
+click on it and you'll get an error that
+says Java Runtime Environment or Java
+
+131
+00:11:42,940 --> 00:12:00,710
+Development Kit must be available no
+problems let's go over to the net yet so
+
+132
+00:12:00,710 --> 00:12:05,370
+Java SE development kit 7 downloads
+
+133
+00:12:05,370 --> 00:12:19,660
+so where is it those clothes that are so
+windows 64 so this is a Windows x64 and
+
+134
+00:12:19,660 --> 00:12:24,260
+we're just have a look at it
+
+135
+00:12:24,260 --> 00:12:31,980
+know this kid no not needed ok this is
+the first the first version is the 32
+
+136
+00:12:31,980 --> 00:12:41,080
+bit the second version is 64 bit I'm not
+mistaken I could be don't don't hate me
+
+137
+00:12:41,080 --> 00:12:48,529
+for it if I am just choose the I'm gonna
+go ahead and choose the later one so the
+
+138
+00:12:48,529 --> 00:12:53,839
+last 12 Road go ahead and click on it so
+you must accept the license agreement
+
+139
+00:12:53,839 --> 00:13:00,080
+for downloading I accept unknown license
+agreement which no one in this world
+
+140
+00:13:00,080 --> 00:13:04,190
+treats and god knows what works what we
+are
+
+141
+00:13:04,190 --> 00:13:08,000
+anyway you have chosen to open it
+
+142
+00:13:08,000 --> 00:13:17,520
+ok so save file its reporting it
+requires four minutes for download that
+
+143
+00:13:17,520 --> 00:13:22,120
+differently consumes a little bit of
+time but fortunately disease necessary
+
+144
+00:13:22,120 --> 00:13:26,959
+amount of time required for the download
+to proceed
+
+145
+00:13:26,959 --> 00:13:32,670
+later on in Eclipse even though we will
+need to even do we have everything
+
+146
+00:13:32,670 --> 00:13:36,250
+installed we have eclipsed the salt we
+have Java SE development get to the
+
+147
+00:13:36,250 --> 00:13:43,000
+background we still need the compiler
+something that will basically make
+
+148
+00:13:43,000 --> 00:13:48,529
+whatever is right whatever code rewrite
+understandable to a machine to machine
+
+149
+00:13:48,529 --> 00:13:55,190
+can stand would rewrite and for Windows
+you have a ton to do you have these
+
+150
+00:13:55,190 --> 00:14:01,280
+you have multiple compilers for it you
+have one from Microsoft up to go ahead
+
+151
+00:14:01,280 --> 00:14:06,510
+and use an open source one which is
+basically which was basically ported
+
+152
+00:14:06,510 --> 00:14:10,500
+over from Linux it's cold
+
+153
+00:14:10,500 --> 00:14:23,600
+doubly minimalist GNU for Windows ok so
+you're here on their website so that
+
+154
+00:14:23,600 --> 00:14:31,210
+only from the official website www min
+Zhu W dot org and we have download
+
+155
+00:14:31,210 --> 00:14:35,740
+installer would you like to do that we
+would like to do that indeed far right
+
+156
+00:14:35,740 --> 00:14:41,360
+corner is the download going to start
+with you are redirected to source for us
+
+157
+00:14:41,360 --> 00:14:44,520
+because we're going to pull it from
+there is need to wait a couple of
+
+158
+00:14:44,520 --> 00:14:53,240
+seconds for it happen W get excellence
+received the filed that's gonna start
+
+159
+00:14:53,240 --> 00:14:57,940
+downloading as well but that's really
+fast just go ahead and click on it
+
+160
+00:14:57,940 --> 00:15:04,410
+of you license no problems gonna click
+on install just leave everything as it
+
+161
+00:15:04,410 --> 00:15:04,980
+is
+
+162
+00:15:04,980 --> 00:15:11,480
+do not change you can change it but a
+cause you a world of hurt later on like
+
+163
+00:15:11,480 --> 00:15:16,590
+this you simplify to a large extent go
+ahead and click on Continue now because
+
+164
+00:15:16,590 --> 00:15:20,420
+I've already done some installations and
+this can happen even if you didn't do
+
+165
+00:15:20,420 --> 00:15:25,380
+any installations just asking me whether
+I would like to run it now
+
+166
+00:15:25,380 --> 00:15:29,510
+reinstall it or change directory quit
+and just gonna go ahead and click on
+
+167
+00:15:29,510 --> 00:15:32,360
+reinstall if this doesn't happen to you
+
+168
+00:15:32,360 --> 00:15:38,180
+ok just text or whatever pops no big
+deal
+
+169
+00:15:38,180 --> 00:15:44,750
+the installation process is underway so
+this is the installation process
+
+170
+00:15:44,750 --> 00:15:51,310
+ways of savings already have it
+installed installing gay so doing this
+
+171
+00:15:51,310 --> 00:16:02,680
+the browser and we are done so click on
+Continue something happening over there
+
+172
+00:16:02,680 --> 00:16:07,850
+ok so we are now in mean min Zhu W
+Installation Manager and virtually all
+
+173
+00:16:07,850 --> 00:16:16,450
+of these are green but they won't be
+able to be for you so all you need to do
+
+174
+00:16:16,450 --> 00:16:23,540
+is right click on this and then go mark
+for installation click on that it will
+
+175
+00:16:23,540 --> 00:16:28,970
+become green next one mark for
+installation click all of them in that
+
+176
+00:16:28,970 --> 00:16:34,230
+fashion so once again on D it's not
+going to be green for you so just go
+
+177
+00:16:34,230 --> 00:16:36,630
+ahead and right click on it
+
+178
+00:16:36,630 --> 00:16:44,760
+click on mark for installation and then
+it's going to go ahead and install the
+
+179
+00:16:44,760 --> 00:16:49,630
+packages so all of them you need to
+select all of them go ahead and click on
+
+180
+00:16:49,630 --> 00:16:54,230
+installation in the upper left corner it
+once you have selected all of them
+
+181
+00:16:54,230 --> 00:16:59,170
+Indy basic setup you have all packages
+here but you don't really care about
+
+182
+00:16:59,170 --> 00:17:06,240
+that at the moment would you care about
+is basic setup click on installation say
+
+183
+00:17:06,240 --> 00:17:10,439
+Update Catalog
+
+184
+00:17:10,439 --> 00:17:19,530
+exxon so update is complete please close
+the dialog to continue
+
+185
+00:17:19,530 --> 00:17:35,650
+that's it
+
+186
+00:17:35,650 --> 00:17:41,460
+so it might take a bit longer for you if
+you get prompted with anything just say
+
+187
+00:17:41,460 --> 00:17:47,940
+okay next whatever doesn't really matter
+that much anyway it's just gonna go
+
+188
+00:17:47,940 --> 00:17:52,260
+through and caused these things are not
+installed in your system they're gonna
+
+189
+00:17:52,260 --> 00:17:56,850
+it's gonna take awhile you know to pool
+the information necessary for all of
+
+190
+00:17:56,850 --> 00:18:02,940
+this and install it if you encounter any
+problems with this step just a few
+
+191
+00:18:02,940 --> 00:18:07,290
+screenshots let me know what you did and
+we got stuck I will be more than happy
+
+192
+00:18:07,290 --> 00:18:12,950
+to help you out pretty simple just like
+on installation Update Catalog once
+
+193
+00:18:12,950 --> 00:18:19,340
+again it's gonna run through and that's
+it might get prompted with another
+
+194
+00:18:19,340 --> 00:18:22,380
+window if it's the first time insulation
+
+195
+00:18:22,380 --> 00:18:28,010
+no big deal just click Apply and next
+that's all you need to do no big deal
+
+196
+00:18:28,010 --> 00:18:32,320
+there and it will take a bit longer time
+you might wanna go and make a cup of
+
+197
+00:18:32,320 --> 00:18:36,740
+coffee while it finishes but to save
+time I already have the package is
+
+198
+00:18:36,740 --> 00:18:41,610
+installed and just repeating the process
+within still pictures anyway just go
+
+199
+00:18:41,610 --> 00:18:48,460
+ahead and close this because we no
+longer need that lets see how do we
+
+200
+00:18:48,460 --> 00:18:49,040
+stand
+
+201
+00:18:49,040 --> 00:18:58,100
+clips download with the with the Java
+Runtime Environment ok so this is my
+
+202
+00:18:58,100 --> 00:19:07,720
+troubleshooting browser no problems
+there still were to respond okay so judy
+
+203
+00:19:07,720 --> 00:19:12,530
+is here has been downloaded just go
+ahead and click on it again should be
+
+204
+00:19:12,530 --> 00:19:13,460
+fine
+
+205
+00:19:13,460 --> 00:19:22,580
+feel their part should pop up any moment
+there we go so yes pairing to install
+
+206
+00:19:22,580 --> 00:19:32,399
+ok should next next
+
+207
+00:19:32,399 --> 00:19:38,049
+that's all we need to do just click on
+Next thats windows for you probably why
+
+208
+00:19:38,049 --> 00:19:41,760
+so many people use it was just keep on
+clicking Next for pretty much everything
+
+209
+00:19:41,760 --> 00:19:45,390
+sometimes you can listing stuff like
+that but most of the time just tends to
+
+210
+00:19:45,390 --> 00:19:50,490
+work out although I do find it
+frustrating as it doesn't give me as
+
+211
+00:19:50,490 --> 00:19:53,480
+much control as I would like
+
+212
+00:19:53,480 --> 00:19:57,760
+anyway I am running a little bit short
+on time here so I will pause at Royal
+
+213
+00:19:57,760 --> 00:19:58,080
+here
+

@@ -1,0 +1,788 @@
+1
+00:00:00,000 --> 00:00:03,000
+Welcome back everybody.
+
+2
+00:00:03,000 --> 00:00:10,440
+Today we're going to go ahead and continue making our simple and primitive keylogger.
+
+3
+00:00:10,440 --> 00:00:17,500
+Now thus far, we have explored the option with "GetAsyncKeyState"
+
+4
+00:00:17,500 --> 00:00:23,200
+That is the function that we will be using for this section anyway.
+
+5
+00:00:23,200 --> 00:00:26,800
+but if there is enough interest and if enough people wanted
+
+6
+00:00:26,800 --> 00:00:34,100
+we will also make one with a hook, which is a more sophisticated version of a key logger
+
+7
+00:00:34,100 --> 00:00:41,300
+which is basically not scanning the keyboard input non-stop
+
+8
+00:00:41,300 --> 00:00:44,600
+rather instead it's based on hooks
+
+9
+00:00:44,600 --> 00:00:47,000
+and it's event driven.
+
+10
+00:00:47,000 --> 00:00:48,800
+That is an advanced subject
+
+11
+00:00:48,800 --> 00:00:53,400
+for which we first need to understand some of the basics that we see here.
+
+12
+00:00:53,400 --> 00:00:59,000
+So if this works out well, then we will move into that most likely.
+
+13
+00:00:59,000 --> 00:01:06,000
+Anyway, before we actually get into today's tutorial
+
+14
+00:01:06,000 --> 00:01:12,200
+let me post a reminder, so to say, in regard to discussion section
+
+15
+00:01:12,200 --> 00:01:15,900
+that I do try to answer all of the inquiries.
+
+16
+00:01:15,900 --> 00:01:19,000
+There are about 50 of them per day.
+
+17
+00:01:19,000 --> 00:01:23,000
+Please if I have missed yours...
+
+18
+00:01:23,000 --> 00:01:25,170
+I haven't answered yours in, let's say 24 hours or something of kind
+
+19
+00:01:25,170 --> 00:01:30,900
+please do not hesitate to send me a private message
+
+20
+00:01:30,900 --> 00:01:35,400
+just send a link and I will go directly to that discussion
+
+21
+00:01:35,400 --> 00:01:38,700
+as soon as I see it and try to do my best to help you out.
+
+22
+00:01:38,700 --> 00:01:40,500
+What you should not do definitely
+
+23
+00:01:40,500 --> 00:01:43,640
+is just send the pm stating that I didn't answer the discussion
+
+24
+00:01:43,640 --> 00:01:50,600
+because there are a lot of them and I won't be able to find them just from your name.
+
+25
+00:01:50,600 --> 00:01:52,400
+That will be a little bit difficult for me.
+
+26
+00:01:52,400 --> 00:01:54,000
+So just post the link there
+
+27
+00:01:54,000 --> 00:01:55,000
+It's not that hard
+
+28
+00:01:55,000 --> 00:01:58,500
+You just open up your discussion and copy the URL.
+
+29
+00:01:58,500 --> 00:02:00,500
+That is literally it
+
+30
+00:02:00,500 --> 00:02:03,200
+and I will attend to it.
+
+31
+00:02:03,200 --> 00:02:09,000
+Anyway, let's go ahead and jump into today's lesson.
+
+32
+00:02:09,000 --> 00:02:17,800
+Today we will be doing a little bit of filtering with the tab, caps lock, shift, alt keys, arrow keys
+
+33
+00:02:17,800 --> 00:02:18,700
+and so on and so forth
+
+34
+00:02:18,700 --> 00:02:20,700
+Mouse keys as well and one
+
+35
+00:02:20,700 --> 00:02:29,500
+and importantly than that, I would like to introduce you today to lowercase and uppercase letters
+
+36
+00:02:29,500 --> 00:02:31,940
+This will be very important for us
+
+37
+00:02:31,940 --> 00:02:33,590
+as we do need to differentiate between the two.
+
+38
+00:02:33,590 --> 00:02:35,800
+How do we differentiate between the two?
+
+39
+00:02:35,800 --> 00:02:39,400
+Well, we use at the state of the shift key
+
+40
+00:02:39,400 --> 00:02:45,000
+and we will also be able to use the state of the caps lock key so
+
+41
+00:02:45,000 --> 00:02:52,420
+So if either of these two keys is pressed, then please write capital letters.
+
+42
+00:02:52,420 --> 00:02:54,400
+and that's what we want to tell the program
+
+43
+00:02:54,400 --> 00:02:58,400
+but if they're not pressed, then please do not write in capital letters
+
+44
+00:02:58,400 --> 00:03:00,200
+Then write lowercase letters.
+
+45
+00:03:00,200 --> 00:03:03,000
+Now by default, it's going to write to uppercase letters.
+
+46
+00:03:03,000 --> 00:03:07,900
+So we just need to define the states for lowercase letters.
+
+47
+00:03:07,900 --> 00:03:11,200
+That is pretty much it.
+
+48
+00:03:11,200 --> 00:03:16,000
+First off, we have a key here
+
+49
+00:03:16,000 --> 00:03:17,200
+Well, not the key. Sorry
+
+50
+00:03:17,200 --> 00:03:20,270
+I have modified the code somewhat
+
+51
+00:03:20,270 --> 00:03:26,500
+Don't immediately grab your heads and say "Oh no!"
+
+52
+00:03:26,500 --> 00:03:28,500
+I will explain. No worries.
+
+53
+00:03:28,500 --> 00:03:35,500
+So the things that I have changed is the name of the character in which we place our keystrokes
+
+54
+00:03:35,500 --> 00:03:39,200
+So I've just named it "key" for the sake of convenience
+
+55
+00:03:39,200 --> 00:03:44,500
+I have implemented this sleep function, but I have commented it out for the time being.
+
+56
+00:03:44,500 --> 00:03:50,500
+We will use it to prevent the maxing out of CPU usage.
+
+57
+00:03:50,500 --> 00:03:54,000
+and, well let me put it to you this way
+
+58
+00:03:54,000 --> 00:04:00,700
+"sleep" will pause the program for the specified amount of milliseconds
+
+59
+00:04:00,700 --> 00:04:05,730
+Now you might find it strange that I had used 0 here
+
+60
+00:04:05,730 --> 00:04:17,500
+Okay, so 1 2 3 4 5 etc. will tell the program to sleep for X amount of milliseconds
+
+61
+00:04:17,500 --> 00:04:21,560
+and 0 will simply tell it okay
+
+62
+00:04:21,560 --> 00:04:26,200
+Whenever another program wants to use the CPU
+
+63
+00:04:26,200 --> 00:04:31,300
+you will relinquish control.
+
+64
+00:04:31,300 --> 00:04:35,000
+Kind of convenient if you don't want it interfering with other processes.
+
+65
+00:04:35,000 --> 00:04:37,400
+If you don't want it slowing the computer down
+
+66
+00:04:37,400 --> 00:04:40,500
+but this is still a patchwork, so to say
+
+67
+00:04:40,500 --> 00:04:44,000
+not a real solution.
+
+68
+00:04:44,000 --> 00:04:46,000
+What else have I changed?
+
+69
+00:04:46,000 --> 00:04:49,000
+I have commented out the shift statement from my test runs
+
+70
+00:04:49,000 --> 00:04:51,600
+and you can see this is from my test runs
+
+71
+00:04:51,600 --> 00:04:55,500
+I apparently like letters R and D
+
+72
+00:04:55,500 --> 00:05:00,500
+and I've commented it out, so we will most likely be using it further on
+
+73
+00:05:00,500 --> 00:05:03,700
+but for the time being, I don't want to use it.
+
+74
+00:05:03,700 --> 00:05:11,200
+I wanted to show you how you can differentiate between uppercase and lowercase letters.
+
+75
+00:05:11,200 --> 00:05:14,200
+So you have an "if" statement here
+
+76
+00:05:14,200 --> 00:05:16,000
+and let's make this prettier
+
+77
+00:05:16,000 --> 00:05:21,300
+because we like our code pretty and shiny and so on.
+
+78
+00:05:21,300 --> 00:05:25,000
+Anyway, we have an "if" statement
+
+79
+00:05:25,000 --> 00:05:31,000
+and basically says if the value of key is greater than 64
+
+80
+00:05:31,000 --> 00:05:34,500
+and if the value of key is lesser than 91
+
+81
+00:05:34,500 --> 00:05:43,700
+and if this function returns true with the shift key pressed
+
+82
+00:05:43,700 --> 00:05:46,200
+this is a hexadec notation for the shift key
+
+83
+00:05:46,200 --> 00:05:49,200
+I'll show you where you can get those in a moment
+
+84
+00:05:49,200 --> 00:05:52,200
+So if the shift key is pressed
+
+85
+00:05:52,200 --> 00:05:55,760
+This is basically the function that determines that
+
+86
+00:05:55,760 --> 00:05:59,560
+Sorry, not if it IS pressed
+
+87
+00:05:59,560 --> 00:06:02,500
+State no. Not true.
+
+88
+00:06:02,500 --> 00:06:03,900
+I've shown you this before.
+
+89
+00:06:03,900 --> 00:06:11,000
+So, if this function says that the shift key is pressed
+
+90
+00:06:11,000 --> 00:06:14,200
+and if we put the not sign in front of it
+
+91
+00:06:14,200 --> 00:06:25,200
+we can say basically "Okay if shift key is not pressed, please add 32 to these values"
+
+92
+00:06:25,200 --> 00:06:29,300
+Okay, so this might not be the best of explanations that I have given you
+
+93
+00:06:29,300 --> 00:06:36,000
+and it might not be the clearest of explanations, but let me rectify that really quick.
+
+94
+00:06:36,000 --> 00:06:55,000
+Let us have a look at our ASCII table
+
+95
+00:06:55,000 --> 00:06:56,800
+and there we go.
+
+96
+00:06:56,800 --> 00:07:02,800
+So the search engine is kind enough to provide it for us without have to adhere to any websites.
+
+97
+00:07:02,800 --> 00:07:04,700
+So what have we stated?
+
+98
+00:07:04,700 --> 00:07:06,500
+64 and 91
+
+99
+00:07:06,500 --> 00:07:15,300
+So let's find the decimal values of 64 and 91
+
+100
+00:07:15,300 --> 00:07:16,500
+There we go
+
+101
+00:07:16,500 --> 00:07:20,900
+So it says greater than 64, not equal to 64
+
+102
+00:07:20,900 --> 00:07:29,500
+therefore 64 will not be taken into consideration and it will immediately go into 65
+
+103
+00:07:29,500 --> 00:07:34,500
+and we will go to 91, which is here
+
+104
+00:07:34,500 --> 00:07:41,000
+91 is also not take into consideration because it says less than 91
+
+105
+00:07:41,000 --> 00:07:43,600
+and that's the letter Z
+
+106
+00:07:43,600 --> 00:07:48,800
+so 91 is not taking into consideration.
+
+107
+00:07:48,800 --> 00:07:55,000
+The condition states that if the user has pressed any of the letters on the keyboard
+
+108
+00:07:55,000 --> 00:08:00,000
+and we notice by checking their ASCII values.
+
+109
+00:08:00,000 --> 00:08:05,500
+Please check the status of the shift key.
+
+110
+00:08:05,500 --> 00:08:10,000
+So if the shift key is not pressed
+
+111
+00:08:10,000 --> 00:08:15,000
+then obviously it should be a lowercase letter, unless caps lock is pressed as well
+
+112
+00:08:15,000 --> 00:08:17,600
+but we will deal with that in a moment
+
+113
+00:08:17,600 --> 00:08:19,200
+then it should be a lowercase letter
+
+114
+00:08:19,200 --> 00:08:23,300
+and please add the value of 32
+
+115
+00:08:23,300 --> 00:08:25,400
+What is the value of 32 do?
+
+116
+00:08:25,400 --> 00:08:28,200
+Well, take a look at this --
+
+117
+00:08:28,200 --> 00:08:34,400
+How much is 65 + 32? It's 97
+
+118
+00:08:34,400 --> 00:08:37,000
+So let's take a look at the value of 97
+
+119
+00:08:37,000 --> 00:08:39,400
+97 is lowercase
+
+120
+00:08:39,400 --> 00:08:44,200
+Hey, guess what? It's the lowercase of this one
+
+121
+00:08:44,200 --> 00:08:55,500
+and of course, if you add 32 to 66, it's just going to be 98
+
+122
+00:08:55,500 --> 00:08:56,300
+Yep, there we go.
+
+123
+00:08:56,300 --> 00:08:59,500
+So B is right underneath it, and so on and so forth
+
+124
+00:08:59,500 --> 00:09:05,100
+So you just keep adding 32 to these numbers, in order to convert them into lowercase.
+
+125
+00:09:05,100 --> 00:09:07,600
+Simple as that. No big deal.
+
+126
+00:09:07,600 --> 00:09:11,000
+You keep checking with the status of the shift key
+
+127
+00:09:11,000 --> 00:09:18,600
+and you either leaving them as they are or converting them to lowercase letters.
+
+128
+00:09:18,600 --> 00:09:20,400
+Very convenient
+
+129
+00:09:20,400 --> 00:09:23,000
+So let's go back into those
+
+130
+00:09:23,000 --> 00:09:28,500
+and keep in mind that this statement that we have placed in here now
+
+131
+00:09:28,500 --> 00:09:32,300
+will only record letters and nothing else.
+
+132
+00:09:32,300 --> 00:09:36,500
+So we will need to rectify this in the foreseeable future.
+
+133
+00:09:36,500 --> 00:09:40,200
+Basically let's go through the statement one more time.
+
+134
+00:09:40,200 --> 00:09:46,200
+So check whether it's a letter within it, because letters are within this ASCII range.
+
+135
+00:09:46,200 --> 00:09:51,200
+It says the if key is greater than 64 and is lesser than 91
+
+136
+00:09:51,200 --> 00:09:53,700
+So this condition has to be met.
+
+137
+00:09:53,700 --> 00:09:55,700
+This whole condition
+
+138
+00:09:55,700 --> 00:10:00,930
+and I'm probably better off, just for the sake of safety
+
+139
+00:10:00,930 --> 00:10:04,000
+I mean, I don't need to, but you know
+
+140
+00:10:04,000 --> 00:10:05,670
+to prevent errors later on.
+
+141
+00:10:05,670 --> 00:10:07,200
+Not a bad idea to do this
+
+142
+00:10:07,200 --> 00:10:10,800
+to enclose it in a separate casing
+
+143
+00:10:10,800 --> 00:10:16,000
+and then there's another condition.
+
+144
+00:10:16,000 --> 00:10:21,900
+Check if the shift key is not pressed.
+
+145
+00:10:21,900 --> 00:10:27,000
+If it is not pressed, then please convert the letters to lowercase.
+
+146
+00:10:27,000 --> 00:10:29,300
+So it says key + ...
+
+147
+00:10:29,300 --> 00:10:34,000
+You know, I'm pretty sure that you know this by now what this means.
+
+148
+00:10:34,000 --> 00:10:42,000
+This statement is an equivalent of key equals key + 32
+
+149
+00:10:42,000 --> 00:10:45,700
+and then we're going write that to a file
+
+150
+00:10:45,700 --> 00:10:48,100
+and then we're going to close the file
+
+151
+00:10:48,100 --> 00:10:52,300
+and during these test runs, I've simply written break here
+
+152
+00:10:52,300 --> 00:10:54,800
+so don't check for anything else.
+
+153
+00:10:54,800 --> 00:10:58,500
+We might remove that later on, but we'll see how it works out
+
+154
+00:10:58,500 --> 00:11:00,000
+and down below it says
+
+155
+00:11:00,000 --> 00:11:03,500
+Okay, if the value is within this range
+
+156
+00:11:03,500 --> 00:11:10,600
+and if you obviously have not stated that this is true above it
+
+157
+00:11:10,600 --> 00:11:15,000
+then I know that shift is not pressed, so there is no need to check for anything else.
+
+158
+00:11:15,000 --> 00:11:18,000
+Just go ahead and write it to a file.
+
+159
+00:11:18,000 --> 00:11:22,000
+So let's go ahead and compile and see how this works.
+
+160
+00:11:22,000 --> 00:11:28,500
+Okay, so CTRL F11, if you remember
+
+161
+00:11:28,500 --> 00:11:32,200
+Press ENTER
+
+162
+00:11:32,200 --> 00:11:33,900
+It's working, it's working
+
+163
+00:11:33,900 --> 00:11:35,200
+There we go
+
+164
+00:11:35,200 --> 00:11:48,200
+So let's go ahead and open up our terminal and type in "heydoyouworkornot"
+
+165
+00:11:48,200 --> 00:11:50,400
+Remember I am typing this all together
+
+166
+00:11:50,400 --> 00:11:56,500
+because I didn't tell the system how to handle a space or anything else
+
+167
+00:11:56,500 --> 00:12:02,000
+and I don't want any confusion now, but we will implement that shortly
+
+168
+00:12:02,000 --> 00:12:02,800
+and there you go.
+
+169
+00:12:02,800 --> 00:12:08,500
+It says "HEYDOYOUWORKornot"
+
+170
+00:12:08,500 --> 00:12:16,500
+So you have uppercase and lowercase letters that are being recognized without any difficulties of whatsoever
+
+171
+00:12:16,500 --> 00:12:22,300
+So let's just go ahead and stop the program.
+
+172
+00:12:22,300 --> 00:12:26,500
+Go back and cleanse
+
+173
+00:12:26,500 --> 00:12:27,670
+Clean this file
+
+174
+00:12:27,670 --> 00:12:30,600
+You don't have to clean it but I like to clean it
+
+175
+00:12:30,600 --> 00:12:34,500
+because it's easier for you when you take a look at the new file
+
+176
+00:12:34,500 --> 00:12:35,900
+so you see what the input is
+
+177
+00:12:35,900 --> 00:12:38,800
+so that you can make sure that it is the expected input
+
+178
+00:12:38,800 --> 00:12:43,000
+that it all works.
+
+179
+00:12:43,000 --> 00:12:51,200
+So this would be way to implement the differentiation between lowercase and uppercase letters.
+
+180
+00:12:51,200 --> 00:12:55,000
+There are a hundred different ways to do this.
+
+181
+00:12:55,000 --> 00:12:57,900
+Some of them are probably better than this one.
+
+182
+00:12:57,900 --> 00:13:01,000
+Feel free to experiment.
+
+183
+00:13:01,000 --> 00:13:07,500
+If you do experiment, and whether it works out or not
+
+184
+00:13:07,500 --> 00:13:13,800
+I would appreciate it if you just shared with everybody else what you did
+
+185
+00:13:13,800 --> 00:13:17,089
+in such a way we help to further knowledge
+
+186
+00:13:17,089 --> 00:13:19,300
+and to help each other out.
+
+187
+00:13:19,300 --> 00:13:21,200
+If not, it doesn't matter
+
+188
+00:13:21,200 --> 00:13:26,400
+but I still encourage you to do some test runs, experiment with it
+
+189
+00:13:26,400 --> 00:13:28,200
+and so on and so forth.
+
+190
+00:13:28,200 --> 00:13:32,500
+So I hope that you can figure it out from this file what I have written.
+
+191
+00:13:32,500 --> 00:13:34,000
+I have explained every step
+
+192
+00:13:34,000 --> 00:13:37,400
+but if you fail to, there are always discussions
+
+193
+00:13:37,400 --> 00:13:42,000
+I'm always there, so just come and ask.
+
+194
+00:13:42,000 --> 00:13:49,300
+You have a  99.9% chance that I will answer in a reasonable amount of time.
+
+195
+00:13:49,300 --> 00:13:52,100
+Anyway, I bid you all farewell
+
+196
+00:13:52,100 --> 00:13:53,900
+until the follow-up tutorial
+
+197
+00:13:53,900 --> 00:13:58,000
+where we shall deal further with filtering our input.
+

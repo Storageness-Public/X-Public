@@ -1,0 +1,656 @@
+1
+00:00:00,500 --> 00:00:03,159
+Okay, so welcome everybody
+
+2
+00:00:03,159 --> 00:00:04,900
+First -- To this tutorial
+
+3
+00:00:04,900 --> 00:00:07,560
+and second -- Today we're gonna go ahead
+
+4
+00:00:07,560 --> 00:00:12,500
+and see how we can filter out all sorts of characters.
+
+5
+00:00:12,500 --> 00:00:16,900
+For example, people tend to use exclamation marks in their passwords
+
+6
+00:00:16,900 --> 00:00:18,200
+or asterisks
+
+7
+00:00:18,200 --> 00:00:22,800
+or, I don't know, a symbol for a British pound
+
+8
+00:00:22,800 --> 00:00:25,000
+or, I don't know, something else.
+
+9
+00:00:25,000 --> 00:00:26,000
+Whatever
+
+10
+00:00:26,000 --> 00:00:29,500
+They tend to use these symbols in their passwords.
+
+11
+00:00:29,500 --> 00:00:31,500
+Although not a lot of people tend to do this.
+
+12
+00:00:31,500 --> 00:00:35,050
+Most people tend just type in some sort of a name or word from the dictionary
+
+13
+00:00:35,050 --> 00:00:38,700
+and a few numbers, unless the service on the other side
+
+14
+00:00:38,700 --> 00:00:44,800
+is actually forcing them to use lower or upper case characters, etc
+
+15
+00:00:44,800 --> 00:00:48,610
+Now we need to deal with these things
+
+16
+00:00:48,610 --> 00:00:50,500
+and how shall we deal with them?
+
+17
+00:00:50,500 --> 00:00:51,840
+Well, think of it this way --
+
+18
+00:00:51,840 --> 00:00:58,000
+What do you have to press on the keyboard to get an exclamation mark?
+
+19
+00:00:58,000 --> 00:01:01,400
+Depending on what sort of keyboard do you use
+
+20
+00:01:01,400 --> 00:01:03,000
+I suppose...
+
+21
+00:01:03,000 --> 00:01:05,000
+I think this is actually pretty universal
+
+22
+00:01:05,000 --> 00:01:08,000
+So for an exclamation mark , it's shift 1
+
+23
+00:01:08,000 --> 00:01:10,600
+and then you get an exclamation mark
+
+24
+00:01:10,600 --> 00:01:15,939
+and we need to make a statement, which would recognize the state to the shift key
+
+25
+00:01:15,939 --> 00:01:23,000
+and if the shift key is pressed and if the value is the ascii value of 1 the keyboard
+
+26
+00:01:23,000 --> 00:01:25,000
+then please do not type in 1
+
+27
+00:01:25,000 --> 00:01:28,200
+Rather instead, please type in an exclamation mark.
+
+28
+00:01:28,200 --> 00:01:32,300
+So let's go about solving this problem.
+
+29
+00:01:32,300 --> 00:01:37,000
+Now there's going to be quite a good deal of these things
+
+30
+00:01:37,000 --> 00:01:41,479
+Perhaps an "if" statement is not the most efficient one here.
+
+31
+00:01:41,479 --> 00:01:47,300
+Rather instead we will combine the if and switch statements
+
+32
+00:01:47,300 --> 00:01:50,000
+in order to get a better efficiency.
+
+33
+00:01:50,000 --> 00:01:54,000
+So let's go ahead and type in "else"
+
+34
+00:01:54,000 --> 00:01:55,500
+and then ENTER
+
+35
+00:01:55,500 --> 00:02:01,000
+Open up these curly brackets
+
+36
+00:02:01,000 --> 00:02:02,600
+Let's go ahead and do this.
+
+37
+00:02:02,600 --> 00:02:04,400
+Write a switch statement
+
+38
+00:02:04,400 --> 00:02:06,500
+as I have shown you previously.
+
+39
+00:02:06,500 --> 00:02:10,500
+So just key here
+
+40
+00:02:10,500 --> 00:02:12,200
+and there we go
+
+41
+00:02:12,200 --> 00:02:18,200
+So let's deal with these cases one by one.
+
+42
+00:02:18,200 --> 00:02:26,000
+"case"
+
+43
+00:02:26,000 --> 00:02:35,000
+So, just give me a moment...
+
+44
+00:02:35,000 --> 00:02:46,400
+So this case will feature when the value of the key is basically the ascii value of 1
+
+45
+00:02:46,400 --> 00:02:53,000
+and let's take a look at the ASCII table for 1
+
+46
+00:02:53,000 --> 00:03:00,000
+"ASCII table"
+
+47
+00:03:00,000 --> 00:03:02,600
+So which one is it for 1?
+
+48
+00:03:02,600 --> 00:03:06,500
+For 1, it's actually 49
+
+49
+00:03:06,500 --> 00:03:08,200
+Probably shouldn't been on 0
+
+50
+00:03:08,200 --> 00:03:09,310
+Doesn't really matter
+
+51
+00:03:09,310 --> 00:03:10,300
+We can add it
+
+52
+00:03:10,300 --> 00:03:12,800
+I just wanna show you a demonstration.
+
+53
+00:03:12,800 --> 00:03:15,700
+So it's 49
+
+54
+00:03:15,700 --> 00:03:17,800
+Where is it?
+
+55
+00:03:17,800 --> 00:03:20,800
+49 it is
+
+56
+00:03:20,800 --> 00:03:27,800
+Okay, so case 49 shall go like this.
+
+57
+00:03:27,800 --> 00:03:32,000
+"if"
+
+58
+00:03:32,000 --> 00:03:34,500
+We need to create the overrides.
+
+59
+00:03:34,500 --> 00:03:43,500
+So "if (Get)"...
+
+60
+00:03:43,500 --> 00:03:44,600
+Oh forget about this
+
+61
+00:03:44,600 --> 00:03:46,800
+I'm just gonna go ahead and copy/paste it
+
+62
+00:03:46,800 --> 00:03:52,200
+because I'm terrible at writing these things down.
+
+63
+00:03:52,200 --> 00:04:00,000
+So all we want is the state of the shift key.
+
+64
+00:04:00,000 --> 00:04:03,800
+The hex value is 10
+
+65
+00:04:03,800 --> 00:04:11,800
+(ex10) symbolizes that it is a hexadecimal number
+
+66
+00:04:11,800 --> 00:04:13,800
+and you would write them in here
+
+67
+00:04:13,800 --> 00:04:14,800
+Like this
+
+68
+00:04:14,800 --> 00:04:17,500
+This is the hex value for it anyway.
+
+69
+00:04:17,500 --> 00:04:25,800
+If this is true, I would like you to do this -
+
+70
+00:04:25,800 --> 00:04:30,240
+write << "!" ;
+
+71
+00:04:33,389 --> 00:04:40,500
+and just go ahead...
+
+72
+00:04:40,500 --> 00:04:44,200
+Well, we can either close the file or not here.
+
+73
+00:04:44,200 --> 00:04:47,580
+I'll probably make this a little bit prettier, but for the time being
+
+74
+00:04:47,580 --> 00:04:50,970
+I just wanna do a demonstration of how this works.
+
+75
+00:04:50,970 --> 00:04:57,000
+So let's press CTRL F11
+
+76
+00:04:57,000 --> 00:05:01,500
+Okay, there's one keylogger running in the background.
+
+77
+00:05:01,500 --> 00:05:07,000
+Let's go ahead and end the task.
+
+78
+00:05:07,000 --> 00:05:11,500
+Let's run it one more time.
+
+79
+00:05:11,500 --> 00:05:13,900
+Okay, so it is running.
+
+80
+00:05:13,900 --> 00:05:20,000
+Let's go ahead and type in some exclamation marks.
+
+81
+00:05:20,000 --> 00:05:25,000
+HEYthere
+
+82
+00:05:25,000 --> 00:05:27,000
+Open up our log file
+
+83
+00:05:27,000 --> 00:05:28,000
+and there we go.
+
+84
+00:05:28,000 --> 00:05:29,500
+So it's says...
+
+85
+00:05:29,500 --> 00:05:34,800
+Okay, this is from my previous statements...
+
+86
+00:05:34,800 --> 00:05:37,200
+Okay, so this is the the current one.
+
+87
+00:05:37,200 --> 00:05:40,200
+So exclamation marks
+
+88
+00:05:40,200 --> 00:05:44,000
+and HEYthere at the end.
+
+89
+00:05:44,000 --> 00:05:49,900
+Anyway, we're gonna go ahead and select this file and cleanse it.
+
+90
+00:05:49,900 --> 00:05:52,000
+Purify it
+
+91
+00:05:52,000 --> 00:05:54,800
+So I don't have any more of these distractions
+
+92
+00:05:54,800 --> 00:06:00,500
+and now, from this point on
+
+93
+00:06:00,500 --> 00:06:04,200
+we just need to keep on building on this switch statement.
+
+94
+00:06:04,200 --> 00:06:07,000
+So we're gonna have a lot of cases
+
+95
+00:06:07,000 --> 00:06:11,600
+and this will allow us to customize our key logger
+
+96
+00:06:11,600 --> 00:06:15,000
+towards a keyboard that we would like
+
+97
+00:06:15,000 --> 00:06:18,400
+or you know, generally.
+
+98
+00:06:18,400 --> 00:06:23,400
+So even if somebody has keys configured differently
+
+99
+00:06:23,400 --> 00:06:24,700
+it does affect you
+
+100
+00:06:24,700 --> 00:06:26,709
+but it does not affect you to that extent.
+
+101
+00:06:26,709 --> 00:06:30,439
+I mean, how many different variations can you have
+
+102
+00:06:30,439 --> 00:06:35,000
+with, let's say the Shift 1?
+
+103
+00:06:35,000 --> 00:06:36,200
+Two, at max
+
+104
+00:06:36,200 --> 00:06:38,300
+So you have two possibilities
+
+105
+00:06:38,300 --> 00:06:41,200
+and it has to be one of the two
+
+106
+00:06:41,200 --> 00:06:44,000
+even though somebody has a different keyboard layout, perhaps.
+
+107
+00:06:44,000 --> 00:06:45,300
+It's not an exclamation mark.
+
+108
+00:06:45,300 --> 00:06:48,600
+Maybe it's a tilde key, or something of a kind
+
+109
+00:06:48,600 --> 00:06:50,200
+That's what I see on my keyboard, anyway.
+
+110
+00:06:50,200 --> 00:06:51,400
+That is a possibility
+
+111
+00:06:51,400 --> 00:06:53,000
+So just take a look at your keyboards.
+
+112
+00:06:53,000 --> 00:07:00,400
+I mean literally just pick it up, take a look, and see the numbers from 0 to 1
+
+113
+00:07:00,400 --> 00:07:03,800
+Well, actually the way they're laid out in the upper portion so the keyboard
+
+114
+00:07:03,800 --> 00:07:05,500
+it's from 1 to 0
+
+115
+00:07:05,500 --> 00:07:09,300
+It goes like this -- 1 2 3 4 5 6 7 8 9, and then you have a 0
+
+116
+00:07:09,300 --> 00:07:12,000
+and you take a look at these numbers
+
+117
+00:07:12,000 --> 00:07:15,200
+and then you take a look at these keys, these physical keys
+
+118
+00:07:15,200 --> 00:07:18,200
+and see what's drawn on them, and look --
+
+119
+00:07:18,200 --> 00:07:19,700
+There aren't that many possibilities
+
+120
+00:07:19,700 --> 00:07:22,200
+I see three things that are drawn on each one of them
+
+121
+00:07:22,200 --> 00:07:25,000
+One of those three things is a number
+
+122
+00:07:25,000 --> 00:07:28,900
+and the other one is a standard thing, which you would use with Shift
+
+123
+00:07:28,900 --> 00:07:33,100
+and the other one is some other symbol that can be used as well
+
+124
+00:07:33,100 --> 00:07:37,700
+that's kind of configured, but rarely anybody uses that.
+
+125
+00:07:37,700 --> 00:07:42,000
+They usually use other portions of their keyboards for those symbols
+
+126
+00:07:42,000 --> 00:07:45,000
+which we are going to deal with here.
+
+127
+00:07:45,000 --> 00:07:49,000
+So anyway, in the follow-up tutorial
+
+128
+00:07:49,000 --> 00:07:51,500
+I perhaps won't be doing as much talking
+
+129
+00:07:51,500 --> 00:07:57,100
+as I will do the writing out of this long switch statement.
+
+130
+00:07:57,100 --> 00:07:59,349
+There are two portions of this switch statement --
+
+131
+00:07:59,349 --> 00:08:04,000
+One is for a these special characters
+
+132
+00:08:04,000 --> 00:08:06,300
+well, if you want to call them special characters
+
+133
+00:08:06,300 --> 00:08:11,479
+and the other one is for our keyboard
+
+134
+00:08:11,479 --> 00:08:15,060
+is for, let's say Tab
+
+135
+00:08:15,060 --> 00:08:20,000
+and we need to incorporate Caps Lock somewhere around here as well
+
+136
+00:08:20,000 --> 00:08:22,210
+and if you want to
+
+137
+00:08:22,210 --> 00:08:25,000
+what we want to be written up when we press Shift
+
+138
+00:08:25,000 --> 00:08:27,000
+We don't want anything to be written out
+
+139
+00:08:27,000 --> 00:08:30,819
+or when you press Ctrl or Alt, and so forth and so forth
+
+140
+00:08:30,819 --> 00:08:34,700
+but in any case, this is the approach that I'm going to take.
+
+141
+00:08:34,700 --> 00:08:36,180
+It's not the prettiest of approaches
+
+142
+00:08:36,180 --> 00:08:38,800
+but it's the one that's the simplest understand.
+
+143
+00:08:38,800 --> 00:08:43,029
+So look, we have case checking
+
+144
+00:08:43,029 --> 00:08:45,200
+which we need to upgrade
+
+145
+00:08:45,200 --> 00:08:47,300
+We will do that in the follow-up tutorial, most likely
+
+146
+00:08:47,300 --> 00:08:49,000
+with the Caps Lock as well
+
+147
+00:08:49,000 --> 00:08:51,700
+and down here, we have the else statement
+
+148
+00:08:51,700 --> 00:08:54,400
+which just translates into a switch statement
+
+149
+00:08:54,400 --> 00:09:02,000
+in such a way we have interconnected this entire condition check
+
+150
+00:09:02,000 --> 00:09:03,279
+and then in the switch statement
+
+151
+00:09:03,279 --> 00:09:06,000
+we're gonna have a good amount of cases
+
+152
+00:09:06,000 --> 00:09:11,600
+which will be custom to deal with particular keys
+
+153
+00:09:11,600 --> 00:09:15,800
+to get proper output when you press a certain key.
+
+154
+00:09:15,800 --> 00:09:17,459
+So Shift 1
+
+155
+00:09:17,459 --> 00:09:19,800
+we wanted to give an exclamation mark.
+
+156
+00:09:19,800 --> 00:09:22,700
+Shift 2 -- We wanted to give a quotation mark.
+
+157
+00:09:22,700 --> 00:09:26,000
+Shift 3...well, I have no idea what Shift 3 is.
+
+158
+00:09:26,000 --> 00:09:27,800
+Okay, so it's British pound
+
+159
+00:09:27,800 --> 00:09:30,000
+and Shift 4, it's a dollar sign
+
+160
+00:09:30,000 --> 00:09:33,380
+and Shift 5, it's a percentage sign
+
+161
+00:09:33,380 --> 00:09:36,800
+a caret sign and percent sign
+
+162
+00:09:36,800 --> 00:09:37,800
+and so on and so forth.
+
+163
+00:09:37,800 --> 00:09:42,000
+So this is what we shall do in the the next tutorial.
+
+164
+00:09:42,000 --> 00:09:46,100
+Anyway, I bid you all farewell and I hope to see you there.
+

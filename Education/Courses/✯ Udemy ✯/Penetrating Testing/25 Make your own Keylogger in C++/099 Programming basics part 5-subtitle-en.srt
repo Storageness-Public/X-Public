@@ -1,0 +1,782 @@
+1
+00:00:00,000 --> 00:00:04,000
+Welcome all to this tutorial.
+
+2
+00:00:04,000 --> 00:00:09,700
+Today I will talk about pointers and files.
+
+3
+00:00:09,700 --> 00:00:15,000
+After that, we will go straight into actually writing the code for a keylogger.
+
+4
+00:00:15,000 --> 00:00:18,000
+We will begin writing our keylogger.
+
+5
+00:00:18,000 --> 00:00:21,700
+So you are only two subjects away and one tutorial away
+
+6
+00:00:21,700 --> 00:00:26,700
+from writing a real keylogger that will actually record keystrokes.
+
+7
+00:00:26,700 --> 00:00:32,500
+Please keep in mind that initially, I will try to either create it myself
+
+8
+00:00:32,500 --> 00:00:36,820
+or just find one on the net that is really really really really simple.
+
+9
+00:00:36,820 --> 00:00:42,000
+I mean the most basic of the basic, so that you can only record keystrokes
+
+10
+00:00:42,000 --> 00:00:46,100
+and then we will try to expand upon it.
+
+11
+00:00:46,100 --> 00:00:53,500
+We will keep on adding functions to it and we will see how far we will actually go.
+
+12
+00:00:53,500 --> 00:00:57,200
+Anyway, let's go ahead and take a look at this.
+
+13
+00:00:57,200 --> 00:01:03,120
+So one of the things that you will basically know are what pointers are.
+
+14
+00:01:03,120 --> 00:01:09,970
+Basically days store memory
+addresses of other the store memory
+
+15
+00:01:09,970 --> 00:01:16,330
+addresses of other variables that's it
+no big deal there the way you would use
+
+16
+00:01:16,330 --> 00:01:20,860
+it the way you would use pointers in the
+most simple of example in the simplest
+
+17
+00:01:20,860 --> 00:01:25,740
+possible example later on you'll do more
+complex examples as we start programming
+
+18
+00:01:25,740 --> 00:01:29,990
+the keylogger but for the time being
+i'll just keep it simple would take p.m.
+
+19
+00:01:29,990 --> 00:01:36,799
+let's let's declare a variable first
+let's create a variable number let's
+
+20
+00:01:36,799 --> 00:01:38,530
+sign it a value of
+
+21
+00:01:38,530 --> 00:01:45,520
+so now we would like to create a pointer
+that points to dis variable how do we do
+
+22
+00:01:45,520 --> 00:01:52,229
+that we'll we basically just ok we take
+a look at this and let's disassemble it
+
+23
+00:01:52,229 --> 00:01:58,649
+so this is a type in this is an integer
+it heard variable has a name of number
+
+24
+00:01:58,649 --> 00:02:03,890
+and it has an assigned value of ten ok
+
+25
+00:02:03,890 --> 00:02:08,520
+in order to create a pointer that points
+to it needs to be at the same time so in
+
+26
+00:02:08,520 --> 00:02:15,250
+and then that Asterix and then we give
+it a name so we can do whatever we like
+
+27
+00:02:15,250 --> 00:02:22,900
+pretty much gonna go ahead in the image
+PTR so isn't point the Dr's pointer and
+
+28
+00:02:22,900 --> 00:02:28,640
+then afterwards we tell it we actually
+need to tell it to actually point to
+
+29
+00:02:28,640 --> 00:02:35,170
+this variable so how do we do that we
+take in PTR sequels and we need to open
+
+30
+00:02:35,170 --> 00:02:52,830
+a 10 percent sign and percent sign
+that's the memory address of P TR this
+
+31
+00:02:52,830 --> 00:03:06,489
+year ago now let's go ahead and write
+Dec out co2 instruction CEO and let's go
+
+32
+00:03:06,489 --> 00:03:19,400
+ahead and output well just separate
+these two values that we will output the
+
+33
+00:03:19,400 --> 00:03:26,410
+value of PTR so to your ethically what
+we want to do is for these two values
+
+34
+00:03:26,410 --> 00:03:30,360
+when they get out put it we would like
+them to be the same in this case they
+
+35
+00:03:30,360 --> 00:03:39,370
+won't you'll see why their ego so is
+stan is it is supposed to be a cleat
+
+36
+00:03:39,370 --> 00:03:45,110
+thing here this is things ok so it's one
+thing to number
+
+37
+00:03:45,110 --> 00:03:51,780
+hexadecimal number regardless of the
+fact that it has letters inside zero x
+
+38
+00:03:51,780 --> 00:03:58,120
+that simply specifies that this is a
+exit the small number and then you have
+
+39
+00:03:58,120 --> 00:04:02,570
+hexadecimal numbers are go from go like
+this
+
+40
+00:04:02,570 --> 00:04:09,730
+0123456789 and then ABC D
+
+41
+00:04:09,730 --> 00:04:21,019
+D E F after the last if I am mistaken
+here price increases chance feel free to
+
+42
+00:04:21,019 --> 00:04:31,889
+hang me in discussions a way if you will
+be the memory address of its not
+
+43
+00:04:31,889 --> 00:04:35,729
+particularly useful to us now it's
+definitely not useful to us from you
+
+44
+00:04:35,729 --> 00:04:42,419
+really dis bridge let's put it like that
+can be it has its uses
+
+45
+00:04:42,419 --> 00:04:47,460
+if we want to to output value of Nnamdi
+assign value from them
+
+46
+00:04:47,460 --> 00:04:56,530
+well simple enough just a bit less
+tricks here let's go ahead and run it
+
+47
+00:04:56,530 --> 00:05:04,400
+their ego so 10 and then you have colon
+colon dead simple as that
+
+48
+00:05:04,400 --> 00:05:09,699
+no big deal now this is a very basic
+example as I said later on we will go
+
+49
+00:05:09,699 --> 00:05:14,639
+through we will go we'll see some other
+examples of how pointers are used and
+
+50
+00:05:14,639 --> 00:05:20,180
+hopefully as we as we go through the
+process of the creation of the keylogger
+
+51
+00:05:20,180 --> 00:05:27,139
+you will be able to solidify what you
+have learned thus far and learned a lot
+
+52
+00:05:27,139 --> 00:05:37,450
+of new things go ahead and delete this
+ad we don't really need this for the
+
+53
+00:05:37,450 --> 00:05:38,520
+time being
+
+54
+00:05:38,520 --> 00:05:44,090
+let's go ahead and deal with files now
+why do we need files what on earth are
+
+55
+00:05:44,090 --> 00:05:50,440
+we going to use them for a while if
+we're going to make a keylogger we will
+
+56
+00:05:50,440 --> 00:05:55,880
+definitely need to know how to use files
+because hey if you have a keylogger
+
+57
+00:05:55,880 --> 00:06:04,270
+buddy system you will be storing those
+particular files where we'll use toward
+
+58
+00:06:04,270 --> 00:06:09,160
+the keys so where will you store the
+keys that are typed in the keyboard well
+
+59
+00:06:09,160 --> 00:06:17,289
+to file and somebody presses I don't
+ABCD ABCD will be written to a file
+
+60
+00:06:17,289 --> 00:06:21,050
+somewhere you see how it stands to
+reason
+
+61
+00:06:21,050 --> 00:06:27,130
+we need to know how to actually write to
+a file using purely C++ and nothing else
+
+62
+00:06:27,130 --> 00:06:33,650
+this is a very simple process is not
+very complicated it's very similar to
+
+63
+00:06:33,650 --> 00:06:44,130
+see out and see and you only need to do
+up here is that include dream so that we
+
+64
+00:06:44,130 --> 00:06:50,140
+would be able to do this and let's go
+ahead and deal with writing to a file
+
+65
+00:06:50,140 --> 00:06:58,620
+first we need to create an output stream
+so it open or stream and we'll give it a
+
+66
+00:06:58,620 --> 00:07:04,660
+name right that seems the most logical
+thing can write whatever you want here I
+
+67
+00:07:04,660 --> 00:07:12,630
+don't really care right and then let's
+go ahead and get petition marks and go
+
+68
+00:07:12,630 --> 00:07:18,610
+ahead and yeah we need to specify the
+path if you don't specify the path it
+
+69
+00:07:18,610 --> 00:07:26,920
+will be in your project folder so
+they're Projects folder is here simply
+
+70
+00:07:26,920 --> 00:07:35,070
+if you didn't change anything it should
+be here you click on local disk C users
+
+71
+00:07:35,070 --> 00:07:42,610
+creator well obviously for you you will
+have a different username I'm just gonna
+
+72
+00:07:42,610 --> 00:07:45,830
+go ahead and click on mine so just go
+ahead and click on the user name of the
+
+73
+00:07:45,830 --> 00:07:52,970
+user that you are using at the moment no
+go ahead and look for work space
+
+74
+00:07:52,970 --> 00:07:57,290
+go ahead and click on it and look for
+your project two years so our project is
+
+75
+00:07:57,290 --> 00:08:04,850
+a keylogger and it will pop you see
+already have it from my test before but
+
+76
+00:08:04,850 --> 00:08:12,740
+in the least a decision needed so it
+will be here just gonna minimized US
+
+77
+00:08:12,740 --> 00:08:21,940
+anyways let's go ahead and write and
+specify our file path so they've been
+
+78
+00:08:21,940 --> 00:08:24,490
+see cooling
+
+79
+00:08:24,490 --> 00:08:29,000
+backslash backslash is an escape
+character it used to escape the
+
+80
+00:08:29,000 --> 00:08:33,770
+quotation marks Sunni type in two
+backslashes if you want to if you want
+
+81
+00:08:33,770 --> 00:08:38,190
+to see your beck / in the string that
+that it's printed out in this sentence
+
+82
+00:08:38,190 --> 00:08:48,620
+in the statement where quality so see
+colon slash slash users backslash
+
+83
+00:08:48,620 --> 00:08:57,190
+backslash again later and this is where
+I would like to create this file in this
+
+84
+00:08:57,190 --> 00:09:09,140
+particular folder just see ok we will
+create a huge need to pay attention you
+
+85
+00:09:09,140 --> 00:09:15,399
+give it a path and you me to make sure
+that you can actually right there if you
+
+86
+00:09:15,399 --> 00:09:21,940
+can't write anything there won't be able
+to create a file by the way this what we
+
+87
+00:09:21,940 --> 00:09:33,040
+have written here is the equivalent of
+this so this is how the system this is
+
+88
+00:09:33,040 --> 00:09:39,540
+how the south will be for the system
+because we have entered backslashes of
+
+89
+00:09:39,540 --> 00:09:44,860
+backslashes here so that the slashes
+backslashes could be interpreted as such
+
+90
+00:09:44,860 --> 00:09:49,899
+as I stated backslashes our escape
+characters so if you need some character
+
+91
+00:09:49,899 --> 00:09:55,450
+to escape these quotation marks and be
+interpreted as a commander something of
+
+92
+00:09:55,450 --> 00:10:00,040
+a kind then you would tape in a
+backslash let me show you what I mean by
+
+93
+00:10:00,040 --> 00:10:05,290
+that comment out this line just to make
+sure there are no Asians here safe I
+
+94
+00:10:05,290 --> 00:10:17,440
+type in CEO and if I open up quotation
+marks and if I type in text goes here
+
+95
+00:10:17,440 --> 00:10:32,480
+he's did you know and if I double
+backslash year that I type in that
+
+96
+00:10:32,480 --> 00:10:39,750
+stands for a new line back / and for a
+new alliance or skipping it and let's go
+
+97
+00:10:39,750 --> 00:10:41,540
+ahead and that some something else
+
+98
+00:10:41,540 --> 00:10:44,910
+random text goes here here in case you
+didn't know
+
+99
+00:10:44,910 --> 00:11:02,400
+case you did did their ego just go ahead
+and do this so there are no end else
+
+100
+00:11:02,400 --> 00:11:09,660
+here and there is justice escape
+character with its guidance in this
+
+101
+00:11:09,660 --> 00:11:15,620
+command around here
+
+102
+00:11:15,620 --> 00:11:22,260
+random text goes here in case you did
+not know in case you did write something
+
+103
+00:11:22,260 --> 00:11:31,890
+that we will be using some of this later
+on as well and do dis
+
+104
+00:11:31,890 --> 00:11:39,000
+FileStream right and doubt we need to
+actually write something to that file
+
+105
+00:11:39,000 --> 00:11:45,450
+well how do we do take a wild guess just
+type in right
+
+106
+00:11:45,450 --> 00:11:53,510
+pretty much the same as see out and
+let's go ahead and take some text here
+
+107
+00:11:53,510 --> 00:11:56,780
+alright I knew I was forgetting
+something when I was looking at this we
+
+108
+00:11:56,780 --> 00:12:08,110
+need to provide the name of the file so
+our final thought txt a wonderful if
+
+109
+00:12:08,110 --> 00:12:12,520
+needed I forgot oh well things happen
+when you program you will encounter more
+
+110
+00:12:12,520 --> 00:12:17,470
+than one problem but just forgetting
+things right so what should we put into
+
+111
+00:12:17,470 --> 00:12:21,329
+this text file
+
+112
+00:12:21,329 --> 00:12:55,059
+windows in it like all the freedom to
+read the statement late so much says
+
+113
+00:12:55,059 --> 00:13:01,709
+anyway you can do this but I did now so
+see that the quotation marks are here
+
+114
+00:13:01,709 --> 00:13:06,860
+and then you can just press Enter going
+to do you live and then add quotation
+
+115
+00:13:06,860 --> 00:13:11,769
+marks here this is all the same line to
+the computer you're just doing this for
+
+116
+00:13:11,769 --> 00:13:21,689
+your self gate so let's go ahead and
+let's go ahead and compiling renders yes
+
+117
+00:13:21,689 --> 00:13:23,220
+go ahead
+
+118
+00:13:23,220 --> 00:13:33,049
+errors but there's a semicolon of course
+does it in preventing out of the screen
+
+119
+00:13:33,049 --> 00:13:38,040
+so we need to actually because we didn't
+tell it out
+
+120
+00:13:38,040 --> 00:13:42,709
+need to actually go ahead and check and
+this is the folder is hella see if we
+
+121
+00:13:42,709 --> 00:13:49,029
+can find that their ego it says our
+final da txt says we also I like working
+
+122
+00:13:49,029 --> 00:13:54,999
+in it I like all the freedom that I
+haven't had as in it as opposed to Linux
+
+123
+00:13:54,999 --> 00:14:10,189
+field for the space there now gonna do
+it let's do a test run so you see this
+
+124
+00:14:10,189 --> 00:14:15,980
+is all one line if item for the space
+here or here it's just interpreted as
+
+125
+00:14:15,980 --> 00:14:24,439
+one single I as being together those
+faces but now I have a stasi up their
+
+126
+00:14:24,439 --> 00:14:32,360
+ego as opposed to sex oK so that's how
+you write to a file at the end you
+
+127
+00:14:32,360 --> 00:14:34,329
+should always close the file
+
+128
+00:14:34,329 --> 00:14:40,309
+to close the file you don't have a
+built-in function in just a bit right so
+
+129
+00:14:40,309 --> 00:14:46,269
+whatever you've typed in whatever you
+named it whenever you name this file
+
+130
+00:14:46,269 --> 00:14:58,629
+stream just go ahead and use that
+thought is no need is a need to Lowes
+
+131
+00:14:58,629 --> 00:15:03,920
+there we go this will effectively closed
+the file you can't actually see this
+
+132
+00:15:03,920 --> 00:15:09,129
+happening but that's something to do if
+you do this you can save yourself a lot
+
+133
+00:15:09,129 --> 00:15:15,249
+of trouble a lot of headaches actually
+later on anyway let's go ahead and
+
+134
+00:15:15,249 --> 00:15:19,489
+delete this as we no longer need it now
+let's figure out how we can actually
+
+135
+00:15:19,489 --> 00:15:24,600
+read from a file so this is what I will
+just do the basic reading from a file
+
+136
+00:15:24,600 --> 00:15:31,029
+that big deal later on we will need to
+do lou combine this with loops
+
+137
+00:15:31,029 --> 00:15:35,689
+continuous loops if we will need to
+combine it with infinite loop so that
+
+138
+00:15:35,689 --> 00:15:40,369
+actually reads through the whole file
+continuously for the time being I just
+
+139
+00:15:40,369 --> 00:15:46,089
+put a show you how you can read an
+individual character from a line from a
+
+140
+00:15:46,089 --> 00:15:51,879
+file that's it nothing else I would you
+do this well you would need to tape in
+
+141
+00:15:51,879 --> 00:16:17,620
+input file with the name of your choice
+let's give it a path again see users
+
+142
+00:16:17,620 --> 00:16:27,770
+I'll txt ever go and how do you read
+from this well you need of first full
+
+143
+00:16:27,770 --> 00:16:29,940
+year of 2005
+
+144
+00:16:29,940 --> 00:16:40,529
+variable which store it's raining down
+below we will take in read greater
+
+145
+00:16:40,529 --> 00:16:46,260
+denigrated ensign read it in to exploit
+this will only read the first word into
+
+146
+00:16:46,260 --> 00:16:58,460
+X it will reach only until the first
+space capsule and sea salt please help
+
+147
+00:16:58,460 --> 00:17:10,250
+protects let's go ahead and run this
+window so that was the first word it
+
+148
+00:17:10,250 --> 00:17:19,120
+interpreted that
+
+149
+00:17:19,120 --> 00:17:24,920
+see Windows the first word and then we
+have a space here later on show you how
+
+150
+00:17:24,920 --> 00:17:26,360
+you can read the whole file
+
+151
+00:17:26,360 --> 00:17:31,240
+regardless of its length regardless of
+how many spaces there are regardless of
+
+152
+00:17:31,240 --> 00:17:36,990
+the length and so on and so forth some
+very complicated you need to create a
+
+153
+00:17:36,990 --> 00:17:39,290
+loop and know how to handle it
+
+154
+00:17:39,290 --> 00:17:46,500
+we will of course do this because we
+will need to read from a file and write
+
+155
+00:17:46,500 --> 00:17:50,990
+to a file as well for our key logger
+because that will be a place for a
+
+156
+00:17:50,990 --> 00:17:54,090
+keylogger stores the information that we
+need to figure out what we want to do
+
+157
+00:17:54,090 --> 00:18:00,429
+with that information whether we want to
+send it somewhere or not we will decide
+
+158
+00:18:00,429 --> 00:18:06,600
+to actually send it somewhere anyway I'm
+gonna be your farewell here until the
+
+159
+00:18:06,600 --> 00:18:14,059
+next tutorial in the desert or actually
+going to start creating our first
+
+160
+00:18:14,059 --> 00:18:19,830
+keylogger that will be really really
+really simple really primitive and we'll
+
+161
+00:18:19,830 --> 00:18:23,700
+see how that works out then from there
+from that point on we can start adding
+
+162
+00:18:23,700 --> 00:18:26,190
+some features well anyway goodbye
+
