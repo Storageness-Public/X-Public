@@ -1,0 +1,4 @@
+Decode the text in the message using spammimic.
+
+
+ Password: Hackers123

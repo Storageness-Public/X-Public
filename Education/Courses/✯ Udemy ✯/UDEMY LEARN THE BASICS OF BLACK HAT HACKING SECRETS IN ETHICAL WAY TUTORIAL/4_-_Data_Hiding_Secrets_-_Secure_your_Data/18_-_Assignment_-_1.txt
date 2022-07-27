@@ -1,0 +1,2 @@
+Decode
+ the text hided in the image attached with this Assignment using quickstego

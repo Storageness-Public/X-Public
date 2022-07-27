@@ -1,0 +1,90 @@
+VIRUS:
+
+
+
+  Some common infections of these viruses includes:
+
+
+
+  Purpose of creating Computer Virus:
+
+
+ ********************************************************************************************************************************
+
+
+
+  Types of Virus:
+
+
+ There are many type of computer virus but most of these virus comes under the following three category.
+
+
+
+
+
+
+
+
+
+  TYPES:
+
+
+
+  1.Encryption virus
+
+
+
+  They use encrypted codes
+
+
+
+  They are hard to detect
+
+
+
+  They infect different file with different encryption method by itself
+
+
+
+
+
+
+
+  2.Polymorphic virus
+
+
+ They replicates and mutate them-self by keeping its
+  original code intact
+ .
+
+
+
+
+
+
+
+  3.Metamorphic virus
+
+
+ They replicates them-self by changing its code completely (
+  i.e. changing its Original algorithm
+ )
+
+
+ ********************************************************************************************************************************
+  Virus Code generator:
+
+
+ *Terabit Virus maker
+
+
+ *JPS virus maker
+
+
+ *DELME’S Batch virus maker
+
+
+
+  ********************************************************************************************************************************
+
+  Working of anti-virus software:
