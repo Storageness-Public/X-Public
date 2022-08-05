@@ -1,0 +1,536 @@
+1
+00:00:00,000 --> 00:00:06,130
+Bienvenidos a todos, hoy voy a continuar el tutorial sobre el MACchanger
+
+2
+00:00:06,130 --> 00:00:14,246
+En este video lo empezar a usar como tal y te mostrar como cambiar tu direccin MAC
+
+3
+00:00:14,246 --> 00:00:24,829
+Esto tiene como tiene como propsito en primer lugar ser aplicado en la vida real y como estos videos son slo de aprendizaje y prctica,
+
+4
+00:00:24,829 --> 00:00:29,927
+como tienen slo proposito de aprendizaje y estos slo son videos de prctica,
+
+5
+00:00:29,927 --> 00:00:35,189
+lo haremos en la mquina virtual, ten en cuenta de que aunque es posible hacerlo
+
+6
+00:00:35,189 --> 00:00:43,003
+desde la lnea de comandos de Linux dentro de la mquina virtual, va a interrumpir tu conexin a internet
+
+7
+00:00:43,003 --> 00:00:53,190
+en la mquina virtual, pero no en la mquina real o en USBs booteables por la manera en que se usar
+
+8
+00:00:53,190 --> 00:01:03,428
+Te mostrar cmo puedes cambiar la direccin MAC en virtual box sin perder la conectividad a internet
+
+9
+00:01:03,428 --> 00:01:20,894
+De todos modos, escribir "macchanger -r eth0" que es nuestra
+
+10
+00:01:03,428 --> 00:01:20,894
+interface, de hecho antes de eso, voy a escribir
+
+11
+00:01:20,894 --> 00:01:33,861
+"ifconfig eth0" y vemos la direccin MAC aqu, ya la he cambiado pero cambiemosla de nuevo
+
+12
+00:01:33,861 --> 00:01:46,737
+Continuemos, cambiemosla otra vez, as que escribimos "macchanger -r eth0"
+
+13
+00:01:46,737 --> 00:01:55,821
+Enter, as que dice MAC Permanente, esta es nuestra direccin MAC original, esta es la actual la cual
+
+14
+00:01:55,821 --> 00:02:00,554
+La he cambiado antes de empezar este tutorial, y esta es la nueva direccin MAC
+
+15
+00:02:00,554 --> 00:02:08,972
+Cuando dice Nueva direccin MAC, s, ah est, esta es la que ser usada
+
+16
+00:02:08,972 --> 00:02:15,443
+As que la nueva direccin MAC es la que ser usada, la direccin MAC permanente es la original
+
+17
+00:02:15,443 --> 00:02:22,070
+y la actual, la que est usandose ahora es esta, pero tan pronto cuando tengas una nueva
+
+18
+00:02:22,070 --> 00:02:33,739
+entonces esta se aplicar, djame mostrarte, as que "ifconfig eth0", y puedes ver que este
+
+19
+00:02:33,739 --> 00:02:42,929
+este resultado y este resultado son completamente iguales, pero como puedes ver puedo escribir
+
+20
+00:02:42,929 --> 00:02:59,097
+"ping google.com" y no va a funcionar, si escribo "macchanger -p" para restaurar la direccin permanente
+
+21
+00:02:59,097 --> 00:03:06,857
+Si escribo "ping google.com" puedes ver que la conexin a internet funciona
+
+22
+00:03:06,857 --> 00:03:11,993
+As que no tendrs este problema en la mquina fsica o con un USB bootleable
+
+23
+00:03:11,993 --> 00:03:20,374
+No tendr dificultades pero con una mquina virtual es un poco diferente
+
+24
+00:03:20,374 --> 00:03:25,430
+Si quieres cambiarla en una mquina virtual y si ests usando virtual box, es bastante simple pero
+
+25
+00:03:25,430 --> 00:03:33,240
+como ya dije, no tiene sentido porque la direccin ya es...
+
+26
+00:03:33,240 --> 00:03:37,990
+Digo, es bsicamente la direccin MAC de la mquina virtual, as que no importa.
+
+27
+00:03:37,990 --> 00:03:45,622
+No es como que fuera una computadora que compraste con tu propio dinero o algo as, es la direccin MAC
+
+28
+00:03:45,622 --> 00:03:51,309
+de la mquina virtual, no importa, as que desde un punto de vista lgico no tiene sentido
+
+29
+00:03:51,309 --> 00:03:56,264
+pero djame mostrarte en caso de que quieras...
+
+30
+00:03:56,264 --> 00:04:08,780
+Ok, entonces despeja la pantalla y puedo escribir... Esta es 08:00:27:03:5a:75
+
+31
+00:04:08,780 --> 00:04:18,167
+Puedes memorizarla, puedes no memorizarla.
+
+32
+00:04:08,780 --> 00:04:18,167
+Puedes recordar el ltimo par, as que es 75 y veamos como cambia
+
+33
+00:04:18,167 --> 00:04:34,332
+As que la primera cosa que necesitamos hacer es apagar completamente la mquina,
+
+34
+00:04:18,167 --> 00:04:34,332
+apagar la mquina virtual digo. Espera,
+
+35
+00:04:34,332 --> 00:04:45,791
+Y listo, hacemos clic derecho en nuestra mquina virtual, vamos a configuracin, vamos a redes
+
+36
+00:04:45,791 --> 00:04:50,997
+y lo cambiamos a bridge, vamos a Avanzado, no necesita estar en bridge,
+
+37
+00:04:50,997 --> 00:04:57,794
+puedes dejarlo en NAT si lo prefieres, sabes.
+
+38
+00:04:57,794 --> 00:05:09,239
+As que el modo promiscuo se habilita, y abajo tengo una direccin MAC
+
+39
+00:04:57,794 --> 00:05:09,239
+y vamos y la rotamos, cambiemosla por otra.
+
+40
+00:05:09,239 --> 00:05:24,501
+Puedes ver que est cambiando aleatoriamente, si, no podrs cambiar el fabricante desde aqu
+
+41
+00:05:24,501 --> 00:05:32,493
+Slo podrs cambiar aleatoriamente los pares del dispositivo, y los del fabricante se mantienen igual
+
+42
+00:05:32,493 --> 00:05:40,434
+pero los pares del dispositivo cambiarn completamente, pero igual te mantienes lo suficientemente annimo
+
+43
+00:05:41,094 --> 00:05:53,850
+pero usando una mquina virtual, as que no te preocupes, das clic en Ok
+
+44
+00:05:57,610 --> 00:06:03,634
+Es en serio? Por favor?
+
+45
+00:06:19,884 --> 00:06:27,930
+Me encanta cuando se traba as, es lo que ms me encanta.
+
+46
+00:06:27,930 --> 00:06:35,897
+Ok, as que una vez mas, ve a configuracin y ve a redes, voy a cambiarlo a bridge
+
+47
+00:06:35,897 --> 00:06:45,260
+ve a Avanzado, haz clic en este circulo verde para cambiar la direccin MAC, clic en Ok
+
+48
+00:06:45,260 --> 00:06:50,511
+y despus puedes reiniciar la mquina y la direccin MAC ya estar cambiada
+
+49
+00:06:50,511 --> 00:07:02,179
+As que no puedes cambiar el fabricante pero puedes cambiar los pares que identifican a la mquina
+
+50
+00:07:02,179 --> 00:07:12,226
+Sin embargo, como dije, es slo una mquina virtual as que no necesitas preocuparte, puedes borrarlo cuando lo desees y puedes crear una nueva.
+
+51
+00:07:12,226 --> 00:07:22,762
+Cuando lo desees, pero en un sistema real y en un USB booteable esto hara mucha diferencia
+
+52
+00:07:22,762 --> 00:07:27,945
+As que cada vez que vayas a usar esto en la realidad va a hacer mucha diferencia, pero en una mquina virtual
+
+53
+00:07:27,945 --> 00:07:40,674
+que es la que ests usando ahora, por propsitos de aprendizaje, slo estoy lo estoy demostrando para que sepas como hacerlo.
+
+54
+00:07:40,674 --> 00:07:48,425
+As que, booteando, booteando y booteando realmente lento
+
+55
+00:07:48,425 --> 00:07:59,969
+Siempre me ha encantado la velocidad de las mquinas virtuales, slo cierra esto y cierra esto y abre el terminal
+
+56
+00:07:59,969 --> 00:08:07,838
+Hay otra cosa que puede ser implementada y es que Linux permite la programacin de tareas as que puedes
+
+57
+00:08:07,838 --> 00:08:16,233
+programar una tarea, la corres al bootear y as tienes una direccin MAC cambiada cada vez que botees
+
+58
+00:08:16,233 --> 00:08:29,926
+tu mquina, as que si escribes "contrab -e" en Kali Linux 2.0 te preguntar que editor te gustara
+
+59
+00:08:29,926 --> 00:08:39,560
+usar. Siempre me ha gustado VIM pero he notado que algunas personas han tenido problemas con el para ponerlo en udemy
+
+60
+00:08:39,560 --> 00:08:46,941
+porque puede ser algo complicado pero es muy poderoso sin embargo para este propsito voy a usar
+
+61
+00:08:46,941 --> 00:08:55,847
+Nano ya que es mucho ms simple y fcil de usar y por mucho menos poderoso aunque para lo que vamos a hacer
+
+62
+00:08:55,847 --> 00:09:00,728
+slo necesitamos un editor bsico para cambiar algunas cosas as que no hay necesidad de usar una herramienta muy poderosa
+
+63
+00:09:00,728 --> 00:09:04,335
+en primer lugar.
+
+64
+00:09:04,335 --> 00:09:12,781
+As que vamos y escogemos una opcin, nmero 1
+
+65
+00:09:12,781 --> 00:09:21,071
+Y vamos abajo, as que en el fondo tienes "m h dom mon dow comand" qu son estas opciones?
+
+66
+00:09:28,825 --> 00:09:42,514
+M significa minutos, H horas, dom es Da del mes, mon es slo mes y dw es da de la semana
+
+67
+00:09:42,514 --> 00:09:51,994
+y el comando que desees correr, en una mquina fsica o un dispositivo USB, puedes correr algo como esto
+
+68
+00:09:51,994 --> 00:10:02,526
+"@reboot" descartas todas estas opciones y slo corres "@reboot" y luego
+
+69
+00:10:02,526 --> 00:10:11,869
+puedes escribir algo como "macchanger -r eth0"
+
+70
+00:10:11,869 --> 00:10:19,193
+tambin puedes traer la interfaz abajo y cambiar la direccin MAC si eso no funciona
+
+71
+00:10:19,193 --> 00:10:27,850
+as que por ejemplo tienes "@reboot machanger -r eth0" eso debera funcionar, si no
+
+72
+00:10:27,850 --> 00:10:34,746
+puedes hacer lo siguiente
+
+73
+00:10:34,746 --> 00:10:44,089
+As que estamos en algn lugar en el sistema de archivos, vamos a Documentos y podemos escribir
+
+74
+00:10:44,089 --> 00:10:54,585
+"mkdir" no lo s, cmo deberamos llamar a este archivo? "whatever.sh"
+
+75
+00:10:54,585 --> 00:10:59,522
+y luego vamos a escribir "nano whatever.sh"
+
+76
+00:10:59,522 --> 00:11:08,596
+No, espera, mkdir crea un directorio, mis disculpas por eso
+
+77
+00:11:08,596 --> 00:11:18,391
+Voy a escribir "nano whatever.sh" y luego voy a crear un pequeo script
+
+78
+00:11:18,391 --> 00:11:28,833
+para m aqu /bin/bash y luego puedes escribir en un conjunto de comandos bsicamente
+
+79
+00:11:28,833 --> 00:11:32,742
+exactamente los mismos comandos que usaras en el terminal, as que
+
+80
+00:11:32,742 --> 00:11:42,301
+ifconfig eth0 down
+
+81
+00:11:47,081 --> 00:11:55,421
+Esto es primeramente usado para interfaces inalmbricas y yo estoy usando una interfaz almbrica
+
+82
+00:11:55,421 --> 00:12:01,623
+para estas pruebas, tambin generalmente debes cambiar la direccin MAC en una interfaz almbrica
+
+83
+00:12:01,623 --> 00:12:07,691
+generalmente la cambiaras en una interfaz inalambrica, pero el procedimiento es exactamente el mismo
+
+84
+00:12:07,691 --> 00:12:13,378
+la nica cosa que es diferente es el nombre de la interfaz, as que no necesitas copiar esta parte
+
+85
+00:12:13,378 --> 00:12:17,858
+o nada parecido, slo estoy creando este script cmo demostracin
+
+86
+00:12:17,858 --> 00:12:22,913
+de lo que puedes hacer, as que puedes crear sets enteros de comando pero debes ejecutarlos
+
+87
+00:12:22,913 --> 00:12:30,800
+al bootear, configuras tu sistema para adaptarlo de la manera en que quieres adaptarlo
+
+88
+00:12:30,800 --> 00:12:36,774
+al bootear, para que no lo tengas que manualmente todo el tiempo, as que puedes automatizar estas tareas
+
+89
+00:12:36,774 --> 00:12:43,233
+escribe de nuevo macchanger -r eth0
+
+90
+00:12:43,233 --> 00:12:49,043
+y luego ifconfig eth0 up
+
+91
+00:12:49,043 --> 00:13:09,742
+y tambin puedes asegurarte de que se ejecute correctamente, escribe sleep 2, y podemos hacer
+
+92
+00:13:09,742 --> 00:13:21,789
+esto tambin, sleep 2, sleep pone la ejecuccin de... ejecuta ifconfig, luego se detiene por 2 segundos
+
+93
+00:13:21,789 --> 00:13:26,218
+luego ejecuta macchanger y luego se detiene de nuevo por 2 segundos y luego trae
+
+94
+00:13:26,218 --> 00:13:31,972
+de nuevo la interfaz, esto es slo para asegurar que todo se ejecute correctamente
+
+95
+00:13:31,972 --> 00:13:41,867
+As que Control + O para guardar, Enter, Control + X para salir, luego escribimos ls, vemos que el script est ah
+
+96
+00:13:41,867 --> 00:13:52,032
+y luego necesitamos hacerlo ejecutable, escribimos chmod +x whatever.sh
+
+97
+00:13:52,032 --> 00:13:59,359
+y entonces si lo hacemos otra vez veremos que tiene un color diferente, y puedes ver que
+
+98
+00:13:59,359 --> 00:14:05,379
+es de hecho un archivo ejecutable, esta x simboliza que es ejecutable,
+
+99
+00:14:05,379 --> 00:14:11,377
+as que los primeros tres son para el usuario, los tres segundos permisos son para el grupo
+
+100
+00:14:11,377 --> 00:14:18,725
+y luego los tres terceros permisos son para todos, as que el usuario puede leer, escribir y ejecutar
+
+101
+00:14:18,725 --> 00:14:27,496
+el propietario del archivo es root, el grupo al que root pertenece se llama root tambin
+
+102
+00:14:27,496 --> 00:14:33,600
+as que el grupo root puede leer, ejecutar pero no puede escribir sobre el archivo.
+
+103
+00:14:33,600 --> 00:14:40,117
+Si, pero si no eres root casi puedes hacer todo, as que si hay otro usuario
+
+104
+00:14:40,117 --> 00:14:46,711
+Digamos... llamado test, que es un miembro del grupo root, entonces podra leer
+
+105
+00:14:46,711 --> 00:14:53,183
+y ejecutar el archivo, as que leer y ejecutar, pero no podra escribir nada
+
+106
+00:14:53,183 --> 00:15:00,900
+sobre l, y el rwxr puede tambin leer, ejecutar, y todos los dems pertenecer a cualquier otro grupo
+
+107
+00:15:00,900 --> 00:15:05,793
+De todos modos, s que los tipos tal vez te confundieron un poco aqu, pero no te preocupes, esto
+
+108
+00:15:05,793 --> 00:15:17,711
+aclarar el tutorial mientras progresa, vamos y escribimos contrab -e
+
+109
+00:15:17,711 --> 00:15:23,847
+Date cuenta cmo no sali ningn propmt para un editor, baja hasta el fondo
+
+110
+00:15:23,847 --> 00:15:41,206
+escribe pwd para ver que ests trabajando en el directorio, as que es root y luego Documentos
+
+111
+00:15:41,206 --> 00:15:57,771
+puedes copiar esto, as que Control + Shift + C, y luego escribir crontab -e de nuevo
+
+112
+00:15:57,771 --> 00:16:12,543
+Bajar hasta el fondo, escribir @reboot /root/Documents (con Control + Shift + V) y luego whatever.sh
+
+113
+00:16:12,543 --> 00:16:19,090
+nunca he probado esto en esta mquina pero debera funcionar sin problemas y puedes
+
+114
+00:16:19,090 --> 00:16:25,883
+presionar Control + O para guardar, Enter para escribir y Control + para salir
+
+115
+00:16:25,883 --> 00:16:35,546
+Si escribo ifconfig puedo ver que el ltimo set de la direccin es e7:43 probemos este script
+
+116
+00:16:35,546 --> 00:16:44,690
+para ver si realmente funciona, "sleep no es funcional", ok, no importa, pero puedes ver
+
+117
+00:16:44,690 --> 00:16:53,383
+que funciona bien incluso sin sleep as que la MAC actual y la MAC permanente y la nueva MAC
+
+118
+00:16:53,383 --> 00:17:01,484
+puedes ver que de hecho cambi, djame reconfigurar esto un poco
+
+119
+00:17:01,484 --> 00:17:11,802
+No deb haber usado una S mayscula, slo una S minscula si no me equivoco, si no lo hace no importa
+
+120
+00:17:11,802 --> 00:17:16,954
+Ah est, te diste cuenta que la ejecucin de este script fue un poco mas lenta porque tenas
+
+121
+00:17:16,954 --> 00:17:24,823
+intervalos de sleep de 2 segundos, pero de nuevo cambia, y cambiar cada vez que se rebootee
+
+122
+00:17:24,823 --> 00:17:29,412
+Podemos asegurarnos de esto slo con escribir en reboot
+
+123
+00:17:29,412 --> 00:17:38,370
+Me estoy quedando un poco corto de tiempo pero bueno, deberamos terminar el tutorial pronto
+
+124
+00:17:38,370 --> 00:17:46,343
+Puedes poner lo que quieras en el script, debera ejecutarse cada vez que la mquina
+
+125
+00:17:46,343 --> 00:17:53,882
+rebootee, lo que es muy bueno como dije, puedes ir a la mquina preconfigurada en un slo script
+
+126
+00:17:53,882 --> 00:18:01,128
+as que puedes cambiar tu configuracin de DNS, puedes conectarte a un VPN, puedes hacer lo que sea
+
+127
+00:18:01,128 --> 00:18:06,646
+que quieras hacer y ponerlo en un script que se ejecutar cada vez que hagas boot
+
+128
+00:18:06,646 --> 00:18:11,191
+asi que todo tomar como 2 segundos a diferencia que si lo hacer manualmente desde aqu,
+
+129
+00:18:11,191 --> 00:18:14,194
+configurando, etc.
+
+130
+00:18:28,254 --> 00:18:42,043
+Booteando, abre el terminal, hago zoom, y luego escribo macchanger -s eth0
+
+131
+00:18:42,043 --> 00:18:46,882
+y listo, entonces dice que la MAC actual es esta y que la MAC permanente
+
+132
+00:18:46,882 --> 00:18:51,107
+es esta, as que de hecho si la cambi cuando hizo reboot
+
+133
+00:18:51,107 --> 00:18:55,739
+De todos modos, gracias por ver el tutorial, esto concluye la seccin de MACChanger
+
+134
+00:18:55,739 --> 00:19:02,328
+Espero que te haya gustado y me despido.
+

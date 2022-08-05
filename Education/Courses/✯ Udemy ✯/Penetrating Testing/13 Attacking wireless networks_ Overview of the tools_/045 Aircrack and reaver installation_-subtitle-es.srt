@@ -1,0 +1,288 @@
+1
+00:00:01,000 --> 00:00:08,131
+Hola a todos y bienvenidos a este tutorial, hoy te ensear como puedes instalar Air Crack y reaver.
+
+2
+00:00:08,131 --> 00:00:18,197
+Asi que, Air Crack es realmente muy sencillo, solo tipea yum install air crack-ng y va a escoger la versin correcta
+
+3
+00:00:18,197 --> 00:00:25,315
+por defecto as que slo ve y presiona enter. En Fedora corre a travs de checkear cada vez que tu
+
+4
+00:00:25,315 --> 00:00:33,248
+puedes ver los argumentos en orden de hacer eso. Dice package air crack-ng ya ha sido instalado
+
+5
+00:00:33,248 --> 00:00:39,461
+en la versin ms reciente. Pero probablemente quieras realizar una pregunta en la va de saltarse ese paso
+
+6
+00:00:39,461 --> 00:00:45,464
+puedes hacer ello y tipea "-y" eso es todo, con este comando que estoy seleccionando en el momento
+
+7
+00:00:45,464 --> 00:00:54,665
+la instalaccin volar y no te harn preguntas y tengas instalado air crack-ng en tu sistema
+
+8
+00:00:54,665 --> 00:01:04,194
+sin ningn problema. Sin embargo, reaver es una historia un poco diferente, reaver no se puede encontrar en el repositorio de fedora
+
+9
+00:01:04,194 --> 00:01:16,011
+y por lo tando debe ser descargado desde internet, hay muchos lugares para descargarlo yo he elegido descargarlo desde google code, ese es el lugar ms seguro de donde puedes descargar
+
+10
+00:01:16,011 --> 00:01:32,325
+y vamos a seguir, vamos a abrir mi navegador favorito el cual es Firefox, puedes abrir lo que quieras, escribe reaver google code all aparecen los resultados y all vamos, ahora vamos a
+
+11
+00:01:32,325 --> 00:01:40,655
+al sitio web de google code el cual tiene reaver WPS el cual tiene su descripcin aqu y tienes la versin pro all
+
+12
+00:01:40,655 --> 00:01:52,227
+bsicamente la diferencia entre la versin pro y la que podemos obtener gratis es la interface la cual, vamos a aceptarlo,
+
+13
+00:01:52,227 --> 00:01:59,691
+si planeas testearlo o white hack hacker tu no vas a terminar usando mucho GUIS esto normalmente, en realidad para nada
+
+14
+00:01:59,691 --> 00:02:09,390
+tampoco va a aumnentar mi secuencia de PIN, esto solo significa que vas a tratar PINS en cierto orden, lo que es ms
+
+15
+00:02:09,390 --> 00:02:16,455
+fcil de tener xito en la de defecto, de acuerdo con alguien pero no es realmente cierto.
+
+16
+00:02:16,760 --> 00:02:25,426
+y la Integrated WEP cracking, como dije antes, realmente no lo necesitas WEP, tu no vas a encontrar esto todos los das
+
+17
+00:02:25,426 --> 00:02:33,691
+en ningn lado, si lo encuentras, como dije antes, estas personas no merecen tener un WIFI abierto
+
+18
+00:02:33,691 --> 00:02:40,718
+independientemente del tipo de contrasea que le pongas. Asegrate de no ser este tipo de personas
+
+19
+00:02:40,718 --> 00:02:51,914
+Es decir, esta bien, ok, alguien ser capaz de conectarse a tu conexin y todo eso pero es mejor abrir un ROT para mucha actividad
+
+20
+00:02:51,914 --> 00:02:58,884
+o algo ms malicioso, vamos a poner como por ejemplo, podrn ser capaces de reiniciar tu trfico y ese tipo de cosas
+
+21
+00:02:58,884 --> 00:03:12,558
+En realidad no es una buena idea, vamos a pasarlo a WPE2. En fin, voy a irme a las descargas en la esquina izquierda
+
+22
+00:03:12,558 --> 00:03:20,326
+y hay diferentes versiones aqu que pudieron ser descargadas por ejemplo correcciones de bugs
+
+23
+00:03:20,326 --> 00:03:27,386
+realmente no hay diferencias sustanciales en el programa como tal entre las versiones pero hay correcciones obviamente
+
+24
+00:03:27,386 --> 00:03:38,595
+y eso est muy bien, es una gran cosa el mantenimiento de los paquetes que los soportan. Vamos a reaver-1.4.tar.qz
+
+25
+00:03:40,437 --> 00:03:51,224
+y tenemos reaver-1.4-tar-qz adems de la descripcin, este es el Checksum que puedes usar para verificar
+
+26
+00:03:51,224 --> 00:03:56,789
+si el archivo se encuentra intacto, pero no lo har ahora, solo voy a descargarlo.
+
+27
+00:03:57,758 --> 00:04:07,428
+Una vez que ha sido descargado, puedes abrir la carpeta en la cual existe y aqu tengo muchas cosas
+
+28
+00:04:08,491 --> 00:04:16,899
+Aqu tengo diferentes versiones que he descargado de diferentes pginas web, pero si encuentras este
+
+29
+00:04:16,899 --> 00:04:27,488
+que estoy seleccionando, que dice reaver-1.4 -fc20 es muy pequeo, este es el ms pequeo que he conseguido
+
+30
+00:04:28,735 --> 00:04:38,740
+NO lo descargues, realmente no funciona bien para nada as que no esperes que funcione.
+
+31
+00:04:38,740 --> 00:04:43,721
+Slo descrgalo desde Google Code y compralo con fuentes lo cual en realidad no tiene nada de malo hacer
+
+32
+00:04:43,721 --> 00:04:52,737
+Especialmente cuando este te muestra en detalle como hacerlo vamos a clickear dos veces en el archivo
+
+33
+00:04:52,737 --> 00:05:00,265
+el cual se va a extraer por el mtodo GUI el cual es muy simple, puedes slo extraerlo a travs del terminal
+
+34
+00:05:00,265 --> 00:05:06,728
+yo solo voy a seguir y usar GUI por esta ocasin y esta es una de las ventajas de usar LINUX en vez de WINDOWS
+
+35
+00:05:06,728 --> 00:05:12,116
+por defecto. El cual ser capaz de descomprimir realmente cualquier cosa
+
+36
+00:05:12,116 --> 00:05:20,481
+sin excepciones tales como WinTorr - WinRar, el que sea ser capaz de descomprimir
+
+37
+00:05:20,481 --> 00:05:26,051
+sin problemas, lo cual es fantstico, no necesita ninguna instalacin extra, esto todo se encuentra instalado
+
+38
+00:05:26,051 --> 00:05:40,716
+por defecto, as que vamos a cliquear extraer y seleccionamos donde lo queremos, presiona OK
+
+39
+00:05:47,564 --> 00:06:05,889
+Lo instal dos veces, ok no voy a perder tiempo aqu. Asi que Ok sigamos y vamos a
+
+40
+00:06:05,889 --> 00:06:35,896
+nuestro terminal, colocamos /desktop/ y veo que tengo muchas cosas all, djame ver si en efecto lo tengo
+
+41
+00:06:40,596 --> 00:06:54,221
+y all est river-1.4 vamos a navegar en esa carpeta limpiamos la pantalla y vamos directamente a documentos
+
+42
+00:06:54,221 --> 00:07:03,400
+vamos a ver que hay all, y creers que soy un tipo de experto o algo por el estilo al hacer estas cosas pero
+
+43
+00:07:03,400 --> 00:07:14,514
+pero no, la gente crea los archivos README por alguna razn, ellos estn all para ser ledos y el desarrollador ha dejado instrucciones expecficas
+
+44
+00:07:14,514 --> 00:07:29,234
+en como hacer algo, as que vamos y colocamos "cat README" y estos son archivos de reaver tiene la descripcin
+
+45
+00:07:29,234 --> 00:07:35,830
+de donde se encuentra ubicado en cada uno de estos archivos vemos por ejemplo este archivo con su ubicacin
+
+46
+00:07:41,946 --> 00:07:58,485
+pero mira esto, el desarrollador realmente ha dejado aqu todo el proceso de instalacin
+
+47
+00:07:58,485 --> 00:08:06,744
+aqu tienes todos y cada uno de los comandos que necesitas correr explicados en detalle, lo que hace y como puedes colocarlo
+
+48
+00:08:06,744 --> 00:08:17,451
+esto es maravilloso y por eso es lo que digo, cuando descargues algo, cuando lo descomprimas, solo busca el archivo README
+
+49
+00:08:17,451 --> 00:08:27,795
+el cual est all por una razn, la gente coloca all las instrucciones de como hacer algo y es donde puedes encontrar problemas como los que tengas
+
+50
+00:08:27,795 --> 00:08:41,146
+as que all puedes ver posibles soluciones, en fin, puedes chequear este cifrado, bueno el texto. Reaver solo es soportado
+
+51
+00:08:41,623 --> 00:08:58,006
+en las plataformas de linux lo cual requiere libcap y libsqlite3 librarie
+
+52
+00:08:58,006 --> 00:09:06,215
+el cual adems puedes ser creado e instalado corriendo:"./configure" "make" y "make install"
+
+53
+00:09:06,528 --> 00:09:18,274
+eso es todo. Esto incluso te dice igualmente como desinstalarlo, as que, all esta por una razn.
+
+54
+00:09:18,274 --> 00:09:31,690
+As que "ls", obviamente no puedes realizar el archivo de configuracin desde aqu as que colocamos "ll" y vamos a la fuente src y colocamos "ls"
+
+55
+00:09:31,690 --> 00:09:41,561
+vamos a ver que hay all dentro o lo que hay configurado, y puedes ver por defecto aqu, podemos ver la lista larga
+
+56
+00:09:41,823 --> 00:09:52,473
+as que ok encontramos aqu as que el usuario lo tiene, el root lo tiene tambin.
+
+57
+00:09:52,473 --> 00:10:07,029
+as que colocamos "./configure" as que ahora est buscando cosas las cuales tienen dependencias que no pueden funcionar
+
+58
+00:10:07,029 --> 00:10:22,490
+coloca "make" y all v, est corriendo. No he sacado nada de mi cabeza aqu, solo fui a la web
+
+59
+00:10:22,490 --> 00:10:31,994
+encontr los lugares ms seguros para descargar el cdigo y estoy comparndolo aqu as como lo indic el desarrollador en sus instrucciones
+
+60
+00:10:31,994 --> 00:10:43,562
+No es tan complicado, son slo comandos y el comando final es "make install" ahora me va  a dar muchos errores
+
+61
+00:10:43,562 --> 00:10:57,557
+bueno, no son errores sino advertencias realmente, porque ya lo tengo instalado y tengo que limpiar esto
+
+62
+00:10:57,557 --> 00:11:06,256
+y luego ser capz de instalarlo pero, eso no va a pasar primeramente porque ya tengo instalado reaver
+
+63
+00:11:06,256 --> 00:11:19,349
+as que vamos a chequear una vez ms si dejamos algo por fuera y puedo encontrarlo y si, all est
+
+64
+00:11:19,349 --> 00:11:25,286
+y no, no  he dejado nada por fuera, bsicamente el ltimo comando para ti que va a correr es "make install" para t, para m
+
+65
+00:11:25,286 --> 00:11:35,335
+no lo har, primeramente porque ya tengo instalado reaver en mi sistema y si tienes problemas, colocalo en el rea de preguntas
+
+66
+00:11:35,335 --> 00:11:47,589
+estar ms que feliz de ayudarte con ello. Vamos a limpiar todo esto, y veamos. Tipeamos reaver--help
+
+67
+00:11:47,864 --> 00:11:54,326
+excelente, est instalado, est funcional, responde a comandos de Tor y aqu tenemos la sintaxis para
+
+68
+00:11:54,326 --> 00:12:01,724
+esta es la sintaxis original por lo que puedes ver todos estos argumentos de los cuales hay muchos
+
+69
+00:12:01,724 --> 00:12:13,861
+bsicamente lo que dice es "-i" para interface de la red  y "-b" para ID o direccin MAC
+
+70
+00:12:13,861 --> 00:12:26,421
+esta es una direccin MAC que ha sido colocada aqu como un ejemplo y obviamente tenemos para reaver "-b" para doble respositorio lo cual es fantstico.
+
+71
+00:12:26,421 --> 00:12:37,161
+Vamos a limpiar la pantalla y esta es la forma como puedes instarlar Air Crack y Reaver en Linux pero en todo caso,
+
+72
+00:12:37,161 --> 00:12:44,031
+si eres usuario Windows, te ensear como hacerlo en Windows. Hasta ello, te deseo lo mejor.
+

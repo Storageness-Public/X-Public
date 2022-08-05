@@ -1,0 +1,460 @@
+1
+00:00:01,000 --> 00:00:05,694
+Hola a todos, bienvenidos a este tutorial. Hoy voy a comenzar un captulo
+
+2
+00:00:05,694 --> 00:00:11,925
+de "Wireless Hacking" as que, primero que todo, tienes que saber que hay diferentes tipos de
+
+3
+00:00:11,925 --> 00:00:19,034
+cifrado, estn "Free EP" o "Wep" y sin embargo, as ests usando Wep no realmente merece
+
+4
+00:00:19,034 --> 00:00:23,535
+que sea inalmbrico, slo piensa. Primeramente porque, es prcticamente
+
+5
+00:00:23,535 --> 00:00:30,828
+como que tuvieras una contrasea gratuita o un "Wifi" aberto, realmente no importa, es sencillo
+
+6
+00:00:30,828 --> 00:00:36,736
+de crackear sin problema 3 a 1. Sim embargo, si ests usando WPA o WPA2
+
+7
+00:00:36,736 --> 00:00:42,200
+eso es otra historia. Es realmente difcil de crackear, especialmente si la contrasea es muy larga o
+
+8
+00:00:42,200 --> 00:00:50,270
+algo de ese tipo, hay diferentes mtodos como "Direct Wireless Hacking" y realmente no
+
+9
+00:00:50,270 --> 00:00:57,412
+lo recomiendo en niguna circunstancia, hay circunstancias tales como mtodos favoritos
+
+10
+00:00:57,412 --> 00:01:07,262
+sin embargo, siempre es mejor tener una IP y el  router y luego ataca el router a s mismo,
+
+11
+00:01:07,262 --> 00:01:14,837
+usualmente este tiene 5 habilidades de room as como de encriptacin WPA que ests tratando de crackear
+
+12
+00:01:14,837 --> 00:01:22,801
+sin embargo, ya que estamos crackeando "wireless" vamos adelante y tipeamos ifconfig
+
+13
+00:01:22,801 --> 00:01:29,288
+notars que yo no tengo una interface wireless aqu, por qu?
+
+14
+00:01:29,288 --> 00:01:36,173
+bueno, incluso si la tengo una tarjeta inalmbrica (wireless), en mi laptop, esto es una maquina virtual
+
+15
+00:01:36,173 --> 00:01:42,220
+y las mquinas virtuales no soportan tarjetas de conexin integrada, ellas solo van a travs de tu
+
+16
+00:01:42,220 --> 00:01:51,724
+mquina y en alguna forma las mquinas virtuales son seguras as que puedes robar
+
+17
+00:01:51,724 --> 00:01:58,146
+cosas en ellas, wireless, entre otros y sin embargo segirs estando seguro y no te afectar
+
+18
+00:01:58,146 --> 00:02:04,131
+y no sern capaces de desencriptar la informacin de tu mquina. Sin em bargo, hay mtodos donde puedes
+
+19
+00:02:04,131 --> 00:02:13,331
+tener un USB, una tarjeta wireless y pluggin in y puedes crear una contrasea en tu mquina wireless
+
+20
+00:02:13,331 --> 00:02:19,789
+y en cierta forma ganar acceso para el wireless. Sin embargo, crackear las contraseas de una mquina virtual
+
+21
+00:02:19,789 --> 00:02:25,639
+NO es una buena idea, es decir, es una terrible idea, especialmente usando cajas virtuales
+
+22
+00:02:25,639 --> 00:02:33,789
+tal vez si estn usando Zen, o algo de ese tipo, donde tienes actuacin del 90 a 95
+
+23
+00:02:33,789 --> 00:02:39,235
+eso sera genial, pero usando cajas virtuales o crackeando contraseas, eso es realmente una mala idea
+
+24
+00:02:39,235 --> 00:02:51,600
+principalmente porque, djame mostrarte aqu, si vas en: Device -> devices entra all para settings
+
+25
+00:02:51,600 --> 00:02:58,032
+y all tendrs el men para otras cosas, as que vamos a seguir y cliqueamos en General
+
+26
+00:02:58,032 --> 00:03:05,068
+no, system, lo siento. Primero que todo, tiene una memoria bsica que puede ser alternada cuando la mquina
+
+27
+00:03:05,092 --> 00:03:09,597
+est apagada, no puedes cambiar la configuracin aqu cuando la mquina est encendida
+
+28
+00:03:09,597 --> 00:03:17,499
+primero que nada, dice que tengo dos gigas de ram disponibles para esta particular mquina
+
+29
+00:03:17,499 --> 00:03:23,030
+ahora eso es genial para la operacin dia a da especialmente para requerimientos limitados
+
+30
+00:03:23,030 --> 00:03:30,173
+tener dos gigabites de ram. Sin em bargo, si quieres crackear, si quieres rootear contraseas
+
+31
+00:03:30,173 --> 00:03:38,935
+si quieres tener ese mtodo de root, solo generando una gran contrasea, tratndo de adivinar
+
+32
+00:03:38,935 --> 00:03:44,363
+esto no es realmente una gran cantidad de memoria ram, en realidad, es una cantidad terrible
+
+33
+00:03:44,363 --> 00:03:51,258
+para tal tarea. Y si vamos adelante y cliqueamos en el procesador, podrs ver que ok execution cap es
+
+34
+00:03:51,258 --> 00:03:59,911
+100% pero slo tenemos una sola core asignada, dice que aqu 1 CPU core en la barra superior
+
+35
+00:03:59,911 --> 00:04:05,897
+en la barra superior dice procesadores, es genial en el momento porque puedes cambiar la cantidad de procesadores
+
+36
+00:04:05,921 --> 00:04:14,721
+que la mquina est usando mientras est corriendo, asi que eso no tiene sentido, no sers capaz de hacer eso,
+
+37
+00:04:14,721 --> 00:04:20,229
+tampoco en el mundo real, tal vez en una gran versin de servidor o algo por el estilo, pero incluso
+
+38
+00:04:20,229 --> 00:04:29,255
+en un pequeo procesador, eso es solo para discos o agregar RAM o cosas de ese tipo, en todo caso,
+
+39
+00:04:29,255 --> 00:04:40,842
+solo tiene 1 CPU asignado all, s que aqu dice 4 pero tengo que analizarlo el lado y la mquina virtual solo soporta 4
+
+40
+00:04:40,842 --> 00:04:50,973
+4 CPU core para estas mquinas y debes tomar ello en consideracin que no realmente no necesitas ms de 4
+
+41
+00:04:50,973 --> 00:04:58,458
+para tus mquinas virtuales especialmente si ests realizado algunas tareas en tu desktop, incluso si ests programando
+
+42
+00:04:58,458 --> 00:05:05,933
+a menos que ests haciendo algo especfico que tiene gran necesidad de grficos, no necesitars tantos cores
+
+43
+00:05:05,933 --> 00:05:14,397
+o algo de ese tipo, 1 CPU es perfecto, eso est bien, no necesitars ms. As que, en fin, voy a seguir y
+
+44
+00:05:14,397 --> 00:05:25,546
+voy a cliquear ok aqu, y slo quiero mostrarte que en orden de demostrar las fuentes de tu mquina virtual
+
+45
+00:05:25,546 --> 00:05:31,674
+son simplemente no superficiales en orden de soportar mtodos de ROOT
+
+46
+00:05:31,674 --> 00:05:39,569
+como dije, puedes realmente comprar por unos 25 dlares algo en la tienda para una tarjeta de red
+
+47
+00:05:39,569 --> 00:05:45,877
+una tarjeta de red USB o alguna inalmbrica, la instalas, la pasas a travs de los puertos y
+
+48
+00:05:45,877 --> 00:05:54,386
+va a servir pero va a ser terriblemente lento. Lo que necesitas hacer es realizar un boot o si ests usando
+
+49
+00:05:54,386 --> 00:06:07,166
+una mquina con linux, podrs hacer lo que yo voy a hacer ahora. Entonces porque mi mquina principal
+
+50
+00:06:07,166 --> 00:06:14,181
+tiene linux, he instalado todas las herramientas necesarias en ella, puedes instalar las mismas herramientas
+
+51
+00:06:14,181 --> 00:06:24,435
+as como en Kali, y estar haciendo mi prueba principal aqu, desde fedora, la mquina con kali ya no usa fedora con
+
+52
+00:06:24,435 --> 00:06:30,636
+este propsito. Sin embargo, si eres un usuario de Windows y no tienes un sistema de linux en tu mquina principal,
+
+53
+00:06:30,636 --> 00:06:37,509
+tambin podrs hacer esto en Windows, te mostrar el proceso de instalacin solo, realmente no se el mtodo actual
+
+54
+00:06:37,509 --> 00:06:43,705
+pero los principios son los mismos. Primeramente porque cuando ests haciendo en Windows, tienes
+
+55
+00:06:43,705 --> 00:06:50,964
+que usar el modo gua y francamente para este tipo de cosas personalmente no me gustan hacerlas,
+
+56
+00:06:50,964 --> 00:06:57,084
+por una gua que te indique como hacerlo, desde el terminal. Algunas de las herramientas que vamos a necesitar,
+
+57
+00:06:57,084 --> 00:07:02,109
+solo las voy a mencionar aqu y sintete libre de leer un poco acerca de ellas en internet,
+
+58
+00:07:02,109 --> 00:07:08,065
+mientras vas avanzando en el curso y luego, ve avanzando a travs de los videos igualmente
+
+59
+00:07:08,065 --> 00:07:12,812
+realmente hay mucha informacin extra all afuera en la internet, especialmente si enfrentas algn tipo de problema
+
+60
+00:07:12,812 --> 00:07:18,747
+o algo de ese tipo, tamibin sintete libre de postear en la seccin de preguntas si algo no est funcionando, estar ms
+
+61
+00:07:18,747 --> 00:07:30,313
+que feliz de intentar de arreglarlo por ti. As que slo escribe all "yum search" esta es una de las herramientas
+
+62
+00:07:30,313 --> 00:07:37,208
+que vas a necesitar, y luego "air crack-ng" presiona enter y vamos a verlas en poco tiempo, all van
+
+63
+00:07:37,208 --> 00:07:44,015
+"air crack" es un respositorio por defecto de fedora y puedes encontrarlo all fcilmente sin problemas,
+
+64
+00:07:44,015 --> 00:07:57,337
+entonces aircrack-ng.x86_64 es estndar inalmbrico y dice "sniffer and WEP/WPA-PSK key cracker"
+
+65
+00:07:57,337 --> 00:08:04,011
+nos vamos a quedar con esta parte "key cracker" basicamente puedes instalarlo en cualquier parte, en una versin
+
+66
+00:08:04,011 --> 00:08:11,798
+de tu computadora, transferir el archivo all, pero realmente no hay sentido en hacer eso,
+
+67
+00:08:11,798 --> 00:08:17,964
+ahora, vamos a instalarlo y voy a ensearte a como usarlo, hay muchas cosas relacionadas con air cracker
+
+68
+00:08:17,964 --> 00:08:26,244
+pero hay ms herramientas que usaremos que emplea un mtodo completamente diferente,
+
+69
+00:08:26,244 --> 00:08:32,384
+usando una forma completamente diferente de "Wireless cracking passwords" y medianamente vamos a estar hablando
+
+70
+00:08:32,384 --> 00:08:39,876
+acerca de mtodos de cifrado de contraseas WPA y WPA2. har una breve demostracin de como hacer
+
+71
+00:08:39,876 --> 00:08:47,982
+como crackear WPA y WPA2 pero, me refiero a que las oportunidades de encontrar WPA y WPA2
+
+72
+00:08:47,982 --> 00:08:56,551
+son prcticamente inexistentes, es decir, si slo abres tu telfono, no se si usas Android o
+
+73
+00:08:56,551 --> 00:09:08,682
+o Apple o lo que sea, Windows, lo que sea, esta all afuera as que solo mira la conexin de red al rededor de ti
+
+74
+00:09:08,682 --> 00:09:18,014
+y mira los mtodos de cifrado, porque ellos te sern mostrados, donde vers que nunca vers eso
+
+75
+00:09:18,014 --> 00:09:23,580
+si alguna vez ves eso, es prcticamente con un Wifi abierto, porque WEP ha sido crackeado,
+
+76
+00:09:23,580 --> 00:09:32,009
+toma muy poco tiempo para romperlo sin ningn tipo de problema, no necesitas ningn mtodo sofisticado
+
+77
+00:09:32,009 --> 00:09:37,753
+de ningn tipo, un nio puede crackearlo sin ningn tipo de problemas, bsicamente slo sigue el procedimiento
+
+78
+00:09:37,753 --> 00:09:46,217
+y eso es todo. Ahora, como vena diciendo, hay otro mtodo de hacer esto por WPA y el nombre es "reaver"
+
+79
+00:09:48,222 --> 00:09:54,814
+Ahora, reaver no se encuentra en un repositorio por defecto de fedora, debes seguir el proceso de instalacin
+
+80
+00:09:54,814 --> 00:10:02,334
+el cual puedes encontrar en internet, pero bsicamente lo que hace reaver es adivinar los PINS en tu router
+
+81
+00:10:02,334 --> 00:10:08,505
+as que muchos de los router de estos das, tienen un PIN de autenticacin donde mientras presionas un botn
+
+82
+00:10:08,529 --> 00:10:18,729
+y todas las personas a tu al rededor pueden conectarse a ese router bsicamente. Estas cosas fueron inventadas para
+
+83
+00:10:18,729 --> 00:10:26,649
+usuarios de Windows y vagamente cuando encuentras soporte en Linux para PINS primeramente porque el
+
+84
+00:10:26,649 --> 00:10:34,349
+mtodo es altamente inseguro, es decir, ese es uno de las peores cosas acerca de los PINS de autenticacin inalmbricos
+
+85
+00:10:34,349 --> 00:10:42,059
+definitivamente debes tenerlos establecidos en los routers de tu casa, como atacantes bsicamente, toma tu WIFI
+
+86
+00:10:42,059 --> 00:10:46,687
+toma tu direccin IP desde all, as que muvete a cosas ms serias que esas.
+
+87
+00:10:46,687 --> 00:10:55,156
+te mostrar como deshabilitar estas cosas, en el router que tengo aqu, creo que tengo un TP-LINK o algo as
+
+88
+00:10:55,156 --> 00:11:02,365
+lo integrar luego y te mostrar lo que hace, pero en todo caso, como parte del paquete AIR CRACK
+
+89
+00:11:02,365 --> 00:11:08,919
+tendrs as mismo otros pocos programas que usaremos y despus hay uno en el paquete AIR CRACK
+
+90
+00:11:08,919 --> 00:11:16,286
+que te permitirn actuar ante estos ataques en las conexiones inalmbricas al rededor de ti.
+
+91
+00:11:16,286 --> 00:11:24,714
+As que podrs prcticamente autenticas a quien tu quieras, donde t quieras, tanto como se complementen dos condiciones
+
+92
+00:11:24,714 --> 00:11:32,357
+la primera condicin es la proximidad. Si ests ms cerca a la red. Y la segunda condicin es que realmente has escaneado
+
+93
+00:11:32,357 --> 00:11:41,054
+con tu tarjeta de red y has chequeado que ha pasado al rededor de ti, cual es la direccin MAC de ese punto de acceso.
+
+94
+00:11:41,054 --> 00:11:47,767
+as como cual es la direccin MAC de esa direccin que quieres atascar. Esto no es para nada difcil de hacer, esto es
+
+95
+00:11:47,767 --> 00:11:54,895
+fcil, las dos direccines MAC son informacin pblica, realmente lo que tienes que hacer es escucharlas y eso es
+
+96
+00:11:54,895 --> 00:12:00,729
+lo que es realmente el control remoto, bsicamamente es que las tarjetas de red tienen muchos remotos de los que pueden operar
+
+97
+00:12:00,729 --> 00:12:10,122
+y tal vez no se loggean, tal vez fueron 6 o algo de ese tipo, pero solo hay 2 que nos interesan, est el Promiscuis Mode
+
+98
+00:12:10,122 --> 00:12:17,760
+donde tu tarjeta de red solo procesar el trfico que ha sido seleccionado, exclusivamente por l independientemente
+
+99
+00:12:17,760 --> 00:12:23,495
+de no s por ejemplo captar otro tipo de trfico que ha sido transmitido de forma inalmbrica a travs del aire
+
+100
+00:12:23,495 --> 00:12:28,387
+quiero decir, slo piensa sobre esto, tienes muchos  puntos de acceso inalmbricos que tienes al rededor y todos se estn comunicando
+
+101
+00:12:28,387 --> 00:12:35,166
+entre dispositivos y eso no es como una comunicacin inalmbrica de un punto de acceso especfico para tu dispoitivo
+
+102
+00:12:35,166 --> 00:12:45,239
+No, es una direccin de moda y tu dispositivo la atrapa, tambin otros dispositivos atrapan pero esta informacin se encuentra cifrada y donde cierta informacin no es para ellos.
+
+103
+00:12:45,239 --> 00:12:53,193
+ellos deliberadamente encuentran que esa informacin no es para ellos, as como las tarjetas de red lo descubren, independientemente de la informacin encuentran que no pueden hacer nada con esa informacin.
+
+104
+00:12:53,193 --> 00:13:03,955
+Sin embargo, si agregas tu tarjeta de red en tu control remoto, ellas probablemente atrapen todo este tipo de trfico, lo procesan y ven lo que pueden obtener de ello. Alguna de ella se encuentra cifrada, la mayora lo est
+
+105
+00:13:03,955 --> 00:13:14,446
+pero otra no lo est como la direccin MAC la cual no puede ser cifrada y ello es el precio de todo y puedes tomarlo, puedes atacascarlo, lo que quieras.
+
+106
+00:13:14,446 --> 00:13:25,134
+puedes denegar acceso inalmbrico a casi cualquier persona que pueda alcanzar, solo con tener tu laptop y no es necesario que existan otros dispositivos.
+
+107
+00:13:25,134 --> 00:13:36,581
+no necesitas todo un software, no necesitas ningn dispositivo extra, obviamente si es necesario saber si tu tarjeta de red soporta control remoto, hay una lista de compatibilidad en internet,
+
+108
+00:13:36,581 --> 00:13:46,182
+te la mostrare, en el siguiente tutorial, pero por este tiempo, solo quiero introducirte al captulo y ver que es lo que deberamos estar haciendo
+
+109
+00:13:46,182 --> 00:14:01,550
+si no tienes una no hay problema puedes seguir en adelante en este tutorial sin necesidad de hacer esto, pero solo voy a aconsejarte que busques lo que es AIR CRACKER en tu navegador preferido
+
+110
+00:14:01,550 --> 00:14:14,367
+y all tipeas reaver, slo lee el primer post, unas primeras palabras del primer post que te aparezca y ve si puedes recoger algn tipo de informacin all.
+
+111
+00:14:14,367 --> 00:14:31,760
+puedes continuar mirando el siguiente video, donde te ensear a instalar estas cosas, como AIR CRACK en Windows y atender a reaver tambin, ya que en algunas veces reaver tiende a romper a Windows y es problrmtico
+
+112
+00:14:31,760 --> 00:14:41,960
+Primeramente te ensear como instalar Air Cracker_ng y como usarlo un poco, no es tan difcil, solo con la interface puedes simplemente ir con el sin problemas
+
+113
+00:14:41,960 --> 00:14:57,049
+En todo caso, te recomiendo que hagas lo que debes hacer en la mquina con Linux la cual puedes usar, a la cual puedas tener acceso primeramente porque muchas de estas herramientas son mucho ms rpidas
+
+114
+00:14:57,049 --> 00:15:03,373
+en las computadoras con Linux, ellas funcionan mucho mejor, son ms rpidas y francamente son ms fciles
+
+115
+00:15:03,373 --> 00:15:13,980
+para instalar. Adems, tendrs un gran lmite de todo. En fin, te deseo lo mejor y te ver en el siguiente tutorial.
+

@@ -1,0 +1,196 @@
+1
+00:00:01,000 --> 00:07:10,814
+Bienvenidos de nuevo a este tutorial, ya casi todo est configurado, solo es necesario hacer otras cosas en VirtualBox
+
+2
+00:00:11,454 --> 00:00:17,897
+en orden de tener una configuracin apropiada, vamos a la esquina derecha de abajo de la pantalla
+
+3
+00:00:17,897 --> 00:00:25,829
+si tienes una mquina desktop o una laptop y si no tienes configurada la conexin inalmbrica en tu mquina desktop
+
+4
+00:00:25,829 --> 00:00:32,389
+solo instala estos programas y estos driver y conctalos al adaptador USB y podrs tener acceso inalmbrico
+
+5
+00:00:32,389 --> 00:00:40,652
+en su mquina desktop. Porque muchas de las mquinas desktop vienen sin conexin inalmbrica
+
+6
+00:00:40,652 --> 00:00:53,021
+as que esta puede ser una informacin til de saber. En fin, vamos a abrir nuestro Kali en las configuraciones
+
+7
+00:00:53,021 --> 00:01:01,401
+cliquea en USB, esto estar deshabilitado y  podrs seleccionarlo aqu, selecciona inhabilitar a cero
+
+8
+00:01:01,401 --> 00:01:07,931
+y ouedes ver como lo controlas, si las cosas no se han configurado apropiadamente en el paquete de extensin,
+
+9
+00:01:11,684 --> 00:01:16,856
+vamos a obtener un tringulo amarillo con un signo de exclamacin en el centro al lado de tu botn OK
+
+10
+00:01:16,856 --> 00:01:29,230
+y significa que no tienes inslatado el paquete de extensin y puedes verificar en la pgina de VirtualBox
+
+11
+00:01:29,230 --> 00:01:40,249
+y ellos tienen estas 3 versiones aqu, tambin puedes ir al sitio web de oracle y descargar el paquete de extensin desde all
+
+12
+00:01:40,249 --> 00:01:51,188
+y tiene 3 versiones las cuales son muy buenas, las cuales son las ms actualizadas as que, ve al sitio oficial Oracle
+
+13
+00:01:51,188 --> 00:01:56,094
+y busca la seccin de VirtualBox que se encuentra all donde puedes en efecto descargar el paquete de extensin
+
+14
+00:01:56,094 --> 00:02:03,524
+En todo caso, voy a minimizar esto, hemos deshabilitado el peurto USB y ahora vamos a otro dispositivo
+
+15
+00:02:03,524 --> 00:02:15,555
+Aqu tienes la lista de los dispositivos tales como el teclado, cosas genricas, abajo tenemos USB y es la que voy a seleccionar
+
+16
+00:02:15,555 --> 00:02:21,861
+Cliquea Ok, aqu vamos y lo que debemos hacer de aqu en adelante es darle poder a tu mquina y
+
+17
+00:02:21,861 --> 00:02:30,097
+eso es todo, as que, podr tomar un tiempo para deboot y esta es la computadora de un amigo
+
+18
+00:02:30,097 --> 00:02:38,130
+realmente no he instalado kali aqu pero en vez de ello he abierto la versin ive,
+
+19
+00:02:38,130 --> 00:02:42,251
+como puedes ver esto lo estoy corriendo en una Windows 7 pero lo puedes hacer en Windows6 tambin
+
+20
+00:02:42,251 --> 00:02:49,027
+y va a funcionar de todas formas sin problemas, garantizo que va a funcionar el USB pero no estoy seguro si en esa lo va a a realizar
+
+21
+00:02:49,027 --> 00:02:55,594
+estos sistemas son un poco viejos y no si se has tenido problemas con VirtualBox o algo as
+
+22
+00:02:55,594 --> 00:03:04,629
+pero ese es un tpico para otro da, en fin, el proceso boot aqu se encuentra en la ruta
+
+23
+00:03:10,582 --> 00:03:16,386
+y no lo s, las versiones Live pueden tardar un poco ms, no le dara prioridad a esto y
+
+24
+00:03:16,386 --> 00:03:25,088
+as no tendras que pasar por este proceso, pero as puedo explicarte como hacer que funcione todo
+
+25
+00:03:25,088 --> 00:03:31,653
+podemos por ejemplo cliquear en Kali ahora, vamos a las configuraciones y vamos a USB, vemos que lo has deshabilitado
+
+26
+00:03:31,653 --> 00:03:40,135
+y no puedes realmente tomar nada all, lo cual no puede ser problemtico. Tambin puedes conectar su dispositicos USB
+
+27
+00:03:40,135 --> 00:03:49,357
+si quieres ver si la mquina esta en efecto encendida. As que el proceso de boot est en su ruta,
+
+28
+00:03:49,357 --> 00:04:04,545
+En cualquier momento ... hoy .. vamos... La belleza las mquinas Windows.
+
+29
+00:04:04,545 --> 00:04:12,012
+En fin, Kali ha casi realizado el boot y all termina as que Kali est abierto y corriendo,
+
+30
+00:04:12,012 --> 00:04:25,170
+voy a iniciar e ingresar en el terminal, tal como lo hicimos antes, no tengo la pantalla completa pero har esto
+
+31
+00:04:25,170 --> 00:04:30,253
+creo que esta es informacin para otro tutorial, puedes simplemente ver que es lo que est sucediendo
+
+32
+00:04:30,253 --> 00:04:36,568
+si coloco if config encontraras todo esto y podrs leerlo, sin problemas, si no puedes hacerlo djamelo saber
+
+33
+00:04:36,568 --> 00:04:46,295
+puedes ver que tengo "wlan0" ese es mi adaptador inalmbrico, si voy arriba, puedo ver que tambin tengo
+
+34
+00:04:46,319 --> 00:04:51,882
+"eth0" lo que es mi adaptador de conexin de red inalmbrica el cual est momentnetamente en modo bridget
+
+35
+00:04:51,882 --> 00:04:58,253
+con mi mquina Kali, si voy a dispositivos, configuraciones, configuracin de red, esto es
+
+36
+00:04:58,253 --> 00:05:07,083
+muy importante, debo decir que agrega un adaptador bridget como lo he dicho muchas veces, sin problema all
+
+37
+00:05:07,083 --> 00:05:25,015
+"allow all" as que: Bridge adapter, Selecter adapter, Allow All. Ok, excelente. He notado que mucha gente me  ha preguntado acerca de
+
+38
+00:05:28,352 --> 00:05:35,395
+de la mac adress en la VirtualMachine si ests usando live cd o algo de ese tipo esto generar tu mac adress
+
+39
+00:05:35,395 --> 00:05:42,226
+sin cambios como lo he mostrado antes, pero si ests usando una VrtualMachine, puedes solo verificar que est encendida
+
+40
+00:05:42,226 --> 00:05:48,462
+y generar mac adress y la podrs modificar aqu sin ningn tipo de problemas, las funciones son un poco diferentes porque
+
+41
+00:05:48,462 --> 00:05:54,388
+en las VirtualMachines solo puedes cambiar la mac adress aqu aleatoriamente a el contenido de tu disco
+
+42
+00:05:54,388 --> 00:06:11,129
+As que, como indique antes puedes ver esto all lan0, podemos hacer un test copiando "iwlist" y voy a guardarlo "wlan0"
+
+43
+00:06:11,129 --> 00:06:27,882
+"scan I grep ESSID" presionamos ENTER y all puedes ver y escanear todas las conexiones inalmbricas
+
+44
+00:06:27,882 --> 00:06:34,116
+por rea y puedo conectar esta mquina a ellos, esta VirtualMachine que est aqu sin ning problema
+
+45
+00:06:34,116 --> 00:06:39,290
+creo que esto puede resolver cualquier problema que cualquier usuario Windows pueda tener
+
+46
+00:06:39,290 --> 00:06:45,327
+con la configuracin inalmbrica con tu VirtualMachine en consideracin con las VirtualMachines
+
+47
+00:06:45,327 --> 00:06:52,653
+y si tienes alguna pregunta o problemas de eso tipo, s libre de hablarme en la seccin de discusin
+
+48
+00:06:52,653 --> 00:07:04,165
+y siempre estar ms que feliz de ayudarte a resolverlo, de todas formas puedo hacerlo.
+
+49
+00:07:04,165 --> 00:07:10,814
+Puedo no s, ms adelante agregar algo en el futuro en el tutorial pero por este momento, solo hice esta adicin para ayudarte.
+

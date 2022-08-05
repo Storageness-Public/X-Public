@@ -1,0 +1,748 @@
+1
+00:00:00,000 --> 00:00:03,200
+Hello everybody and welcome to this tutorial.
+
+2
+00:00:03,200 --> 00:00:08,000
+Today I will show you how you can install aircrack and reaver.
+
+3
+00:00:08,000 --> 00:00:10,300
+So aircrack is pretty simple.
+
+4
+00:00:10,300 --> 00:00:16,500
+Just type in "yum install aircrack-ng"
+
+5
+00:00:16,500 --> 00:00:21,000
+and its gonna pick up the right version by default, so just go ahead and press ENTER
+
+6
+00:00:21,000 --> 00:00:25,890
+In Fedora, it runs through checks every time you call yum.
+
+7
+00:00:25,890 --> 00:00:29,300
+You can pass -c argument and order that to do that it.
+
+8
+00:00:29,300 --> 00:00:34,800
+It says package aircrack-ng is already installed and latest version.
+
+9
+00:00:34,800 --> 00:00:38,200
+You might be prompted for a question along the way.
+
+10
+00:00:38,200 --> 00:00:42,000
+If you want to skip that, just go ahead and type in " -y"
+
+11
+00:00:42,000 --> 00:00:42,840
+That's it
+
+12
+00:00:42,840 --> 00:00:48,500
+With this command that I am selecting at the moment, installation will fly through.
+
+13
+00:00:48,500 --> 00:00:52,320
+You won't be prompted for any questions
+
+14
+00:00:52,320 --> 00:00:56,200
+and you will have aircrack-ng installed on your system without any problems.
+
+15
+00:00:56,200 --> 00:01:00,539
+However, Reaver is quite a different story.
+
+16
+00:01:00,539 --> 00:01:07,800
+Reaver cannot be found in Fedora's repositories and therefore, it has to be downloaded from the net.
+
+17
+00:01:07,800 --> 00:01:10,200
+Now the there are lots of places to do this.
+
+18
+00:01:10,200 --> 00:01:13,000
+I have chosen to download it from Google Code.
+
+19
+00:01:13,000 --> 00:01:16,300
+That's basically the safest place from where you can download it
+
+20
+00:01:16,300 --> 00:01:20,200
+and let's just go ahead open up my favorite browser, which is Firefox.
+
+21
+00:01:20,200 --> 00:01:21,580
+You can open whatever you wish.
+
+22
+00:01:21,580 --> 00:01:27,800
+Type in "reaver google code"
+
+23
+00:01:27,800 --> 00:01:29,000
+It should pop up
+
+24
+00:01:29,000 --> 00:01:30,700
+Yep, this is it
+
+25
+00:01:30,700 --> 00:01:31,800
+There we go
+
+26
+00:01:31,800 --> 00:01:36,600
+Now we are on Google Code website, where we have Reaver VPS
+
+27
+00:01:36,600 --> 00:01:41,000
+You have a description here, and you have a pro version here.
+
+28
+00:01:41,000 --> 00:01:46,800
+Basically the difference between the pro version and the one that we're getting for free
+
+29
+00:01:46,800 --> 00:01:49,100
+is this graphical user interface
+
+30
+00:01:49,100 --> 00:01:51,700
+which, I mean, let's face it
+
+31
+00:01:51,700 --> 00:01:58,300
+if you're pen tester or a white hat hacker, you're not going to be using that much of guis
+
+32
+00:01:58,300 --> 00:02:00,409
+I mean, pretty much not at all.
+
+33
+00:02:00,409 --> 00:02:08,300
+This just means that it's gonna try pins in a certain order
+
+34
+00:02:08,300 --> 00:02:14,500
+which is more likely to succeed than the default one, according to someone
+
+35
+00:02:14,500 --> 00:02:16,300
+but not necessarily true
+
+36
+00:02:16,300 --> 00:02:19,800
+and integrated WEP cracking
+
+37
+00:02:19,800 --> 00:02:23,100
+and as I said, you don't really need WEP
+
+38
+00:02:23,100 --> 00:02:26,200
+You're not gonna be able to find these days, pretty much anywhere.
+
+39
+00:02:26,200 --> 00:02:30,500
+If you do, as I said before, those people don't deserve to have wifi.
+
+40
+00:02:30,500 --> 00:02:33,600
+It's basically open wifi
+
+41
+00:02:33,600 --> 00:02:38,050
+regardless of what sort of a password you put in.
+
+42
+00:02:38,050 --> 00:02:41,500
+Make sure you're not one of those people.
+
+43
+00:02:41,500 --> 00:02:43,400
+I mean, fine, okay
+
+44
+00:02:43,400 --> 00:02:46,900
+somebody's going to be able to connect your network and all that
+
+45
+00:02:46,900 --> 00:02:53,300
+but it opens up a route for a lot worse activity, something more malicious.
+
+46
+00:02:53,300 --> 00:02:58,900
+Let's put it so they'll be able to reroute your traffic and do stuff of a kind
+
+47
+00:02:58,900 --> 00:03:01,200
+and sniff it.
+
+48
+00:03:01,200 --> 00:03:02,000
+Not a good idea.
+
+49
+00:03:02,000 --> 00:03:06,000
+Just switch to WPA or WPA2
+
+50
+00:03:06,000 --> 00:03:13,000
+Anyway, I'm gonna go ahead and click on Downloads, in the upper left corner
+
+51
+00:03:13,000 --> 00:03:17,300
+and there are different versions here that can be downloaded.
+
+52
+00:03:17,300 --> 00:03:25,900
+I mean, there are no fundamental differences in the way the reaver works in between these versions
+
+53
+00:03:25,900 --> 00:03:28,800
+but there are bugs fixes definitely in that, and that is very nice.
+
+54
+00:03:28,800 --> 00:03:30,000
+It is maintained
+
+55
+00:03:30,000 --> 00:03:33,700
+There is support for it, and so on.
+
+56
+00:03:33,700 --> 00:03:40,000
+So just go ahead and click on reaver 1.4.tar.gz
+
+57
+00:03:40,000 --> 00:03:47,500
+and it says  reaver 1.4.tar.gz here, file description, etc.
+
+58
+00:03:47,500 --> 00:03:48,800
+This is the check sum
+
+59
+00:03:48,800 --> 00:03:54,300
+You can use this in order to verify is your file intact, but I'm not gonna do that now.
+
+60
+00:03:54,300 --> 00:03:58,000
+I'm just go ahead and download it.
+
+61
+00:03:58,000 --> 00:04:04,600
+Once it is downloaded, you can go ahead and open up the folder in which it actually exists
+
+62
+00:04:04,600 --> 00:04:09,500
+and I have a lot of things here.
+
+63
+00:04:09,500 --> 00:04:14,800
+So it says I have different versions that I have downloaded from different sites
+
+64
+00:04:14,800 --> 00:04:20,600
+but if you find this package that I am selecting for you at the moment
+
+65
+00:04:20,600 --> 00:04:24,000
+it says reaver 1.4 fc20
+
+66
+00:04:24,000 --> 00:04:25,000
+The letters are pretty small.
+
+67
+00:04:25,000 --> 00:04:28,000
+This is maximum that I can zoom it in.
+
+68
+00:04:28,000 --> 00:04:29,200
+Don't download it
+
+69
+00:04:29,200 --> 00:04:32,160
+It doesn't work that well at all
+
+70
+00:04:32,160 --> 00:04:38,400
+It tends to break and the .rpm extension doesn't work quite as you would expect it to work.
+
+71
+00:04:38,400 --> 00:04:42,000
+Just download it from Google Code and compile it from source.
+
+72
+00:04:42,000 --> 00:04:47,800
+There's no reason why not do it, especially when you have me showing you in detail how to do it.
+
+73
+00:04:47,800 --> 00:04:52,500
+So just go ahead and double click on this file.
+
+74
+00:04:52,500 --> 00:04:56,500
+You can extract it through a GUI method.
+
+75
+00:04:56,500 --> 00:04:57,700
+It's far simpler.
+
+76
+00:04:57,700 --> 00:05:00,100
+You can also extract it through the terminal
+
+77
+00:05:00,100 --> 00:05:03,000
+but I'm just gonna go ahead and use GUI for this occasion.
+
+78
+00:05:03,000 --> 00:05:07,000
+This is one of the advantages of Linux over Windows.
+
+79
+00:05:07,000 --> 00:05:12,600
+By default, it will be able to unpack pretty much anything.
+
+80
+00:05:12,600 --> 00:05:21,500
+Zip, tar, WinRar, whatever it's going to be able to unpack it, no problem
+
+81
+00:05:21,500 --> 00:05:23,250
+which is fantastic.
+
+82
+00:05:23,250 --> 00:05:27,100
+No extra insulation needed; this is all installed by default.
+
+83
+00:05:27,100 --> 00:05:30,500
+So let's just go ahead and click on extract.
+
+84
+00:05:30,500 --> 00:05:32,300
+Now where do I want to extract?
+
+85
+00:05:32,300 --> 00:05:36,200
+Let's say to desktop because I'm gonna delete it anyway
+
+86
+00:05:36,200 --> 00:05:38,300
+as I already do have it installed.
+
+87
+00:05:38,300 --> 00:05:49,000
+So just go ahead and press Okay
+
+88
+00:05:49,000 --> 00:05:55,900
+and yeah, I've just told it to do it twice. Oh well.
+
+89
+00:05:55,900 --> 00:05:58,000
+Apply to all, override
+
+90
+00:05:58,000 --> 00:06:03,700
+We're not going to lose a lot of time there, as the extraction process is relatively fast.
+
+91
+00:06:03,700 --> 00:06:08,000
+Okay, so let's just go ahead and go back to our terminal
+
+92
+00:06:08,000 --> 00:06:17,000
+navigate over to desktop
+
+93
+00:06:17,000 --> 00:06:26,000
+"cd /home/Chronic/Desktop/
+
+94
+00:06:26,000 --> 00:06:29,200
+and do I have it here?
+
+95
+00:06:29,200 --> 00:06:30,600
+Yep, there we go.
+
+96
+00:06:30,600 --> 00:06:33,000
+"clear"
+
+97
+00:06:33,000 --> 00:06:37,000
+Let me just show you that I do in fact have it.
+
+98
+00:06:37,000 --> 00:06:40,190
+It's much neater if I do it like this
+
+99
+00:06:40,190 --> 00:06:41,100
+and there we go.
+
+100
+00:06:41,100 --> 00:06:42,800
+reaver-1.4/
+
+101
+00:06:42,800 --> 00:06:45,190
+Let's navigate over to that folder.
+
+102
+00:06:45,190 --> 00:06:46,700
+reaver-1.4/
+
+103
+00:06:46,700 --> 00:06:54,000
+Clear the screen, list the contents of the directory, go to docs
+
+104
+00:06:54,000 --> 00:06:56,200
+Let's just go ahead and  see what is there
+
+105
+00:06:56,200 --> 00:07:01,330
+and you might think that I'm some sort of an expert or something of a kind
+
+106
+00:07:01,330 --> 00:07:04,500
+that I just do these things out of my head.
+
+107
+00:07:04,500 --> 00:07:09,400
+No. People create readme files for a reason.
+
+108
+00:07:09,400 --> 00:07:16,500
+They are there to be read, because the developer has left specific instructions on how to do something.
+
+109
+00:07:16,500 --> 00:07:21,000
+So let's just go ahead and cat it.
+
+110
+00:07:21,000 --> 00:07:23,200
+Excellent
+
+111
+00:07:23,200 --> 00:07:26,500
+So the following are Reaver source files.
+
+112
+00:07:26,500 --> 00:07:31,600
+So it has the description of what is located in each one of these files
+
+113
+00:07:31,600 --> 00:07:33,700
+So you have 80211.c
+
+114
+00:07:33,700 --> 00:07:38,400
+Functions for reading, sending, and parsing 802.11 management frames
+
+115
+00:07:38,400 --> 00:07:42,000
+802.11 is a standard, as I said before
+
+116
+00:07:42,000 --> 00:07:46,000
+but look at this --
+
+117
+00:07:46,000 --> 00:07:58,000
+The developer has actually left the entire installation process here.
+
+118
+00:07:58,000 --> 00:08:04,000
+You have every single command that you need to run explained in detail
+
+119
+00:08:04,000 --> 00:08:06,919
+what it does, and how you can open and execute it.
+
+120
+00:08:06,919 --> 00:08:08,500
+This is wonderful
+
+121
+00:08:08,500 --> 00:08:14,000
+and that is why I say when you download something, when you unzip it
+
+122
+00:08:14,000 --> 00:08:17,400
+just go ahead and find the readme file.
+
+123
+00:08:17,400 --> 00:08:19,000
+It's there for a reason.
+
+124
+00:08:19,000 --> 00:08:23,900
+People do tend to leave instructions there on how to do something
+
+125
+00:08:23,900 --> 00:08:28,000
+and they most likely encounter the same problems that you might have encountered.
+
+126
+00:08:28,000 --> 00:08:32,100
+So you can even see possible solutions.
+
+127
+00:08:32,100 --> 00:08:37,000
+Anyway, you can check this inscription out.
+
+128
+00:08:37,000 --> 00:08:39,400
+Uh...Not inscription, but the text.
+
+129
+00:08:39,400 --> 00:08:58,000
+Reaver is only supported on the Linux platform, requires the libpcap and libsqlite librarie
+
+130
+00:08:58,000 --> 00:09:01,500
+and can be built and installed by running the following commands
+
+131
+00:09:01,500 --> 00:09:06,500
+and so execute the configuration script, make, make install
+
+132
+00:09:06,500 --> 00:09:08,000
+That's it
+
+133
+00:09:08,000 --> 00:09:16,170
+It even tells you how to actually install it.
+
+134
+00:09:16,170 --> 00:09:18,600
+So they're there for a reason.
+
+135
+00:09:18,600 --> 00:09:22,600
+Anyway, of course you cannot run the configuration file from here.
+
+136
+00:09:22,600 --> 00:09:28,630
+You need to reverse course and go to source
+
+137
+00:09:28,630 --> 00:09:32,900
+Let's see what's in there...
+
+138
+00:09:32,900 --> 00:09:33,600
+There we go
+
+139
+00:09:33,600 --> 00:09:35,150
+We have configure
+
+140
+00:09:35,150 --> 00:09:39,000
+and you can see by default here, it's executable.
+
+141
+00:09:39,000 --> 00:09:44,500
+If I just give you a longer listing
+
+142
+00:09:44,500 --> 00:09:49,000
+It has an x permission here, here, and here.
+
+143
+00:09:49,000 --> 00:09:52,940
+So the user has it, and the group has it as well.
+
+144
+00:09:52,940 --> 00:09:59,500
+Anyway, type in "./configure"
+
+145
+00:09:59,500 --> 00:10:02,200
+So now it's checking for stuff.
+
+146
+00:10:02,200 --> 00:10:07,200
+It has it's dependencies, without which it cannot function.
+
+147
+00:10:07,200 --> 00:10:11,200
+Type in "make"
+
+148
+00:10:11,200 --> 00:10:14,200
+There we go
+
+149
+00:10:14,200 --> 00:10:16,400
+It's running through
+
+150
+00:10:16,400 --> 00:10:19,800
+So I didn't do anything out of my head here.
+
+151
+00:10:19,800 --> 00:10:26,200
+I just went on the web, I found the safest place I can find to download the code from
+
+152
+00:10:26,200 --> 00:10:31,600
+and I'm compiling it here, as the developer of the code instructed me to do it
+
+153
+00:10:31,600 --> 00:10:33,070
+and the instructions aren't that complicated.
+
+154
+00:10:33,070 --> 00:10:34,400
+It's just three commands
+
+155
+00:10:34,400 --> 00:10:41,200
+and the final command is "make install"
+
+156
+00:10:41,200 --> 00:10:44,000
+Now it's gonna give me a lot of errors here...
+
+157
+00:10:44,000 --> 00:10:45,600
+Well, not errors, but warnings
+
+158
+00:10:45,600 --> 00:10:54,240
+primarily because I already have it installed.
+
+159
+00:10:54,240 --> 00:11:01,000
+I need to clear this out and then be able to install this
+
+160
+00:11:01,000 --> 00:11:06,200
+but that's not gonna happen, primarily because I do have reaver installed.
+
+161
+00:11:06,200 --> 00:11:13,800
+So let's just go ahead and check one more time if there is anything else that we've left out.
+
+162
+00:11:13,800 --> 00:11:17,410
+If I can reach it
+
+163
+00:11:17,410 --> 00:11:19,200
+Yep, there we go.
+
+164
+00:11:19,200 --> 00:11:21,000
+So no, I haven't left anything out.
+
+165
+00:11:21,000 --> 00:11:24,300
+Basically, the last command for you will run.
+
+166
+00:11:24,300 --> 00:11:25,700
+For me, it won't
+
+167
+00:11:25,700 --> 00:11:31,700
+primarily because I already have reaver installed on my system.
+
+168
+00:11:31,700 --> 00:11:35,500
+If there are any problems, feel free to post it in the question section.
+
+169
+00:11:35,500 --> 00:11:37,800
+I will be more than happy to help you out.
+
+170
+00:11:37,800 --> 00:11:42,200
+Let's go ahead and clear this out.
+
+171
+00:11:42,200 --> 00:11:47,900
+So type in "reaver --help"
+
+172
+00:11:47,900 --> 00:11:48,600
+Excellent
+
+173
+00:11:48,600 --> 00:11:52,300
+It is installed, it is functional, it is responsive to our commands
+
+174
+00:11:52,300 --> 00:11:55,000
+and here's the syntax for reaver.
+
+175
+00:11:55,000 --> 00:11:56,600
+This is the basic syntax.
+
+176
+00:11:56,600 --> 00:11:59,500
+Of course you can pass all of these arguments through it
+
+177
+00:11:59,500 --> 00:12:01,500
+and there are quite a lot of them.
+
+178
+00:12:01,500 --> 00:12:08,200
+Basically what you say is "-i" for network interfaceand "-b" for BSSID
+
+179
+00:12:08,200 --> 00:12:11,500
+Over the MAC address, put quite simply.
+
+180
+00:12:11,500 --> 00:12:13,700
+For the MAC address here, you have it.
+
+181
+00:12:13,700 --> 00:12:17,300
+This is just a sample MAC address that has been generically placed here
+
+182
+00:12:17,300 --> 00:12:21,000
+and of course, we have even for reaver
+
+183
+00:12:21,000 --> 00:12:27,000
+-vv for double verbose output, which is fantastic.
+
+184
+00:12:27,000 --> 00:12:29,300
+Let's just go ahead and clear the screen.
+
+185
+00:12:29,300 --> 00:12:35,800
+That was a way in which you could have installed aircrack and reaver in Linux
+
+186
+00:12:35,800 --> 00:12:41,600
+but just in case you are a Windows user, I'll show you how to do it in Windows.
+
+187
+00:12:41,600 --> 00:12:44,000
+Until then, I bid you farewell.
+

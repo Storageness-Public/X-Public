@@ -1,0 +1,304 @@
+1
+00:00:01,000 --> 00:00:07,255
+Hola a todos y bienvenidos a este tutorial, hoy voy a ensearte brevemente como puedes instalar air crack en Windows
+
+2
+00:00:07,255 --> 00:00:14,850
+as que inicia tu Windows, pero esto no es una buena idea, slo tena que decir eso.
+
+3
+00:00:14,850 --> 00:00:24,165
+ya lo tengo instalado y as es como luce, pero voy a cerrarlo para mostrate que es lo que debes hacer
+
+4
+00:00:24,165 --> 00:00:35,927
+Lo primero que debes hacer es ir al sitio web: www.aircrack-ng.org y descarga el archivo y eso es realmente todo
+
+5
+00:00:35,927 --> 00:00:46,924
+lo descargas y lo descomprimes y este funcionar, as que all est, voy a usar mis programas para descomprimir
+
+6
+00:00:46,924 --> 00:00:53,912
+SevenZip, esta no es ma sino una que decid usar, pero tu puedes usar WinRar o cualquier otro
+
+7
+00:00:53,912 --> 00:01:11,848
+que tengas disponible, voy a seleccionar air crack-ng voy a extraerlo, me preguntan si deseo omitir, obvio a ti no
+
+8
+00:01:11,848 --> 00:01:16,751
+porque tu no lo vas a tener ya instalado como yo, y aqu vamos, el cual ha sido extrado satisfactoriamente,
+
+9
+00:01:16,751 --> 00:01:21,833
+as que no hay ningn tipo de instalacin previa o algo de ese tipo, esta es la carpeta que estoy moviendo,
+
+10
+00:01:21,833 --> 00:01:31,929
+voy a abrirla y seleccionar la carpeta WIN y dice aircrack-ng exect y ese es el que necesitas, excelente.
+
+11
+00:01:31,929 --> 00:01:38,853
+Y aqu tenemos que la herramienta funciona, no tiene que hacer ningn tipo de instalacin o algn procedimiento adicional
+
+12
+00:01:38,853 --> 00:01:48,520
+o algo de ese tipo, aqu tienes 3 programas air crack-ng en realidad tiene 4 pero no vamos a usar estos por el momento
+
+13
+00:01:48,520 --> 00:02:02,070
+air crack es usado para recolectar informacin y se usa air crack-ng en orden de forzar contraseas o
+
+14
+00:02:02,070 --> 00:02:10,412
+o forzar cifrados. Como dije antes, no recomiendo esto, pero si realmente te gusta usar Windows aqu es como puedes  hacerlo,
+
+15
+00:02:10,412 --> 00:02:20,047
+aqu tienes como lo puedes usar, en ese orden, yo realmente no lo recomiendo, y vamos de nuevo a nuestro Linux
+
+16
+00:02:20,047 --> 00:02:25,362
+y aqu veremos que otra cosa necesitamos, uno de los principales problemas que encontramos es
+
+17
+00:02:25,386 --> 00:02:36,691
+es que no podremos generar un gran montn de contraseas manualmente, obviamente, en el sistema si va a funcionar
+
+18
+00:02:36,691 --> 00:02:44,280
+una de las primeras cosas que necesitamos aqu es, crunch el cual es una pieza de cdigo, un software
+
+19
+00:02:44,280 --> 00:02:56,696
+el cual usaremos en orden de generar menos contraseas, es muy flexible, fcil de usar, podemos decir cuantos
+
+20
+00:02:56,696 --> 00:03:04,027
+carcteres vamos a querer en nuetro cdigo haciendo nuestras contraseas, de cuales links, cual es la posibilidad mnima o mxima
+
+21
+00:03:04,027 --> 00:03:09,249
+en la cantidad de la contrasea, y si sabemos fracciones de la contrasea incluso podemos usar esas fracciones
+
+22
+00:03:09,249 --> 00:03:16,556
+e insertarlas, pero antes de hacer cualquiera de estas cosas, primero tenemos que descargar crunch,
+
+23
+00:03:16,556 --> 00:03:29,558
+crunch est disponible en sourceforge.net. As que escribimos "crunch password generator" y aqu obtendremos
+
+24
+00:03:29,558 --> 00:03:39,564
+los links, excelente as que vamos a descargarlo. La descarga comenzar en unos pocos segundos y todo el proceso de instalacin
+
+25
+00:03:39,564 --> 00:03:50,893
+solo tardar unos pocos segundos, vamos a guardar el archivo, lo abrimos y hay que descomprimirlo, lo extraemos y
+
+26
+00:03:50,893 --> 00:03:58,525
+lo har desde el desktop por defecto porque voy a borrarlo luego ya que ya lo tengo instalado y configurado
+
+27
+00:03:58,525 --> 00:04:05,858
+Aqu vamos, ya termin. Realmente termin muy rpido, no tienes tiempo de ver ni que es lo que pasa,
+
+28
+00:04:05,858 --> 00:04:16,813
+As que vamos a cerrar estas cosas, excelente. Asi que crunch est aqu y lo abrimos y vemos estas cosas que usaremos despus.
+
+29
+00:04:16,813 --> 00:04:22,828
+pero lo explicar cuando realmente lo vayamos a usar. Pero por el momento slo quiero ensearte como usarlo
+
+30
+00:04:22,828 --> 00:04:29,255
+e instalarlo, abrimos nuestro terminal, navegamos a travs de la carpeta que lo contiene, donde esta ubicado,
+
+31
+00:04:29,255 --> 00:04:38,790
+as que: "cd /home/Chronic/Desktop/crunch-3.6/" excelente ls aqu ves que no tienes instrucciones
+
+32
+00:04:38,790 --> 00:04:42,892
+de como hacerlo pero ves que es un makefile, as que cuando veas que es un Macfile
+
+33
+00:04:42,892 --> 00:04:50,257
+solo escribe make, no tienes que ser rudo o tener algn tipo de contrasea,
+
+34
+00:04:50,257 --> 00:04:58,557
+solo escribe make, aqu vamos, vamos a pasar make install, presiona ENTER de nuevo, y all tenemos,
+
+35
+00:04:58,557 --> 00:05:11,464
+aqu obtienes el proceso de instalacin terminado y listo para usar as que "man crunch"
+
+36
+00:05:11,464 --> 00:05:17,678
+aqu vemos que crunch ha sido instalado y puedes ver la pgina principal la cual est ahora funcional y
+
+37
+00:05:17,678 --> 00:05:24,743
+esta es la sintax y vas a copiar un nmero aqu, y otro nmero aqu, el cual es la longitud  mnima y mxima
+
+38
+00:05:24,743 --> 00:05:29,258
+vemos el carcter aqu, el cual puedes modificar manualmente o usar otroa forma de hacerlo,
+
+39
+00:05:29,258 --> 00:05:33,354
+y puedes descargarlo igualmente, con otras opciones si deseas hacerlo.
+
+40
+00:05:33,354 --> 00:05:41,464
+Realmente no necesitas leer todo esto y puedes pasarlo todo, puedes ver que partes encuentras
+
+41
+00:05:41,464 --> 00:05:53,865
+y ver si le puedes dar algn uso a ello, pero en los siguientes tutoriales lo estarn as como estaremos usando
+
+42
+00:05:53,865 --> 00:06:04,581
+por ejemplo crunch en este modo as que vamos a limpiar la pantalla, escribe crunch y podrs generar una cierta longitud
+
+43
+00:06:04,581 --> 00:06:13,395
+vamos a empezar por ejemplo del 3 al 9, he visto que hay gente que coloca de 0 a 9 por ejemplo asi que puedes
+
+44
+00:06:13,395 --> 00:06:17,786
+hacerlo as, realmente el 0 no cuenta mucho y no pasa nada sino se coloca.
+
+45
+00:06:17,786 --> 00:06:33,397
+ahora vamos a copiar de 3 a 5, y ahora voy a decir por ejemplo abcd123 y ahora puedo escribir esto,
+
+46
+00:06:33,421 --> 00:06:46,346
+a aircrack-ng y veremos como todas las contraseas que se generan aqu, sern pasadas a aircrack-ng y sern
+
+47
+00:06:46,346 --> 00:06:51,960
+usadas inmediatamente, necesito otros codigos aqu los cuales los ensear en el prximo tutorial,
+
+48
+00:06:51,960 --> 00:06:59,132
+pero quiero solo explicar el significado de esto porque digamos que hago esto 3 a 5 presiono enter
+
+49
+00:06:59,132 --> 00:07:09,890
+voy a cancelarlo antes de que finalizarlo, dice: crunch ahora generar el siguiente nmero de data: 7680 bytes
+
+50
+00:07:09,890 --> 00:07:18,760
+eso no es nada, dice que este es el nmero de contraseas que va a generar: 1344, no es gran cosa,
+
+51
+00:07:18,760 --> 00:07:37,123
+Ok, vamos a tratar otra cosa, vamos a tratar con "abcdefghijklmnopqrstuvwxyz" presionamos ENTER
+
+52
+00:07:37,123 --> 00:07:45,290
+mira lo que sucede, el nmero de los archivos ha crecido exponencialmente, el nmero de posibles combinaciones
+
+53
+00:07:45,290 --> 00:07:52,217
+ha crecido exponencialmente y dice 17 MB, pero esta es una pequea contrasea, va a ser crackeada
+
+54
+00:07:52,217 --> 00:08:01,728
+en realmente slo segundos, realmente no es gran cosa, que pasa si especifico la longitud a 9
+
+55
+00:08:01,728 --> 00:08:11,760
+slo mira lo que sucede, dice que tiene 51 TB de data y estas son las posibles combinaciones habrn
+
+56
+00:08:11,760 --> 00:08:19,825
+Ok, este es un gran nmero, y para mi CPU me tomar realmente mucho tiempo para hacer ello
+
+57
+00:08:19,825 --> 00:08:33,725
+pero no es un tiempo razonable en ningn caso. Dice 51TB, eso si es mucho, Ok vamos a colocar "1234567890"
+
+58
+00:08:35,786 --> 00:08:48,787
+dice: 947TB desde 51 slo por agregar los nmeros del 0 al 9, ves lo que trato de hacer aqu
+
+59
+00:08:49,014 --> 00:09:02,999
+pero si coloco aqu 29, ok esto va a ser ridculo. Bsicamente, me dice que va a generar 6998PB de data,
+
+60
+00:09:02,999 --> 00:09:11,103
+y ok simplemente no vas a tener espacio en tus disco duros, no importa lo grandes que sean
+
+61
+00:09:11,103 --> 00:09:20,190
+realmente no vas a tener 1 solo PB de almacenamiento en tu casa, 1PB es 1000TB asi que eso es mucho.
+
+62
+00:09:20,190 --> 00:09:26,061
+y esta cantidad de almacenamiento no la vas a tener en tu casa, as puedes ver lo que puedes hacer con aircrack
+
+63
+00:09:26,061 --> 00:09:39,523
+y te voy a explicar lo que es importante, "-ng" y "-w" y tu podrs pasar algn tipo de archivos coloca "password.list.txt"
+
+64
+00:09:39,523 --> 00:09:47,859
+en orden de crackear ciertos archivos. Sin embargo, esta lista de contraseas tan larga como sea,
+
+65
+00:09:47,859 --> 00:09:56,447
+tan buena como sea, no te garantiza que la contrasea no ser crackeada y no puedes generar
+
+66
+00:09:56,447 --> 00:10:01,963
+esta cantidad de informacin con esta cantidad de combinaciones y colocarlas en un archivo
+
+67
+00:10:01,963 --> 00:10:06,329
+en tu computadora local y si los colocas en otro lado, te va a costar un monto de dinero ridculo
+
+68
+00:10:06,329 --> 00:10:20,920
+Sin embargo, lo que puedes hacer es colocar un argumento -w- y usar mi comando anterior, hago esto
+
+69
+00:10:20,920 --> 00:10:37,161
+aircrack-ng y agregare w-w excelente. As que ahora crunch va a guardar estas cosas, solo lo va a estandarizar
+
+70
+00:10:37,161 --> 00:10:47,852
+y aircrack los tomar desde ese estndar y los utilizar, en funcin de bsicamente romper el cifrado
+
+71
+00:10:47,852 --> 00:10:54,450
+del archivo captado que luego veremos. As que esto es slo un ejemplo, un ejemplo de instalacin
+
+72
+00:10:54,450 --> 00:11:02,689
+y una explicacin de porque necesitamos instalar crunch, he visto otras vas en la red pero
+
+73
+00:11:02,689 --> 00:11:07,656
+no he encontrado la forma ms segura o el lugar ms seguro para descargar crunch en Windows desde la red
+
+74
+00:11:07,656 --> 00:11:16,492
+Lo cual realmente no te recomiendo hacer, tendrs tus razones, pero si es posible hacerlo desde Windows
+
+75
+00:11:16,492 --> 00:11:25,413
+Pero de nuevo, no lo recomiendo para nada. En todo caso, te deseo lo mejor y en el siguiente tutorial
+
+76
+00:11:25,413 --> 00:11:32,661
+voy a empezar con el proceso de crackear y veremos como realmente podremos crackear un WIFI genuino.
+

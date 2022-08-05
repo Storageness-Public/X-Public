@@ -1,0 +1,232 @@
+1
+00:00:01,000 --> 00:00:09,553
+Bienvenidos todos a este tutorial, esta es una adicin a la parte de Wireless del curso, en fin, he
+
+2
+00:00:09,553 --> 00:00:15,596
+notado que en las discusiones que mucha gente, estn teniendo problemas, los usuarios de Windows ms especfico
+
+3
+00:00:15,596 --> 00:00:19,378
+con los parmetros de ambiente y no son capces de acceder a la tarjeta inalmbrica, he mencionado eso
+
+4
+00:00:19,378 --> 00:00:27,293
+en mi curso original que no sers capaz de acceder al hardware fsico integrado como tarjeta de red inalmbrica
+
+5
+00:00:27,293 --> 00:00:36,672
+desde tu virtual box, debes crear un cd Linux en orden de acceder a ello, o a travs de un dispositivo USB inalmbrico
+
+6
+00:00:36,672 --> 00:00:43,618
+ahora, crear un CD de este tipo es realmente sencillo, solo quema un cd con la linuz y boot desde all
+
+7
+00:00:43,618 --> 00:00:51,493
+pero, tener el adaptado USB inalmbrico y ajustarlo a la virtual box puede ser un poco engaoso
+
+8
+00:00:51,493 --> 00:00:57,229
+y he notado que mucha gente all afuera ha tenido problemas y no son capaces de hacerlo, es por ello
+
+9
+00:00:57,229 --> 00:01:05,860
+que he hecho este tutorial, como una adicin al curso, una adicin gratuita al curso, en orden de ayudarte
+
+10
+00:01:07,925 --> 00:01:11,737
+o ayudarles a uds chicos o chicas si es que las hay, no las he visto en las discusiones pero, mis disculpas
+
+11
+00:01:11,737 --> 00:01:22,236
+si las pierdo. En fin, hoy, solo tenemos que ir a abrir tu navegador, este es el dispositvo USB inalmbrico
+
+12
+00:01:22,236 --> 00:01:35,167
+que he encontrado, es 2000mW adaptador de WIFI inalmbrico, esto es lo que debes copiar en tu bsqueda
+
+13
+00:01:35,167 --> 00:01:46,174
+"alpha usb 2000mw network adapter" es muy simple, sin problemas all, encontrars miles de resultados
+
+14
+00:01:46,174 --> 00:01:53,071
+los cuales se pueden encontrar de realmente todos lados, yo personalmente lo compre en eBay porque tiene opciones de envo que me gustan.
+
+15
+00:01:53,071 --> 00:01:59,364
+pero de nuevo, puedes comprarlo de donde sea, es realmente lo mismo, hay diferentes tamaos
+
+16
+00:01:59,364 --> 00:02:05,794
+puedes verificar el tamao si es ms barato o algo as, cuesta alrededor de 28$ pero s libre de chequear
+
+17
+00:02:05,794 --> 00:02:14,450
+En fin, depende de la versin de VirtualBox que has instalado, puedes descargar el paquete de extensin aqu
+
+18
+00:02:14,450 --> 00:02:23,185
+pero los chances son de que hayas instalado una versin de VirtualBox en Windows de la cual ya hayas
+
+19
+00:02:23,185 --> 00:02:27,504
+tenido el paquete de extensin, en ocasiones otros usuarios han instalado el paquete de exrtensin
+
+20
+00:02:27,504 --> 00:02:38,367
+el cual no es de cdigo abierto pero, es decir, tu como un usuario Windows debes chequear si ya lo tienes o sino
+
+21
+00:02:38,367 --> 00:02:47,011
+cliquea aqu, y puedes ver de donde se est descargando esta y presiona Ok cuando la descarga est lista
+
+22
+00:02:47,011 --> 00:02:55,106
+Slo cliquea all y bsicamente solo sigue presionando el botn "siguiente" cada vez que te indique
+
+23
+00:02:55,106 --> 00:03:01,452
+esta no es mi mquina, por cierto, esta es de mi amigo, donde est corriendo con Windows7 asi que
+
+24
+00:03:01,452 --> 00:03:06,447
+por ello es que puedo hacer este tutorial, en una maquina fsica con Windows pero como dije,
+
+25
+00:03:06,447 --> 00:03:12,203
+no lo voy a instalar ahora, porque ya lo tengo instalado, lo he hecho a travs de la instalacin de VirtualBox y
+
+26
+00:03:12,203 --> 00:03:18,951
+como te he dicho, si has instalado VirtualBox desde Windows, probablemente tengas ya el paquete de extensin
+
+27
+00:03:18,951 --> 00:03:27,109
+as que ve con ello, sino lo tienes, solo cliquea aqu y sigue cliqueando en "Next" es literalmente todo lo que debes hacer
+
+28
+00:03:27,109 --> 00:03:32,844
+No hay nada especial o asombroso o algo de ese tipo, el botn siguiente "Next" es tu amigo all.
+
+29
+00:03:32,844 --> 00:03:44,912
+En fin, vamos a minimizar esto, vamos a desempacar tu adaptador USB inalmbrico, saca el CD que trae
+
+30
+00:03:44,912 --> 00:03:59,286
+e insrtalo en tu mquina y brelo, hacemos eso y este es el CD que tgengo as que lo abrimos, excelente.
+
+31
+00:03:59,286 --> 00:04:04,798
+A que aqu puedes ser que tengas muchas preguntas, puedes cometer un error aqu pero no es gran cosa
+
+32
+00:04:04,798 --> 00:04:13,014
+Primero que nada, si tienes el mismo dispositivo que yo, puedes cliquear en "Indoor USB Wireless"
+
+33
+00:04:13,243 --> 00:04:21,911
+luego selecciona "Adapter Series" luego seleccionas el del medio, puedes leerlo desde tu adaptador de dispositivo USB
+
+34
+00:04:21,911 --> 00:04:28,576
+cliquea aqu y la versin est bien, en el mismo lugar, solo toma tu adaptador de dispositivo inalmrbrco USB
+
+35
+00:04:28,576 --> 00:04:38,023
+mira el fondo y la marca y all podrs encontrar todo este tipo de informacin, en fin, esta es la versin que estoy usando
+
+36
+00:04:38,234 --> 00:04:44,309
+voy a cliquear en ella, sino te sale el mismo formato que a m es que debe ser que tengas otra versin diferente
+
+37
+00:04:44,309 --> 00:04:53,044
+solo lee el fondo y all lo tienes. En este paquete el cd en realidad tiene el paquete para Mac, Linux, Windows lo cual es fantstico
+
+38
+00:04:53,044 --> 00:05:01,026
+si eres usuario Mac, solo debes insertar el CD y all puedes tener el driver correcto para este adaptador
+
+39
+00:05:01,026 --> 00:05:11,397
+Los usuarios de Linux, tienen este como una extensin o algo de ese tipo, no es necesario instalar ms nada del paquete
+
+40
+00:05:11,397 --> 00:05:18,664
+ya que el sistema de Linux ya tiene instalado el paquete necesario para el correcto funcionamiento de este dispositivo
+
+41
+00:05:18,664 --> 00:05:30,435
+As que, voy a cliquear en la opcin de Windows, se encuentra el soporte para estas versiones, intenta con alguno de estos
+
+42
+00:05:30,435 --> 00:05:36,231
+yo tengo Windows7 as que voy a seleccionar esa opcin y si eres 8, pues selecciona el 8
+
+43
+00:05:38,204 --> 00:05:48,254
+Ok as que el proceso de instalacin ha comenzado, aqu tenemos que el botn "Next" es tu mejor amigo
+
+44
+00:05:48,254 --> 00:05:56,790
+realmente no hay nada nuevo funcionalmente que hacer aqu, solo con cliqueando siguiente y se terminar
+
+45
+00:05:56,790 --> 00:06:04,974
+Genial, lo se, all no hay nada complicado, solo recustate, reljate y deja terminar ese proceso de instalacin
+
+46
+00:06:04,974 --> 00:06:12,882
+y estars bien, ahora para terminar la instalacin nos pedirn reinicar la computadora
+
+47
+00:06:12,882 --> 00:06:20,750
+para que los cambios puedan hacer efecto, as que voy a dejar el tutorial hasta all, en todo caso,
+
+48
+00:06:20,750 --> 00:06:29,969
+Windows puede verificar la publicacin de ese software y esas son las cosas con las que debes vivir con ese cd
+
+49
+00:06:29,969 --> 00:06:36,897
+con lo cual podemos ver que no tenemos nada seguro en el, colocamos que deseamos la instalacin en todo caso
+
+50
+00:06:36,897 --> 00:06:42,317
+esto es algo que no vas a necesitar realizar si lo has descargado desde la red o algo de ese tipo
+
+51
+00:06:42,317 --> 00:06:48,175
+he obtenido ese CD desde la compaia que me envi el paquete as que debera estar bien
+
+52
+00:06:48,175 --> 00:06:55,997
+podemos ver que ha comenzado el proceso de instalacin y podemos escuchar el sonido del CD
+
+53
+00:06:55,997 --> 00:07:03,587
+y ello es practicamente Windows revisando de que trata la instalacin y que dispositivos estn siendo instalados
+
+54
+00:07:05,731 --> 00:07:13,865
+En fin, espero que este tutorial te sirva de algo y te ayude a completar la parte Wireless del curso
+
+55
+00:07:13,865 --> 00:07:19,549
+sin ningn problema instalando un CD sin grandes cambios, para todos los usuarios Windows all afuera
+
+56
+00:07:19,549 --> 00:07:25,339
+pero igualmente los usuarios MAC pueden hacer lo mismo, si tienen problemas haciendo esto desde una MAC,
+
+57
+00:07:25,339 --> 00:07:32,014
+por favor, hzmelo saber en la seccin de discusin. Ahora si seleccionar que quiero reiniciar mi computadora
+
+58
+00:07:32,014 --> 00:07:39,718
+As que voy a dejar el tutorial hasta aqu y continuar cuando regrese, en todo caso, les deseo lo mejor.
+

@@ -1,0 +1,736 @@
+1
+00:00:00,315 --> 00:00:04,445
+Hola a todos y bienvenidos a este tutorial, hoy voy a
+
+2
+00:00:04,445 --> 00:00:12,963
+hablar un poco sobre las direcciones MAC, qu son y porqu
+
+3
+00:00:04,445 --> 00:00:12,963
+son importantes para nosotros y cmo podemos cambiarlas,
+
+4
+00:00:12,963 --> 00:00:19,601
+para poder aumentar nuestro nivel de anonimidad, por decirlo as.
+
+5
+00:00:20,401 --> 00:00:31,083
+Podrs notas, podrs notar entre otras cosas que este es una interfaz
+
+6
+00:00:20,401 --> 00:00:31,083
+un poco diferente y que esta es una versin actualizada de esta seccin
+
+7
+00:00:31,083 --> 00:00:41,194
+Hubo muchas personas que lo pidieron as que pens que actualizar esta
+
+8
+00:00:31,083 --> 00:00:41,194
+parte sobre el MACChanger y simplificarla un poco, adems incluye algunas
+
+9
+00:00:41,194 --> 00:00:44,335
+explicaciones adicionales.
+
+10
+00:00:44,335 --> 00:00:51,272
+Antes de empezar como tal, djame borrar mi quitar esto
+
+11
+00:00:51,272 --> 00:01:01,284
+Tengo una mquina virtual ejecutndose como antes,
+
+12
+00:00:51,272 --> 00:01:01,284
+Si, listo, puedes ver que esto es una mquina virtual
+
+13
+00:01:01,284 --> 00:01:09,839
+Mi sistema operativo nativo es completamente irrelevante en este caso,
+
+14
+00:01:01,284 --> 00:01:09,839
+es Fedora 22 pero es completamente irrelevante, slo date cuenta de que esto es una
+
+15
+00:01:09,839 --> 00:01:21,642
+mquina virtual de Kali Linux funcionando dentro de Virtual Box y no
+
+16
+00:01:09,839 --> 00:01:21,642
+importa si tu sistema operativo nativo es Winddows o Mac, completamente irrelevante
+
+17
+00:01:24,162 --> 00:01:33,125
+As que empecemos y abre el terminal, eso es lo primero que
+
+18
+00:01:24,162 --> 00:01:33,125
+necesitamos hacer y veamos nuestra direccin MAC aqu
+
+19
+00:01:33,125 --> 00:01:36,295
+ifconfig
+
+20
+00:01:36,295 --> 00:01:49,468
+Presiona Enter, y vers que dice direccin hardware o direccin por defecto
+
+21
+00:01:36,295 --> 00:01:49,468
+hay muchos nombres por las que se le puede llamar pero no importa
+
+22
+00:01:49,468 --> 00:02:00,702
+Puedes ver que esta es, la primer parte de ella, los tres primeros sets representan
+
+23
+00:01:49,468 --> 00:02:00,702
+al fabricante.
+
+24
+00:02:04,802 --> 00:02:13,321
+Esto no es la direccin hardware es mi mquina, es la direccin
+
+25
+00:02:04,802 --> 00:02:13,321
+hardware es mi tarjeta de red, de mi tarjeta de red integrada
+
+26
+00:02:13,321 --> 00:02:21,210
+Puede ser tanto tu tarjeta ethernet o tu tarjeta inalmbrica o tu
+
+27
+00:02:13,321 --> 00:02:21,210
+adaptador inalmbrico, cualquiera
+
+28
+00:02:21,210 --> 00:02:30,324
+Estas cosas tienen direcciones MAC y a travs de ellas pueden ser
+
+29
+00:02:21,210 --> 00:02:30,324
+identificadas en la red.
+
+30
+00:02:30,324 --> 00:02:41,050
+Como dije, los tres primeros sets identifican al fabricante de este
+
+31
+00:02:30,324 --> 00:02:41,050
+hardware en particular asi que slo viendo los tres primeros sets
+
+32
+00:02:41,050 --> 00:02:56,477
+podemos buscarlo en internet y ver cual es el fabricante
+
+33
+00:02:41,050 --> 00:02:56,477
+slo escribelo en Google y tendrs una lista o algo as
+
+34
+00:02:56,477 --> 00:03:02,532
+En realidad no importa, tendrs como cien mil resultados
+
+35
+00:02:56,477 --> 00:03:02,532
+y podrs averiguar cual es el fabricante de esa
+
+36
+00:03:02,532 --> 00:03:13,113
+tarjeta en particular. Ahora, los tres ltimos sets, son dejados libremente
+
+37
+00:03:02,532 --> 00:03:13,113
+al fabricante, bsicamente pueden hacer lo que quieran con ellos
+
+38
+00:03:13,113 --> 00:03:23,446
+y no puedes utilizarlos por ti mismo para algn tipo de
+
+39
+00:03:13,113 --> 00:03:23,446
+identificacin mayor en ese sentido, no podrs ver cual
+
+40
+00:03:23,446 --> 00:03:38,840
+dispositivo en particular est siendo usado, esta direccin MAC es
+
+41
+00:03:23,446 --> 00:03:38,840
+visible en mi red local y alguien la puede usar para
+
+42
+00:03:38,840 --> 00:03:53,228
+restringir el acceso, para banearme completamente de la red o para
+
+43
+00:03:38,840 --> 00:03:53,228
+identificarme, para identificarme por nombre, eso sera muy difcil
+
+44
+00:03:53,228 --> 00:04:01,576
+pero podran hacerlo, alguien que estara investigando
+
+45
+00:03:53,228 --> 00:04:01,576
+o al administrador podra ver esta direccin de hardware y
+
+46
+00:04:01,576 --> 00:04:07,943
+entonces si alguien ve tu laptop podran ver que es la misma
+
+47
+00:04:01,576 --> 00:04:07,943
+direccin lo cual es un problema porque entonces hay una
+
+48
+00:04:07,943 --> 00:04:10,253
+relacin directa.
+
+49
+00:04:10,253 --> 00:04:20,973
+Ahora, pueden ser cambiadas, pueden ser alteradas para tu tranquilidad las cuales
+
+50
+00:04:10,253 --> 00:04:20,973
+son realmente buenas noticias, pero por favor, ten en cuenta, entiende que
+
+51
+00:04:20,973 --> 00:04:29,842
+esta direccin no deja tu red local, no va mas all
+
+52
+00:04:29,842 --> 00:04:38,156
+Si yo estuviera en algn lugar de internet yo no podra
+
+53
+00:04:29,842 --> 00:04:38,156
+ver esta direccin MAC o tu no podras ver la ma
+
+54
+00:04:38,156 --> 00:04:48,273
+Esto es slo para tu red local, de hecho, esta red no deja
+
+55
+00:04:38,156 --> 00:04:48,273
+tu puerta de enlace predeterminada
+
+56
+00:04:48,273 --> 00:04:56,675
+Esta direccin no deja tu puerta de enlace predeterminada que es el router de tu ISP
+
+57
+00:04:48,273 --> 00:04:56,675
+as que puedes ir al router de tu ISP, tu router tiene esta
+
+58
+00:04:56,675 --> 00:05:06,585
+direccin MAC pero no va ms all de ah, se queda ah, as que no
+
+59
+00:04:56,675 --> 00:05:06,585
+hay manera de que yo pueda ver el directorio del sitio
+
+60
+00:05:06,585 --> 00:05:13,933
+.
+
+61
+00:05:13,933 --> 00:05:29,685
+De todos modos, ten en cuenta que cambiando la direccin MAC en una mquina virtual
+
+62
+00:05:13,933 --> 00:05:29,685
+no tiene sentido, pero es muy til si tienes una instalacin USB
+
+63
+00:05:29,685 --> 00:05:41,819
+o un USB booteable o si lo tienes instalado en tu computadora fsica
+
+64
+00:05:29,685 --> 00:05:41,819
+y es muy til en el mundo real, el saber como hacer esto
+
+65
+00:05:41,819 --> 00:05:52,560
+Pero como tenemos una mquina virtual con propsitos de aprendizaje vamos a
+
+66
+00:05:41,819 --> 00:05:52,560
+usarla como ejemplo, y en el mundo real cuando aprendas de verdad a hacer eso
+
+67
+00:05:52,560 --> 00:06:01,556
+por supuesto, no ser necesario que uses una mquina virtual, podrs usar una
+
+68
+00:05:52,560 --> 00:06:01,556
+mquina real, no es para decir que las mquinas virtuales son intiles. No estoy diciendo
+
+69
+00:06:01,556 --> 00:06:08,935
+que la mquina virtual es intil. Slo digo que estamos usando esta con propsitos de
+
+70
+00:06:01,556 --> 00:06:08,935
+aprendizaje y luego en algn punto en el futuro cuando hayas aprendido todo esto
+
+71
+00:06:08,935 --> 00:06:16,422
+podrs cambiar a tu USB booteable si no no lo has hecho todava, o a una
+
+72
+00:06:08,935 --> 00:06:16,422
+mquina fsica.
+
+73
+00:06:16,422 --> 00:06:28,618
+Pero, la manera de cambiar una direccin es, puedes hacer esto manualmente pero
+
+74
+00:06:16,422 --> 00:06:28,618
+tambin puedes usar un MACChanger, con un MACChanger puedes...
+
+75
+00:06:28,618 --> 00:06:40,019
+Es una herramienta para cambiar la direccin MAC, as que veamos
+
+76
+00:06:28,618 --> 00:06:40,019
+esta herramienta, escribe macchanger -h (h de help)
+
+77
+00:06:40,019 --> 00:06:51,197
+As que la primera opcin muestra todo este men, la segunda te dar
+
+78
+00:06:40,019 --> 00:06:51,197
+la versin, y esta te dar las direcciones MAC, de hecho,
+
+79
+00:06:51,197 --> 00:06:56,603
+usemos esta opcin, escribe s
+
+80
+00:06:56,603 --> 00:07:03,927
+Ok, est bien, 'show', me falt escribir algo?
+
+81
+00:07:03,927 --> 00:07:07,699
+macchanger -s eth0
+
+82
+00:07:07,699 --> 00:07:17,825
+Ok, entonces si escribes ifconfig y ves la interface
+
+83
+00:07:07,699 --> 00:07:17,825
+o conoces ya conoces la interface
+
+84
+00:07:17,825 --> 00:07:27,931
+puedes por supuesto ver la direccin aqu tambin pero si
+
+85
+00:07:17,825 --> 00:07:27,931
+slo quieres que el macchanger te la muestre puedes usar slo el macchanger
+
+86
+00:07:27,931 --> 00:07:38,207
+y escribes el nombre de la inferface aqu, no necesitas todo esto, slo necesitas la -s y listo, dice que la MAC actual
+
+87
+00:07:38,207 --> 00:07:45,294
+es esta, y que la MAC permanente es esta, te preguntars
+
+88
+00:07:38,207 --> 00:07:45,294
+"Bueno, por que querra verla aqu si simplemente puedo
+
+89
+00:07:45,294 --> 00:07:58,339
+escribir ifconfig y mirarla aqu", bueno, cuando
+
+90
+00:07:45,294 --> 00:07:58,339
+la cambias es mejor que puedas ver tu
+
+91
+00:07:58,339 --> 00:08:08,788
+direccin MAC actual y cual es tu direccin MAC permanente, as
+
+92
+00:07:58,339 --> 00:08:08,788
+que cuando la direccin MAC ha sido cambiada aqu en el resultado de ifconfig
+
+93
+00:08:08,788 --> 00:08:15,898
+slo podrs ver la que ha sido cambiada, no podrs ver la original,
+
+94
+00:08:08,788 --> 00:08:15,898
+as que si quieres ver la original puedes verla aqu
+
+95
+00:08:15,898 --> 00:08:29,127
+Esa es la MAC permanente, as que no te preocupes, vamos y
+
+96
+00:08:15,898 --> 00:08:29,127
+despejamos esto, macchanger -h,
+
+97
+00:08:29,127 --> 00:08:41,910
+Y esta e, ending "No cambies los bytes del fabricante" ok, est bien,
+
+98
+00:08:29,127 --> 00:08:41,910
+Casi nunca usars eso, digo, vamos a saltarnos eso, en realidad
+
+99
+00:08:41,910 --> 00:08:53,320
+No tiene sentido, "Otro set de MAC aleatorio del mismo tipo", ok este
+
+100
+00:08:41,910 --> 00:08:53,320
+de hecho no es una mala idea, algunas veces, en algunos casos, dice
+
+101
+00:08:53,320 --> 00:09:10,397
+"Establecer vendor MAC aleatorio del mismo tipo", as que por ejemplo si en la red
+
+102
+00:08:53,320 --> 00:09:10,397
+slo un cierto tipo de dispositivos est permitido de cierto fabricante puedes
+
+103
+00:09:10,397 --> 00:09:21,148
+de hecho puedes cambiar la MAC de tu tarjeta y mantenerla dentro es
+
+104
+00:09:10,397 --> 00:09:21,148
+esos parmetros del mismo fabricante incluso cuando sera
+
+105
+00:09:21,148 --> 00:09:27,556
+una direccin MAC completamente diferente.
+
+106
+00:09:27,556 --> 00:09:37,799
+Por ejemplo, si ests en una oficina o algo as y slo est permitido
+
+107
+00:09:27,556 --> 00:09:37,799
+cierto tipo de hardware para funcionar all de cierto fabricante puedes
+
+108
+00:09:37,799 --> 00:09:49,673
+ir a esa mquina en particular, es posible ir si tienes los permisos por supuesto,
+
+109
+00:09:37,799 --> 00:09:49,673
+a esa mquina en particular y de hecho cambiar la direccin MAC y mantenerla
+
+110
+00:09:49,673 --> 00:10:01,335
+dentro de los parmetros del mismo fabricante as que sera una MAC completamente
+
+111
+00:09:49,673 --> 00:10:01,335
+diferente y te ayudar en trminos de anonimidad y mientras tienes todava conectividad a la red
+
+112
+00:10:01,335 --> 00:10:08,118
+Pero estos son casos muy raros y de nuevo, no usars este.
+
+113
+00:10:08,118 --> 00:10:15,612
+Esto es -A "Establecer MAC de fabricante aleatoria de cualquier tipo" eso se explica por si sola
+
+114
+00:10:15,612 --> 00:10:29,407
+Y esta es una opcin que usars tambin, es -p, es muy importante, por cierto,
+
+115
+00:10:15,612 --> 00:10:29,407
+lo que har es "Resetear a la MAC de hardware permanente original", te regresar
+
+116
+00:10:29,407 --> 00:10:39,653
+la direccin MAC original y la has cambiado o si la has cambiado varias veces,
+
+117
+00:10:29,407 --> 00:10:39,653
+restaurar la original cuando lo pidas.
+
+118
+00:10:39,653 --> 00:10:54,295
+-r es slo para "Establecer una direccin MAC completamente aleatoria", esto es algo
+
+119
+00:10:39,653 --> 00:10:54,295
+que vas a usar, as que -p y -r son buenas opciones, entonces esta es una MAC completamente aleatoria
+
+120
+00:10:54,295 --> 00:11:06,471
+y si te preguntas que es -A, lo que hace es que te da una direccin MAC
+
+121
+00:10:54,295 --> 00:11:06,471
+aleatoria, pero esa direccin MAC estar en el grupo que ha sido asignada
+
+122
+00:11:06,471 --> 00:11:21,251
+a fabricantes, as que tu tarjeta de red ser identificada como
+
+123
+00:11:06,471 --> 00:11:21,251
+perteneciente a al menos algun fabricante a diferencia de este, este es un set simplemente aleatorio
+
+124
+00:11:21,251 --> 00:11:30,186
+completamente aleatorio, no necesariamente necesita pertenecer a
+
+125
+00:11:21,251 --> 00:11:30,186
+algn fabricante o algo as
+
+126
+00:11:30,186 --> 00:11:43,715
+Qu quiero decir con eso? Bueno, -A, por ejemplo si hiciste esto, como Realtek,
+
+127
+00:11:30,186 --> 00:11:43,715
+una compaa que produce hardward de red, ellos tienen una cierta cantidad
+
+128
+00:11:43,715 --> 00:11:57,304
+de direcciones MAC que les han sido otorgadas que pueden usar para identificar
+
+129
+00:11:43,715 --> 00:11:57,304
+sus dispositivos y si escribes -A, por ejemplo, tal vez te dar los tres primeros sets
+
+130
+00:11:57,304 --> 00:12:12,833
+de Realtek y luego los ltimos tres sets sern completamente aleatorios de nuevo
+
+131
+00:11:57,304 --> 00:12:12,833
+as que tu tarjeta ser identificada como de Realtek, a diferencia de que sea identificada
+
+132
+00:12:12,833 --> 00:12:26,438
+como de otra compaa, y abajo todos los seis sets sern completamente
+
+133
+00:12:12,833 --> 00:12:26,438
+aleatorios, as que -A te asegurar que los primeros tres sets pertenecen a un fabricante
+
+134
+00:12:26,438 --> 00:12:34,393
+y luego los tres ltimos sets son completamente aleatorios, con -r todos
+
+135
+00:12:26,438 --> 00:12:34,393
+los sets son aleatorios
+
+136
+00:12:34,393 --> 00:12:47,323
+Ok, as que esto dar fabricantes conocidos, puedes escribir macchanger -l y
+
+137
+00:12:34,393 --> 00:12:47,323
+listo, as que todos estos son fabricantes conocidos, hay algunos de
+
+138
+00:12:47,323 --> 00:12:54,459
+ellos, y estos son bits de fabricante, as que los tres primeros sets.
+
+139
+00:12:54,459 --> 00:13:09,489
+Si usas -A sers identificado como que tienes una tarjeta de red que
+
+140
+00:12:54,459 --> 00:13:09,489
+pertenece a uno de estos fabricantes lo que no es para nada una mala idea
+
+141
+00:13:09,489 --> 00:13:21,165
+Podras de hecho usas estos bits para falsear la direccin MAC de tu hardware
+
+142
+00:13:09,489 --> 00:13:21,165
+cmo perteneciente a alguno de estos fabricantes as que si quiere pretender ser
+
+143
+00:13:21,165 --> 00:13:32,755
+de Belkin, puedes usar estos bits para de hecho parecer que es de Belkin
+
+144
+00:13:21,165 --> 00:13:32,755
+si quieres que sea de Netgear puedes usar estos, y tal y cual.
+
+145
+00:13:32,755 --> 00:13:35,948
+Estoy seguro que entiendes la idea aqu.
+
+146
+00:13:35,948 --> 00:13:41,232
+macchanger -h
+
+147
+00:13:41,232 --> 00:13:54,588
+Y en caso de pretender parecer una direccin por defecto, puedes usar eso tambin
+
+148
+00:13:41,232 --> 00:13:54,588
+pero abajo tienes -m, y m- de hecho establece la direccin MAC
+
+149
+00:13:54,588 --> 00:14:09,153
+lo que es una muy, muy, muy, muy buena opcin, puede ser muy poderoso,
+
+150
+00:13:54,588 --> 00:14:09,153
+puede tener un efecto tremendo, por qu? Bueno, hay algo que
+
+151
+00:14:09,153 --> 00:14:21,453
+compartir de... Bueno, es mi experiencia porque he visto que ha pasado
+
+152
+00:14:09,153 --> 00:14:21,453
+y que sigue pasando y que hay herramientas para combatirlo
+
+153
+00:14:21,453 --> 00:14:35,983
+pero, es slo el precio y la cantidad de esfuerzo que tienes que usar
+
+154
+00:14:21,453 --> 00:14:35,983
+para combatirlo, es dificil, a esto es lo que me refiero, digamos que ests en una red de
+
+155
+00:14:35,983 --> 00:14:49,619
+escuela, en algn sitio, algn edificio, en una presentacin de una escuela
+
+156
+00:14:35,983 --> 00:14:49,619
+durante algunas presentaciones he visto personas, he visto que se ha hecho, pongamoslo
+
+157
+00:14:49,619 --> 00:15:04,353
+as, bsicamente tenamos proyectores inalmbricos y las personas,
+
+158
+00:14:49,619 --> 00:15:04,353
+al inicio las personas interrumpan la conexin inalmbrica y se daban cuenta
+
+159
+00:15:04,353 --> 00:15:14,301
+y cuando ellos interrumpan la conexin inalmbrica era que la computadora del profesor
+
+160
+00:15:04,353 --> 00:15:14,301
+no se poda conectar a los proyectores inalmbricos as que se saboteaba la presentacin
+
+161
+00:15:14,301 --> 00:15:24,689
+era muy difcil de usarlos porque la conexin se interrumpa cada
+
+162
+00:15:14,301 --> 00:15:24,689
+minuto ms o menos y el profesor no lo poda entender, "oh, debe ser
+
+163
+00:15:24,689 --> 00:15:32,715
+alguna clase de problema tcnico o algo as" y luego iban al
+
+164
+00:15:24,689 --> 00:15:32,715
+administrador y los administradores le lo vean y se daban cuenta
+
+165
+00:15:32,715 --> 00:15:45,524
+que estaban siendo interrumpidas, as que lo que hicieron fue implementar
+
+166
+00:15:32,715 --> 00:15:45,524
+filtrado de MAC y esto caus ms problemas, por qu? porque cualquiera que era descubierto saboteando
+
+167
+00:15:45,524 --> 00:15:54,819
+esa direccin MAC sera completamente baneado, sin embargo, alguien
+
+168
+00:15:45,524 --> 00:15:54,819
+se le ocurri una idea y era una idea muy simple, es una idea muy vieja, a ellos no
+
+169
+00:15:54,819 --> 00:16:09,934
+lo inventaron, slo lo usaron para escanear la red, averiguar la
+
+170
+00:15:54,819 --> 00:16:09,934
+direccin MAC de la computadora del profesor, verla y luego
+
+171
+00:16:09,934 --> 00:16:22,135
+establecer esa direccin como su propia direccin, as que ellos ven esta direccin MAC
+
+172
+00:16:09,934 --> 00:16:22,135
+que han tomado y luego usan la opcin m, el macchanger para establecer
+
+173
+00:16:22,135 --> 00:16:33,197
+la interface de la direccin MAC de sus propias computadoras para que fuera exactamente
+
+174
+00:16:22,135 --> 00:16:33,197
+la misma que la del profesor y luego empezaron a estropearlas pretendiendo ser
+
+175
+00:16:33,197 --> 00:16:44,230
+la computadora del profesor, lo que los administradores hacan luego era banear
+
+176
+00:16:33,197 --> 00:16:44,230
+permanentemente esa direccin MAC lo que creaba un problema muy grande porque
+
+177
+00:16:44,230 --> 00:16:51,596
+no slo el profesor no se poda conectar ms al proyector, no slo el profesor no se poda
+
+178
+00:16:44,230 --> 00:16:51,596
+conectar de nuevo al proyector sino que el profesor no se poda conectar
+
+179
+00:16:51,596 --> 00:17:01,759
+a cualquier red inalmbrica en todas las instalaciones
+
+180
+00:16:51,596 --> 00:17:01,759
+de la escuela porque en cada router en la escuela esa direccin MAC
+
+181
+00:17:01,759 --> 00:17:05,758
+en particular estaba baneada y esto creaba un problema ms grave.
+
+182
+00:17:05,758 --> 00:17:16,663
+As que ahora ves como la opcin -m puede ser extremadamente til y poderosa
+
+183
+00:17:16,663 --> 00:17:28,893
+De todos modos, se me est acabando el tiempo as que cortar el tutorial
+
+184
+00:17:16,663 --> 00:17:28,893
+aqu y trataremos este tema con ms profundidad en el siguiente tutorial.
+
